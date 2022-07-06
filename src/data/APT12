@@ -1,0 +1,747 @@
+{
+    "type": "bundle",
+    "id": "bundle--a77c0801-6c0b-4395-98fb-ad3bfe5ff66d",
+    "spec_version": "2.0",
+    "objects": [
+        {"primary_motivation": "organizational-gain",
+            "first_seen":"2009",
+            "x_MISP-description": "A group of China-based attackers, who conducted a number of spear phishing attacks in 2013.",
+            " x_MISP-uuid": "48146604-6693-4db1-bd94-159744726514",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "APT12",
+            "description": "[APT12](https://attack.mitre.org/groups/G0005) is a threat group that has been attributed to China. The group has targeted a variety of victims including but not limited to media outlets, high-tech companies, and multiple governments.(Citation: Meyers Numbered Panda)",
+            "x_mitre_version": "2.1",
+            "modified": "2022-06-11T18:44:59.268Z",
+            "aliases": [
+                "APT12",
+                "IXESHE",
+                "DynCalc",
+                "Numbered Panda",
+                "DNSCALC",
+                "APT 12",
+                "BRONZE GLOBE",
+                "BeeBus",
+                "Group 22",
+                "Crimson Iron",
+                "Calc Team",
+                "APT12",
+                "CTG-8223"
+            ],
+            "created": "2017-05-31T21:31:47.537Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0005",
+                    "external_id": "G0005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Meyers Numbered Panda) (Citation: Moran 2014)",
+                    "source_name": "APT12"
+                },
+                {
+                    "description": "(Citation: Meyers Numbered Panda) (Citation: Moran 2014)",
+                    "source_name": "IXESHE"
+                },
+                {
+                    "description": "(Citation: Meyers Numbered Panda) (Citation: Moran 2014)",
+                    "source_name": "DynCalc"
+                },
+                {
+                    "description": "(Citation: Meyers Numbered Panda)",
+                    "source_name": "Numbered Panda"
+                },
+                {
+                    "description": "(Citation: Moran 2014)",
+                    "source_name": "DNSCALC"
+                },
+                {
+                    "url": "http://www.crowdstrike.com/blog/whois-numbered-panda/",
+                    "description": "Meyers, A. (2013, March 29). Whois Numbered Panda. Retrieved January 14, 2016.",
+                    "source_name": "Meyers Numbered Panda"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "source_name": "Moran 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "DNS Calculation",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-27T20:54:28.287Z",
+            "created": "2020-03-11T14:56:34.154Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--83a766f8-1501-4b3a-a2de-2e2849e8dfc1",
+            "description": "Adversaries may perform calculations on addresses returned in DNS results to determine which port and IP address to use for command and control, rather than relying on a predetermined port number or the actual returned IP address. A IP and/or port number calculation can be used to bypass egress filtering on a C2 channel.(Citation: Meyers Numbered Panda)\n\nOne implementation of [DNS Calculation](https://attack.mitre.org/techniques/T1568/003) is to take the first three octets of an IP address in a DNS response and use those values to calculate the port for command and control traffic.(Citation: Meyers Numbered Panda)(Citation: Moran 2014)(Citation: Rapid7G20Espionage)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Detection for this technique is difficult because it would require knowledge of the specific implementation of the port calculation algorithm. Detection may be possible by analyzing DNS records if the algorithm is known.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1568/003",
+                    "external_id": "T1568.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Meyers Numbered Panda",
+                    "description": "Meyers, A. (2013, March 29). Whois Numbered Panda. Retrieved January 14, 2016.",
+                    "url": "http://www.crowdstrike.com/blog/whois-numbered-panda/"
+                },
+                {
+                    "source_name": "Moran 2014",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"
+                },
+                {
+                    "url": "https://blog.rapid7.com/2013/08/26/upcoming-g20-summit-fuels-espionage-operations/",
+                    "description": "Rapid7. (2013, August 26). Upcoming G20 Summit Fuels Espionage Operations. Retrieved March 6, 2017.",
+                    "source_name": "Rapid7G20Espionage"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Exploitation for Client Execution",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1203",
+                    "external_id": "T1203",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T19:01:34.932Z",
+            "x_mitre_system_requirements": [
+                "Remote exploitation for execution requires a remotely accessible service reachable over the network or other vector of access such as spearphishing or drive-by compromise."
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "description": "Adversaries may exploit software vulnerabilities in client applications to execute code. Vulnerabilities can exist in software due to unsecure coding practices that can lead to unanticipated behavior. Adversaries can take advantage of certain vulnerabilities through targeted exploitation for the purpose of arbitrary code execution. Oftentimes the most valuable exploits to an offensive toolkit are those that can be used to obtain code execution on a remote system because they can be used to gain access to that system. Users will expect to see files related to the applications they commonly used to do work, so they are a useful target for exploit research and development because of their high utility.\n\nSeveral types exist:\n\n### Browser-based Exploitation\n\nWeb browsers are a common target through [Drive-by Compromise](https://attack.mitre.org/techniques/T1189) and [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002). Endpoint systems may be compromised through normal web browsing or from certain users being targeted by links in spearphishing emails to adversary controlled sites used to exploit the web browser. These often do not require an action by the user for the exploit to be executed.\n\n### Office Applications\n\nCommon office and productivity applications such as Microsoft Office are also targeted through [Phishing](https://attack.mitre.org/techniques/T1566). Malicious files will be transmitted directly as attachments or through links to download them. These require the user to open the document or file for the exploit to run.\n\n### Common Third-party Applications\n\nOther applications that are commonly seen or are part of the software deployed in a target network may also be used for exploitation. Applications such as Adobe Reader and Flash, which are common in enterprise environments, have been routinely targeted by adversaries attempting to gain access to systems. Depending on the software and nature of the vulnerability, some may be exploited in the browser or require the user to open a file. For instance, some Flash exploits have been delivered as objects within Microsoft Office documents.",
+            "x_mitre_remote_support": false,
+            "x_mitre_detection": "Detecting software exploitation may be difficult depending on the tools available. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of the browser or Office processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created": "2018-04-18T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T23:15:47.861Z",
+            "name": "Bidirectional Communication",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-14T22:34:03.024Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--be055942-6e63-49d7-9fa1-9cb7d8a8f3f4",
+            "description": "Adversaries may use an existing, legitimate external Web service as a means for sending commands to and receiving output from a compromised system over the Web service channel. Compromised systems may leverage popular websites and social media to host command and control (C2) instructions. Those infected systems can then send the output from those commands back over that Web service channel. The return traffic may occur in a variety of ways, depending on the Web service being utilized. For example, the return traffic may take the form of the compromised system posting a comment on a forum, issuing a pull request to development project, updating a document hosted on a Web service, or by sending a Tweet. \n\nPopular websites and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Host data that can relate unknown or suspicious process activity using a network connection is important to supplement any existing indicators of compromise based on malware command and control signatures and infrastructure or the presence of strong encryption. Packet capture analysis will require SSL/TLS inspection if data is encrypted. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). User behavior monitoring may help to detect abnormal patterns of activity.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1102/002",
+                    "external_id": "T1102.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "HTRAN",
+            "x_mitre_aliases": [
+                "HTRAN",
+                "HUC Packet Transmit Tool"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-04-23T20:04:19.262Z",
+            "created": "2017-05-31T21:32:32.011Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows"
+            ],
+            "id": "tool--d5e96a35-7b0b-4c6a-9533-d63ecbda563e",
+            "description": "[HTRAN](https://attack.mitre.org/software/S0040) is a tool that proxies connections through intermediate hops and aids users in disguising their true geographical location. It can be used by adversaries to hide their location when interacting with the victim networks. (Citation: Operation Quantum Entanglement)(Citation: NCSC Joint Report Public Tools)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0040",
+                    "external_id": "S0040",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Operation Quantum Entanglement)",
+                    "source_name": "HUC Packet Transmit Tool"
+                },
+                {
+                    "source_name": "Operation Quantum Entanglement",
+                    "description": "Haq, T., Moran, N., Vashisht, S., Scott, M. (2014, September). OPERATION QUANTUM ENTANGLEMENT. Retrieved November 4, 2015.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-operation-quantum-entanglement.pdf"
+                },
+                {
+                    "source_name": "NCSC Joint Report Public Tools",
+                    "description": "The Australian Cyber Security Centre (ACSC), the Canadian Centre for Cyber Security (CCCS), the New Zealand National Cyber Security Centre (NZ NCSC), CERT New Zealand, the UK National Cyber Security Centre (UK NCSC) and the US National Cybersecurity and Communications Integration Center (NCCIC). (2018, October 11). Joint report on publicly available hacking tools. Retrieved March 11, 2019.",
+                    "url": "https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Ixeshe",
+            "x_mitre_aliases": [
+                "Ixeshe"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2020-03-20T22:45:06.494Z",
+            "created": "2017-05-31T21:32:16.360Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--8beac7c2-48d2-4cd9-9b15-6c452f38ac06",
+            "description": "[Ixeshe](https://attack.mitre.org/software/S0015) is a malware family that has been used since at least 2009 against targets in East Asia. (Citation: Moran 2013)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0015",
+                    "external_id": "S0015",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Moran 2013",
+                    "description": "Moran, N., & Villeneuve, N. (2013, August 12). Survival of the Fittest: New York Times Attackers Evolve Quickly &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2013/08/survival-of-the-fittest-new-york-times-attackers-evolve-quickly.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "RIPTIDE",
+            "x_mitre_aliases": [
+                "RIPTIDE"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T17:28:04.217Z",
+            "created": "2017-05-31T21:32:11.911Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--ad4f146f-e3ec-444a-ba71-24bffd7f0f8e",
+            "description": "[RIPTIDE](https://attack.mitre.org/software/S0003) is a proxy-aware backdoor used by [APT12](https://attack.mitre.org/groups/G0005). (Citation: Moran 2014)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0003",
+                    "external_id": "S0003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Moran 2014",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0c9b6c09-8fc9-42c7-bfd7-316e9bbfa271",
+            "description": "[APT12](https://attack.mitre.org/groups/G0005) has attempted to get victims to open malicious Microsoft Word and PDF attachment sent via spearphishing.(Citation: Moran 2014)(Citation: Trend Micro IXESHE 2012)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2020-03-12T00:27:29.517Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-06-07T14:20:07.492Z",
+            "external_references": [
+                {
+                    "source_name": "Moran 2014",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"
+                },
+                {
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp_ixeshe.pdf",
+                    "description": "Sancho, D., et al. (2012, May 22). IXESHE An APT Campaign. Retrieved June 7, 2019.",
+                    "source_name": "Trend Micro IXESHE 2012"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5a49400c-2003-463c-8e6e-97b79f560675",
+            "description": "[APT12](https://attack.mitre.org/groups/G0005) has used blogs and WordPress for C2 infrastructure.(Citation: Meyers Numbered Panda)",
+            "target_ref": "attack-pattern--be055942-6e63-49d7-9fa1-9cb7d8a8f3f4",
+            "modified": "2020-03-20T19:45:34.796Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-06-10T16:34:59.315Z",
+            "external_references": [
+                {
+                    "url": "http://www.crowdstrike.com/blog/whois-numbered-panda/",
+                    "description": "Meyers, A. (2013, March 29). Whois Numbered Panda. Retrieved January 14, 2016.",
+                    "source_name": "Meyers Numbered Panda"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--75b6869c-dd4e-44ec-8614-97fe792e9dd6",
+            "description": "[APT12](https://attack.mitre.org/groups/G0005) has exploited multiple vulnerabilities for execution, including Microsoft Office vulnerabilities (CVE-2009-3129, CVE-2012-0158) and vulnerabilities in Adobe Reader and Flash (CVE-2009-4324, CVE-2009-0927, CVE-2011-0609, CVE-2011-0611).(Citation: Moran 2014)(Citation: Trend Micro IXESHE 2012)",
+            "target_ref": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "modified": "2019-06-10T19:28:00.940Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-06-07T14:20:07.509Z",
+            "external_references": [
+                {
+                    "source_name": "Moran 2014",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"
+                },
+                {
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp_ixeshe.pdf",
+                    "description": "Sancho, D., et al. (2012, May 22). IXESHE An APT Campaign. Retrieved June 7, 2019.",
+                    "source_name": "Trend Micro IXESHE 2012"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--762f85a3-0120-4b09-aafd-3f460764e85f",
+            "description": "(Citation: Moran 2013)(Citation: Moran 2014)",
+            "target_ref": "malware--8beac7c2-48d2-4cd9-9b15-6c452f38ac06",
+            "modified": "2019-06-10T19:28:01.000Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.034Z",
+            "external_references": [
+                {
+                    "source_name": "Moran 2013",
+                    "description": "Moran, N., & Villeneuve, N. (2013, August 12). Survival of the Fittest: New York Times Attackers Evolve Quickly &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2013/08/survival-of-the-fittest-new-york-times-attackers-evolve-quickly.html"
+                },
+                {
+                    "source_name": "Moran 2014",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8126e72d-1be0-4237-b9c9-33045be072c3",
+            "description": "[APT12](https://attack.mitre.org/groups/G0005) has sent emails with malicious Microsoft Office documents and PDFs attached.(Citation: Moran 2014)(Citation: Trend Micro IXESHE 2012)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2019-06-10T19:28:00.945Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-06-07T14:20:07.519Z",
+            "external_references": [
+                {
+                    "source_name": "Moran 2014",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"
+                },
+                {
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp_ixeshe.pdf",
+                    "description": "Sancho, D., et al. (2012, May 22). IXESHE An APT Campaign. Retrieved June 7, 2019.",
+                    "source_name": "Trend Micro IXESHE 2012"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--66647c20-2d76-4711-9eee-07d932e75851",
+            "description": "[APT12](https://attack.mitre.org/groups/G0005) has used multiple variants of [DNS Calculation](https://attack.mitre.org/techniques/T1568/003) including multiplying the first two octets of an IP address and adding the third octet to that value in order to get a resulting command and control port.(Citation: Meyers Numbered Panda)",
+            "target_ref": "attack-pattern--83a766f8-1501-4b3a-a2de-2e2849e8dfc1",
+            "modified": "2020-03-27T21:14:03.099Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-27T21:14:03.099Z",
+            "external_references": [
+                {
+                    "source_name": "Meyers Numbered Panda",
+                    "description": "Meyers, A. (2013, March 29). Whois Numbered Panda. Retrieved January 14, 2016.",
+                    "url": "http://www.crowdstrike.com/blog/whois-numbered-panda/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d242dc5a-3969-498c-b7eb-5d850e7d384d",
+            "description": "(Citation: Moran 2014)",
+            "target_ref": "malware--ad4f146f-e3ec-444a-ba71-24bffd7f0f8e",
+            "modified": "2019-06-10T19:28:00.981Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.034Z",
+            "external_references": [
+                {
+                    "source_name": "Moran 2014",
+                    "description": "Moran, N., Oppenheim, M., Engle, S., & Wartell, R.. (2014, September 3). Darwin\u2019s Favorite APT Group &#91;Blog&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f42a5342-c28d-46ad-bbd7-3123da43ff86",
+            "description": "(Citation: Trend Micro IXESHE 2012)",
+            "target_ref": "tool--d5e96a35-7b0b-4c6a-9533-d63ecbda563e",
+            "modified": "2019-06-10T19:28:01.018Z",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-06-07T14:30:26.074Z",
+            "external_references": [
+                {
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp_ixeshe.pdf",
+                    "description": "Sancho, D., et al. (2012, May 22). IXESHE An APT Campaign. Retrieved June 7, 2019.",
+                    "source_name": "Trend Micro IXESHE 2012"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--32fa1d7c-8978-459e-96b8-60666b6d83c6",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--41cd0fc8-8ec3-4b9c-acec-269da2417411",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c31837b7-0800-489d-aeb7-471ad4c8e729",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e9826c8b-bec2-4fed-b851-f10dbf215310",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "target_ref": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be"
+        },
+        {
+            "created": "2021-03-13T20:09:21.330327Z",
+            "id": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Telecommunications sector as a target",
+            "sectors": [
+                "telecommunications"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f999ddb3-9cd0-4824-9aa0-359ff05c3dae",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "target_ref": "identity--6f9778fe-137d-4064-9925-544a99683b4d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.33241Z",
+            "id": "identity--6f9778fe-137d-4064-9925-544a99683b4d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Private sector as a target",
+            "sectors": [
+                "Private sector"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c19bdb09-d4fe-4cd7-90b5-e2333b7b30f5",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "target_ref": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c"
+        },
+        {
+            "created": "2021-03-13T20:09:21.323862Z",
+            "id": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Manufacturing sector as a target",
+            "sectors": [
+                "manufacturing"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ba799e71-486d-4118-bbf8-2291c725e388",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        }
+    ]
+}

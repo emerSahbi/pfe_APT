@@ -1,0 +1,2154 @@
+{
+    "type": "bundle",
+    "id": "bundle--81116ae5-6d03-430c-845e-d0748873dc25",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "primary_motivation": "organizational-gain",
+            "first_seen": "2008",
+            "x_MISP-uuid": "24110866-cb22-4c85-a7d2-0413e126694b",
+            "x_MISP-description": "The Winnti grouping of activity is large and may actually be a number of linked groups rather than a single discrete entity. Kaspersky describe Winnti as: 'The Winnti group has been attacking companies in the online video game industry since 2009 and is currently still active. The groups objectives are stealing digital certificates signed by legitimate software vendors in addition to intellectual property theft, including the source code of online game projects. The majority of the victims are from South East Asia.'",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Axiom",
+            "description": "[Axiom](https://attack.mitre.org/groups/G0001) is a cyber espionage group suspected to be associated with the Chinese government. It is responsible for the Operation SMN campaign. (Citation: Novetta-Axiom) Though both this group and [Winnti Group](https://attack.mitre.org/groups/G0044) use the malware [Winnti for Windows](https://attack.mitre.org/software/S0141), the two groups appear to be distinct based on differences in reporting on the groups' TTPs and targeting. (Citation: Kaspersky Winnti April 2013) (Citation: Kaspersky Winnti June 2015) (Citation: Novetta Winnti April 2015)",
+            "x_mitre_version": "1.2",
+            "modified": "2022-06-10T18:52:38.226Z",
+            "aliases": [
+                "Axiom",
+                "Group 72",
+                "Winnti Umbrella",
+                "Winnti Group",
+                "WinNTI",
+                "Tailgater Team",
+                "Suckfly",
+                "APT41",
+                "APT 41",
+                "Group 72",
+                "Group72",
+                "Tailgater",
+                "Ragebeast",
+                "Blackfly",
+                "Lead",
+                "Wicked Spider",
+                "APT17",
+                "APT 17",
+                "Dogfish",
+                "Deputy Dog",
+                "Wicked Panda",
+                "Barium",
+                "BRONZE ATLAS",
+                "BRONZE EXPORT"
+            ],
+            "created": "2017-05-31T21:31:45.629Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "id": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0001",
+                    "external_id": "G0001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Novetta-Axiom)",
+                    "source_name": "Axiom"
+                },
+                {
+                    "description": "(Citation: Cisco Group 72)",
+                    "source_name": "Group 72"
+                },
+                {
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "source_name": "Novetta-Axiom"
+                },
+                {
+                    "url": "https://securelist.com/winnti-more-than-just-a-game/37029/",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2013, April 11). Winnti. More than just a game. Retrieved February 8, 2017.",
+                    "source_name": "Kaspersky Winnti April 2013"
+                },
+                {
+                    "url": "https://securelist.com/games-are-over/70991/",
+                    "description": "Tarakanov, D. (2015, June 22). Games are over: Winnti is now targeting pharmaceutical companies. Retrieved January 14, 2016.",
+                    "source_name": "Kaspersky Winnti June 2015"
+                },
+                {
+                    "url": "http://www.novetta.com/wp-content/uploads/2015/04/novetta_winntianalysis.pdf",
+                    "description": "Novetta Threat Research Group. (2015, April 7). Winnti Analysis. Retrieved February 8, 2017.",
+                    "source_name": "Novetta Winnti April 2015"
+                },
+                {
+                    "url": "http://blogs.cisco.com/security/talos/threat-spotlight-group-72",
+                    "description": "Esler, J., Lee, M., and Williams, C.. (2014, October 14). Threat Spotlight: Group 72. Retrieved January 14, 2016.",
+                    "source_name": "Cisco Group 72"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "id": "course-of-action--1dcaeb21-9348-42ea-950a-f842aaf1ae1f",
+            "description": "Prevent access to file shares, remote access to systems, unnecessary services. Mechanisms to limit access may include use of network concentrators, RDP gateways, etc.",
+            "x_mitre_version": "1.0",
+            "modified": "2020-06-09T20:51:00.027Z",
+            "created": "2019-06-11T16:30:16.672Z",
+            "name": "Limit Access to Resource Over Network",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1035",
+                    "external_id": "M1035",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-10-21T19:08:13.228Z",
+            "name": "User Training",
+            "description": "Train users to be aware of access or manipulation attempts by an adversary to reduce the risk of successful spearphishing, social engineering, and other techniques that involve user interaction.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.2",
+            "created": "2019-06-06T16:50:04.963Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1017",
+                    "external_id": "M1017",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "id": "course-of-action--2a4f6c11-a4a7-4cb9-b0ef-6ae1bb3a718a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-06-19T16:50:45.681Z",
+            "name": "Operating System Configuration",
+            "description": "Make configuration changes related to the operating system or a common feature of the operating system that result in system hardening against techniques.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2019-06-06T21:16:18.709Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1028",
+                    "external_id": "M1028",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "id": "course-of-action--2f316f6c-ae42-44fe-adf8-150989e0f6d3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-03-31T13:08:36.655Z",
+            "name": "Privileged Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to privileged accounts, including SYSTEM and root.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2019-06-06T21:09:47.115Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1026",
+                    "external_id": "M1026",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "id": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-06-20T20:11:42.195Z",
+            "id": "course-of-action--47e0e9fe-96ce-4f65-8bb1-8be1feacb5db",
+            "description": "Block execution of code on a system through application control, and/or script blocking.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Execution Prevention",
+            "created": "2019-06-11T16:35:25.488Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1038",
+                    "external_id": "M1038",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-03-31T13:09:22.442Z",
+            "id": "course-of-action--49c06d54-9002-491d-9147-8efb537fbd26",
+            "description": "Use capabilities to prevent successful credential access by adversaries; including blocking forms of credential dumping.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Credential Access Protection",
+            "created": "2019-06-11T16:47:12.859Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1043",
+                    "external_id": "M1043",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Privileged Process Integrity",
+            "description": "Protect processes with high privileges that can be used to interact with critical system components through use of protected process light, anti-process injection defenses, or other process integrity enforcement measures.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-05-20T13:13:48.900Z",
+            "id": "course-of-action--72dade3e-1cba-4182-b3b3-a77ca52f02a1",
+            "created": "2019-06-06T21:08:58.465Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1025",
+                    "external_id": "M1025",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Password Policies",
+            "description": "Set and enforce secure password policies for accounts.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-06T21:10:35.792Z",
+            "id": "course-of-action--90c218c3-fbf8-4830-98a7-e8cfb7eaa485",
+            "created": "2019-06-06T21:10:35.792Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1027",
+                    "external_id": "M1027",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Use capabilities to prevent suspicious behavior patterns from occurring on endpoint systems. This could include suspicious process, file, API call, etc. behavior.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-11T16:43:05.712Z",
+            "id": "course-of-action--90f39ee1-d5a3-4aaa-9f28-3b42815b0d46",
+            "created": "2019-06-11T16:43:05.712Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1040",
+                    "external_id": "M1040",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "id": "course-of-action--93e7968a-9074-4eac-8ae9-9f5200ec3317",
+            "description": "Manage the creation, modification, use, and permissions associated to user accounts.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-05-20T13:49:12.270Z",
+            "created": "2019-06-06T16:50:58.767Z",
+            "name": "User Account Management",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1018",
+                    "external_id": "M1018",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-07-14T22:22:06.356Z",
+            "id": "course-of-action--15437c6d-b998-4a36-be41-4ace3d54d266",
+            "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Vulnerability Scanning",
+            "created": "2019-06-06T16:47:30.700Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1016",
+                    "external_id": "M1016",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "id": "course-of-action--86598de0-b347-4928-9eb0-0acbfc21908c",
+            "description": "Architect sections of the network to isolate critical systems, functions, or resources. Use physical and logical segmentation to prevent access to potentially sensitive systems and information. Use a DMZ to contain any internet-facing services that should not be exposed from the internal network. Configure separate virtual private cloud (VPC) instances to isolate critical cloud systems.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-05-14T13:05:39.500Z",
+            "created": "2019-06-10T20:41:03.271Z",
+            "name": "Network Segmentation",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1030",
+                    "external_id": "M1030",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Network Intrusion Prevention",
+            "description": "Use intrusion detection signatures to block traffic at network boundaries.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-10T20:46:02.263Z",
+            "id": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "created": "2019-06-10T20:46:02.263Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1031",
+                    "external_id": "M1031",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "id": "course-of-action--b9f0c069-abbe-4a07-a245-2481219a1463",
+            "description": "Restrict execution of code to a virtual environment on or in transit to an endpoint system.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-31T13:08:03.851Z",
+            "created": "2019-06-11T17:06:56.230Z",
+            "name": "Application Isolation and Sandboxing",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1048",
+                    "external_id": "M1048",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2019-06-10T20:53:36.319Z",
+            "id": "course-of-action--b045d015-6bed-4490-bd38-56b41ece59a0",
+            "description": "Use two or more pieces of evidence to authenticate to a system; such as username and password in addition to a token from a physical smart card or token generator.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.0",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Multi-factor Authentication",
+            "created": "2019-06-10T20:53:36.319Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1032",
+                    "external_id": "M1032",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "id": "course-of-action--cc2399fd-3cd3-4319-8d0a-fbd6420cdaf8",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-11-19T20:44:07.442Z",
+            "created": "2019-06-11T17:06:14.029Z",
+            "name": "Audit",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1047",
+                    "external_id": "M1047",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Exploit Protection",
+            "description": "Use capabilities to detect and block conditions that may lead to or be indicative of a software exploit occurring.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-06-20T20:22:55.938Z",
+            "id": "course-of-action--d2a24649-9694-4c97-9c62-ce7b270bf6a3",
+            "created": "2019-06-11T17:10:57.070Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1050",
+                    "external_id": "M1050",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Update Software",
+            "description": "Perform regular software updates to mitigate exploitation risk.",
+            "x_mitre_version": "1.0",
+            "modified": "2020-07-07T12:42:39.005Z",
+            "id": "course-of-action--e5d930e9-775a-40ad-9bdb-b941d8dfe86b",
+            "created": "2019-06-11T17:12:55.207Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1051",
+                    "external_id": "M1051",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "id": "course-of-action--e3388c78-2a8d-47c2-8422-c1398b324462",
+            "description": "Configure Active Directory to prevent use of certain techniques; use SID Filtering, etc.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-05-29T16:34:40.344Z",
+            "created": "2019-06-06T16:39:58.291Z",
+            "name": "Active Directory Configuration",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1015",
+                    "external_id": "M1015",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Remove or deny access to unnecessary and potentially vulnerable software to prevent abuse by adversaries.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-31T13:12:04.776Z",
+            "id": "course-of-action--eb88d97c-32f1-40be-80f0-d61a4b0b4b31",
+            "created": "2019-06-11T16:45:19.740Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1042",
+                    "external_id": "M1042",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Encrypt Sensitive Information",
+            "description": "Protect sensitive information with strong encryption.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-11T16:43:44.834Z",
+            "id": "course-of-action--feff9142-e8c2-46f4-842b-bd6fb3d41157",
+            "created": "2019-06-11T16:43:44.834Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1041",
+                    "external_id": "M1041",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Hydraq",
+            "x_mitre_aliases": [
+                "Hydraq",
+                "Aurora",
+                "9002 RAT"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-01-06T19:32:28.374Z",
+            "created": "2018-04-18T17:59:24.739Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--73a4793a-ce55-4159-b2a6-208ef29b326f",
+            "description": "[Hydraq](https://attack.mitre.org/software/S0203) is a data-theft trojan first used by [Elderwood](https://attack.mitre.org/groups/G0066) in the 2009 Google intrusion known as Operation Aurora, though variations of this trojan have been used in more recent campaigns by other Chinese actors, possibly including [APT17](https://attack.mitre.org/groups/G0025). (Citation: MicroFocus 9002 Aug 2016) (Citation: Symantec Elderwood Sept 2012) (Citation: Symantec Trojan.Hydraq Jan 2010) (Citation: ASERT Seven Pointed Dagger Aug 2015) (Citation: FireEye DeputyDog 9002 November 2013) (Citation: ProofPoint GoT 9002 Aug 2017) (Citation: FireEye Sunshop Campaign May 2013) (Citation: PaloAlto 3102 Sept 2015)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0203",
+                    "external_id": "S0203",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Symantec Elderwood Sept 2012) (Citation: Symantec Trojan.Hydraq Jan 2010)",
+                    "source_name": "Hydraq"
+                },
+                {
+                    "description": "(Citation: Symantec Elderwood Sept 2012) (Citation: Symantec Trojan.Hydraq Jan 2010)",
+                    "source_name": "Aurora"
+                },
+                {
+                    "description": "(Citation: MicroFocus 9002 Aug 2016)",
+                    "source_name": "9002 RAT"
+                },
+                {
+                    "url": "https://community.softwaregrp.com/t5/Security-Research/9002-RAT-a-second-building-on-the-left/ba-p/228686#.WosBVKjwZPZ",
+                    "description": "Petrovsky, O. (2016, August 30). \u201c9002 RAT\u201d -- a second building on the left. Retrieved February 20, 2018.",
+                    "source_name": "MicroFocus 9002 Aug 2016"
+                },
+                {
+                    "source_name": "Symantec Elderwood Sept 2012",
+                    "description": "O'Gorman, G., and McDonald, G.. (2012, September 6). The Elderwood Project. Retrieved February 15, 2018.",
+                    "url": "https://web.archive.org/web/20190717233006/http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-elderwood-project.pdf"
+                },
+                {
+                    "url": "https://www.symantec.com/connect/blogs/trojanhydraq-incident",
+                    "description": "Symantec Security Response. (2010, January 18). The Trojan.Hydraq Incident. Retrieved February 20, 2018.",
+                    "source_name": "Symantec Trojan.Hydraq Jan 2010"
+                },
+                {
+                    "url": "https://www.arbornetworks.com/blog/asert/wp-content/uploads/2016/01/ASERT-Threat-Intelligence-Brief-2015-08-Uncovering-the-Seven-Point-Dagger.pdf",
+                    "description": "ASERT. (2015, August). ASERT Threat Intelligence Report \u2013 Uncovering the Seven Pointed Dagger. Retrieved March 19, 2018.",
+                    "source_name": "ASERT Seven Pointed Dagger Aug 2015"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2013/11/operation-ephemeral-hydra-ie-zero-day-linked-to-deputydog-uses-diskless-method.html",
+                    "description": "Moran, N. et al.. (2013, November 10). Operation Ephemeral Hydra: IE Zero-Day Linked to DeputyDog Uses Diskless Method. Retrieved March 19, 2018.",
+                    "source_name": "FireEye DeputyDog 9002 November 2013"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/operation-rat-cook-chinese-apt-actors-use-fake-game-thrones-leaks-lures",
+                    "description": "Huss, D. & Mesa, M. (2017, August 25). Operation RAT Cook: Chinese APT actors use fake Game of Thrones leaks as lures. Retrieved March 19, 2018.",
+                    "source_name": "ProofPoint GoT 9002 Aug 2017"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2013/05/ready-for-summer-the-sunshop-campaign.html",
+                    "description": "Moran, N. (2013, May 20). Ready for Summer: The Sunshop Campaign. Retrieved March 19, 2018.",
+                    "source_name": "FireEye Sunshop Campaign May 2013"
+                },
+                {
+                    "url": "https://researchcenter.paloaltonetworks.com/2015/09/chinese-actors-use-3102-malware-in-attacks-on-us-government-and-eu-media/",
+                    "description": "Falcone, R. & Miller-Osborn, J. (2015, September 23). Chinese Actors Use \u20183102\u2019 Malware in Attacks on US Government and EU Media. Retrieved March 19, 2018.",
+                    "source_name": "PaloAlto 3102 Sept 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Derusbi",
+            "x_mitre_aliases": [
+                "Derusbi",
+                "PHOTO"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T18:59:10.146Z",
+            "created": "2017-05-31T21:32:18.668Z",
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux"
+            ],
+            "id": "malware--94379dec-5c87-49db-b36e-66abc0b81344",
+            "description": "[Derusbi](https://attack.mitre.org/software/S0021) is malware used by multiple Chinese APT groups. (Citation: Novetta-Axiom) (Citation: ThreatConnect Anthem) Both Windows and Linux variants have been observed. (Citation: Fidelis Turbo)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0021",
+                    "url": "https://attack.mitre.org/software/S0021"
+                },
+                {
+                    "description": "(Citation: Novetta-Axiom)",
+                    "source_name": "Derusbi"
+                },
+                {
+                    "description": "(Citation: FireEye Periscope March 2018)",
+                    "source_name": "PHOTO"
+                },
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                },
+                {
+                    "source_name": "ThreatConnect Anthem",
+                    "description": "ThreatConnect Research Team. (2015, February 27). The Anthem Hack: All Roads Lead to China. Retrieved January 26, 2016.",
+                    "url": "https://www.threatconnect.com/the-anthem-hack-all-roads-lead-to-china/"
+                },
+                {
+                    "source_name": "Fidelis Turbo",
+                    "description": "Fidelis Cybersecurity. (2016, February 29). The Turbo Campaign, Featuring Derusbi for 64-bit Linux. Retrieved March 2, 2016.",
+                    "url": "https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2016/2016.02.29.Turbo_Campaign_Derusbi/TA_Fidelis_Turbo_1602_0.pdf"
+                },
+                {
+                    "source_name": "FireEye Periscope March 2018",
+                    "description": "FireEye. (2018, March 16). Suspected Chinese Cyber Espionage Group (TEMP.Periscope) Targeting U.S. Engineering and Maritime Industries. Retrieved April 11, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/03/suspected-chinese-espionage-group-targeting-maritime-and-engineering-industries.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Hikit",
+            "x_mitre_aliases": [
+                "Hikit"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-09T18:59:27.117Z",
+            "created": "2017-05-31T21:32:14.124Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--95047f03-4811-4300-922e-1ba937d53a61",
+            "description": "[Hikit](https://attack.mitre.org/software/S0009) is malware that has been used by [Axiom](https://attack.mitre.org/groups/G0001) for late-stage persistence and exfiltration after the initial compromise.(Citation: Novetta-Axiom)(Citation: FireEye Hikit Rootkit)",
+            "x_mitre_contributors": [
+                "Christopher Glyer, Mandiant, @cglyer"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0009",
+                    "external_id": "S0009",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                },
+                {
+                    "source_name": "FireEye Hikit Rootkit",
+                    "description": "Glyer, C., Kazanciyan, R. (2012, August 20). The \u201cHikit\u201d Rootkit: Advanced and Persistent Attack Techniques (Part 1). Retrieved June 6, 2016.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2012/08/hikit-rootkit-advanced-persistent-attack-techniques-part-1.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "ZxShell",
+            "x_mitre_aliases": [
+                "ZxShell",
+                "Sensocode"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T18:32:58.702Z",
+            "created": "2019-09-24T12:59:57.991Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--cfc75b0d-e579-40ae-ad07-a1ce00d49a6c",
+            "description": "[ZxShell](https://attack.mitre.org/software/S0412) is a remote administration tool and backdoor that can be downloaded from the Internet, particularly from Chinese hacker websites. It has been used since at least 2004.(Citation: FireEye APT41 Aug 2019)(Citation: Talos ZxShell Oct 2014 )",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0412",
+                    "external_id": "S0412",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye APT41 Aug 2019)(Citation: Talos ZxShell Oct 2014 )",
+                    "source_name": "ZxShell"
+                },
+                {
+                    "description": "(Citation: Talos ZxShell Oct 2014 )",
+                    "source_name": "Sensocode"
+                },
+                {
+                    "source_name": "FireEye APT41 Aug 2019",
+                    "description": "Fraser, N., et al. (2019, August 7). Double DragonAPT41, a dual espionage and cyber crime operation APT41. Retrieved September 23, 2019.",
+                    "url": "https://content.fireeye.com/apt-41/rpt-apt41"
+                },
+                {
+                    "url": "https://blogs.cisco.com/security/talos/opening-zxshell",
+                    "description": "Allievi, A., et al. (2014, October 28). Threat Spotlight: Group 72, Opening the ZxShell. Retrieved September 24, 2019.",
+                    "source_name": "Talos ZxShell Oct 2014 "
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0c8fdb59-a28f-4f8f-a788-9e3e8928c6d5",
+            "description": "Application isolation will limit what other processes and system features the exploited target can access.",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-07-20T21:51:46.282Z",
+            "source_ref": "course-of-action--b9f0c069-abbe-4a07-a245-2481219a1463",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-24T13:44:34.840Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0c393451-a750-4c8a-81be-4d0e9e84a6eb",
+            "description": "Some malware that has been used by [Axiom](https://attack.mitre.org/groups/G0001) also uses steganography to hide communication in PNG image files.(Citation: Novetta-Axiom)",
+            "target_ref": "attack-pattern--eec23884-3fa1-4d8a-ac50-6f104d51e235",
+            "modified": "2020-03-20T18:43:10.704Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-20T18:43:10.704Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1aee1049-89be-45b8-ae2f-83bf4e35d5a3",
+            "description": "(Citation: Talos ZxShell Oct 2014 )",
+            "target_ref": "malware--cfc75b0d-e579-40ae-ad07-a1ce00d49a6c",
+            "modified": "2019-09-24T13:32:51.555Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-09-24T13:32:51.555Z",
+            "external_references": [
+                {
+                    "source_name": "Talos ZxShell Oct 2014 ",
+                    "description": "Allievi, A., et al. (2014, October 28). Threat Spotlight: Group 72, Opening the ZxShell. Retrieved September 24, 2019.",
+                    "url": "https://blogs.cisco.com/security/talos/opening-zxshell"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3b726298-74dc-4f8a-b58d-f623bc645124",
+            "description": "Segment externally facing servers and services from the rest of the network with a DMZ or on separate hosting infrastructure.",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-07-20T21:51:46.288Z",
+            "source_ref": "course-of-action--86598de0-b347-4928-9eb0-0acbfc21908c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-24T13:44:34.852Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3e3f06c4-3105-4d07-b876-702005e9b59a",
+            "description": "Ensure Domain Controller backups are properly secured.",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.806Z",
+            "source_ref": "course-of-action--feff9142-e8c2-46f4-842b-bd6fb3d41157",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-03-25T16:25:17.386Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4b5e4611-ed5c-4223-bc75-5e272090b887",
+            "description": "Change GPOs to define shorter timeouts sessions and maximum amount of time any single session can be active. Change GPOs to specify the maximum amount of time that a disconnected session stays active on the RD session host server.(Citation: Windows RDP Sessions)",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-05-20T13:33:51.054Z",
+            "source_ref": "course-of-action--2f316f6c-ae42-44fe-adf8-150989e0f6d3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.500Z",
+            "external_references": [
+                {
+                    "source_name": "Windows RDP Sessions",
+                    "description": "Microsoft. (n.d.). Configure Timeout and Reconnection Settings for Remote Desktop Services Sessions. Retrieved December 11, 2017.",
+                    "url": "https://technet.microsoft.com/en-us/library/cc754272(v=ws.11).aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4c308ec1-f0c6-4444-af7d-ff045204c326",
+            "description": "Regularly scan externally facing systems for vulnerabilities and establish procedures to rapidly patch systems when critical vulnerabilities are discovered through scanning and through public disclosure.(Citation: OWASP Top 10)",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-07-20T21:51:46.269Z",
+            "source_ref": "course-of-action--15437c6d-b998-4a36-be41-4ace3d54d266",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-07-17T21:07:56.528Z",
+            "external_references": [
+                {
+                    "source_name": "OWASP Top 10",
+                    "description": "OWASP. (2018, February 23). OWASP Top Ten Project. Retrieved April 3, 2018.",
+                    "url": "https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4d50a045-d85d-481f-ac7d-672065f1e348",
+            "description": "Use least privilege for service accounts will limit what permissions the exploited process gets on the rest of the system.",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-07-20T21:51:46.275Z",
+            "source_ref": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-24T13:44:34.838Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5ab4f110-5fd1-466b-9437-0132ae390ac9",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-07-20T21:51:46.084Z",
+            "source_ref": "course-of-action--65da1eb6-d35d-4853-b280-98a76c0aef53",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2018-04-18T17:59:24.739Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7a3426bf-1751-43db-b844-6bf388a4c817",
+            "description": "Ensure that local administrator accounts have complex, unique passwords across all systems on the network.",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.677Z",
+            "source_ref": "course-of-action--90c218c3-fbf8-4830-98a7-e8cfb7eaa485",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-14T17:21:38.582Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7e8ca453-aee5-48c1-a891-f44a742a95ed",
+            "description": "Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.795Z",
+            "source_ref": "course-of-action--2a4f6c11-a4a7-4cb9-b0ef-6ae1bb3a718a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-07-17T15:45:37.493Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8fae4ace-c3b5-4c4b-8c1a-98a32c692849",
+            "description": "Limit remote user permissions if remote access is necessary.",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-02-25T19:23:34.337Z",
+            "source_ref": "course-of-action--93e7968a-9074-4eac-8ae9-9f5200ec3317",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.473Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--36e86ea2-e0d4-4ade-bae8-212a78c8d569",
+            "description": "Audit the Remote Desktop Users group membership regularly. Remove unnecessary accounts and groups from Remote Desktop Users groups.",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-02-25T19:23:34.413Z",
+            "source_ref": "course-of-action--cc2399fd-3cd3-4319-8d0a-fbd6420cdaf8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.524Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--53a95297-1cce-401c-99a3-34079e878fac",
+            "description": "Web Application Firewalls may be used to limit exposure of applications to prevent exploit traffic from reaching the application.",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-07-20T21:51:46.205Z",
+            "source_ref": "course-of-action--d2a24649-9694-4c97-9c62-ce7b270bf6a3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-07-17T20:50:44.740Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--70f3eaca-179d-4412-ad32-c4e3cf60c27c",
+            "description": "The [Axiom](https://attack.mitre.org/groups/G0001) group is known to have used RDP during operations.(Citation: Novetta-Axiom)",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2019-03-22T19:55:13.749Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.031Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--82cf0b15-1cd0-4539-b3fe-63ee4d379113",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level.",
+            "target_ref": "attack-pattern--ad255bfe-a9e6-4b52-a258-8d3462abe842",
+            "modified": "2020-03-15T00:27:20.219Z",
+            "source_ref": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-21T14:17:49.609Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--375d3b8b-0e1b-4d3b-b31f-43b0e98436a5",
+            "description": "Use remote desktop gateways.",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-02-25T19:23:34.411Z",
+            "source_ref": "course-of-action--1dcaeb21-9348-42ea-950a-f842aaf1ae1f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.526Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--703a5971-a542-4d7d-8bf5-7a9adb1db852",
+            "description": "Disable the RDP service if it is unnecessary.",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-02-25T19:23:34.421Z",
+            "source_ref": "course-of-action--eb88d97c-32f1-40be-80f0-d61a4b0b4b31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.528Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--782ee381-61f2-4405-b399-9faa99d00fea",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to secure LSASS and prevent credential stealing. (Citation: win10_asr)",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-09-20T17:42:18.463Z",
+            "source_ref": "course-of-action--90f39ee1-d5a3-4aaa-9f28-3b42815b0d46",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2021-07-06T23:02:53.172Z",
+            "external_references": [
+                {
+                    "url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction",
+                    "description": "Microsoft. (2021, July 2). Use attack surface reduction rules to prevent malware infection. Retrieved June 24, 2021.",
+                    "source_name": "win10_asr"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3951503f-c8e9-4331-834e-df4e4afda5fb",
+            "description": "Do not leave RDP accessible from the internet. Enable firewall rules to block RDP traffic between network security zones within a network.",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-02-25T19:23:34.418Z",
+            "source_ref": "course-of-action--86598de0-b347-4928-9eb0-0acbfc21908c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.502Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--96014091-aba9-4b8f-ac6a-6cdeb593cf30",
+            "description": "Use multi-factor authentication for remote logins.(Citation: Berkley Secure)",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-02-25T19:23:34.414Z",
+            "source_ref": "course-of-action--b045d015-6bed-4490-bd38-56b41ece59a0",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.517Z",
+            "external_references": [
+                {
+                    "source_name": "Berkley Secure",
+                    "description": "Berkeley Security, University of California. (n.d.). Securing Remote Desktop for System Administrators. Retrieved November 4, 2014.",
+                    "url": "https://security.berkeley.edu/node/94"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a6f27258-cf6a-4d75-a3f0-5de085d528d2",
+            "description": "\nOn Windows 8.1 and Windows Server 2012 R2, enable Protected Process Light for LSA.(Citation: Microsoft LSA)",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.799Z",
+            "source_ref": "course-of-action--72dade3e-1cba-4182-b3b3-a77ca52f02a1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-07-17T15:45:37.529Z",
+            "external_references": [
+                {
+                    "source_name": "Microsoft LSA",
+                    "description": "Microsoft. (2013, July 31). Configuring Additional LSA Protection. Retrieved February 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn408187.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a266294c-18a7-4a6e-8291-a901748c929c",
+            "description": "Windows:\nDo not put user or admin domain accounts in the local administrator groups across systems unless they are tightly controlled, as this is often equivalent to having a local administrator account with the same password on all systems. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers.(Citation: Microsoft Securing Privileged Access)\n\nLinux:\nScraping the passwords from memory requires root privileges. Follow best practices in restricting access to privileged accounts to avoid hostile programs from accessing such sensitive regions of memory.",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.616Z",
+            "source_ref": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-14T17:21:38.567Z",
+            "external_references": [
+                {
+                    "source_name": "Microsoft Securing Privileged Access",
+                    "description": "Plett, C., Poggemeyer, L. (12, October 26). Securing Privileged Access Reference Material. Retrieved April 25, 2017.",
+                    "url": "https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material#a-nameesaebmaesae-administrative-forest-design-approach"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a8122755-90fe-4b68-8fa1-55ed7be90931",
+            "description": "(Citation: Novetta-Axiom)",
+            "target_ref": "malware--95047f03-4811-4300-922e-1ba937d53a61",
+            "modified": "2019-03-22T19:55:13.748Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.032Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b9f4c6ef-d0bd-4651-9445-4705e1fd85f2",
+            "description": "[Axiom](https://attack.mitre.org/groups/G0001) actors have been known to use the Sticky Keys replacement within RDP sessions to obtain persistence.(Citation: Novetta-Axiom)",
+            "target_ref": "attack-pattern--70e52b04-2a0c-4cea-9d18-7149f1df9dc5",
+            "modified": "2019-03-22T19:55:13.723Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.031Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c7e86d53-378b-4cb5-8d86-2b7b5f4c1232",
+            "description": "If possible, use a Remote Desktop Gateway to manage connections and security configuration of RDP within a network.(Citation: TechNet RDP Gateway)",
+            "target_ref": "attack-pattern--70e52b04-2a0c-4cea-9d18-7149f1df9dc5",
+            "modified": "2020-04-28T13:27:20.646Z",
+            "source_ref": "course-of-action--1dcaeb21-9348-42ea-950a-f842aaf1ae1f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-01-24T14:32:40.508Z",
+            "external_references": [
+                {
+                    "source_name": "TechNet RDP Gateway",
+                    "description": "Microsoft. (n.d.). Overview of Remote Desktop Gateway. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/cc731150.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c2097180-b02f-4ffc-b0a6-8e8bb899a551",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. ",
+            "target_ref": "attack-pattern--eec23884-3fa1-4d8a-ac50-6f104d51e235",
+            "modified": "2020-03-15T00:37:59.151Z",
+            "source_ref": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-03-15T00:37:59.151Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cc458462-2c4e-443c-977a-805ea1d6e5a8",
+            "description": "To use this technique remotely, an adversary must use it in conjunction with RDP. Ensure that Network Level Authentication is enabled to force the remote desktop session to authenticate before the session is created and the login screen displayed. It is enabled by default on Windows Vista and later.(Citation: TechNet RDP NLA)",
+            "target_ref": "attack-pattern--70e52b04-2a0c-4cea-9d18-7149f1df9dc5",
+            "modified": "2020-04-28T13:27:20.643Z",
+            "source_ref": "course-of-action--2f316f6c-ae42-44fe-adf8-150989e0f6d3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-01-24T14:32:40.504Z",
+            "external_references": [
+                {
+                    "source_name": "TechNet RDP NLA",
+                    "description": "Microsoft. (n.d.). Configure Network Level Authentication for Remote Desktop Services Connections. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/cc732713.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ccec5b80-e16a-4379-926f-08c1c821497a",
+            "description": "Adversaries can replace accessibility features binaries with alternate binaries to execute this technique. Identify and block potentially malicious software executed through accessibility features functionality by using application control (Citation: Beechey 2010) tools, like Windows Defender Application Control(Citation: Microsoft Windows Defender Application Control), AppLocker, (Citation: Windows Commands JPCERT) (Citation: NSA MS AppLocker) or Software Restriction Policies (Citation: Corio 2008) where appropriate. (Citation: TechNet Applocker vs SRP)",
+            "target_ref": "attack-pattern--70e52b04-2a0c-4cea-9d18-7149f1df9dc5",
+            "modified": "2021-08-23T20:25:22.088Z",
+            "source_ref": "course-of-action--47e0e9fe-96ce-4f65-8bb1-8be1feacb5db",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-01-24T14:32:40.526Z",
+            "external_references": [
+                {
+                    "source_name": "Beechey 2010",
+                    "description": "Beechey, J. (2010, December). Application Whitelisting: Panacea or Propaganda?. Retrieved November 18, 2014.",
+                    "url": "http://www.sans.org/reading-room/whitepapers/application/application-whitelisting-panacea-propaganda-33599"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control",
+                    "description": "Gorzelany, A., Hall, J., Poggemeyer, L.. (2019, January 7). Windows Defender Application Control. Retrieved July 16, 2019.",
+                    "source_name": "Microsoft Windows Defender Application Control"
+                },
+                {
+                    "source_name": "Windows Commands JPCERT",
+                    "description": "Tomonaga, S. (2016, January 26). Windows Commands Abused by Attackers. Retrieved February 2, 2016.",
+                    "url": "https://blogs.jpcert.or.jp/en/2016/01/windows-commands-abused-by-attackers.html"
+                },
+                {
+                    "source_name": "NSA MS AppLocker",
+                    "description": "NSA Information Assurance Directorate. (2014, August). Application Whitelisting Using Microsoft AppLocker. Retrieved March 31, 2016.",
+                    "url": "https://apps.nsa.gov/iaarchive/library/ia-guidance/tech-briefs/application-whitelisting-using-microsoft-applocker.cfm"
+                },
+                {
+                    "source_name": "Corio 2008",
+                    "description": "Corio, C., & Sayana, D. P. (2008, June). Application Lockdown with Software Restriction Policies. Retrieved November 18, 2014.",
+                    "url": "http://technet.microsoft.com/en-us/magazine/2008.06.srp.aspx"
+                },
+                {
+                    "source_name": "TechNet Applocker vs SRP",
+                    "description": "Microsoft. (2012, June 27). Using Software Restriction Policies and AppLocker Policies. Retrieved April 7, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/ee791851.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d373eebb-b578-4b59-9de1-2946bf837d96",
+            "description": "Update software regularly by employing patch management for externally exposed applications.",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-07-20T21:51:46.292Z",
+            "source_ref": "course-of-action--e5d930e9-775a-40ad-9bdb-b941d8dfe86b",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-24T13:44:34.822Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e4c7c4b7-fe19-4433-acd9-ec94f436f381",
+            "description": "(Citation: Novetta-Axiom)",
+            "target_ref": "malware--94379dec-5c87-49db-b36e-66abc0b81344",
+            "modified": "2019-03-22T19:55:13.767Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.032Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e7e4be4c-a6ae-44bc-b3af-9c0c41f9212e",
+            "description": "Consider removing the local Administrators group from the list of groups allowed to log in through RDP.",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2020-02-25T19:23:34.362Z",
+            "source_ref": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-12T14:37:27.489Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e11a3d87-d9cf-4dcf-b722-fef4b0a324b4",
+            "description": "[Axiom](https://attack.mitre.org/groups/G0001) has been observed using SQL injection to gain access to systems.(Citation: Novetta-Axiom)(Citation: Cisco Group 72)",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2019-03-22T19:55:13.721Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-04-18T17:59:24.739Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                },
+                {
+                    "source_name": "Cisco Group 72",
+                    "description": "Esler, J., Lee, M., and Williams, C.. (2014, October 14). Threat Spotlight: Group 72. Retrieved January 14, 2016.",
+                    "url": "http://blogs.cisco.com/security/talos/threat-spotlight-group-72"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ee8ef62a-fcde-44b0-aa63-4028dad703aa",
+            "description": "With Windows 10, Microsoft implemented new protections called Credential Guard to protect the LSA secrets that can be used to obtain credentials through forms of credential dumping. It is not configured by default and has hardware and firmware system requirements. (Citation: TechNet Credential Guard) It also does not protect against all forms of credential dumping. (Citation: GitHub SHB Credential Guard)",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.690Z",
+            "source_ref": "course-of-action--49c06d54-9002-491d-9147-8efb537fbd26",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-06-14T17:21:38.632Z",
+            "external_references": [
+                {
+                    "source_name": "TechNet Credential Guard",
+                    "description": "Lich, B. (2016, May 31). Protect derived domain credentials with Credential Guard. Retrieved June 1, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard"
+                },
+                {
+                    "source_name": "GitHub SHB Credential Guard",
+                    "description": "NSA IAD. (2017, April 20). Secure Host Baseline - Credential Guard. Retrieved April 25, 2017.",
+                    "url": "https://github.com/iadgov/Secure-Host-Baseline/tree/master/Credential%20Guard"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ef79ec2f-fd7f-4f0b-851c-d215693987be",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.632Z",
+            "source_ref": "course-of-action--aeff5887-8f9e-48d5-a523-9b395e2ce80a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2017-05-31T21:33:27.017Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f0094ba8-a513-49bf-a5d7-961aaab13380",
+            "description": "(Citation: Novetta-Axiom)",
+            "target_ref": "malware--73a4793a-ce55-4159-b2a6-208ef29b326f",
+            "modified": "2019-03-22T19:55:13.760Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-04-18T17:59:24.739Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f837cc68-8715-4301-ae15-bf89c8b1f7ee",
+            "description": "The [Axiom](https://attack.mitre.org/groups/G0001) group has used other forms of obfuscation, include commingling legitimate traffic with communications traffic so that network streams appear legitimate.",
+            "target_ref": "attack-pattern--ad255bfe-a9e6-4b52-a258-8d3462abe842",
+            "modified": "2020-03-20T18:43:10.728Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.031Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fad2a504-6e00-4892-bf88-b49d6d18788c",
+            "description": "[Axiom](https://attack.mitre.org/groups/G0001) has been known to dump credentials.(Citation: Novetta-Axiom)",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2019-03-22T19:55:13.724Z",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.031Z",
+            "external_references": [
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fc31837d-530f-45e5-b9f8-bf6268c3ef03",
+            "description": "\nManage the access control list for \u201cReplicating Directory Changes\u201d and other permissions associated with domain controller replication. (Citation: AdSecurity DCSync Sept 2015) (Citation: Microsoft Replication ACL) Consider adding users to the \"Protected Users\" Active Directory security group. This can help limit the caching of users' plaintext credentials.(Citation: Microsoft Protected Users Security Group)",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.809Z",
+            "source_ref": "course-of-action--e3388c78-2a8d-47c2-8422-c1398b324462",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-07-17T15:45:37.521Z",
+            "external_references": [
+                {
+                    "source_name": "AdSecurity DCSync Sept 2015",
+                    "description": "Metcalf, S. (2015, September 25). Mimikatz DCSync Usage, Exploitation, and Detection. Retrieved December 4, 2017.",
+                    "url": "https://adsecurity.org/?p=1729"
+                },
+                {
+                    "source_name": "Microsoft Replication ACL",
+                    "description": "Microsoft. (n.d.). How to grant the \"Replicating Directory Changes\" permission for the Microsoft Metadirectory Services ADMA service account. Retrieved December 4, 2017.",
+                    "url": "https://support.microsoft.com/help/303972/how-to-grant-the-replicating-directory-changes-permission-for-the-micr"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group",
+                    "description": "Microsoft. (2016, October 12). Protected Users Security Group. Retrieved May 29, 2020.",
+                    "source_name": "Microsoft Protected Users Security Group"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fe849763-78b9-4b8a-9219-2781ac7b00e8",
+            "description": "\nConsider disabling or restricting NTLM.(Citation: Microsoft Disable NTLM Nov 2012) Consider disabling WDigest authentication.(Citation: Microsoft WDigest Mit)",
+            "target_ref": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "modified": "2021-07-20T23:03:00.785Z",
+            "source_ref": "course-of-action--2f316f6c-ae42-44fe-adf8-150989e0f6d3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2019-07-17T15:45:37.582Z",
+            "external_references": [
+                {
+                    "source_name": "Microsoft Disable NTLM Nov 2012",
+                    "description": "Microsoft. (2012, November 29). Using security policies to restrict NTLM traffic. Retrieved December 4, 2017.",
+                    "url": "https://technet.microsoft.com/library/jj865668.aspx"
+                },
+                {
+                    "url": "https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a",
+                    "description": "Microsoft. (2014, May 13). Microsoft Security Advisory: Update to improve credentials protection and management. Retrieved June 8, 2020.",
+                    "source_name": "Microsoft WDigest Mit"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "OS Credential Dumping",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Process: Process Access",
+                "Command: Command Execution",
+                "File: File Access",
+                "Windows Registry: Windows Registry Key Access",
+                "Active Directory: Active Directory Object Access",
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "2.1",
+            "modified": "2021-10-15T19:55:01.922Z",
+            "created": "2017-05-31T21:30:19.735Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22",
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM",
+                "root"
+            ],
+            "description": "Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software. Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.\n\nSeveral of the tools mentioned in associated sub-techniques may be used by both adversaries and professional security testers. Additional custom tools likely exist as well.\n",
+            "x_mitre_contributors": [
+                "Vincent Le Toux",
+                "Ed Williams, Trustwave, SpiderLabs"
+            ],
+            "x_mitre_detection": "### Windows\nMonitor for unexpected processes interacting with lsass.exe.(Citation: Medium Detecting Attempts to Steal Passwords from Memory) Common credential dumpers such as [Mimikatz](https://attack.mitre.org/software/S0002) access the LSA Subsystem Service (LSASS) process by opening the process, locating the LSA secrets key, and decrypting the sections in memory where credential details are stored. Credential dumpers may also use methods for reflective [Process Injection](https://attack.mitre.org/techniques/T1055) to reduce potential indicators of malicious activity.\n\nHash dumpers open the Security Accounts Manager (SAM) on the local file system (%SystemRoot%/system32/config/SAM) or create a dump of the Registry SAM key to access stored account password hashes. Some hash dumpers will open the local file system as a device and parse to the SAM table to avoid file access defenses. Others will make an in-memory copy of the SAM table before reading hashes. Detection of compromised [Valid Accounts](https://attack.mitre.org/techniques/T1078) in-use by adversaries may help as well. \n\nOn Windows 8.1 and Windows Server 2012 R2, monitor Windows Logs for LSASS.exe creation to verify that LSASS started as a protected process.\n\nMonitor processes and command-line arguments for program execution that may be indicative of credential dumping. Remote access tools may contain built-in features or incorporate existing tools like [Mimikatz](https://attack.mitre.org/software/S0002). [PowerShell](https://attack.mitre.org/techniques/T1059/001) scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module, (Citation: Powersploit) which may require additional logging features to be configured in the operating system to collect necessary information for analysis.\n\nMonitor domain controller logs for replication requests and other unscheduled activity possibly associated with DCSync. (Citation: Microsoft DRSR Dec 2017) (Citation: Microsoft GetNCCChanges) (Citation: Samba DRSUAPI) Note: Domain controllers may not log replication requests originating from the default domain controller account. (Citation: Harmj0y DCSync Sept 2015). Also monitor for network protocols  (Citation: Microsoft DRSR Dec 2017) (Citation: Microsoft NRPC Dec 2017) and other replication requests (Citation: Microsoft SAMR) from IPs not associated with known domain controllers. (Citation: AdSecurity DCSync Sept 2015)\n\n### Linux\nTo obtain the passwords and hashes stored in memory, processes must open a maps file in the /proc filesystem for the process being analyzed. This file is stored under the path <code>/proc/<pid>/maps</code>, where the <code><pid></code> directory is the unique pid of the program being interrogated for such authentication data. The AuditD monitoring tool, which ships stock in many Linux distributions, can be used to watch for hostile processes opening this file in the proc file system, alerting on the pid, process name, and arguments of such programs.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1003",
+                    "external_id": "T1003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Medium Detecting Attempts to Steal Passwords from Memory",
+                    "description": "French, D. (2018, October 2). Detecting Attempts to Steal Passwords from Memory. Retrieved October 11, 2019.",
+                    "url": "https://medium.com/threatpunter/detecting-attempts-to-steal-passwords-from-memory-558f16dce4ea"
+                },
+                {
+                    "source_name": "Powersploit",
+                    "description": "PowerSploit. (n.d.). Retrieved December 4, 2014.",
+                    "url": "https://github.com/mattifestation/PowerSploit"
+                },
+                {
+                    "source_name": "Microsoft DRSR Dec 2017",
+                    "description": "Microsoft. (2017, December 1). MS-DRSR Directory Replication Service (DRS) Remote Protocol. Retrieved December 4, 2017.",
+                    "url": "https://msdn.microsoft.com/library/cc228086.aspx"
+                },
+                {
+                    "source_name": "Microsoft GetNCCChanges",
+                    "description": "Microsoft. (n.d.). IDL_DRSGetNCChanges (Opnum 3). Retrieved December 4, 2017.",
+                    "url": "https://msdn.microsoft.com/library/dd207691.aspx"
+                },
+                {
+                    "source_name": "Samba DRSUAPI",
+                    "description": "SambaWiki. (n.d.). DRSUAPI. Retrieved December 4, 2017.",
+                    "url": "https://wiki.samba.org/index.php/DRSUAPI"
+                },
+                {
+                    "source_name": "Harmj0y DCSync Sept 2015",
+                    "description": "Schroeder, W. (2015, September 22). Mimikatz and DCSync and ExtraSids, Oh My. Retrieved December 4, 2017.",
+                    "url": "http://www.harmj0y.net/blog/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/"
+                },
+                {
+                    "source_name": "Microsoft NRPC Dec 2017",
+                    "description": "Microsoft. (2017, December 1). MS-NRPC - Netlogon Remote Protocol. Retrieved December 6, 2017.",
+                    "url": "https://msdn.microsoft.com/library/cc237008.aspx"
+                },
+                {
+                    "source_name": "Microsoft SAMR",
+                    "description": "Microsoft. (n.d.). MS-SAMR Security Account Manager (SAM) Remote Protocol (Client-to-Server) - Transport. Retrieved December 4, 2017.",
+                    "url": "https://msdn.microsoft.com/library/cc245496.aspx"
+                },
+                {
+                    "source_name": "AdSecurity DCSync Sept 2015",
+                    "description": "Metcalf, S. (2015, September 25). Mimikatz DCSync Usage, Exploitation, and Detection. Retrieved December 4, 2017.",
+                    "url": "https://adsecurity.org/?p=1729"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-07-20T21:51:45.776Z",
+            "name": "Exploit Public-Facing Application",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "2.3",
+            "created": "2018-04-18T17:59:24.739Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Network",
+                "Linux",
+                "macOS",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "description": "Adversaries may attempt to take advantage of a weakness in an Internet-facing computer or program using software, data, or commands in order to cause unintended or unanticipated behavior. The weakness in the system can be a bug, a glitch, or a design vulnerability. These applications are often websites, but can include databases (like SQL)(Citation: NVD CVE-2016-6662), standard services (like SMB(Citation: CIS Multiple SMB Vulnerabilities) or SSH), network device administration and management protocols (like SNMP and Smart Install(Citation: US-CERT TA18-106A Network Infrastructure Devices 2018)(Citation: Cisco Blog Legacy Device Attacks)), and any other applications with Internet accessible open sockets, such as web servers and related services.(Citation: NVD CVE-2014-7169) Depending on the flaw being exploited this may include [Exploitation for Defense Evasion](https://attack.mitre.org/techniques/T1211). \n\nIf an application is hosted on cloud-based infrastructure and/or is containerized, then exploiting it may lead to compromise of the underlying instance or container. This can allow an adversary a path to access the cloud or container APIs, exploit container host access via [Escape to Host](https://attack.mitre.org/techniques/T1611), or take advantage of weak identity and access management policies.\n\nFor websites and databases, the OWASP top 10 and CWE top 25 highlight the most common web-based vulnerabilities.(Citation: OWASP Top 10)(Citation: CWE top 25)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "Monitor application logs for abnormal behavior that may indicate attempted or successful exploitation. Use deep packet inspection to look for artifacts of common exploit traffic, such as SQL injection. Web Application Firewalls may detect improper inputs attempting exploitation.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1190",
+                    "external_id": "T1190",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "NVD CVE-2016-6662",
+                    "description": "National Vulnerability Database. (2017, February 2). CVE-2016-6662 Detail. Retrieved April 3, 2018.",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-6662"
+                },
+                {
+                    "source_name": "CIS Multiple SMB Vulnerabilities",
+                    "description": "CIS. (2017, May 15). Multiple Vulnerabilities in Microsoft Windows SMB Server Could Allow for Remote Code Execution. Retrieved April 3, 2018.",
+                    "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-microsoft-windows-smb-server-could-allow-for-remote-code-execution/"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/alerts/TA18-106A",
+                    "description": "US-CERT. (2018, April 20). Russian State-Sponsored Cyber Actors Targeting Network Infrastructure Devices. Retrieved October 19, 2020.",
+                    "source_name": "US-CERT TA18-106A Network Infrastructure Devices 2018"
+                },
+                {
+                    "url": "https://community.cisco.com/t5/security-blogs/attackers-continue-to-target-legacy-devices/ba-p/4169954",
+                    "description": "Omar Santos. (2020, October 19). Attackers Continue to Target Legacy Devices. Retrieved October 20, 2020.",
+                    "source_name": "Cisco Blog Legacy Device Attacks"
+                },
+                {
+                    "source_name": "NVD CVE-2014-7169",
+                    "description": "National Vulnerability Database. (2017, September 24). CVE-2014-7169 Detail. Retrieved April 3, 2018.",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-7169"
+                },
+                {
+                    "source_name": "OWASP Top 10",
+                    "description": "OWASP. (2018, February 23). OWASP Top Ten Project. Retrieved April 3, 2018.",
+                    "url": "https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project"
+                },
+                {
+                    "url": "https://cwe.mitre.org/top25/index.html",
+                    "description": "Christey, S., Brown, M., Kirby, D., Martin, B., Paller, A.. (2011, September 13). 2011 CWE/SANS Top 25 Most Dangerous Software Errors. Retrieved April 10, 2019.",
+                    "source_name": "CWE top 25"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Accessibility Features",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Windows Registry: Windows Registry Key Modification",
+                "Command: Command Execution",
+                "File: File Creation",
+                "File: File Modification"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-05-13T20:37:30.048Z",
+            "created": "2020-01-24T14:32:40.315Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "id": "attack-pattern--70e52b04-2a0c-4cea-9d18-7149f1df9dc5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator"
+            ],
+            "description": "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by accessibility features. Windows contains accessibility features that may be launched with a key combination before a user has logged in (ex: when the user is on the Windows logon screen). An adversary can modify the way these programs are launched to get a command prompt or backdoor without logging in to the system.\n\nTwo common accessibility programs are <code>C:\\Windows\\System32\\sethc.exe</code>, launched when the shift key is pressed five times and <code>C:\\Windows\\System32\\utilman.exe</code>, launched when the Windows + U key combination is pressed. The sethc.exe program is often referred to as \"sticky keys\", and has been used by adversaries for unauthenticated access through a remote desktop login screen. (Citation: FireEye Hikit Rootkit)\n\nDepending on the version of Windows, an adversary may take advantage of these features in different ways. Common methods used by adversaries include replacing accessibility feature binaries or pointers/references to these binaries in the Registry. In newer versions of Windows, the replaced binary needs to be digitally signed for x64 systems, the binary must reside in <code>%systemdir%\\</code>, and it must be protected by Windows File or Resource Protection (WFP/WRP). (Citation: DEFCON2016 Sticky Keys) The [Image File Execution Options Injection](https://attack.mitre.org/techniques/T1546/012) debugger method was likely discovered as a potential workaround because it does not require the corresponding accessibility feature binary to be replaced.\n\nFor simple binary replacement on Windows XP and later as well as and Windows Server 2003/R2 and later, for example, the program (e.g., <code>C:\\Windows\\System32\\utilman.exe</code>) may be replaced with \"cmd.exe\" (or another program that provides backdoor access). Subsequently, pressing the appropriate key combination at the login screen while sitting at the keyboard or when connected over [Remote Desktop Protocol](https://attack.mitre.org/techniques/T1021/001) will cause the replaced file to be executed with SYSTEM privileges. (Citation: Tilbury 2014)\n\nOther accessibility features exist that may also be leveraged in a similar fashion: (Citation: DEFCON2016 Sticky Keys)(Citation: Narrator Accessibility Abuse)\n\n* On-Screen Keyboard: <code>C:\\Windows\\System32\\osk.exe</code>\n* Magnifier: <code>C:\\Windows\\System32\\Magnify.exe</code>\n* Narrator: <code>C:\\Windows\\System32\\Narrator.exe</code>\n* Display Switcher: <code>C:\\Windows\\System32\\DisplaySwitch.exe</code>\n* App Switcher: <code>C:\\Windows\\System32\\AtBroker.exe</code>",
+            "x_mitre_effective_permissions": [
+                "SYSTEM"
+            ],
+            "x_mitre_contributors": [
+                "Paul Speulstra, AECOM Global Security Operations Center"
+            ],
+            "x_mitre_detection": "Changes to accessibility utility binaries or binary paths that do not correlate with known software, patch cycles, etc., are suspicious. Command line invocation of tools capable of modifying the Registry for associated keys are also suspicious. Utility arguments and the binaries themselves should be monitored for changes. Monitor Registry keys within <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options</code>.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1546/008",
+                    "external_id": "T1546.008",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/558.html",
+                    "external_id": "CAPEC-558",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "FireEye Hikit Rootkit",
+                    "description": "Glyer, C., Kazanciyan, R. (2012, August 20). The \u201cHikit\u201d Rootkit: Advanced and Persistent Attack Techniques (Part 1). Retrieved June 6, 2016.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2012/08/hikit-rootkit-advanced-persistent-attack-techniques-part-1.html"
+                },
+                {
+                    "source_name": "DEFCON2016 Sticky Keys",
+                    "description": "Maldonado, D., McGuffin, T. (2016, August 6). Sticky Keys to the Kingdom. Retrieved July 5, 2017.",
+                    "url": "https://www.slideshare.net/DennisMaldonado5/sticky-keys-to-the-kingdom"
+                },
+                {
+                    "source_name": "Tilbury 2014",
+                    "description": "Tilbury, C. (2014, August 28). Registry Analysis with CrowdResponse. Retrieved November 12, 2014.",
+                    "url": "http://blog.crowdstrike.com/registry-analysis-with-crowdresponse/"
+                },
+                {
+                    "url": "https://giuliocomi.blogspot.com/2019/10/abusing-windows-10-narrators-feedback.html",
+                    "description": "Comi, G. (2019, October 19). Abusing Windows 10 Narrator's 'Feedback-Hub' URI for Fileless Persistence. Retrieved April 28, 2020.",
+                    "source_name": "Narrator Accessibility Abuse"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Data Obfuscation",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1001",
+                    "external_id": "T1001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-15T00:40:27.670Z",
+            "created": "2017-05-31T21:30:18.931Z",
+            "x_mitre_network_requirements": true,
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--ad255bfe-a9e6-4b52-a258-8d3462abe842",
+            "description": "Adversaries may obfuscate command and control traffic to make it more difficult to detect. Command and control (C2) communications are hidden (but not necessarily encrypted) in an attempt to make the content more difficult to discover or decipher and to make the communication less conspicuous and hide commands from being seen. This encompasses many methods, such as adding junk data to protocol traffic, using steganography, or impersonating legitimate protocols. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. (Citation: University of Birmingham C2)",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Remote Desktop Protocol",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1021/001",
+                    "external_id": "T1021.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/555.html",
+                    "external_id": "CAPEC-555",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Remote Desktop Services",
+                    "description": "Microsoft. (n.d.). Remote Desktop Services. Retrieved June 1, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/windowsserver/ee236407.aspx"
+                },
+                {
+                    "source_name": "Alperovitch Malware",
+                    "description": "Alperovitch, D. (2014, October 31). Malware-Free Intrusions. Retrieved November 4, 2014.",
+                    "url": "http://blog.crowdstrike.com/adversary-tricks-crowdstrike-treats/"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Flow",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-02-25T19:23:34.204Z",
+            "x_mitre_system_requirements": [
+                "RDP service enabled, account in the Remote Desktop Users group"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "lateral-movement"
+                }
+            ],
+            "id": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Remote Desktop Users",
+                "User"
+            ],
+            "description": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a computer using the Remote Desktop Protocol (RDP). The adversary may then perform actions as the logged-on user.\n\nRemote desktop is a common feature in operating systems. It allows a user to log into an interactive session with a system desktop graphical user interface on a remote system. Microsoft refers to its implementation of the Remote Desktop Protocol (RDP) as Remote Desktop Services (RDS).(Citation: TechNet Remote Desktop Services) \n\nAdversaries may connect to a remote system over RDP/RDS to expand access if the service is enabled and allows access to accounts with known credentials. Adversaries will likely use Credential Access techniques to acquire credentials to use with RDP. Adversaries may also use RDP in conjunction with the [Accessibility Features](https://attack.mitre.org/techniques/T1546/008) technique for Persistence.(Citation: Alperovitch Malware)",
+            "x_mitre_contributors": [
+                "Matthew Demaske, Adaptforward"
+            ],
+            "x_mitre_detection": "Use of RDP may be legitimate, depending on the network environment and how it is used. Other factors, such as access patterns and activity that occurs after a remote login, may indicate suspicious or malicious behavior with RDP. Monitor for user accounts logged into systems they would not normally access or access patterns to multiple systems over a relatively short period of time.",
+            "created": "2020-02-11T18:23:26.059Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Steganography",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-15T00:37:58.963Z",
+            "created": "2020-03-15T00:37:58.963Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--eec23884-3fa1-4d8a-ac50-6f104d51e235",
+            "description": "Adversaries may use steganographic techniques to hide command and control traffic to make detection efforts more difficult. Steganographic techniques can be used to hide data in digital messages that are transferred between systems. This hidden information can be used for command and control of compromised systems. In some cases, the passing of files embedded using steganography, such as image or document files, can be used for command and control. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1001/002",
+                    "external_id": "T1001.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9fe89fe7-71ec-453f-9a04-e52b5407344e",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--249132a5-0187-4387-bbc7-02d793df97f5",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8197074b-ed7b-41e9-8856-e7791d84af66",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2f11a74f-d8f5-4a70-aba9-fdfe6ba80a8a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4e30d657-37e4-4aa5-bec1-6a7a2384c015",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--04dfe533-d201-4ee8-bcad-e247c722024f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--42c61a09-b33b-434e-8b43-c0c80d729c88",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bcfb056a-d9ea-45d9-bef0-13789ec1db41",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bcfb056a-d9ea-45d9-bef0-13789ec1db41",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--7ebdcb84-2242-498a-9e23-25fafa3069cf"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--73d31a31-4952-410e-a014-ad131da4ff89",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bda8c5c6-0901-4036-a4fc-d68a16c78572",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d6afd384-3652-4ad1-ab72-e21200cb36ee",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--debd001b-c0d0-41ed-b2a8-d3a7c9c36e09",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Netherlands",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--04dfe533-d201-4ee8-bcad-e247c722024f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Italy",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7ebdcb84-2242-498a-9e23-25fafa3069cf",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Belgium",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Indonesia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Switzerland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.33241Z",
+            "id": "identity--6f9778fe-137d-4064-9925-544a99683b4d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Private sector as a target",
+            "sectors": [
+                "Private sector"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.33241Z",
+            "id": "identity--8e97d9ef-37fc-480c-a69b-f65033646934",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Video Game sector as a target",
+            "sectors": [
+                "Video Game"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7124e309-925d-475d-9d15-4935a7000319",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "identity--8e97d9ef-37fc-480c-a69b-f65033646934"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3c174d8c-4016-4f9b-a4fb-dc610e4585ca",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f1ef99e3-745c-4773-b968-5f2eab944c2c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "identity--6f9778fe-137d-4064-9925-544a99683b4d"
+        }
+    ]
+}

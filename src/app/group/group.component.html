@@ -1,0 +1,12 @@
+<h1>ALL GRPS ARE HERE PS: just names</h1>
+
+
+<div >
+<ul *ngFor="let grp of data ">
+
+    <li *ngIf="grp.type==='intrusion-set'">
+        {{grp.name}}
+    </li>
+</ul>
+
+</div>
