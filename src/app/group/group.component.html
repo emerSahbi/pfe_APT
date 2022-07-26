@@ -1,12 +1,11 @@
 <h1>ALL GRPS ARE HERE PS: just names</h1>
 
-
-<div >
-<ul *ngFor="let grp of data ">
-
-    <li *ngIf="grp.type==='intrusion-set'">
-        {{grp.name}}
+<div>
+  <ul *ngFor="let grp of data">
+    <li *ngIf="grp.type === 'intrusion-set'">
+      <a routerLink="/groupsInfo/:{{ grp }}" [state]="{ id: grp }">
+        {{ grp.name }}</a
+      >
     </li>
-</ul>
-
+  </ul>
 </div>

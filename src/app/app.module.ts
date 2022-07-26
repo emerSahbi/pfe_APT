@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { GroupComponent } from './group/group.component';
+import { GrpsInfosComponent } from './grps-infos/grps-infos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GroupComponent } from './group/group.component';
     ToolComponent,
     SearchComponent,
     FooterComponent,
-    GroupComponent
+    GroupComponent,
+    GrpsInfosComponent
   ],
   imports: [
     BrowserModule,

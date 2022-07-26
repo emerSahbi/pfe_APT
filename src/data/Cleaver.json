@@ -1,0 +1,1632 @@
+{
+    "type": "bundle",
+    "id": "bundle--cfb079b0-5480-4eb5-b1e0-fdeb7e042748",
+    "spec_version": "2.0",
+    "objects": [
+        {"primary_motivation": "organizational-gain",
+            "first_seen":"2012",
+            "x_MISP-description": "While tracking a suspected Iran-based threat group known as Threat Group-2889[1] (TG-2889), Dell SecureWorks Counter Threat Unit™ (CTU) researchers uncovered a network of fake LinkedIn profiles. These convincing profiles form a self-referenced network of seemingly established LinkedIn users. CTU researchers assess with high confidence the purpose of this network is to target potential victims through social engineering. Most of the legitimate LinkedIn accounts associated with the fake accounts belong to individuals in the Middle East, and CTU researchers assess with medium confidence that these individuals are likely targets of TG-2889. One of the threat actors responsible for the denial of service attacks against U.S in 2012–2013. Three individuals associated with the group—believed to be have been working on behalf of Iran’s Islamic Revolutionary Guard Corps—were indicted by the Justice Department in 2016. ",
+            "x_MISP-uuid": "11e17436-6ede-4733-8547-4ce0254ea19e",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Cleaver",
+            "description": "[Cleaver](https://attack.mitre.org/groups/G0003) is a threat group that has been attributed to Iranian actors and is responsible for activity tracked as Operation Cleaver. (Citation: Cylance Cleaver) Strong circumstantial evidence suggests Cleaver is linked to Threat Group 2889 (TG-2889). (Citation: Dell Threat Group 2889)",
+            "x_mitre_version": "1.3",
+            "modified": "2022-06-12T19:34:36.092Z",
+            "aliases": [
+                "Cleaver",
+                "Threat Group 2889",
+                "TG-2889",
+                "ITSecTeam",
+                "Ghambar","Operation Cleaver",
+                "Tarh Andishan",
+                "Alibaba",
+                "Threat Group 2889",
+                "2889",
+                "TG-2889",
+                "Cobalt Gypsy",
+                "Rocket_Kitten",
+                "Cutting Kitten",
+                "Group 41",
+                "Magic Hound",
+                "APT35",
+                "APT 35",
+                "TEMP.Beanie",
+                "Ghambar"
+            ],
+            "created": "2017-05-31T21:31:46.390Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0003",
+                    "external_id": "G0003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Cylance Cleaver)",
+                    "source_name": "Cleaver"
+                },
+                {
+                    "description": "(Citation: Dell Threat Group 2889)",
+                    "source_name": "Threat Group 2889"
+                },
+                {
+                    "description": "(Citation: Dell Threat Group 2889)",
+                    "source_name": "TG-2889"
+                },
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                },
+                {
+                    "source_name": "Dell Threat Group 2889",
+                    "description": "Dell SecureWorks. (2015, October 7). Suspected Iran-Based Hacker Group Creates Network of Fake LinkedIn Profiles. Retrieved January 14, 2016.",
+                    "url": "http://www.secureworks.com/cyber-threat-intelligence/threats/suspected-iran-based-hacker-group-creates-network-of-fake-linkedin-profiles/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malware",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata",
+                "Malware Repository: Malware Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-17T16:05:41.186Z",
+            "created": "2020-10-01T01:33:01.433Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--212306d8-efa4-44c9-8c2d-ed3d2e224aa0",
+            "description": "Adversaries may develop malware and malware components that can be used during targeting. Building malicious software can include the development of payloads, droppers, post-compromise tools, backdoors (including backdoored images), packers, C2 protocols, and the creation of infected removable media. Adversaries may develop malware to support their operations, creating a means for maintaining control of remote machines, evading defenses, and executing post-compromise behaviors.(Citation: Mandiant APT1)(Citation: Kaspersky Sofacy)(Citation: ActiveMalwareEnergy)(Citation: FBI Flash FIN7 USB)\n\nAs with legitimate development efforts, different skill sets may be required for developing malware. The skills needed may be located in-house, or may need to be contracted out. Use of a contractor may be considered an extension of that adversary's malware development capabilities, provided the adversary plays a role in shaping requirements and maintains a degree of exclusivity to the malware.\n\nSome aspects of malware development, such as C2 protocol development, may require adversaries to obtain additional infrastructure. For example, malware developed that will communicate with Twitter for C2, may require use of [Web Services](https://attack.mitre.org/techniques/T1583/006).(Citation: FireEye APT29)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Consider analyzing malware for features that may be associated with the adversary and/or their developers, such as compiler used, debugging artifacts, or code similarities. Malware repositories can also be used to identify additional samples associated with the adversary and identify development patterns over time.\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1587/001",
+                    "external_id": "T1587.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Mandiant APT1",
+                    "description": "Mandiant. (n.d.). APT1 Exposing One of China\u2019s Cyber Espionage Units. Retrieved July 18, 2016.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+                },
+                {
+                    "url": "https://securelist.com/sofacy-apt-hits-high-profile-targets-with-updated-toolset/72924/",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2015, December 4). Sofacy APT hits high profile targets with updated toolset. Retrieved December 10, 2015.",
+                    "source_name": "Kaspersky Sofacy"
+                },
+                {
+                    "url": "https://arstechnica.com/information-technology/2014/06/active-malware-operation-let-attackers-sabotage-us-energy-industry/",
+                    "description": "Dan Goodin. (2014, June 30). Active malware operation let attackers sabotage US energy industry. Retrieved March 9, 2017.",
+                    "source_name": "ActiveMalwareEnergy"
+                },
+                {
+                    "url": "https://www.losangeles.va.gov/documents/MI-000120-MW.pdf",
+                    "description": "Federal Bureau of Investigation, Cyber Division. (2020, March 26). FIN7 Cyber Actors Targeting US Businesses Through USB Keystroke Injection Attacks. Retrieved October 14, 2020.",
+                    "source_name": "FBI Flash FIN7 USB"
+                },
+                {
+                    "url": "https://www2.fireeye.com/rs/848-DID-242/images/rpt-apt29-hammertoss.pdf",
+                    "description": "FireEye Labs. (2015, July). HAMMERTOSS: Stealthy Tactics Define a Russian Cyber Threat Group. Retrieved September 17, 2015.",
+                    "source_name": "FireEye APT29"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "ARP Cache Poisoning",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-28T01:04:39.141Z",
+            "created": "2020-10-15T12:05:58.755Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "id": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may poison Address Resolution Protocol (ARP) caches to position themselves between the communication of two or more networked devices. This activity may be used to enable follow-on behaviors such as [Network Sniffing](https://attack.mitre.org/techniques/T1040) or [Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1565/002).\n\nThe ARP protocol is used to resolve IPv4 addresses to link layer addresses, such as a media access control (MAC) address.(Citation: RFC826 ARP) Devices in a local network segment communicate with each other by using link layer addresses. If a networked device does not have the link layer address of a particular networked device, it may send out a broadcast ARP request to the local network to translate the IP address to a MAC address. The device with the associated IP address directly replies with its MAC address. The networked device that made the ARP request will then use as well as store that information in its ARP cache.\n\nAn adversary may passively wait for an ARP request to poison the ARP cache of the requesting device. The adversary may reply with their MAC address, thus deceiving the victim by making them believe that they are communicating with the intended networked device. For the adversary to poison the ARP cache, their reply must be faster than the one made by the legitimate IP address owner. Adversaries may also send a gratuitous ARP reply that maliciously announces the ownership of a particular IP address to all the devices in the local network segment.\n\nThe ARP protocol is stateless and does not require authentication. Therefore, devices may wrongly add or update the MAC address of the IP address in their ARP cache.(Citation: Sans ARP Spoofing Aug 2003)(Citation: Cylance Cleaver)\n\nAdversaries may use ARP cache poisoning as a means to intercept network traffic. This activity may be used to collect and/or relay data such as credentials, especially those sent over an insecure, unencrypted protocol.(Citation: Sans ARP Spoofing Aug 2003)\n",
+            "x_mitre_contributors": [
+                "Jon Sternstein, Stern Security"
+            ],
+            "x_mitre_detection": "Monitor network traffic for unusual ARP traffic, gratuitous ARP replies may be suspicious. \n\nConsider collecting changes to ARP caches across endpoints for signs of ARP poisoning. For example, if multiple IP addresses map to a single MAC address, this could be an indicator that the ARP cache has been poisoned.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1557/002",
+                    "external_id": "T1557.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://tools.ietf.org/html/rfc826",
+                    "description": "Plummer, D. (1982, November). An Ethernet Address Resolution Protocol. Retrieved October 15, 2020.",
+                    "source_name": "RFC826 ARP"
+                },
+                {
+                    "url": "https://pen-testing.sans.org/resources/papers/gcih/real-world-arp-spoofing-105411",
+                    "description": "Siles, R. (2003, August). Real World ARP Spoofing. Retrieved October 15, 2020.",
+                    "source_name": "Sans ARP Spoofing Aug 2003"
+                },
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Social Media Accounts",
+            "x_mitre_data_sources": [
+                "Persona: Social Media",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-16T17:37:34.563Z",
+            "created": "2020-10-01T01:08:41.124Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--b1ccd744-3f78-4a0e-9bb2-2002057f7928",
+            "description": "Adversaries may create and cultivate social media accounts that can be used during targeting. Adversaries can create social media accounts that can be used to build a persona to further operations. Persona development consists of the development of public information, presence, history and appropriate affiliations.(Citation: NEWSCASTER2014)(Citation: BlackHatRobinSage)\n\nFor operations incorporating social engineering, the utilization of a persona on social media may be important. These personas may be fictitious or impersonate real people. The persona may exist on a single social media site or across multiple sites (ex: Facebook, LinkedIn, Twitter, etc.). Establishing a persona  on social media may require development of additional documentation to make them seem real. This could include filling out profile information, developing social networks, or incorporating photos. \n\nOnce a persona has been developed an adversary can use it to create connections to targets of interest. These connections may be direct or may include trying to connect through others.(Citation: NEWSCASTER2014)(Citation: BlackHatRobinSage) These accounts may be leveraged during other phases of the adversary lifecycle, such as during Initial Access (ex: [Spearphishing via Service](https://attack.mitre.org/techniques/T1566/003)).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Consider monitoring social media activity related to your organization. Suspicious activity may include personas claiming to work for your organization or recently created/modified accounts making numerous connection requests to accounts affiliated with your organization.\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access (ex: [Spearphishing via Service](https://attack.mitre.org/techniques/T1566/003)).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1585/001",
+                    "external_id": "T1585.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.securityweek.com/iranian-hackers-targeted-us-officials-elaborate-social-media-attack-operation",
+                    "description": "Lennon, M. (2014, May 29). Iranian Hackers Targeted US Officials in Elaborate Social Media Attack Operation. Retrieved March 1, 2017.",
+                    "source_name": "NEWSCASTER2014"
+                },
+                {
+                    "url": "http://media.blackhat.com/bh-us-10/whitepapers/Ryan/BlackHat-USA-2010-Ryan-Getting-In-Bed-With-Robin-Sage-v1.0.pdf",
+                    "description": "Ryan, T. (2010). \u201cGetting In Bed with Robin Sage.\u201d. Retrieved March 6, 2017.",
+                    "source_name": "BlackHatRobinSage"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "LSASS Memory",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Process: Process Access",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-15T19:55:01.368Z",
+            "created": "2020-02-11T18:41:44.783Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).\n\nAs well as in-memory techniques, the LSASS process memory can be dumped from the target host and analyzed on a local system.\n\nFor example, on the target host use procdump:\n\n* <code>procdump -ma lsass.exe lsass_dump</code>\n\nLocally, mimikatz can be run using:\n\n* <code>sekurlsa::Minidump lsassdump.dmp</code>\n* <code>sekurlsa::logonPasswords</code>\n\nBuilt-in Windows tools such as comsvcs.dll can also be used:\n\n* <code>rundll32.exe C:\\Windows\\System32\\comsvcs.dll MiniDump PID  lsass.dmp full</code>(Citation: Volexity Exchange Marauder March 2021)(Citation: Symantec Attacks Against Government Sector)\n\n\nWindows Security Support Provider (SSP) DLLs are loaded into LSSAS process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs. The SSP configuration is stored in two Registry keys: <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Security Packages</code> and <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig\\Security Packages</code>. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called.(Citation: Graeber 2014)\n\nThe following SSPs can be used to access credentials:\n\n* Msv: Interactive logons, batch logons, and service logons are done through the MSV authentication package.\n* Wdigest: The Digest Authentication protocol is designed for use with Hypertext Transfer Protocol (HTTP) and Simple Authentication Security Layer (SASL) exchanges.(Citation: TechNet Blogs Credential Protection)\n* Kerberos: Preferred for mutual client-server domain authentication in Windows 2000 and later.\n* CredSSP:  Provides SSO and Network Level Authentication for Remote Desktop Services.(Citation: TechNet Blogs Credential Protection)\n",
+            "x_mitre_contributors": [
+                "Edward Millington",
+                "Ed Williams, Trustwave, SpiderLabs"
+            ],
+            "x_mitre_detection": "Monitor for unexpected processes interacting with LSASS.exe.(Citation: Medium Detecting Attempts to Steal Passwords from Memory) Common credential dumpers such as Mimikatz access LSASS.exe by opening the process, locating the LSA secrets key, and decrypting the sections in memory where credential details are stored. Credential dumpers may also use methods for reflective [Process Injection](https://attack.mitre.org/techniques/T1055) to reduce potential indicators of malicious activity.\n\nOn Windows 8.1 and Windows Server 2012 R2, monitor Windows Logs for LSASS.exe creation to verify that LSASS started as a protected process.\n\nMonitor processes and command-line arguments for program execution that may be indicative of credential dumping. Remote access tools may contain built-in features or incorporate existing tools like Mimikatz. PowerShell scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module,(Citation: Powersploit) which may require additional logging features to be configured in the operating system to collect necessary information for analysis.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1003/001",
+                    "external_id": "T1003.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/",
+                    "description": "Gruzweig, J. et al. (2021, March 2). Operation Exchange Marauder: Active Exploitation of Multiple Zero-Day Microsoft Exchange Vulnerabilities. Retrieved March 3, 2021.",
+                    "source_name": "Volexity Exchange Marauder March 2021"
+                },
+                {
+                    "url": "https://symantec.broadcom.com/hubfs/Attacks-Against-Government-Sector.pdf",
+                    "description": "Symantec. (2021, June 10). Attacks Against the Government Sector. Retrieved September 28, 2021.",
+                    "source_name": "Symantec Attacks Against Government Sector"
+                },
+                {
+                    "source_name": "Graeber 2014",
+                    "description": "Graeber, M. (2014, October). Analysis of Malicious Security Support Provider DLLs. Retrieved March 1, 2017.",
+                    "url": "http://docplayer.net/20839173-Analysis-of-malicious-security-support-provider-dlls.html"
+                },
+                {
+                    "source_name": "TechNet Blogs Credential Protection",
+                    "description": "Wilson, B. (2016, April 18). The Importance of KB2871997 and KB2928120 for Credential Protection. Retrieved April 11, 2018.",
+                    "url": "https://blogs.technet.microsoft.com/askpfeplat/2016/04/18/the-importance-of-kb2871997-and-kb2928120-for-credential-protection/"
+                },
+                {
+                    "source_name": "Medium Detecting Attempts to Steal Passwords from Memory",
+                    "description": "French, D. (2018, October 2). Detecting Attempts to Steal Passwords from Memory. Retrieved October 11, 2019.",
+                    "url": "https://medium.com/threatpunter/detecting-attempts-to-steal-passwords-from-memory-558f16dce4ea"
+                },
+                {
+                    "source_name": "Powersploit",
+                    "description": "PowerSploit. (n.d.). Retrieved December 4, 2014.",
+                    "url": "https://github.com/mattifestation/PowerSploit"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Remove or deny access to unnecessary and potentially vulnerable software to prevent abuse by adversaries.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-31T13:12:04.776Z",
+            "id": "course-of-action--eb88d97c-32f1-40be-80f0-d61a4b0b4b31",
+            "created": "2019-06-11T16:45:19.740Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1042",
+                    "external_id": "M1042",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Encrypt Sensitive Information",
+            "description": "Protect sensitive information with strong encryption.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-11T16:43:44.834Z",
+            "id": "course-of-action--feff9142-e8c2-46f4-842b-bd6fb3d41157",
+            "created": "2019-06-11T16:43:44.834Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1041",
+                    "external_id": "M1041",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-06-20T20:46:36.342Z",
+            "id": "course-of-action--20f6a9df-37c4-4e20-9e47-025983b1b39d",
+            "description": "Use network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Filter Network Traffic",
+            "created": "2019-06-11T16:33:55.337Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1037",
+                    "external_id": "M1037",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "id": "course-of-action--1dcaeb21-9348-42ea-950a-f842aaf1ae1f",
+            "description": "Prevent access to file shares, remote access to systems, unnecessary services. Mechanisms to limit access may include use of network concentrators, RDP gateways, etc.",
+            "x_mitre_version": "1.0",
+            "modified": "2020-06-09T20:51:00.027Z",
+            "created": "2019-06-11T16:30:16.672Z",
+            "name": "Limit Access to Resource Over Network",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1035",
+                    "external_id": "M1035",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Network Intrusion Prevention",
+            "description": "Use intrusion detection signatures to block traffic at network boundaries.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-10T20:46:02.263Z",
+            "id": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "created": "2019-06-10T20:46:02.263Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1031",
+                    "external_id": "M1031",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-10-21T19:08:13.228Z",
+            "name": "User Training",
+            "description": "Train users to be aware of access or manipulation attempts by an adversary to reduce the risk of successful spearphishing, social engineering, and other techniques that involve user interaction.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.2",
+            "created": "2019-06-06T16:50:04.963Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1017",
+                    "external_id": "M1017",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "id": "course-of-action--2a4f6c11-a4a7-4cb9-b0ef-6ae1bb3a718a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Pre-compromise",
+            "description": "This category is used for any applicable mitigation activities that apply to techniques occurring before an adversary gains Initial Access, such as Reconnaissance and Resource Development techniques.",
+            "x_mitre_version": "1.0",
+            "modified": "2020-10-20T19:52:32.439Z",
+            "id": "course-of-action--78bb71be-92b4-46de-acd6-5f998fedf1cc",
+            "created": "2020-10-19T14:57:58.771Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1056",
+                    "external_id": "M1056",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Use capabilities to prevent suspicious behavior patterns from occurring on endpoint systems. This could include suspicious process, file, API call, etc. behavior.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-11T16:43:05.712Z",
+            "id": "course-of-action--90f39ee1-d5a3-4aaa-9f28-3b42815b0d46",
+            "created": "2019-06-11T16:43:05.712Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1040",
+                    "external_id": "M1040",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-03-31T13:09:22.442Z",
+            "id": "course-of-action--49c06d54-9002-491d-9147-8efb537fbd26",
+            "description": "Use capabilities to prevent successful credential access by adversaries; including blocking forms of credential dumping.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Credential Access Protection",
+            "created": "2019-06-11T16:47:12.859Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1043",
+                    "external_id": "M1043",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-06-19T16:50:45.681Z",
+            "name": "Operating System Configuration",
+            "description": "Make configuration changes related to the operating system or a common feature of the operating system that result in system hardening against techniques.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2019-06-06T21:16:18.709Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1028",
+                    "external_id": "M1028",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "id": "course-of-action--2f316f6c-ae42-44fe-adf8-150989e0f6d3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Password Policies",
+            "description": "Set and enforce secure password policies for accounts.",
+            "x_mitre_version": "1.0",
+            "modified": "2019-06-06T21:10:35.792Z",
+            "id": "course-of-action--90c218c3-fbf8-4830-98a7-e8cfb7eaa485",
+            "created": "2019-06-06T21:10:35.792Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1027",
+                    "external_id": "M1027",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "course-of-action",
+            "modified": "2020-03-31T13:08:36.655Z",
+            "name": "Privileged Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to privileged accounts, including SYSTEM and root.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2019-06-06T21:09:47.115Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1026",
+                    "external_id": "M1026",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "id": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "course-of-action",
+            "name": "Privileged Process Integrity",
+            "description": "Protect processes with high privileges that can be used to interact with critical system components through use of protected process light, anti-process injection defenses, or other process integrity enforcement measures.",
+            "x_mitre_version": "1.1",
+            "modified": "2020-05-20T13:13:48.900Z",
+            "id": "course-of-action--72dade3e-1cba-4182-b3b3-a77ca52f02a1",
+            "created": "2019-06-06T21:08:58.465Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/mitigations/M1025",
+                    "external_id": "M1025",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Net Crawler",
+            "x_mitre_aliases": [
+                "Net Crawler",
+                "NetC"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-21T16:41:34.225Z",
+            "created": "2017-05-31T21:32:38.851Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--fde50aaa-f5de-4cb8-989a-babb57d6a704",
+            "description": "[Net Crawler](https://attack.mitre.org/software/S0056) is an intranet worm capable of extracting credentials using credential dumpers and spreading to systems on a network over SMB by brute forcing accounts with recovered passwords and using [PsExec](https://attack.mitre.org/software/S0029) to execute a copy of [Net Crawler](https://attack.mitre.org/software/S0056). (Citation: Cylance Cleaver)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0056",
+                    "external_id": "S0056",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "TinyZBot",
+            "x_mitre_aliases": [
+                "TinyZBot"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-21T16:41:34.655Z",
+            "created": "2017-05-31T21:32:12.310Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--c0c45d38-fe57-4cd4-b2b2-9ecd0ddd4ca9",
+            "description": "[TinyZBot](https://attack.mitre.org/software/S0004) is a bot written in C# that was developed by [Cleaver](https://attack.mitre.org/groups/G0003). (Citation: Cylance Cleaver)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0004",
+                    "external_id": "S0004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5cf196e1-fccd-438c-b292-24a3607c1118",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls.",
+            "target_ref": "attack-pattern--b1ccd744-3f78-4a0e-9bb2-2002057f7928",
+            "modified": "2021-10-16T17:37:34.719Z",
+            "source_ref": "course-of-action--78bb71be-92b4-46de-acd6-5f998fedf1cc",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-20T15:45:24.410Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1c7b9a1b-e874-4881-884a-e3c3d1fd8aed",
+            "description": "[Cleaver](https://attack.mitre.org/groups/G0003) has been known to dump credentials using Mimikatz and Windows Credential Editor.(Citation: Cylance Cleaver)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-04-21T16:41:34.708Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.032Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1e03e6e0-8b7b-4e93-a955-245561085aae",
+            "description": "[Cleaver](https://attack.mitre.org/groups/G0003) has used custom tools to facilitate ARP cache poisoning.(Citation: Cylance Cleaver)",
+            "target_ref": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "modified": "2021-04-21T16:41:34.830Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-10-15T13:56:46.934Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7dbfb31d-8ac7-44c5-ad9b-f22e07e95d7e",
+            "description": "[Cleaver](https://attack.mitre.org/groups/G0003) has created customized tools and payloads for functions including ARP poisoning, encryption, credential dumping, ASP.NET shells, web backdoors, process enumeration, WMI querying, HTTP and SMB communications, network interface sniffing, and keystroke logging.(Citation: Cylance Cleaver)",
+            "target_ref": "attack-pattern--212306d8-efa4-44c9-8c2d-ed3d2e224aa0",
+            "modified": "2021-04-21T16:41:35.246Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-10-15T00:52:01.922Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--406e78ba-fc34-4be9-9dcc-323aad40d709",
+            "description": "[Cleaver](https://attack.mitre.org/groups/G0003) has obtained and used open-source tools such as [PsExec](https://attack.mitre.org/software/S0029), [Windows Credential Editor](https://attack.mitre.org/software/S0005), and [Mimikatz](https://attack.mitre.org/software/S0002).(Citation: Cylance Cleaver)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-12T19:34:36.352Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T19:34:36.352Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a60c0123-95a3-4409-a60e-354e4237d6cb",
+            "description": "[Cleaver](https://attack.mitre.org/groups/G0003) has created fake LinkedIn profiles that included profile photos, details, and connections.(Citation: Dell Threat Group 2889)",
+            "target_ref": "attack-pattern--b1ccd744-3f78-4a0e-9bb2-2002057f7928",
+            "modified": "2020-10-13T22:37:00.995Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-10-13T22:37:00.995Z",
+            "external_references": [
+                {
+                    "source_name": "Dell Threat Group 2889",
+                    "description": "Dell SecureWorks. (2015, October 7). Suspected Iran-Based Hacker Group Creates Network of Fake LinkedIn Profiles. Retrieved January 14, 2016.",
+                    "url": "http://www.secureworks.com/cyber-threat-intelligence/threats/suspected-iran-based-hacker-group-creates-network-of-fake-linkedin-profiles/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--16fd44bf-405b-49c1-96d7-0cacb5d65e74",
+            "description": "(Citation: Cylance Cleaver)",
+            "target_ref": "malware--fde50aaa-f5de-4cb8-989a-babb57d6a704",
+            "modified": "2021-04-21T16:41:34.707Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.032Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--49957d89-7449-476a-b542-d7811a86c230",
+            "description": "(Citation: Cylance Cleaver)",
+            "target_ref": "malware--c0c45d38-fe57-4cd4-b2b2-9ecd0ddd4ca9",
+            "modified": "2021-04-21T16:41:34.711Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.032Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6bf03275-b5bb-4c67-b3a6-5a4642d763e6",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls.",
+            "target_ref": "attack-pattern--212306d8-efa4-44c9-8c2d-ed3d2e224aa0",
+            "modified": "2021-10-17T16:05:42.017Z",
+            "source_ref": "course-of-action--78bb71be-92b4-46de-acd6-5f998fedf1cc",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-20T15:50:00.654Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--20a02fc6-3cce-4ce6-bf76-2f82c2a88232",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls.",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-17T16:17:55.710Z",
+            "source_ref": "course-of-action--78bb71be-92b4-46de-acd6-5f998fedf1cc",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-20T15:52:50.002Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--07bc8502-7a60-4d19-b1e1-f4fb081ed50d",
+            "description": "Ensure that all wired and/or wireless traffic is encrypted appropriately. Use best practices for authentication protocols, such as Kerberos, and ensure web traffic that may contain credentials is protected by SSL/TLS.",
+            "target_ref": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "modified": "2021-07-28T01:04:39.671Z",
+            "source_ref": "course-of-action--feff9142-e8c2-46f4-842b-bd6fb3d41157",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-15T12:05:58.955Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8fe9affe-bf8d-4392-882d-d3e737eb5c43",
+            "description": "Consider disabling updating the ARP cache on gratuitous ARP replies.",
+            "target_ref": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "modified": "2021-07-28T01:04:39.674Z",
+            "source_ref": "course-of-action--eb88d97c-32f1-40be-80f0-d61a4b0b4b31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-15T12:05:58.959Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--55e36f24-f7dd-4966-b39f-88349b86fff3",
+            "description": "Network intrusion detection and prevention systems that can identify traffic patterns indicative of AiTM activity can be used to mitigate activity at the network level.",
+            "target_ref": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "modified": "2021-07-28T01:04:39.669Z",
+            "source_ref": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-15T12:05:58.903Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--59c65423-347b-4a09-a24d-c228faaa5119",
+            "description": "Train users to be suspicious about certificate errors. Adversaries may use their own certificates in an attempt to intercept HTTPS traffic. Certificate errors may arise when the application\u2019s certificate does not match the one expected by the host.",
+            "target_ref": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "modified": "2021-07-28T01:04:39.679Z",
+            "source_ref": "course-of-action--2a4f6c11-a4a7-4cb9-b0ef-6ae1bb3a718a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-15T12:05:58.908Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c44ff9d1-8718-49d7-9054-f7c89a221c93",
+            "description": "Create static ARP entries for networked devices. Implementing static ARP entries may be infeasible for large networks.",
+            "target_ref": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "modified": "2021-07-28T01:04:39.677Z",
+            "source_ref": "course-of-action--1dcaeb21-9348-42ea-950a-f842aaf1ae1f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-15T12:05:58.958Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cea07509-b84d-4b25-b9e8-758a8e66b3f1",
+            "description": "Consider enabling DHCP Snooping and Dynamic ARP Inspection on switches to create mappings between IP addresses requested via DHCP and ARP tables and tie the values to a port on the switch that may block bogus traffic.(Citation: Cisco ARP Poisoning Mitigation 2016)(Citation: Juniper DAI 2020)",
+            "target_ref": "attack-pattern--cabe189c-a0e3-4965-a473-dcff00f17213",
+            "modified": "2021-07-28T01:04:39.490Z",
+            "source_ref": "course-of-action--20f6a9df-37c4-4e20-9e47-025983b1b39d",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-10-15T12:05:58.901Z",
+            "external_references": [
+                {
+                    "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-6500-series-switches/white_paper_c11_603839.html",
+                    "description": "King, J., Lauerman, K. (2016, January 22). ARP Poisoning (Man-in-the-Middle) Attack and Mitigation Technique. Retrieved October 15, 2020.",
+                    "source_name": "Cisco ARP Poisoning Mitigation 2016"
+                },
+                {
+                    "url": "https://www.juniper.net/documentation/en_US/junos/topics/task/configuration/understanding-and-using-dai.html",
+                    "description": "Juniper. (2020, September 23). Understanding and Using Dynamic ARP Inspection (DAI). Retrieved October 15, 2020.",
+                    "source_name": "Juniper DAI 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--72f97322-c7d1-41ea-a654-50e8039a8665",
+            "description": "With Windows 10, Microsoft implemented new protections called Credential Guard to protect the LSA secrets that can be used to obtain credentials through forms of credential dumping. It is not configured by default and has hardware and firmware system requirements. It also does not protect against all forms of credential dumping.(Citation: TechNet Credential Guard)(Citation: GitHub SHB Credential Guard)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-10-15T19:55:01.665Z",
+            "source_ref": "course-of-action--49c06d54-9002-491d-9147-8efb537fbd26",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-20T18:39:33.164Z",
+            "external_references": [
+                {
+                    "source_name": "TechNet Credential Guard",
+                    "description": "Lich, B. (2016, May 31). Protect derived domain credentials with Credential Guard. Retrieved June 1, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard"
+                },
+                {
+                    "source_name": "GitHub SHB Credential Guard",
+                    "description": "NSA IAD. (2017, April 20). Secure Host Baseline - Credential Guard. Retrieved April 25, 2017.",
+                    "url": "https://github.com/iadgov/Secure-Host-Baseline/tree/master/Credential%20Guard"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--516e746b-6208-41db-8ea8-4e3fa42f5053",
+            "description": "Consider disabling or restricting NTLM.(Citation: Microsoft Disable NTLM Nov 2012) Consider disabling WDigest authentication.(Citation: Microsoft WDigest Mit)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-10-15T19:55:01.717Z",
+            "source_ref": "course-of-action--2f316f6c-ae42-44fe-adf8-150989e0f6d3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-20T18:39:33.171Z",
+            "external_references": [
+                {
+                    "source_name": "Microsoft Disable NTLM Nov 2012",
+                    "description": "Microsoft. (2012, November 29). Using security policies to restrict NTLM traffic. Retrieved December 4, 2017.",
+                    "url": "https://technet.microsoft.com/library/jj865668.aspx"
+                },
+                {
+                    "url": "https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a",
+                    "description": "Microsoft. (2014, May 13). Microsoft Security Advisory: Update to improve credentials protection and management. Retrieved June 8, 2020.",
+                    "source_name": "Microsoft WDigest Mit"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--871cce82-c9fe-47e3-bd03-94a29a295f90",
+            "description": "On Windows 8.1 and Windows Server 2012 R2, enable Protected Process Light for LSA.(Citation: Microsoft LSA)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-10-15T19:55:01.722Z",
+            "source_ref": "course-of-action--72dade3e-1cba-4182-b3b3-a77ca52f02a1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-20T18:39:33.165Z",
+            "external_references": [
+                {
+                    "source_name": "Microsoft LSA",
+                    "description": "Microsoft. (2013, July 31). Configuring Additional LSA Protection. Retrieved February 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn408187.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--aa2cd10c-5062-4abb-a8ec-0e178a5440ec",
+            "description": "Do not put user or admin domain accounts in the local administrator groups across systems unless they are tightly controlled, as this is often equivalent to having a local administrator account with the same password on all systems. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers.",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-10-15T19:55:01.726Z",
+            "source_ref": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-20T18:39:33.167Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b6583fd8-89f7-4494-8690-3456391bf193",
+            "description": "Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-10-15T19:55:01.636Z",
+            "source_ref": "course-of-action--2a4f6c11-a4a7-4cb9-b0ef-6ae1bb3a718a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-20T18:39:33.161Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--de3095b9-2434-48e8-880b-a4b75a1788c4",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to secure LSASS and prevent credential stealing. (Citation: win10_asr)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-10-15T19:55:01.719Z",
+            "source_ref": "course-of-action--90f39ee1-d5a3-4aaa-9f28-3b42815b0d46",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2021-07-06T23:04:40.955Z",
+            "external_references": [
+                {
+                    "url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction",
+                    "description": "Microsoft. (2021, July 2). Use attack surface reduction rules to prevent malware infection. Retrieved June 24, 2021.",
+                    "source_name": "win10_asr"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f9ed8046-c00b-4d8a-a8d2-833f45f1dfcb",
+            "description": "Ensure that local administrator accounts have complex, unique passwords across all systems on the network.",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2021-10-15T19:55:01.697Z",
+            "source_ref": "course-of-action--90c218c3-fbf8-4830-98a7-e8cfb7eaa485",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "mitigates",
+            "created": "2020-02-20T18:39:33.170Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Credential Access",
+            "description": "The adversary is trying to steal account names and passwords.\n\nCredential Access consists of techniques for stealing credentials like account names and passwords. Techniques used to get credentials include keylogging or credential dumping. Using legitimate credentials can give adversaries access to systems, make them harder to detect, and provide the opportunity to create more accounts to help achieve their goals.",
+            "x_mitre_shortname": "credential-access",
+            "modified": "2019-07-19T17:43:41.967Z",
+            "id": "attack-pattern--2558fd61-8c75-4730-94c4-11926db2a263",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "TA0006",
+                    "url": "https://attack.mitre.org/tactics/TA0006"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Collection",
+            "description": "The adversary is trying to gather data of interest to their goal.\n\nCollection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to steal (exfiltrate) the data. Common target sources include various drive types, browsers, audio, video, and email. Common collection methods include capturing screenshots and keyboard input.",
+            "x_mitre_shortname": "collection",
+            "modified": "2019-07-19T17:44:53.176Z",
+            "id": "attack-pattern--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "TA0009",
+                    "url": "https://attack.mitre.org/tactics/TA0009"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Resource Development",
+            "description": "The adversary is trying to establish resources they can use to support operations.\n\nResource Development consists of techniques that involve adversaries creating, purchasing, or compromising/stealing resources that can be used to support targeting. Such resources include infrastructure, accounts, or capabilities. These resources can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using purchased domains to support Command and Control, email accounts for phishing as a part of Initial Access, or stealing code signing certificates to help with Defense Evasion.",
+            "x_mitre_shortname": "resource-development",
+            "modified": "2020-09-30T16:31:36.322Z",
+            "id": "attack-pattern--d679bca2-e57d-4935-8650-8031c87a4400",
+            "created": "2020-09-30T16:11:59.650Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/tactics/TA0042",
+                    "external_id": "TA0042",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7dbfb31d-8ac7-44c5-ad9b-f22e07e95d7e",
+            "target_ref": "attack-pattern--2558fd61-8c75-4730-94c4-11926db2a263",
+            "modified": "2022-04-06T16:41:35.246Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "relationship_type": "uses",
+            "created": "2022-04-06T00:52:01.922Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7dbfb31d-8ac7-44c5-ad9b-f22e07e95d7e",
+            "target_ref": "attack-pattern--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+            "modified": "2022-04-06T16:41:35.246Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "relationship_type": "uses",
+            "created": "2022-04-06T00:52:01.922Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7dbfb31d-8ac7-44c5-ad9b-f22e07e95d7e",
+            "target_ref": "attack-pattern--d679bca2-e57d-4935-8650-8031c87a4400",
+            "modified": "2022-04-06T16:41:35.246Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "relationship_type": "uses",
+            "created": "2022-04-06T00:52:01.922Z"
+        },
+        {
+            "type": "tool",
+            "modified": "2021-05-20T14:25:59.596Z",
+            "name": "Mimikatz",
+            "x_mitre_aliases": [
+                "Mimikatz"
+            ],
+            "x_mitre_version": "1.4",
+            "created": "2017-05-31T21:32:11.544Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "description": "[Mimikatz](https://attack.mitre.org/software/S0002) is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks. (Citation: Deply Mimikatz) (Citation: Adsecurity Mimikatz Guide)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Vincent Le Toux"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0002",
+                    "external_id": "S0002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/gentilkiwi/mimikatz",
+                    "description": "Deply, B. (n.d.). Mimikatz. Retrieved September 29, 2015.",
+                    "source_name": "Deply Mimikatz"
+                },
+                {
+                    "source_name": "Adsecurity Mimikatz Guide",
+                    "description": "Metcalf, S. (2015, November 13). Unofficial Guide to Mimikatz & Command Reference. Retrieved December 23, 2015.",
+                    "url": "https://adsecurity.org/?page_id=1821"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PsExec",
+            "x_mitre_aliases": [
+                "PsExec"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-24T13:47:24.660Z",
+            "created": "2017-05-31T21:32:21.771Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "description": "[PsExec](https://attack.mitre.org/software/S0029) is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers. (Citation: Russinovich Sysinternals) (Citation: SANS PsExec)",
+            "x_mitre_contributors": [
+                "Janantha Marasinghe"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0029",
+                    "external_id": "S0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Russinovich Sysinternals",
+                    "description": "Russinovich, M. (2014, May 2). Windows Sysinternals PsExec v2.11. Retrieved May 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx"
+                },
+                {
+                    "source_name": "SANS PsExec",
+                    "description": "Pilkington, M.. (2012, December 17). Protecting Privileged Domain Accounts: PsExec Deep-Dive. Retrieved August 17, 2016.",
+                    "url": "https://digital-forensics.sans.org/blog/2012/12/17/protecting-privileged-domain-accounts-psexec-deep-dive"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3cd8ef78-9d92-4e28-97ae-5bd6c698bfec",
+            "description": "(Citation: Cylance Cleaver)",
+            "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "modified": "2021-04-21T16:41:34.697Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.032Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b08e3c96-25a7-412f-bbfb-63e010ef3891",
+            "description": "(Citation: Cylance Cleaver)",
+            "target_ref": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "modified": "2021-04-21T16:41:34.257Z",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.032Z",
+            "external_references": [
+                {
+                    "url": "https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf",
+                    "description": "Cylance. (2014, December). Operation Cleaver. Retrieved September 14, 2017.",
+                    "source_name": "Cylance Cleaver"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0a1b54b8-a96b-49cd-aa4a-f8c4ec394da4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--87ee85d0-ad59-4f00-a594-56328021efca",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--e6e4a646-6504-43af-b43f-03b6379d3027"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--94cd4366-fabe-47eb-8b20-188a6fac5a2b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3fc0495d-c696-43b2-99ef-f987def3f475",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--32ba6e93-2388-41e4-8a32-93d13dd1264e"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--067fc62f-72aa-41b8-8adf-6383012b92e2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d4bad690-2fb5-4f6a-96e0-e3910999f605",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--57f4e04d-ddd5-4c20-b762-117bbafd5cd4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--eb589cd3-c1a5-479d-9387-614dc19302d9",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b734c056-10e2-4055-93bd-f944f93ce183",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--7f50592d-cbdf-48a5-8bc2-ca1d29ea821c"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--61cbcba0-c0c6-448b-acda-42fe1b16aa90",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--2b189dac-f6f5-4b88-8492-838141db0e75"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1e8c44ed-dca8-4d78-9077-47b8dca4fd3c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d8b0c6a9-dcfa-4020-877f-953c578c58a6",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a4485544-a951-4515-b2eb-94ad868c5e04",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1de64a66-534b-4f9c-9589-768c21b057ab",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c33b60b2-b98a-40af-903a-04110750b22f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--50962c88-254f-466c-8ffc-e72b92055eb7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "location--036a483f-27e7-48f0-9e75-b44f99c3c531"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2c7d29fc-a89a-472a-ad5a-01f0f8e0f3b2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8e4cf04a-47df-4119-9ac6-ea211b125620",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--8f5e8dc7-739d-4f5e-a8a1-a66e004d7063",
+            "target_ref": "identity--6f9778fe-137d-4064-9925-544a99683b4d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e6e4a646-6504-43af-b43f-03b6379d3027",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "France",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Israel",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--32ba6e93-2388-41e4-8a32-93d13dd1264e",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Mexico",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Saudi Arabia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Pakistan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7f50592d-cbdf-48a5-8bc2-ca1d29ea821c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Kuwait",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--2b189dac-f6f5-4b88-8492-838141db0e75",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Qatar",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Turkey",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.33241Z",
+            "id": "identity--6f9778fe-137d-4064-9925-544a99683b4d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Private sector as a target",
+            "sectors": [
+                "Private sector"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        }
+    ]
+}
