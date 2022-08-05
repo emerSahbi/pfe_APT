@@ -1,0 +1,687 @@
+{
+    "type": "bundle",
+    "id": "bundle--7fc726eb-408f-4d3e-a93d-fb965a5ec756",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "personal-gain",
+            "first_seen":"2011",
+            "x-MISP-uuid": "",
+            "x_MISP-description": "",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Windigo",
+            "description": "The [Windigo](https://attack.mitre.org/groups/G0124) group has been operating since at least 2011, compromising thousands of Linux and Unix servers using the [Ebury](https://attack.mitre.org/software/S0377) SSH backdoor to create a spam botnet. Despite law enforcement intervention against the creators, [Windigo](https://attack.mitre.org/groups/G0124) operators continued updating [Ebury](https://attack.mitre.org/software/S0377) through 2019.(Citation: ESET Windigo Mar 2014)(Citation: CERN Windigo June 2019)",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Windigo"
+            ],
+            "created": "2021-02-10T19:57:38.042Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0124",
+                    "external_id": "G0124",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.welivesecurity.com/2014/03/18/operation-windigo-the-vivisection-of-a-large-linux-server-side-credential-stealing-malware-campaign/",
+                    "description": "Bilodeau, O., Bureau, M., Calvet, J., Dorais-Joncas, A., L\u00e9veill\u00e9, M., Vanheuverzwijn, B. (2014, March 18). Operation Windigo \u2013 the vivisection of a large Linux server\u2011side credential\u2011stealing malware campaign. Retrieved February 10, 2021.",
+                    "source_name": "ESET Windigo Mar 2014"
+                },
+                {
+                    "url": "https://security.web.cern.ch/advisories/windigo/windigo.shtml",
+                    "description": "CERN. (2019, June 4). 2019/06/04 Advisory: Windigo attacks. Retrieved February 10, 2021.",
+                    "source_name": "CERN Windigo June 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--06ae1d46-2349-457e-817b-e9fdca2f7768",
+            "description": "[Windigo](https://attack.mitre.org/groups/G0124) has used a script to detect which Linux distribution and version is currently installed on the system.(Citation: ESET ForSSHe December 2018)",
+            "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+            "modified": "2021-04-26T21:58:31.745Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-11T17:32:32.042Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2018/12/ESET-The_Dark_Side_of_the_ForSSHe.pdf",
+                    "description": "Dumont, R., M.L\u00e9veill\u00e9, M., Porcher, H. (2018, December 1). THE DARK SIDE OF THE FORSSHE A landscape of OpenSSH backdoors. Retrieved July 16, 2020.",
+                    "source_name": "ESET ForSSHe December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7c776fbc-592a-4643-bd4f-423546a4732e",
+            "description": "[Windigo](https://attack.mitre.org/groups/G0124) has delivered a generic Windows proxy Win32/Glubteta.M. [Windigo](https://attack.mitre.org/groups/G0124) has also used multiple reverse proxy chains as part of their C2 infrastructure.(Citation: ESET Windigo Mar 2014)",
+            "target_ref": "attack-pattern--731f4f55-b6d0-41d1-a7a9-072a66389aea",
+            "modified": "2021-02-11T15:52:59.223Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-10T20:45:20.021Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/2014/03/18/operation-windigo-the-vivisection-of-a-large-linux-server-side-credential-stealing-malware-campaign/",
+                    "description": "Bilodeau, O., Bureau, M., Calvet, J., Dorais-Joncas, A., L\u00e9veill\u00e9, M., Vanheuverzwijn, B. (2014, March 18). Operation Windigo \u2013 the vivisection of a large Linux server\u2011side credential\u2011stealing malware campaign. Retrieved February 10, 2021.",
+                    "source_name": "ESET Windigo Mar 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--24b8eeb2-ee0d-402b-b2e0-afaa3c867072",
+            "description": "[Windigo](https://attack.mitre.org/groups/G0124) has used a script to gather credentials in files left on disk by OpenSSH backdoors.(Citation: ESET ForSSHe December 2018)",
+            "target_ref": "attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+            "modified": "2021-04-26T22:32:57.156Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-11T17:32:31.951Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2018/12/ESET-The_Dark_Side_of_the_ForSSHe.pdf",
+                    "description": "Dumont, R., M.L\u00e9veill\u00e9, M., Porcher, H. (2018, December 1). THE DARK SIDE OF THE FORSSHE A landscape of OpenSSH backdoors. Retrieved July 16, 2020.",
+                    "source_name": "ESET ForSSHe December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--39c98d86-3f44-4a47-b7e5-4cb3e4bf97a7",
+            "description": "[Windigo](https://attack.mitre.org/groups/G0124) has used a script to detect installed software on targeted systems.(Citation: ESET ForSSHe December 2018)",
+            "target_ref": "attack-pattern--e3b6daca-e963-4a69-aee6-ed4fd653ad58",
+            "modified": "2021-02-11T17:32:31.984Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-11T17:32:31.984Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2018/12/ESET-The_Dark_Side_of_the_ForSSHe.pdf",
+                    "description": "Dumont, R., M.L\u00e9veill\u00e9, M., Porcher, H. (2018, December 1). THE DARK SIDE OF THE FORSSHE A landscape of OpenSSH backdoors. Retrieved July 16, 2020.",
+                    "source_name": "ESET ForSSHe December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--66a73f1e-dfb8-4509-be62-787c9a14c221",
+            "description": "(Citation: ESET Ebury Oct 2017)",
+            "target_ref": "malware--d6b3fcd0-1c86-4350-96f0-965ed02fcc51",
+            "modified": "2021-03-15T19:12:18.896Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-10T19:57:38.177Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/2017/10/30/windigo-ebury-update-2/",
+                    "description": "Vachon, F. (2017, October 30). Windigo Still not Windigone: An Ebury Update . Retrieved February 10, 2021.",
+                    "source_name": "ESET Ebury Oct 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--bea0bf7c-62c8-4334-b523-5cc6ec8b36c8",
+            "description": "[Windigo](https://attack.mitre.org/groups/G0124) has used a Perl script for information gathering.(Citation: ESET ForSSHe December 2018)",
+            "target_ref": "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830",
+            "modified": "2021-02-11T17:32:31.979Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-11T17:32:31.979Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2018/12/ESET-The_Dark_Side_of_the_ForSSHe.pdf",
+                    "description": "Dumont, R., M.L\u00e9veill\u00e9, M., Porcher, H. (2018, December 1). THE DARK SIDE OF THE FORSSHE A landscape of OpenSSH backdoors. Retrieved July 16, 2020.",
+                    "source_name": "ESET ForSSHe December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e2116500-b22a-44f6-ad5b-c3e579a67491",
+            "description": "[Windigo](https://attack.mitre.org/groups/G0124) has used a script to check for the presence of files created by OpenSSH backdoors.(Citation: ESET ForSSHe December 2018)",
+            "target_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "modified": "2021-02-11T17:32:31.975Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-11T17:32:31.975Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2018/12/ESET-The_Dark_Side_of_the_ForSSHe.pdf",
+                    "description": "Dumont, R., M.L\u00e9veill\u00e9, M., Porcher, H. (2018, December 1). THE DARK SIDE OF THE FORSSHE A landscape of OpenSSH backdoors. Retrieved July 16, 2020.",
+                    "source_name": "ESET ForSSHe December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f983de6b-eb17-4947-b4b0-50bd530f50e3",
+            "description": "[Windigo](https://attack.mitre.org/groups/G0124) has distributed Windows malware via drive-by downloads.(Citation: ESET Windigo Mar 2014)",
+            "target_ref": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "modified": "2021-02-10T20:45:20.026Z",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-10T20:45:20.026Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/2014/03/18/operation-windigo-the-vivisection-of-a-large-linux-server-side-credential-stealing-malware-campaign/",
+                    "description": "Bilodeau, O., Bureau, M., Calvet, J., Dorais-Joncas, A., L\u00e9veill\u00e9, M., Vanheuverzwijn, B. (2014, March 18). Operation Windigo \u2013 the vivisection of a large Linux server\u2011side credential\u2011stealing malware campaign. Retrieved February 10, 2021.",
+                    "source_name": "ESET Windigo Mar 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Command and Scripting Interpreter",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "2.2",
+            "modified": "2021-08-16T21:03:21.700Z",
+            "created": "2017-05-31T21:30:49.546Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "id": "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830",
+            "revoked": false,
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of [Unix Shell](https://attack.mitre.org/techniques/T1059/004) while Windows installations include the [Windows Command Shell](https://attack.mitre.org/techniques/T1059/003) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nThere are also cross-platform interpreters such as [Python](https://attack.mitre.org/techniques/T1059/006), as well as those commonly associated with client applications such as [JavaScript](https://attack.mitre.org/techniques/T1059/007) and [Visual Basic](https://attack.mitre.org/techniques/T1059/005).\n\nAdversaries may abuse these technologies in various ways as a means of executing arbitrary commands. Commands and scripts can be embedded in [Initial Access](https://attack.mitre.org/tactics/TA0001) payloads delivered to victims as lure documents or as secondary payloads downloaded from an existing C2. Adversaries may also execute commands through interactive terminals/shells, as well as utilize various [Remote Services](https://attack.mitre.org/techniques/T1021) in order to achieve remote Execution.(Citation: Powershell Remote Commands)(Citation: Cisco IOS Software Integrity Assurance - Command History)(Citation: Remote Shell Execution in Python)",
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Command-line and scripting activities can be captured through proper logging of process execution with command-line arguments. This information can be useful in gaining additional insight to adversaries' actions through how they use native processes or custom tools. Also monitor for loading of modules associated with specific languages.\n\nIf scripting is restricted for normal users, then any attempt to enable scripts running on a system would be considered suspicious. If scripts are not commonly used on a system, but enabled, scripts running out of cycle from patching or other administrator functions are suspicious. Scripts should be captured from the file system when possible to determine their actions and intent.\n\nScripts are likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for script execution and subsequent behavior. Actions may be related to network and system information discovery, collection, or other scriptable post-compromise behaviors and could be used as indicators of detection leading back to the source script.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059",
+                    "external_id": "T1059",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/running-remote-commands?view=powershell-7.1",
+                    "description": "Microsoft. (2020, August 21). Running Remote Commands. Retrieved July 26, 2021.",
+                    "source_name": "Powershell Remote Commands"
+                },
+                {
+                    "url": "https://tools.cisco.com/security/center/resources/integrity_assurance.html#23",
+                    "description": "Cisco. (n.d.). Cisco IOS Software Integrity Assurance - Command History. Retrieved October 21, 2020.",
+                    "source_name": "Cisco IOS Software Integrity Assurance - Command History"
+                },
+                {
+                    "url": "https://www.thepythoncode.com/article/executing-bash-commands-remotely-in-python",
+                    "description": "Abdou Rockikz. (2020, July). How to Execute Shell Commands in a Remote Machine in Python. Retrieved July 26, 2021.",
+                    "source_name": "Remote Shell Execution in Python"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Data from Local System",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1005",
+                    "external_id": "T1005",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Script: Script Execution",
+                "File: File Access",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-10-15T22:16:42.734Z",
+            "x_mitre_system_requirements": [
+                "Privileges to access certain files and directories"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+            "description": "Adversaries may search local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to Exfiltration.\n\nAdversaries may do this using a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059), such as [cmd](https://attack.mitre.org/software/S0106), which has functionality to interact with the file system to gather information. Some adversaries may also use [Automated Collection](https://attack.mitre.org/techniques/T1119) on the local system.\n",
+            "x_mitre_contributors": [
+                "William Cain"
+            ],
+            "x_mitre_detection": "Monitor processes and command-line arguments for actions that could be taken to collect files from a system. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:30:20.537Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-07-28T01:37:46.704Z",
+            "name": "Drive-by Compromise",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2018-04-18T17:59:24.739Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS",
+                "SaaS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "description": "Adversaries may gain access to a system through a user visiting a website over the normal course of browsing. With this technique, the user's web browser is typically targeted for exploitation, but adversaries may also use compromised websites for non-exploitation behavior such as acquiring [Application Access Token](https://attack.mitre.org/techniques/T1550/001).\n\nMultiple ways of delivering exploit code to a browser exist, including:\n\n* A legitimate website is compromised where adversaries have injected some form of malicious code such as JavaScript, iFrames, and cross-site scripting.\n* Malicious ads are paid for and served through legitimate ad providers.\n* Built-in web application interfaces are leveraged for the insertion of any other kind of object that can be used to display web content or contain a script that executes on the visiting client (e.g. forum posts, comments, and other user controllable web content).\n\nOften the website used by an adversary is one visited by a specific community, such as government, a particular industry, or region, where the goal is to compromise a specific user or set of users based on a shared interest. This kind of targeted attack is referred to a strategic web compromise or watering hole attack. There are several known examples of this occurring.(Citation: Shadowserver Strategic Web Compromise)\n\nTypical drive-by compromise process:\n\n1. A user visits a website that is used to host the adversary controlled content.\n2. Scripts automatically execute, typically searching versions of the browser and plugins for a potentially vulnerable version. \n    * The user may be required to assist in this process by enabling scripting or active website components and ignoring warning dialog boxes.\n3. Upon finding a vulnerable version, exploit code is delivered to the browser.\n4. If exploitation is successful, then it will give the adversary code execution on the user's system unless other protections are in place.\n    * In some cases a second visit to the website after the initial scan is required before exploit code is delivered.\n\nUnlike [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190), the focus of this technique is to exploit software on a client endpoint upon visiting a website. This will commonly give an adversary access to systems on the internal network instead of external systems that may be in a DMZ.\n\nAdversaries may also use compromised websites to deliver a user to a malicious application designed to [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s, like OAuth tokens, to gain access to protected applications and information. These malicious applications have been delivered through popups on legitimate websites.(Citation: Volexity OceanLotus Nov 2017)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM Services)",
+                "Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)"
+            ],
+            "x_mitre_detection": "Firewalls and proxies can inspect URLs for potentially known-bad domains or parameters. They can also do reputation-based analytics on websites and their requested resources such as how old a domain is, who it's registered to, if it's on a known bad list, or how many other users have connected to it before.\n\nNetwork intrusion detection systems, sometimes with SSL/TLS inspection, can be used to look for known malicious scripts (recon, heap spray, and browser identification scripts have been frequently reused), common script obfuscation, and exploit code.\n\nDetecting compromise based on the drive-by exploit from a legitimate website may be difficult. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of browser processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1189",
+                    "external_id": "T1189",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Shadowserver Strategic Web Compromise",
+                    "description": "Adair, S., Moran, N. (2012, May 15). Cyber Espionage & Strategic Web Compromises \u2013 Trusted Websites Serving Dangerous Results. Retrieved March 13, 2018.",
+                    "url": "http://blog.shadowserver.org/2012/05/15/cyber-espionage-strategic-web-compromises-trusted-websites-serving-dangerous-results/"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2017/11/06/oceanlotus-blossoms-mass-digital-surveillance-and-exploitation-of-asean-nations-the-media-human-rights-and-civil-society/",
+                    "description": "Lassalle, D., et al. (2017, November 6). OceanLotus Blossoms: Mass Digital Surveillance and Attacks Targeting ASEAN, Asian Nations, the Media, Human Rights Groups, and Civil Society. Retrieved November 6, 2017.",
+                    "source_name": "Volexity OceanLotus Nov 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "File and Directory Discovery",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1083",
+                    "external_id": "T1083",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/127.html",
+                    "external_id": "CAPEC-127",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/497.html",
+                    "external_id": "CAPEC-497",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Windows Commands JPCERT",
+                    "description": "Tomonaga, S. (2016, January 26). Windows Commands Abused by Attackers. Retrieved February 2, 2016.",
+                    "url": "https://blogs.jpcert.or.jp/en/2016/01/windows-commands-abused-by-attackers.html"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-08-23T20:44:32.048Z",
+            "x_mitre_system_requirements": [
+                "Some folders may require Administrator, SYSTEM or specific user depending on permission levels and access controls"
+            ],
+            "id": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nMany command shell utilities can be used to obtain this information. Examples include <code>dir</code>, <code>tree</code>, <code>ls</code>, <code>find</code>, and <code>locate</code>.(Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the [Native API](https://attack.mitre.org/techniques/T1106).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Collection and Exfiltration, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:31:04.710Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Proxy",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "3.1",
+            "modified": "2021-08-30T19:16:11.648Z",
+            "created": "2017-05-31T21:31:08.479Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--731f4f55-b6d0-41d1-a7a9-072a66389aea",
+            "description": "Adversaries may use a connection proxy to direct network traffic between systems or act as an intermediary for network communications to a command and control server to avoid direct connections to their infrastructure. Many tools exist that enable traffic redirection through proxies or port redirection, including [HTRAN](https://attack.mitre.org/software/S0040), ZXProxy, and ZXPortMap. (Citation: Trend Micro APT Attack Tools) Adversaries use these types of proxies to manage command and control communications, reduce the number of simultaneous outbound network connections, provide resiliency in the face of connection loss, or to ride over existing trusted communications paths between victims to avoid suspicion. Adversaries may chain together multiple proxies to further disguise the source of malicious traffic.\n\nAdversaries can also take advantage of routing schemes in Content Delivery Networks (CDNs) to proxy command and control traffic.",
+            "x_mitre_contributors": [
+                "Jon Sheedy",
+                "Heather Linn",
+                "Walker Johnson"
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server or between clients that should not or often do not communicate with one another). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. (Citation: University of Birmingham C2)\n\nConsider monitoring for traffic to known anonymity networks (such as [Tor](https://attack.mitre.org/software/S0183)).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1090",
+                    "external_id": "T1090",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Trend Micro APT Attack Tools",
+                    "description": "Wilhoit, K. (2013, March 4). In-Depth Look: APT Attack Tools of the Trade. Retrieved December 2, 2015.",
+                    "url": "http://blog.trendmicro.com/trendlabs-security-intelligence/in-depth-look-apt-attack-tools-of-the-trade/"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-03-29T16:05:00.456Z",
+            "name": "Software Discovery",
+            "x_mitre_data_sources": [
+                "Firewall: Firewall Metadata",
+                "Firewall: Firewall Enumeration",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2019-09-16T17:52:44.147Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e3b6daca-e963-4a69-aee6-ed4fd653ad58",
+            "description": "Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment. Adversaries may use the information from [Software Discovery](https://attack.mitre.org/techniques/T1518) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nAdversaries may attempt to enumerate software for a variety of reasons, such as figuring out what security measures are present or if the compromised system has a version of software that is vulnerable to [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as lateral movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1518",
+                    "external_id": "T1518",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/580.html",
+                    "external_id": "CAPEC-580",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "System Information Discovery",
+            "x_mitre_data_sources": [
+                "Instance: Instance Metadata",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-13T23:21:27.750Z",
+            "created": "2017-05-31T21:31:04.307Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. Adversaries may use the information from [System Information Discovery](https://attack.mitre.org/techniques/T1082) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nTools such as [Systeminfo](https://attack.mitre.org/software/S0096) can be used to gather detailed system information. If running with privileged access, a breakdown of system data can be gathered through the <code>systemsetup</code> configuration tool on macOS. As an example, adversaries with user-level access can execute the <code>df -aH</code> command to obtain currently mounted disks and associated freely available space. [System Information Discovery](https://attack.mitre.org/techniques/T1082) combined with information gathered from other forms of discovery and reconnaissance can drive payload development and concealment.(Citation: OSX.FairyTale)(Citation: 20 macOS Common Tools and Techniques)\n\nInfrastructure as a Service (IaaS) cloud providers such as AWS, GCP, and Azure allow access to instance and virtual machine information via APIs. Successful authenticated API calls can return data such as the operating system platform and status of a particular instance or the model view of a virtual machine.(Citation: Amazon Describe Instance)(Citation: Google Instances Resource)(Citation: Microsoft Virutal Machine API)",
+            "x_mitre_contributors": [
+                "Maril Vernon @shewhohacks",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nIn cloud-based systems, native logging can be used to identify access to certain APIs and dashboards that may contain system information. Depending on how the environment is used, that data alone may not be useful due to benign use during normal operations.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1082",
+                    "external_id": "T1082",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/312.html",
+                    "external_id": "CAPEC-312",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.sentinelone.com/blog/trail-osx-fairytale-adware-playing-malware/",
+                    "description": "Phile Stokes. (2018, September 20). On the Trail of OSX.FairyTale | Adware Playing at Malware. Retrieved August 24, 2021.",
+                    "source_name": "OSX.FairyTale"
+                },
+                {
+                    "url": "https://labs.sentinelone.com/20-common-tools-techniques-used-by-macos-threat-actors-malware/",
+                    "description": "Phil Stokes. (2021, February 16). 20 Common Tools & Techniques Used by macOS Threat Actors & Malware. Retrieved August 23, 2021.",
+                    "source_name": "20 macOS Common Tools and Techniques"
+                },
+                {
+                    "url": "https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html",
+                    "description": "Amazon. (n.d.). describe-instance-information. Retrieved March 3, 2020.",
+                    "source_name": "Amazon Describe Instance"
+                },
+                {
+                    "url": "https://cloud.google.com/compute/docs/reference/rest/v1/instances",
+                    "description": "Google. (n.d.). Rest Resource: instance. Retrieved March 3, 2020.",
+                    "source_name": "Google Instances Resource"
+                },
+                {
+                    "source_name": "Microsoft Virutal Machine API",
+                    "description": "Microsoft. (2019, March 1). Virtual Machines - Get. Retrieved October 8, 2019.",
+                    "url": "https://docs.microsoft.com/en-us/rest/api/compute/virtualmachines/get"
+                }
+            ]
+        },
+        {
+            "type": "malware",
+            "modified": "2021-04-23T22:56:14.591Z",
+            "name": "Ebury",
+            "x_mitre_aliases": [
+                "Ebury"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2019-04-19T16:40:24.922Z",
+            "x_mitre_platforms": [
+                "Linux"
+            ],
+            "id": "malware--d6b3fcd0-1c86-4350-96f0-965ed02fcc51",
+            "description": "[Ebury](https://attack.mitre.org/software/S0377) is an SSH backdoor targeting Linux operating systems. Attackers require root-level access, which allows them to replace SSH binaries (ssh, sshd, ssh-add, etc) or modify a shared library used by OpenSSH (libkeyutils).(Citation: ESET Ebury Feb 2014)(Citation: BleepingComputer Ebury March 2017)(Citation: ESET Ebury Oct 2017)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Marc-Etienne M.L\u00e9veill\u00e9, ESET"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0377",
+                    "external_id": "S0377",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: ESET Ebury Feb 2014)",
+                    "source_name": "Ebury"
+                },
+                {
+                    "url": "https://www.welivesecurity.com/2014/02/21/an-in-depth-analysis-of-linuxebury/",
+                    "description": "M.L\u00e9veill\u00e9, M.. (2014, February 21). An In-depth Analysis of Linux/Ebury. Retrieved April 19, 2019.",
+                    "source_name": "ESET Ebury Feb 2014"
+                },
+                {
+                    "url": "https://www.bleepingcomputer.com/news/security/russian-hacker-pleads-guilty-for-role-in-infamous-linux-ebury-malware/",
+                    "description": "Cimpanu, C.. (2017, March 29). Russian Hacker Pleads Guilty for Role in Infamous Linux Ebury Malware. Retrieved April 23, 2019.",
+                    "source_name": "BleepingComputer Ebury March 2017"
+                },
+                {
+                    "url": "https://www.welivesecurity.com/2017/10/30/windigo-ebury-update-2/",
+                    "description": "Vachon, F. (2017, October 30). Windigo Still not Windigone: An Ebury Update . Retrieved February 10, 2021.",
+                    "source_name": "ESET Ebury Oct 2017"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bf26fd22-73ff-47a1-bec6-ae4e69a9c909",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

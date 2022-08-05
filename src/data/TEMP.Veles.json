@@ -1,0 +1,1905 @@
+{
+    "type": "bundle",
+    "id": "bundle--75882de6-f88d-4844-b0fa-babb5069758a",
+    "spec_version": "2.0",
+    "objects": [
+        {    "primary_motivation": "dominance",
+            "first_seen":"2014",
+            "x_MISP-description": "TEMP.Veles is a Russia-based threat group that has targeted critical infrastructure. The group has been observed utilizing TRITON, a malware framework designed to manipulate industrial safety systems.",
+            "x_MISP-uuid": "90abfc42-91c6-11e9-89b1-af58de8f7ec2",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "TEMP.Veles",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) is a Russia-based threat group that has targeted critical infrastructure. The group has been observed utilizing [TRITON](https://attack.mitre.org/software/S0609), a malware framework designed to manipulate industrial safety systems.(Citation: FireEye TRITON 2019)(Citation: FireEye TEMP.Veles 2018)(Citation: FireEye TEMP.Veles JSON April 2019)",
+            "x_mitre_version": "1.3",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "TEMP.Veles",
+                "XENOTIME",
+                "ATK 91",
+                "Triton"
+            ],
+            "created": "2019-04-16T15:14:38.533Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "G0088",
+                    "url": "https://attack.mitre.org/groups/G0088"
+                },
+                {
+                    "description": "(Citation: FireEye TRITON 2019)",
+                    "source_name": "TEMP.Veles"
+                },
+                {
+                    "description": "The activity group XENOTIME, as defined by Dragos, has overlaps with activity reported upon by FireEye about TEMP.Veles as well as the actors behind TRITON .(Citation: Dragos Xenotime 2018)(Citation: Pylos Xenotime 2019)(Citation: FireEye TRITON 2019)(Citation: FireEye TEMP.Veles 2018 )",
+                    "source_name": "XENOTIME"
+                },
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                },
+                {
+                    "source_name": "FireEye TEMP.Veles 2018",
+                    "description": "FireEye Intelligence . (2018, October 23). TRITON Attribution: Russian Government-Owned Lab Most Likely Built Custom Intrusion Tools for TRITON Attackers. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/10/triton-attribution-russian-government-owned-lab-most-likely-built-tools.html "
+                },
+                {
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/blog/files/TRITON_Appendix_C.html",
+                    "description": "Miller, S., et al. (2019, April 10). TRITON Appendix C. Retrieved April 29, 2019.",
+                    "source_name": "FireEye TEMP.Veles JSON April 2019"
+                },
+                {
+                    "source_name": "Dragos Xenotime 2018",
+                    "description": "Dragos, Inc.. (n.d.). Xenotime. Retrieved April 16, 2019.",
+                    "url": "https://dragos.com/resource/xenotime/"
+                },
+                {
+                    "source_name": "Pylos Xenotime 2019",
+                    "description": "Slowik, J.. (2019, April 12). A XENOTIME to Remember: Veles in the Wild. Retrieved April 16, 2019.",
+                    "url": "https://pylos.co/2019/04/12/a-xenotime-to-remember-veles-in-the-wild/"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/10/triton-attribution-russian-government-owned-lab-most-likely-built-tools.html ",
+                    "description": "FireEye Intelligence . (2018, October 23). TRITON Attribution: Russian Government-Owned Lab Most Likely Built Custom Intrusion Tools for TRITON Attackers. Retrieved April 16, 2019.",
+                    "source_name": "FireEye TEMP.Veles 2018 "
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1ef56254-5eb9-42b9-a714-865c49a8fefd",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used port 443 for C2.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--f879d51c-5476-431c-aedf-f14d207e4d1e",
+            "modified": "2019-04-29T18:59:16.548Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-24T19:45:44.197Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3bd260ad-fca9-46c3-9144-51f24a917310",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used a VPN to persist in the victim environment.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--10d51417-ee35-4589-b1ff-b6df1c334e8d",
+            "modified": "2019-04-29T18:59:16.516Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T16:08:49.406Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6b1cf025-d38b-4cf4-9595-e6799e522c5b",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has planted Web shells on Outlook Exchange servers.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb",
+            "modified": "2020-03-18T19:43:26.425Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-24T19:45:44.177Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9c48595e-4296-4a38-b2e1-e5b9cb668e4c",
+            "description": "(Citation: FireEye TEMP.Veles 2018)",
+            "target_ref": "malware--93ae2edf-a598-4d2d-acd7-bcae0c021923",
+            "modified": "2021-01-12T17:36:56.723Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-12T17:36:56.723Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TEMP.Veles 2018",
+                    "description": "FireEye Intelligence . (2018, October 23). TRITON Attribution: Russian Government-Owned Lab Most Likely Built Custom Intrusion Tools for TRITON Attackers. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/10/triton-attribution-russian-government-owned-lab-most-likely-built-tools.html "
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--21b97ace-2b9b-4323-9067-5cf1a595e820",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used ports 4444, 8531, and 50501 for C2.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--c848fcf7-6b62-4bde-8216-b6c157d48da0",
+            "modified": "2019-04-29T18:59:16.553Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-24T19:45:44.189Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--28d58aa4-48ee-41c7-aefa-8e4402ddad3c",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has created staging folders in directories that were infrequently used by legitimate users or processes.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--1c34f7aa-9341-4a48-bfab-af22e51aca6c",
+            "modified": "2020-03-17T15:02:26.320Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:47:48.799Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--60d2b385-14cf-454a-ac92-0d41e3ec397a",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has modified files based on the open-source project cryptcat in an apparent attempt to decrease AV detection rates.(Citation: FireEye TEMP.Veles 2018)",
+            "target_ref": "attack-pattern--b0533c6e-8fea-4788-874f-b799cacc4b92",
+            "modified": "2019-04-29T18:59:16.590Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-24T19:50:33.751Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TEMP.Veles 2018",
+                    "description": "FireEye Intelligence . (2018, October 23). TRITON Attribution: Russian Government-Owned Lab Most Likely Built Custom Intrusion Tools for TRITON Attackers. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/10/triton-attribution-russian-government-owned-lab-most-likely-built-tools.html "
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--76f7e81a-4637-4e02-b417-af4d85369432",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) utilized RDP throughout an operation.(Citation: FireEye TRITON 2019)\t",
+            "target_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "modified": "2019-04-29T18:59:16.414Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T16:08:49.400Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--76ff48d5-a341-431b-8653-1b1ad93ae435",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used port-protocol mismatches on ports such as 443, 4444, 8531, and 50501 during C2.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--b18eae87-b469-4e14-b454-b171b416bc18",
+            "modified": "2020-03-30T20:03:17.541Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-30T20:03:17.541Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--173ba3ee-3bec-4849-b6a2-94ee5bce5f8e",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has modified and added entries within <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options</code> to maintain persistence.(Citation: FireEye TRITON 2019)\t\n",
+            "target_ref": "attack-pattern--6d4a7fb3-5a24-42be-ae61-6728a2b581f6",
+            "modified": "2019-04-29T18:59:16.322Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:47:48.755Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--857e24ad-248e-4068-b142-4421bc9254c4",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has relied on encrypted SSH-based tunnels to transfer tools and for remote command/program execution.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--2db31dcd-54da-405d-acef-b9129b816ed6",
+            "modified": "2020-03-17T16:57:14.976Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:47:48.807Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--57216102-21aa-402b-b306-79e1dd548716",
+            "description": "(Citation: FireEye TRITON 2019)",
+            "target_ref": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "modified": "2019-04-29T18:59:16.698Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:21:57.842Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a8c82128-fcd4-49b2-8429-39a2b6db8c70",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used scheduled task XML triggers.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+            "modified": "2020-03-28T21:30:51.514Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:47:48.773Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a692f6c3-9082-4336-b52a-2a40556ee03d",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used a publicly-available PowerShell-based tool, WMImplant.(Citation: FireEye TEMP.Veles 2018) The group has also used PowerShell to perform [Timestomp](https://attack.mitre.org/techniques/T1070/006)ing.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "modified": "2021-02-09T14:34:04.502Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-24T19:50:33.740Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TEMP.Veles 2018",
+                    "description": "FireEye Intelligence . (2018, October 23). TRITON Attribution: Russian Government-Owned Lab Most Likely Built Custom Intrusion Tools for TRITON Attackers. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/10/triton-attribution-russian-government-owned-lab-most-likely-built-tools.html "
+                },
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a8068bc5-7382-448b-9583-1f61edb68b96",
+            "description": "(Citation: FireEye TRITON 2019)(Citation: Dragos Xenotime 2018)",
+            "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "modified": "2019-04-29T18:59:16.701Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:21:57.835Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                },
+                {
+                    "source_name": "Dragos Xenotime 2018",
+                    "description": "Dragos, Inc.. (n.d.). Xenotime. Retrieved April 16, 2019.",
+                    "url": "https://dragos.com/resource/xenotime/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b9ca1199-cb71-4435-84ec-75aee916d1ae",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has renamed files to look like legitimate files, such as Windows update files or Schneider Electric application files.(Citation: FireEye TRITON 2019)\n",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "modified": "2020-03-18T16:09:29.302Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:21:57.810Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c024f146-ef3e-4220-8658-b5ad312e1df1",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used Virtual Private Server (VPS) infrastructure.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795",
+            "modified": "2020-10-04T23:31:37.194Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-10-04T23:31:37.194Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cafe602e-c163-451c-8d61-69907e59968c",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) used timestomping to modify the $STANDARD_INFORMATION attribute on tools.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--47f2d673-ca62-47e9-929b-1b0be9657611",
+            "modified": "2019-04-29T18:59:16.405Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:47:48.777Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cf506331-5caf-44a2-8020-34bbefda43eb",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used compromised VPN accounts.(Citation: FireEye TRITON 2019)\t",
+            "target_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "modified": "2019-04-29T18:59:16.413Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T16:08:49.378Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d705cc12-1d6c-414d-8b39-1c099dec07ab",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) routinely deleted tools, logs, and other files after they were finished with them.(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c",
+            "modified": "2019-04-29T18:59:16.411Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:47:48.783Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e215f890-b524-4456-a104-64ac8abda389",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has obtained and used tools such as [Mimikatz](https://attack.mitre.org/software/S0002) and [PsExec](https://attack.mitre.org/software/S0029).(Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-12T20:40:46.602Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T20:40:46.602Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f2dc80a5-b616-464c-94cd-6d52395f79fe",
+            "description": "[TEMP.Veles](https://attack.mitre.org/groups/G0088) has used [Mimikatz](https://attack.mitre.org/software/S0002) and a custom tool, SecHack, to harvest credentials. (Citation: FireEye TRITON 2019)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2020-03-20T00:20:47.593Z",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-16T15:21:57.823Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye TRITON 2019",
+                    "description": "Miller, S, et al. (2019, April 10). TRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT&CK Mapping. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Virtual Private Server",
+            "x_mitre_data_sources": [
+                "Internet Scan: Response Metadata",
+                "Internet Scan: Response Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T15:36:59.315Z",
+            "created": "2020-10-01T00:44:23.935Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795",
+            "description": "Adversaries may rent Virtual Private Servers (VPSs)\u00a0that can be used during targeting. There exist a variety of cloud service providers that will sell virtual machines/containers as a service. By utilizing a VPS, adversaries can make it difficult to physically tie back operations to them. The use of cloud infrastructure can also make it easier for adversaries to rapidly provision, modify, and shut down their infrastructure.\n\nAcquiring a VPS for use in later stages of the adversary lifecycle, such as Command and Control, can allow adversaries to benefit from the ubiquity and trust associated with higher reputation cloud service providers. Adversaries may also acquire infrastructure from VPS service providers that are known for renting VPSs with minimal registration information, allowing for more anonymous acquisitions of infrastructure.(Citation: TrendmicroHideoutsLease)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Once adversaries have provisioned a VPS (ex: for use as a command and control server), internet scans may reveal servers that adversaries have acquired. Consider looking for identifiable patterns such as services listening, certificates in use, SSL/TLS negotiation features, or other response artifacts associated with adversary C2 software.(Citation: ThreatConnect Infrastructure Dec 2020)(Citation: Mandiant SCANdalous Jul 2020)(Citation: Koczwara Beacon Hunting Sep 2021)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Command and Control.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1583/003",
+                    "external_id": "T1583.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://documents.trendmicro.com/assets/wp/wp-criminal-hideouts-for-lease.pdf",
+                    "description": "Max Goncharov. (2015, July 15). Criminal Hideouts for Lease: Bulletproof Hosting Services. Retrieved March 6, 2017.",
+                    "source_name": "TrendmicroHideoutsLease"
+                },
+                {
+                    "url": "https://threatconnect.com/blog/infrastructure-research-hunting/",
+                    "description": "ThreatConnect. (2020, December 15). Infrastructure Research and Hunting: Boiling the Domain Ocean. Retrieved October 12, 2021.",
+                    "source_name": "ThreatConnect Infrastructure Dec 2020"
+                },
+                {
+                    "url": "https://www.mandiant.com/resources/scandalous-external-detection-using-network-scan-data-and-automation",
+                    "description": "Stephens, A. (2020, July 13). SCANdalous! (External Detection Using Network Scan Data and Automation). Retrieved October 12, 2021.",
+                    "source_name": "Mandiant SCANdalous Jul 2020"
+                },
+                {
+                    "url": "https://michaelkoczwara.medium.com/cobalt-strike-c2-hunting-with-shodan-c448d501a6e2",
+                    "description": "Koczwara, M. (2021, September 7). Hunting Cobalt Strike C2 with Shodan. Retrieved October 12, 2021.",
+                    "source_name": "Koczwara Beacon Hunting Sep 2021"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-05-28T14:56:23.748Z",
+            "name": "PowerShell",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Module: Module Load",
+                "Process: Process Creation",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-03-09T13:48:55.078Z",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "id": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).\n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nA number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)\n\nPowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI). (Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "If proper execution policy is set, adversaries will likely be able to define their own execution policy if they obtain administrator or system access, either through the Registry or at the command line. This change in policy on a system may be a way to detect malicious use of PowerShell. If PowerShell is not used in an environment, then simply looking for PowerShell execution may detect malicious activity.\n\nMonitor for loading and/or execution of artifacts associated with PowerShell specific assemblies, such as System.Management.Automation.dll (especially to unusual process names/locations).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)\n\nIt is also beneficial to turn on PowerShell logging to gain increased fidelity in what occurs during execution (which is applied to .NET invocations). (Citation: Malware Archaeology PowerShell Cheat Sheet) PowerShell 5.0 introduced enhanced logging capabilities, and some of those features have since been added to PowerShell 4.0. Earlier versions of PowerShell do not have many logging features.(Citation: FireEye PowerShell Logging 2016) An organization can gather PowerShell execution details in a data analytic platform to supplement it with other data.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/001",
+                    "external_id": "T1059.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "TechNet PowerShell",
+                    "description": "Microsoft. (n.d.). Windows PowerShell Scripting. Retrieved April 28, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx"
+                },
+                {
+                    "source_name": "Github PSAttack",
+                    "description": "Haight, J. (2016, April 21). PS>Attack. Retrieved June 1, 2016.",
+                    "url": "https://github.com/jaredhaight/PSAttack"
+                },
+                {
+                    "url": "http://www.sixdub.net/?p=367",
+                    "description": "Warner, J.. (2015, January 6). Inexorable PowerShell \u2013 A Red Teamer\u2019s Tale of Overcoming Simple AppLocker Policies. Retrieved December 8, 2018.",
+                    "source_name": "Sixdub PowerPick Jan 2016"
+                },
+                {
+                    "url": "https://silentbreaksecurity.com/powershell-jobs-without-powershell-exe/",
+                    "description": "Christensen, L.. (2015, December 28). The Evolution of Offensive PowerShell Invocation. Retrieved December 8, 2018.",
+                    "source_name": "SilentBreak Offensive PS Dec 2015"
+                },
+                {
+                    "url": "https://blogs.msdn.microsoft.com/kebab/2014/04/28/executing-powershell-scripts-from-c/",
+                    "description": "Babinec, K. (2014, April 28). Executing PowerShell scripts from C#. Retrieved April 22, 2019.",
+                    "source_name": "Microsoft PSfromCsharp APR 2014"
+                },
+                {
+                    "source_name": "Malware Archaeology PowerShell Cheat Sheet",
+                    "description": "Malware Archaeology. (2016, June). WINDOWS POWERSHELL LOGGING CHEAT SHEET - Win 7/Win 2008 or later. Retrieved June 24, 2016.",
+                    "url": "http://www.malwarearchaeology.com/s/Windows-PowerShell-Logging-Cheat-Sheet-ver-June-2016-v2.pdf"
+                },
+                {
+                    "source_name": "FireEye PowerShell Logging 2016",
+                    "description": "Dunwoody, M. (2016, February 11). GREATER VISIBILITY THROUGH POWERSHELL LOGGING. Retrieved February 16, 2016.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Local Data Staging",
+            "x_mitre_data_sources": [
+                "File: File Access",
+                "File: File Creation",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-05-26T19:23:54.854Z",
+            "created": "2020-03-13T21:13:10.467Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c34f7aa-9341-4a48-bfab-af22e51aca6c",
+            "description": "Adversaries may stage collected data in a central location or directory on the local system prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as [Archive Collected Data](https://attack.mitre.org/techniques/T1560). Interactive command shells may be used, and common functionality within [cmd](https://attack.mitre.org/software/S0106) and bash may be used to copy data into a staging location.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_detection": "Processes that appear to be reading files from disparate locations and writing them to the same directory or file may be an indication of data being staged, especially if they are suspected of performing encryption or compression on the files, such as 7zip, RAR, ZIP, or zlib. Monitor publicly writeable directories, central locations, and commonly used staging directories (recycle bin, temp folders, etc.) to regularly check for compressed or encrypted data that may be indicative of staging.\n\nMonitor processes and command-line arguments for actions that could be taken to collect and combine files. Remote access tools with built-in features may interact directly with the Windows API to gather and copy to a location. Data may also be acquired and staged through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1074/001",
+                    "external_id": "T1074.001",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-11-10T18:29:31.112Z",
+            "name": "Image File Execution Options Injection",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Windows Registry: Windows Registry Key Modification",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-01-24T15:05:58.384Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--6d4a7fb3-5a24-42be-ae61-6728a2b581f6",
+            "description": "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by Image File Execution Options (IFEO) debuggers. IFEOs enable a developer to attach a debugger to an application. When a process is created, a debugger present in an application\u2019s IFEO will be prepended to the application\u2019s name, effectively launching the new process under the debugger (e.g., <code>C:\\dbg\\ntsd.exe -g  notepad.exe</code>). (Citation: Microsoft Dev Blog IFEO Mar 2010)\n\nIFEOs can be set directly via the Registry or in Global Flags via the GFlags tool. (Citation: Microsoft GFlags Mar 2017) IFEOs are represented as <code>Debugger</code> values in the Registry under <code>HKLM\\SOFTWARE{\\Wow6432Node}\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\<executable></code> where <code>&lt;executable&gt;</code> is the binary on which the debugger is attached. (Citation: Microsoft Dev Blog IFEO Mar 2010)\n\nIFEOs can also enable an arbitrary monitor program to be launched when a specified program silently exits (i.e. is prematurely terminated by itself or a second, non kernel-mode process). (Citation: Microsoft Silent Process Exit NOV 2017) (Citation: Oddvar Moe IFEO APR 2018) Similar to debuggers, silent exit monitoring can be enabled through GFlags and/or by directly modifying IFEO and silent process exit Registry values in <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SilentProcessExit\\</code>. (Citation: Microsoft Silent Process Exit NOV 2017) (Citation: Oddvar Moe IFEO APR 2018)\n\nSimilar to [Accessibility Features](https://attack.mitre.org/techniques/T1546/008), on Windows Vista and later as well as Windows Server 2008 and later, a Registry key may be modified that configures \"cmd.exe,\" or another program that provides backdoor access, as a \"debugger\" for an accessibility program (ex: utilman.exe). After the Registry is modified, pressing the appropriate key combination at the login screen while at the keyboard or when connected with [Remote Desktop Protocol](https://attack.mitre.org/techniques/T1021/001) will cause the \"debugger\" program to be executed with SYSTEM privileges. (Citation: Tilbury 2014)\n\nSimilar to [Process Injection](https://attack.mitre.org/techniques/T1055), these values may also be abused to obtain privilege escalation by causing a malicious executable to be loaded and run in the context of separate processes on the computer. (Citation: Elastic Process Injection July 2017) Installing IFEO mechanisms may also provide Persistence via continuous triggered invocation.\n\nMalware may also use IFEO to [Impair Defenses](https://attack.mitre.org/techniques/T1562) by registering invalid debuggers that redirect and effectively disable various system and security applications. (Citation: FSecure Hupigon) (Citation: Symantec Ushedix June 2008)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Oddvar Moe, @oddvarmoe"
+            ],
+            "x_mitre_detection": "Monitor for abnormal usage of the GFlags tool as well as common processes spawned under abnormal parents and/or with creation flags indicative of debugging such as <code>DEBUG_PROCESS</code> and <code>DEBUG_ONLY_THIS_PROCESS</code>. (Citation: Microsoft Dev Blog IFEO Mar 2010)\n\nMonitor Registry values associated with IFEOs, as well as silent process exit monitoring, for modifications that do not correlate with known software, patch cycles, etc. Monitor and analyze application programming interface (API) calls that are indicative of Registry edits such as <code>RegCreateKeyEx</code> and <code>RegSetValueEx</code>. (Citation: Elastic Process Injection July 2017)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1546/012",
+                    "external_id": "T1546.012",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Microsoft Dev Blog IFEO Mar 2010",
+                    "description": "Shanbhag, M. (2010, March 24). Image File Execution Options (IFEO). Retrieved December 18, 2017.",
+                    "url": "https://blogs.msdn.microsoft.com/mithuns/2010/03/24/image-file-execution-options-ifeo/"
+                },
+                {
+                    "source_name": "Microsoft GFlags Mar 2017",
+                    "description": "Microsoft. (2017, May 23). GFlags Overview. Retrieved December 18, 2017.",
+                    "url": "https://docs.microsoft.com/windows-hardware/drivers/debugger/gflags-overview"
+                },
+                {
+                    "source_name": "Microsoft Silent Process Exit NOV 2017",
+                    "description": "Marshall, D. & Griffin, S. (2017, November 28). Monitoring Silent Process Exit. Retrieved June 27, 2018.",
+                    "url": "https://docs.microsoft.com/windows-hardware/drivers/debugger/registry-entries-for-silent-process-exit"
+                },
+                {
+                    "source_name": "Oddvar Moe IFEO APR 2018",
+                    "description": "Moe, O. (2018, April 10). Persistence using GlobalFlags in Image File Execution Options - Hidden from Autoruns.exe. Retrieved June 27, 2018.",
+                    "url": "https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/"
+                },
+                {
+                    "source_name": "Tilbury 2014",
+                    "description": "Tilbury, C. (2014, August 28). Registry Analysis with CrowdResponse. Retrieved November 12, 2014.",
+                    "url": "http://blog.crowdstrike.com/registry-analysis-with-crowdresponse/"
+                },
+                {
+                    "source_name": "Elastic Process Injection July 2017",
+                    "description": "Hosseini, A. (2017, July 18). Ten Process Injection Techniques: A Technical Survey Of Common And Trending Process Injection Techniques. Retrieved December 7, 2017.",
+                    "url": "https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process"
+                },
+                {
+                    "source_name": "FSecure Hupigon",
+                    "description": "FSecure. (n.d.). Backdoor - W32/Hupigon.EMV - Threat Description. Retrieved December 18, 2017.",
+                    "url": "https://www.f-secure.com/v-descs/backdoor_w32_hupigon_emv.shtml"
+                },
+                {
+                    "source_name": "Symantec Ushedix June 2008",
+                    "description": "Symantec. (2008, June 28). Trojan.Ushedix. Retrieved December 18, 2017.",
+                    "url": "https://www.symantec.com/security_response/writeup.jsp?docid=2008-062807-2501-99&tabid=2"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "External Remote Services",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content",
+                "Logon Session: Logon Session Metadata",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-08-19T16:57:27.209Z",
+            "created": "2017-05-31T21:31:44.421Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "id": "attack-pattern--10d51417-ee35-4589-b1ff-b6df1c334e8d",
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "Containers",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations. There are often remote service gateways that manage connections and credential authentication for these services. Services such as [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006) and [VNC](https://attack.mitre.org/techniques/T1021/005) can also be used externally.(Citation: MacOS VNC software for Remote Desktop)\n\nAccess to [Valid Accounts](https://attack.mitre.org/techniques/T1078) to use the service is often a requirement, which could be obtained through credential pharming or by obtaining the credentials from users after compromising the enterprise network.(Citation: Volexity Virtual Private Keylogging) Access to remote services may be used as a redundant or persistent access mechanism during an operation.\n\nAccess may also be gained through an exposed service that doesn\u2019t require authentication. In containerized environments, this may include an exposed Docker API, Kubernetes API server, kubelet, or web application such as the Kubernetes dashboard.(Citation: Trend Micro Exposed Docker Server)(Citation: Unit 42 Hildegard Malware)",
+            "x_mitre_contributors": [
+                "ExtraHop",
+                "David Fiser, @anu4is, Trend Micro",
+                "Alfredo Oliveira, Trend Micro",
+                "Idan Frimark, Cisco",
+                "Rory McCune, Aqua Security",
+                "Yuval Avrahami, Palo Alto Networks",
+                "Jay Chen, Palo Alto Networks",
+                "Brad Geesaman, @bradgeesaman",
+                "Magno Logan, @magnologan, Trend Micro",
+                "Ariel Shuper, Cisco",
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee",
+                "Daniel Oakley",
+                "Travis Smith, Tripwire"
+            ],
+            "x_mitre_detection": "Follow best practices for detecting adversary use of [Valid Accounts](https://attack.mitre.org/techniques/T1078) for authenticating to remote services. Collect authentication logs and analyze for unusual access patterns, windows of activity, and access outside of normal business hours.\n\nWhen authentication is not required to access an exposed remote service, monitor for follow-on activities such as anomalous external use of the exposed API or application.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1133",
+                    "external_id": "T1133",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/555.html",
+                    "external_id": "CAPEC-555",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://support.apple.com/guide/remote-desktop/set-up-a-computer-running-vnc-software-apdbed09830/mac",
+                    "description": "Apple Support. (n.d.). Set up a computer running VNC software for Remote Desktop. Retrieved August 18, 2021.",
+                    "source_name": "MacOS VNC software for Remote Desktop"
+                },
+                {
+                    "source_name": "Volexity Virtual Private Keylogging",
+                    "description": "Adair, S. (2015, October 7). Virtual Private Keylogging: Cisco Web VPNs Leveraged for Access and Persistence. Retrieved March 20, 2017.",
+                    "url": "https://www.volexity.com/blog/2015/10/07/virtual-private-keylogging-cisco-web-vpns-leveraged-for-access-and-persistence/"
+                },
+                {
+                    "url": "https://www.trendmicro.com/en_us/research/20/f/xorddos-kaiji-botnet-malware-variants-target-exposed-docker-servers.html",
+                    "description": "Remillano II, A., et al. (2020, June 20). XORDDoS, Kaiji Variants Target Exposed Docker Servers. Retrieved April 5, 2021.",
+                    "source_name": "Trend Micro Exposed Docker Server"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/hildegard-malware-teamtnt/",
+                    "description": "Chen, J. et al. (2021, February 3). Hildegard: New TeamTNT Cryptojacking Malware Targeting Kubernetes. Retrieved April 5, 2021.",
+                    "source_name": "Unit 42 Hildegard Malware"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "File Deletion",
+            "x_mitre_data_sources": [
+                "File: File Deletion",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-29T21:34:16.209Z",
+            "created": "2020-01-31T12:35:36.479Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c",
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may delete files left behind by the actions of their intrusion activity. Malware, tools, or other non-native files dropped or created on a system by an adversary may leave traces to indicate to what was done within a network and how. Removal of these files can occur during an intrusion, or as part of a post-intrusion process to minimize the adversary's footprint.\n\nThere are tools available from the host operating system to perform cleanup, but adversaries may use other tools as well. Examples include native [cmd](https://attack.mitre.org/software/S0106) functions such as DEL, secure deletion tools such as Windows Sysinternals SDelete, or other third-party file deletion tools. (Citation: Trend Micro APT Attack Tools)",
+            "x_mitre_contributors": [
+                "Walker Johnson"
+            ],
+            "x_mitre_detection": "It may be uncommon for events related to benign command-line functions such as DEL or third-party utilities or tools to be found in an environment, depending on the user base and how systems are typically used. Monitoring for command-line deletion functions to correlate with binaries or other files that an adversary may drop and remove may lead to detection of malicious activity. Another good practice is monitoring for known deletion and secure deletion tools that are not already on systems within an enterprise network that an adversary could introduce. Some monitoring tools may collect command-line arguments, but may not capture DEL commands since DEL is a native function within cmd.exe.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1070/004",
+                    "external_id": "T1070.004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Trend Micro APT Attack Tools",
+                    "description": "Wilhoit, K. (2013, March 4). In-Depth Look: APT Attack Tools of the Trade. Retrieved December 2, 2015.",
+                    "url": "http://blog.trendmicro.com/trendlabs-security-intelligence/in-depth-look-apt-attack-tools-of-the-trade/"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-29T21:39:46.724Z",
+            "name": "Timestomp",
+            "x_mitre_data_sources": [
+                "File: File Modification",
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-01-31T12:42:44.103Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--47f2d673-ca62-47e9-929b-1b0be9657611",
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "root",
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may modify file time attributes to hide new or changes to existing files. Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder. This is done, for example, on files that have been modified or created by the adversary so that they do not appear conspicuous to forensic investigators or file analysis tools.\n\nTimestomping may be used along with file name [Masquerading](https://attack.mitre.org/techniques/T1036) to hide malware and tools.(Citation: WindowsIR Anti-Forensic Techniques)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Romain Dumont, ESET"
+            ],
+            "x_mitre_detection": "Forensic techniques exist to detect aspects of files that have had their timestamps modified. (Citation: WindowsIR Anti-Forensic Techniques) It may be possible to detect timestomping using file modification monitoring that collects information on file handle opens and can compare timestamp values.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1070/006",
+                    "external_id": "T1070.006",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "WindowsIR Anti-Forensic Techniques",
+                    "description": "Carvey, H. (2013, July 23). HowTo: Determine/Detect the use of Anti-Forensics Techniques. Retrieved June 3, 2016.",
+                    "url": "http://windowsir.blogspot.com/2013/07/howto-determinedetect-use-of-anti.html"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-20T19:23:37.762Z",
+            "name": "Match Legitimate Name or Location",
+            "x_mitre_data_sources": [
+                "Image: Image Metadata",
+                "File: File Metadata",
+                "Process: Process Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-02-10T20:43:10.239Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "description": "Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them. This is done for the sake of evading defenses and observation. This may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: svchost.exe). In containerized environments, this may also be done by creating a resource in a namespace that matches the naming convention of a container pod or cluster. Alternatively, a file or container image name given may be a close approximation to legitimate programs/images or something innocuous.\n\nAdversaries may also use the same icon of the file they are trying to mimic.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee"
+            ],
+            "x_mitre_detection": "Collect file hashes; file names that do not match their expected hash are suspect. Perform file monitoring; files with known names but in unusual locations are suspect. Likewise, files that are modified outside of an update or patch are suspect.\n\nIf file names are mismatched between the file name on disk and that of the binary's PE metadata, this is a likely indicator that a binary was renamed after it was compiled. Collecting and comparing disk and resource filenames for binaries by looking to see if the InternalName, OriginalFilename, and/or ProductName match what is expected could provide useful leads, but may not always be indicative of malicious activity. (Citation: Elastic Masquerade Ball) Do not focus on the possible names a file could have, but instead on the command-line arguments that are known to be used and are distinct because it will have a better rate of detection.(Citation: Twitter ItsReallyNick Masquerading Update)\n\nIn containerized environments, use image IDs and layer hashes to compare images instead of relying only on their names.(Citation: Docker Images) Monitor for the unexpected creation of new resources within your cluster in Kubernetes, especially those created by atypical users.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/177.html",
+                    "external_id": "CAPEC-177",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "http://pages.endgame.com/rs/627-YBU-612/images/EndgameJournal_The%20Masquerade%20Ball_Pages_R2.pdf",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "source_name": "Elastic Masquerade Ball"
+                },
+                {
+                    "url": "https://twitter.com/ItsReallyNick/status/1055321652777619457",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved April 22, 2019.",
+                    "source_name": "Twitter ItsReallyNick Masquerading Update"
+                },
+                {
+                    "url": "https://docs.docker.com/engine/reference/commandline/images/",
+                    "description": "Docker. (n.d.). Docker Images. Retrieved April 6, 2021.",
+                    "source_name": "Docker Images"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T22:02:25.221Z",
+            "name": "Non-Standard Port",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-14T18:18:32.443Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--b18eae87-b469-4e14-b454-b171b416bc18",
+            "description": "Adversaries may communicate using a protocol and port paring that are typically not associated. For example, HTTPS over port 8088(Citation: Symantec Elfin Mar 2019) or port 587(Citation: Fortinet Agent Tesla April 2018) as opposed to the traditional port 443. Adversaries may make changes to the standard port used by a protocol to bypass filtering or muddle analysis/parsing of network data.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1571",
+                    "external_id": "T1571",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/elfin-apt33-espionage",
+                    "description": "Security Response attack Investigation Team. (2019, March 27). Elfin: Relentless Espionage Group Targets Multiple Organizations in Saudi Arabia and U.S.. Retrieved April 10, 2019.",
+                    "source_name": "Symantec Elfin Mar 2019"
+                },
+                {
+                    "url": "https://www.fortinet.com/blog/threat-research/analysis-of-new-agent-tesla-spyware-variant.html",
+                    "description": "Zhang, X. (2018, April 05). Analysis of New Agent Tesla Spyware Variant. Retrieved November 5, 2018.",
+                    "source_name": "Fortinet Agent Tesla April 2018"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Indicator Removal from Tools",
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-29T21:03:09.766Z",
+            "created": "2020-03-19T21:27:32.820Z",
+            "x_mitre_defense_bypassed": [
+                "Anti-virus",
+                "Host intrusion prevention systems",
+                "Log analysis",
+                "Signature-based detection"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--b0533c6e-8fea-4788-874f-b799cacc4b92",
+            "description": "Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed. They can modify the tool by removing the indicator and using the updated version that is no longer detected by the target's defensive systems or subsequent targets that may use similar systems.\n\nA good example of this is when malware is detected with a file signature and quarantined by anti-virus software. An adversary who can determine that the malware was quarantined because of its file signature may modify the file to explicitly avoid that signature, and then re-use the malware.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "The first detection of a malicious tool may trigger an anti-virus or other security tool alert. Similar events may also occur at the boundary through network IDS, email scanning appliance, etc. The initial detection should be treated as an indication of a potentially more invasive intrusion. The alerting system should be thoroughly investigated beyond that initial alert for activity that was not detected. Adversaries may continue with an operation, assuming that individual events like an anti-virus detect will not be investigated or that an analyst will not be able to conclusively link that event to other activity occurring on the network.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027/005",
+                    "external_id": "T1027.005",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "LSASS Memory",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Process: Process Access",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-15T19:55:01.368Z",
+            "created": "2020-02-11T18:41:44.783Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).\n\nAs well as in-memory techniques, the LSASS process memory can be dumped from the target host and analyzed on a local system.\n\nFor example, on the target host use procdump:\n\n* <code>procdump -ma lsass.exe lsass_dump</code>\n\nLocally, mimikatz can be run using:\n\n* <code>sekurlsa::Minidump lsassdump.dmp</code>\n* <code>sekurlsa::logonPasswords</code>\n\nBuilt-in Windows tools such as comsvcs.dll can also be used:\n\n* <code>rundll32.exe C:\\Windows\\System32\\comsvcs.dll MiniDump PID  lsass.dmp full</code>(Citation: Volexity Exchange Marauder March 2021)(Citation: Symantec Attacks Against Government Sector)\n\n\nWindows Security Support Provider (SSP) DLLs are loaded into LSSAS process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs. The SSP configuration is stored in two Registry keys: <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Security Packages</code> and <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig\\Security Packages</code>. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called.(Citation: Graeber 2014)\n\nThe following SSPs can be used to access credentials:\n\n* Msv: Interactive logons, batch logons, and service logons are done through the MSV authentication package.\n* Wdigest: The Digest Authentication protocol is designed for use with Hypertext Transfer Protocol (HTTP) and Simple Authentication Security Layer (SASL) exchanges.(Citation: TechNet Blogs Credential Protection)\n* Kerberos: Preferred for mutual client-server domain authentication in Windows 2000 and later.\n* CredSSP:  Provides SSO and Network Level Authentication for Remote Desktop Services.(Citation: TechNet Blogs Credential Protection)\n",
+            "x_mitre_contributors": [
+                "Edward Millington",
+                "Ed Williams, Trustwave, SpiderLabs"
+            ],
+            "x_mitre_detection": "Monitor for unexpected processes interacting with LSASS.exe.(Citation: Medium Detecting Attempts to Steal Passwords from Memory) Common credential dumpers such as Mimikatz access LSASS.exe by opening the process, locating the LSA secrets key, and decrypting the sections in memory where credential details are stored. Credential dumpers may also use methods for reflective [Process Injection](https://attack.mitre.org/techniques/T1055) to reduce potential indicators of malicious activity.\n\nOn Windows 8.1 and Windows Server 2012 R2, monitor Windows Logs for LSASS.exe creation to verify that LSASS started as a protected process.\n\nMonitor processes and command-line arguments for program execution that may be indicative of credential dumping. Remote access tools may contain built-in features or incorporate existing tools like Mimikatz. PowerShell scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module,(Citation: Powersploit) which may require additional logging features to be configured in the operating system to collect necessary information for analysis.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1003/001",
+                    "external_id": "T1003.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/",
+                    "description": "Gruzweig, J. et al. (2021, March 2). Operation Exchange Marauder: Active Exploitation of Multiple Zero-Day Microsoft Exchange Vulnerabilities. Retrieved March 3, 2021.",
+                    "source_name": "Volexity Exchange Marauder March 2021"
+                },
+                {
+                    "url": "https://symantec.broadcom.com/hubfs/Attacks-Against-Government-Sector.pdf",
+                    "description": "Symantec. (2021, June 10). Attacks Against the Government Sector. Retrieved September 28, 2021.",
+                    "source_name": "Symantec Attacks Against Government Sector"
+                },
+                {
+                    "source_name": "Graeber 2014",
+                    "description": "Graeber, M. (2014, October). Analysis of Malicious Security Support Provider DLLs. Retrieved March 1, 2017.",
+                    "url": "http://docplayer.net/20839173-Analysis-of-malicious-security-support-provider-dlls.html"
+                },
+                {
+                    "source_name": "TechNet Blogs Credential Protection",
+                    "description": "Wilson, B. (2016, April 18). The Importance of KB2871997 and KB2928120 for Credential Protection. Retrieved April 11, 2018.",
+                    "url": "https://blogs.technet.microsoft.com/askpfeplat/2016/04/18/the-importance-of-kb2871997-and-kb2928120-for-credential-protection/"
+                },
+                {
+                    "source_name": "Medium Detecting Attempts to Steal Passwords from Memory",
+                    "description": "French, D. (2018, October 2). Detecting Attempts to Steal Passwords from Memory. Retrieved October 11, 2019.",
+                    "url": "https://medium.com/threatpunter/detecting-attempts-to-steal-passwords-from-memory-558f16dce4ea"
+                },
+                {
+                    "source_name": "Powersploit",
+                    "description": "PowerSploit. (n.d.). Retrieved December 4, 2014.",
+                    "url": "https://github.com/mattifestation/PowerSploit"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Remote Desktop Protocol",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1021/001",
+                    "external_id": "T1021.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/555.html",
+                    "external_id": "CAPEC-555",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Remote Desktop Services",
+                    "description": "Microsoft. (n.d.). Remote Desktop Services. Retrieved June 1, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/windowsserver/ee236407.aspx"
+                },
+                {
+                    "source_name": "Alperovitch Malware",
+                    "description": "Alperovitch, D. (2014, October 31). Malware-Free Intrusions. Retrieved November 4, 2014.",
+                    "url": "http://blog.crowdstrike.com/adversary-tricks-crowdstrike-treats/"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Flow",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-02-25T19:23:34.204Z",
+            "x_mitre_system_requirements": [
+                "RDP service enabled, account in the Remote Desktop Users group"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "lateral-movement"
+                }
+            ],
+            "id": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Remote Desktop Users",
+                "User"
+            ],
+            "description": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a computer using the Remote Desktop Protocol (RDP). The adversary may then perform actions as the logged-on user.\n\nRemote desktop is a common feature in operating systems. It allows a user to log into an interactive session with a system desktop graphical user interface on a remote system. Microsoft refers to its implementation of the Remote Desktop Protocol (RDP) as Remote Desktop Services (RDS).(Citation: TechNet Remote Desktop Services) \n\nAdversaries may connect to a remote system over RDP/RDS to expand access if the service is enabled and allows access to accounts with known credentials. Adversaries will likely use Credential Access techniques to acquire credentials to use with RDP. Adversaries may also use RDP in conjunction with the [Accessibility Features](https://attack.mitre.org/techniques/T1546/008) technique for Persistence.(Citation: Alperovitch Malware)",
+            "x_mitre_contributors": [
+                "Matthew Demaske, Adaptforward"
+            ],
+            "x_mitre_detection": "Use of RDP may be legitimate, depending on the network environment and how it is used. Other factors, such as access patterns and activity that occurs after a remote login, may indicate suspicious or malicious behavior with RDP. Monitor for user accounts logged into systems they would not normally access or access patterns to multiple systems over a relatively short period of time.",
+            "created": "2020-02-11T18:23:26.059Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-15T14:15:06.853Z",
+            "name": "SSH",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_system_requirements": [
+                "An SSH server is configured and running."
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2db31dcd-54da-405d-acef-b9129b816ed6",
+            "description": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into remote machines using Secure Shell (SSH). The adversary may then perform actions as the logged-on user.\n\nSSH is a protocol that allows authorized users to open remote shells on other computers. Many Linux and macOS versions come with SSH installed by default, although typically disabled until the user enables it. The SSH server can be configured to use standard password authentication or public-private keypairs in lieu of or in addition to a password. In this authentication scenario, the user\u2019s public key must be in a special file on the computer running the server that lists which keypairs are allowed to login as that user.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "lateral-movement"
+                }
+            ],
+            "x_mitre_detection": "Use of SSH may be legitimate depending on the environment and how it\u2019s used. Other factors, such as access patterns and activity that occurs after a remote login, may indicate suspicious or malicious behavior with SSH. Monitor for user accounts logged into systems they would not normally access or access patterns to multiple systems over a relatively short period of time.\n\nOn macOS systems <code>log show --predicate 'process = \"sshd\"'</code> can be used to review incoming SSH connection attempts for suspicious activity. The command <code>log show --info --predicate 'process = \"ssh\" or eventMessage contains \"ssh\"'</code> can be used to review outgoing SSH connection activity.(Citation: Apple Unified Log Analysis Remote Login and Screen Sharing)\n\nOn Linux systems SSH activity can be found in the logs located in <code>/var/log/auth.log</code> or <code>/var/log/secure</code> depending on the distro you are using.",
+            "created": "2020-02-11T18:27:15.774Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1021/004",
+                    "external_id": "T1021.004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/555.html",
+                    "external_id": "CAPEC-555",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://sarah-edwards-xzkc.squarespace.com/blog/2020/4/30/analysis-of-apple-unified-logs-quarantine-edition-entry-6-working-from-home-remote-logins",
+                    "description": "Sarah Edwards. (2020, April 30). Analysis of Apple Unified Logs: Quarantine Edition [Entry 6] \u2013 Working From Home? Remote Logins. Retrieved August 19, 2021.",
+                    "source_name": "Apple Unified Log Analysis Remote Login and Screen Sharing"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-12-30T14:26:44.730Z",
+            "name": "Scheduled Task",
+            "x_mitre_data_sources": [
+                "Scheduled Job: Scheduled Job Creation",
+                "Command: Command Execution",
+                "File: File Modification",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2019-11-27T14:58:00.429Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+            "description": "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code. There are multiple ways to access the Task Scheduler in Windows. The <code>schtasks</code> can be run directly on the command line, or the Task Scheduler can be opened through the GUI within the Administrator Tools section of the Control Panel. In some cases, adversaries have used a .NET wrapper for the Windows Task Scheduler, and alternatively, adversaries have used the Windows netapi32 library to create a scheduled task.\n\nThe deprecated [at](https://attack.mitre.org/software/S0110) utility could also be abused by adversaries (ex: [At (Windows)](https://attack.mitre.org/techniques/T1053/002)), though <code>at.exe</code> can not access tasks created with <code>schtasks</code> or the Control Panel.\n\nAn adversary may use Windows Task Scheduler to execute programs at system startup or on a scheduled basis for persistence. The Windows Task Scheduler can also be abused to conduct remote Execution as part of Lateral Movement and or to run a process under the context of a specified account (such as SYSTEM).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Monitor process execution from the <code>svchost.exe</code> in Windows 10 and the Windows Task Scheduler <code>taskeng.exe</code> for older versions of Windows. (Citation: Twitter Leoloobeek Scheduled Task) If scheduled tasks are not used for persistence, then the adversary is likely to remove the task when the action is complete. Monitor Windows Task Scheduler stores in %systemroot%\\System32\\Tasks for change entries related to scheduled tasks that do not correlate with known software, patch cycles, etc.\n\nConfigure event logging for scheduled task creation and changes by enabling the \"Microsoft-Windows-TaskScheduler/Operational\" setting within the event logging service. (Citation: TechNet Forum Scheduled Task Operational Setting) Several events will then be logged on scheduled task activity, including: (Citation: TechNet Scheduled Task Events)(Citation: Microsoft Scheduled Task Events Win10)\n\n* Event ID 106 on Windows 7, Server 2008 R2 - Scheduled task registered\n* Event ID 140 on Windows 7, Server 2008 R2 / 4702 on Windows 10, Server 2016 - Scheduled task updated\n* Event ID 141 on Windows 7, Server 2008 R2 / 4699 on Windows 10, Server 2016 - Scheduled task deleted\n* Event ID 4698 on Windows 10, Server 2016 - Scheduled task created\n* Event ID 4700 on Windows 10, Server 2016 - Scheduled task enabled\n* Event ID 4701 on Windows 10, Server 2016 - Scheduled task disabled\n\nTools such as Sysinternals Autoruns may also be used to detect system changes that could be attempts at persistence, including listing current scheduled tasks. (Citation: TechNet Autoruns)\n\nRemote access tools with built-in features may interact directly with the Windows API to perform these functions outside of typical system utilities. Tasks may also be created through Windows system management tools such as Windows Management Instrumentation and PowerShell, so additional logging may need to be configured to gather the appropriate data.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1053/005",
+                    "external_id": "T1053.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Twitter Leoloobeek Scheduled Task",
+                    "description": "Loobeek, L. (2017, December 8). leoloobeek Status. Retrieved December 12, 2017.",
+                    "url": "https://twitter.com/leoloobeek/status/939248813465853953"
+                },
+                {
+                    "source_name": "TechNet Forum Scheduled Task Operational Setting",
+                    "description": "Satyajit321. (2015, November 3). Scheduled Tasks History Retention settings. Retrieved December 12, 2017.",
+                    "url": "https://social.technet.microsoft.com/Forums/en-US/e5bca729-52e7-4fcb-ba12-3225c564674c/scheduled-tasks-history-retention-settings?forum=winserver8gen"
+                },
+                {
+                    "source_name": "TechNet Scheduled Task Events",
+                    "description": "Microsoft. (n.d.). General Task Registration. Retrieved December 12, 2017.",
+                    "url": "https://technet.microsoft.com/library/dd315590.aspx"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-other-object-access-events",
+                    "description": "Microsoft. (2017, May 28). Audit Other Object Access Events. Retrieved June 27, 2019.",
+                    "source_name": "Microsoft Scheduled Task Events Win10"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Web Shell",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1505/003",
+                    "external_id": "T1505.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/650.html",
+                    "external_id": "CAPEC-650",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2013/08/breaking-down-the-china-chopper-web-shell-part-i.html",
+                    "description": "Lee, T., Hanzlik, D., Ahl, I. (2013, August 7). Breaking Down the China Chopper Web Shell - Part I. Retrieved March 27, 2015.",
+                    "source_name": "Lee 2013"
+                },
+                {
+                    "url": "https://github.com/nsacyber/Mitigating-Web-Shells",
+                    "description": " NSA Cybersecurity Directorate. (n.d.). Mitigating Web Shells. Retrieved July 22, 2021.",
+                    "source_name": "NSA Cyber Mitigating Web Shells"
+                },
+                {
+                    "source_name": "US-CERT Alert TA15-314A Web Shells",
+                    "description": "US-CERT. (2015, November 13). Compromised Web Servers and Web Shells - Threat Awareness and Guidance. Retrieved June 8, 2016.",
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA15-314A"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "File: File Modification",
+                "Process: Process Creation",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-07-26T13:46:47.993Z",
+            "x_mitre_system_requirements": [
+                "Adversary access to Web server with vulnerability or account to upload and serve the Web shell file."
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "id": "attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may backdoor web servers with web shells to establish persistent access to systems. A Web shell is a Web script that is placed on an openly accessible Web server to allow an adversary to use the Web server as a gateway into a network. A Web shell may provide a set of functions to execute or a command-line interface on the system that hosts the Web server.\n\nIn addition to a server-side script, a Web shell may have a client interface program that is used to talk to the Web server (ex: [China Chopper](https://attack.mitre.org/software/S0020) Web shell client).(Citation: Lee 2013) ",
+            "x_mitre_contributors": [
+                "Arnim Rupp, Deutsche Lufthansa AG"
+            ],
+            "x_mitre_detection": "Web shells can be difficult to detect. Unlike other forms of persistent remote access, they do not initiate connections. The portion of the Web shell that is on the server may be small and innocuous looking. The PHP version of the China Chopper Web shell, for example, is the following short payload: (Citation: Lee 2013) \n\n<code>&lt;?php @eval($_POST['password']);&gt;</code>\n\nNevertheless, detection mechanisms exist. Process monitoring may be used to detect Web servers that perform suspicious actions such as spawning cmd.exe or accessing files that are not in the Web directory.(Citation: NSA Cyber Mitigating Web Shells)\n\nFile monitoring may be used to detect changes to files in the Web directory of a Web server that do not match with updates to the Web server's content and may indicate implantation of a Web shell script.(Citation: NSA Cyber Mitigating Web Shells)\n\nLog authentication attempts to the server and any unusual traffic patterns to or from the server and internal network. (Citation: US-CERT Alert TA15-314A Web Shells)",
+            "created": "2019-12-13T16:46:18.927Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Valid Accounts",
+            "x_mitre_data_sources": [
+                "Logon Session: Logon Session Metadata",
+                "User Account: User Account Authentication",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-19T03:29:48.018Z",
+            "created": "2017-05-31T21:31:00.645Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "id": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "x_mitre_defense_bypassed": [
+                "Firewall",
+                "Host intrusion prevention systems",
+                "Network intrusion detection system",
+                "Application control",
+                "System access controls",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Compromised credentials may be used to bypass access controls placed on various resources on systems within the network and may even be used for persistent access to remote systems and externally available services, such as VPNs, Outlook Web Access and remote desktop. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence.\n\nThe overlap of permissions for local, domain, and cloud accounts across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise. (Citation: TechNet Credential Theft)",
+            "x_mitre_effective_permissions": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_contributors": [
+                "Jon Sternstein, Stern Security",
+                "Yossi Weizman, Azure Defender Research Team",
+                "Netskope",
+                "Mark Wee",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "Configure robust, consistent account activity audit policies across the enterprise and with externally accessible services. (Citation: TechNet Audit Policy) Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account. Correlate other security systems with login information (e.g., a user has an active login session but has not entered the building or does not have VPN access).\n\nPerform regular audits of domain and local system accounts to detect accounts that may have been created by an adversary for persistence. Checks on these accounts could also include whether default accounts such as Guest have been activated. These audits should also include checks on any appliances and applications for default credentials or SSH keys, and if any are discovered, they should be updated immediately.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1078",
+                    "external_id": "T1078",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/560.html",
+                    "external_id": "CAPEC-560",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Credential Theft",
+                    "description": "Microsoft. (2016, April 15). Attractive Accounts for Credential Theft. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn535501.aspx"
+                },
+                {
+                    "source_name": "TechNet Audit Policy",
+                    "description": "Microsoft. (2016, April 15). Audit Policy Recommendations. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn487457.aspx"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "modified": "2021-05-20T14:25:59.596Z",
+            "name": "Mimikatz",
+            "x_mitre_aliases": [
+                "Mimikatz"
+            ],
+            "x_mitre_version": "1.4",
+            "created": "2017-05-31T21:32:11.544Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "description": "[Mimikatz](https://attack.mitre.org/software/S0002) is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks. (Citation: Deply Mimikatz) (Citation: Adsecurity Mimikatz Guide)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Vincent Le Toux"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0002",
+                    "external_id": "S0002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/gentilkiwi/mimikatz",
+                    "description": "Deply, B. (n.d.). Mimikatz. Retrieved September 29, 2015.",
+                    "source_name": "Deply Mimikatz"
+                },
+                {
+                    "source_name": "Adsecurity Mimikatz Guide",
+                    "description": "Metcalf, S. (2015, November 13). Unofficial Guide to Mimikatz & Command Reference. Retrieved December 23, 2015.",
+                    "url": "https://adsecurity.org/?page_id=1821"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PsExec",
+            "x_mitre_aliases": [
+                "PsExec"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-24T13:47:24.660Z",
+            "created": "2017-05-31T21:32:21.771Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "description": "[PsExec](https://attack.mitre.org/software/S0029) is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers. (Citation: Russinovich Sysinternals) (Citation: SANS PsExec)",
+            "x_mitre_contributors": [
+                "Janantha Marasinghe"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0029",
+                    "external_id": "S0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Russinovich Sysinternals",
+                    "description": "Russinovich, M. (2014, May 2). Windows Sysinternals PsExec v2.11. Retrieved May 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx"
+                },
+                {
+                    "source_name": "SANS PsExec",
+                    "description": "Pilkington, M.. (2012, December 17). Protecting Privileged Domain Accounts: PsExec Deep-Dive. Retrieved August 17, 2016.",
+                    "url": "https://digital-forensics.sans.org/blog/2012/12/17/protecting-privileged-domain-accounts-psexec-deep-dive"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "TRITON",
+            "x_mitre_aliases": [
+                "TRITON",
+                "HatMan",
+                "TRISIS"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-10-27T20:47:40.880Z",
+            "created": "2021-01-11T21:27:41.573Z",
+            "x_mitre_deprecated": true,
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--93ae2edf-a598-4d2d-acd7-bcae0c021923",
+            "description": "This entry was deprecated as it was inadvertently added to Enterprise; a similar Software entry was created for ATT&CK for ICS.\n\n[TRITON](https://attack.mitre.org/software/S0609) is an attack framework built to interact with Triconex Safety Instrumented System (SIS) controllers. [TRITON](https://attack.mitre.org/software/S0609) was deployed against at least one target in the Middle East. (Citation: FireEye TRITON 2017)(Citation: FireEye TRITON 2018)(Citation: Dragos TRISIS)(Citation: CISA HatMan)(Citation: FireEye TEMP.Veles 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0609",
+                    "external_id": "S0609",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html",
+                    "description": "Johnson, B, et. al. (2017, December 14). Attackers Deploy New ICS Attack Framework \"TRITON\" and Cause Operational Disruption to Critical Infrastructure. Retrieved January 6, 2021.",
+                    "source_name": "FireEye TRITON 2017"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/06/totally-tubular-treatise-on-TRITON-and-tristation.html",
+                    "description": "Miller, S. Reese, E. (2018, June 7). A Totally Tubular Treatise on TRITON and TriStation. Retrieved January 6, 2021.",
+                    "source_name": "FireEye TRITON 2018"
+                },
+                {
+                    "url": "https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf",
+                    "description": "Dragos. (2017, December 13). TRISIS Malware Analysis of Safety System Targeted Malware. Retrieved January 6, 2021.",
+                    "source_name": "Dragos TRISIS"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf",
+                    "description": "CISA. (2019, February 27). MAR-17-352-01 HatMan-Safety System Targeted Malware. Retrieved January 6, 2021.",
+                    "source_name": "CISA HatMan"
+                },
+                {
+                    "source_name": "FireEye TEMP.Veles 2018",
+                    "description": "FireEye Intelligence . (2018, October 23). TRITON Attribution: Russian Government-Owned Lab Most Likely Built Custom Intrusion Tools for TRITON Attackers. Retrieved April 16, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/10/triton-attribution-russian-government-owned-lab-most-likely-built-tools.html "
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--380321ac-1dd5-44c7-9592-7a7113dd72ac",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.318514Z",
+            "id": "identity--916a7143-9aa0-4956-aba1-beb40ac47f3a",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Infrastructure sector as a target",
+            "sectors": [
+                "infrastructure"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.306875Z",
+            "id": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Energy sector as a target",
+            "sectors": [
+                "energy"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.323862Z",
+            "id": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Manufacturing sector as a target",
+            "sectors": [
+                "manufacturing"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.302614Z",
+            "id": "identity--dcf3b77d-e949-4afe-b620-613a230aafdf",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Oil sector as a target",
+            "sectors": [
+                "Oil industries"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Saudi Arabia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--309aff50-6118-4dfa-9283-fd1f4f3703d7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7d9f3473-6409-4bdf-bdbb-1819fa59b2a3",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "target_ref": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fe90b0c6-7ce8-4598-92d9-0b3c8556022d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "target_ref": "identity--916a7143-9aa0-4956-aba1-beb40ac47f3a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--59033dda-3ef4-49c2-ba30-28174b110e6b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "target_ref": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--97482aef-92d1-4351-a8cc-a54b147785bc",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "target_ref": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--74cee086-f12d-475c-83db-0dd096e74e8f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+            "target_ref": "identity--dcf3b77d-e949-4afe-b620-613a230aafdf"
+        }
+    ]
+}

@@ -1,0 +1,1020 @@
+{
+    "type": "bundle",
+    "id": "bundle--a3939ef9-350d-4262-9b3d-d09da8a957f6",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "personal-gain",
+            "first_seen":"2013", 
+            "x_MISP-uuid": "ff449346-aa9f-45f6-b482-71e886a5cf57",
+            "x_MISP-description": "FIN4 is a financially-motivated threat group that has targeted confidential information related to the public financial market, particularly regarding healthcare and pharmaceutical companies, since at least 2013. FIN4 is unique in that they do not infect victims with typical persistent malware, but rather they focus on capturing credentials authorized to access email and other non-public correspondence.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "FIN4",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) is a financially-motivated threat group that has targeted confidential information related to the public financial market, particularly regarding healthcare and pharmaceutical companies, since at least 2013.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye FIN4 Stealing Insider NOV 2014) [FIN4](https://attack.mitre.org/groups/G0085) is unique in that they do not infect victims with typical persistent malware, but rather they focus on capturing credentials authorized to access email and other non-public correspondence.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "x_mitre_version": "1.2",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "FIN4",
+                "WOLF SPIDER"
+            ],
+            "created": "2019-01-31T02:01:45.129Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "G0085",
+                    "url": "https://attack.mitre.org/groups/G0085"
+                },
+                {
+                    "description": "(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye FIN4 Stealing Insider NOV 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+                    "source_name": "FIN4"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye FIN4 Stealing Insider NOV 2014",
+                    "description": "Dennesen, K. et al.. (2014, November 30). FIN4: Stealing Insider Information for an Advantage in Stock Trading?. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/11/fin4_stealing_insid.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0ef0077e-ee87-4e67-a466-2085a9148fc9",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has used VBA macros to display a dialog box and collect victim credentials.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "modified": "2020-06-23T19:52:35.801Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.707Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8cb59548-2e8d-4635-809b-b9ba22c94c31",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has captured credentials via fake Outlook Web App (OWA) login pages and has also used a .NET based keylogger.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4",
+            "modified": "2020-03-16T20:07:39.127Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.695Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--50f68fb8-1e59-4b3a-b389-9c2797f4d347",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has used Tor to log in to victims' email accounts.(Citation: FireEye Hacking FIN4 Dec 2014)",
+            "target_ref": "attack-pattern--a782ebe2-daba-42c7-bc82-e8e9d923162d",
+            "modified": "2019-04-18T20:19:49.250Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.573Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--59b6b000-c8c5-4b4a-8801-5102de111111",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has lured victims to launch malicious attachments delivered via spearphishing emails (often sent from compromised accounts).(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2020-03-17T14:20:19.945Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.715Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--70a17629-6b01-4764-932b-8be576270329",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has created rules in victims' Microsoft Outlook accounts to automatically delete emails containing words such as \u201chacked,\" \"phish,\" and \u201cmalware\" in a likely attempt to prevent organizations from communicating about their activities.(Citation: FireEye Hacking FIN4 Dec 2014)",
+            "target_ref": "attack-pattern--0cf55441-b176-4332-89e7-2c4c7799d0ff",
+            "modified": "2021-06-14T16:01:27.036Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-18T20:13:56.028Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--073fd81c-b49a-4800-b73a-c1b3aba3aa54",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has used legitimate credentials to hijack email communications.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "modified": "2019-04-18T20:19:49.238Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.564Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--822c5044-906d-4c4f-b350-49471beb03a8",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has lured victims to click malicious links delivered via spearphishing emails (often sent from compromised accounts).(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--ef67e13e-5598-4adc-bdb2-998225874fa9",
+            "modified": "2020-03-17T14:20:19.916Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-17T14:20:19.916Z",
+            "external_references": [
+                {
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "source_name": "FireEye Hacking FIN4 Dec 2014"
+                },
+                {
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a8e36e77-3899-4e7c-b27e-ab6ebf049066",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has used spearphishing emails (often sent from compromised accounts) containing malicious links.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+            "modified": "2019-04-18T20:19:49.280Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.675Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a568a6a5-860b-4fe1-9f00-ab6fbbb41a26",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has presented victims with spoofed Windows Authentication prompts to collect their credentials.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--a2029942-0a85-4947-b23c-ca434698171d",
+            "modified": "2019-04-18T20:19:49.223Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.685Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c35e3d28-f9f2-4547-9927-7b734ebec54c",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has used spearphishing emails containing attachments (which are often stolen, legitimate documents sent from compromised accounts) with embedded malicious macros.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2019-04-18T20:19:49.284Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.725Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d26abf6d-069b-4b7b-b408-cf9065ebef92",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has used HTTP POST requests to transmit data.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "modified": "2020-03-17T01:16:36.113Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.514Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e9267a72-00d7-438b-8c41-af72021e89d0",
+            "description": "[FIN4](https://attack.mitre.org/groups/G0085) has accessed and hijacked online email communications using stolen credentials.(Citation: FireEye Hacking FIN4 Dec 2014)(Citation: FireEye Hacking FIN4 Video Dec 2014)",
+            "target_ref": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+            "modified": "2020-03-17T16:24:29.903Z",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-31T02:01:45.663Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye Hacking FIN4 Dec 2014",
+                    "description": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+                    "url": "https://www.fireeye.com/current-threats/threat-intelligence-reports/rpt-fin4.html"
+                },
+                {
+                    "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+                    "description": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+                    "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T20:15:35.821Z",
+            "name": "Web Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:13:46.151Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as HTTP and HTTPS that carry web traffic may be very common in environments. HTTP/S packets have many fields and headers in which data can be concealed. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)\n\nMonitor for web traffic to/from known-bad or suspicious domains. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/001",
+                    "external_id": "T1071.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-08-16T21:03:21.051Z",
+            "name": "Visual Basic",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "created": "2020-03-09T14:29:51.508Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "description": "Adversaries may abuse Visual Basic (VB) for execution. VB is a programming language created by Microsoft with interoperability with many Windows technologies such as [Component Object Model](https://attack.mitre.org/techniques/T1559/001) and the [Native API](https://attack.mitre.org/techniques/T1106) through the Windows API. Although tagged as legacy with no planned future evolutions, VB is integrated and supported in the .NET Framework and cross-platform .NET Core.(Citation: VB .NET Mar 2020)(Citation: VB Microsoft)\n\nDerivative languages based on VB have also been created, such as Visual Basic for Applications (VBA) and VBScript. VBA is an event-driven programming language built into Microsoft Office, as well as several third-party applications.(Citation: Microsoft VBA)(Citation: Wikipedia VBA) VBA enables documents to contain macros used to automate the execution of tasks and other functionality on the host. VBScript is a default scripting language on Windows hosts and can also be used in place of [JavaScript](https://attack.mitre.org/techniques/T1059/007) on HTML Application (HTA) webpages served to Internet Explorer (though most modern browsers do not come with VBScript support).(Citation: Microsoft VBScript)\n\nAdversaries may use VB payloads to execute malicious commands. Common malicious usage includes automating execution of behaviors with VBScript or embedding VBA content into [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001) payloads.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor for events associated with VB execution, such as Office applications spawning processes, usage of the Windows Script Host (typically cscript.exe or wscript.exe), file activity involving VB payloads or scripts, or loading of modules associated with VB languages (ex: vbscript.dll). VB execution is likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for execution and subsequent behavior. Actions may be related to network and system information [Discovery](https://attack.mitre.org/tactics/TA0007), [Collection](https://attack.mitre.org/tactics/TA0009), or other programable post-compromise behaviors and could be used as indicators of detection leading back to the source.\n\nUnderstanding standard usage patterns is important to avoid a high number of false positives. If VB execution is restricted for normal users, then any attempts to enable related components running on a system would be considered suspicious. If VB execution is not commonly used on a system, but enabled, execution running out of cycle from patching or other administrator functions is suspicious. Payloads and scripts should be captured from the file system when possible to determine their actions and intent.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/005",
+                    "external_id": "T1059.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0/",
+                    "description": ".NET Team. (2020, March 11). Visual Basic support planned for .NET 5.0. Retrieved June 23, 2020.",
+                    "source_name": "VB .NET Mar 2020"
+                },
+                {
+                    "url": "https://docs.microsoft.com/dotnet/visual-basic/",
+                    "description": "Microsoft. (n.d.). Visual Basic documentation. Retrieved June 23, 2020.",
+                    "source_name": "VB Microsoft"
+                },
+                {
+                    "url": "https://docs.microsoft.com/office/vba/api/overview/",
+                    "description": "Microsoft. (2019, June 11). Office VBA Reference. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft VBA"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/Visual_Basic_for_Applications",
+                    "description": "Wikipedia. (n.d.). Visual Basic for Applications. Retrieved August 13, 2020.",
+                    "source_name": "Wikipedia VBA"
+                },
+                {
+                    "url": "https://docs.microsoft.com/previous-versions//1kw29xwf(v=vs.85)",
+                    "description": "Microsoft. (2011, April 19). What Is VBScript?. Retrieved March 28, 2020.",
+                    "source_name": "Microsoft VBScript"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Remote Email Collection",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Connection Creation",
+                "Logon Session: Logon Session Creation",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-03-25T13:12:56.909Z",
+            "created": "2020-02-19T18:52:24.547Z",
+            "x_mitre_platforms": [
+                "Office 365",
+                "Windows",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+            "description": "Adversaries may target an Exchange server, Office 365, or Google Workspace to collect sensitive information. Adversaries may leverage a user's credentials and interact directly with the Exchange server to acquire information from within a network. Adversaries may also access externally facing Exchange services, Office 365, or Google Workspace to access email using credentials or access tokens. Tools such as [MailSniper](https://attack.mitre.org/software/S0413) can be used to automate searches for specific keywords.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_detection": "Monitor for unusual login activity from unknown or abnormal locations, especially for privileged accounts (ex: Exchange administrator account).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1114/002",
+                    "external_id": "T1114.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Email Hiding Rules",
+            "x_mitre_data_sources": [
+                "File: File Modification",
+                "Command: Command Execution",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-10-16T01:24:31.674Z",
+            "created": "2021-06-07T13:20:23.767Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--0cf55441-b176-4332-89e7-2c4c7799d0ff",
+            "x_mitre_platforms": [
+                "Windows",
+                "Office 365",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may use email rules to hide inbound emails in a compromised user's mailbox. Many email clients allow users to create inbox rules for various email functions, including moving emails to other folders, marking emails as read, or deleting emails. Rules may be created or modified within email clients or through external features such as the <code>New-InboxRule</code> or <code>Set-InboxRule</code> [PowerShell](https://attack.mitre.org/techniques/T1059/001) cmdlets on Windows systems.(Citation: Microsoft Inbox Rules)(Citation: MacOS Email Rules)(Citation: Microsoft New-InboxRule)(Citation: Microsoft Set-InboxRule)\n\nAdversaries may utilize email rules within a compromised user's mailbox to delete and/or move emails to less noticeable folders. Adversaries may do this to hide security alerts, C2 communication, or responses to [Internal Spearphishing](https://attack.mitre.org/techniques/T1534) emails sent from the compromised account.\n\nAny user or administrator within the organization (or adversary with valid credentials) may be able to create rules to automatically move or delete emails. These rules can be abused to impair/delay detection had the email content been immediately seen by a user or defender. Malicious rules commonly filter out emails based on key words (such as <code>malware</code>, <code>suspicious</code>, <code>phish</code>, and <code>hack</code>) found in message bodies and subject lines. (Citation: Microsoft Cloud App Security)",
+            "x_mitre_contributors": [
+                "Dor Edry, Microsoft"
+            ],
+            "x_mitre_detection": "Monitor email clients and applications for suspicious activity, such as missing messages or abnormal configuration and/or log entries.\n\nOn Windows systems, monitor for creation of suspicious inbox rules through the use of the <code>New-InboxRule</code> and <code>Set-InboxRule</code> PowerShell cmdlets.(Citation: Microsoft BEC Campaign) On MacOS systems, monitor for modifications to the <code>RulesActiveState.plist</code>, <code>SyncedRules.plist</code>, <code>UnsyncedRules.plist</code>, and <code>MessageRules.plist</code> files.(Citation: MacOS Email Rules)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1564/008",
+                    "external_id": "T1564.008",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59",
+                    "description": "Microsoft. (n.d.). Manage email messages by using rules. Retrieved June 11, 2021.",
+                    "source_name": "Microsoft Inbox Rules"
+                },
+                {
+                    "url": "https://support.apple.com/guide/mail/use-rules-to-manage-emails-you-receive-mlhlp1017/mac",
+                    "description": "Apple. (n.d.). Use rules to manage emails you receive in Mail on Mac. Retrieved June 14, 2021.",
+                    "source_name": "MacOS Email Rules"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/powershell/module/exchange/new-inboxrule?view=exchange-ps",
+                    "description": "Microsoft. (n.d.). New-InboxRule. Retrieved June 7, 2021.",
+                    "source_name": "Microsoft New-InboxRule"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/powershell/module/exchange/set-inboxrule?view=exchange-ps",
+                    "description": "Microsoft. (n.d.). Set-InboxRule. Retrieved June 7, 2021.",
+                    "source_name": "Microsoft Set-InboxRule"
+                },
+                {
+                    "url": "https://techcommunity.microsoft.com/t5/security-compliance-and-identity/rule-your-inbox-with-microsoft-cloud-app-security/ba-p/299154",
+                    "description": "Niv Goldenberg. (2018, December 12). Rule your inbox with Microsoft Cloud App Security. Retrieved June 7, 2021.",
+                    "source_name": "Microsoft Cloud App Security"
+                },
+                {
+                    "url": "https://www.microsoft.com/security/blog/2021/06/14/behind-the-scenes-of-business-email-compromise-using-cross-domain-threat-data-to-disrupt-a-large-bec-infrastructure/",
+                    "description": "Carr, N., Sellmer, S. (2021, June 14). Behind the scenes of business email compromise: Using cross-domain threat data to disrupt a large BEC campaign. Retrieved June 15, 2021.",
+                    "source_name": "Microsoft BEC Campaign"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-10-21T01:30:56.227Z",
+            "name": "Keylogging",
+            "x_mitre_data_sources": [
+                "Windows Registry: Windows Registry Key Modification",
+                "Driver: Driver Load",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-02-11T18:58:11.791Z",
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "root",
+                "SYSTEM",
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux",
+                "Network"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4",
+            "description": "Adversaries may log user keystrokes to intercept credentials as the user types them. Keylogging is likely to be used to acquire credentials for new access opportunities when [OS Credential Dumping](https://attack.mitre.org/techniques/T1003) efforts are not effective, and may require an adversary to intercept keystrokes on a system for a substantial period of time before credentials can be successfully captured.\n\nKeylogging is the most prevalent type of input capture, with many different ways of intercepting keystrokes.(Citation: Adventures of a Keystroke) Some methods include:\n\n* Hooking API callbacks used for processing keystrokes. Unlike [Credential API Hooking](https://attack.mitre.org/techniques/T1056/004), this focuses solely on API functions intended for processing keystroke data.\n* Reading raw keystroke data from the hardware buffer.\n* Windows Registry modifications.\n* Custom drivers.\n* [Modify System Image](https://attack.mitre.org/techniques/T1601) may provide adversaries with hooks into the operating system of network devices to read raw keystrokes for login sessions.(Citation: Cisco Blog Legacy Device Attacks) ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "x_mitre_detection": "Keyloggers may take many forms, possibly involving modification to the Registry and installation of a driver, setting a hook, or polling to intercept keystrokes. Commonly used API calls include `SetWindowsHook`, `GetKeyState`, and `GetAsyncKeyState`.(Citation: Adventures of a Keystroke) Monitor the Registry and file system for such changes, monitor driver installs, and look for common keylogging API calls. API calls alone are not an indicator of keylogging, but may provide behavioral data that is useful when combined with other information such as new files written to disk and unusual processes.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1056/001",
+                    "external_id": "T1056.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/568.html",
+                    "external_id": "CAPEC-568",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Adventures of a Keystroke",
+                    "description": "Tinaztepe,  E. (n.d.). The Adventures of a Keystroke:  An in-depth look into keyloggers on Windows. Retrieved April 27, 2016.",
+                    "url": "http://opensecuritytraining.info/Keylogging_files/The%20Adventures%20of%20a%20Keystroke.pdf"
+                },
+                {
+                    "url": "https://community.cisco.com/t5/security-blogs/attackers-continue-to-target-legacy-devices/ba-p/4169954",
+                    "description": "Omar Santos. (2020, October 19). Attackers Continue to Target Legacy Devices. Retrieved October 20, 2020.",
+                    "source_name": "Cisco Blog Legacy Device Attacks"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "GUI Input Capture",
+            "x_mitre_data_sources": [
+                "Script: Script Execution",
+                "Command: Command Execution",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-08-24T18:21:07.926Z",
+            "created": "2020-02-11T18:58:45.908Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--a2029942-0a85-4947-b23c-ca434698171d",
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may mimic common operating system GUI components to prompt users for credentials with a seemingly legitimate prompt. When programs are executed that need additional privileges than are present in the current user context, it is common for the operating system to prompt the user for proper credentials to authorize the elevated privileges for the task (ex: [Bypass User Account Control](https://attack.mitre.org/techniques/T1548/002)).\n\nAdversaries may mimic this functionality to prompt users for credentials with a seemingly legitimate prompt for a number of reasons that mimic normal usage, such as a fake installer requiring additional access or a fake malware removal suite.(Citation: OSX Malware Exploits MacKeeper) This type of prompt can be used to collect credentials via various languages such as [AppleScript](https://attack.mitre.org/techniques/T1059/002)(Citation: LogRhythm Do You Trust Oct 2014)(Citation: OSX Keydnap malware)(Citation: Spoofing credential dialogs) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).(Citation: LogRhythm Do You Trust Oct 2014)(Citation: Enigma Phishing for Credentials Jan 2015)(Citation: Spoofing credential dialogs) On Linux systems attackers may launch dialog boxes prompting users for credentials from malicious shell scripts or the command line (i.e. [Unix Shell](https://attack.mitre.org/techniques/T1059/004)).(Citation: Spoofing credential dialogs) ",
+            "x_mitre_contributors": [
+                "Matthew Molyett, @s1air, Cisco Talos"
+            ],
+            "x_mitre_detection": "Monitor process execution for unusual programs as well as malicious instances of [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) that could be used to prompt users for credentials. For example, command/script history including abnormal parameters (such as requests for credentials and/or strings related to creating password prompts) may be malicious.(Citation: Spoofing credential dialogs) \n\nInspect and scrutinize input prompts for indicators of illegitimacy, such as non-traditional banners, text, timing, and/or sources. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1056/002",
+                    "external_id": "T1056.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/659.html",
+                    "external_id": "CAPEC-659",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "OSX Malware Exploits MacKeeper",
+                    "description": "Sergei Shevchenko. (2015, June 4). New Mac OS Malware Exploits Mackeeper. Retrieved July 3, 2017.",
+                    "url": "https://baesystemsai.blogspot.com/2015/06/new-mac-os-malware-exploits-mackeeper.html"
+                },
+                {
+                    "url": "https://logrhythm.com/blog/do-you-trust-your-computer/",
+                    "description": "Foss, G. (2014, October 3). Do You Trust Your Computer?. Retrieved December 17, 2018.",
+                    "source_name": "LogRhythm Do You Trust Oct 2014"
+                },
+                {
+                    "source_name": "OSX Keydnap malware",
+                    "description": "Marc-Etienne M.Leveille. (2016, July 6). New OSX/Keydnap malware is hungry for credentials. Retrieved July 3, 2017.",
+                    "url": "https://www.welivesecurity.com/2016/07/06/new-osxkeydnap-malware-hungry-credentials/"
+                },
+                {
+                    "url": "https://embracethered.com/blog/posts/2021/spoofing-credential-dialogs/",
+                    "description": "Johann Rehberger. (2021, April 18). Spoofing credential dialogs on macOS Linux and Windows. Retrieved August 19, 2021.",
+                    "source_name": "Spoofing credential dialogs"
+                },
+                {
+                    "url": "https://enigma0x3.net/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/",
+                    "description": "Nelson, M. (2015, January 21). Phishing for Credentials: If you want it, just ask!. Retrieved December 17, 2018.",
+                    "source_name": "Enigma Phishing for Credentials Jan 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Multi-hop Proxy",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "2.0",
+            "modified": "2020-10-21T17:54:28.280Z",
+            "created": "2020-03-14T23:23:41.770Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a782ebe2-daba-42c7-bc82-e8e9d923162d",
+            "description": "To disguise the source of malicious traffic, adversaries may chain together multiple proxies. Typically, a defender will be able to identify the last proxy traffic traversed before it enters their network; the defender may or may not be able to identify any previous proxies before the last-hop proxy. This technique makes identifying the original source of the malicious traffic even more difficult by requiring the defender to trace malicious traffic through several proxies to identify its source. A particular variant of this behavior is to use onion routing networks, such as the publicly available TOR network. (Citation: Onion Routing)\n\nIn the case of network infrastructure, particularly routers, it is possible for an adversary to leverage multiple compromised devices to create a multi-hop proxy chain within the Wide-Area Network (WAN) of the enterprise.  By leveraging [Patch System Image](https://attack.mitre.org/techniques/T1601/001), adversaries can add custom code to the affected network devices that will implement onion routing between those nodes.  This custom onion routing network will transport the encrypted C2 traffic through the compromised population, allowing adversaries to communicate with any device within the onion routing network.  This method is dependent upon the [Network Boundary Bridging](https://attack.mitre.org/techniques/T1599) method in order to allow the adversaries to cross the protected network boundary of the Internet perimeter and into the organization\u2019s WAN. Protocols such as ICMP may be used as a transport.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "When observing use of Multi-hop proxies, network data from the actual command and control servers could allow correlating incoming and outgoing flows to trace malicious traffic back to its source. Multi-hop proxies can also be detected by alerting on traffic to known anonymity networks (such as [Tor](https://attack.mitre.org/software/S0183)) or known adversary infrastructure that uses this technique.\n\nIn context of network devices, monitor traffic for encrypted communications from the Internet that is addressed to border routers.  Compare this traffic with the configuration to determine whether it matches with any configured site-to-site Virtual Private Network (VPN) connections the device was intended to have. Monitor traffic for encrypted communications originating from potentially breached routers that is addressed to other routers within the organization.  Compare the source and destination with the configuration of the device to determine if these channels are an authorized Virtual Private Network (VPN) connections or other encrypted modes of communication. Monitor ICMP traffic from the Internet that is addressed to border routers and is encrypted.  Few if any legitimate use cases exist for sending encrypted data to a network device via ICMP.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1090/003",
+                    "external_id": "T1090.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/Onion_routing",
+                    "description": "Wikipedia. (n.d.). Onion Routing. Retrieved October 20, 2020.",
+                    "source_name": "Onion Routing"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-11T14:43:31.706Z",
+            "name": "Malicious Link",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-11T14:43:31.706Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--ef67e13e-5598-4adc-bdb2-998225874fa9",
+            "description": "An adversary may rely upon a user clicking a malicious link in order to gain execution. Users may be subjected to social engineering to get them to click on a link that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002). Clicking on a link may also lead to other execution techniques such as exploitation of a browser or application vulnerability via [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203). Links may also lead users to download files that require execution via [Malicious File](https://attack.mitre.org/techniques/T1204/002).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Inspect network traffic for indications that a user visited a malicious site, such as links included in phishing campaigns directed at your organization.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded from a link and executed on the user's computer.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/001",
+                    "external_id": "T1204.001",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Valid Accounts",
+            "x_mitre_data_sources": [
+                "Logon Session: Logon Session Metadata",
+                "User Account: User Account Authentication",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-19T03:29:48.018Z",
+            "created": "2017-05-31T21:31:00.645Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "id": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "x_mitre_defense_bypassed": [
+                "Firewall",
+                "Host intrusion prevention systems",
+                "Network intrusion detection system",
+                "Application control",
+                "System access controls",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Compromised credentials may be used to bypass access controls placed on various resources on systems within the network and may even be used for persistent access to remote systems and externally available services, such as VPNs, Outlook Web Access and remote desktop. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence.\n\nThe overlap of permissions for local, domain, and cloud accounts across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise. (Citation: TechNet Credential Theft)",
+            "x_mitre_effective_permissions": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_contributors": [
+                "Jon Sternstein, Stern Security",
+                "Yossi Weizman, Azure Defender Research Team",
+                "Netskope",
+                "Mark Wee",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "Configure robust, consistent account activity audit policies across the enterprise and with externally accessible services. (Citation: TechNet Audit Policy) Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account. Correlate other security systems with login information (e.g., a user has an active login session but has not entered the building or does not have VPN access).\n\nPerform regular audits of domain and local system accounts to detect accounts that may have been created by an adversary for persistence. Checks on these accounts could also include whether default accounts such as Guest have been activated. These audits should also include checks on any appliances and applications for default credentials or SSH keys, and if any are discovered, they should be updated immediately.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1078",
+                    "external_id": "T1078",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/560.html",
+                    "external_id": "CAPEC-560",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Credential Theft",
+                    "description": "Microsoft. (2016, April 15). Attractive Accounts for Credential Theft. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn535501.aspx"
+                },
+                {
+                    "source_name": "TechNet Audit Policy",
+                    "description": "Microsoft. (2016, April 15). Audit Policy Recommendations. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn487457.aspx"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7a576dba-2f79-4416-80da-e0a1e8a22fff",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "target_ref": "identity--93f86a60-cf1f-4285-882e-6691bcbfddb9"
+        },
+        {
+            "created": "2021-03-13T20:09:21.316245Z",
+            "id": "identity--93f86a60-cf1f-4285-882e-6691bcbfddb9",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Healthcare sector as a target",
+            "sectors": [
+                "healthcare"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f8698b69-ea10-47f4-a6d5-2062832c3a83",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "target_ref": "identity--983bf966-a56b-4f3c-8637-6c56b94b3b2f"
+        },
+        {
+            "created": "2021-03-13T20:09:21.327165Z",
+            "id": "identity--983bf966-a56b-4f3c-8637-6c56b94b3b2f",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Pharmaceuticals sector as a target",
+            "sectors": [
+                "pharmaceuticals"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0e50e963-13ad-44d1-950c-c035a5232179",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c3da9553-f61c-41fa-b83f-00cd2726a85f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--d0b3393b-3bec-4ba3-bda9-199d30db47b6",
+            "target_ref": "location--c5def2eb-40eb-4a08-895c-f2cc904bf96c"
+        },
+        {
+            "created": "2021-03-13T20:09:20.900702Z",
+            "id": "location--c5def2eb-40eb-4a08-895c-f2cc904bf96c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Romania",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

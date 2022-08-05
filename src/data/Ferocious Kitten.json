@@ -1,0 +1,654 @@
+{
+    "type": "bundle",
+    "id": "bundle--796d812e-651f-47bd-b140-f7db2cfbee22",
+    "spec_version": "2.0",
+    "objects": [
+        {   "x-MISP-uuid": "",
+            "x_MISP-description": "",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Ferocious Kitten",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "Ferocious Kitten"
+            ],
+            "id": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "description": "[Ferocious Kitten](https://attack.mitre.org/groups/G0137) is a threat group that has primarily targeted Persian-speaking individuals in Iran since at least 2015.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "x_mitre_contributors": [
+                "Pooja Natarajan, NEC Corporation India",
+                "Manikantan Srinivasan, NEC Corporation India",
+                "Hiroki Nagahama, NEC Corporation"
+            ],
+            "created": "2021-09-28T17:41:12.950Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0137",
+                    "external_id": "G0137",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3ccaef78-13bd-40e8-bb4b-b5d203303262",
+            "description": "(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "malware--532c6004-b1e8-415b-9516-f7c14ba783b1",
+            "modified": "2021-09-28T19:47:10.936Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-28T19:47:10.936Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8f8caa9d-b728-4b54-88b0-b7cd3646f437",
+            "description": "[Ferocious Kitten](https://attack.mitre.org/groups/G0137) has conducted spearphishing campaigns containing malicious documents to lure victims to open the attachments.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2021-10-11T17:43:50.369Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-28T19:47:10.935Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--59d3a882-3f6d-442a-8fbe-bb2f9cecd2f5",
+            "description": "[Ferocious Kitten](https://attack.mitre.org/groups/G0137) has named malicious files <code>update.exe</code> and loaded them into the compromise host's \u201cPublic\u201d folder.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "modified": "2021-10-11T17:43:50.365Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-28T19:47:10.896Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--471ea836-ef54-4306-b131-cf66de5811c4",
+            "description": "[Ferocious Kitten](https://attack.mitre.org/groups/G0137) has attempted to convince victims to enable malicious content within a spearphishing email by including an odd decoy message.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2021-10-11T17:43:50.387Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-28T19:47:10.886Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--54501ca8-7205-4b83-87cb-b2235bc0ec71",
+            "description": "[Ferocious Kitten](https://attack.mitre.org/groups/G0137) has used right-to-left override to reverse executables\u2019 names to make them appear to have different file extensions, rather than their real ones.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "attack-pattern--77eae145-55db-4519-8ae5-77b0c7215d69",
+            "modified": "2021-10-11T17:43:50.352Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-28T19:47:10.887Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ba29bbf3-4947-4676-98c4-13bf6fb79ce0",
+            "description": "[Ferocious Kitten](https://attack.mitre.org/groups/G0137) has obtained open source tools for its operations, including JsonCPP and Psiphon.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-11T18:39:18.009Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-11T18:39:18.009Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e9375a8c-4574-40a9-a3c2-a9fe036928a6",
+            "description": "[Ferocious Kitten](https://attack.mitre.org/groups/G0137) has acquired domains imitating legitimate sites.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+            "modified": "2021-10-11T18:39:18.080Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-28T19:47:10.879Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f76d5396-bce5-4bb8-85aa-75d9f1bec9b2",
+            "description": "(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "target_ref": "tool--64764dc6-a032-495f-8250-1e4c06bdc163",
+            "modified": "2021-09-28T17:41:13.107Z",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-28T17:41:13.107Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Domains",
+            "x_mitre_data_sources": [
+                "Domain Name: Active DNS",
+                "Domain Name: Passive DNS",
+                "Domain Name: Domain Registration"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-16T17:09:26.334Z",
+            "created": "2020-09-30T17:09:31.878Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+            "description": "Adversaries may purchase domains that can be used during targeting. Domain names are the human readable names used to represent one or more IP addresses. They can be purchased or, in some cases, acquired for free.\n\nAdversaries can use purchased domains for a variety of purposes, including for [Phishing](https://attack.mitre.org/techniques/T1566), [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), and Command and Control.(Citation: CISA MSS Sep 2020) Adversaries may choose domains that are similar to legitimate domains, including through use of homoglyphs or use of a different top-level domain (TLD).(Citation: FireEye APT28)(Citation: PaypalScam) Typosquatting may be used to aid in delivery of payloads via [Drive-by Compromise](https://attack.mitre.org/techniques/T1189). Adversaries can also use internationalized domain names (IDNs) to create visually similar lookalike domains for use in operations.(Citation: CISA IDN ST05-016)\n\nDomain registrars each maintain a publicly viewable database that displays contact information for every registered domain. Private WHOIS services display alternative information, such as their own company data, rather than the owner of the domain. Adversaries may use such private WHOIS services to obscure information about who owns a purchased domain. Adversaries may further interrupt efforts to track their infrastructure by using varied registration information and purchasing domains with different domain registrars.(Citation: Mandiant APT1)",
+            "x_mitre_contributors": [
+                "Wes Hurd",
+                "Vinayak Wadhwa, Lucideus",
+                "Deloitte Threat Library Team"
+            ],
+            "x_mitre_detection": "Domain registration information is, by design, captured in public registration logs. Consider use of services that may aid in tracking of newly acquired domains, such as WHOIS databases and/or passive DNS. In some cases it may be possible to pivot on known pieces of domain registration information to uncover other infrastructure purchased by the adversary. Consider monitoring for domains created with a similar structure to your own, including under a different TLD. Though various tools and services exist to track, query, and monitor domain name registration information, tracking across multiple DNS infrastructures can require multiple tools/services or more advanced analytics.(Citation: ThreatConnect Infrastructure Dec 2020)\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access and Command and Control.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1583/001",
+                    "external_id": "T1583.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/630.html",
+                    "external_id": "CAPEC-630",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-258a",
+                    "description": "CISA. (2020, September 14). Alert (AA20-258A): Chinese Ministry of State Security-Affiliated Cyber Threat Actor Activity. Retrieved October 1, 2020.",
+                    "source_name": "CISA MSS Sep 2020"
+                },
+                {
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf",
+                    "description": "FireEye. (2015). APT28: A WINDOW INTO RUSSIA\u2019S CYBER ESPIONAGE OPERATIONS?. Retrieved August 19, 2015.",
+                    "source_name": "FireEye APT28"
+                },
+                {
+                    "url": "https://www.zdnet.com/article/paypal-alert-beware-the-paypai-scam-5000109103/",
+                    "description": "Bob Sullivan. (2000, July 24). PayPal alert! Beware the 'PaypaI' scam. Retrieved March 2, 2017.",
+                    "source_name": "PaypalScam"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/tips/ST05-016",
+                    "description": "CISA. (2019, September 27). Security Tip (ST05-016): Understanding Internationalized Domain Names. Retrieved October 20, 2020.",
+                    "source_name": "CISA IDN ST05-016"
+                },
+                {
+                    "source_name": "Mandiant APT1",
+                    "description": "Mandiant. (n.d.). APT1 Exposing One of China\u2019s Cyber Espionage Units. Retrieved July 18, 2016.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+                },
+                {
+                    "url": "https://threatconnect.com/blog/infrastructure-research-hunting/",
+                    "description": "ThreatConnect. (2020, December 15). Infrastructure Research and Hunting: Boiling the Domain Ocean. Retrieved October 12, 2021.",
+                    "source_name": "ThreatConnect Infrastructure Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Right-to-Left Override",
+            "x_mitre_data_sources": [
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-14T21:01:59.733Z",
+            "created": "2020-02-10T19:55:29.385Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--77eae145-55db-4519-8ae5-77b0c7215d69",
+            "description": "Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign. RTLO is a non-printing Unicode character that causes the text that follows it to be displayed in reverse. For example, a Windows screensaver executable named <code>March 25 \\u202Excod.scr</code> will display as <code>March 25 rcs.docx</code>. A JavaScript file named <code>photo_high_re\\u202Egnp.js</code> will be displayed as <code>photo_high_resj.png</code>.(Citation: Infosecinstitute RTLO Technique)\n\nAdversaries may abuse the RTLO character as a means of tricking a user into executing what they think is a benign file type. A common use of this technique is with [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001)/[Malicious File](https://attack.mitre.org/techniques/T1204/002) since it can trick both end users and defenders if they are not aware of how their tools display and render the RTLO character. Use of the RTLO character has been seen in many targeted intrusion attempts and criminal activity.(Citation: Trend Micro PLEAD RTLO)(Citation: Kaspersky RTLO Cyber Crime) RTLO can be used in the Windows Registry as well, where regedit.exe displays the reversed characters but the command line tool reg.exe does not by default.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Detection methods should include looking for common formats of RTLO characters within filenames such as <code>\\u202E</code>, <code>[U+202E]</code>, and <code>%E2%80%AE</code>. Defenders should also check their analysis tools to ensure they do not interpret the RTLO character and instead print the true name of the file containing it.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/002",
+                    "external_id": "T1036.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://resources.infosecinstitute.com/spoof-using-right-to-left-override-rtlo-technique-2/",
+                    "description": "Security Ninja. (2015, April 16). Spoof Using Right to Left Override (RTLO) Technique. Retrieved April 22, 2019.",
+                    "source_name": "Infosecinstitute RTLO Technique"
+                },
+                {
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/plead-targeted-attacks-against-taiwanese-government-agencies-2/",
+                    "description": "Alintanahin, K.. (2014, May 23). PLEAD Targeted Attacks Against Taiwanese Government Agencies. Retrieved April 22, 2019.",
+                    "source_name": "Trend Micro PLEAD RTLO"
+                },
+                {
+                    "url": "https://securelist.com/zero-day-vulnerability-in-telegram/83800/",
+                    "description": "Firsh, A.. (2018, February 13). Zero-day vulnerability in Telegram - Cybercriminals exploited Telegram flaw to launch multipurpose attacks. Retrieved April 22, 2019.",
+                    "source_name": "Kaspersky RTLO Cyber Crime"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-20T19:23:37.762Z",
+            "name": "Match Legitimate Name or Location",
+            "x_mitre_data_sources": [
+                "Image: Image Metadata",
+                "File: File Metadata",
+                "Process: Process Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-02-10T20:43:10.239Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "description": "Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them. This is done for the sake of evading defenses and observation. This may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: svchost.exe). In containerized environments, this may also be done by creating a resource in a namespace that matches the naming convention of a container pod or cluster. Alternatively, a file or container image name given may be a close approximation to legitimate programs/images or something innocuous.\n\nAdversaries may also use the same icon of the file they are trying to mimic.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee"
+            ],
+            "x_mitre_detection": "Collect file hashes; file names that do not match their expected hash are suspect. Perform file monitoring; files with known names but in unusual locations are suspect. Likewise, files that are modified outside of an update or patch are suspect.\n\nIf file names are mismatched between the file name on disk and that of the binary's PE metadata, this is a likely indicator that a binary was renamed after it was compiled. Collecting and comparing disk and resource filenames for binaries by looking to see if the InternalName, OriginalFilename, and/or ProductName match what is expected could provide useful leads, but may not always be indicative of malicious activity. (Citation: Elastic Masquerade Ball) Do not focus on the possible names a file could have, but instead on the command-line arguments that are known to be used and are distinct because it will have a better rate of detection.(Citation: Twitter ItsReallyNick Masquerading Update)\n\nIn containerized environments, use image IDs and layer hashes to compare images instead of relying only on their names.(Citation: Docker Images) Monitor for the unexpected creation of new resources within your cluster in Kubernetes, especially those created by atypical users.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/177.html",
+                    "external_id": "CAPEC-177",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "http://pages.endgame.com/rs/627-YBU-612/images/EndgameJournal_The%20Masquerade%20Ball_Pages_R2.pdf",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "source_name": "Elastic Masquerade Ball"
+                },
+                {
+                    "url": "https://twitter.com/ItsReallyNick/status/1055321652777619457",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved April 22, 2019.",
+                    "source_name": "Twitter ItsReallyNick Masquerading Update"
+                },
+                {
+                    "url": "https://docs.docker.com/engine/reference/commandline/images/",
+                    "description": "Docker. (n.d.). Docker Images. Retrieved April 6, 2021.",
+                    "source_name": "Docker Images"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "BITSAdmin",
+            "x_mitre_aliases": [
+                "BITSAdmin"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2020-03-20T18:09:11.516Z",
+            "created": "2018-04-18T17:59:24.739Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--64764dc6-a032-495f-8250-1e4c06bdc163",
+            "description": "[BITSAdmin](https://attack.mitre.org/software/S0190) is a command line tool used to create and manage [BITS Jobs](https://attack.mitre.org/techniques/T1197). (Citation: Microsoft BITSAdmin)",
+            "x_mitre_contributors": [
+                "Edward Millington"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0190",
+                    "external_id": "S0190",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://msdn.microsoft.com/library/aa362813.aspx",
+                    "description": "Microsoft. (n.d.). BITSAdmin Tool. Retrieved January 12, 2018.",
+                    "source_name": "Microsoft BITSAdmin"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "MarkiRAT",
+            "x_mitre_aliases": [
+                "MarkiRAT"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-10-25T14:24:59.957Z",
+            "created": "2021-09-28T17:48:36.547Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--532c6004-b1e8-415b-9516-f7c14ba783b1",
+            "description": "[MarkiRAT](https://attack.mitre.org/software/S0652) is a remote access Trojan (RAT) compiled with Visual Studio that has been used by [Ferocious Kitten](https://attack.mitre.org/groups/G0137) since at least 2015.(Citation: Kaspersky Ferocious Kitten Jun 2021)",
+            "x_mitre_contributors": [
+                "Pooja Natarajan, NEC Corporation India",
+                "Manikantan Srinivasan, NEC Corporation India",
+                "Hiroki Nagahama, NEC Corporation"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0652",
+                    "external_id": "S0652",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+                    "description": "GReAT. (2021, June 16). Ferocious Kitten: 6 Years of Covert Surveillance in Iran. Retrieved September 22, 2021.",
+                    "source_name": "Kaspersky Ferocious Kitten Jun 2021"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c6b49a32-85de-4fd3-a9a2-a6340e462c32",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "target_ref": "location--036a483f-27e7-48f0-9e75-b44f99c3c531"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3feea108-a650-4d99-89fe-fcb27f4c599c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--6566aac9-dad8-4332-ae73-20c23bad7f02",
+            "target_ref": "location--036a483f-27e7-48f0-9e75-b44f99c3c531"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--036a483f-27e7-48f0-9e75-b44f99c3c531",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Iran",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

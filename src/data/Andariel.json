@@ -1,0 +1,1161 @@
+{
+    "type": "bundle",
+    "id": "bundle--54031bdf-048e-4306-9c7d-aa7c4d1bbc8a",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2009",
+            "x_MISP-uuid": "245c8dde-ed42-4c49-b48b-634e3e21bdd7",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Andariel",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "Andariel",
+                "OperationTroy",
+                "Guardian of Peace",
+                "GOP",
+                "WHOis Team",
+                "Andariel",
+                "Subgroup: Andariel",
+                "Stonefly",
+                "Silent Chollima"
+            ],
+            "id": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) is a North Korean state-sponsored threat group that has been active since at least 2009. [Andariel](https://attack.mitre.org/groups/G0138) has primarily focused its operations--which have included destructive attacks--against South Korean government agencies, military organizations, and a variety of domestic companies; they have also conducted cyber financial operations against ATMs, banks, and cryptocurrency exchanges. [Andariel](https://attack.mitre.org/groups/G0138)'s notable activity includes Operation Black Mine, Operation GoldenAxe, and Campaign Rifle.(Citation: FSI Andariel Campaign Rifle July 2017)(Citation: IssueMakersLab Andariel GoldenAxe May 2017)(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)(Citation: TrendMicro New Andariel Tactics July 2018)(Citation: CrowdStrike Silent Chollima Adversary September 2021)\n\n[Andariel](https://attack.mitre.org/groups/G0138) is considered a sub-set of [Lazarus Group](https://attack.mitre.org/groups/G0032), and has been attributed to North Korea's Reconnaissance General Bureau.(Citation: Treasury North Korean Cyber Groups September 2019)\n\nNorth Korean group definitions are known to have significant overlap, and some security researchers report all North Korean state-sponsored cyber activity under the name [Lazarus Group](https://attack.mitre.org/groups/G0032) instead of tracking clusters or subgroups.",
+            "x_mitre_contributors": [
+                "Kyoung-ju Kwak (S2W)"
+            ],
+            "created": "2021-09-29T15:10:19.236Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0138",
+                    "external_id": "G0138",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FSI Andariel Campaign Rifle July 2017)",
+                    "source_name": "Andariel"
+                },
+                {
+                    "description": "(Citation: CrowdStrike Silent Chollima Adversary September 2021)",
+                    "source_name": "Silent Chollima"
+                },
+                {
+                    "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1680.do",
+                    "description": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 29, 2021.",
+                    "source_name": "FSI Andariel Campaign Rifle July 2017"
+                },
+                {
+                    "url": "http://www.issuemakerslab.com/research3/",
+                    "description": "IssueMakersLab. (2017, May 1). Operation GoldenAxe. Retrieved September 29, 2021.",
+                    "source_name": "IssueMakersLab Andariel GoldenAxe May 2017"
+                },
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                },
+                {
+                    "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html",
+                    "description": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+                    "source_name": "TrendMicro New Andariel Tactics July 2018"
+                },
+                {
+                    "url": "https://adversary.crowdstrike.com/en-US/adversary/silent-chollima/",
+                    "description": "CrowdStrike. (2021, September 29). Silent Chollima Adversary Profile. Retrieved September 29, 2021.",
+                    "source_name": "CrowdStrike Silent Chollima Adversary September 2021"
+                },
+                {
+                    "url": "https://home.treasury.gov/news/press-releases/sm774",
+                    "description": "US Treasury . (2019, September 13). Treasury Sanctions North Korean State-Sponsored Malicious Cyber Groups. Retrieved September 29, 2021.",
+                    "source_name": "Treasury North Korean Cyber Groups September 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--02aaa58a-483c-43ec-ad99-a56da68a6298",
+            "description": "(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)",
+            "target_ref": "malware--44c75271-0e4d-496f-ae0a-a6d883a42a65",
+            "modified": "2021-09-29T15:41:18.395Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.395Z",
+            "external_references": [
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2bb829ce-e597-4033-af7c-ef44aaebadb4",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has used the <code>netstat -naop tcp</code> command to display TCP connections on a victim's machine.(Citation: Kaspersky Andariel Ransomware June 2021)",
+            "target_ref": "attack-pattern--7e150503-88e7-4861-866b-ff1ac82c4475",
+            "modified": "2021-09-29T15:41:18.411Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.411Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/",
+                    "description": "Park, S. (2021, June 15). Andariel evolves to target South Korea with ransomware. Retrieved September 29, 2021.",
+                    "source_name": "Kaspersky Andariel Ransomware June 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2f5d9a23-5360-479c-b6dc-f9827bb6b353",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has exploited numerous ActiveX vulnerabilities, including zero-days.(Citation: FSI Andariel Campaign Rifle July 2017)(Citation: IssueMakersLab Andariel GoldenAxe May 2017)(Citation: TrendMicro New Andariel Tactics July 2018)",
+            "target_ref": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "modified": "2021-09-29T15:41:18.385Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.385Z",
+            "external_references": [
+                {
+                    "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1680.do",
+                    "description": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 29, 2021.",
+                    "source_name": "FSI Andariel Campaign Rifle July 2017"
+                },
+                {
+                    "url": "http://www.issuemakerslab.com/research3/",
+                    "description": "IssueMakersLab. (2017, May 1). Operation GoldenAxe. Retrieved September 29, 2021.",
+                    "source_name": "IssueMakersLab Andariel GoldenAxe May 2017"
+                },
+                {
+                    "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html",
+                    "description": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+                    "source_name": "TrendMicro New Andariel Tactics July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4ee087c3-92d0-4886-bc90-167e7ab8926d",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has limited its watering hole attacks to specific IP address ranges.(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)",
+            "target_ref": "attack-pattern--0dda99f0-4701-48ca-9774-8504922e92d3",
+            "modified": "2021-09-29T15:56:23.634Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:56:23.634Z",
+            "external_references": [
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4fd205f2-656f-4211-b60b-510d53dfa8d3",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has used watering hole attacks, often with zero-day exploits, to gain initial access to victims within a specific IP range.(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)(Citation: TrendMicro New Andariel Tactics July 2018)",
+            "target_ref": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "modified": "2021-09-29T15:41:18.414Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.414Z",
+            "external_references": [
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                },
+                {
+                    "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html",
+                    "description": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+                    "source_name": "TrendMicro New Andariel Tactics July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9fc2e926-e5a9-4c56-8d7c-cdef9dd7f7ab",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has inserted a malicious script within compromised websites to collect potential victim information such as browser type, system language, Flash Player version, and other data.(Citation: TrendMicro New Andariel Tactics July 2018)",
+            "target_ref": "attack-pattern--baf60e1a-afe5-4d31-830f-1b1ba2351884",
+            "modified": "2021-09-29T15:41:18.413Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.413Z",
+            "external_references": [
+                {
+                    "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html",
+                    "description": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+                    "source_name": "TrendMicro New Andariel Tactics July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--63f08c72-9be6-45d5-9c60-2a4794795760",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has used <code>tasklist</code> to enumerate processes and find a specific string.(Citation: Kaspersky Andariel Ransomware June 2021)",
+            "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "modified": "2021-09-29T15:41:18.404Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.404Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/",
+                    "description": "Park, S. (2021, June 15). Andariel evolves to target South Korea with ransomware. Retrieved September 29, 2021.",
+                    "source_name": "Kaspersky Andariel Ransomware June 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--343e78cb-dbe9-4421-aca3-a8a973553c7a",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has collected large numbers of files from compromised network systems for later extraction.(Citation: FSI Andariel Campaign Rifle July 2017)",
+            "target_ref": "attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+            "modified": "2021-10-15T15:16:47.553Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.389Z",
+            "external_references": [
+                {
+                    "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1680.do",
+                    "description": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 29, 2021.",
+                    "source_name": "FSI Andariel Campaign Rifle July 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--aaeef068-5853-45c9-922a-9ff779041cbe",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has used a variety of publicly-available remote access Trojans (RATs) for its operations.(Citation: FSI Andariel Campaign Rifle July 2017)",
+            "target_ref": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970",
+            "modified": "2021-09-29T15:41:18.380Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.380Z",
+            "external_references": [
+                {
+                    "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1680.do",
+                    "description": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 29, 2021.",
+                    "source_name": "FSI Andariel Campaign Rifle July 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c4de34ea-99de-4850-817d-f9f2915bc7bd",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has attempted to lure victims into enabling malicious macros within email attachments.(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2021-09-29T15:41:18.405Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.405Z",
+            "external_references": [
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c801e7ac-dce5-4349-bc07-446b5eec9744",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has conducted spearphishing campaigns that included malicious Word or Excel attachments.(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)(Citation: MalwareBytes Lazarus-Andariel Conceals Code April 2021)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2021-09-29T17:18:24.540Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.387Z",
+            "external_references": [
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/threat-intelligence/2021/04/lazarus-apt-conceals-malicious-code-within-bmp-file-to-drop-its-rat/",
+                    "description": "Jazi, H. (2021, April 19). Lazarus APT conceals malicious code within BMP image to drop its RAT . Retrieved September 29, 2021.",
+                    "source_name": "MalwareBytes Lazarus-Andariel Conceals Code April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--da7dcfcb-7a36-43a8-8a0a-409d15b7e62e",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has hidden malicious executables within PNG files.(Citation: MalwareBytes Lazarus-Andariel Conceals Code April 2021)(Citation: Kaspersky Andariel Ransomware June 2021)",
+            "target_ref": "attack-pattern--c2e147a9-d1a8-4074-811a-d8789202d916",
+            "modified": "2021-09-29T17:18:24.533Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.396Z",
+            "external_references": [
+                {
+                    "url": "https://blog.malwarebytes.com/threat-intelligence/2021/04/lazarus-apt-conceals-malicious-code-within-bmp-file-to-drop-its-rat/",
+                    "description": "Jazi, H. (2021, April 19). Lazarus APT conceals malicious code within BMP image to drop its RAT . Retrieved September 29, 2021.",
+                    "source_name": "MalwareBytes Lazarus-Andariel Conceals Code April 2021"
+                },
+                {
+                    "url": "https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/",
+                    "description": "Park, S. (2021, June 15). Andariel evolves to target South Korea with ransomware. Retrieved September 29, 2021.",
+                    "source_name": "Kaspersky Andariel Ransomware June 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--daabfd4e-f873-4afc-8f39-fc5daf7cd71a",
+            "description": "(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)",
+            "target_ref": "malware--88c621a7-aef9-4ae0-94e3-1fc87123eb24",
+            "modified": "2021-09-29T15:41:18.402Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.402Z",
+            "external_references": [
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ef8385b2-e62c-4854-9a0b-f23d6de334cd",
+            "description": "[Andariel](https://attack.mitre.org/groups/G0138) has downloaded additional tools and malware onto compromised hosts.(Citation: AhnLab Andariel Subgroup of Lazarus June 2018)",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "modified": "2021-09-29T15:41:18.401Z",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-29T15:41:18.401Z",
+            "external_references": [
+                {
+                    "url": "http://download.ahnlab.com/global/brochure/[Analysis]Andariel_Group.pdf",
+                    "description": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+                    "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Data from Local System",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1005",
+                    "external_id": "T1005",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Script: Script Execution",
+                "File: File Access",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-10-15T22:16:42.734Z",
+            "x_mitre_system_requirements": [
+                "Privileges to access certain files and directories"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+            "description": "Adversaries may search local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to Exfiltration.\n\nAdversaries may do this using a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059), such as [cmd](https://attack.mitre.org/software/S0106), which has functionality to interact with the file system to gather information. Some adversaries may also use [Automated Collection](https://attack.mitre.org/techniques/T1119) on the local system.\n",
+            "x_mitre_contributors": [
+                "William Cain"
+            ],
+            "x_mitre_detection": "Monitor processes and command-line arguments for actions that could be taken to collect files from a system. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:30:20.537Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-07-28T01:37:46.704Z",
+            "name": "Drive-by Compromise",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2018-04-18T17:59:24.739Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS",
+                "SaaS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "description": "Adversaries may gain access to a system through a user visiting a website over the normal course of browsing. With this technique, the user's web browser is typically targeted for exploitation, but adversaries may also use compromised websites for non-exploitation behavior such as acquiring [Application Access Token](https://attack.mitre.org/techniques/T1550/001).\n\nMultiple ways of delivering exploit code to a browser exist, including:\n\n* A legitimate website is compromised where adversaries have injected some form of malicious code such as JavaScript, iFrames, and cross-site scripting.\n* Malicious ads are paid for and served through legitimate ad providers.\n* Built-in web application interfaces are leveraged for the insertion of any other kind of object that can be used to display web content or contain a script that executes on the visiting client (e.g. forum posts, comments, and other user controllable web content).\n\nOften the website used by an adversary is one visited by a specific community, such as government, a particular industry, or region, where the goal is to compromise a specific user or set of users based on a shared interest. This kind of targeted attack is referred to a strategic web compromise or watering hole attack. There are several known examples of this occurring.(Citation: Shadowserver Strategic Web Compromise)\n\nTypical drive-by compromise process:\n\n1. A user visits a website that is used to host the adversary controlled content.\n2. Scripts automatically execute, typically searching versions of the browser and plugins for a potentially vulnerable version. \n    * The user may be required to assist in this process by enabling scripting or active website components and ignoring warning dialog boxes.\n3. Upon finding a vulnerable version, exploit code is delivered to the browser.\n4. If exploitation is successful, then it will give the adversary code execution on the user's system unless other protections are in place.\n    * In some cases a second visit to the website after the initial scan is required before exploit code is delivered.\n\nUnlike [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190), the focus of this technique is to exploit software on a client endpoint upon visiting a website. This will commonly give an adversary access to systems on the internal network instead of external systems that may be in a DMZ.\n\nAdversaries may also use compromised websites to deliver a user to a malicious application designed to [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s, like OAuth tokens, to gain access to protected applications and information. These malicious applications have been delivered through popups on legitimate websites.(Citation: Volexity OceanLotus Nov 2017)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM Services)",
+                "Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)"
+            ],
+            "x_mitre_detection": "Firewalls and proxies can inspect URLs for potentially known-bad domains or parameters. They can also do reputation-based analytics on websites and their requested resources such as how old a domain is, who it's registered to, if it's on a known bad list, or how many other users have connected to it before.\n\nNetwork intrusion detection systems, sometimes with SSL/TLS inspection, can be used to look for known malicious scripts (recon, heap spray, and browser identification scripts have been frequently reused), common script obfuscation, and exploit code.\n\nDetecting compromise based on the drive-by exploit from a legitimate website may be difficult. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of browser processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1189",
+                    "external_id": "T1189",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Shadowserver Strategic Web Compromise",
+                    "description": "Adair, S., Moran, N. (2012, May 15). Cyber Espionage & Strategic Web Compromises \u2013 Trusted Websites Serving Dangerous Results. Retrieved March 13, 2018.",
+                    "url": "http://blog.shadowserver.org/2012/05/15/cyber-espionage-strategic-web-compromises-trusted-websites-serving-dangerous-results/"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2017/11/06/oceanlotus-blossoms-mass-digital-surveillance-and-exploitation-of-asean-nations-the-media-human-rights-and-civil-society/",
+                    "description": "Lassalle, D., et al. (2017, November 6). OceanLotus Blossoms: Mass Digital Surveillance and Attacks Targeting ASEAN, Asian Nations, the Media, Human Rights Groups, and Civil Society. Retrieved November 6, 2017.",
+                    "source_name": "Volexity OceanLotus Nov 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Exploitation for Client Execution",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1203",
+                    "external_id": "T1203",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T19:01:34.932Z",
+            "x_mitre_system_requirements": [
+                "Remote exploitation for execution requires a remotely accessible service reachable over the network or other vector of access such as spearphishing or drive-by compromise."
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "description": "Adversaries may exploit software vulnerabilities in client applications to execute code. Vulnerabilities can exist in software due to unsecure coding practices that can lead to unanticipated behavior. Adversaries can take advantage of certain vulnerabilities through targeted exploitation for the purpose of arbitrary code execution. Oftentimes the most valuable exploits to an offensive toolkit are those that can be used to obtain code execution on a remote system because they can be used to gain access to that system. Users will expect to see files related to the applications they commonly used to do work, so they are a useful target for exploit research and development because of their high utility.\n\nSeveral types exist:\n\n### Browser-based Exploitation\n\nWeb browsers are a common target through [Drive-by Compromise](https://attack.mitre.org/techniques/T1189) and [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002). Endpoint systems may be compromised through normal web browsing or from certain users being targeted by links in spearphishing emails to adversary controlled sites used to exploit the web browser. These often do not require an action by the user for the exploit to be executed.\n\n### Office Applications\n\nCommon office and productivity applications such as Microsoft Office are also targeted through [Phishing](https://attack.mitre.org/techniques/T1566). Malicious files will be transmitted directly as attachments or through links to download them. These require the user to open the document or file for the exploit to run.\n\n### Common Third-party Applications\n\nOther applications that are commonly seen or are part of the software deployed in a target network may also be used for exploitation. Applications such as Adobe Reader and Flash, which are common in enterprise environments, have been routinely targeted by adversaries attempting to gain access to systems. Depending on the software and nature of the vulnerability, some may be exploited in the browser or require the user to open a file. For instance, some Flash exploits have been delivered as objects within Microsoft Office documents.",
+            "x_mitre_remote_support": false,
+            "x_mitre_detection": "Detecting software exploitation may be difficult depending on the tools available. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of the browser or Office processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created": "2018-04-18T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Software",
+            "x_mitre_data_sources": [
+                "Internet Scan: Response Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:33:19.596Z",
+            "created": "2020-10-02T16:42:17.482Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--baf60e1a-afe5-4d31-830f-1b1ba2351884",
+            "description": "Adversaries may gather information about the victim's host software that can be used during targeting. Information about installed software may include a variety of details such as types and versions on specific hosts, as well as the presence of additional components that might be indicative of added defensive protections (ex: antivirus, SIEMs, etc.).\n\nAdversaries may gather this information in various ways, such as direct collection actions via [Active Scanning](https://attack.mitre.org/techniques/T1595) (ex: listening ports, server banners, user agent strings) or [Phishing for Information](https://attack.mitre.org/techniques/T1598). Adversaries may also compromise sites then include malicious content designed to collect host information from visitors.(Citation: ATT ScanBox) Information about the installed software may also be exposed to adversaries via online or other accessible data sets (ex: job postings, network maps, assessment reports, resumes, or purchase invoices). Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Open Technical Databases](https://attack.mitre.org/techniques/T1596)), establishing operational resources (ex: [Develop Capabilities](https://attack.mitre.org/techniques/T1587) or [Obtain Capabilities](https://attack.mitre.org/techniques/T1588)), and/or for initial access (ex: [Supply Chain Compromise](https://attack.mitre.org/techniques/T1195) or [External Remote Services](https://attack.mitre.org/techniques/T1133)).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_detection": "Internet scanners may be used to look for patterns associated with malicious content designed to collect host software information from visitors.(Citation: ThreatConnect Infrastructure Dec 2020)(Citation: ATT ScanBox)\n\nMuch of this activity may have a very high occurrence and associated false positive rate, as well as potentially taking place outside the visibility of the target organization, making detection difficult for defenders. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1592/002",
+                    "external_id": "T1592.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://cybersecurity.att.com/blogs/labs-research/scanbox-a-reconnaissance-framework-used-on-watering-hole-attacks",
+                    "description": "Blasco, J. (2014, August 28). Scanbox: A Reconnaissance Framework Used with Watering Hole Attacks. Retrieved October 19, 2020.",
+                    "source_name": "ATT ScanBox"
+                },
+                {
+                    "url": "https://threatconnect.com/blog/infrastructure-research-hunting/",
+                    "description": "ThreatConnect. (2020, December 15). Infrastructure Research and Hunting: Boiling the Domain Ocean. Retrieved October 12, 2021.",
+                    "source_name": "ThreatConnect Infrastructure Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "IP Addresses",
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-15T03:31:05.302Z",
+            "created": "2020-10-02T15:59:11.695Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--0dda99f0-4701-48ca-9774-8504922e92d3",
+            "description": "Adversaries may gather the victim's IP addresses that can be used during targeting. Public IP addresses may be allocated to organizations by block, or a range of sequential addresses. Information about assigned IP addresses may include a variety of details, such as which IP addresses are in use. IP addresses may also enable an adversary to derive other details about a victim, such as organizational size, physical location(s), Internet service provider, and or where/how their publicly-facing infrastructure is hosted.\n\nAdversaries may gather this information in various ways, such as direct collection actions via [Active Scanning](https://attack.mitre.org/techniques/T1595) or [Phishing for Information](https://attack.mitre.org/techniques/T1598). Information about assigned IP addresses may also be exposed to adversaries via online or other accessible data sets (ex: [Search Open Technical Databases](https://attack.mitre.org/techniques/T1596)).(Citation: WHOIS)(Citation: DNS Dumpster)(Citation: Circl Passive DNS) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Active Scanning](https://attack.mitre.org/techniques/T1595) or [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593)), establishing operational resources (ex: [Acquire Infrastructure](https://attack.mitre.org/techniques/T1583) or [Compromise Infrastructure](https://attack.mitre.org/techniques/T1584)), and/or initial access (ex: [External Remote Services](https://attack.mitre.org/techniques/T1133)).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_detection": "Much of this activity may have a very high occurrence and associated false positive rate, as well as potentially taking place outside the visibility of the target organization, making detection difficult for defenders.\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1590/005",
+                    "external_id": "T1590.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.whois.net/",
+                    "description": "NTT America. (n.d.). Whois Lookup. Retrieved October 20, 2020.",
+                    "source_name": "WHOIS"
+                },
+                {
+                    "url": "https://dnsdumpster.com/",
+                    "description": "Hacker Target. (n.d.). DNS Dumpster. Retrieved October 20, 2020.",
+                    "source_name": "DNS Dumpster"
+                },
+                {
+                    "url": "https://www.circl.lu/services/passive-dns/",
+                    "description": "CIRCL Computer Incident Response Center. (n.d.). Passive DNS. Retrieved October 20, 2020.",
+                    "source_name": "Circl Passive DNS"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-20T15:42:48.595Z",
+            "name": "Ingress Tool Transfer",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2017-05-31T21:31:16.408Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitor for file creation and files transferred into the network. Unusual processes with external network connections creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1105",
+                    "external_id": "T1105",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Steganography",
+            "x_mitre_data_sources": [
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T16:46:56.760Z",
+            "created": "2020-02-05T14:28:16.719Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--c2e147a9-d1a8-4074-811a-d8789202d916",
+            "description": "Adversaries may use steganography techniques in order to prevent the detection of hidden information. Steganographic techniques can be used to hide data in digital media such as images, audio tracks, video clips, or text files.\n\n[Duqu](https://attack.mitre.org/software/S0038) was an early example of malware that used steganography. It encrypted the gathered information from a victim's system and hid it within an image before exfiltrating the image to a C2 server.(Citation: Wikipedia Duqu) \n\nBy the end of 2017, a threat group used\u202f<code>Invoke-PSImage</code>\u202fto hide [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands in an image file (.png) and execute the code on a victim's system. In this particular case the [PowerShell](https://attack.mitre.org/techniques/T1059/001) code downloaded another obfuscated script to gather intelligence from the victim's machine and communicate it back to the adversary.(Citation: McAfee Malicious Doc Targets Pyeongchang Olympics)  ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Detection of steganography is difficult unless artifacts are left behind by the obfuscation process that are detectable with a known signature. Look for strings or other signatures left in system artifacts related to decoding steganography.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027/003",
+                    "external_id": "T1027.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/636.html",
+                    "external_id": "CAPEC-636",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Wikipedia Duqu",
+                    "description": "Wikipedia. (2017, December 29). Duqu. Retrieved April 10, 2018.",
+                    "url": "https://en.wikipedia.org/wiki/Duqu"
+                },
+                {
+                    "source_name": "McAfee Malicious Doc Targets Pyeongchang Olympics",
+                    "description": "Saavedra-Morales, J., Sherstobitoff, R. (2018, January 6). Malicious Document Targets Pyeongchang Olympics. Retrieved April 10, 2018.",
+                    "url": "https://securingtomorrow.mcafee.com/mcafee-labs/malicious-document-targets-pyeongchang-olympics/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malware",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata",
+                "Malware Repository: Malware Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:15:52.805Z",
+            "created": "2020-10-01T02:06:11.499Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970",
+            "description": "Adversaries may buy, steal, or download malware that can be used during targeting. Malicious software can include payloads, droppers, post-compromise tools, backdoors, packers, and C2 protocols. Adversaries may acquire malware to support their operations, obtaining a means for maintaining control of remote machines, evading defenses, and executing post-compromise behaviors.\n\nIn addition to downloading free malware from the internet, adversaries may purchase these capabilities from third-party entities. Third-party entities can include technology companies that specialize in malware development, criminal marketplaces (including Malware-as-a-Service, or MaaS), or from individuals. In addition to purchasing malware, adversaries may steal and repurpose malware from third-party entities (including other adversaries).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Consider analyzing malware for features that may be associated with malware providers, such as compiler used, debugging artifacts, code similarities, or even group identifiers associated with specific MaaS offerings. Malware repositories can also be used to identify additional samples associated with the developers and the adversary utilizing their services. Identifying overlaps in malware use by different adversaries may indicate malware was obtained by the adversary rather than developed by them. In some cases, identifying overlapping characteristics in malware used by different adversaries may point to a shared quartermaster.(Citation: FireEyeSupplyChain)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/001",
+                    "external_id": "T1588.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.mandiant.com/resources/supply-chain-analysis-from-quartermaster-to-sunshop",
+                    "description": "FireEye. (2014). SUPPLY CHAIN ANALYSIS: From Quartermaster to SunshopFireEye. Retrieved March 6, 2017.",
+                    "source_name": "FireEyeSupplyChain"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Process Discovery",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1057",
+                    "external_id": "T1057",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/573.html",
+                    "external_id": "CAPEC-573",
+                    "source_name": "capec"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2020-03-26T18:05:53.130Z",
+            "x_mitre_system_requirements": [
+                "Administrator, SYSTEM may provide better process ownership details"
+            ],
+            "id": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Adversaries may use the information from [Process Discovery](https://attack.mitre.org/techniques/T1057) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nIn Windows environments, adversaries could obtain details on running processes using the [Tasklist](https://attack.mitre.org/software/S0057) utility via [cmd](https://attack.mitre.org/software/S0106) or <code>Get-Process</code> via [PowerShell](https://attack.mitre.org/techniques/T1059/001). Information about processes can also be extracted from the output of [Native API](https://attack.mitre.org/techniques/T1106) calls such as <code>CreateToolhelp32Snapshot</code>. In Mac and Linux, this is accomplished with the <code>ps</code> command. Adversaries may also opt to enumerate processes via /proc.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events that look like process discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:30:48.728Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "System Network Connections Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "2.2",
+            "modified": "2021-03-08T10:33:01.083Z",
+            "created": "2017-05-31T21:30:45.139Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--7e150503-88e7-4861-866b-ff1ac82c4475",
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network. \n\nAn adversary who gains access to a system that is part of a cloud-based environment may map out Virtual Private Clouds or Virtual Networks in order to determine what systems and services are connected. The actions performed are likely the same types of discovery techniques depending on the operating system, but the resulting information may include details about the networked cloud environment relevant to the adversary's goals. Cloud providers may have different ways in which their virtual networks operate.(Citation: Amazon AWS VPC Guide)(Citation: Microsoft Azure Virtual Network Overview)(Citation: Google VPC Overview)\n\nUtilities and commands that acquire this information include [netstat](https://attack.mitre.org/software/S0104), \"net use,\" and \"net session\" with [Net](https://attack.mitre.org/software/S0039). In Mac and Linux, [netstat](https://attack.mitre.org/software/S0104) and <code>lsof</code> can be used to list current connections. <code>who -a</code> and <code>w</code> can be used to show which users are currently logged in, similar to \"net session\".",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1049",
+                    "external_id": "T1049",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+                    "description": "Amazon. (n.d.). What Is Amazon VPC?. Retrieved October 6, 2019.",
+                    "source_name": "Amazon AWS VPC Guide"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+                    "description": "Annamalai, N., Casey, C., Almeida, M., et. al.. (2019, June 18). What is Azure Virtual Network?. Retrieved October 6, 2019.",
+                    "source_name": "Microsoft Azure Virtual Network Overview"
+                },
+                {
+                    "url": "https://cloud.google.com/vpc/docs/vpc",
+                    "description": "Google. (2019, September 23). Virtual Private Cloud (VPC) network overview. Retrieved October 6, 2019.",
+                    "source_name": "Google VPC Overview"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "gh0st RAT",
+            "x_mitre_aliases": [
+                "gh0st RAT"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-04-23T20:43:13.190Z",
+            "created": "2017-05-31T21:32:24.937Z",
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS"
+            ],
+            "id": "malware--88c621a7-aef9-4ae0-94e3-1fc87123eb24",
+            "description": "[gh0st RAT](https://attack.mitre.org/software/S0032) is a remote access tool (RAT). The source code is public and it has been used by multiple groups. (Citation: FireEye Hacking Team)(Citation: Arbor Musical Chairs Feb 2018)(Citation: Nccgroup Gh0st April 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0032",
+                    "external_id": "S0032",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye Hacking Team)(Citation: Nccgroup Gh0st April 2018)",
+                    "source_name": "gh0st RAT"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html",
+                    "description": "FireEye Threat Intelligence. (2015, July 13). Demonstrating Hustle, Chinese APT Groups Quickly Use Zero-Day Vulnerability (CVE-2015-5119) Following Hacking Team Leak. Retrieved January 25, 2016.",
+                    "source_name": "FireEye Hacking Team"
+                },
+                {
+                    "source_name": "Arbor Musical Chairs Feb 2018",
+                    "description": "Sabo, S. (2018, February 15). Musical Chairs Playing Tetris. Retrieved February 19, 2018.",
+                    "url": "https://www.arbornetworks.com/blog/asert/musical-chairs-playing-tetris/"
+                },
+                {
+                    "source_name": "Nccgroup Gh0st April 2018",
+                    "description": "Pantazopoulos, N. (2018, April 17). Decoding network data from a Gh0st RAT variant. Retrieved November 2, 2018.",
+                    "url": "https://research.nccgroup.com/2018/04/17/decoding-network-data-from-a-gh0st-rat-variant/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Rifdoor",
+            "x_mitre_aliases": [
+                "Rifdoor"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-05-08T00:24:24.402Z",
+            "created": "2020-05-05T14:03:11.359Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--44c75271-0e4d-496f-ae0a-a6d883a42a65",
+            "description": "[Rifdoor](https://attack.mitre.org/software/S0433) is a remote access trojan (RAT) that shares numerous code similarities with [HotCroissant](https://attack.mitre.org/software/S0431).(Citation: Carbon Black HotCroissant April 2020)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0433",
+                    "external_id": "S0433",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.carbonblack.com/2020/04/16/vmware-carbon-black-tau-threat-analysis-the-evolution-of-lazarus/",
+                    "description": "Knight, S.. (2020, April 16). VMware Carbon Black TAU Threat Analysis: The Evolution of Lazarus. Retrieved May 1, 2020.",
+                    "source_name": "Carbon Black HotCroissant April 2020"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4b4f3e1a-138a-4e28-833b-6f414012fe72",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "target_ref": "location--fe949baa-f304-4f7c-b806-41054ec96fde"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--fe949baa-f304-4f7c-b806-41054ec96fde",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "North Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--73066780-f78e-44ea-83a0-cab15dbd0a91",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c43d173b-3978-40a2-9b7c-d8a7290fb167",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fea7542a-8ec9-42c3-b284-4a264b23608a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4055b595-b4d7-48df-9036-7ef02643951b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--39d6890e-7f23-4474-b8ef-e7b0343c5fc8",
+            "target_ref": "identity--fc80c642-b075-4c9d-aaa0-7d1b8541c2d1"
+        },
+        {
+            "created": "2021-03-13T20:09:21.302614Z",
+            "id": "identity--fc80c642-b075-4c9d-aaa0-7d1b8541c2d1",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Military sector as a target",
+            "sectors": [
+                "Military industries"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        }
+    ]
+}

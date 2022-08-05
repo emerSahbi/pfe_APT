@@ -3,8 +3,9 @@
     "id": "bundle--3a92d82e-a7b1-4ea1-8865-bf03ebf0d1b4",
     "spec_version": "2.0",
     "objects": [
-        {"primary_motivation": "organizational-gain",
-            "first_seen":"2004",
+        {
+            "primary_motivation": "organizational-gain",
+            "first_seen": "2004",
             "x_MISP-description": "The Sofacy Group (also known as APT28, Pawn Storm, Fancy Bear and Sednit) is a cyber espionage group believed to have ties to the Russian government. Likely operating since 2007, the group is known to target government, military, and security organizations. It has been characterized as an advanced persistent threat.",
             "x_MISP-uuid": "5b4ee3ea-eee3-4c8e-8323-85ae32658754",
             "type": "intrusion-set",
@@ -250,7 +251,7 @@
                 }
             ],
             "x_mitre_detection": "If an adversary is using a standard command-line shell, analysts can detect token manipulation by auditing command-line activity. Specifically, analysts should look for use of the <code>runas</code> command. Detailed command-line logging is not enabled by default in Windows.(Citation: Microsoft Command-line Logging)\n\nAnalysts can also monitor for use of Windows APIs such as <code>DuplicateToken(Ex)</code>, <code> ImpersonateLoggedOnUser </code>, and <code> SetThreadToken </code> and correlate activity with other suspicious behavior to reduce false positives that may be due to normal benign use by users and administrators.",
-           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
             "external_references": [
                 {
                     "url": "https://attack.mitre.org/techniques/T1134/001",

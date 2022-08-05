@@ -1,0 +1,757 @@
+{
+    "type": "bundle",
+    "id": "bundle--35ba3475-bca8-48eb-8a59-dc2287599727",
+    "spec_version": "2.0",
+    "objects": [
+        {    "primary_motivation": "organizational-gain",
+            "first_seen":"2018",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "WIRTE",
+            "x_mitre_version": "1.2",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "WIRTE",
+                "WIRTE Group"
+            ],
+            "id": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) is a threat group that has been active since at least August 2018. The group focuses on targeting Middle East defense and diplomats.(Citation: Lab52 WIRTE Apr 2019)",
+            "x_mitre_contributors": [
+                "Lab52 by S2 Grupo"
+            ],
+            "created": "2019-05-24T17:02:44.226Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0090",
+                    "external_id": "G0090",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Lab52 WIRTE Apr 2019)",
+                    "source_name": "WIRTE"
+                },
+                {
+                    "source_name": "Lab52 WIRTE Apr 2019",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0f7fd21f-9cba-411a-a8dc-f5689d294037",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) has used VBS scripts throughout its operation.(Citation: Lab52 WIRTE Apr 2019)\t",
+            "target_ref": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "modified": "2020-03-19T17:42:27.118Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-24T17:02:44.369Z",
+            "external_references": [
+                {
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "source_name": "Lab52 WIRTE Apr 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6e20b61f-bf7e-40a3-b7b9-98d79e5a3ecd",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) has obtained and used [Empire](https://attack.mitre.org/software/S0363) for post-exploitation activities.(Citation: Lab52 WIRTE Apr 2019)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-05-26T12:48:29.916Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-26T12:48:29.916Z",
+            "external_references": [
+                {
+                    "source_name": "Lab52 WIRTE Apr 2019",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7fd96b72-6402-4f0e-b1fa-bc7f081626de",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) has used HTTP for network communication.(Citation: Lab52 WIRTE Apr 2019)\t",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "modified": "2020-03-17T02:49:55.705Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-24T17:02:44.353Z",
+            "external_references": [
+                {
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "source_name": "Lab52 WIRTE Apr 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--19f9e4af-3ad9-4d0d-b4af-db145f514be9",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) has decoded a base64 encoded document which was embedded in a VBS script.(Citation: Lab52 WIRTE Apr 2019)",
+            "target_ref": "attack-pattern--3ccef7ae-cb5e-48f6-8302-897105fbf55c",
+            "modified": "2019-06-20T15:30:38.656Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-24T17:02:44.395Z",
+            "external_references": [
+                {
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "source_name": "Lab52 WIRTE Apr 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0068ee65-0945-4f69-ba81-163ffbc05e53",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) has used PowerShell for script execution.(Citation: Lab52 WIRTE Apr 2019)",
+            "target_ref": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "modified": "2019-06-20T15:30:38.635Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-24T17:02:44.371Z",
+            "external_references": [
+                {
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "source_name": "Lab52 WIRTE Apr 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--464c9ae2-09b1-499d-8477-c05926537e6b",
+            "description": "(Citation: Lab52 WIRTE Apr 2019)",
+            "target_ref": "tool--3433a9e8-1c47-4320-b9bf-ed449061d1c3",
+            "modified": "2019-06-20T15:30:38.665Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-24T17:02:44.404Z",
+            "external_references": [
+                {
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "source_name": "Lab52 WIRTE Apr 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cca195e2-b748-4881-b2bf-e6b3b993b460",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) has used Regsvr32.exe to trigger the execution of a malicious script.(Citation: Lab52 WIRTE Apr 2019)",
+            "target_ref": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+            "modified": "2019-06-20T15:30:38.648Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-24T17:02:44.393Z",
+            "external_references": [
+                {
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "source_name": "Lab52 WIRTE Apr 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cecf4306-a80e-4e65-b701-7e934adc6c42",
+            "description": "[WIRTE](https://attack.mitre.org/groups/G0090) has downloaded PowerShell code from the C2 server to be executed.(Citation: Lab52 WIRTE Apr 2019)",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "modified": "2019-06-20T15:30:38.632Z",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-24T17:02:44.385Z",
+            "external_references": [
+                {
+                    "url": "https://lab52.io/blog/wirte-group-attacking-the-middle-east/",
+                    "description": "S2 Grupo. (2019, April 2). WIRTE Group attacking the Middle East. Retrieved May 24, 2019.",
+                    "source_name": "Lab52 WIRTE Apr 2019"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T20:15:35.821Z",
+            "name": "Web Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:13:46.151Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as HTTP and HTTPS that carry web traffic may be very common in environments. HTTP/S packets have many fields and headers in which data can be concealed. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)\n\nMonitor for web traffic to/from known-bad or suspicious domains. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/001",
+                    "external_id": "T1071.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-05-28T14:56:23.748Z",
+            "name": "PowerShell",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Module: Module Load",
+                "Process: Process Creation",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-03-09T13:48:55.078Z",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "id": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).\n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nA number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)\n\nPowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI). (Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "If proper execution policy is set, adversaries will likely be able to define their own execution policy if they obtain administrator or system access, either through the Registry or at the command line. This change in policy on a system may be a way to detect malicious use of PowerShell. If PowerShell is not used in an environment, then simply looking for PowerShell execution may detect malicious activity.\n\nMonitor for loading and/or execution of artifacts associated with PowerShell specific assemblies, such as System.Management.Automation.dll (especially to unusual process names/locations).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)\n\nIt is also beneficial to turn on PowerShell logging to gain increased fidelity in what occurs during execution (which is applied to .NET invocations). (Citation: Malware Archaeology PowerShell Cheat Sheet) PowerShell 5.0 introduced enhanced logging capabilities, and some of those features have since been added to PowerShell 4.0. Earlier versions of PowerShell do not have many logging features.(Citation: FireEye PowerShell Logging 2016) An organization can gather PowerShell execution details in a data analytic platform to supplement it with other data.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/001",
+                    "external_id": "T1059.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "TechNet PowerShell",
+                    "description": "Microsoft. (n.d.). Windows PowerShell Scripting. Retrieved April 28, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx"
+                },
+                {
+                    "source_name": "Github PSAttack",
+                    "description": "Haight, J. (2016, April 21). PS>Attack. Retrieved June 1, 2016.",
+                    "url": "https://github.com/jaredhaight/PSAttack"
+                },
+                {
+                    "url": "http://www.sixdub.net/?p=367",
+                    "description": "Warner, J.. (2015, January 6). Inexorable PowerShell \u2013 A Red Teamer\u2019s Tale of Overcoming Simple AppLocker Policies. Retrieved December 8, 2018.",
+                    "source_name": "Sixdub PowerPick Jan 2016"
+                },
+                {
+                    "url": "https://silentbreaksecurity.com/powershell-jobs-without-powershell-exe/",
+                    "description": "Christensen, L.. (2015, December 28). The Evolution of Offensive PowerShell Invocation. Retrieved December 8, 2018.",
+                    "source_name": "SilentBreak Offensive PS Dec 2015"
+                },
+                {
+                    "url": "https://blogs.msdn.microsoft.com/kebab/2014/04/28/executing-powershell-scripts-from-c/",
+                    "description": "Babinec, K. (2014, April 28). Executing PowerShell scripts from C#. Retrieved April 22, 2019.",
+                    "source_name": "Microsoft PSfromCsharp APR 2014"
+                },
+                {
+                    "source_name": "Malware Archaeology PowerShell Cheat Sheet",
+                    "description": "Malware Archaeology. (2016, June). WINDOWS POWERSHELL LOGGING CHEAT SHEET - Win 7/Win 2008 or later. Retrieved June 24, 2016.",
+                    "url": "http://www.malwarearchaeology.com/s/Windows-PowerShell-Logging-Cheat-Sheet-ver-June-2016-v2.pdf"
+                },
+                {
+                    "source_name": "FireEye PowerShell Logging 2016",
+                    "description": "Dunwoody, M. (2016, February 11). GREATER VISIBILITY THROUGH POWERSHELL LOGGING. Retrieved February 16, 2016.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-08-16T21:03:21.051Z",
+            "name": "Visual Basic",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "created": "2020-03-09T14:29:51.508Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "description": "Adversaries may abuse Visual Basic (VB) for execution. VB is a programming language created by Microsoft with interoperability with many Windows technologies such as [Component Object Model](https://attack.mitre.org/techniques/T1559/001) and the [Native API](https://attack.mitre.org/techniques/T1106) through the Windows API. Although tagged as legacy with no planned future evolutions, VB is integrated and supported in the .NET Framework and cross-platform .NET Core.(Citation: VB .NET Mar 2020)(Citation: VB Microsoft)\n\nDerivative languages based on VB have also been created, such as Visual Basic for Applications (VBA) and VBScript. VBA is an event-driven programming language built into Microsoft Office, as well as several third-party applications.(Citation: Microsoft VBA)(Citation: Wikipedia VBA) VBA enables documents to contain macros used to automate the execution of tasks and other functionality on the host. VBScript is a default scripting language on Windows hosts and can also be used in place of [JavaScript](https://attack.mitre.org/techniques/T1059/007) on HTML Application (HTA) webpages served to Internet Explorer (though most modern browsers do not come with VBScript support).(Citation: Microsoft VBScript)\n\nAdversaries may use VB payloads to execute malicious commands. Common malicious usage includes automating execution of behaviors with VBScript or embedding VBA content into [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001) payloads.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor for events associated with VB execution, such as Office applications spawning processes, usage of the Windows Script Host (typically cscript.exe or wscript.exe), file activity involving VB payloads or scripts, or loading of modules associated with VB languages (ex: vbscript.dll). VB execution is likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for execution and subsequent behavior. Actions may be related to network and system information [Discovery](https://attack.mitre.org/tactics/TA0007), [Collection](https://attack.mitre.org/tactics/TA0009), or other programable post-compromise behaviors and could be used as indicators of detection leading back to the source.\n\nUnderstanding standard usage patterns is important to avoid a high number of false positives. If VB execution is restricted for normal users, then any attempts to enable related components running on a system would be considered suspicious. If VB execution is not commonly used on a system, but enabled, execution running out of cycle from patching or other administrator functions is suspicious. Payloads and scripts should be captured from the file system when possible to determine their actions and intent.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/005",
+                    "external_id": "T1059.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0/",
+                    "description": ".NET Team. (2020, March 11). Visual Basic support planned for .NET 5.0. Retrieved June 23, 2020.",
+                    "source_name": "VB .NET Mar 2020"
+                },
+                {
+                    "url": "https://docs.microsoft.com/dotnet/visual-basic/",
+                    "description": "Microsoft. (n.d.). Visual Basic documentation. Retrieved June 23, 2020.",
+                    "source_name": "VB Microsoft"
+                },
+                {
+                    "url": "https://docs.microsoft.com/office/vba/api/overview/",
+                    "description": "Microsoft. (2019, June 11). Office VBA Reference. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft VBA"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/Visual_Basic_for_Applications",
+                    "description": "Wikipedia. (n.d.). Visual Basic for Applications. Retrieved August 13, 2020.",
+                    "source_name": "Wikipedia VBA"
+                },
+                {
+                    "url": "https://docs.microsoft.com/previous-versions//1kw29xwf(v=vs.85)",
+                    "description": "Microsoft. (2011, April 19). What Is VBScript?. Retrieved March 28, 2020.",
+                    "source_name": "Microsoft VBScript"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Deobfuscate/Decode Files or Information",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Modification",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-07-09T14:42:23.122Z",
+            "created": "2017-12-14T16:46:06.044Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--3ccef7ae-cb5e-48f6-8302-897105fbf55c",
+            "x_mitre_defense_bypassed": [
+                "Anti-virus",
+                "Host intrusion prevention systems",
+                "Signature-based detection",
+                "Network intrusion detection system"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may use [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027) to hide artifacts of an intrusion from analysis. They may require separate mechanisms to decode or deobfuscate that information depending on how they intend to use it. Methods for doing that include built-in functionality of malware or by using utilities present on the system.\n\nOne such example is use of [certutil](https://attack.mitre.org/software/S0160) to decode a remote access tool portable executable file that has been hidden inside a certificate file. (Citation: Malwarebytes Targeted Attack against Saudi Arabia) Another example is using the Windows <code>copy /b</code> command to reassemble binary fragments into a malicious payload. (Citation: Carbon Black Obfuscation Sept 2016)\n\nSometimes a user's action may be required to open it for deobfuscation or decryption as part of [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016)",
+            "x_mitre_contributors": [
+                "Matthew Demaske, Adaptforward",
+                "Red Canary"
+            ],
+            "x_mitre_detection": "Detecting the action of deobfuscating or decoding files or information may be difficult depending on the implementation. If the functionality is contained within malware and uses the Windows API, then attempting to detect malicious behavior before or after the action may yield better results than attempting to perform analysis on loaded libraries or API calls. If scripts are used, then collecting the scripts for analysis may be necessary. Perform process and command-line monitoring to detect potentially malicious behavior related to scripts and system utilities such as [certutil](https://attack.mitre.org/software/S0160).\n\nMonitor the execution file paths and command-line arguments for common archive file applications and extensions, such as those for Zip and RAR archive tools, and correlate with other suspicious behavior to reduce false positives from normal user and administrator behavior.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1140",
+                    "external_id": "T1140",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Malwarebytes Targeted Attack against Saudi Arabia",
+                    "description": "Malwarebytes Labs. (2017, March 27). New targeted attack against Saudi Arabia Government. Retrieved July 3, 2017.",
+                    "url": "https://blog.malwarebytes.com/cybercrime/social-engineering-cybercrime/2017/03/new-targeted-attack-saudi-arabia-government/"
+                },
+                {
+                    "source_name": "Carbon Black Obfuscation Sept 2016",
+                    "description": "Tedesco, B. (2016, September 23). Security Alert Summary. Retrieved February 12, 2018.",
+                    "url": "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/"
+                },
+                {
+                    "source_name": "Volexity PowerDuke November 2016",
+                    "description": "Adair, S.. (2016, November 9). PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs. Retrieved January 11, 2017.",
+                    "url": "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-20T15:42:48.595Z",
+            "name": "Ingress Tool Transfer",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2017-05-31T21:31:16.408Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitor for file creation and files transferred into the network. Unusual processes with external network connections creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1105",
+                    "external_id": "T1105",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Regsvr32",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-06-20T22:37:32.931Z",
+            "created": "2020-01-23T19:52:17.414Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+            "x_mitre_defense_bypassed": [
+                "Digital Certificate Validation",
+                "Anti-virus",
+                "Application control"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "User"
+            ],
+            "description": "Adversaries may abuse Regsvr32.exe to proxy execution of malicious code. Regsvr32.exe is a command-line program used to register and unregister object linking and embedding controls, including dynamic link libraries (DLLs), on Windows systems. Regsvr32.exe is also a Microsoft signed binary. (Citation: Microsoft Regsvr32)\n\nMalicious usage of Regsvr32.exe may avoid triggering security tools that may not monitor execution of, and modules loaded by, the regsvr32.exe process because of allowlists or false positives from Windows using regsvr32.exe for normal operations. Regsvr32.exe can also be used to specifically bypass application control using functionality to load COM scriptlets to execute DLLs under user permissions. Since Regsvr32.exe is network and proxy aware, the scripts can be loaded by passing a uniform resource locator (URL) to file on an external Web server as an argument during invocation. This method makes no changes to the Registry as the COM object is not actually registered, only executed. (Citation: LOLBAS Regsvr32) This variation of the technique is often referred to as a \"Squiblydoo\" attack and has been used in campaigns targeting governments. (Citation: Carbon Black Squiblydoo Apr 2016) (Citation: FireEye Regsvr32 Targeting Mongolian Gov)\n\nRegsvr32.exe can also be leveraged to register a COM Object used to establish persistence via [Component Object Model Hijacking](https://attack.mitre.org/techniques/T1546/015). (Citation: Carbon Black Squiblydoo Apr 2016)",
+            "x_mitre_contributors": [
+                "Casey Smith"
+            ],
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of regsvr32.exe. Compare recent invocations of regsvr32.exe with prior history of known good arguments and loaded files to determine anomalous and potentially adversarial activity. Command arguments used before and after the regsvr32.exe invocation may also be useful in determining the origin and purpose of the script or DLL being loaded. (Citation: Carbon Black Squiblydoo Apr 2016)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1218/010",
+                    "external_id": "T1218.010",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://support.microsoft.com/en-us/kb/249873",
+                    "description": "Microsoft. (2015, August 14). How to use the Regsvr32 tool and troubleshoot Regsvr32 error messages. Retrieved June 22, 2016.",
+                    "source_name": "Microsoft Regsvr32"
+                },
+                {
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/",
+                    "description": "LOLBAS. (n.d.). Regsvr32.exe. Retrieved July 31, 2019.",
+                    "source_name": "LOLBAS Regsvr32"
+                },
+                {
+                    "url": "https://www.carbonblack.com/2016/04/28/threat-advisory-squiblydoo-continues-trend-of-attackers-using-native-os-tools-to-live-off-the-land/",
+                    "description": "Nolen, R. et al.. (2016, April 28). Threat Advisory: \u201cSquiblydoo\u201d Continues Trend of Attackers Using Native OS Tools to \u201cLive off the Land\u201d. Retrieved April 9, 2018.",
+                    "source_name": "Carbon Black Squiblydoo Apr 2016"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/02/spear_phishing_techn.html",
+                    "description": "Anubhav, A., Kizhakkinan, D. (2017, February 22). Spear Phishing Techniques Used in Attacks Targeting the Mongolian Government. Retrieved February 24, 2017.",
+                    "source_name": "FireEye Regsvr32 Targeting Mongolian Gov"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Empire",
+            "x_mitre_aliases": [
+                "Empire",
+                "EmPyre",
+                "PowerShell Empire"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-08-11T14:58:57.587Z",
+            "created": "2019-03-11T14:13:40.648Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "id": "tool--3433a9e8-1c47-4320-b9bf-ed449061d1c3",
+            "description": "[Empire](https://attack.mitre.org/software/S0363) is an open source, cross-platform remote administration and post-exploitation framework that is publicly available on GitHub. While the tool itself is primarily written in Python, the post-exploitation agents are written in pure [PowerShell](https://attack.mitre.org/techniques/T1059/001) for Windows and Python for Linux/macOS. [Empire](https://attack.mitre.org/software/S0363) was one of five tools singled out by a joint report on public hacking tools being widely used by adversaries.(Citation: NCSC Joint Report Public Tools)(Citation: Github PowerShell Empire)(Citation: GitHub ATTACK Empire)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0363",
+                    "url": "https://attack.mitre.org/software/S0363"
+                },
+                {
+                    "description": "(Citation: Github PowerShell Empire)",
+                    "source_name": "EmPyre"
+                },
+                {
+                    "description": "(Citation: Github PowerShell Empire)",
+                    "source_name": "PowerShell Empire"
+                },
+                {
+                    "source_name": "NCSC Joint Report Public Tools",
+                    "description": "The Australian Cyber Security Centre (ACSC), the Canadian Centre for Cyber Security (CCCS), the New Zealand National Cyber Security Centre (NZ NCSC), CERT New Zealand, the UK National Cyber Security Centre (UK NCSC) and the US National Cybersecurity and Communications Integration Center (NCCIC). (2018, October 11). Joint report on publicly available hacking tools. Retrieved March 11, 2019.",
+                    "url": "https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools"
+                },
+                {
+                    "source_name": "Github PowerShell Empire",
+                    "description": "Schroeder, W., Warner, J., Nelson, M. (n.d.). Github PowerShellEmpire. Retrieved April 28, 2016.",
+                    "url": "https://github.com/EmpireProject/Empire"
+                },
+                {
+                    "source_name": "GitHub ATTACK Empire",
+                    "description": "Stepanic, D. (2018, September 2). attck_empire: Generate ATT&CK Navigator layer file from PowerShell Empire agent logs. Retrieved March 11, 2019.",
+                    "url": "https://github.com/dstepanic/attck_empire"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d600d3de-672d-4ca1-a75f-1428232b26a3",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--dbe4c0a1-8791-4bb5-a7eb-1361a3a5fc17",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d6c3fa9b-b799-46b5-838d-05cb904ef942",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "target_ref": "location--d48d972b-5b16-4be9-955e-a64c16b24569"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--39c1d1ea-552b-4ea7-a53e-57b6ba288d7b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1",
+            "target_ref": "location--d48d972b-5b16-4be9-955e-a64c16b24569"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d48d972b-5b16-4be9-955e-a64c16b24569",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Middle East",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

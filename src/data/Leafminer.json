@@ -1,0 +1,1956 @@
+{
+    "type": "bundle",
+    "id": "bundle--00fcd1bb-5373-46ac-b467-53e9df3c4c1e",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2017",
+            "x_MISP-uuid": "2c8994ba-367c-46f6-bfb0-390c8760dd9e",
+            "x_MISP-description": "Dragos has identified a new activity group targeting access operations in the electric utility sector. We call this activity group RASPITE.  Analysis of RASPITE tactics, techniques, and procedures (TTPs) indicate the group has been active in some form since early- to mid-2017. RASPITE targeting includes entities in the US, Middle East, Europe, and East Asia. Operations against electric utility organizations appear limited to the US at this time.  RASPITE leverages strategic website compromise to gain initial access to target networks. RASPITE uses the same methodology as DYMALLOY and ALLANITE in embedding a link to a resource to prompt an SMB connection, from which it harvests Windows credentials. The group then deploys install scripts for a malicious service to beacon back to RASPITE-controlled infrastructure, allowing the adversary to remotely access the victim machine.",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Leafminer",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) is an Iranian threat group that has targeted government organizations and business entities in the Middle East since at least early 2017. (Citation: Symantec Leafminer July 2018)",
+            "x_mitre_version": "2.3",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Leafminer",
+                "Raspite",
+                "Flash Kitten"
+            ],
+            "created": "2018-10-17T00:14:20.652Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0077",
+                    "external_id": "G0077",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Symantec Leafminer July 2018)",
+                    "source_name": "Leafminer"
+                },
+                {
+                    "description": "(Citation: Dragos Raspite Aug 2018)",
+                    "source_name": "Raspite"
+                },
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                },
+                {
+                    "source_name": "Dragos Raspite Aug 2018",
+                    "description": "Dragos, Inc. (2018, August 2). RASPITE. Retrieved November 26, 2018.",
+                    "url": "https://www.dragos.com/blog/20180802Raspite.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0eb683e1-bd09-4572-866a-f178ce54f7b6",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) obfuscated scripts that were used on victim machines.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "modified": "2019-03-25T14:12:13.435Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1e902f51-efe0-4848-b47a-7e1a1664b101",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) has obtained and used tools such as [LaZagne](https://attack.mitre.org/software/S0349), [Mimikatz](https://attack.mitre.org/software/S0002), [PsExec](https://attack.mitre.org/software/S0029), and [MailSniper](https://attack.mitre.org/software/S0413).(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-12T23:23:16.448Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T19:25:56.921Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3d116ef6-d11b-4d04-9bf8-c51def11bd3b",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used several tools for retrieving login and password information, including LaZagne.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--3fc9b85a-2862-4363-a64d-d692e3ffbee0",
+            "modified": "2020-03-19T23:18:35.453Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-19T23:18:35.453Z",
+            "external_references": [
+                {
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "source_name": "Symantec Leafminer July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5d3f58bf-2192-46f9-bba3-27e917b75df6",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used several tools for retrieving login and password information, including LaZagne.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--58a3e6aa-4453-4cc8-a51f-4befe80b31a8",
+            "modified": "2020-03-19T23:18:35.459Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-19T23:18:35.459Z",
+            "external_references": [
+                {
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "source_name": "Symantec Leafminer July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8ffeeb33-0757-4b74-a4ae-504145bc473f",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used several tools for retrieving login and password information, including LaZagne.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--1ecfdab8-7d59-4c98-95d4-dc41970f57fc",
+            "modified": "2020-03-19T23:18:35.426Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-19T23:18:35.426Z",
+            "external_references": [
+                {
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "source_name": "Symantec Leafminer July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--022c1740-5adb-473e-a8b3-5b1646c959d8",
+            "description": "(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "tool--b76b2d94-60e4-4107-a903-4a3a7622fb3b",
+            "modified": "2019-03-25T14:12:13.507Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-30T16:46:41.620Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--59a6ccad-02c1-4794-ac65-4d01c8ca7a3f",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used several tools for retrieving login and password information, including LaZagne.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--6add2ab5-2711-4e9d-87c8-7a0be8531530",
+            "modified": "2020-03-19T23:18:35.449Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-19T23:18:35.449Z",
+            "external_references": [
+                {
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "source_name": "Symantec Leafminer July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--926c11f2-853f-4393-9faf-2f3af174e578",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) has used [Process Doppelg\u00e4nging](https://attack.mitre.org/techniques/T1055/013) to evade security software while deploying tools on compromised systems.(Citation: Symantec Leafminer July 2018)\t",
+            "target_ref": "attack-pattern--7007935a-a8a7-4c0b-bd98-4e85be8ed197",
+            "modified": "2020-03-18T22:00:45.497Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-18T22:00:45.497Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--984a0d7f-407f-4e3b-afd5-1dc107a980d5",
+            "description": "(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "modified": "2019-03-25T14:12:13.488Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4258ffdf-ecdb-465d-af16-bda97062ab7f",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) scanned network services to search for vulnerabilities in the victim system.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--e3a12395-188d-4051-9a16-ea8e14d07b88",
+            "modified": "2019-03-25T14:12:13.363Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--21198a81-0fa4-4114-9a75-478e7212b87a",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used several tools for retrieving login and password information, including LaZagne and Mimikatz.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2020-03-19T23:18:35.497Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--86847d37-f7da-4c30-ab48-2da87e6c1cff",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used several tools for retrieving login and password information, including LaZagne.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--837f9164-50af-4ac0-8219-379d8a74cefc",
+            "modified": "2020-03-19T23:18:35.420Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-19T23:18:35.420Z",
+            "external_references": [
+                {
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "source_name": "Symantec Leafminer July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a55d75ab-f5bb-4892-80de-c878be26a67d",
+            "description": "(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "tool--999c4e6e-b8dc-4b4f-8d6e-1b829f29997e",
+            "modified": "2019-10-05T02:35:42.069Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-10-05T02:35:42.069Z",
+            "external_references": [
+                {
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "source_name": "Symantec Leafminer July 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--bad12e35-72da-43bb-b61b-505ed72883c5",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) has infected victims using watering holes.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "modified": "2019-03-25T14:12:13.455Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--bfb1e467-dffc-463b-9f38-a3fafbb9d036",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used Microsoft\u2019s Sysinternals tools to gather detailed information about remote systems.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+            "modified": "2019-03-25T14:12:13.492Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c6ee4856-1782-4430-af7f-4d71e84c9b97",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used a tool called Imecab to set up a persistent remote access account on the victim machine.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--635cbe30-392d-4e27-978e-66774357c762",
+            "modified": "2020-03-27T00:11:12.382Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c47b3759-8c59-45f7-8ae1-66b49a5359f8",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used a tool called Total SMB BruteForcer to perform internal password spraying.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--692074ae-bb62-4a5e-a735-02cb6bde458c",
+            "modified": "2020-03-24T15:03:43.701Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cd45bd64-3793-49e7-82d0-9cdabf417d61",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) infected victims using JavaScript code.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--0f4a0c76-ab2d-4cb0-85d3-3f0efb8cba0d",
+            "modified": "2020-06-23T19:56:50.231Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d2a8729f-6271-46a0-8a40-a8567c9e5092",
+            "description": "(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "modified": "2019-03-25T14:12:13.491Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f1f879a7-cd1e-4865-bc6a-9b42d36df62b",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used a tool called MailSniper to search through the Exchange server mailboxes for keywords.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+            "modified": "2020-03-17T16:25:23.448Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f8a21871-d67b-4e89-82db-580d117d28fb",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) used a tool called MailSniper to search for files on the desktop and another utility called Sobolsoft to extract attachments from EML files.(Citation: Symantec Leafminer July 2018)",
+            "target_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "modified": "2019-03-25T14:12:13.436Z",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Password Spraying",
+            "x_mitre_data_sources": [
+                "User Account: User Account Authentication",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-04-06T12:32:47.678Z",
+            "created": "2020-02-11T18:39:25.122Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--692074ae-bb62-4a5e-a735-02cb6bde458c",
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may use a single or small list of commonly used passwords against many different accounts to attempt to acquire valid account credentials. Password spraying uses one password (e.g. 'Password01'), or a small list of commonly used passwords, that may match the complexity policy of the domain. Logins are attempted with that password against many different accounts on a network to avoid account lockouts that would normally occur when brute forcing a single account with many passwords. (Citation: BlackHillsInfosec Password Spraying)\n\nTypically, management services over commonly used ports are used when password spraying. Commonly targeted services include the following:\n\n* SSH (22/TCP)\n* Telnet (23/TCP)\n* FTP (21/TCP)\n* NetBIOS / SMB / Samba (139/TCP & 445/TCP)\n* LDAP (389/TCP)\n* Kerberos (88/TCP)\n* RDP / Terminal Services (3389/TCP)\n* HTTP/HTTP Management Services (80/TCP & 443/TCP)\n* MSSQL (1433/TCP)\n* Oracle (1521/TCP)\n* MySQL (3306/TCP)\n* VNC (5900/TCP)\n\nIn addition to management services, adversaries may \"target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols,\" as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018)\n\nIn default environments, LDAP and Kerberos connection attempts are less likely to trigger events over SMB, which creates Windows \"logon failure\" event ID 4625.",
+            "x_mitre_contributors": [
+                "Microsoft Threat Intelligence Center (MSTIC)",
+                "John Strand"
+            ],
+            "x_mitre_detection": "Monitor authentication logs for system and application login failures of [Valid Accounts](https://attack.mitre.org/techniques/T1078). Specifically, monitor for many failed authentication attempts across various accounts that may result from password spraying attempts.\n\nConsider the following event IDs:(Citation: Trimarc Detecting Password Spraying)\n\n* Domain Controllers: \"Audit Logon\" (Success & Failure) for event ID 4625.\n* Domain Controllers: \"Audit Kerberos Authentication Service\" (Success & Failure) for event ID 4771.\n* All systems: \"Audit Logon\" (Success & Failure) for event ID 4648.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1110/003",
+                    "external_id": "T1110.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/565.html",
+                    "external_id": "CAPEC-565",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "BlackHillsInfosec Password Spraying",
+                    "description": "Thyer, J. (2015, October 30). Password Spraying & Other Fun with RPCCLIENT. Retrieved April 25, 2017.",
+                    "url": "http://www.blackhillsinfosec.com/?p=4645"
+                },
+                {
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA18-086A",
+                    "description": "US-CERT. (2018, March 27). TA18-068A Brute Force Attacks Conducted by Cyber Actors. Retrieved October 2, 2019.",
+                    "source_name": "US-CERT TA18-068A 2018"
+                },
+                {
+                    "url": "https://www.trimarcsecurity.com/single-post/2018/05/06/Trimarc-Research-Detecting-Password-Spraying-with-Security-Event-Auditing",
+                    "description": "Metcalf, S. (2018, May 6). Trimarc Research: Detecting Password Spraying with Security Event Auditing. Retrieved January 16, 2019.",
+                    "source_name": "Trimarc Detecting Password Spraying"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-08-16T21:02:05.142Z",
+            "name": "JavaScript",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "2.1",
+            "created": "2020-06-23T19:12:24.924Z",
+            "x_mitre_contributors": [
+                "Cody Thomas, SpecterOps"
+            ],
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--0f4a0c76-ab2d-4cb0-85d3-3f0efb8cba0d",
+            "description": "Adversaries may abuse various implementations of JavaScript for execution. JavaScript (JS) is a platform-independent scripting language (compiled just-in-time at runtime) commonly associated with scripts in webpages, though JS can be executed in runtime environments outside the browser.(Citation: NodeJS)\n\nJScript is the Microsoft implementation of the same scripting standard. JScript is interpreted via the Windows Script engine and thus integrated with many components of Windows such as the [Component Object Model](https://attack.mitre.org/techniques/T1559/001) and Internet Explorer HTML Application (HTA) pages.(Citation: JScrip May 2018)(Citation: Microsoft JScript 2007)(Citation: Microsoft Windows Scripts)\n\nJavaScript for Automation (JXA) is a macOS scripting language based on JavaScript, included as part of Apple\u2019s Open Scripting Architecture (OSA), that was introduced in OSX 10.10. Apple\u2019s OSA provides scripting capabilities to control applications, interface with the operating system, and bridge access into the rest of Apple\u2019s internal APIs. As of OSX 10.10, OSA only supports two languages, JXA and [AppleScript](https://attack.mitre.org/techniques/T1059/002). Scripts can be executed via the command line utility <code>osascript</code>, they can be compiled into applications or script files via <code>osacompile</code>, and they can be compiled and executed in memory of other programs by leveraging the OSAKit Framework.(Citation: Apple About Mac Scripting 2016)(Citation: SpecterOps JXA 2020)(Citation: SentinelOne macOS Red Team)(Citation: Red Canary Silver Sparrow Feb2021)(Citation: MDSec macOS JXA and VSCode)\n\nAdversaries may abuse various implementations of JavaScript to execute various behaviors. Common uses include hosting malicious scripts on websites as part of a [Drive-by Compromise](https://attack.mitre.org/techniques/T1189) or downloading and executing these script files as secondary payloads. Since these payloads are text-based, it is also very common for adversaries to obfuscate their content as part of [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor for events associated with scripting execution, such as process activity, usage of the Windows Script Host (typically cscript.exe or wscript.exe), file activity involving scripts, or loading of modules associated with scripting languages (ex: JScript.dll). Scripting execution is likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for execution and subsequent behavior. Actions may be related to network and system information [Discovery](https://attack.mitre.org/tactics/TA0007), [Collection](https://attack.mitre.org/tactics/TA0009), or other programmable post-compromise behaviors and could be used as indicators of detection leading back to the source.\n\nMonitor for execution of JXA through <code>osascript</code> and usage of <code>OSAScript</code> API that may be related to other suspicious behavior occurring on the system.\n\nUnderstanding standard usage patterns is important to avoid a high number of false positives. If scripting is restricted for normal users, then any attempts to enable related components running on a system would be considered suspicious. If scripting is not commonly used on a system, but enabled, execution running out of cycle from patching or other administrator functions is suspicious. Scripts should be captured from the file system when possible to determine their actions and intent.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/007",
+                    "external_id": "T1059.007",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://nodejs.org/",
+                    "description": "OpenJS Foundation. (n.d.). Node.js. Retrieved June 23, 2020.",
+                    "source_name": "NodeJS"
+                },
+                {
+                    "url": "https://docs.microsoft.com/windows/win32/com/translating-to-jscript",
+                    "description": "Microsoft. (2018, May 31). Translating to JScript. Retrieved June 23, 2020.",
+                    "source_name": "JScrip May 2018"
+                },
+                {
+                    "url": "https://docs.microsoft.com/archive/blogs/gauravseth/the-world-of-jscript-javascript-ecmascript",
+                    "description": "Microsoft. (2007, August 15). The World of JScript, JavaScript, ECMAScript \u2026. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft JScript 2007"
+                },
+                {
+                    "url": "https://docs.microsoft.com/scripting/winscript/windows-script-interfaces",
+                    "description": "Microsoft. (2017, January 18). Windows Script Interfaces. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft Windows Scripts"
+                },
+                {
+                    "url": "https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/index.html",
+                    "description": "Apple. (2016, June 13). About Mac Scripting. Retrieved April 14, 2021.",
+                    "source_name": "Apple About Mac Scripting 2016"
+                },
+                {
+                    "url": "https://posts.specterops.io/persistent-jxa-66e1c3cd1cf5",
+                    "description": "Pitt, L. (2020, August 6). Persistent JXA. Retrieved April 14, 2021.",
+                    "source_name": "SpecterOps JXA 2020"
+                },
+                {
+                    "url": "https://www.sentinelone.com/blog/macos-red-team-calling-apple-apis-without-building-binaries/",
+                    "description": "Phil Stokes. (2019, December 5). macOS Red Team: Calling Apple APIs Without Building Binaries. Retrieved July 17, 2020.",
+                    "source_name": "SentinelOne macOS Red Team"
+                },
+                {
+                    "url": "https://redcanary.com/blog/clipping-silver-sparrows-wings/",
+                    "description": "Tony Lambert. (2021, February 18). Clipping Silver Sparrow\u2019s wings: Outing macOS malware before it takes flight. Retrieved April 20, 2021.",
+                    "source_name": "Red Canary Silver Sparrow Feb2021"
+                },
+                {
+                    "url": "https://www.mdsec.co.uk/2021/01/macos-post-exploitation-shenanigans-with-vscode-extensions/",
+                    "description": "Dominic Chell. (2021, January 1). macOS Post-Exploitation Shenanigans with VSCode Extensions. Retrieved April 20, 2021.",
+                    "source_name": "MDSec macOS JXA and VSCode"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Local Account",
+            "x_mitre_data_sources": [
+                "User Account: User Account Creation",
+                "Process: Process Creation",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-08-12T13:04:14.248Z",
+            "created": "2020-01-28T13:50:22.506Z",
+            "x_mitre_permissions_required": [
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--635cbe30-392d-4e27-978e-66774357c762",
+            "description": "Adversaries may create a local account to maintain access to victim systems. Local accounts are those configured by an organization for use by users, remote support, services, or for administration on a single system or service. With a sufficient level of access, the <code>net user /add</code> command can be used to create a local account. On macOS systems the <code>dscl -create</code> command can be used to create a local account.\n\nSuch accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "x_mitre_detection": "Monitor for processes and command-line parameters associated with local account creation, such as <code>net user /add</code> , <code>useradd</code> , and <code>dscl -create</code> . Collect data on account creation within a network. Event ID 4720 is generated when a user account is created on a Windows system. (Citation: Microsoft User Creation Event) Perform regular audits of local system accounts to detect suspicious accounts that may have been created by an adversary.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1136/001",
+                    "external_id": "T1136.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4720",
+                    "description": "Lich, B., Miroshnikov, A. (2017, April 5). 4720(S): A user account was created. Retrieved June 30, 2017.",
+                    "source_name": "Microsoft User Creation Event"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Credentials from Password Stores",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Access",
+                "Command: Command Execution",
+                "Process: OS API Execution",
+                "Process: Process Access"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-06-21T17:58:03.788Z",
+            "created": "2020-02-11T18:48:28.456Z",
+            "x_mitre_permissions_required": [
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--3fc9b85a-2862-4363-a64d-d692e3ffbee0",
+            "description": "Adversaries may search for common password storage locations to obtain user credentials. Passwords are stored in several places on a system, depending on the operating system or application holding the credentials. There are also specific applications that store passwords to make it easier for users manage and maintain. Once credentials are obtained, they can be used to perform lateral movement and access restricted information.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "x_mitre_detection": "Monitor system calls, file read events, and processes for suspicious activity that could indicate searching for a password  or other activity related to performing keyword searches (e.g. password, pwd, login, store, secure, credentials, etc.) in process memory for credentials. File read events should be monitored surrounding known password storage applications.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1555",
+                    "external_id": "T1555",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Credentials from Web Browsers",
+            "x_mitre_data_sources": [
+                "File: File Access",
+                "Command: Command Execution",
+                "Process: OS API Execution",
+                "Process: Process Access"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-14T14:03:47.293Z",
+            "created": "2020-02-12T18:57:36.041Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--58a3e6aa-4453-4cc8-a51f-4befe80b31a8",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may acquire credentials from web browsers by reading files specific to the target browser.(Citation: Talos Olympic Destroyer 2018) Web browsers commonly save credentials such as website usernames and passwords so that they do not need to be entered manually in the future. Web browsers typically store the credentials in an encrypted format within a credential store; however, methods exist to extract plaintext credentials from web browsers.\n\nFor example, on Windows systems, encrypted credentials may be obtained from Google Chrome by reading a database file, <code>AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data</code> and executing a SQL query: <code>SELECT action_url, username_value, password_value FROM logins;</code>. The plaintext password can then be obtained by passing the encrypted credentials to the Windows API function <code>CryptUnprotectData</code>, which uses the victim\u2019s cached logon credentials as the decryption key. (Citation: Microsoft CryptUnprotectData April 2018)\n \nAdversaries have executed similar procedures for common web browsers such as FireFox, Safari, Edge, etc.(Citation: Proofpoint Vega Credential Stealer May 2018)(Citation: FireEye HawkEye Malware July 2017) Windows stores Internet Explorer and Microsoft Edge credentials in Credential Lockers managed by the [Windows Credential Manager](https://attack.mitre.org/techniques/T1555/004).\n\nAdversaries may also acquire credentials by searching web browser process memory for patterns that commonly match credentials.(Citation: GitHub Mimikittenz July 2016)\n\nAfter acquiring credentials from web browsers, adversaries may attempt to recycle the credentials across different systems and/or accounts in order to expand access. This can result in significantly furthering an adversary's objective in cases where credentials gained from web browsers overlap with privileged accounts (e.g. domain administrator).",
+            "x_mitre_contributors": [
+                "Ryan Benson, Exabeam",
+                "Barry Shteiman, Exabeam",
+                "Sylvain Gil, Exabeam",
+                "RedHuntLabs, @redhuntlabs"
+            ],
+            "x_mitre_detection": "Identify web browser files that contain credentials such as Google Chrome\u2019s Login Data database file: <code>AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data</code>. Monitor file read events of web browser files that contain credentials, especially when the reading process is unrelated to the subject web browser. Monitor process execution logs to include PowerShell Transcription focusing on those that perform a combination of behaviors including reading web browser process memory, utilizing regular expressions, and those that contain numerous keywords for common web applications (Gmail, Twitter, Office365, etc.).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1555/003",
+                    "external_id": "T1555.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://blog.talosintelligence.com/2018/02/olympic-destroyer.html",
+                    "description": "Mercer, W. and Rascagneres, P. (2018, February 12). Olympic Destroyer Takes Aim At Winter Olympics. Retrieved March 14, 2019.",
+                    "source_name": "Talos Olympic Destroyer 2018"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/desktop/api/dpapi/nf-dpapi-cryptunprotectdata",
+                    "description": "Microsoft. (2018, April 12). CryptUnprotectData function. Retrieved June 18, 2019.",
+                    "source_name": "Microsoft CryptUnprotectData April 2018"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/new-vega-stealer-shines-brightly-targeted-campaign",
+                    "description": "Proofpoint. (2018, May 10). New Vega Stealer shines brightly in targeted campaign . Retrieved June 18, 2019.",
+                    "source_name": "Proofpoint Vega Credential Stealer May 2018"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/07/hawkeye-malware-distributed-in-phishing-campaign.html",
+                    "description": "Swapnil Patil, Yogesh Londhe. (2017, July 25). HawkEye Credential Theft Malware Distributed in Recent Phishing Campaign. Retrieved June 18, 2019.",
+                    "source_name": "FireEye HawkEye Malware July 2017"
+                },
+                {
+                    "url": "https://github.com/putterpanda/mimikittenz",
+                    "description": "Jamieson O'Reilly (putterpanda). (2016, July 4). mimikittenz. Retrieved June 20, 2019.",
+                    "source_name": "GitHub Mimikittenz July 2016"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-07-28T01:37:46.704Z",
+            "name": "Drive-by Compromise",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2018-04-18T17:59:24.739Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS",
+                "SaaS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "description": "Adversaries may gain access to a system through a user visiting a website over the normal course of browsing. With this technique, the user's web browser is typically targeted for exploitation, but adversaries may also use compromised websites for non-exploitation behavior such as acquiring [Application Access Token](https://attack.mitre.org/techniques/T1550/001).\n\nMultiple ways of delivering exploit code to a browser exist, including:\n\n* A legitimate website is compromised where adversaries have injected some form of malicious code such as JavaScript, iFrames, and cross-site scripting.\n* Malicious ads are paid for and served through legitimate ad providers.\n* Built-in web application interfaces are leveraged for the insertion of any other kind of object that can be used to display web content or contain a script that executes on the visiting client (e.g. forum posts, comments, and other user controllable web content).\n\nOften the website used by an adversary is one visited by a specific community, such as government, a particular industry, or region, where the goal is to compromise a specific user or set of users based on a shared interest. This kind of targeted attack is referred to a strategic web compromise or watering hole attack. There are several known examples of this occurring.(Citation: Shadowserver Strategic Web Compromise)\n\nTypical drive-by compromise process:\n\n1. A user visits a website that is used to host the adversary controlled content.\n2. Scripts automatically execute, typically searching versions of the browser and plugins for a potentially vulnerable version. \n    * The user may be required to assist in this process by enabling scripting or active website components and ignoring warning dialog boxes.\n3. Upon finding a vulnerable version, exploit code is delivered to the browser.\n4. If exploitation is successful, then it will give the adversary code execution on the user's system unless other protections are in place.\n    * In some cases a second visit to the website after the initial scan is required before exploit code is delivered.\n\nUnlike [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190), the focus of this technique is to exploit software on a client endpoint upon visiting a website. This will commonly give an adversary access to systems on the internal network instead of external systems that may be in a DMZ.\n\nAdversaries may also use compromised websites to deliver a user to a malicious application designed to [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s, like OAuth tokens, to gain access to protected applications and information. These malicious applications have been delivered through popups on legitimate websites.(Citation: Volexity OceanLotus Nov 2017)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM Services)",
+                "Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)"
+            ],
+            "x_mitre_detection": "Firewalls and proxies can inspect URLs for potentially known-bad domains or parameters. They can also do reputation-based analytics on websites and their requested resources such as how old a domain is, who it's registered to, if it's on a known bad list, or how many other users have connected to it before.\n\nNetwork intrusion detection systems, sometimes with SSL/TLS inspection, can be used to look for known malicious scripts (recon, heap spray, and browser identification scripts have been frequently reused), common script obfuscation, and exploit code.\n\nDetecting compromise based on the drive-by exploit from a legitimate website may be difficult. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of browser processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1189",
+                    "external_id": "T1189",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Shadowserver Strategic Web Compromise",
+                    "description": "Adair, S., Moran, N. (2012, May 15). Cyber Espionage & Strategic Web Compromises \u2013 Trusted Websites Serving Dangerous Results. Retrieved March 13, 2018.",
+                    "url": "http://blog.shadowserver.org/2012/05/15/cyber-espionage-strategic-web-compromises-trusted-websites-serving-dangerous-results/"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2017/11/06/oceanlotus-blossoms-mass-digital-surveillance-and-exploitation-of-asean-nations-the-media-human-rights-and-civil-society/",
+                    "description": "Lassalle, D., et al. (2017, November 6). OceanLotus Blossoms: Mass Digital Surveillance and Attacks Targeting ASEAN, Asian Nations, the Media, Human Rights Groups, and Civil Society. Retrieved November 6, 2017.",
+                    "source_name": "Volexity OceanLotus Nov 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Remote Email Collection",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Connection Creation",
+                "Logon Session: Logon Session Creation",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-03-25T13:12:56.909Z",
+            "created": "2020-02-19T18:52:24.547Z",
+            "x_mitre_platforms": [
+                "Office 365",
+                "Windows",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+            "description": "Adversaries may target an Exchange server, Office 365, or Google Workspace to collect sensitive information. Adversaries may leverage a user's credentials and interact directly with the Exchange server to acquire information from within a network. Adversaries may also access externally facing Exchange services, Office 365, or Google Workspace to access email using credentials or access tokens. Tools such as [MailSniper](https://attack.mitre.org/software/S0413) can be used to automate searches for specific keywords.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_detection": "Monitor for unusual login activity from unknown or abnormal locations, especially for privileged accounts (ex: Exchange administrator account).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1114/002",
+                    "external_id": "T1114.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "File and Directory Discovery",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1083",
+                    "external_id": "T1083",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/127.html",
+                    "external_id": "CAPEC-127",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/497.html",
+                    "external_id": "CAPEC-497",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Windows Commands JPCERT",
+                    "description": "Tomonaga, S. (2016, January 26). Windows Commands Abused by Attackers. Retrieved February 2, 2016.",
+                    "url": "https://blogs.jpcert.or.jp/en/2016/01/windows-commands-abused-by-attackers.html"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-08-23T20:44:32.048Z",
+            "x_mitre_system_requirements": [
+                "Some folders may require Administrator, SYSTEM or specific user depending on permission levels and access controls"
+            ],
+            "id": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nMany command shell utilities can be used to obtain this information. Examples include <code>dir</code>, <code>tree</code>, <code>ls</code>, <code>find</code>, and <code>locate</code>.(Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the [Native API](https://attack.mitre.org/techniques/T1106).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Collection and Exfiltration, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:31:04.710Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Network Service Scanning",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Cloud Service: Cloud Service Enumeration",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "modified": "2021-04-09T14:56:26.562Z",
+            "created": "2017-05-31T21:30:43.915Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--e3a12395-188d-4051-9a16-ea8e14d07b88",
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation. Methods to acquire this information include port scans and vulnerability scans using tools that are brought onto a system. \n\nWithin cloud environments, adversaries may attempt to discover services running on other cloud hosts. Additionally, if the cloud environment is connected to a on-premises environment, adversaries may be able to identify services running on non-cloud systems as well.",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events from legitimate remote service scanning may be uncommon, depending on the environment and how they are used. Legitimate open port and vulnerability scanning may be conducted within the environment and will need to be deconflicted with any detection capabilities developed. Network intrusion detection systems can also be used to identify scanning activity. Monitor for process use of the networks and inspect intra-network flows to detect port scans.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1046",
+                    "external_id": "T1046",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/300.html",
+                    "external_id": "CAPEC-300",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Obfuscated Files or Information",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "File: File Metadata",
+                "File: File Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-20T16:33:13.472Z",
+            "created": "2017-05-31T21:30:32.662Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis",
+                "Signature-based detection",
+                "Host intrusion prevention systems",
+                "Application control",
+                "Log analysis",
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. \n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open and [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) for [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as JavaScript. \n\nPortions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) ",
+            "x_mitre_contributors": [
+                "Red Canary",
+                "Christiaan Beek, @ChristiaanBeek"
+            ],
+            "x_mitre_detection": "Detection of file obfuscation is difficult unless artifacts are left behind by the obfuscation process that are uniquely detectable with a signature. If detection of the obfuscation itself is not possible, it may be possible to detect the malicious activity that caused the obfuscated file (for example, the method that was used to write, read, or modify the file on the file system). \n\nFlag and analyze commands containing indicators of obfuscation and known suspicious syntax such as uninterpreted escape characters like '''^''' and '''\"'''. Windows' Sysmon and Event ID 4688 displays command-line arguments for processes. Deobfuscation tools can be used to detect these indicators in files/payloads. (Citation: GitHub Revoke-Obfuscation) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: GitHub Office-Crackros Aug 2016) \n\nObfuscation used in payloads for Initial Access can be detected at the network. Use network intrusion detection systems and email gateway filtering to identify compressed and encrypted attachments and scripts. Some email attachment detonation systems can open compressed and encrypted attachments. Payloads delivered over an encrypted connection from a website require encrypted network traffic inspection. \n\nThe first detection of a malicious tool may trigger an anti-virus or other security tool alert. Similar events may also occur at the boundary through network IDS, email scanning appliance, etc. The initial detection should be treated as an indication of a potentially more invasive intrusion. The alerting system should be thoroughly investigated beyond that initial alert for activity that was not detected. Adversaries may continue with an operation, assuming that individual events like an anti-virus detect will not be investigated or that an analyst will not be able to conclusively link that event to other activity occurring on the network. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027",
+                    "external_id": "T1027",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/267.html",
+                    "external_id": "CAPEC-267",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Volexity PowerDuke November 2016",
+                    "description": "Adair, S.. (2016, November 9). PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs. Retrieved January 11, 2017.",
+                    "url": "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                },
+                {
+                    "source_name": "Linux/Cdorked.A We Live Security Analysis",
+                    "description": "Pierre-Marc Bureau. (2013, April 26). Linux/Cdorked.A: New Apache backdoor being used in the wild to serve Blackhole. Retrieved September 10, 2017.",
+                    "url": "https://www.welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/"
+                },
+                {
+                    "source_name": "Carbon Black Obfuscation Sept 2016",
+                    "description": "Tedesco, B. (2016, September 23). Security Alert Summary. Retrieved February 12, 2018.",
+                    "url": "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/"
+                },
+                {
+                    "source_name": "FireEye Obfuscation June 2017",
+                    "description": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+                },
+                {
+                    "source_name": "FireEye Revoke-Obfuscation July 2017",
+                    "description": "Bohannon, D. & Holmes, L. (2017, July 27). Revoke-Obfuscation: PowerShell Obfuscation Detection Using Science. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf"
+                },
+                {
+                    "source_name": "PaloAlto EncodedCommand March 2017",
+                    "description": "White, J. (2017, March 10). Pulling Back the Curtains on EncodedCommand PowerShell Attacks. Retrieved February 12, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/"
+                },
+                {
+                    "source_name": "GitHub Revoke-Obfuscation",
+                    "description": "Bohannon, D. (2017, July 27). Revoke-Obfuscation. Retrieved February 12, 2018.",
+                    "url": "https://github.com/danielbohannon/Revoke-Obfuscation"
+                },
+                {
+                    "source_name": "GitHub Office-Crackros Aug 2016",
+                    "description": "Carr, N. (2016, August 14). OfficeCrackros. Retrieved February 12, 2018.",
+                    "url": "https://github.com/itsreallynick/office-crackros"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "LSASS Memory",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Process: Process Access",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-15T19:55:01.368Z",
+            "created": "2020-02-11T18:41:44.783Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).\n\nAs well as in-memory techniques, the LSASS process memory can be dumped from the target host and analyzed on a local system.\n\nFor example, on the target host use procdump:\n\n* <code>procdump -ma lsass.exe lsass_dump</code>\n\nLocally, mimikatz can be run using:\n\n* <code>sekurlsa::Minidump lsassdump.dmp</code>\n* <code>sekurlsa::logonPasswords</code>\n\nBuilt-in Windows tools such as comsvcs.dll can also be used:\n\n* <code>rundll32.exe C:\\Windows\\System32\\comsvcs.dll MiniDump PID  lsass.dmp full</code>(Citation: Volexity Exchange Marauder March 2021)(Citation: Symantec Attacks Against Government Sector)\n\n\nWindows Security Support Provider (SSP) DLLs are loaded into LSSAS process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs. The SSP configuration is stored in two Registry keys: <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Security Packages</code> and <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig\\Security Packages</code>. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called.(Citation: Graeber 2014)\n\nThe following SSPs can be used to access credentials:\n\n* Msv: Interactive logons, batch logons, and service logons are done through the MSV authentication package.\n* Wdigest: The Digest Authentication protocol is designed for use with Hypertext Transfer Protocol (HTTP) and Simple Authentication Security Layer (SASL) exchanges.(Citation: TechNet Blogs Credential Protection)\n* Kerberos: Preferred for mutual client-server domain authentication in Windows 2000 and later.\n* CredSSP:  Provides SSO and Network Level Authentication for Remote Desktop Services.(Citation: TechNet Blogs Credential Protection)\n",
+            "x_mitre_contributors": [
+                "Edward Millington",
+                "Ed Williams, Trustwave, SpiderLabs"
+            ],
+            "x_mitre_detection": "Monitor for unexpected processes interacting with LSASS.exe.(Citation: Medium Detecting Attempts to Steal Passwords from Memory) Common credential dumpers such as Mimikatz access LSASS.exe by opening the process, locating the LSA secrets key, and decrypting the sections in memory where credential details are stored. Credential dumpers may also use methods for reflective [Process Injection](https://attack.mitre.org/techniques/T1055) to reduce potential indicators of malicious activity.\n\nOn Windows 8.1 and Windows Server 2012 R2, monitor Windows Logs for LSASS.exe creation to verify that LSASS started as a protected process.\n\nMonitor processes and command-line arguments for program execution that may be indicative of credential dumping. Remote access tools may contain built-in features or incorporate existing tools like Mimikatz. PowerShell scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module,(Citation: Powersploit) which may require additional logging features to be configured in the operating system to collect necessary information for analysis.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1003/001",
+                    "external_id": "T1003.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/",
+                    "description": "Gruzweig, J. et al. (2021, March 2). Operation Exchange Marauder: Active Exploitation of Multiple Zero-Day Microsoft Exchange Vulnerabilities. Retrieved March 3, 2021.",
+                    "source_name": "Volexity Exchange Marauder March 2021"
+                },
+                {
+                    "url": "https://symantec.broadcom.com/hubfs/Attacks-Against-Government-Sector.pdf",
+                    "description": "Symantec. (2021, June 10). Attacks Against the Government Sector. Retrieved September 28, 2021.",
+                    "source_name": "Symantec Attacks Against Government Sector"
+                },
+                {
+                    "source_name": "Graeber 2014",
+                    "description": "Graeber, M. (2014, October). Analysis of Malicious Security Support Provider DLLs. Retrieved March 1, 2017.",
+                    "url": "http://docplayer.net/20839173-Analysis-of-malicious-security-support-provider-dlls.html"
+                },
+                {
+                    "source_name": "TechNet Blogs Credential Protection",
+                    "description": "Wilson, B. (2016, April 18). The Importance of KB2871997 and KB2928120 for Credential Protection. Retrieved April 11, 2018.",
+                    "url": "https://blogs.technet.microsoft.com/askpfeplat/2016/04/18/the-importance-of-kb2871997-and-kb2928120-for-credential-protection/"
+                },
+                {
+                    "source_name": "Medium Detecting Attempts to Steal Passwords from Memory",
+                    "description": "French, D. (2018, October 2). Detecting Attempts to Steal Passwords from Memory. Retrieved October 11, 2019.",
+                    "url": "https://medium.com/threatpunter/detecting-attempts-to-steal-passwords-from-memory-558f16dce4ea"
+                },
+                {
+                    "source_name": "Powersploit",
+                    "description": "PowerSploit. (n.d.). Retrieved December 4, 2014.",
+                    "url": "https://github.com/mattifestation/PowerSploit"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "LSA Secrets",
+            "x_mitre_data_sources": [
+                "Windows Registry: Windows Registry Key Access",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-21T21:12:38.361Z",
+            "created": "2020-02-21T16:22:09.493Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--1ecfdab8-7d59-4c98-95d4-dc41970f57fc",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "SYSTEM"
+            ],
+            "description": "Adversaries with SYSTEM access to a host may attempt to access Local Security Authority (LSA) secrets, which can contain a variety of different credential materials, such as credentials for service accounts.(Citation: Passcape LSA Secrets)(Citation: Microsoft AD Admin Tier Model)(Citation: Tilbury Windows Credentials) LSA secrets are stored in the registry at <code>HKEY_LOCAL_MACHINE\\SECURITY\\Policy\\Secrets</code>. LSA secrets can also be dumped from memory.(Citation: ired Dumping LSA Secrets)\n\n[Reg](https://attack.mitre.org/software/S0075) can be used to extract from the Registry. [Mimikatz](https://attack.mitre.org/software/S0002) can be used to extract secrets from memory.(Citation: ired Dumping LSA Secrets)",
+            "x_mitre_contributors": [
+                "Ed Williams, Trustwave, SpiderLabs"
+            ],
+            "x_mitre_detection": "Monitor processes and command-line arguments for program execution that may be indicative of credential dumping. Remote access tools may contain built-in features or incorporate existing tools like Mimikatz. PowerShell scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module,(Citation: Powersploit) which may require additional logging features to be configured in the operating system to collect necessary information for analysis.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1003/004",
+                    "external_id": "T1003.004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.passcape.com/index.php?section=docsys&cmd=details&id=23",
+                    "description": "Passcape. (n.d.). Windows LSA secrets. Retrieved February 21, 2020.",
+                    "source_name": "Passcape LSA Secrets"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material?redirectedfrom=MSDN",
+                    "description": "Microsoft. (2019, February 14). Active Directory administrative tier model. Retrieved February 21, 2020.",
+                    "source_name": "Microsoft AD Admin Tier Model"
+                },
+                {
+                    "url": "https://www.first.org/resources/papers/conf2017/Windows-Credentials-Attacks-and-Mitigation-Techniques.pdf",
+                    "description": "Chad Tilbury. (2017, August 8). 1Windows Credentials: Attack, Mitigation, Defense. Retrieved February 21, 2020.",
+                    "source_name": "Tilbury Windows Credentials"
+                },
+                {
+                    "url": "https://ired.team/offensive-security/credential-access-and-credential-dumping/dumping-lsa-secrets",
+                    "description": "Mantvydas Baranauskas. (2019, November 16). Dumping LSA Secrets. Retrieved February 21, 2020.",
+                    "source_name": "ired Dumping LSA Secrets"
+                },
+                {
+                    "source_name": "Powersploit",
+                    "description": "PowerSploit. (n.d.). Retrieved December 4, 2014.",
+                    "url": "https://github.com/mattifestation/PowerSploit"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-24T20:41:08.996Z",
+            "name": "Cached Domain Credentials",
+            "x_mitre_data_sources": [
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-02-21T15:42:25.991Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--6add2ab5-2711-4e9d-87c8-7a0be8531530",
+            "description": "Adversaries may attempt to access cached domain credentials used to allow authentication to occur in the event a domain controller is unavailable.(Citation: Microsoft - Cached Creds)\n\nOn Windows Vista and newer, the hash format is DCC2 (Domain Cached Credentials version 2) hash, also known as MS-Cache v2 hash.(Citation: PassLib mscache) The number of default cached credentials varies and can be altered per system. This hash does not allow pass-the-hash style attacks, and instead requires [Password Cracking](https://attack.mitre.org/techniques/T1110/002) to recover the plaintext password.(Citation: ired mscache)\n\nWith SYSTEM access, the tools/utilities such as [Mimikatz](https://attack.mitre.org/software/S0002), [Reg](https://attack.mitre.org/software/S0075), and secretsdump.py can be used to extract the cached credentials.\n\nNote: Cached credentials for Windows Vista are derived using PBKDF2.(Citation: PassLib mscache)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Ed Williams, Trustwave, SpiderLabs"
+            ],
+            "x_mitre_detection": "Monitor processes and command-line arguments for program execution that may be indicative of credential dumping. Remote access tools may contain built-in features or incorporate existing tools like Mimikatz. PowerShell scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module,(Citation: Powersploit) which may require additional logging features to be configured in the operating system to collect necessary information for analysis.\n\nDetection of compromised [Valid Accounts](https://attack.mitre.org/techniques/T1078) in-use by adversaries may help as well.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1003/005",
+                    "external_id": "T1003.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh994565(v%3Dws.11)",
+                    "description": "Microsfot. (2016, August 21). Cached and Stored Credentials Technical Overview. Retrieved February 21, 2020.",
+                    "source_name": "Microsoft - Cached Creds"
+                },
+                {
+                    "url": "https://passlib.readthedocs.io/en/stable/lib/passlib.hash.msdcc2.html",
+                    "description": "Eli Collins. (2016, November 25). Windows' Domain Cached Credentials v2. Retrieved February 21, 2020.",
+                    "source_name": "PassLib mscache"
+                },
+                {
+                    "url": "https://ired.team/offensive-security/credential-access-and-credential-dumping/dumping-and-cracking-mscash-cached-domain-credentials",
+                    "description": "Mantvydas Baranauskas. (2019, November 16). Dumping and Cracking mscash - Cached Domain Credentials. Retrieved February 21, 2020.",
+                    "source_name": "ired mscache"
+                },
+                {
+                    "source_name": "Powersploit",
+                    "description": "PowerSploit. (n.d.). Retrieved December 4, 2014.",
+                    "url": "https://github.com/mattifestation/PowerSploit"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Process Doppelg\u00e4nging",
+            "x_mitre_data_sources": [
+                "Process: OS API Execution",
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-02-09T15:43:48.848Z",
+            "created": "2020-01-14T17:19:50.978Z",
+            "id": "attack-pattern--7007935a-a8a7-4c0b-bd98-4e85be8ed197",
+            "x_mitre_defense_bypassed": [
+                "Anti-virus",
+                "Application control"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may inject malicious code into process via process doppelg\u00e4nging in order to evade process-based defenses as well as possibly elevate privileges. Process doppelg\u00e4nging is a method of executing arbitrary code in the address space of a separate live process. \n\nWindows Transactional NTFS (TxF) was introduced in Vista as a method to perform safe file operations. (Citation: Microsoft TxF) To ensure data integrity, TxF enables only one transacted handle to write to a file at a given time. Until the write handle transaction is terminated, all other handles are isolated from the writer and may only read the committed version of the file that existed at the time the handle was opened. (Citation: Microsoft Basic TxF Concepts) To avoid corruption, TxF performs an automatic rollback if the system or application fails during a write transaction. (Citation: Microsoft Where to use TxF)\n\nAlthough deprecated, the TxF application programming interface (API) is still enabled as of Windows 10. (Citation: BlackHat Process Doppelg\u00e4nging Dec 2017)\n\nAdversaries may abuse TxF to a perform a file-less variation of [Process Injection](https://attack.mitre.org/techniques/T1055). Similar to [Process Hollowing](https://attack.mitre.org/techniques/T1055/012), process doppelg\u00e4nging involves replacing the memory of a legitimate process, enabling the veiled execution of malicious code that may evade defenses and detection. Process doppelg\u00e4nging's use of TxF also avoids the use of highly-monitored API functions such as <code>NtUnmapViewOfSection</code>, <code>VirtualProtectEx</code>, and <code>SetThreadContext</code>. (Citation: BlackHat Process Doppelg\u00e4nging Dec 2017)\n\nProcess Doppelg\u00e4nging is implemented in 4 steps (Citation: BlackHat Process Doppelg\u00e4nging Dec 2017):\n\n* Transact \u2013 Create a TxF transaction using a legitimate executable then overwrite the file with malicious code. These changes will be isolated and only visible within the context of the transaction.\n* Load \u2013 Create a shared section of memory and load the malicious executable.\n* Rollback \u2013 Undo changes to original executable, effectively removing malicious code from the file system.\n* Animate \u2013 Create a process from the tainted section of memory and initiate execution.\n\nThis behavior will likely not result in elevated privileges since the injected process was spawned from (and thus inherits the security context) of the injecting process. However, execution via process doppelg\u00e4nging may evade detection from security products since the execution is masked under a legitimate process. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_detection": "Monitor and analyze calls to <code>CreateTransaction</code>, <code>CreateFileTransacted</code>, <code>RollbackTransaction</code>, and other rarely used functions indicative of TxF activity. Process Doppelg\u00e4nging also invokes an outdated and undocumented implementation of the Windows process loader via calls to <code>NtCreateProcessEx</code> and <code>NtCreateThreadEx</code> as well as API calls used to modify memory within another process, such as <code>WriteProcessMemory</code>. (Citation: BlackHat Process Doppelg\u00e4nging Dec 2017) (Citation: hasherezade Process Doppelg\u00e4nging Dec 2017)\n\nScan file objects reported during the PsSetCreateProcessNotifyRoutine, (Citation: Microsoft PsSetCreateProcessNotifyRoutine routine) which triggers a callback whenever a process is created or deleted, specifically looking for file objects with enabled write access. (Citation: BlackHat Process Doppelg\u00e4nging Dec 2017) Also consider comparing file objects loaded in memory to the corresponding file on disk. (Citation: hasherezade Process Doppelg\u00e4nging Dec 2017)\n\nAnalyze process behavior to determine if a process is performing actions it usually does not, such as opening network connections, reading files, or other suspicious actions that could relate to post-compromise behavior.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1055/013",
+                    "external_id": "T1055.013",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Microsoft TxF",
+                    "description": "Microsoft. (n.d.). Transactional NTFS (TxF). Retrieved December 20, 2017.",
+                    "url": "https://msdn.microsoft.com/library/windows/desktop/bb968806.aspx"
+                },
+                {
+                    "source_name": "Microsoft Basic TxF Concepts",
+                    "description": "Microsoft. (n.d.). Basic TxF Concepts. Retrieved December 20, 2017.",
+                    "url": "https://msdn.microsoft.com/library/windows/desktop/dd979526.aspx"
+                },
+                {
+                    "source_name": "Microsoft Where to use TxF",
+                    "description": "Microsoft. (n.d.). When to Use Transactional NTFS. Retrieved December 20, 2017.",
+                    "url": "https://msdn.microsoft.com/library/windows/desktop/aa365738.aspx"
+                },
+                {
+                    "source_name": "BlackHat Process Doppelg\u00e4nging Dec 2017",
+                    "description": "Liberman, T. & Kogan, E. (2017, December 7). Lost in Transaction: Process Doppelg\u00e4nging. Retrieved December 20, 2017.",
+                    "url": "https://www.blackhat.com/docs/eu-17/materials/eu-17-Liberman-Lost-In-Transaction-Process-Doppelganging.pdf"
+                },
+                {
+                    "source_name": "hasherezade Process Doppelg\u00e4nging Dec 2017",
+                    "description": "hasherezade. (2017, December 18). Process Doppelg\u00e4nging \u2013 a new way to impersonate a process. Retrieved December 20, 2017.",
+                    "url": "https://hshrzd.wordpress.com/2017/12/18/process-doppelganging-a-new-way-to-impersonate-a-process/"
+                },
+                {
+                    "source_name": "Microsoft PsSetCreateProcessNotifyRoutine routine",
+                    "description": "Microsoft. (n.d.). PsSetCreateProcessNotifyRoutine routine. Retrieved December 20, 2017.",
+                    "url": "https://msdn.microsoft.com/library/windows/hardware/ff559951.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Remote System Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation",
+                "File: File Access"
+            ],
+            "x_mitre_version": "3.2",
+            "modified": "2021-10-15T15:30:00.172Z",
+            "created": "2017-05-31T21:30:28.187Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used such as  [Ping](https://attack.mitre.org/software/S0097) or <code>net view</code> using [Net](https://attack.mitre.org/software/S0039). Adversaries may also use local host files (ex: <code>C:\\Windows\\System32\\Drivers\\etc\\hosts</code> or <code>/etc/hosts</code>) in order to discover the hostname to IP address mappings of remote systems. \n",
+            "x_mitre_contributors": [
+                "Daniel Stepanic, Elastic",
+                "RedHuntLabs, @redhuntlabs"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events related to legitimate remote system discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nMonitor for processes that can be used to discover remote systems, such as <code>ping.exe</code> and <code>tracert.exe</code>, especially when executed in quick succession.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1018",
+                    "external_id": "T1018",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/292.html",
+                    "external_id": "CAPEC-292",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Credentials In Files",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1552/001",
+                    "external_id": "T1552.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/639.html",
+                    "external_id": "CAPEC-639",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "CG 2014",
+                    "description": "CG. (2014, May 20). Mimikatz Against Virtual Machine Memory Part 1. Retrieved November 12, 2014.",
+                    "url": "http://carnal0wnage.attackresearch.com/2014/05/mimikatz-against-virtual-machine-memory.html"
+                },
+                {
+                    "source_name": "SRD GPP",
+                    "description": "Security Research and Defense. (2014, May 13). MS14-025: An Update for Group Policy Preferences. Retrieved January 28, 2015.",
+                    "url": "http://blogs.technet.com/b/srd/archive/2014/05/13/ms14-025-an-update-for-group-policy-preferences.aspx"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/hildegard-malware-teamtnt/",
+                    "description": "Chen, J. et al. (2021, February 3). Hildegard: New TeamTNT Cryptojacking Malware Targeting Kubernetes. Retrieved April 5, 2021.",
+                    "source_name": "Unit 42 Hildegard Malware"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/attackers-tactics-and-techniques-in-unsecured-docker-daemons-revealed/",
+                    "description": "Chen, J.. (2020, January 29). Attacker's Tactics and Techniques in Unsecured Docker Daemons Revealed. Retrieved March 31, 2021.",
+                    "source_name": "Unit 42 Unsecured Docker Daemons"
+                },
+                {
+                    "url": "https://posts.specterops.io/head-in-the-clouds-bd038bb69e48",
+                    "description": "Maddalena, C.. (2018, September 12). Head in the Clouds. Retrieved October 4, 2019.",
+                    "source_name": "Specter Ops - Cloud Credential Storage"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "File: File Access",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-12T18:32:32.803Z",
+            "x_mitre_system_requirements": [
+                "Access to files"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--837f9164-50af-4ac0-8219-379d8a74cefc",
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may search local file systems and remote file shares for files containing insecurely stored credentials. These can be files created by users to store their own credentials, shared credential stores for a group of individuals, configuration files containing passwords for a system or service, or source code/binary files containing embedded passwords.\n\nIt is possible to extract passwords from backups or saved virtual machines through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). (Citation: CG 2014) Passwords may also be obtained from Group Policy Preferences stored on the Windows Domain Controller. (Citation: SRD GPP)\n\nIn cloud and/or containerized environments, authenticated user and service account credentials are often stored in local configuration and credential files.(Citation: Unit 42 Hildegard Malware) They may also be found as parameters to deployment commands in container logs.(Citation: Unit 42 Unsecured Docker Daemons) In some cases, these files can be copied and reused on another machine or the contents can be read and then used to authenticate without needing to copy any files.(Citation: Specter Ops - Cloud Credential Storage)",
+            "x_mitre_contributors": [
+                "Rory McCune, Aqua Security",
+                "Jay Chen, Palo Alto Networks",
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee",
+                "Microsoft Threat Intelligence Center (MSTIC)"
+            ],
+            "x_mitre_detection": "While detecting adversaries accessing these files may be difficult without knowing they exist in the first place, it may be possible to detect adversary use of credentials they have obtained. Monitor the command-line arguments of executing processes for suspicious words or regular expressions that may indicate searching for a password (for example: password, pwd, login, secure, or credentials). See [Valid Accounts](https://attack.mitre.org/techniques/T1078) for more information.",
+            "created": "2020-02-04T12:52:13.006Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "LaZagne",
+            "x_mitre_aliases": [
+                "LaZagne"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-10-15T16:56:52.156Z",
+            "created": "2019-01-30T16:44:59.887Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "id": "tool--b76b2d94-60e4-4107-a903-4a3a7622fb3b",
+            "description": "[LaZagne](https://attack.mitre.org/software/S0349) is a post-exploitation, open-source tool used to recover stored passwords on a system. It has modules for Windows, Linux, and OSX, but is mainly focused on Windows systems. [LaZagne](https://attack.mitre.org/software/S0349) is publicly available on GitHub.(Citation: GitHub LaZagne Dec 2018)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0349",
+                    "url": "https://attack.mitre.org/software/S0349"
+                },
+                {
+                    "description": "(Citation: GitHub LaZange Dec 2018)",
+                    "source_name": "LaZagne"
+                },
+                {
+                    "source_name": "GitHub LaZagne Dec 2018",
+                    "description": "Zanni, A. (n.d.). The LaZagne Project !!!. Retrieved December 14, 2018.",
+                    "url": "https://github.com/AlessandroZ/LaZagne"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "MailSniper",
+            "x_mitre_aliases": [
+                "MailSniper"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T17:01:41.302Z",
+            "created": "2019-10-05T02:34:01.189Z",
+            "x_mitre_platforms": [
+                "Office 365",
+                "Windows",
+                "Azure AD"
+            ],
+            "id": "tool--999c4e6e-b8dc-4b4f-8d6e-1b829f29997e",
+            "description": "MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.). It can be used by a non-administrative user to search their own email, or by an Exchange administrator to search the mailboxes of every user in a domain.(Citation: GitHub MailSniper)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0413",
+                    "external_id": "S0413",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/dafthack/MailSniper",
+                    "description": "Bullock, B., . (2018, November 20). MailSniper. Retrieved October 4, 2019.",
+                    "source_name": "GitHub MailSniper"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "modified": "2021-05-20T14:25:59.596Z",
+            "name": "Mimikatz",
+            "x_mitre_aliases": [
+                "Mimikatz"
+            ],
+            "x_mitre_version": "1.4",
+            "created": "2017-05-31T21:32:11.544Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "description": "[Mimikatz](https://attack.mitre.org/software/S0002) is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks. (Citation: Deply Mimikatz) (Citation: Adsecurity Mimikatz Guide)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Vincent Le Toux"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0002",
+                    "external_id": "S0002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/gentilkiwi/mimikatz",
+                    "description": "Deply, B. (n.d.). Mimikatz. Retrieved September 29, 2015.",
+                    "source_name": "Deply Mimikatz"
+                },
+                {
+                    "source_name": "Adsecurity Mimikatz Guide",
+                    "description": "Metcalf, S. (2015, November 13). Unofficial Guide to Mimikatz & Command Reference. Retrieved December 23, 2015.",
+                    "url": "https://adsecurity.org/?page_id=1821"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PsExec",
+            "x_mitre_aliases": [
+                "PsExec"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-24T13:47:24.660Z",
+            "created": "2017-05-31T21:32:21.771Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "description": "[PsExec](https://attack.mitre.org/software/S0029) is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers. (Citation: Russinovich Sysinternals) (Citation: SANS PsExec)",
+            "x_mitre_contributors": [
+                "Janantha Marasinghe"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0029",
+                    "external_id": "S0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Russinovich Sysinternals",
+                    "description": "Russinovich, M. (2014, May 2). Windows Sysinternals PsExec v2.11. Retrieved May 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx"
+                },
+                {
+                    "source_name": "SANS PsExec",
+                    "description": "Pilkington, M.. (2012, December 17). Protecting Privileged Domain Accounts: PsExec Deep-Dive. Retrieved August 17, 2016.",
+                    "url": "https://digital-forensics.sans.org/blog/2012/12/17/protecting-privileged-domain-accounts-psexec-deep-dive"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4e2f9804-8b9c-4884-84c0-1cff20008fca",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "location--036a483f-27e7-48f0-9e75-b44f99c3c531"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--036a483f-27e7-48f0-9e75-b44f99c3c531",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Iran",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.306875Z",
+            "id": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Energy sector as a target",
+            "sectors": [
+                "energy"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.331387Z",
+            "id": "identity--6aec7082-d897-4cd6-a552-d1d2a0175606",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Transportation sector as a target",
+            "sectors": [
+                "transportation"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Israel",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7f50592d-cbdf-48a5-8bc2-ca1d29ea821c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Kuwait",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--0af20877-77ce-4f6f-b002-960316463df9",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Lebanon",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "European Union",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d48d972b-5b16-4be9-955e-a64c16b24569",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Middle East",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b508519a-f6bc-4e25-9e9a-5694aa8d2d19",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "location--d48d972b-5b16-4be9-955e-a64c16b24569"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--75afe4f3-cfea-44c4-a25a-64693f1c468b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--5d2a3cff-39eb-4c01-8339-5fc88d3863d2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--6ae9ad1f-7b1f-4f21-8042-58860fc0193f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "location--0af20877-77ce-4f6f-b002-960316463df9"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ccc0e6f6-ba7a-43b7-ad3c-4f57c2c86237",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "location--7f50592d-cbdf-48a5-8bc2-ca1d29ea821c"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3be5c0ec-2782-4d46-ac22-a6e950ade859",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2731c98a-659d-4d41-b31a-6a5b9dfbd9ce",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--517f8368-6154-4a4d-ad25-dd96f2d82930",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c40dee47-a420-49a3-ad69-1af78f0c4d20",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--61a490b3-403b-40fe-97ed-7561b4b00ec8",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "identity--6aec7082-d897-4cd6-a552-d1d2a0175606"
+        }
+    ]
+}

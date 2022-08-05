@@ -1,0 +1,1081 @@
+{
+    "type": "bundle",
+    "id": "bundle--b08c8fe1-1036-47ff-8c30-e8500eb9cfdd",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2017",
+            "x_MISP-description": "In July 2018, an attack on Singapore’s largest public health organization, SingHealth, resulted in a reported 1.5 million patient records being stolen. Until now, nothing was known about who was responsible for this attack. Symantec researchers have discovered that this attack group, which we call Whitefly, has been operating since at least 2017, has targeted organizations based mostly in Singapore across a wide variety of sectors, and is primarily interested in stealing large amounts of sensitive information.",
+            "x_MISP-uuid": "943f490e-ac7f-40fe-b6f3-33e2623649d2",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Whitefly",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) is a cyber espionage group that has been operating since at least 2017. The group has targeted organizations based mostly in Singapore across a wide variety of sectors, and is primarily interested in stealing large amounts of sensitive information. The group has been linked to an attack against Singapore\u2019s largest public health organization, SingHealth.(Citation: Symantec Whitefly March 2019)",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Whitefly"
+            ],
+            "created": "2020-05-26T16:55:09.674Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0107",
+                    "external_id": "G0107",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2e2daf37-1d3d-4b24-ab46-dfc894f9ef96",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has used search order hijacking to run the loader Vcrodat.(Citation: Symantec Whitefly March 2019)\t",
+            "target_ref": "attack-pattern--2fee9321-3e71-4cf4-af24-d4d40d355b34",
+            "modified": "2020-05-26T17:14:42.986Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.986Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5ee2ba47-9b66-4a62-8bde-ff29409d4830",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has used [Mimikatz](https://attack.mitre.org/software/S0002) to obtain credentials.(Citation: Symantec Whitefly March 2019)",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "modified": "2020-05-27T21:56:25.085Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-27T21:56:25.085Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8b65bc11-9b56-4eca-9fa2-efb7ffcbb94b",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has obtained and used tools such as [Mimikatz](https://attack.mitre.org/software/S0002).(Citation: Symantec Whitefly March 2019)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-12T21:43:24.262Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T21:43:24.262Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--92b00f56-c9ac-4e48-9890-40b78ab0c361",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has used a simple remote shell tool that will call back to the C2 server and wait for commands.(Citation: Symantec Whitefly March 2019)",
+            "target_ref": "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830",
+            "modified": "2020-05-26T17:14:42.930Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.930Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--95c6eafc-4b3f-404b-86d9-13b4ae4845da",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has encrypted the payload used for C2.(Citation: Symantec Whitefly March 2019)\t",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "modified": "2020-05-26T17:14:42.964Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.964Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--983bd6cd-907a-430d-a6ec-0ca024ca87ae",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has used malicious .exe or .dll files disguised as documents or images.(Citation: Symantec Whitefly March 2019)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2020-05-26T17:14:42.958Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.958Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1898925b-236a-4847-8a97-e934c07cdde1",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has the ability to download additional tools from the C2.(Citation: Symantec Whitefly March 2019)",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "modified": "2020-05-26T17:14:42.959Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.959Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--76681016-c8a2-4dcf-bac5-4a58749f326d",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has used an open-source tool to exploit a known Windows privilege escalation vulnerability (CVE-2016-0051) on unpatched computers.(Citation: Symantec Whitefly March 2019)\t",
+            "target_ref": "attack-pattern--b21c3b2d-02e6-45b1-980b-e69051040839",
+            "modified": "2020-05-26T17:14:42.955Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.955Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--aca1a51b-89a5-45e9-bce5-14b5a0a4c0f1",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has named the malicious DLL the same name as DLLs belonging to legitimate software from various security vendors.(Citation: Symantec Whitefly March 2019)",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "modified": "2020-05-26T17:14:42.968Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.968Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--eda182e5-ad1a-466b-8ede-664a2c778076",
+            "description": "(Citation: Symantec Whitefly March 2019)",
+            "target_ref": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "modified": "2020-05-26T17:14:42.966Z",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T17:14:42.966Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "source_name": "Symantec Whitefly March 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Command and Scripting Interpreter",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "2.2",
+            "modified": "2021-08-16T21:03:21.700Z",
+            "created": "2017-05-31T21:30:49.546Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "id": "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830",
+            "revoked": false,
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of [Unix Shell](https://attack.mitre.org/techniques/T1059/004) while Windows installations include the [Windows Command Shell](https://attack.mitre.org/techniques/T1059/003) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nThere are also cross-platform interpreters such as [Python](https://attack.mitre.org/techniques/T1059/006), as well as those commonly associated with client applications such as [JavaScript](https://attack.mitre.org/techniques/T1059/007) and [Visual Basic](https://attack.mitre.org/techniques/T1059/005).\n\nAdversaries may abuse these technologies in various ways as a means of executing arbitrary commands. Commands and scripts can be embedded in [Initial Access](https://attack.mitre.org/tactics/TA0001) payloads delivered to victims as lure documents or as secondary payloads downloaded from an existing C2. Adversaries may also execute commands through interactive terminals/shells, as well as utilize various [Remote Services](https://attack.mitre.org/techniques/T1021) in order to achieve remote Execution.(Citation: Powershell Remote Commands)(Citation: Cisco IOS Software Integrity Assurance - Command History)(Citation: Remote Shell Execution in Python)",
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Command-line and scripting activities can be captured through proper logging of process execution with command-line arguments. This information can be useful in gaining additional insight to adversaries' actions through how they use native processes or custom tools. Also monitor for loading of modules associated with specific languages.\n\nIf scripting is restricted for normal users, then any attempt to enable scripts running on a system would be considered suspicious. If scripts are not commonly used on a system, but enabled, scripts running out of cycle from patching or other administrator functions are suspicious. Scripts should be captured from the file system when possible to determine their actions and intent.\n\nScripts are likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for script execution and subsequent behavior. Actions may be related to network and system information discovery, collection, or other scriptable post-compromise behaviors and could be used as indicators of detection leading back to the source script.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059",
+                    "external_id": "T1059",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/running-remote-commands?view=powershell-7.1",
+                    "description": "Microsoft. (2020, August 21). Running Remote Commands. Retrieved July 26, 2021.",
+                    "source_name": "Powershell Remote Commands"
+                },
+                {
+                    "url": "https://tools.cisco.com/security/center/resources/integrity_assurance.html#23",
+                    "description": "Cisco. (n.d.). Cisco IOS Software Integrity Assurance - Command History. Retrieved October 21, 2020.",
+                    "source_name": "Cisco IOS Software Integrity Assurance - Command History"
+                },
+                {
+                    "url": "https://www.thepythoncode.com/article/executing-bash-commands-remotely-in-python",
+                    "description": "Abdou Rockikz. (2020, July). How to Execute Shell Commands in a Remote Machine in Python. Retrieved July 26, 2021.",
+                    "source_name": "Remote Shell Execution in Python"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "DLL Search Order Hijacking",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "File: File Modification",
+                "Module: Module Load"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-26T18:37:03.748Z",
+            "created": "2020-03-13T18:11:08.357Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2fee9321-3e71-4cf4-af24-d4d40d355b34",
+            "description": "Adversaries may execute their own malicious payloads by hijacking the search order used to load DLLs. Windows systems use a common method to look for required DLLs to load into a program. (Citation: Microsoft Dynamic Link Library Search Order)(Citation: FireEye Hijacking July 2010) Hijacking DLL loads may be for the purpose of establishing persistence as well as elevating privileges and/or evading restrictions on file execution.\n\nThere are many ways an adversary can hijack DLL loads. Adversaries may plant trojan dynamic-link library files (DLLs) in a directory that will be searched before the location of a legitimate library that will be requested by a program, causing Windows to load their malicious library when it is called for by the victim program. Adversaries may also perform DLL preloading, also called binary planting attacks, (Citation: OWASP Binary Planting) by placing a malicious DLL with the same name as an ambiguously specified DLL in a location that Windows searches before the legitimate DLL. Often this location is the current working directory of the program.(Citation: FireEye fxsst June 2011) Remote DLL preloading attacks occur when a program sets its current directory to a remote location such as a Web share before loading a DLL. (Citation: Microsoft Security Advisory 2269637)\n\nAdversaries may also directly modify the search order via DLL redirection, which after being enabled (in the Registry and creation of a redirection file) may cause a program to load a different DLL.(Citation: Microsoft Dynamic-Link Library Redirection)(Citation: Microsoft Manifests)(Citation: FireEye DLL Search Order Hijacking)\n\nIf a search order-vulnerable program is configured to run at a higher privilege level, then the adversary-controlled DLL that is loaded will also be executed at the higher level. In this case, the technique could be used for privilege escalation from user to administrator or SYSTEM or from administrator to SYSTEM, depending on the program. Programs that fall victim to path hijacking may appear to behave normally because malicious DLLs may be configured to also load the legitimate DLLs they were meant to replace.",
+            "x_mitre_contributors": [
+                "Travis Smith, Tripwire",
+                "Stefan Kanthak"
+            ],
+            "x_mitre_detection": "Monitor file systems for moving, renaming, replacing, or modifying DLLs. Changes in the set of DLLs that are loaded by a process (compared with past behavior) that do not correlate with known software, patches, etc., are suspicious. Monitor DLLs loaded into a process and detect DLLs that have the same file name but abnormal paths. Modifications to or creation of `.manifest` and `.local` redirection files that do not correlate with software updates are suspicious.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1574/001",
+                    "external_id": "T1574.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/471.html",
+                    "external_id": "CAPEC-471",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order?redirectedfrom=MSDN",
+                    "description": "Microsoft. (2018, May 31). Dynamic-Link Library Search Order. Retrieved November 30, 2014.",
+                    "source_name": "Microsoft Dynamic Link Library Search Order"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2010/07/malware-persistence-windows-registry.html",
+                    "description": "Harbour, N. (2010, July 15). Malware Persistence without the Windows Registry. Retrieved November 17, 2020.",
+                    "source_name": "FireEye Hijacking July 2010"
+                },
+                {
+                    "url": "https://www.owasp.org/index.php/Binary_planting",
+                    "description": "OWASP. (2013, January 30). Binary planting. Retrieved June 7, 2016.",
+                    "source_name": "OWASP Binary Planting"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2011/06/fxsst.html",
+                    "description": "Harbour, N. (2011, June 3). What the fxsst?. Retrieved November 17, 2020.",
+                    "source_name": "FireEye fxsst June 2011"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/security-updates/securityadvisories/2010/2269637",
+                    "description": "Microsoft. (, May 23). Microsoft Security Advisory 2269637. Retrieved March 13, 2020.",
+                    "source_name": "Microsoft Security Advisory 2269637"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-redirection?redirectedfrom=MSDN",
+                    "description": "Microsoft. (2018, May 31). Dynamic-Link Library Redirection. Retrieved March 13, 2020.",
+                    "source_name": "Microsoft Dynamic-Link Library Redirection"
+                },
+                {
+                    "url": "https://msdn.microsoft.com/en-US/library/aa375365",
+                    "description": "Microsoft. (n.d.). Manifests. Retrieved December 5, 2014.",
+                    "source_name": "Microsoft Manifests"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2010/08/dll-search-order-hijacking-revisited.html",
+                    "description": "Nick Harbour. (2010, September 1). DLL Search Order Hijacking Revisited. Retrieved March 13, 2020.",
+                    "source_name": "FireEye DLL Search Order Hijacking"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-20T15:42:48.595Z",
+            "name": "Ingress Tool Transfer",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2017-05-31T21:31:16.408Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitor for file creation and files transferred into the network. Unusual processes with external network connections creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1105",
+                    "external_id": "T1105",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-20T19:23:37.762Z",
+            "name": "Match Legitimate Name or Location",
+            "x_mitre_data_sources": [
+                "Image: Image Metadata",
+                "File: File Metadata",
+                "Process: Process Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-02-10T20:43:10.239Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "description": "Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them. This is done for the sake of evading defenses and observation. This may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: svchost.exe). In containerized environments, this may also be done by creating a resource in a namespace that matches the naming convention of a container pod or cluster. Alternatively, a file or container image name given may be a close approximation to legitimate programs/images or something innocuous.\n\nAdversaries may also use the same icon of the file they are trying to mimic.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee"
+            ],
+            "x_mitre_detection": "Collect file hashes; file names that do not match their expected hash are suspect. Perform file monitoring; files with known names but in unusual locations are suspect. Likewise, files that are modified outside of an update or patch are suspect.\n\nIf file names are mismatched between the file name on disk and that of the binary's PE metadata, this is a likely indicator that a binary was renamed after it was compiled. Collecting and comparing disk and resource filenames for binaries by looking to see if the InternalName, OriginalFilename, and/or ProductName match what is expected could provide useful leads, but may not always be indicative of malicious activity. (Citation: Elastic Masquerade Ball) Do not focus on the possible names a file could have, but instead on the command-line arguments that are known to be used and are distinct because it will have a better rate of detection.(Citation: Twitter ItsReallyNick Masquerading Update)\n\nIn containerized environments, use image IDs and layer hashes to compare images instead of relying only on their names.(Citation: Docker Images) Monitor for the unexpected creation of new resources within your cluster in Kubernetes, especially those created by atypical users.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/177.html",
+                    "external_id": "CAPEC-177",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "http://pages.endgame.com/rs/627-YBU-612/images/EndgameJournal_The%20Masquerade%20Ball_Pages_R2.pdf",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "source_name": "Elastic Masquerade Ball"
+                },
+                {
+                    "url": "https://twitter.com/ItsReallyNick/status/1055321652777619457",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved April 22, 2019.",
+                    "source_name": "Twitter ItsReallyNick Masquerading Update"
+                },
+                {
+                    "url": "https://docs.docker.com/engine/reference/commandline/images/",
+                    "description": "Docker. (n.d.). Docker Images. Retrieved April 6, 2021.",
+                    "source_name": "Docker Images"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Obfuscated Files or Information",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "File: File Metadata",
+                "File: File Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-20T16:33:13.472Z",
+            "created": "2017-05-31T21:30:32.662Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis",
+                "Signature-based detection",
+                "Host intrusion prevention systems",
+                "Application control",
+                "Log analysis",
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. \n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open and [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) for [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as JavaScript. \n\nPortions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) ",
+            "x_mitre_contributors": [
+                "Red Canary",
+                "Christiaan Beek, @ChristiaanBeek"
+            ],
+            "x_mitre_detection": "Detection of file obfuscation is difficult unless artifacts are left behind by the obfuscation process that are uniquely detectable with a signature. If detection of the obfuscation itself is not possible, it may be possible to detect the malicious activity that caused the obfuscated file (for example, the method that was used to write, read, or modify the file on the file system). \n\nFlag and analyze commands containing indicators of obfuscation and known suspicious syntax such as uninterpreted escape characters like '''^''' and '''\"'''. Windows' Sysmon and Event ID 4688 displays command-line arguments for processes. Deobfuscation tools can be used to detect these indicators in files/payloads. (Citation: GitHub Revoke-Obfuscation) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: GitHub Office-Crackros Aug 2016) \n\nObfuscation used in payloads for Initial Access can be detected at the network. Use network intrusion detection systems and email gateway filtering to identify compressed and encrypted attachments and scripts. Some email attachment detonation systems can open compressed and encrypted attachments. Payloads delivered over an encrypted connection from a website require encrypted network traffic inspection. \n\nThe first detection of a malicious tool may trigger an anti-virus or other security tool alert. Similar events may also occur at the boundary through network IDS, email scanning appliance, etc. The initial detection should be treated as an indication of a potentially more invasive intrusion. The alerting system should be thoroughly investigated beyond that initial alert for activity that was not detected. Adversaries may continue with an operation, assuming that individual events like an anti-virus detect will not be investigated or that an analyst will not be able to conclusively link that event to other activity occurring on the network. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027",
+                    "external_id": "T1027",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/267.html",
+                    "external_id": "CAPEC-267",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Volexity PowerDuke November 2016",
+                    "description": "Adair, S.. (2016, November 9). PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs. Retrieved January 11, 2017.",
+                    "url": "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                },
+                {
+                    "source_name": "Linux/Cdorked.A We Live Security Analysis",
+                    "description": "Pierre-Marc Bureau. (2013, April 26). Linux/Cdorked.A: New Apache backdoor being used in the wild to serve Blackhole. Retrieved September 10, 2017.",
+                    "url": "https://www.welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/"
+                },
+                {
+                    "source_name": "Carbon Black Obfuscation Sept 2016",
+                    "description": "Tedesco, B. (2016, September 23). Security Alert Summary. Retrieved February 12, 2018.",
+                    "url": "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/"
+                },
+                {
+                    "source_name": "FireEye Obfuscation June 2017",
+                    "description": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+                },
+                {
+                    "source_name": "FireEye Revoke-Obfuscation July 2017",
+                    "description": "Bohannon, D. & Holmes, L. (2017, July 27). Revoke-Obfuscation: PowerShell Obfuscation Detection Using Science. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf"
+                },
+                {
+                    "source_name": "PaloAlto EncodedCommand March 2017",
+                    "description": "White, J. (2017, March 10). Pulling Back the Curtains on EncodedCommand PowerShell Attacks. Retrieved February 12, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/"
+                },
+                {
+                    "source_name": "GitHub Revoke-Obfuscation",
+                    "description": "Bohannon, D. (2017, July 27). Revoke-Obfuscation. Retrieved February 12, 2018.",
+                    "url": "https://github.com/danielbohannon/Revoke-Obfuscation"
+                },
+                {
+                    "source_name": "GitHub Office-Crackros Aug 2016",
+                    "description": "Carr, N. (2016, August 14). OfficeCrackros. Retrieved February 12, 2018.",
+                    "url": "https://github.com/itsreallynick/office-crackros"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "LSASS Memory",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Process: Process Access",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-15T19:55:01.368Z",
+            "created": "2020-02-11T18:41:44.783Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).\n\nAs well as in-memory techniques, the LSASS process memory can be dumped from the target host and analyzed on a local system.\n\nFor example, on the target host use procdump:\n\n* <code>procdump -ma lsass.exe lsass_dump</code>\n\nLocally, mimikatz can be run using:\n\n* <code>sekurlsa::Minidump lsassdump.dmp</code>\n* <code>sekurlsa::logonPasswords</code>\n\nBuilt-in Windows tools such as comsvcs.dll can also be used:\n\n* <code>rundll32.exe C:\\Windows\\System32\\comsvcs.dll MiniDump PID  lsass.dmp full</code>(Citation: Volexity Exchange Marauder March 2021)(Citation: Symantec Attacks Against Government Sector)\n\n\nWindows Security Support Provider (SSP) DLLs are loaded into LSSAS process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs. The SSP configuration is stored in two Registry keys: <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Security Packages</code> and <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig\\Security Packages</code>. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called.(Citation: Graeber 2014)\n\nThe following SSPs can be used to access credentials:\n\n* Msv: Interactive logons, batch logons, and service logons are done through the MSV authentication package.\n* Wdigest: The Digest Authentication protocol is designed for use with Hypertext Transfer Protocol (HTTP) and Simple Authentication Security Layer (SASL) exchanges.(Citation: TechNet Blogs Credential Protection)\n* Kerberos: Preferred for mutual client-server domain authentication in Windows 2000 and later.\n* CredSSP:  Provides SSO and Network Level Authentication for Remote Desktop Services.(Citation: TechNet Blogs Credential Protection)\n",
+            "x_mitre_contributors": [
+                "Edward Millington",
+                "Ed Williams, Trustwave, SpiderLabs"
+            ],
+            "x_mitre_detection": "Monitor for unexpected processes interacting with LSASS.exe.(Citation: Medium Detecting Attempts to Steal Passwords from Memory) Common credential dumpers such as Mimikatz access LSASS.exe by opening the process, locating the LSA secrets key, and decrypting the sections in memory where credential details are stored. Credential dumpers may also use methods for reflective [Process Injection](https://attack.mitre.org/techniques/T1055) to reduce potential indicators of malicious activity.\n\nOn Windows 8.1 and Windows Server 2012 R2, monitor Windows Logs for LSASS.exe creation to verify that LSASS started as a protected process.\n\nMonitor processes and command-line arguments for program execution that may be indicative of credential dumping. Remote access tools may contain built-in features or incorporate existing tools like Mimikatz. PowerShell scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module,(Citation: Powersploit) which may require additional logging features to be configured in the operating system to collect necessary information for analysis.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1003/001",
+                    "external_id": "T1003.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/",
+                    "description": "Gruzweig, J. et al. (2021, March 2). Operation Exchange Marauder: Active Exploitation of Multiple Zero-Day Microsoft Exchange Vulnerabilities. Retrieved March 3, 2021.",
+                    "source_name": "Volexity Exchange Marauder March 2021"
+                },
+                {
+                    "url": "https://symantec.broadcom.com/hubfs/Attacks-Against-Government-Sector.pdf",
+                    "description": "Symantec. (2021, June 10). Attacks Against the Government Sector. Retrieved September 28, 2021.",
+                    "source_name": "Symantec Attacks Against Government Sector"
+                },
+                {
+                    "source_name": "Graeber 2014",
+                    "description": "Graeber, M. (2014, October). Analysis of Malicious Security Support Provider DLLs. Retrieved March 1, 2017.",
+                    "url": "http://docplayer.net/20839173-Analysis-of-malicious-security-support-provider-dlls.html"
+                },
+                {
+                    "source_name": "TechNet Blogs Credential Protection",
+                    "description": "Wilson, B. (2016, April 18). The Importance of KB2871997 and KB2928120 for Credential Protection. Retrieved April 11, 2018.",
+                    "url": "https://blogs.technet.microsoft.com/askpfeplat/2016/04/18/the-importance-of-kb2871997-and-kb2928120-for-credential-protection/"
+                },
+                {
+                    "source_name": "Medium Detecting Attempts to Steal Passwords from Memory",
+                    "description": "French, D. (2018, October 2). Detecting Attempts to Steal Passwords from Memory. Retrieved October 11, 2019.",
+                    "url": "https://medium.com/threatpunter/detecting-attempts-to-steal-passwords-from-memory-558f16dce4ea"
+                },
+                {
+                    "source_name": "Powersploit",
+                    "description": "PowerSploit. (n.d.). Retrieved December 4, 2014.",
+                    "url": "https://github.com/mattifestation/PowerSploit"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "modified": "2021-05-20T14:25:59.596Z",
+            "name": "Mimikatz",
+            "x_mitre_aliases": [
+                "Mimikatz"
+            ],
+            "x_mitre_version": "1.4",
+            "created": "2017-05-31T21:32:11.544Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "description": "[Mimikatz](https://attack.mitre.org/software/S0002) is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks. (Citation: Deply Mimikatz) (Citation: Adsecurity Mimikatz Guide)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Vincent Le Toux"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0002",
+                    "external_id": "S0002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/gentilkiwi/mimikatz",
+                    "description": "Deply, B. (n.d.). Mimikatz. Retrieved September 29, 2015.",
+                    "source_name": "Deply Mimikatz"
+                },
+                {
+                    "source_name": "Adsecurity Mimikatz Guide",
+                    "description": "Metcalf, S. (2015, November 13). Unofficial Guide to Mimikatz & Command Reference. Retrieved December 23, 2015.",
+                    "url": "https://adsecurity.org/?page_id=1821"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a0a82fac-6840-4462-9112-aee3d4444519",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--41901c28-b6f0-4066-912f-d78fd8f298dc",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f3f20463-b515-48a4-bea0-a035fb187d5b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--eca7a86b-6138-420d-bef7-3be7e6da5c4b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--5a07735b-a507-4c9a-88c7-8fd571e46648",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b6b58c5a-a50d-4a04-8e9a-3e5652230e6f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b879e37e-b062-4ad0-8e37-5988eb0412ae",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--52327d19-84b8-44e5-8755-83997fbbefb4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "identity--916a7143-9aa0-4956-aba1-beb40ac47f3a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1e0215c2-bdcc-4704-8ca1-064489178532",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e9f078a8-ad5b-4683-b770-781dac966315",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3b44a734-aae5-4401-a94e-9f93b3bd0159",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "identity--93f86a60-cf1f-4285-882e-6691bcbfddb9"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2c44b285-a36c-4ed4-960e-63d4311c76c7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f7d80f0b-63e6-4f38-9282-7237c8c81b94",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "identity--f522e018-c70f-4f8f-a78c-1d7900dbef25"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--41931a00-430d-4972-a6ca-ca753050ccce",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "identity--ac0fdd56-58c2-4976-8250-ad445d0aa1ee"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.299363Z",
+            "id": "identity--ac0fdd56-58c2-4976-8250-ad445d0aa1ee",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Automotive sector as a target",
+            "sectors": [
+                "automotive"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.318514Z",
+            "id": "identity--916a7143-9aa0-4956-aba1-beb40ac47f3a",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Infrastructure sector as a target",
+            "sectors": [
+                "infrastructure"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.316245Z",
+            "id": "identity--93f86a60-cf1f-4285-882e-6691bcbfddb9",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Healthcare sector as a target",
+            "sectors": [
+                "healthcare"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.302614Z",
+            "id": "identity--f522e018-c70f-4f8f-a78c-1d7900dbef25",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Communications sector as a target",
+            "sectors": [
+                "communications"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.330327Z",
+            "id": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Telecommunications sector as a target",
+            "sectors": [
+                "telecommunications"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

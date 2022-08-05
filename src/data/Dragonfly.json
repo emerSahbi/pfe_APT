@@ -1,0 +1,1212 @@
+{
+    "type": "bundle",
+    "id": "bundle--7a3a92aa-be04-4712-bf19-09e3aa6135ff",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "primary_motivation": "dominance",
+            "first_seen": "2010",
+            "x_MISP-description": "A Russian group that collects intelligence on the energy industry.",
+            "x_MISP-uuid": "64d6559c-6d5c-4585-bbf9-c17868f763ee",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Dragonfly",
+            "description": "[Dragonfly](https://attack.mitre.org/groups/G0035) is a cyber espionage group that has been active since at least 2011. They initially targeted defense and aviation companies but shifted to focus to include the energy sector in early 2013. They have also targeted companies related to industrial control systems. (Citation: Symantec Dragonfly)(Citation: Secureworks IRON LIBERTY July 2019)\n\nA similar group emerged in 2015 and was identified by Symantec as [Dragonfly 2.0](https://attack.mitre.org/groups/G0074). There is debate over the extent of the overlap between [Dragonfly](https://attack.mitre.org/groups/G0035) and [Dragonfly 2.0](https://attack.mitre.org/groups/G0074), but there is sufficient evidence to lead to these being tracked as two separate groups. (Citation: Symantec Dragonfly Sept 2017)(Citation: Fortune Dragonfly 2.0 Sept 2017)(Citation: Dragos DYMALLOY )",
+            "x_mitre_version": "2.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Dragonfly",
+                "TG-4192",
+                "Crouching Yeti",
+                "IRON LIBERTY",
+                "Energetic Bear",
+                "Beserk Bear",
+                "TEMP.Isotope",
+                "ALLANITE",
+                "CASTLE",
+                "TG-4192",
+                "DYMALLOY",
+                "Group 24",
+                "Electrum",
+                "Havex",
+                "ATK 6",
+                "CrouchingYeti",
+                "Koala Team",
+                "Anger Bear",
+                "PEACEPIPE",
+                "Fertger",
+                "ITG15"
+            ],
+            "created": "2017-05-31T21:32:05.217Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0035",
+                    "external_id": "G0035",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Symantec Dragonfly)(Citation: Secureworks IRON LIBERTY July 2019)",
+                    "source_name": "Dragonfly"
+                },
+                {
+                    "description": "(Citation: Secureworks IRON LIBERTY July 2019)",
+                    "source_name": "TG-4192"
+                },
+                {
+                    "description": "(Citation: Secureworks IRON LIBERTY July 2019)",
+                    "source_name": "Crouching Yeti"
+                },
+                {
+                    "description": "(Citation: Secureworks IRON LIBERTY July 2019)(Citation: Secureworks MCMD July 2019)(Citation: Secureworks Karagany July 2019)",
+                    "source_name": "IRON LIBERTY"
+                },
+                {
+                    "description": "(Citation: Symantec Dragonfly)(Citation: Secureworks IRON LIBERTY July 2019)(Citation: Secureworks MCMD July 2019)(Citation: Secureworks Karagany July 2019)",
+                    "source_name": "Energetic Bear"
+                },
+                {
+                    "url": "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/Dragonfly_Threat_Against_Western_Energy_Suppliers.pdf",
+                    "description": "Symantec Security Response. (2014, July 7). Dragonfly: Cyberespionage Attacks Against Energy Suppliers. Retrieved April 8, 2016.",
+                    "source_name": "Symantec Dragonfly"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                },
+                {
+                    "url": "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group",
+                    "description": "Symantec Security Response. (2017, September 6). Dragonfly: Western energy sector targeted by sophisticated attack group. Retrieved September 9, 2017.",
+                    "source_name": "Symantec Dragonfly Sept 2017"
+                },
+                {
+                    "url": "http://fortune.com/2017/09/06/hack-energy-grid-symantec/",
+                    "description": "Hackett, R. (2017, September 6). Hackers Have Penetrated Energy Grid, Symantec Warns. Retrieved June 6, 2018.",
+                    "source_name": "Fortune Dragonfly 2.0 Sept 2017"
+                },
+                {
+                    "url": "https://www.dragos.com/threat/dymalloy/",
+                    "description": "Dragos. (n.d.). DYMALLOY. Retrieved August 20, 2020.",
+                    "source_name": "Dragos DYMALLOY "
+                },
+                {
+                    "url": "https://www.secureworks.com/research/mcmd-malware-analysis",
+                    "description": "Secureworks. (2019, July 24). MCMD Malware Analysis. Retrieved August 13, 2020.",
+                    "source_name": "Secureworks MCMD July 2019"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/updated-karagany-malware-targets-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Updated Karagany Malware Targets Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks Karagany July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8e2fcd7a-ea71-439b-ad2a-7cdd51c7cb28",
+            "description": "[Dragonfly](https://attack.mitre.org/groups/G0035) has used spearphising campaigns to gain access to victims.(Citation: Secureworks IRON LIBERTY July 2019)",
+            "target_ref": "attack-pattern--a62a8db3-f23a-4d8f-afd6-9dbc77e7813b",
+            "modified": "2020-08-12T17:52:48.612Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-08-12T17:52:48.612Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9b363538-86e1-446a-a4f8-b3045a7e8f68",
+            "description": "[Dragonfly](https://attack.mitre.org/groups/G0035) has obtained and used tools such as [Mimikatz](https://attack.mitre.org/software/S0002), [CrackMapExec](https://attack.mitre.org/software/S0488), and [PsExec](https://attack.mitre.org/software/S0029).(Citation: Secureworks IRON LIBERTY July 2019)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-12T21:50:33.176Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T21:50:33.176Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9c3ada08-1908-4458-a454-d91fda25ad04",
+            "description": "[Dragonfly](https://attack.mitre.org/groups/G0035) has placed trojanized installers on legitimate vendor app stores.(Citation: Secureworks IRON LIBERTY July 2019)",
+            "target_ref": "attack-pattern--bd369cd9-abb8-41ce-b5bb-fff23ee86c00",
+            "modified": "2020-08-12T17:52:48.629Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-08-12T17:52:48.629Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-07-28T01:37:46.704Z",
+            "name": "Drive-by Compromise",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2018-04-18T17:59:24.739Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS",
+                "SaaS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "description": "Adversaries may gain access to a system through a user visiting a website over the normal course of browsing. With this technique, the user's web browser is typically targeted for exploitation, but adversaries may also use compromised websites for non-exploitation behavior such as acquiring [Application Access Token](https://attack.mitre.org/techniques/T1550/001).\n\nMultiple ways of delivering exploit code to a browser exist, including:\n\n* A legitimate website is compromised where adversaries have injected some form of malicious code such as JavaScript, iFrames, and cross-site scripting.\n* Malicious ads are paid for and served through legitimate ad providers.\n* Built-in web application interfaces are leveraged for the insertion of any other kind of object that can be used to display web content or contain a script that executes on the visiting client (e.g. forum posts, comments, and other user controllable web content).\n\nOften the website used by an adversary is one visited by a specific community, such as government, a particular industry, or region, where the goal is to compromise a specific user or set of users based on a shared interest. This kind of targeted attack is referred to a strategic web compromise or watering hole attack. There are several known examples of this occurring.(Citation: Shadowserver Strategic Web Compromise)\n\nTypical drive-by compromise process:\n\n1. A user visits a website that is used to host the adversary controlled content.\n2. Scripts automatically execute, typically searching versions of the browser and plugins for a potentially vulnerable version. \n    * The user may be required to assist in this process by enabling scripting or active website components and ignoring warning dialog boxes.\n3. Upon finding a vulnerable version, exploit code is delivered to the browser.\n4. If exploitation is successful, then it will give the adversary code execution on the user's system unless other protections are in place.\n    * In some cases a second visit to the website after the initial scan is required before exploit code is delivered.\n\nUnlike [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190), the focus of this technique is to exploit software on a client endpoint upon visiting a website. This will commonly give an adversary access to systems on the internal network instead of external systems that may be in a DMZ.\n\nAdversaries may also use compromised websites to deliver a user to a malicious application designed to [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s, like OAuth tokens, to gain access to protected applications and information. These malicious applications have been delivered through popups on legitimate websites.(Citation: Volexity OceanLotus Nov 2017)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM Services)",
+                "Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)"
+            ],
+            "x_mitre_detection": "Firewalls and proxies can inspect URLs for potentially known-bad domains or parameters. They can also do reputation-based analytics on websites and their requested resources such as how old a domain is, who it's registered to, if it's on a known bad list, or how many other users have connected to it before.\n\nNetwork intrusion detection systems, sometimes with SSL/TLS inspection, can be used to look for known malicious scripts (recon, heap spray, and browser identification scripts have been frequently reused), common script obfuscation, and exploit code.\n\nDetecting compromise based on the drive-by exploit from a legitimate website may be difficult. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of browser processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1189",
+                    "external_id": "T1189",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Shadowserver Strategic Web Compromise",
+                    "description": "Adair, S., Moran, N. (2012, May 15). Cyber Espionage & Strategic Web Compromises \u2013 Trusted Websites Serving Dangerous Results. Retrieved March 13, 2018.",
+                    "url": "http://blog.shadowserver.org/2012/05/15/cyber-espionage-strategic-web-compromises-trusted-websites-serving-dangerous-results/"
+                },
+                {
+                    "url": "https://www.volexity.com/blog/2017/11/06/oceanlotus-blossoms-mass-digital-surveillance-and-exploitation-of-asean-nations-the-media-human-rights-and-civil-society/",
+                    "description": "Lassalle, D., et al. (2017, November 6). OceanLotus Blossoms: Mass Digital Surveillance and Attacks Targeting ASEAN, Asian Nations, the Media, Human Rights Groups, and Civil Society. Retrieved November 6, 2017.",
+                    "source_name": "Volexity OceanLotus Nov 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5253d038-08a8-4d17-9549-bbcf67c37603",
+            "description": "[Dragonfly](https://attack.mitre.org/groups/G0035) has compromised targets via strategic web compromise (SWC) utilizing a custom exploit kit.(Citation: Secureworks IRON LIBERTY July 2019)",
+            "target_ref": "attack-pattern--d742a578-d70e-4d0e-96a6-02a9c30204e6",
+            "modified": "2021-07-20T21:54:59.015Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-08-12T17:52:48.622Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "CrackMapExec",
+            "x_mitre_aliases": [
+                "CrackMapExec"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-07-29T20:19:40.544Z",
+            "created": "2020-07-17T14:23:05.958Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--c4810609-7da6-48ec-8057-1b70a7814db0",
+            "description": "[CrackMapExec](https://attack.mitre.org/software/S0488), or CME, is a post-exploitation tool developed in Python and designed for penetration testing against networks. [CrackMapExec](https://attack.mitre.org/software/S0488) collects Active Directory information to conduct lateral movement through targeted networks.(Citation: CME Github September 2018)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0488",
+                    "external_id": "S0488",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/byt3bl33d3r/CrackMapExec/wiki/SMB-Command-Reference",
+                    "description": "byt3bl33d3r. (2018, September 8). SMB: Command Reference. Retrieved July 17, 2020.",
+                    "source_name": "CME Github September 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "CrackMapExec",
+            "x_mitre_aliases": [
+                "CrackMapExec"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-07-29T20:19:40.544Z",
+            "created": "2020-07-17T14:23:05.958Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--c4810609-7da6-48ec-8057-1b70a7814db0",
+            "description": "[CrackMapExec](https://attack.mitre.org/software/S0488), or CME, is a post-exploitation tool developed in Python and designed for penetration testing against networks. [CrackMapExec](https://attack.mitre.org/software/S0488) collects Active Directory information to conduct lateral movement through targeted networks.(Citation: CME Github September 2018)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0488",
+                    "external_id": "S0488",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/byt3bl33d3r/CrackMapExec/wiki/SMB-Command-Reference",
+                    "description": "byt3bl33d3r. (2018, September 8). SMB: Command Reference. Retrieved July 17, 2020.",
+                    "source_name": "CME Github September 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Trojan.Karagany",
+            "x_mitre_aliases": [
+                "Trojan.Karagany",
+                "xFrost",
+                "Karagany"
+            ],
+            "x_mitre_version": "2.0",
+            "modified": "2020-10-14T22:38:11.328Z",
+            "created": "2017-05-31T21:33:00.176Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--82cb34ba-02b5-432b-b2d2-07f55cbf674d",
+            "description": "[Trojan.Karagany](https://attack.mitre.org/software/S0094) is a modular remote access tool used for recon and linked to [Dragonfly](https://attack.mitre.org/groups/G0035) and [Dragonfly 2.0](https://attack.mitre.org/groups/G0074). The source code for [Trojan.Karagany](https://attack.mitre.org/software/S0094) originated from Dream Loader malware which was leaked in 2010 and sold on underground forums. (Citation: Symantec Dragonfly)(Citation: Secureworks Karagany July 2019)(Citation: Dragos DYMALLOY )",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0094",
+                    "external_id": "S0094",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Secureworks Karagany July 2019)",
+                    "source_name": "xFrost"
+                },
+                {
+                    "description": "(Citation: Secureworks Karagany July 2019)",
+                    "source_name": "Karagany"
+                },
+                {
+                    "url": "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/Dragonfly_Threat_Against_Western_Energy_Suppliers.pdf",
+                    "description": "Symantec Security Response. (2014, July 7). Dragonfly: Cyberespionage Attacks Against Energy Suppliers. Retrieved April 8, 2016.",
+                    "source_name": "Symantec Dragonfly"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/updated-karagany-malware-targets-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Updated Karagany Malware Targets Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks Karagany July 2019"
+                },
+                {
+                    "url": "https://www.dragos.com/threat/dymalloy/",
+                    "description": "Dragos. (n.d.). DYMALLOY. Retrieved August 20, 2020.",
+                    "source_name": "Dragos DYMALLOY "
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fa9a8640-75e5-458c-99c0-e5e85aa32a77",
+            "description": "(Citation: Symantec Dragonfly)(Citation: Secureworks Karagany July 2019)",
+            "target_ref": "malware--82cb34ba-02b5-432b-b2d2-07f55cbf674d",
+            "modified": "2020-08-13T15:49:32.782Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.070Z",
+            "external_references": [
+                {
+                    "url": "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/Dragonfly_Threat_Against_Western_Energy_Suppliers.pdf",
+                    "description": "Symantec Security Response. (2014, July 7). Dragonfly: Cyberespionage Attacks Against Energy Suppliers. Retrieved April 8, 2016.",
+                    "source_name": "Symantec Dragonfly"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/updated-karagany-malware-targets-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Updated Karagany Malware Targets Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks Karagany July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a60d34fc-9c1e-4b36-a82b-56258445c7f0",
+            "description": "(Citation: Secureworks IRON LIBERTY July 2019)",
+            "target_ref": "tool--c4810609-7da6-48ec-8057-1b70a7814db0",
+            "modified": "2021-10-12T22:07:18.481Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T22:07:18.481Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Backdoor.Oldrea",
+            "x_mitre_aliases": [
+                "Backdoor.Oldrea",
+                "Havex"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T02:49:50.902Z",
+            "created": "2017-05-31T21:32:59.661Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--083bb47b-02c8-4423-81a2-f9ef58572974",
+            "description": "[Backdoor.Oldrea](https://attack.mitre.org/software/S0093) is a backdoor used by [Dragonfly](https://attack.mitre.org/groups/G0035). It appears to be custom malware authored by the group or specifically for it. (Citation: Symantec Dragonfly)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0093",
+                    "external_id": "S0093",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/Dragonfly_Threat_Against_Western_Energy_Suppliers.pdf",
+                    "description": "Symantec Security Response. (2014, July 7). Dragonfly: Cyberespionage Attacks Against Energy Suppliers. Retrieved April 8, 2016.",
+                    "source_name": "Symantec Dragonfly"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d4968f45-d06b-4843-8f72-6e08beb94cab",
+            "description": "(Citation: Symantec Dragonfly)",
+            "target_ref": "malware--083bb47b-02c8-4423-81a2-f9ef58572974",
+            "modified": "2019-03-22T20:11:04.791Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.070Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Dragonfly",
+                    "description": "Symantec Security Response. (2014, July 7). Dragonfly: Cyberespionage Attacks Against Energy Suppliers. Retrieved April 8, 2016.",
+                    "url": "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/Dragonfly_Threat_Against_Western_Energy_Suppliers.pdf"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "modified": "2021-05-20T14:25:59.596Z",
+            "name": "Mimikatz",
+            "x_mitre_aliases": [
+                "Mimikatz"
+            ],
+            "x_mitre_version": "1.4",
+            "created": "2017-05-31T21:32:11.544Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "description": "[Mimikatz](https://attack.mitre.org/software/S0002) is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks. (Citation: Deply Mimikatz) (Citation: Adsecurity Mimikatz Guide)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Vincent Le Toux"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0002",
+                    "external_id": "S0002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/gentilkiwi/mimikatz",
+                    "description": "Deply, B. (n.d.). Mimikatz. Retrieved September 29, 2015.",
+                    "source_name": "Deply Mimikatz"
+                },
+                {
+                    "source_name": "Adsecurity Mimikatz Guide",
+                    "description": "Metcalf, S. (2015, November 13). Unofficial Guide to Mimikatz & Command Reference. Retrieved December 23, 2015.",
+                    "url": "https://adsecurity.org/?page_id=1821"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--dfd6892f-82a4-4db4-a132-3d6f221e55f4",
+            "description": "(Citation: Secureworks IRON LIBERTY July 2019)",
+            "target_ref": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "modified": "2020-08-12T17:52:48.627Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-08-12T17:52:48.627Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PsExec",
+            "x_mitre_aliases": [
+                "PsExec"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-24T13:47:24.660Z",
+            "created": "2017-05-31T21:32:21.771Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "description": "[PsExec](https://attack.mitre.org/software/S0029) is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers. (Citation: Russinovich Sysinternals) (Citation: SANS PsExec)",
+            "x_mitre_contributors": [
+                "Janantha Marasinghe"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0029",
+                    "external_id": "S0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Russinovich Sysinternals",
+                    "description": "Russinovich, M. (2014, May 2). Windows Sysinternals PsExec v2.11. Retrieved May 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx"
+                },
+                {
+                    "source_name": "SANS PsExec",
+                    "description": "Pilkington, M.. (2012, December 17). Protecting Privileged Domain Accounts: PsExec Deep-Dive. Retrieved August 17, 2016.",
+                    "url": "https://digital-forensics.sans.org/blog/2012/12/17/protecting-privileged-domain-accounts-psexec-deep-dive"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e068332d-0b1c-4aba-a60f-37c640e20d10",
+            "description": "(Citation: Secureworks IRON LIBERTY July 2019)",
+            "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "modified": "2020-08-12T17:52:48.619Z",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-08-12T17:52:48.619Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/research/resurgent-iron-liberty-targeting-energy-sector",
+                    "description": "Secureworks. (2019, July 24). Resurgent Iron Liberty Targeting Energy Sector. Retrieved August 12, 2020.",
+                    "source_name": "Secureworks IRON LIBERTY July 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Phishing",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "2.2",
+            "modified": "2021-10-18T17:39:13.604Z",
+            "created": "2020-03-02T18:45:07.892Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "SaaS",
+                "Office 365",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--a62a8db3-f23a-4d8f-afd6-9dbc77e7813b",
+            "description": "Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering. Phishing can be targeted, known as spearphishing. In spearphishing, a specific individual, company, or industry will be targeted by the adversary. More generally, adversaries can conduct non-targeted phishing, such as in mass malware spam campaigns.\n\nAdversaries may send victims emails containing malicious attachments or links, typically to execute malicious code on victim systems. Phishing may also be conducted via third-party services, like social media platforms. Phishing may also involve social engineering techniques, such as posing as a trusted source.",
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect phishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nURL inspection within email (including expanding shortened links) can help detect links leading to known malicious sites. Detonation chambers can be used to detect these links and either automatically go to these sites to determine if they're potentially malicious, or wait and capture the content if a user visits the link.\n\nBecause most common third-party services used for phishing via service leverage TLS encryption, SSL/TLS inspection is generally required to detect the initial communication/delivery. With SSL/TLS inspection intrusion detection signatures or other security gateway appliances may be able to detect malware.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded on the user's computer. Many possible detections of follow-on behavior may take place once [User Execution](https://attack.mitre.org/techniques/T1204) occurs.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566",
+                    "external_id": "T1566",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/98.html",
+                    "external_id": "CAPEC-98",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-11T14:17:21.153Z",
+            "name": "Compromise Software Supply Chain",
+            "x_mitre_version": "1.0",
+            "created": "2020-03-11T14:17:21.153Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--bd369cd9-abb8-41ce-b5bb-fff23ee86c00",
+            "description": "Adversaries may manipulate application software prior to receipt by a final consumer for the purpose of data or system compromise. Supply chain compromise of software can take place in a number of ways, including manipulation of the application source code, manipulation of the update/distribution mechanism for that software, or replacing compiled releases with a modified version.\n\nTargeting may be specific to a desired victim set or may be distributed to a broad set of consumers but only move on to additional tactics on specific victims.(Citation: Avast CCleaner3 2018) (Citation: Command Five SK 2011)  ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_detection": "Use verification of distributed binaries through hash checking or other integrity checking mechanisms. Scan downloads for malicious signatures and attempt to test software and updates prior to deployment while taking note of potential suspicious activity. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1195/002",
+                    "external_id": "T1195.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Avast CCleaner3 2018",
+                    "description": "Avast Threat Intelligence Team. (2018, March 8). New investigations into the CCleaner incident point to a possible third stage that had keylogger capacities. Retrieved March 15, 2018.",
+                    "url": "https://blog.avast.com/new-investigations-in-ccleaner-incident-point-to-a-possible-third-stage-that-had-keylogger-capacities"
+                },
+                {
+                    "source_name": "Command Five SK 2011",
+                    "description": "Command Five Pty Ltd. (2011, September). SK Hack by an Advanced Persistent Threat. Retrieved April 6, 2018.",
+                    "url": "https://www.commandfive.com/papers/C5_APT_SKHack.pdf"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--220fa99d-7ed2-43c2-a4dd-f0dfcd557857",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--4f5ed6f0-39b9-4079-918d-ad9294735a22"
+        },
+        {
+            "created": "2021-03-13T20:09:21.298321Z",
+            "id": "identity--4f5ed6f0-39b9-4079-918d-ad9294735a22",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Aerospace sector as a target",
+            "sectors": [
+                "aerospace"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--405b03f4-7f24-4518-be66-f8a16842d87b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--87976429-629e-44ed-a962-18efceb604e0"
+        },
+        {
+            "created": "2021-03-13T20:09:21.303701Z",
+            "id": "identity--87976429-629e-44ed-a962-18efceb604e0",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Construction sector as a target",
+            "sectors": [
+                "construction"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--de466924-0986-4c8a-95d1-482f203140dc",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fd159624-4c3b-4a73-a509-fac2e5908aed",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7"
+        },
+        {
+            "created": "2021-03-13T20:09:21.305825Z",
+            "id": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Education sector as a target",
+            "sectors": [
+                "education"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--63f0ca70-8248-4605-9325-e1bb9bcd8c65",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c"
+        },
+        {
+            "created": "2021-03-13T20:09:21.323862Z",
+            "id": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Manufacturing sector as a target",
+            "sectors": [
+                "manufacturing"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d499217e-bc28-40e8-8ff3-4562c8286a6c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--dcf3b77d-e949-4afe-b620-613a230aafdf"
+        },
+        {
+            "created": "2021-03-13T20:09:21.302614Z",
+            "id": "identity--dcf3b77d-e949-4afe-b620-613a230aafdf",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Oil sector as a target",
+            "sectors": [
+                "Oil industries"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--79bc7c49-fd00-4291-adfe-4d524b33b1d3",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--983bf966-a56b-4f3c-8637-6c56b94b3b2f"
+        },
+        {
+            "created": "2021-03-13T20:09:21.327165Z",
+            "id": "identity--983bf966-a56b-4f3c-8637-6c56b94b3b2f",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Pharmaceuticals sector as a target",
+            "sectors": [
+                "pharmaceuticals"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1bb13dff-2d2c-483f-9004-7006cdeab404",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128"
+        },
+        {
+            "created": "2021-03-13T20:09:21.306875Z",
+            "id": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Energy sector as a target",
+            "sectors": [
+                "energy"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f77ccc55-8fc7-4c26-9206-47c8e57a6e2b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8a5b32d5-8ad0-43ba-9a3f-5003bcda910e",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--e6e4a646-6504-43af-b43f-03b6379d3027"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e6e4a646-6504-43af-b43f-03b6379d3027",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "France",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a456e7e5-b354-4db7-97ae-2434e3c28d34",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--abfabf93-bd62-40f2-805f-8a3ec687f777",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--04dfe533-d201-4ee8-bcad-e247c722024f"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--04dfe533-d201-4ee8-bcad-e247c722024f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Italy",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--daf7fbfc-46d5-4197-bd99-2504642dc8a1",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--1459143e-a354-47bc-9754-1b50f37d319a"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--1459143e-a354-47bc-9754-1b50f37d319a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Norway",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f4a1992c-ef73-4057-ae77-03f5f74eccf2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--f98281ee-b38c-4715-bb1c-bd39a1f2fef5"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f98281ee-b38c-4715-bb1c-bd39a1f2fef5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Poland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3b4b5393-536d-4dd9-9c6f-a2d39e81e988",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--58d5f9a3-b2d6-4f7c-aa3b-59fafd964d17",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2f64446f-6f1c-46c5-abd5-e19ae13b4211",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Turkey",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--04ca2015-293c-4b06-9968-b52aa16b9b83",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--84e4ca4a-972b-48c9-9d0a-4bd68c14aa67",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9a50c44f-6d90-4fe7-8ab5-522f2feef580",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--ee993c53-ddff-4d64-b3d0-fe0b0f5965e5"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--ee993c53-ddff-4d64-b3d0-fe0b0f5965e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Ukraine",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f77ccc55-8fc7-4c26-9206-47c8e57a6e2b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8a5b32d5-8ad0-43ba-9a3f-5003bcda910e",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--e6e4a646-6504-43af-b43f-03b6379d3027"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a456e7e5-b354-4db7-97ae-2434e3c28d34",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bb40714c-e65f-41a6-8973-9a5b106f8015",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--e0c43948-e024-4f8f-add7-7574138c72b9"
+        },
+        {
+            "created": "2021-03-13T20:09:20.900702Z",
+            "id": "location--c5def2eb-40eb-4a08-895c-f2cc904bf96c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Romania",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--145c2397-9694-405a-b5a5-5b77775bae81",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--c5def2eb-40eb-4a08-895c-f2cc904bf96c"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--9b4c3851-e3f9-485a-88bb-2d2973b6cfec",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Serbia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c6474e12-4769-4688-b82f-029be8938987",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--9b4c3851-e3f9-485a-88bb-2d2973b6cfec"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7eac9bc3-6f7e-4c83-959c-fe7f3342389c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Spain",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--59cdedcf-4fb7-411c-bf62-52e4daab5adf",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "location--7eac9bc3-6f7e-4c83-959c-fe7f3342389c"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e0c43948-e024-4f8f-add7-7574138c72b9",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Greece",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

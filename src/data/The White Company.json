@@ -1,0 +1,721 @@
+{
+    "type": "bundle",
+    "id": "bundle--20ba5864-d9ee-4395-8076-dab48a2ca7e6",
+    "spec_version": "2.0",
+    "objects": [
+        {    "primary_motivation": "organizational-gain",
+            "first_seen":"2017",
+            "x_MISP-uuid": "",
+            "x_MISP-description": "",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "The White Company",
+            "description": "[The White Company](https://attack.mitre.org/groups/G0089) is a likely state-sponsored threat actor with advanced capabilities. From 2017 through 2018, the group led an espionage campaign called Operation Shaheen targeting government and military organizations in Pakistan.(Citation: Cylance Shaheen Nov 2018)",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "The White Company"
+            ],
+            "created": "2019-05-02T00:08:18.314Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0089",
+                    "external_id": "G0089",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2a8c6029-7714-437a-87a2-bc91067575e6",
+            "description": "[The White Company](https://attack.mitre.org/groups/G0089) has checked for specific antivirus products on the target\u2019s computer, including Kaspersky, Quick Heal, AVG, BitDefender, Avira, Sophos, Avast!, and ESET.(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+            "modified": "2019-06-12T19:55:21.940Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.461Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8abfac45-26c2-493f-a4f3-3fb4d196712f",
+            "description": "(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "malware--2a70812b-f1ef-44db-8578-a496a227aef2",
+            "modified": "2019-06-12T19:55:22.059Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.532Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9d42a47f-ccdc-42f0-9551-11bf5e2a9616",
+            "description": "[The White Company](https://attack.mitre.org/groups/G0089) has the ability to delete its malware entirely from the target system.(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c",
+            "modified": "2019-06-12T19:55:21.929Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.466Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--852e45c7-0d49-43ff-b15c-dd4f6d51703f",
+            "description": "(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "malware--bdb27a1d-1844-42f1-a0c0-826027ae0326",
+            "modified": "2019-06-12T19:55:22.060Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T01:08:31.018Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2155f707-de4f-4ef1-9982-1af90392af5f",
+            "description": "[The White Company](https://attack.mitre.org/groups/G0089) has obfuscated their payloads through packing.(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "attack-pattern--deb98323-e13f-4b0c-8d94-175379069062",
+            "modified": "2019-06-12T19:55:22.014Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.505Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--49315e80-2d47-432f-8e5f-3a694a91bb45",
+            "description": " [The White Company](https://attack.mitre.org/groups/G0089) has taken advantage of a known vulnerability in Microsoft Word (CVE 2012-0158) to execute code.(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "modified": "2019-06-12T19:55:21.997Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.507Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e3d8a792-5c54-4e37-9ce1-6a8555e76a03",
+            "description": "[The White Company](https://attack.mitre.org/groups/G0089) has sent phishing emails with malicious Microsoft Word attachments to victims.(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2019-06-12T19:55:22.044Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.529Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--eba54c2a-854f-4349-9248-314519ed9c43",
+            "description": "[The White Company](https://attack.mitre.org/groups/G0089) has used phishing lure documents that trick users into opening them and infecting their computers.(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2020-03-17T15:02:14.635Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.510Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f368f221-bcd5-400d-b350-83173de26423",
+            "description": "[The White Company](https://attack.mitre.org/groups/G0089) has checked the current date on the victim system.(Citation: Cylance Shaheen Nov 2018)",
+            "target_ref": "attack-pattern--f3c544dc-673c-4ef3-accb-53229f1ae077",
+            "modified": "2019-06-12T19:55:21.895Z",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-05-02T00:08:18.438Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Exploitation for Client Execution",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1203",
+                    "external_id": "T1203",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T19:01:34.932Z",
+            "x_mitre_system_requirements": [
+                "Remote exploitation for execution requires a remotely accessible service reachable over the network or other vector of access such as spearphishing or drive-by compromise."
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "description": "Adversaries may exploit software vulnerabilities in client applications to execute code. Vulnerabilities can exist in software due to unsecure coding practices that can lead to unanticipated behavior. Adversaries can take advantage of certain vulnerabilities through targeted exploitation for the purpose of arbitrary code execution. Oftentimes the most valuable exploits to an offensive toolkit are those that can be used to obtain code execution on a remote system because they can be used to gain access to that system. Users will expect to see files related to the applications they commonly used to do work, so they are a useful target for exploit research and development because of their high utility.\n\nSeveral types exist:\n\n### Browser-based Exploitation\n\nWeb browsers are a common target through [Drive-by Compromise](https://attack.mitre.org/techniques/T1189) and [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002). Endpoint systems may be compromised through normal web browsing or from certain users being targeted by links in spearphishing emails to adversary controlled sites used to exploit the web browser. These often do not require an action by the user for the exploit to be executed.\n\n### Office Applications\n\nCommon office and productivity applications such as Microsoft Office are also targeted through [Phishing](https://attack.mitre.org/techniques/T1566). Malicious files will be transmitted directly as attachments or through links to download them. These require the user to open the document or file for the exploit to run.\n\n### Common Third-party Applications\n\nOther applications that are commonly seen or are part of the software deployed in a target network may also be used for exploitation. Applications such as Adobe Reader and Flash, which are common in enterprise environments, have been routinely targeted by adversaries attempting to gain access to systems. Depending on the software and nature of the vulnerability, some may be exploited in the browser or require the user to open a file. For instance, some Flash exploits have been delivered as objects within Microsoft Office documents.",
+            "x_mitre_remote_support": false,
+            "x_mitre_detection": "Detecting software exploitation may be difficult depending on the tools available. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of the browser or Office processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created": "2018-04-18T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Software Packing",
+            "x_mitre_data_sources": [
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-15T13:56:47.154Z",
+            "created": "2020-02-05T14:17:46.686Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Anti-virus",
+                "Heuristic detection",
+                "Signature-based detection"
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--deb98323-e13f-4b0c-8d94-175379069062",
+            "description": "Adversaries may perform software packing or virtual machine software protection to conceal their code. Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory. Virtual machine software protection translates an executable's original code into a special format that only a special virtual machine can run. A virtual machine is then called to run this code.(Citation: ESET FinFisher Jan 2018) \n\nUtilities used to perform software packing are called packers. Example packers are MPRESS and UPX. A more comprehensive list of known packers is available, (Citation: Wikipedia Exe Compression) but adversaries may create their own packing techniques that do not leave the same artifacts as well-known packers to evade defenses.  ",
+            "x_mitre_contributors": [
+                "Filip Kafka, ESET"
+            ],
+            "x_mitre_detection": "Use file scanning to look for known software packers or artifacts of packing techniques. Packing is not a definitive indicator of malicious activity, because legitimate software may use packing techniques to reduce binary size or to protect proprietary code.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027/002",
+                    "external_id": "T1027.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/570.html",
+                    "external_id": "CAPEC-570",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2018/01/WP-FinFisher.pdf",
+                    "description": "Kafka, F. (2018, January). ESET's Guide to Deobfuscating and Devirtualizing FinFisher. Retrieved August 12, 2019.",
+                    "source_name": "ESET FinFisher Jan 2018"
+                },
+                {
+                    "source_name": "Wikipedia Exe Compression",
+                    "description": "Executable compression. (n.d.). Retrieved December 4, 2014.",
+                    "url": "http://en.wikipedia.org/wiki/Executable_compression"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Security Software Discovery",
+            "x_mitre_data_sources": [
+                "Firewall: Firewall Metadata",
+                "Firewall: Firewall Enumeration",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-03-29T16:05:00.198Z",
+            "created": "2020-02-21T21:16:18.066Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+            "description": "Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on a system or in a cloud environment. This may include things such as firewall rules and anti-virus. Adversaries may use the information from [Security Software Discovery](https://attack.mitre.org/techniques/T1518/001) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nExample commands that can be used to obtain security software information are [netsh](https://attack.mitre.org/software/S0108), <code>reg query</code> with [Reg](https://attack.mitre.org/software/S0075), <code>dir</code> with [cmd](https://attack.mitre.org/software/S0106), and [Tasklist](https://attack.mitre.org/software/S0057), but other indicators of discovery behavior may be more specific to the type of software or security system the adversary is looking for. It is becoming more common to see macOS malware perform checks for LittleSnitch and KnockKnock software.\n\nAdversaries may also utilize cloud APIs to discover the configurations of firewall rules within an environment.(Citation: Expel IO Evil in AWS)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as lateral movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nIn cloud environments, additionally monitor logs for the usage of APIs that may be used to gather information about security software configurations within the environment.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1518/001",
+                    "external_id": "T1518.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/581.html",
+                    "external_id": "CAPEC-581",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://expel.io/blog/finding-evil-in-aws/",
+                    "description": "A. Randazzo, B. Manahan and S. Lipton. (2020, April 28). Finding Evil in AWS. Retrieved June 25, 2020.",
+                    "source_name": "Expel IO Evil in AWS"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "System Time Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-04-22T23:09:24.799Z",
+            "created": "2017-05-31T21:31:37.450Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--f3c544dc-673c-4ef3-accb-53229f1ae077",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "An adversary may gather the system time and/or time zone from a local or remote system. The system time is set and stored by the Windows Time Service within a domain to maintain time synchronization between systems and services in an enterprise network. (Citation: MSDN System Time) (Citation: Technet Windows Time Service)\n\nSystem time information may be gathered in a number of ways, such as with [Net](https://attack.mitre.org/software/S0039) on Windows by performing <code>net time \\\\hostname</code> to gather the system time on a remote system. The victim's time zone may also be inferred from the current system time or gathered by using <code>w32tm /tz</code>. (Citation: Technet Windows Time Service)\n\nThis information could be useful for performing other techniques, such as executing a file with a [Scheduled Task/Job](https://attack.mitre.org/techniques/T1053) (Citation: RSA EU12 They're Inside), or to discover locality information based on time zone to assist in victim targeting (i.e. [System Location Discovery](https://attack.mitre.org/techniques/T1614)). Adversaries may also use knowledge of system time as part of a time bomb, or delaying execution until a specified date/time.(Citation: AnyRun TimeBomb)",
+            "x_mitre_contributors": [
+                "FIRST.ORG's Cyber Threat Intelligence SIG"
+            ],
+            "x_mitre_detection": "Command-line interface monitoring may be useful to detect instances of net.exe or other command-line utilities being used to gather system time or time zone. Methods of detecting API use for gathering this information are likely less useful due to how often they may be used by legitimate software.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1124",
+                    "external_id": "T1124",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/295.html",
+                    "external_id": "CAPEC-295",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "MSDN System Time",
+                    "description": "Microsoft. (n.d.). System Time. Retrieved November 25, 2016.",
+                    "url": "https://msdn.microsoft.com/ms724961.aspx"
+                },
+                {
+                    "source_name": "Technet Windows Time Service",
+                    "description": "Mathers, B. (2016, September 30). Windows Time Service Tools and Settings. Retrieved November 25, 2016.",
+                    "url": "https://technet.microsoft.com/windows-server-docs/identity/ad-ds/get-started/windows-time-service/windows-time-service-tools-and-settings"
+                },
+                {
+                    "source_name": "RSA EU12 They're Inside",
+                    "description": "Rivner, U., Schwartz, E. (2012). They\u2019re Inside\u2026 Now What?. Retrieved November 25, 2016.",
+                    "url": "https://www.rsaconference.com/writable/presentations/file_upload/ht-209_rivner_schwartz.pdf"
+                },
+                {
+                    "url": "https://any.run/cybersecurity-blog/time-bombs-malware-with-delayed-execution/",
+                    "description": "Malicious History. (2020, September 17). Time Bombs: Malware With Delayed Execution. Retrieved April 22, 2021.",
+                    "source_name": "AnyRun TimeBomb"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "NETWIRE",
+            "x_mitre_aliases": [
+                "NETWIRE"
+            ],
+            "x_mitre_version": "1.4",
+            "modified": "2021-10-12T11:21:09.567Z",
+            "created": "2018-04-18T17:59:24.739Z",
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "id": "malware--2a70812b-f1ef-44db-8578-a496a227aef2",
+            "description": "[NETWIRE](https://attack.mitre.org/software/S0198) is a publicly available, multiplatform remote administration tool (RAT) that has been used by criminal and APT groups since at least 2012.(Citation: FireEye APT33 Sept 2017)(Citation: McAfee Netwire Mar 2015)(Citation: FireEye APT33 Webinar Sept 2017)",
+            "x_mitre_contributors": [
+                "Tony Lambert, Red Canary"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0198",
+                    "external_id": "S0198",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye APT33 Sept 2017) (Citation: FireEye APT33 Webinar Sept 2017) (Citation: McAfee Netwire Mar 2015)",
+                    "source_name": "NETWIRE"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html",
+                    "description": "O'Leary, J., et al. (2017, September 20). Insights into Iranian Cyber Espionage: APT33 Targets Aerospace and Energy Sectors and has Ties to Destructive Malware. Retrieved February 15, 2018.",
+                    "source_name": "FireEye APT33 Sept 2017"
+                },
+                {
+                    "url": "https://securingtomorrow.mcafee.com/mcafee-labs/netwire-rat-behind-recent-targeted-attacks/",
+                    "description": "McAfee. (2015, March 2). Netwire RAT Behind Recent Targeted Attacks. Retrieved February 15, 2018.",
+                    "source_name": "McAfee Netwire Mar 2015"
+                },
+                {
+                    "url": "https://www.brighttalk.com/webcast/10703/275683",
+                    "description": "Davis, S. and Carr, N. (2017, September 21). APT33: New Insights into Iranian Cyber Espionage Group. Retrieved February 15, 2018.",
+                    "source_name": "FireEye APT33 Webinar Sept 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Revenge RAT",
+            "x_mitre_aliases": [
+                "Revenge RAT"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T18:05:10.885Z",
+            "created": "2019-05-02T01:07:36.780Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--bdb27a1d-1844-42f1-a0c0-826027ae0326",
+            "description": "[Revenge RAT](https://attack.mitre.org/software/S0379) is a freely available remote access tool written in .NET (C#).(Citation: Cylance Shaheen Nov 2018)(Citation: Cofense RevengeRAT Feb 2019)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0379",
+                    "external_id": "S0379",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Cylance Shaheen Nov 2018",
+                    "description": "Livelli, K, et al. (2018, November 12). Operation Shaheen. Retrieved May 1, 2019.",
+                    "url": "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf?_ga=2.161661948.1943296560.1555683782-1066572390.1555511517"
+                },
+                {
+                    "url": "https://cofense.com/upgrades-delivery-support-infrastructure-revenge-rat-malware-bigger-threat/",
+                    "description": "Gannon, M. (2019, February 11). With Upgrades in Delivery and Support Infrastructure, Revenge RAT Malware is a Bigger Threat. Retrieved May 1, 2019.",
+                    "source_name": "Cofense RevengeRAT Feb 2019"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e20d6d7c-1596-4b25-bfc9-4b94a3d12332",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--69d19e39-e478-4f8d-ae99-1b7f523c1940",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "target_ref": "identity--fc80c642-b075-4c9d-aaa0-7d1b8541c2d1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--34126279-bbf6-43cb-bcf3-33fc72a279e6",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.302614Z",
+            "id": "identity--fc80c642-b075-4c9d-aaa0-7d1b8541c2d1",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Military sector as a target",
+            "sectors": [
+                "Military industries"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ba289b9b-fe24-4139-a2d8-086b18854d62",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--6688d679-ccdb-4f12-abf6-c7545dd767a4",
+            "target_ref": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Pakistan",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

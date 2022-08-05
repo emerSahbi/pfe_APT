@@ -1,0 +1,1354 @@
+{
+    "type": "bundle",
+    "id": "bundle--cf03e08f-8fe6-4df3-b049-371a096e26d6",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2018",
+            "x_MISP-description": "Last Friday, Deputy Attorney General Rod Rosenstein announced the indictment of nine Iranians who worked for an organization named the Mabna Institute. According to prosecutors, the defendants stole more than 31 terabytes of data from universities, companies, and government agencies around the world. The cost to the universities alone reportedly amounted to approximately $3.4 billion. The information stolen from these universities was used by the Islamic Revolutionary Guard Corps (IRGC) or sold for profit inside Iran. PhishLabs has been tracking this same threat group since late-2017, designating them Silent Librarian. Since discovery, we have been working with the FBI, ISAC partners, and other international law enforcement agencies to help understand and mitigate these attacks.",
+            "x_MISP-uuid": "5059b44d-2753-4977-b987-4922f09afe6b",
+            "type": "intrusion-set",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "name": "Silent Librarian",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) is a group that has targeted research and proprietary data at universities, government agencies, and private sector companies worldwide since at least 2013. Members of  [Silent Librarian](https://attack.mitre.org/groups/G0122) are known to have been affiliated with the Iran-based Mabna Institute which has conducted cyber intrusions at the behest of the government of Iran, specifically the Islamic Revolutionary Guard Corps (IRGC).(Citation: DOJ Iran Indictments March 2018)(Citation: Phish Labs Silent Librarian)(Citation: Malwarebytes Silent Librarian October 2020)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2021-02-03T16:36:38.145Z",
+            "aliases": [
+                "Silent Librarian",
+                "TA407",
+                "COBALT DICKENS",
+                "COBALT DICKENS",
+                "Mabna Institute",
+                "Yellow Nabu",
+                "TA4900"
+            ],
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0122",
+                    "external_id": "G0122",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Proofpoint TA407 September 2019)(Citation: Malwarebytes Silent Librarian October 2020)",
+                    "source_name": "TA407"
+                },
+                {
+                    "description": "(Citation: Secureworks COBALT DICKENS August 2018)(Citation: Secureworks COBALT DICKENS September 2019)(Citation: Proofpoint TA407 September 2019)(Citation: Malwarebytes Silent Librarian October 2020)",
+                    "source_name": "COBALT DICKENS"
+                },
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                },
+                {
+                    "url": "https://info.phishlabs.com/blog/silent-librarian-more-to-the-story-of-the-iranian-mabna-institute-indictment",
+                    "description": "Hassold, Crane. (2018, March 26). Silent Librarian: More to the Story of the Iranian Mabna Institute Indictment. Retrieved February 3, 2021.",
+                    "source_name": "Phish Labs Silent Librarian"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/",
+                    "description": "Malwarebytes Threat Intelligence Team. (2020, October 14). Silent Librarian APT right on schedule for 20/21 academic year. Retrieved February 3, 2021.",
+                    "source_name": "Malwarebytes Silent Librarian October 2020"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+                    "description": "Proofpoint Threat Insight Team. (2019, September 5). Threat Actor Profile: TA407, the Silent Librarian. Retrieved February 3, 2021.",
+                    "source_name": "Proofpoint TA407 September 2019"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/back-to-school-cobalt-dickens-targets-universities",
+                    "description": "Counter Threat Unit Research Team. (2018, August 24). Back to School: COBALT DICKENS Targets Universities. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS August 2018"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+                    "description": "Counter Threat Unit Research Team. (2019, September 11). COBALT DICKENS Goes Back to School\u2026Again. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS September 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1a2119a2-6a39-4062-b90c-bffd15b259ec",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has obtained free Let's Encrypt SSL certificates for use on their phishing pages.(Citation: Phish Labs Silent Librarian)(Citation: Secureworks COBALT DICKENS September 2019)",
+            "target_ref": "attack-pattern--19401639-28d0-4c3c-adcc-bc2ba22f6421",
+            "modified": "2021-02-04T14:43:12.963Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-04T14:12:26.131Z",
+            "external_references": [
+                {
+                    "url": "https://info.phishlabs.com/blog/silent-librarian-more-to-the-story-of-the-iranian-mabna-institute-indictment",
+                    "description": "Hassold, Crane. (2018, March 26). Silent Librarian: More to the Story of the Iranian Mabna Institute Indictment. Retrieved February 3, 2021.",
+                    "source_name": "Phish Labs Silent Librarian"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+                    "description": "Counter Threat Unit Research Team. (2019, September 11). COBALT DICKENS Goes Back to School\u2026Again. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS September 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--67f029d5-c44b-446b-9efe-0e0e0d85192a",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has set up auto forwarding rules on compromised e-mail accounts.(Citation: DOJ Iran Indictments March 2018)",
+            "target_ref": "attack-pattern--7d77a07d-02fe-4e88-8bd9-e9c008c01bf0",
+            "modified": "2021-02-03T18:34:46.363Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:34:46.363Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--93edbfc7-c1be-4c2c-aa2c-9b15f53f6528",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has used collected lists of names and e-mail accounts to use in password spraying attacks against private sector targets.(Citation: DOJ Iran Indictments March 2018)",
+            "target_ref": "attack-pattern--692074ae-bb62-4a5e-a735-02cb6bde458c",
+            "modified": "2021-02-03T18:26:21.959Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:19:48.693Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--406fbbc1-408a-4f59-8f0c-0f670eb60879",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has exfiltrated entire mailboxes from compromised accounts.(Citation: DOJ Iran Indictments March 2018)",
+            "target_ref": "attack-pattern--1608f3e1-598a-42f4-a01a-2e252e81728f",
+            "modified": "2021-04-21T11:55:51.109Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:34:46.539Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9038cd4b-182b-469f-ac45-83dedf5110c9",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has cloned victim organization login pages and staged them for later use in credential harvesting campaigns. [Silent Librarian](https://attack.mitre.org/groups/G0122) has also made use of a variety of URL shorteners for these staged websites.(Citation: Secureworks COBALT DICKENS September 2019)(Citation: Malwarebytes Silent Librarian October 2020)(Citation: Proofpoint TA407 September 2019)",
+            "target_ref": "attack-pattern--84ae8255-b4f4-4237-b5c5-e717405a9701",
+            "modified": "2021-04-20T03:14:15.249Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-04-20T03:06:40.236Z",
+            "external_references": [
+                {
+                    "url": "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+                    "description": "Counter Threat Unit Research Team. (2019, September 11). COBALT DICKENS Goes Back to School\u2026Again. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS September 2019"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/",
+                    "description": "Malwarebytes Threat Intelligence Team. (2020, October 14). Silent Librarian APT right on schedule for 20/21 academic year. Retrieved February 3, 2021.",
+                    "source_name": "Malwarebytes Silent Librarian October 2020"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+                    "description": "Proofpoint Threat Insight Team. (2019, September 5). Threat Actor Profile: TA407, the Silent Librarian. Retrieved February 3, 2021.",
+                    "source_name": "Proofpoint TA407 September 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--33201f98-6367-4f36-a581-98fd4d1203fa",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has searched victim's websites to identify the interests and academic areas of targeted individuals and to scrape source code, branding, and organizational contact information for phishing pages.(Citation: DOJ Iran Indictments March 2018)(Citation: Phish Labs Silent Librarian)(Citation: Proofpoint TA407 September 2019)",
+            "target_ref": "attack-pattern--16cdd21f-da65-4e4f-bc04-dd7d198c7b26",
+            "modified": "2021-02-04T14:43:12.883Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T16:59:34.743Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                },
+                {
+                    "url": "https://info.phishlabs.com/blog/silent-librarian-more-to-the-story-of-the-iranian-mabna-institute-indictment",
+                    "description": "Hassold, Crane. (2018, March 26). Silent Librarian: More to the Story of the Iranian Mabna Institute Indictment. Retrieved February 3, 2021.",
+                    "source_name": "Phish Labs Silent Librarian"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+                    "description": "Proofpoint Threat Insight Team. (2019, September 5). Threat Actor Profile: TA407, the Silent Librarian. Retrieved February 3, 2021.",
+                    "source_name": "Proofpoint TA407 September 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--44866cfd-7d8f-45f6-906b-5b4992aa69e0",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has used links in e-mails to direct victims to credential harvesting websites designed to appear like the targeted organization's login page.(Citation: DOJ Iran Indictments March 2018)(Citation: Phish Labs Silent Librarian)(Citation: Secureworks COBALT DICKENS August 2018)(Citation: Proofpoint TA407 September 2019)(Citation: Secureworks COBALT DICKENS September 2019)(Citation: Malwarebytes Silent Librarian October 2020)",
+            "target_ref": "attack-pattern--2d3f5b3c-54ca-4f4d-bb1f-849346d31230",
+            "modified": "2021-02-04T14:49:40.477Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T16:59:34.737Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                },
+                {
+                    "url": "https://info.phishlabs.com/blog/silent-librarian-more-to-the-story-of-the-iranian-mabna-institute-indictment",
+                    "description": "Hassold, Crane. (2018, March 26). Silent Librarian: More to the Story of the Iranian Mabna Institute Indictment. Retrieved February 3, 2021.",
+                    "source_name": "Phish Labs Silent Librarian"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/back-to-school-cobalt-dickens-targets-universities",
+                    "description": "Counter Threat Unit Research Team. (2018, August 24). Back to School: COBALT DICKENS Targets Universities. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS August 2018"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+                    "description": "Proofpoint Threat Insight Team. (2019, September 5). Threat Actor Profile: TA407, the Silent Librarian. Retrieved February 3, 2021.",
+                    "source_name": "Proofpoint TA407 September 2019"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+                    "description": "Counter Threat Unit Research Team. (2019, September 11). COBALT DICKENS Goes Back to School\u2026Again. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS September 2019"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/",
+                    "description": "Malwarebytes Threat Intelligence Team. (2020, October 14). Silent Librarian APT right on schedule for 20/21 academic year. Retrieved February 3, 2021.",
+                    "source_name": "Malwarebytes Silent Librarian October 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--87661f05-f448-49be-afa8-d8198a1c0092",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has collected e-mail addresses from targeted organizations from open Internet searches.(Citation: DOJ Iran Indictments March 2018)",
+            "target_ref": "attack-pattern--69f897fd-12a9-4c89-ad6a-46d2f3c38262",
+            "modified": "2021-04-21T02:25:51.085Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:26:21.905Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--53608455-3b90-45b1-9006-da343efa52d4",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has collected lists of names for individuals from targeted organizations.(Citation: DOJ Iran Indictments March 2018)",
+            "target_ref": "attack-pattern--76551c52-b111-4884-bc47-ff3e728f0156",
+            "modified": "2021-02-03T18:26:21.896Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:26:21.896Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--83219112-6e5b-43ea-a7a7-78213f28397f",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has established e-mail accounts to receive e-mails forwarded from compromised accounts.(Citation: DOJ Iran Indictments March 2018)",
+            "target_ref": "attack-pattern--65013dd2-bc61-43e3-afb5-a14c4fa7437a",
+            "modified": "2021-02-03T18:40:49.321Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:40:49.321Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b85fdb75-ec29-4bc9-921d-b11ebd8528dc",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has acquired domains to establish credential harvesting pages, often spoofing the target organization and using free top level domains .TK, .ML, .GA, .CF, and .GQ.(Citation: DOJ Iran Indictments March 2018)(Citation: Phish Labs Silent Librarian)(Citation: Secureworks COBALT DICKENS August 2018)(Citation: Proofpoint TA407 September 2019)(Citation: Secureworks COBALT DICKENS September 2019)(Citation: Malwarebytes Silent Librarian October 2020)",
+            "target_ref": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+            "modified": "2021-04-21T02:25:51.044Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:13:28.308Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                },
+                {
+                    "url": "https://info.phishlabs.com/blog/silent-librarian-more-to-the-story-of-the-iranian-mabna-institute-indictment",
+                    "description": "Hassold, Crane. (2018, March 26). Silent Librarian: More to the Story of the Iranian Mabna Institute Indictment. Retrieved February 3, 2021.",
+                    "source_name": "Phish Labs Silent Librarian"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/back-to-school-cobalt-dickens-targets-universities",
+                    "description": "Counter Threat Unit Research Team. (2018, August 24). Back to School: COBALT DICKENS Targets Universities. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS August 2018"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+                    "description": "Proofpoint Threat Insight Team. (2019, September 5). Threat Actor Profile: TA407, the Silent Librarian. Retrieved February 3, 2021.",
+                    "source_name": "Proofpoint TA407 September 2019"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+                    "description": "Counter Threat Unit Research Team. (2019, September 11). COBALT DICKENS Goes Back to School\u2026Again. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS September 2019"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/",
+                    "description": "Malwarebytes Threat Intelligence Team. (2020, October 14). Silent Librarian APT right on schedule for 20/21 academic year. Retrieved February 3, 2021.",
+                    "source_name": "Malwarebytes Silent Librarian October 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d970ba14-4c96-4f98-a1e1-4417f52b76f3",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has obtained free and publicly available tools including SingleFile and HTTrack to copy login pages of targeted organizations.(Citation: Proofpoint TA407 September 2019)(Citation: Secureworks COBALT DICKENS September 2019)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-04-21T02:25:51.099Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-04T14:30:37.973Z",
+            "external_references": [
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+                    "description": "Proofpoint Threat Insight Team. (2019, September 5). Threat Actor Profile: TA407, the Silent Librarian. Retrieved February 3, 2021.",
+                    "source_name": "Proofpoint TA407 September 2019"
+                },
+                {
+                    "url": "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+                    "description": "Counter Threat Unit Research Team. (2019, September 11). COBALT DICKENS Goes Back to School\u2026Again. Retrieved February 3, 2021.",
+                    "source_name": "Secureworks COBALT DICKENS September 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e85549b5-77c8-426a-b7ea-fec30b05973f",
+            "description": "[Silent Librarian](https://attack.mitre.org/groups/G0122) has used compromised credentials to obtain unauthorized access to online accounts.(Citation: DOJ Iran Indictments March 2018)",
+            "target_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "modified": "2021-04-21T11:59:13.573Z",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-03T18:13:28.321Z",
+            "external_references": [
+                {
+                    "url": "https://www.justice.gov/usao-sdny/press-release/file/1045781/download",
+                    "description": "DOJ. (2018, March 23). U.S. v. Rafatnejad et al . Retrieved February 3, 2021.",
+                    "source_name": "DOJ Iran Indictments March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Domains",
+            "x_mitre_data_sources": [
+                "Domain Name: Active DNS",
+                "Domain Name: Passive DNS",
+                "Domain Name: Domain Registration"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-16T17:09:26.334Z",
+            "created": "2020-09-30T17:09:31.878Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+            "description": "Adversaries may purchase domains that can be used during targeting. Domain names are the human readable names used to represent one or more IP addresses. They can be purchased or, in some cases, acquired for free.\n\nAdversaries can use purchased domains for a variety of purposes, including for [Phishing](https://attack.mitre.org/techniques/T1566), [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), and Command and Control.(Citation: CISA MSS Sep 2020) Adversaries may choose domains that are similar to legitimate domains, including through use of homoglyphs or use of a different top-level domain (TLD).(Citation: FireEye APT28)(Citation: PaypalScam) Typosquatting may be used to aid in delivery of payloads via [Drive-by Compromise](https://attack.mitre.org/techniques/T1189). Adversaries can also use internationalized domain names (IDNs) to create visually similar lookalike domains for use in operations.(Citation: CISA IDN ST05-016)\n\nDomain registrars each maintain a publicly viewable database that displays contact information for every registered domain. Private WHOIS services display alternative information, such as their own company data, rather than the owner of the domain. Adversaries may use such private WHOIS services to obscure information about who owns a purchased domain. Adversaries may further interrupt efforts to track their infrastructure by using varied registration information and purchasing domains with different domain registrars.(Citation: Mandiant APT1)",
+            "x_mitre_contributors": [
+                "Wes Hurd",
+                "Vinayak Wadhwa, Lucideus",
+                "Deloitte Threat Library Team"
+            ],
+            "x_mitre_detection": "Domain registration information is, by design, captured in public registration logs. Consider use of services that may aid in tracking of newly acquired domains, such as WHOIS databases and/or passive DNS. In some cases it may be possible to pivot on known pieces of domain registration information to uncover other infrastructure purchased by the adversary. Consider monitoring for domains created with a similar structure to your own, including under a different TLD. Though various tools and services exist to track, query, and monitor domain name registration information, tracking across multiple DNS infrastructures can require multiple tools/services or more advanced analytics.(Citation: ThreatConnect Infrastructure Dec 2020)\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access and Command and Control.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1583/001",
+                    "external_id": "T1583.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/630.html",
+                    "external_id": "CAPEC-630",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-258a",
+                    "description": "CISA. (2020, September 14). Alert (AA20-258A): Chinese Ministry of State Security-Affiliated Cyber Threat Actor Activity. Retrieved October 1, 2020.",
+                    "source_name": "CISA MSS Sep 2020"
+                },
+                {
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf",
+                    "description": "FireEye. (2015). APT28: A WINDOW INTO RUSSIA\u2019S CYBER ESPIONAGE OPERATIONS?. Retrieved August 19, 2015.",
+                    "source_name": "FireEye APT28"
+                },
+                {
+                    "url": "https://www.zdnet.com/article/paypal-alert-beware-the-paypai-scam-5000109103/",
+                    "description": "Bob Sullivan. (2000, July 24). PayPal alert! Beware the 'PaypaI' scam. Retrieved March 2, 2017.",
+                    "source_name": "PaypalScam"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/tips/ST05-016",
+                    "description": "CISA. (2019, September 27). Security Tip (ST05-016): Understanding Internationalized Domain Names. Retrieved October 20, 2020.",
+                    "source_name": "CISA IDN ST05-016"
+                },
+                {
+                    "source_name": "Mandiant APT1",
+                    "description": "Mandiant. (n.d.). APT1 Exposing One of China\u2019s Cyber Espionage Units. Retrieved July 18, 2016.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+                },
+                {
+                    "url": "https://threatconnect.com/blog/infrastructure-research-hunting/",
+                    "description": "ThreatConnect. (2020, December 15). Infrastructure Research and Hunting: Boiling the Domain Ocean. Retrieved October 12, 2021.",
+                    "source_name": "ThreatConnect Infrastructure Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Password Spraying",
+            "x_mitre_data_sources": [
+                "User Account: User Account Authentication",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-04-06T12:32:47.678Z",
+            "created": "2020-02-11T18:39:25.122Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "id": "attack-pattern--692074ae-bb62-4a5e-a735-02cb6bde458c",
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may use a single or small list of commonly used passwords against many different accounts to attempt to acquire valid account credentials. Password spraying uses one password (e.g. 'Password01'), or a small list of commonly used passwords, that may match the complexity policy of the domain. Logins are attempted with that password against many different accounts on a network to avoid account lockouts that would normally occur when brute forcing a single account with many passwords. (Citation: BlackHillsInfosec Password Spraying)\n\nTypically, management services over commonly used ports are used when password spraying. Commonly targeted services include the following:\n\n* SSH (22/TCP)\n* Telnet (23/TCP)\n* FTP (21/TCP)\n* NetBIOS / SMB / Samba (139/TCP & 445/TCP)\n* LDAP (389/TCP)\n* Kerberos (88/TCP)\n* RDP / Terminal Services (3389/TCP)\n* HTTP/HTTP Management Services (80/TCP & 443/TCP)\n* MSSQL (1433/TCP)\n* Oracle (1521/TCP)\n* MySQL (3306/TCP)\n* VNC (5900/TCP)\n\nIn addition to management services, adversaries may \"target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols,\" as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018)\n\nIn default environments, LDAP and Kerberos connection attempts are less likely to trigger events over SMB, which creates Windows \"logon failure\" event ID 4625.",
+            "x_mitre_contributors": [
+                "Microsoft Threat Intelligence Center (MSTIC)",
+                "John Strand"
+            ],
+            "x_mitre_detection": "Monitor authentication logs for system and application login failures of [Valid Accounts](https://attack.mitre.org/techniques/T1078). Specifically, monitor for many failed authentication attempts across various accounts that may result from password spraying attempts.\n\nConsider the following event IDs:(Citation: Trimarc Detecting Password Spraying)\n\n* Domain Controllers: \"Audit Logon\" (Success & Failure) for event ID 4625.\n* Domain Controllers: \"Audit Kerberos Authentication Service\" (Success & Failure) for event ID 4771.\n* All systems: \"Audit Logon\" (Success & Failure) for event ID 4648.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1110/003",
+                    "external_id": "T1110.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/565.html",
+                    "external_id": "CAPEC-565",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "BlackHillsInfosec Password Spraying",
+                    "description": "Thyer, J. (2015, October 30). Password Spraying & Other Fun with RPCCLIENT. Retrieved April 25, 2017.",
+                    "url": "http://www.blackhillsinfosec.com/?p=4645"
+                },
+                {
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA18-086A",
+                    "description": "US-CERT. (2018, March 27). TA18-068A Brute Force Attacks Conducted by Cyber Actors. Retrieved October 2, 2019.",
+                    "source_name": "US-CERT TA18-068A 2018"
+                },
+                {
+                    "url": "https://www.trimarcsecurity.com/single-post/2018/05/06/Trimarc-Research-Detecting-Password-Spraying-with-Security-Event-Auditing",
+                    "description": "Metcalf, S. (2018, May 6). Trimarc Research: Detecting Password Spraying with Security Event Auditing. Retrieved January 16, 2019.",
+                    "source_name": "Trimarc Detecting Password Spraying"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Email Collection",
+            "x_mitre_data_sources": [
+                "File: File Access",
+                "Network Traffic: Network Connection Creation",
+                "Logon Session: Logon Session Creation",
+                "Command: Command Execution",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-15T20:19:33.750Z",
+            "created": "2017-05-31T21:31:25.454Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "id": "attack-pattern--1608f3e1-598a-42f4-a01a-2e252e81728f",
+            "x_mitre_platforms": [
+                "Windows",
+                "Office 365",
+                "Google Workspace",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may target user email to collect sensitive information. Emails may contain sensitive data, including trade secrets or personal information, that can prove valuable to adversaries. Adversaries can collect or forward email from mail servers or clients. ",
+            "x_mitre_contributors": [
+                "Swetha Prabakaran, Microsoft Threat Intelligence Center (MSTIC)"
+            ],
+            "x_mitre_detection": "There are likely a variety of ways an adversary could collect email from a target, each with a different mechanism for detection.\n\nFile access of local system email files for Exfiltration, unusual processes connecting to an email server within a network, or unusual access patterns or authentication attempts on a public-facing webmail server may all be indicators of malicious activity.\n\nMonitor processes and command-line arguments for actions that could be taken to gather local email files. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nDetection is challenging because all messages forwarded because of an auto-forwarding rule have the same presentation as a manually forwarded message. It is also possible for the user to not be aware of the addition of such an auto-forwarding rule and not suspect that their account has been compromised; email-forwarding rules alone will not affect the normal usage patterns or operations of the email account.\n\nAuto-forwarded messages generally contain specific detectable artifacts that may be present in the header; such artifacts would be platform-specific. Examples include <code>X-MS-Exchange-Organization-AutoForwarded</code> set to true, <code>X-MailFwdBy</code> and <code>X-Forwarded-To</code>. The <code>forwardingSMTPAddress</code> parameter used in a forwarding process that is managed by administrators and not by user actions. All messages for the mailbox are forwarded to the specified SMTP address. However, unlike typical client-side rules, the message does not appear as forwarded in the mailbox; it appears as if it were sent directly to the specified destination mailbox.(Citation: Microsoft Tim McMichael Exchange Mail Forwarding 2) High volumes of emails that bear the <code>X-MS-Exchange-Organization-AutoForwarded</code> header (indicating auto-forwarding) without a corresponding number of emails that match the appearance of a forwarded message may indicate that further investigation is needed at the administrator level rather than user-level.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1114",
+                    "external_id": "T1114",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Microsoft Tim McMichael Exchange Mail Forwarding 2",
+                    "description": "McMichael, T.. (2015, June 8). Exchange and Office 365 Mail Forwarding. Retrieved October 8, 2019.",
+                    "url": "https://blogs.technet.microsoft.com/timmcmic/2015/06/08/exchange-and-office-365-mail-forwarding-2/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Email Forwarding Rule",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T20:19:33.416Z",
+            "created": "2020-02-19T18:54:47.103Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "id": "attack-pattern--7d77a07d-02fe-4e88-8bd9-e9c008c01bf0",
+            "x_mitre_platforms": [
+                "Office 365",
+                "Windows",
+                "Google Workspace",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may setup email forwarding rules to collect sensitive information. Adversaries may abuse email-forwarding rules to monitor the activities of a victim, steal information, and further gain intelligence on the victim or the victim\u2019s organization to use as part of further exploits or operations.(Citation: US-CERT TA18-068A 2018) Furthermore, email forwarding rules can allow adversaries to maintain persistent access to victim's emails even after compromised credentials are reset by administrators.(Citation: Pfammatter - Hidden Inbox Rules) Most email clients allow users to create inbox rules for various email functions, including forwarding to a different recipient. These rules may be created through a local email application, a web interface, or by command-line interface. Messages can be forwarded to internal or external recipients, and there are no restrictions limiting the extent of this rule. Administrators may also create forwarding rules for user accounts with the same considerations and outcomes.(Citation: Microsoft Tim McMichael Exchange Mail Forwarding 2)(Citation: Mac Forwarding Rules)\n\nAny user or administrator within the organization (or adversary with valid credentials) can create rules to automatically forward all received messages to another recipient, forward emails to different locations based on the sender, and more. Adversaries may also hide the rule by making use of the Microsoft Messaging API (MAPI) to modify the rule properties, making it hidden and not visible from Outlook, OWA or most Exchange Administration tools.(Citation: Pfammatter - Hidden Inbox Rules)",
+            "x_mitre_contributors": [
+                "Microsoft Security",
+                "Swetha Prabakaran, Microsoft Threat Intelligence Center (MSTIC)"
+            ],
+            "x_mitre_detection": "Detection is challenging because all messages forwarded because of an auto-forwarding rule have the same presentation as a manually forwarded message. It is also possible for the user to not be aware of the addition of such an auto-forwarding rule and not suspect that their account has been compromised; email-forwarding rules alone will not affect the normal usage patterns or operations of the email account. This is especially true in cases with hidden auto-forwarding rules. This makes it only possible to reliably detect the existence of a hidden auto-forwarding rule by examining message tracking logs or by using a MAPI editor to notice the modified rule property values.(Citation: Pfammatter - Hidden Inbox Rules)\n\nAuto-forwarded messages generally contain specific detectable artifacts that may be present in the header; such artifacts would be platform-specific. Examples include `X-MS-Exchange-Organization-AutoForwarded` set to true, `X-MailFwdBy` and `X-Forwarded-To`. The `forwardingSMTPAddress` parameter used in a forwarding process that is managed by administrators and not by user actions. All messages for the mailbox are forwarded to the specified SMTP address. However, unlike typical client-side rules, the message does not appear as forwarded in the mailbox; it appears as if it were sent directly to the specified destination mailbox.(Citation: Microsoft Tim McMichael Exchange Mail Forwarding 2) High volumes of emails that bear the `X-MS-Exchange-Organization-AutoForwarded` header (indicating auto-forwarding) without a corresponding number of emails that match the appearance of a forwarded message may indicate that further investigation is needed at the administrator level rather than user-level.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1114/003",
+                    "external_id": "T1114.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA18-086A",
+                    "description": "US-CERT. (2018, March 27). TA18-068A Brute Force Attacks Conducted by Cyber Actors. Retrieved October 2, 2019.",
+                    "source_name": "US-CERT TA18-068A 2018"
+                },
+                {
+                    "url": "https://blog.compass-security.com/2018/09/hidden-inbox-rules-in-microsoft-exchange/",
+                    "description": "Damian Pfammatter. (2018, September 17). Hidden Inbox Rules in Microsoft Exchange. Retrieved October 12, 2021.",
+                    "source_name": "Pfammatter - Hidden Inbox Rules"
+                },
+                {
+                    "source_name": "Microsoft Tim McMichael Exchange Mail Forwarding 2",
+                    "description": "McMichael, T.. (2015, June 8). Exchange and Office 365 Mail Forwarding. Retrieved October 8, 2019.",
+                    "url": "https://blogs.technet.microsoft.com/timmcmic/2015/06/08/exchange-and-office-365-mail-forwarding-2/"
+                },
+                {
+                    "url": "https://support.apple.com/guide/mail/reply-to-forward-or-redirect-emails-mlhlp1010/mac",
+                    "description": "Apple. (n.d.). Reply to, forward, or redirect emails in Mail on Mac. Retrieved June 22, 2021.",
+                    "source_name": "Mac Forwarding Rules"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Email Accounts",
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-15T03:09:59.862Z",
+            "created": "2020-10-01T01:09:53.217Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--65013dd2-bc61-43e3-afb5-a14c4fa7437a",
+            "description": "Adversaries may create email accounts that can be used during targeting. Adversaries can use accounts created with email providers to further their operations, such as leveraging them to conduct [Phishing for Information](https://attack.mitre.org/techniques/T1598) or [Phishing](https://attack.mitre.org/techniques/T1566).(Citation: Mandiant APT1) Adversaries may also take steps to cultivate a persona around the email account, such as through use of [Social Media Accounts](https://attack.mitre.org/techniques/T1585/001), to increase the chance of success of follow-on behaviors. Created email accounts can also be used in the acquisition of infrastructure (ex: [Domains](https://attack.mitre.org/techniques/T1583/001)).(Citation: Mandiant APT1)\n\nTo decrease the chance of physically tying back operations to themselves, adversaries may make use of disposable email services.(Citation: Trend Micro R980 2016)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Much of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access (ex: [Phishing](https://attack.mitre.org/techniques/T1566)).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1585/002",
+                    "external_id": "T1585.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Mandiant APT1",
+                    "description": "Mandiant. (n.d.). APT1 Exposing One of China\u2019s Cyber Espionage Units. Retrieved July 18, 2016.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+                },
+                {
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/r980-ransomware-disposable-email-service/",
+                    "description": "Antazo, F. and Yambao, M. (2016, August 10). R980 Ransomware Found Abusing Disposable Email Address Service. Retrieved October 13, 2020.",
+                    "source_name": "Trend Micro R980 2016"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Email Addresses",
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-15T03:27:19.702Z",
+            "created": "2020-10-02T14:56:24.866Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--69f897fd-12a9-4c89-ad6a-46d2f3c38262",
+            "description": "Adversaries may gather email addresses that can be used during targeting. Even if internal instances exist, organizations may have public-facing email infrastructure and addresses for employees.\n\nAdversaries may easily gather email addresses, since they may be readily available and exposed via online or other accessible data sets (ex: [Social Media](https://attack.mitre.org/techniques/T1593/001) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)).(Citation: HackersArise Email)(Citation: CNET Leaks) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Phishing for Information](https://attack.mitre.org/techniques/T1598)), establishing operational resources (ex: [Email Accounts](https://attack.mitre.org/techniques/T1586/002)), and/or initial access (ex: [Phishing](https://attack.mitre.org/techniques/T1566)).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_detection": "Much of this activity may have a very high occurrence and associated false positive rate, as well as potentially taking place outside the visibility of the target organization, making detection difficult for defenders.\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1589/002",
+                    "external_id": "T1589.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.hackers-arise.com/email-scraping-and-maltego",
+                    "description": "Hackers Arise. (n.d.). Email Scraping and Maltego. Retrieved October 20, 2020.",
+                    "source_name": "HackersArise Email"
+                },
+                {
+                    "url": "https://www.cnet.com/news/massive-breach-leaks-773-million-emails-21-million-passwords/",
+                    "description": "Ng, A. (2019, January 17). Massive breach leaks 773 million email addresses, 21 million passwords. Retrieved October 20, 2020.",
+                    "source_name": "CNET Leaks"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Employee Names",
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-15T03:27:49.437Z",
+            "created": "2020-10-02T14:57:15.906Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--76551c52-b111-4884-bc47-ff3e728f0156",
+            "description": "Adversaries may gather employee names that can be used during targeting. Employee names be used to derive email addresses as well as to help guide other reconnaissance efforts and/or craft more-believable lures.\n\nAdversaries may easily gather employee names, since they may be readily available and exposed via online or other accessible data sets (ex: [Social Media](https://attack.mitre.org/techniques/T1593/001) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)).(Citation: OPM Leak) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Phishing for Information](https://attack.mitre.org/techniques/T1598)), establishing operational resources (ex: [Compromise Accounts](https://attack.mitre.org/techniques/T1586)), and/or initial access (ex: [Phishing](https://attack.mitre.org/techniques/T1566) or [Valid Accounts](https://attack.mitre.org/techniques/T1078)).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_detection": "Much of this activity may have a very high occurrence and associated false positive rate, as well as potentially taking place outside the visibility of the target organization, making detection difficult for defenders.\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1589/003",
+                    "external_id": "T1589.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.opm.gov/cybersecurity/cybersecurity-incidents/",
+                    "description": "Cybersecurity Resource Center. (n.d.). CYBERSECURITY INCIDENTS. Retrieved October 20, 2020.",
+                    "source_name": "OPM Leak"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Digital Certificates",
+            "x_mitre_data_sources": [
+                "Certificate: Certificate Registration",
+                "Internet Scan: Response Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-16T17:44:09.486Z",
+            "created": "2020-10-01T02:14:18.044Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--19401639-28d0-4c3c-adcc-bc2ba22f6421",
+            "description": "Adversaries may buy and/or steal SSL/TLS certificates that can be used during targeting. SSL/TLS certificates are designed to instill trust. They include information about the key, information about its owner's identity, and the digital signature of an entity that has verified the certificate's contents are correct. If the signature is valid, and the person examining the certificate trusts the signer, then they know they can use that key to communicate with its owner.\n\nAdversaries may purchase or steal SSL/TLS certificates to further their operations, such as encrypting C2 traffic (ex: [Asymmetric Cryptography](https://attack.mitre.org/techniques/T1573/002) with [Web Protocols](https://attack.mitre.org/techniques/T1071/001)) or even enabling [Adversary-in-the-Middle](https://attack.mitre.org/techniques/T1557) if the certificate is trusted or otherwise added to the root of trust (i.e. [Install Root Certificate](https://attack.mitre.org/techniques/T1553/004)). The purchase of digital certificates may be done using a front organization or using information stolen from a previously compromised entity that allows the adversary to validate to a certificate provider as that entity. Adversaries may also steal certificate materials directly from a compromised third-party, including from certificate authorities.(Citation: DiginotarCompromise) Adversaries may register or hijack domains that they will later purchase an SSL/TLS certificate for.\n\nCertificate authorities exist that allow adversaries to acquire SSL/TLS certificates, such as domain validation certificates, for free.(Citation: Let's Encrypt FAQ)\n\nAfter obtaining a digital certificate, an adversary may then install that certificate (see [Install Digital Certificate](https://attack.mitre.org/techniques/T1608/003)) on infrastructure under their control.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Consider use of services that may aid in the tracking of newly issued certificates and/or certificates in use on sites across the Internet. In some cases it may be possible to pivot on known pieces of certificate information to uncover other adversary infrastructure.(Citation: Splunk Kovar Certificates 2017) Some server-side components of adversary tools may have default values set for SSL/TLS certificates.(Citation: Recorded Future Beacon Certificates)\n\nDetection efforts may be focused on related behaviors, such as [Web Protocols](https://attack.mitre.org/techniques/T1071/001), [Asymmetric Cryptography](https://attack.mitre.org/techniques/T1573/002), and/or [Install Root Certificate](https://attack.mitre.org/techniques/T1553/004).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/004",
+                    "external_id": "T1588.004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://threatpost.com/final-report-diginotar-hack-shows-total-compromise-ca-servers-103112/77170/",
+                    "description": "Fisher, D. (2012, October 31). Final Report on DigiNotar Hack Shows Total Compromise of CA Servers. Retrieved March 6, 2017.",
+                    "source_name": "DiginotarCompromise"
+                },
+                {
+                    "url": "https://letsencrypt.org/docs/faq/",
+                    "description": "Let's Encrypt. (2020, April 23). Let's Encrypt FAQ. Retrieved October 15, 2020.",
+                    "source_name": "Let's Encrypt FAQ"
+                },
+                {
+                    "url": "https://www.splunk.com/en_us/blog/security/tall-tales-of-hunting-with-tls-ssl-certificates.html",
+                    "description": "Kovar, R. (2017, December 11). Tall Tales of Hunting with TLS/SSL Certificates. Retrieved October 16, 2020.",
+                    "source_name": "Splunk Kovar Certificates 2017"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/cobalt-strike-servers/",
+                    "description": "Insikt Group. (2019, June 18). A Multi-Method Approach to Identifying Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon Certificates"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Spearphishing Link",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-15T03:42:26.537Z",
+            "created": "2020-10-02T17:09:50.723Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2d3f5b3c-54ca-4f4d-bb1f-849346d31230",
+            "description": "Adversaries may send spearphishing messages with a malicious link to elicit sensitive information that can be used during targeting. Spearphishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information. Spearphishing for information frequently involves social engineering techniques, such as posing as a source with a reason to collect information (ex: [Establish Accounts](https://attack.mitre.org/techniques/T1585) or [Compromise Accounts](https://attack.mitre.org/techniques/T1586)) and/or sending multiple, seemingly urgent messages.\n\nAll forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, the malicious emails contain links generally accompanied by social engineering text to coax the user to actively click or copy and paste a URL into a browser.(Citation: TrendMictro Phishing)(Citation: PCMag FakeLogin) The given website may closely resemble a legitimate site in appearance and have a URL containing elements from the real site. From the fake website, information is gathered in web forms and sent to the attacker. Adversaries may also use information from previous reconnaissance efforts (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)) to craft persuasive and believable lures.",
+            "x_mitre_contributors": [
+                "Philip Winther",
+                "Sebastian Salla, McAfee",
+                "Robert Simmons, @MalwareUtkonos"
+            ],
+            "x_mitre_detection": "Monitor for suspicious email activity, such as numerous accounts receiving messages from a single unusual/unknown sender. Filtering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nMonitor for references to uncategorized or known-bad sites. URL inspection within email (including expanding shortened links) can also help detect links leading to known malicious sites.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1598/003",
+                    "external_id": "T1598.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.trendmicro.com/en_us/research/20/i/tricky-forms-of-phishing.html",
+                    "description": "Babon, P. (2020, September 3). Tricky 'Forms' of Phishing. Retrieved October 20, 2020.",
+                    "source_name": "TrendMictro Phishing"
+                },
+                {
+                    "url": "https://www.pcmag.com/news/hackers-try-to-phish-united-nations-staffers-with-fake-login-pages",
+                    "description": "Kan, M. (2019, October 24). Hackers Try to Phish United Nations Staffers With Fake Login Pages. Retrieved October 20, 2020.",
+                    "source_name": "PCMag FakeLogin"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-15T03:53:33.023Z",
+            "name": "Search Victim-Owned Websites",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-10-02T16:51:50.306Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--16cdd21f-da65-4e4f-bc04-dd7d198c7b26",
+            "description": "Adversaries may search websites owned by the victim for information that can be used during targeting. Victim-owned websites may contain a variety of details, including names of departments/divisions, physical locations, and data about key employees such as names, roles, and contact info (ex: [Email Addresses](https://attack.mitre.org/techniques/T1589/002)). These sites may also have details highlighting business operations and relationships.(Citation: Comparitech Leak)\n\nAdversaries may search victim-owned websites to gather actionable information. Information from these sources may reveal opportunities for other forms of reconnaissance (ex: [Phishing for Information](https://attack.mitre.org/techniques/T1598) or [Search Open Technical Databases](https://attack.mitre.org/techniques/T1596)), establishing operational resources (ex: [Establish Accounts](https://attack.mitre.org/techniques/T1585) or [Compromise Accounts](https://attack.mitre.org/techniques/T1586)), and/or initial access (ex: [Trusted Relationship](https://attack.mitre.org/techniques/T1199) or [Phishing](https://attack.mitre.org/techniques/T1566)).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_detection": "Monitor for suspicious network traffic that could be indicative of adversary reconnaissance, such as rapid successions of requests indicative of web crawling and/or large quantities of requests originating from a single source (especially if the source is known to be associated with an adversary). Analyzing web metadata may also reveal artifacts that can be attributed to potentially malicious activity, such as referer or user-agent string HTTP/S fields.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1594",
+                    "external_id": "T1594",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.comparitech.com/blog/vpn-privacy/350-million-customer-records-exposed-online/",
+                    "description": "Bischoff, P. (2020, October 15). Broadvoice database of more than 350 million customer records exposed online. Retrieved October 20, 2020.",
+                    "source_name": "Comparitech Leak"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Link Target",
+            "x_mitre_data_sources": [
+                "Internet Scan: Response Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:28:41.565Z",
+            "created": "2021-03-17T20:35:08.429Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--84ae8255-b4f4-4237-b5c5-e717405a9701",
+            "description": "Adversaries may put in place resources that are referenced by a link that can be used during targeting. An adversary may rely upon a user clicking a malicious link in order to divulge information (including credentials) or to gain execution, as in [Malicious Link](https://attack.mitre.org/techniques/T1204/001). Links can be used for spearphishing, such as sending an email accompanied by social engineering text to coax the user to actively click or copy and paste a URL into a browser. Prior to a phish for information (as in [Spearphishing Link](https://attack.mitre.org/techniques/T1598/003)) or a phish to gain initial access to a system (as in [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002)), an adversary must set up the resources for a link target for the spearphishing link. \n\nTypically, the resources for a link target will be an HTML page that may include some client-side script such as [JavaScript](https://attack.mitre.org/techniques/T1059/007) to decide what content to serve to the user. Adversaries may clone legitimate sites to serve as the link target, this can include cloning of login pages of legitimate web services or organization login pages in an effort to harvest credentials during [Spearphishing Link](https://attack.mitre.org/techniques/T1598/003).(Citation: Malwarebytes Silent Librarian October 2020)(Citation: Proofpoint TA407 September 2019) Adversaries may also [Upload Malware](https://attack.mitre.org/techniques/T1608/001) and have the link target point to malware for download/execution by the user.\n\nAdversaries may purchase domains similar to legitimate domains (ex: homoglyphs, typosquatting, different top-level domain, etc.) during acquisition of infrastructure ([Domains](https://attack.mitre.org/techniques/T1583/001)) to help facilitate [Malicious Link](https://attack.mitre.org/techniques/T1204/001). Link shortening services can also be employed.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "If infrastructure or patterns in malicious web content have been previously identified, internet scanning may uncover when an adversary has staged web content to make it accessible for targeting.\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on other phases of the adversary lifecycle, such as during [Spearphishing Link](https://attack.mitre.org/techniques/T1598/003), [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002), or [Malicious Link](https://attack.mitre.org/techniques/T1204/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1608/005",
+                    "external_id": "T1608.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/",
+                    "description": "Malwarebytes Threat Intelligence Team. (2020, October 14). Silent Librarian APT right on schedule for 20/21 academic year. Retrieved February 3, 2021.",
+                    "source_name": "Malwarebytes Silent Librarian October 2020"
+                },
+                {
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+                    "description": "Proofpoint Threat Insight Team. (2019, September 5). Threat Actor Profile: TA407, the Silent Librarian. Retrieved February 3, 2021.",
+                    "source_name": "Proofpoint TA407 September 2019"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Valid Accounts",
+            "x_mitre_data_sources": [
+                "Logon Session: Logon Session Metadata",
+                "User Account: User Account Authentication",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-19T03:29:48.018Z",
+            "created": "2017-05-31T21:31:00.645Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "id": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "x_mitre_defense_bypassed": [
+                "Firewall",
+                "Host intrusion prevention systems",
+                "Network intrusion detection system",
+                "Application control",
+                "System access controls",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Compromised credentials may be used to bypass access controls placed on various resources on systems within the network and may even be used for persistent access to remote systems and externally available services, such as VPNs, Outlook Web Access and remote desktop. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence.\n\nThe overlap of permissions for local, domain, and cloud accounts across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise. (Citation: TechNet Credential Theft)",
+            "x_mitre_effective_permissions": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_contributors": [
+                "Jon Sternstein, Stern Security",
+                "Yossi Weizman, Azure Defender Research Team",
+                "Netskope",
+                "Mark Wee",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "Configure robust, consistent account activity audit policies across the enterprise and with externally accessible services. (Citation: TechNet Audit Policy) Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account. Correlate other security systems with login information (e.g., a user has an active login session but has not entered the building or does not have VPN access).\n\nPerform regular audits of domain and local system accounts to detect accounts that may have been created by an adversary for persistence. Checks on these accounts could also include whether default accounts such as Guest have been activated. These audits should also include checks on any appliances and applications for default credentials or SSH keys, and if any are discovered, they should be updated immediately.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1078",
+                    "external_id": "T1078",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/560.html",
+                    "external_id": "CAPEC-560",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Credential Theft",
+                    "description": "Microsoft. (2016, April 15). Attractive Accounts for Credential Theft. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn535501.aspx"
+                },
+                {
+                    "source_name": "TechNet Audit Policy",
+                    "description": "Microsoft. (2016, April 15). Audit Policy Recommendations. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn487457.aspx"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2ae31e68-0960-4b08-8f7b-85b068e2474b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--036a483f-27e7-48f0-9e75-b44f99c3c531"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fac92d3b-ee18-4a17-ba59-9a43d6c3fdbe",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4b9901b8-babc-4c17-85e7-7d32e83c51ec",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e543c285-263f-48fc-9ba0-563d936f1951",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9aed0ed9-cdc8-4eea-b1dd-46712650382d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--043cb22c-afdd-4592-add6-770ffc444b64",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7ecae730-fdca-4815-bd4c-69555d935758",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0668c35d-b3a3-486b-89bb-c4c8fdb4269b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--67fc9d0a-f4e7-449d-9ebb-829cc32761cd",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0abdbc1b-ebee-4f84-b808-e670209affc1",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3deff85d-65ec-400c-910a-534aba71601b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b0ef3882-4379-4bb0-abe4-60c629264982",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384",
+            "target_ref": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7"
+        },
+        {
+            "created": "2021-03-13T20:09:21.305825Z",
+            "id": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Education sector as a target",
+            "sectors": [
+                "education"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Australia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "country": "HK",
+            "created": "2021-03-13T20:09:21.009864Z",
+            "id": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Hong Kong",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Israel",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Switzerland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Turkey",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

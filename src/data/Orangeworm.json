@@ -1,0 +1,1165 @@
+{
+    "type": "bundle",
+    "id": "bundle--eec84bed-0910-45b9-afad-70f043e42690",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2015",
+            "x_MISP-description": "Symantec has identified a previously unknown group called Orangeworm that has been observed installing a custom backdoor called Trojan.Kwampirs within large international corporations that operate within the healthcare sector in the United States, Europe, and Asia.\nFirst identified in January 2015, Orangeworm has also conducted targeted attacks against organizations in related industries as part of a larger supply-chain attack in order to reach their intended victims. Known victims include healthcare providers, pharmaceuticals, IT solution providers for healthcare and equipment manufacturers that serve the healthcare industry, likely for the purpose of corporate espionage.",
+            "x_MISP-uuid": "35d71626-4794-11e8-b74d-bbcbe48fee3c",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Orangeworm",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "Orangeworm"
+            ],
+            "id": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "description": "[Orangeworm](https://attack.mitre.org/groups/G0071) is a group that has targeted organizations in the healthcare sector in the United States, Europe, and Asia since at least 2015, likely for the purpose of corporate espionage.(Citation: Symantec Orangeworm April 2018)",
+            "x_mitre_contributors": [
+                "Elger Vinicius S. Rodrigues, @elgervinicius, CYBINT Centre"
+            ],
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0071",
+                    "external_id": "G0071",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Symantec Orangeworm April 2018)",
+                    "source_name": "Orangeworm"
+                },
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1d90aad5-e0fb-4a8c-862a-71d3db99bae9",
+            "description": "[Orangeworm](https://attack.mitre.org/groups/G0071) has used HTTP for C2.(Citation: Symantec Orangeworm IOCs April 2018)",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "modified": "2021-10-26T22:30:52.141Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "url": "https://symantec-enterprise-blogs.security.com/sites/default/files/2018-04/Orangeworm%20IOCs.pdf",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). Orangeworm: Indicators of Compromise. Retrieved July 8, 2018.",
+                    "source_name": "Symantec Orangeworm IOCs April 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3d988f8f-2448-409c-ac41-4a507bb8cf23",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "tool--4664b683-f578-434f-919b-1c1aad2a1111",
+            "modified": "2019-03-25T15:36:46.916Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--36aad32e-5300-4db0-b5a2-8b7442123db1",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "malware--c2417bab-3189-4d4d-9d60-96de2cdaf0ab",
+            "modified": "2019-03-25T15:36:46.893Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--960d642d-a2f7-4b78-8363-fa94aff7bf86",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "tool--03342581-f790-4f03-ba41-e82e67392e23",
+            "modified": "2019-03-25T15:36:46.868Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9878ff64-0206-4a62-a5aa-3f909da87081",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "tool--294e2560-bd48-44b2-9da2-833b5588ad11",
+            "modified": "2019-03-25T15:36:46.850Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a8f41a5a-b6bd-4446-8f9d-22d0e7b4af74",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "tool--bba595da-b73a-4354-aa6c-224d4de7cb4e",
+            "modified": "2019-03-25T15:36:46.901Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b38984a2-0761-4107-b61e-4d27cc22a2c0",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "tool--c11ac61d-50f4-444f-85d8-6f006067f0de",
+            "modified": "2019-03-25T15:36:46.882Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cc6e0159-1216-4ca5-ac5c-55e961878785",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "tool--30489451-5886-4c46-90c9-0dff9adc5252",
+            "modified": "2019-03-25T15:36:46.914Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ccdb0aac-24b8-4e94-a3b6-b7e1c519a938",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "tool--7fcbc4e8-1989-441f-9ac5-e7b6ff5806f1",
+            "modified": "2019-03-25T15:36:46.849Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e09c37a3-ae23-403e-93d5-aef4953bd43c",
+            "description": "[Orangeworm](https://attack.mitre.org/groups/G0071) has copied its backdoor across open network shares, including ADMIN$, C$WINDOWS, D$WINDOWS, and E$WINDOWS.(Citation: Symantec Orangeworm April 2018)",
+            "target_ref": "attack-pattern--4f9ca633-15c5-463c-9724-bdcd54fde541",
+            "modified": "2019-03-25T15:36:46.805Z",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-10-17T00:14:20.652Z",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T20:15:35.821Z",
+            "name": "Web Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:13:46.151Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as HTTP and HTTPS that carry web traffic may be very common in environments. HTTP/S packets have many fields and headers in which data can be concealed. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)\n\nMonitor for web traffic to/from known-bad or suspicious domains. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/001",
+                    "external_id": "T1071.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "SMB/Windows Admin Shares",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Flow",
+                "Logon Session: Logon Session Creation",
+                "Network Share: Network Share Access"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-23T21:16:02.812Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-02-11T18:25:28.212Z",
+            "id": "attack-pattern--4f9ca633-15c5-463c-9724-bdcd54fde541",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to interact with a remote network share using Server Message Block (SMB). The adversary may then perform actions as the logged-on user.\n\nSMB is a file, printer, and serial port sharing protocol for Windows machines on the same network or domain. Adversaries may use SMB to interact with file shares, allowing them to move laterally throughout a network. Linux and macOS implementations of SMB typically use Samba.\n\nWindows systems have hidden network shares that are accessible only to administrators and provide the ability for remote file copy and other administrative functions. Example network shares include `C$`, `ADMIN$`, and `IPC$`. Adversaries may use this technique in conjunction with administrator-level [Valid Accounts](https://attack.mitre.org/techniques/T1078) to remotely access a networked system over SMB,(Citation: Wikipedia Server Message Block) to interact with systems using remote procedure calls (RPCs),(Citation: TechNet RPC) transfer files, and run transferred binaries through remote Execution. Example execution techniques that rely on authenticated sessions over SMB/RPC are [Scheduled Task/Job](https://attack.mitre.org/techniques/T1053), [Service Execution](https://attack.mitre.org/techniques/T1569/002), and [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047). Adversaries can also use NTLM hashes to access administrator shares on systems with [Pass the Hash](https://attack.mitre.org/techniques/T1550/002) and certain configuration and patch levels.(Citation: Microsoft Admin Shares)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "lateral-movement"
+                }
+            ],
+            "x_mitre_detection": "Ensure that proper logging of accounts used to log into systems is turned on and centrally collected. Windows logging is able to collect success/failure for accounts that may be used to move laterally and can be collected using tools such as Windows Event Forwarding. (Citation: Lateral Movement Payne)(Citation: Windows Event Forwarding Payne) Monitor remote login events and associated SMB activity for file transfers and remote process execution. Monitor the actions of remote users who connect to administrative shares. Monitor for use of tools and commands to connect to remote shares, such as [Net](https://attack.mitre.org/software/S0039), on the command-line interface and Discovery techniques that could be used to find remotely accessible systems.(Citation: Medium Detecting WMI Persistence)",
+            "x_mitre_system_requirements": [
+                "SMB enabled; Host/network firewalls not blocking SMB ports between source and destination; Use of domain account in administrator group on remote system or default system admin account."
+            ],
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1021/002",
+                    "external_id": "T1021.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/561.html",
+                    "external_id": "CAPEC-561",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Wikipedia Server Message Block",
+                    "description": "Wikipedia. (2017, December 16). Server Message Block. Retrieved December 21, 2017.",
+                    "url": "https://en.wikipedia.org/wiki/Server_Message_Block"
+                },
+                {
+                    "source_name": "TechNet RPC",
+                    "description": "Microsoft. (2003, March 28). What Is RPC?. Retrieved June 12, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/cc787851.aspx"
+                },
+                {
+                    "source_name": "Microsoft Admin Shares",
+                    "description": "Microsoft. (n.d.). How to create and delete hidden or administrative shares on client computers. Retrieved November 20, 2014.",
+                    "url": "http://support.microsoft.com/kb/314984"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/archive/blogs/jepayne/tracking-lateral-movement-part-one-special-groups-and-specific-service-accounts",
+                    "description": "Payne, J. (2015, November 26). Tracking Lateral Movement Part One - Special Groups and Specific Service Accounts. Retrieved February 1, 2016.",
+                    "source_name": "Lateral Movement Payne"
+                },
+                {
+                    "source_name": "Windows Event Forwarding Payne",
+                    "description": "Payne, J. (2015, November 23). Monitoring what matters - Windows Event Forwarding for everyone (even if you already have a SIEM.). Retrieved February 1, 2016.",
+                    "url": "https://docs.microsoft.com/en-us/archive/blogs/jepayne/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem"
+                },
+                {
+                    "source_name": "Medium Detecting WMI Persistence",
+                    "description": "French, D. (2018, October 9). Detecting & Removing an Attacker\u2019s WMI Persistence. Retrieved October 11, 2019.",
+                    "url": "https://medium.com/threatpunter/detecting-removing-wmi-persistence-60ccbb7dff96"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Arp",
+            "x_mitre_aliases": [
+                "Arp",
+                "arp.exe"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "id": "tool--30489451-5886-4c46-90c9-0dff9adc5252",
+            "description": "[Arp](https://attack.mitre.org/software/S0099) displays information about a system's Address Resolution Protocol (ARP) cache. (Citation: TechNet Arp)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:33:02.428Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0099",
+                    "external_id": "S0099",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb490864.aspx",
+                    "description": "Microsoft. (n.d.). Arp. Retrieved April 17, 2016.",
+                    "source_name": "TechNet Arp"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "cmd",
+            "x_mitre_aliases": [
+                "cmd",
+                "cmd.exe"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-20T18:38:23.242Z",
+            "created": "2017-05-31T21:33:05.319Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--bba595da-b73a-4354-aa6c-224d4de7cb4e",
+            "description": "[cmd](https://attack.mitre.org/software/S0106) is the Windows command-line interpreter that can be used to interact with systems and execute other processes and utilities. (Citation: TechNet Cmd)\n\nCmd.exe contains native functionality to perform many operations to interact with the system, including listing files in a directory (e.g., <code>dir</code> (Citation: TechNet Dir)), deleting files (e.g., <code>del</code> (Citation: TechNet Del)), and copying files (e.g., <code>copy</code> (Citation: TechNet Copy)).",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0106",
+                    "external_id": "S0106",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "TechNet Cmd",
+                    "description": "Microsoft. (n.d.). Cmd. Retrieved April 18, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/bb490880.aspx"
+                },
+                {
+                    "source_name": "TechNet Dir",
+                    "description": "Microsoft. (n.d.). Dir. Retrieved April 18, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/cc755121.aspx"
+                },
+                {
+                    "source_name": "TechNet Del",
+                    "description": "Microsoft. (n.d.). Del. Retrieved April 22, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/cc771049.aspx"
+                },
+                {
+                    "source_name": "TechNet Copy",
+                    "description": "Microsoft. (n.d.). Copy. Retrieved April 26, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/bb490886.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "ipconfig",
+            "x_mitre_aliases": [
+                "ipconfig",
+                "ipconfig.exe"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--294e2560-bd48-44b2-9da2-833b5588ad11",
+            "description": "[ipconfig](https://attack.mitre.org/software/S0100) is a Windows utility that can be used to find information about a system's TCP/IP, DNS, DHCP, and adapter configuration. (Citation: TechNet Ipconfig)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:33:02.863Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0100",
+                    "external_id": "S0100",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb490921.aspx",
+                    "description": "Microsoft. (n.d.). Ipconfig. Retrieved April 17, 2016.",
+                    "source_name": "TechNet Ipconfig"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Kwampirs",
+            "x_mitre_aliases": [
+                "Kwampirs"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-18T22:06:42.386Z",
+            "created": "2018-10-17T00:14:20.652Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--c2417bab-3189-4d4d-9d60-96de2cdaf0ab",
+            "description": "[Kwampirs](https://attack.mitre.org/software/S0236) is a backdoor Trojan used by [Orangeworm](https://attack.mitre.org/groups/G0071). It has been found on machines which had software installed for the use and control of high-tech imaging devices such as X-Ray and MRI machines. (Citation: Symantec Orangeworm April 2018)",
+            "x_mitre_contributors": [
+                "Elger Vinicius S. Rodrigues, @elgervinicius, CYBINT Centre"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0236",
+                    "external_id": "S0236",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Symantec Orangeworm April 2018)",
+                    "source_name": "Kwampirs"
+                },
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Net",
+            "x_mitre_aliases": [
+                "Net",
+                "net.exe"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-15T20:33:54.392Z",
+            "created": "2017-05-31T21:32:31.601Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--03342581-f790-4f03-ba41-e82e67392e23",
+            "description": "The [Net](https://attack.mitre.org/software/S0039) utility is a component of the Windows operating system. It is used in command-line operations for control of users, groups, services, and network connections. (Citation: Microsoft Net Utility)\n\n[Net](https://attack.mitre.org/software/S0039) has a great deal of functionality, (Citation: Savill 1999) much of which is useful for an adversary, such as gathering system and network information for Discovery, moving laterally through [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002) using <code>net use</code> commands, and interacting with services. The net1.exe utility is executed for certain functionality when net.exe is run and can be used directly in commands such as <code>net1 user</code>.",
+            "x_mitre_contributors": [
+                "David Ferguson, CyberSponse"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0039",
+                    "external_id": "S0039",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Microsoft Net Utility",
+                    "description": "Microsoft. (2006, October 18). Net.exe Utility. Retrieved September 22, 2015.",
+                    "url": "https://msdn.microsoft.com/en-us/library/aa939914"
+                },
+                {
+                    "url": "http://windowsitpro.com/windows/netexe-reference",
+                    "description": "Savill, J. (1999, March 4). Net.exe reference. Retrieved September 22, 2015.",
+                    "source_name": "Savill 1999"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "netstat",
+            "x_mitre_aliases": [
+                "netstat",
+                "netstat.exe"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "id": "tool--4664b683-f578-434f-919b-1c1aad2a1111",
+            "description": "[netstat](https://attack.mitre.org/software/S0104) is an operating system utility that displays active TCP connections, listening ports, and network statistics. (Citation: TechNet Netstat)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:33:04.545Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0104",
+                    "external_id": "S0104",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb490947.aspx",
+                    "description": "Microsoft. (n.d.). Netstat. Retrieved April 17, 2016.",
+                    "source_name": "TechNet Netstat"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "route",
+            "x_mitre_aliases": [
+                "route",
+                "route.exe"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "id": "tool--c11ac61d-50f4-444f-85d8-6f006067f0de",
+            "description": "[route](https://attack.mitre.org/software/S0103) can be used to find or change information within the local system IP routing table. (Citation: TechNet Route)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:33:04.151Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0103",
+                    "external_id": "S0103",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb490991.aspx",
+                    "description": "Microsoft. (n.d.). Route. Retrieved April 17, 2016.",
+                    "source_name": "TechNet Route"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Systeminfo",
+            "x_mitre_aliases": [
+                "systeminfo.exe",
+                "Systeminfo"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--7fcbc4e8-1989-441f-9ac5-e7b6ff5806f1",
+            "description": "[Systeminfo](https://attack.mitre.org/software/S0096) is a Windows utility that can be used to gather detailed information about a computer. (Citation: TechNet Systeminfo)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:33:00.969Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0096",
+                    "external_id": "S0096",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb491007.aspx",
+                    "description": "Microsoft. (n.d.). Systeminfo. Retrieved April 8, 2016.",
+                    "source_name": "TechNet Systeminfo"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7e3a9106-00f2-47ff-b0eb-441d46369853",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fca5d105-9c68-4ca0-b4e4-7716f07b5596",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "European Union",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fcb8409f-235f-4f00-80d6-c29674090d76",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--34390956-4eda-418c-bf84-1b2b054778a1"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--34390956-4eda-418c-bf84-1b2b054778a1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Asia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7c8c29a3-688d-47fc-8888-2858afd22bfe",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "identity--93f86a60-cf1f-4285-882e-6691bcbfddb9"
+        },
+        {
+            "created": "2021-03-13T20:09:21.316245Z",
+            "id": "identity--93f86a60-cf1f-4285-882e-6691bcbfddb9",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Healthcare sector as a target",
+            "sectors": [
+                "healthcare"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.297272Z",
+            "id": "identity--a2b0288a-e0c4-4c38-82a1-c982ee662c07",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Agriculture sector as a target",
+            "sectors": [
+                "agriculture"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.329303Z",
+            "id": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Technology sector as a target",
+            "sectors": [
+                "technology"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.323862Z",
+            "id": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Manufacturing sector as a target",
+            "sectors": [
+                "manufacturing"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.331387Z",
+            "id": "identity--6aec7082-d897-4cd6-a552-d1d2a0175606",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Transportation sector as a target",
+            "sectors": [
+                "transportation"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7ebdcb84-2242-498a-9e23-25fafa3069cf",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Belgium",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.192392Z",
+            "id": "location--de067901-d26f-4454-bdcd-b6d6b996b368",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Brazil",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "country": "CL",
+            "created": "2021-03-13T20:09:20.942573Z",
+            "id": "location--b68044d4-1d75-4b02-a9c7-90e4cbc901f8",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Chile",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e6e4a646-6504-43af-b43f-03b6379d3027",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "France",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "country": "HK",
+            "created": "2021-03-13T20:09:21.009864Z",
+            "id": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Hong Kong",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Netherlands",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--1459143e-a354-47bc-9754-1b50f37d319a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Norway",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Philippines",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f98281ee-b38c-4715-bb1c-bd39a1f2fef5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Poland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Saudi Arabia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7eac9bc3-6f7e-4c83-959c-fe7f3342389c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Spain",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Switzerland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Turkey",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ec140444-063a-4964-95c5-68b0cd0b5943",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8b53b0b6-3819-4ce2-99f4-a781c86602e0",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--7ebdcb84-2242-498a-9e23-25fafa3069cf"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0e2ad3ba-828e-4ab4-a160-aaa7c7f04f63",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--de067901-d26f-4454-bdcd-b6d6b996b368"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--40c7c007-b8fb-46e4-b9c7-aee31f8643f7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8cfdc510-d5d5-4251-992d-78274cafe4a0",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--b68044d4-1d75-4b02-a9c7-90e4cbc901f8"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e8598f61-c35b-4ec3-a63d-ce140bd4737f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a72269d7-a26f-42e0-b356-f46752bbadc0",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--e6e4a646-6504-43af-b43f-03b6379d3027"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8d996a94-fa43-415c-ba52-ad047c7f9411",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a952e2d0-cb60-4c54-9c28-4100047a4851",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--90d41224-d242-424e-867a-e84fe73f4c63",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--788736aa-caba-4664-9f81-7a219af018e2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--69ec465b-5749-43ae-92f0-108730eda9e6",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--1459143e-a354-47bc-9754-1b50f37d319a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8c975b0e-54d9-45f4-ad54-e4be0e3f60b4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7d37cce8-f7b9-47ac-857d-29a88500e9cf",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--f98281ee-b38c-4715-bb1c-bd39a1f2fef5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--01ee98f6-dfd7-4a20-acc3-c6dcfc0c3c95",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f334eea3-66ee-469f-90c6-d7fcbe803038",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--7eac9bc3-6f7e-4c83-959c-fe7f3342389c"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d8190357-a465-4617-80ed-99c5558ea9ed",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2209446f-1ff2-427f-a34e-b5b210f7c08f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--08286f3c-95cd-4e1e-a02e-ae56a2b25088",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "identity--a2b0288a-e0c4-4c38-82a1-c982ee662c07"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--144e25dc-8c5e-4d6f-a0f1-fc323ecf83f2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ab61dbfe-dc3c-4952-9016-7ccddba69291",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c34a71f9-d6d0-4caf-80b6-03af49232c31",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "identity--6aec7082-d897-4cd6-a552-d1d2a0175606"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--88d3300e-b3b9-4379-96da-b045edc4179f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d"
+        }
+    ]
+}

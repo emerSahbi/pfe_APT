@@ -1,0 +1,628 @@
+{
+    "type": "bundle",
+    "id": "bundle--bd7cea78-c6ea-4dab-afcf-12a6bd3d85d0",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2009",
+            "x_MISP-uuid": "99e30d89-9361-4b73-a999-9e5ff9320bcb",
+            "x_MISP-description": "FireEye described APT17 in a 2015 report as: 'APT17, also known as DeputyDog, is a China based threat group that FireEye Intelligence has observed conducting network intrusions against U.S. government entities, the defense industry, law firms, information technology companies, mining companies, and non-government organizations.'",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "APT17",
+            "description": "[APT17](https://attack.mitre.org/groups/G0025) is a China-based threat group that has conducted network intrusions against U.S. government entities, the defense industry, law firms, information technology companies, mining companies, and non-government organizations. (Citation: FireEye APT17)",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "APT 17",
+                "Deputy Dog",
+                "Group 8",
+                "APT17",
+                "Hidden Lynx",
+                "Tailgater Team",
+                "Dogfish",
+                "BRONZE KEYSTONE",
+                "Aurora Panda",
+                "ATK 2",
+                "TEMP.Avengers",
+                "Beijing Group",
+                "SIG22",
+                "Sneaky Panda",
+                "Elderwood Gang",
+                "Elderwood"
+            ],
+            "created": "2017-05-31T21:31:57.307Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0025",
+                    "external_id": "G0025",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye APT17)",
+                    "source_name": "APT17"
+                },
+                {
+                    "description": "(Citation: FireEye APT17)",
+                    "source_name": "Deputy Dog"
+                },
+                {
+                    "source_name": "FireEye APT17",
+                    "description": "FireEye Labs/FireEye Threat Intelligence. (2015, May 14). Hiding in Plain Sight: FireEye and Microsoft Expose Obfuscation Tactic. Retrieved January 22, 2016.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/APT17_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--41ca57db-9736-4adf-ac5d-ea2be2ab4860",
+            "description": "[APT17](https://attack.mitre.org/groups/G0025) has created profile pages in Microsoft TechNet that were used as C2 infrastructure.(Citation: FireEye APT17)",
+            "target_ref": "attack-pattern--88d31120-5bc7-4ce3-a9c0-7cf147be8e54",
+            "modified": "2020-10-13T22:33:14.086Z",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-10-13T22:33:14.086Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT17",
+                    "description": "FireEye Labs/FireEye Threat Intelligence. (2015, May 14). Hiding in Plain Sight: FireEye and Microsoft Expose Obfuscation Tactic. Retrieved January 22, 2016.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/APT17_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a33388b7-3803-442f-8e31-511eef055470",
+            "description": "(Citation: FireEye APT17)",
+            "target_ref": "malware--d69c8146-ab35-4d50-8382-6fc80e641d43",
+            "modified": "2019-03-22T14:21:19.572Z",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.060Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT17",
+                    "description": "FireEye Labs/FireEye Threat Intelligence. (2015, May 14). Hiding in Plain Sight: FireEye and Microsoft Expose Obfuscation Tactic. Retrieved January 22, 2016.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/APT17_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fd9834dc-0323-408b-b217-3f3aa27b50ac",
+            "description": "[APT17](https://attack.mitre.org/groups/G0025) has created and cultivated profile pages in Microsoft TechNet. To make profile pages appear more legitimate, [APT17](https://attack.mitre.org/groups/G0025) has created biographical sections and posted in forum threads.(Citation: FireEye APT17)",
+            "target_ref": "attack-pattern--cdfc5f0a-9bb9-4352-b896-553cfa2d8fd8",
+            "modified": "2020-10-13T22:33:14.133Z",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-10-13T22:33:14.133Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT17",
+                    "description": "FireEye Labs/FireEye Threat Intelligence. (2015, May 14). Hiding in Plain Sight: FireEye and Microsoft Expose Obfuscation Tactic. Retrieved January 22, 2016.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/APT17_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Web Services",
+            "x_mitre_data_sources": [
+                "Internet Scan: Response Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T15:45:01.956Z",
+            "created": "2020-10-01T00:50:29.936Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--88d31120-5bc7-4ce3-a9c0-7cf147be8e54",
+            "description": "Adversaries may register for web services\u00a0that can be used during targeting. A variety of popular websites exist for adversaries to register for a web-based service that can be abused during later stages of the adversary lifecycle, such as during Command and Control ([Web Service](https://attack.mitre.org/techniques/T1102)) or [Exfiltration Over Web Service](https://attack.mitre.org/techniques/T1567). Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. By utilizing a web service, adversaries can make it difficult to physically tie back operations to them.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Once adversaries leverage the web service as infrastructure (ex: for command and control), it may be possible to look for unique characteristics associated with adversary software, if known.(Citation: ThreatConnect Infrastructure Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Command and Control ([Web Service](https://attack.mitre.org/techniques/T1102)) or [Exfiltration Over Web Service](https://attack.mitre.org/techniques/T1567).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1583/006",
+                    "external_id": "T1583.006",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://threatconnect.com/blog/infrastructure-research-hunting/",
+                    "description": "ThreatConnect. (2020, December 15). Infrastructure Research and Hunting: Boiling the Domain Ocean. Retrieved October 12, 2021.",
+                    "source_name": "ThreatConnect Infrastructure Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Establish Accounts",
+            "x_mitre_data_sources": [
+                "Persona: Social Media",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-16T17:35:59.386Z",
+            "created": "2020-10-01T01:05:42.216Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--cdfc5f0a-9bb9-4352-b896-553cfa2d8fd8",
+            "description": "Adversaries may create and cultivate accounts with services that can be used during targeting. Adversaries can create accounts that can be used to build a persona to further operations. Persona development consists of the development of public information, presence, history and appropriate affiliations. This development could be applied to social media, website, or other publicly available information that could be referenced and scrutinized for legitimacy over the course of an operation using that persona or identity.(Citation: NEWSCASTER2014)(Citation: BlackHatRobinSage)\n\nFor operations incorporating social engineering, the utilization of an online persona may be important. These personas may be fictitious or impersonate real people. The persona may exist on a single site or across multiple sites (ex: Facebook, LinkedIn, Twitter, Google, GitHub, Docker Hub, etc.). Establishing a persona may require development of additional documentation to make them seem real. This could include filling out profile information, developing social networks, or incorporating photos.(Citation: NEWSCASTER2014)(Citation: BlackHatRobinSage)\n\nEstablishing accounts can also include the creation of accounts with email providers, which may be directly leveraged for [Phishing for Information](https://attack.mitre.org/techniques/T1598) or [Phishing](https://attack.mitre.org/techniques/T1566).(Citation: Mandiant APT1)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Consider monitoring social media activity related to your organization. Suspicious activity may include personas claiming to work for your organization or recently created/modified accounts making numerous connection requests to accounts affiliated with your organization.\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access (ex: [Phishing](https://attack.mitre.org/techniques/T1566)).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1585",
+                    "external_id": "T1585",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.securityweek.com/iranian-hackers-targeted-us-officials-elaborate-social-media-attack-operation",
+                    "description": "Lennon, M. (2014, May 29). Iranian Hackers Targeted US Officials in Elaborate Social Media Attack Operation. Retrieved March 1, 2017.",
+                    "source_name": "NEWSCASTER2014"
+                },
+                {
+                    "url": "http://media.blackhat.com/bh-us-10/whitepapers/Ryan/BlackHat-USA-2010-Ryan-Getting-In-Bed-With-Robin-Sage-v1.0.pdf",
+                    "description": "Ryan, T. (2010). \u201cGetting In Bed with Robin Sage.\u201d. Retrieved March 6, 2017.",
+                    "source_name": "BlackHatRobinSage"
+                },
+                {
+                    "source_name": "Mandiant APT1",
+                    "description": "Mandiant. (n.d.). APT1 Exposing One of China\u2019s Cyber Espionage Units. Retrieved July 18, 2016.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "BLACKCOFFEE",
+            "x_mitre_aliases": [
+                "BLACKCOFFEE"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T14:58:42.298Z",
+            "created": "2017-05-31T21:32:45.892Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--d69c8146-ab35-4d50-8382-6fc80e641d43",
+            "description": "[BLACKCOFFEE](https://attack.mitre.org/software/S0069) is malware that has been used by several Chinese groups since at least 2013. (Citation: FireEye APT17) (Citation: FireEye Periscope March 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0069",
+                    "external_id": "S0069",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye APT17) (Citation: FireEye Periscope March 2018)",
+                    "source_name": "BLACKCOFFEE"
+                },
+                {
+                    "source_name": "FireEye APT17",
+                    "description": "FireEye Labs/FireEye Threat Intelligence. (2015, May 14). Hiding in Plain Sight: FireEye and Microsoft Expose Obfuscation Tactic. Retrieved January 22, 2016.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/APT17_Report.pdf"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/03/suspected-chinese-espionage-group-targeting-maritime-and-engineering-industries.html",
+                    "description": "FireEye. (2018, March 16). Suspected Chinese Cyber Espionage Group (TEMP.Periscope) Targeting U.S. Engineering and Maritime Industries. Retrieved April 11, 2018.",
+                    "source_name": "FireEye Periscope March 2018"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d2b33a2e-a1dc-4726-9256-93b44de05d12",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--de0df0a3-279f-4d47-a742-ded685a2b61a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e95ea8e2-448e-4bb3-825f-95b0a6050383",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--8004c490-64c3-46a4-b78b-2806e0d08ce5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0571d098-ac4e-46c6-8289-37322829a643",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--43d6fd04-5000-4728-a3fd-51fb3202fc06",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--59ccce36-9014-4242-9e3f-24a075fb5e33",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--81712669-7a31-4514-b417-7d961eb61ceb",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--485f9ad8-b289-47ac-a327-bf52ed475da8",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--843dd365-7a89-46b6-9d70-0d5fa187bc61",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--04dfe533-d201-4ee8-bcad-e247c722024f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--83012dfe-f95b-42ef-92d6-37f7b7b5dc65",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a267cc2f-0700-4f6c-aaf7-f09278574e0f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3355f7eb-11e3-453e-85e0-53a883e840ce",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b8dff79d-85db-4a13-9b5a-c95adf457595",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--16fb9814-c8d5-495a-8736-6d0298675395",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--7ebdcb84-2242-498a-9e23-25fafa3069cf"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--86843a1d-a5d9-4d31-9887-48aa6c4eb8c4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--31feedd3-f1fd-4fd6-9a98-1efd4614ef30",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--55a4d4bb-2264-479a-9dbe-2cf2eb871c95",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0516eb04-e2eb-47af-892b-37b803c83fa8",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--995ae717-7ee4-47b3-9342-edeb1551c5ee",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--98911bee-548b-4469-aa40-e0d5f87e7d80",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae",
+            "target_ref": "identity--4f5ed6f0-39b9-4079-918d-ad9294735a22"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.298321Z",
+            "id": "identity--4f5ed6f0-39b9-4079-918d-ad9294735a22",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Aerospace sector as a target",
+            "sectors": [
+                "aerospace"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.305825Z",
+            "id": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Education sector as a target",
+            "sectors": [
+                "education"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.306875Z",
+            "id": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Energy sector as a target",
+            "sectors": [
+                "energy"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.329303Z",
+            "id": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Technology sector as a target",
+            "sectors": [
+                "technology"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2022-03-13T20:09:21.324884Z",
+            "id": "identity--8004c490-64c3-46a4-b78b-2806e0d08ce5",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Mining sector as a target",
+            "sectors": [
+                "mining"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7ebdcb84-2242-498a-9e23-25fafa3069cf",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Belgium",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7ebdcb84-2242-498a-9e23-25fafa3069cf",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Belgium",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Indonesia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--04dfe533-d201-4ee8-bcad-e247c722024f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Italy",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Netherlands",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d3103127-bf9d-4c04-b9bf-8a53966b287a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Switzerland",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

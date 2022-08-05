@@ -1,0 +1,2401 @@
+{
+    "type": "bundle",
+    "id": "bundle--9ab718f8-f7bc-455b-a796-25a7b5ebc4aa",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2010",
+            "x_MISP-uuid": "2f1fd017-9df6-4759-91fb-e7039609b5ff",
+            "x_MISP-description": "Kaspersky described Naikon in a 2015 report as: 'The Naikon group is mostly active in countries such as the Philippines, Malaysia, Cambodia, Indonesia, Vietnam, Myanmar, Singapore, and Nepal, hitting a variety of targets in a very opportunistic way.'",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Naikon",
+            "x_mitre_version": "2.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "PLA Unit 78020",
+                "APT 30",
+                "APT30",
+                "Override Panda",
+                "Camerashy",
+                "APT.Naikon",
+                "Lotus Panda",
+                "Hellsing",
+                "BRONZE GENEVA",
+                "Naikon",
+                "ITG06"
+            ],
+            "id": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) is assessed to be a state-sponsored cyber espionage group attributed to the Chinese People\u2019s Liberation Army\u2019s (PLA) Chengdu Military Region Second Technical Reconnaissance Bureau (Military Unit Cover Designator 78020).(Citation: CameraShy) Active since at least 2010, [Naikon](https://attack.mitre.org/groups/G0019) has primarily conducted operations against government, military, and civil organizations in Southeast Asia, as well as against international bodies such as the United Nations Development Programme (UNDP) and the Association of Southeast Asian Nations (ASEAN).(Citation: CameraShy)(Citation: Baumgartner Naikon 2015) \n\nWhile [Naikon](https://attack.mitre.org/groups/G0019) shares some characteristics with [APT30](https://attack.mitre.org/groups/G0013), the two groups do not appear to be exact matches.(Citation: Baumgartner Golovkin Naikon 2015)",
+            "x_mitre_contributors": [
+                "Kyaw Pyiyt Htet, @KyawPyiytHtet"
+            ],
+            "created": "2017-05-31T21:31:54.232Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "G0019",
+                    "url": "https://attack.mitre.org/groups/G0019"
+                },
+                {
+                    "description": "(Citation: Baumgartner Naikon 2015)(Citation: CameraShy)(Citation: Baumgartner Golovkin Naikon 2015)",
+                    "source_name": "Naikon"
+                },
+                {
+                    "url": "http://cdn2.hubspot.net/hubfs/454298/Project_CAMERASHY_ThreatConnect_Copyright_2015.pdf",
+                    "description": "ThreatConnect Inc. and Defense Group Inc. (DGI). (2015, September 23). Project CameraShy: Closing the Aperture on China's Unit 78020. Retrieved December 17, 2015.",
+                    "source_name": "CameraShy"
+                },
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                },
+                {
+                    "source_name": "Baumgartner Golovkin Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May 14). The Naikon APT. Retrieved January 14, 2015.",
+                    "url": "https://securelist.com/the-naikon-apt/69953/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0ead6cee-20a4-46fb-a9c1-8686a776f455",
+            "description": "(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "tool--cf23bf4a-e003-4116-bbae-1ea6c558d565",
+            "modified": "2019-04-10T15:59:09.374Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0ef9bb79-c221-40a8-94b0-58bfc816565f",
+            "description": "(Citation: Baumgartner Naikon 2015)(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "tool--03342581-f790-4f03-ba41-e82e67392e23",
+            "modified": "2021-07-02T14:55:19.308Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                },
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2a220ca3-88f4-40eb-8041-184c412950d4",
+            "description": "(Citation: Baumgartner Naikon 2015)(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "tool--b77b563c-34bb-4fb8-86a3-3694338f7b47",
+            "modified": "2021-07-02T14:55:19.356Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                },
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2a896410-d7cd-4b58-a7d6-4878bc64113b",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has modified a victim's Windows Run registry to establish persistence.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "modified": "2021-08-19T18:23:24.032Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-08-19T16:54:59.595Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2e77d363-e38f-40ad-a6ef-9222dc12793d",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) uses commands such as <code>netsh advfirewall firewall</code> to discover local firewall settings.(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+            "modified": "2019-04-10T15:59:09.517Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.053Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4b521c7b-c66b-4bbc-847e-d6a13e9ae62c",
+            "description": "(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "tool--7fcbc4e8-1989-441f-9ac5-e7b6ff5806f1",
+            "modified": "2019-04-10T15:59:09.269Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6e625aae-d7d7-47a3-ba1a-8deca6321cdc",
+            "description": "(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "malware--29231689-5837-4a7a-aafc-1b65b3f50cc7",
+            "modified": "2021-06-30T14:41:24.383Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-06-30T14:41:24.383Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7dba7706-128e-43a7-a240-6d456c9003a2",
+            "description": "(Citation: Baumgartner Naikon 2015)(Citation: CameraShy)",
+            "target_ref": "malware--8c553311-0baa-4146-997a-f79acef3d831",
+            "modified": "2019-04-10T15:59:09.300Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.053Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                },
+                {
+                    "url": "http://cdn2.hubspot.net/hubfs/454298/Project_CAMERASHY_ThreatConnect_Copyright_2015.pdf",
+                    "description": "ThreatConnect Inc. and Defense Group Inc. (DGI). (2015, September 23). Project CameraShy: Closing the Aperture on China's Unit 78020. Retrieved December 17, 2015.",
+                    "source_name": "CameraShy"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8cce3864-0c29-4c3c-a1cd-733f792b8565",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used schtasks.exe for lateral movement in compromised networks.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+            "modified": "2021-06-30T14:41:24.467Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-06-30T14:32:27.765Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--80fb05e9-68b8-4e3f-bc9a-2a5f828c397c",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used malicious e-mail attachments to deliver malware.(Citation: CheckPoint Naikon May 2020)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2020-05-26T19:31:59.275Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T19:31:59.275Z",
+            "external_references": [
+                {
+                    "url": "https://research.checkpoint.com/2020/naikon-apt-cyber-espionage-reloaded/",
+                    "description": "CheckPoint. (2020, May 7). Naikon APT: Cyber Espionage Reloaded. Retrieved May 26, 2020.",
+                    "source_name": "CheckPoint Naikon May 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--437dd20a-234f-430b-b9ee-4524e1e12aa9",
+            "description": "(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "tool--5a63f900-5e7e-4928-a746-dd4558e1df71",
+            "modified": "2019-04-10T15:59:09.413Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.055Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--592a2355-077e-4692-a28a-da998ed5f937",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used the LadonGo scanner to scan target networks.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--e3a12395-188d-4051-9a16-ea8e14d07b88",
+            "modified": "2021-07-06T14:15:00.532Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-07-06T14:15:00.532Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--597ca258-3af4-4e51-abf9-b192e98939fd",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used WMIC.exe for lateral movement.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--01a5a209-b94c-450b-b7f9-946497d91055",
+            "modified": "2021-06-30T14:32:27.776Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-06-30T14:32:27.776Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--789b89f3-0f5e-4e3d-92fd-76611e840947",
+            "description": "(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "malware--22b17791-45bf-45c0-9322-ff1a0af5cf2b",
+            "modified": "2021-06-30T14:53:26.903Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-06-30T14:53:26.903Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2794f341-b46f-482c-b5b7-2cc7c2dcadb5",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used a netbios scanner for remote machine identification.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+            "modified": "2021-07-06T14:00:49.696Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-07-06T14:00:49.696Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7138c1e4-6791-424b-adc1-5b4c7d5e3cca",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) uses commands such as <code>netsh interface show</code> to discover network interface settings.(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+            "modified": "2019-04-10T15:59:09.461Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.053Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7148e604-1e3a-4a37-be3e-cde2fe20f9b6",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has disguised malicious programs as Google Chrome, Adobe, and VMware executables.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "modified": "2021-08-19T16:54:59.579Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-08-19T16:54:59.579Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8119ee71-e017-4ba0-9aeb-a14c46f64f1a",
+            "description": "(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "malware--007b44b6-e4c5-480b-b5b9-56f2081b1b7b",
+            "modified": "2019-04-10T15:59:09.372Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--45966f4c-51d4-4940-854d-79d712f63ed5",
+            "description": "(Citation: Baumgartner Naikon 2015)(Citation: CameraShy)",
+            "target_ref": "malware--22addc7b-b39f-483d-979a-1b35147da5de",
+            "modified": "2019-04-10T15:59:09.302Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                },
+                {
+                    "url": "http://cdn2.hubspot.net/hubfs/454298/Project_CAMERASHY_ThreatConnect_Copyright_2015.pdf",
+                    "description": "ThreatConnect Inc. and Defense Group Inc. (DGI). (2015, September 23). Project CameraShy: Closing the Aperture on China's Unit 78020. Retrieved December 17, 2015.",
+                    "source_name": "CameraShy"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--887465a0-6818-4e79-b86d-b83d3a0f39eb",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) renamed a malicious service <code>taskmgr</code> to appear to be a legitimate version of Task Manager.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--7bdca9d5-d500-4d7d-8c52-5fd47baf4c0c",
+            "modified": "2021-08-19T17:41:58.938Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-08-19T17:41:58.938Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--956303a4-558c-433d-bc2f-28a7e69192ae",
+            "description": "(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "malware--7f8730af-f683-423f-9ee1-5f6875a80481",
+            "modified": "2019-04-10T15:59:09.304Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--21298951-67d3-4904-97be-f7a57d120383",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used administrator credentials for lateral movement in compromised networks.(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "attack-pattern--c3d4bdd9-2cfe-4a80-9d0c-07a29ecdce8f",
+            "modified": "2021-06-29T14:40:05.801Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-06-29T14:40:05.801Z",
+            "external_references": [
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--af0b0bfb-1a1e-4a06-b9e9-adeda7b6ad81",
+            "description": "(Citation: Baumgartner Naikon 2015)(Citation: CameraShy)",
+            "target_ref": "malware--2fb26586-2b53-4b9a-ad4f-2b3bcb9a2421",
+            "modified": "2019-04-10T15:59:09.336Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.053Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                },
+                {
+                    "url": "http://cdn2.hubspot.net/hubfs/454298/Project_CAMERASHY_ThreatConnect_Copyright_2015.pdf",
+                    "description": "ThreatConnect Inc. and Defense Group Inc. (DGI). (2015, September 23). Project CameraShy: Closing the Aperture on China's Unit 78020. Retrieved December 17, 2015.",
+                    "source_name": "CameraShy"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d159e441-b30b-464a-8838-b83864173e89",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has convinced victims to open malicious attachments to execute malware.(Citation: CheckPoint Naikon May 2020)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2020-05-26T19:31:59.263Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T19:31:59.263Z",
+            "external_references": [
+                {
+                    "url": "https://research.checkpoint.com/2020/naikon-apt-cyber-espionage-reloaded/",
+                    "description": "CheckPoint. (2020, May 7). Naikon APT: Cyber Espionage Reloaded. Retrieved May 26, 2020.",
+                    "source_name": "CheckPoint Naikon May 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d4657411-8fa6-4bbc-9ed0-474eafd14375",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used DLL side-loading to load malicious DLL's into legitimate executables.(Citation: CheckPoint Naikon May 2020)",
+            "target_ref": "attack-pattern--e64c62cf-9cd7-4a14-94ec-cdaac43ab44b",
+            "modified": "2020-05-26T19:31:59.254Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T19:31:59.254Z",
+            "external_references": [
+                {
+                    "url": "https://research.checkpoint.com/2020/naikon-apt-cyber-espionage-reloaded/",
+                    "description": "CheckPoint. (2020, May 7). Naikon APT: Cyber Espionage Reloaded. Retrieved May 26, 2020.",
+                    "source_name": "CheckPoint Naikon May 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f2d601c9-8cc7-4425-b76f-fbc9997b55fd",
+            "description": "(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "tool--2e45723a-31da-4a7e-aaa6-e01998a6788f",
+            "modified": "2019-04-10T15:59:09.334Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f08c1f67-485b-4ebd-81dd-e886f63025e6",
+            "description": "(Citation: Baumgartner Naikon 2015)",
+            "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "modified": "2019-04-10T15:59:09.273Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.054Z",
+            "external_references": [
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fd8fa359-c13e-4641-9c3e-d03218daee0c",
+            "description": "(Citation: CheckPoint Naikon May 2020)(Citation: Bitdefender Naikon April 2021)",
+            "target_ref": "malware--3161d76a-e2b2-4b97-9906-24909b735386",
+            "modified": "2021-06-29T14:37:02.738Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T20:37:19.548Z",
+            "external_references": [
+                {
+                    "url": "https://research.checkpoint.com/2020/naikon-apt-cyber-espionage-reloaded/",
+                    "description": "CheckPoint. (2020, May 7). Naikon APT: Cyber Espionage Reloaded. Retrieved May 26, 2020.",
+                    "source_name": "CheckPoint Naikon May 2020"
+                },
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-01-06T18:36:29.226Z",
+            "name": "Registry Run Keys / Startup Folder",
+            "x_mitre_data_sources": [
+                "Windows Registry: Windows Registry Key Creation",
+                "Windows Registry: Windows Registry Key Modification",
+                "File: File Modification",
+                "Command: Command Execution",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-01-23T22:02:48.566Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "description": "Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. Adding an entry to the \"run keys\" in the Registry or startup folder will cause the program referenced to be executed when a user logs in. (Citation: Microsoft Run Key) These programs will be executed under the context of the user and will have the account's associated permissions level.\n\nPlacing a program within a startup folder will also cause that program to execute when a user logs in. There is a startup folder location for individual user accounts as well as a system-wide startup folder that will be checked regardless of which user account logs in. The startup folder path for the current user is <code>C:\\Users\\\\[Username]\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup</code>. The startup folder path for all users is <code>C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\StartUp</code>.\n\nThe following run keys are created by default on Windows systems:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n\nRun keys may exist under multiple hives.(Citation: Microsoft Wow6432Node 2018)(Citation: Malwarebytes Wow6432Node 2016) The <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx</code> is also available but is not created by default on Windows Vista and newer. Registry run key entries can reference programs directly or list them as a dependency. (Citation: Microsoft RunOnceEx APR 2018) For example, it is possible to load a DLL at logon using a \"Depend\" key with RunOnceEx: <code>reg add HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx\\0001\\Depend /v 1 /d \"C:\\temp\\evil[.]dll\"</code> (Citation: Oddvar Moe RunOnceEx Mar 2018)\n\nThe following Registry keys can be used to set startup folder items for persistence:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n\nThe following Registry keys can control automatic startup of services during boot:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n\nUsing policy settings to specify startup programs creates corresponding values in either of two Registry keys:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n\nThe Winlogon key controls actions that occur when a user logs on to a computer running Windows 7. Most of these actions are under the control of the operating system, but you can also add custom actions here. The <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit</code> and <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell</code> subkeys can automatically launch programs.\n\nPrograms listed in the load value of the registry key <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows</code> run when any user logs on.\n\nBy default, the multistring <code>BootExecute</code> value of the registry key <code>HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager</code> is set to <code>autocheck autochk *</code>. This value causes Windows, at startup, to check the file-system integrity of the hard disks if the system has been shut down abnormally. Adversaries can add other programs or processes to this registry value which will automatically launch at boot.\n\nAdversaries can use these configuration locations to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make the Registry entries look as if they are associated with legitimate programs.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Oddvar Moe, @oddvarmoe"
+            ],
+            "x_mitre_detection": "Monitor Registry for changes to run keys that do not correlate with known software, patch cycles, etc. Monitor the start folder for additions or changes. Tools such as Sysinternals Autoruns may also be used to detect system changes that could be attempts at persistence, including listing the run keys' Registry locations and startup folders. (Citation: TechNet Autoruns) Suspicious program execution as startup programs may show up as outlier processes that have not been seen before when compared against historical data.\n\nChanges to these locations typically happen under normal conditions when legitimate software is installed. To increase confidence of malicious activity, data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1547/001",
+                    "external_id": "T1547.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/270.html",
+                    "external_id": "CAPEC-270",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Microsoft Run Key",
+                    "description": "Microsoft. (n.d.). Run and RunOnce Registry Keys. Retrieved November 12, 2014.",
+                    "url": "http://msdn.microsoft.com/en-us/library/aa376977"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry",
+                    "description": "Microsoft. (2018, May 31). 32-bit and 64-bit Application Data in the Registry. Retrieved August 3, 2020.",
+                    "source_name": "Microsoft Wow6432Node 2018"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/cybercrime/2013/10/hiding-in-plain-sight/",
+                    "description": "Arntz, P. (2016, March 30). Hiding in Plain Sight. Retrieved August 3, 2020.",
+                    "source_name": "Malwarebytes Wow6432Node 2016"
+                },
+                {
+                    "source_name": "Microsoft RunOnceEx APR 2018",
+                    "description": "Microsoft. (2018, August 20). Description of the RunOnceEx Registry Key. Retrieved June 29, 2018.",
+                    "url": "https://support.microsoft.com/help/310593/description-of-the-runonceex-registry-key"
+                },
+                {
+                    "source_name": "Oddvar Moe RunOnceEx Mar 2018",
+                    "description": "Moe, O. (2018, March 21). Persistence using RunOnceEx - Hidden from Autoruns.exe. Retrieved June 29, 2018.",
+                    "url": "https://oddvar.moe/2018/03/21/persistence-using-runonceex-hidden-from-autoruns-exe/"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-26T18:31:34.954Z",
+            "name": "DLL Side-Loading",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "File: File Modification",
+                "Module: Module Load",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2020-03-13T19:41:37.908Z",
+            "x_mitre_defense_bypassed": [
+                "Anti-virus",
+                "Application control"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--e64c62cf-9cd7-4a14-94ec-cdaac43ab44b",
+            "description": "Adversaries may execute their own malicious payloads by side-loading DLLs. Similar to [DLL Search Order Hijacking](https://attack.mitre.org/techniques/T1574/001), side-loading involves hijacking which DLL a program loads. But rather than just planting the DLL within the search order of a program then waiting for the victim application to be invoked, adversaries may directly side-load their payloads by planting then invoking a legitimate application that executes their payload(s).\n\nSide-loading takes advantage of the DLL search order used by the loader by positioning both the victim application and malicious payload(s) alongside each other. Adversaries likely use side-loading as a means of masking actions they perform under a legitimate, trusted, and potentially elevated system or software process. Benign executables used to side-load payloads may not be flagged during delivery and/or execution. Adversary payloads may also be encrypted/packed or otherwise obfuscated until loaded into the memory of the trusted process.(Citation: FireEye DLL Side-Loading)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Monitor processes for unusual activity (e.g., a process that does not use the network begins to do so) as well as the introduction of new files/programs. Track DLL metadata, such as a hash, and compare DLLs that are loaded at process execution time against previous executions to detect differences that do not correlate with patching or updates.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1574/002",
+                    "external_id": "T1574.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/641.html",
+                    "external_id": "CAPEC-641",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-dll-sideloading.pdf",
+                    "description": "Amanda Steward. (2014). FireEye DLL Side-Loading: A Thorn in the Side of the Anti-Virus Industry. Retrieved March 13, 2020.",
+                    "source_name": "FireEye DLL Side-Loading"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Masquerade Task or Service",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Service: Service Metadata",
+                "Service: Service Creation",
+                "Scheduled Job: Scheduled Job Metadata",
+                "Scheduled Job: Scheduled Job Modification"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-18T13:24:52.618Z",
+            "created": "2020-02-10T20:30:07.426Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--7bdca9d5-d500-4d7d-8c52-5fd47baf4c0c",
+            "description": "Adversaries may attempt to manipulate the name of a task or service to make it appear legitimate or benign. Tasks/services executed by the Task Scheduler or systemd will typically be given a name and/or description.(Citation: TechNet Schtasks)(Citation: Systemd Service Units) Windows services will have a service name as well as a display name. Many benign tasks and services exist that have commonly associated names. Adversaries may give tasks or services names that are similar or identical to those of legitimate ones.\n\nTasks or services contain other fields, such as a description, that adversaries may attempt to make appear legitimate.(Citation: Palo Alto Shamoon Nov 2016)(Citation: Fysbis Dr Web Analysis)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Look for changes to tasks and services that do not correlate with known software, patch cycles, etc. Suspicious program execution through scheduled tasks or services may show up as outlier processes that have not been seen before when compared against historical data. Monitor processes and command-line arguments for actions that could be taken to create tasks or services. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/004",
+                    "external_id": "T1036.004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "TechNet Schtasks",
+                    "description": "Microsoft. (n.d.). Schtasks. Retrieved April 28, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/bb490996.aspx"
+                },
+                {
+                    "url": "https://www.freedesktop.org/software/systemd/man/systemd.service.html",
+                    "description": "Freedesktop.org. (n.d.). systemd.service \u2014 Service unit configuration. Retrieved March 16, 2020.",
+                    "source_name": "Systemd Service Units"
+                },
+                {
+                    "source_name": "Palo Alto Shamoon Nov 2016",
+                    "description": "Falcone, R.. (2016, November 30). Shamoon 2: Return of the Disttrack Wiper. Retrieved January 11, 2017.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/11/unit42-shamoon-2-return-disttrack-wiper/"
+                },
+                {
+                    "source_name": "Fysbis Dr Web Analysis",
+                    "description": "Doctor Web. (2014, November 21). Linux.BackDoor.Fysbis.1. Retrieved December 7, 2017.",
+                    "url": "https://vms.drweb.com/virus/?i=4276269"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-20T19:23:37.762Z",
+            "name": "Match Legitimate Name or Location",
+            "x_mitre_data_sources": [
+                "Image: Image Metadata",
+                "File: File Metadata",
+                "Process: Process Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-02-10T20:43:10.239Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "description": "Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them. This is done for the sake of evading defenses and observation. This may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: svchost.exe). In containerized environments, this may also be done by creating a resource in a namespace that matches the naming convention of a container pod or cluster. Alternatively, a file or container image name given may be a close approximation to legitimate programs/images or something innocuous.\n\nAdversaries may also use the same icon of the file they are trying to mimic.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee"
+            ],
+            "x_mitre_detection": "Collect file hashes; file names that do not match their expected hash are suspect. Perform file monitoring; files with known names but in unusual locations are suspect. Likewise, files that are modified outside of an update or patch are suspect.\n\nIf file names are mismatched between the file name on disk and that of the binary's PE metadata, this is a likely indicator that a binary was renamed after it was compiled. Collecting and comparing disk and resource filenames for binaries by looking to see if the InternalName, OriginalFilename, and/or ProductName match what is expected could provide useful leads, but may not always be indicative of malicious activity. (Citation: Elastic Masquerade Ball) Do not focus on the possible names a file could have, but instead on the command-line arguments that are known to be used and are distinct because it will have a better rate of detection.(Citation: Twitter ItsReallyNick Masquerading Update)\n\nIn containerized environments, use image IDs and layer hashes to compare images instead of relying only on their names.(Citation: Docker Images) Monitor for the unexpected creation of new resources within your cluster in Kubernetes, especially those created by atypical users.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/177.html",
+                    "external_id": "CAPEC-177",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "http://pages.endgame.com/rs/627-YBU-612/images/EndgameJournal_The%20Masquerade%20Ball_Pages_R2.pdf",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "source_name": "Elastic Masquerade Ball"
+                },
+                {
+                    "url": "https://twitter.com/ItsReallyNick/status/1055321652777619457",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved April 22, 2019.",
+                    "source_name": "Twitter ItsReallyNick Masquerading Update"
+                },
+                {
+                    "url": "https://docs.docker.com/engine/reference/commandline/images/",
+                    "description": "Docker. (n.d.). Docker Images. Retrieved April 6, 2021.",
+                    "source_name": "Docker Images"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Network Service Scanning",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Cloud Service: Cloud Service Enumeration",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "modified": "2021-04-09T14:56:26.562Z",
+            "created": "2017-05-31T21:30:43.915Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--e3a12395-188d-4051-9a16-ea8e14d07b88",
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation. Methods to acquire this information include port scans and vulnerability scans using tools that are brought onto a system. \n\nWithin cloud environments, adversaries may attempt to discover services running on other cloud hosts. Additionally, if the cloud environment is connected to a on-premises environment, adversaries may be able to identify services running on non-cloud systems as well.",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events from legitimate remote service scanning may be uncommon, depending on the environment and how they are used. Legitimate open port and vulnerability scanning may be conducted within the environment and will need to be deconflicted with any detection capabilities developed. Network intrusion detection systems can also be used to identify scanning activity. Monitor for process use of the networks and inspect intra-network flows to detect port scans.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1046",
+                    "external_id": "T1046",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/300.html",
+                    "external_id": "CAPEC-300",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Add-ins",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Windows Registry: Windows Registry Key Creation",
+                "Windows Registry: Windows Registry Key Modification",
+                "File: File Creation",
+                "File: File Modification"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-08-16T21:26:09.296Z",
+            "created": "2019-11-07T19:52:52.801Z",
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Office 365"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--34f1d81d-fe88-4f97-bd3b-a3164536255d",
+            "description": "Adversaries may abuse Microsoft Office add-ins to obtain persistence on a compromised system. Office add-ins can be used to add functionality to Office programs. (Citation: Microsoft Office Add-ins) There are different types of add-ins that can be used by the various Office products; including Word/Excel add-in Libraries (WLL/XLL), VBA add-ins, Office Component Object Model (COM) add-ins, automation add-ins, VBA Editor (VBE), Visual Studio Tools for Office (VSTO) add-ins, and Outlook add-ins. (Citation: MRWLabs Office Persistence Add-ins)(Citation: FireEye Mail CDS 2018)\n\nAdd-ins can be used to obtain persistence because they can be set to execute code when an Office application starts. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "x_mitre_detection": "Monitor and validate the Office trusted locations on the file system and audit the Registry entries relevant for enabling add-ins.(Citation: GlobalDotName Jun 2019)(Citation: MRWLabs Office Persistence Add-ins)\n\nCollect process execution information including process IDs (PID) and parent process IDs (PPID) and look for abnormal chains of activity resulting from Office processes. Non-standard process execution trees may also indicate suspicious or malicious behavior",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1137/006",
+                    "external_id": "T1137.006",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Microsoft Office Add-ins",
+                    "description": "Microsoft. (n.d.). Add or remove add-ins. Retrieved July 3, 2017.",
+                    "url": "https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460"
+                },
+                {
+                    "source_name": "MRWLabs Office Persistence Add-ins",
+                    "description": "Knowles, W. (2017, April 21). Add-In Opportunities for Office Persistence. Retrieved July 3, 2017.",
+                    "url": "https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/"
+                },
+                {
+                    "url": "https://summit.fireeye.com/content/dam/fireeye-www/summit/cds-2018/presentations/cds18-technical-s03-youve-got-mail.pdf",
+                    "description": "Caban, D. and Hirani, M. (2018, October 3). You\u2019ve Got Mail! Enterprise Email Compromise. Retrieved April 22, 2019.",
+                    "source_name": "FireEye Mail CDS 2018"
+                },
+                {
+                    "url": "https://www.221bluestreet.com/post/office-templates-and-globaldotname-a-stealthy-office-persistence-technique",
+                    "description": "Shukrun, S. (2019, June 2). Office Templates and GlobalDotName - A Stealthy Office Persistence Technique. Retrieved August 26, 2019.",
+                    "source_name": "GlobalDotName Jun 2019"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Remote System Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation",
+                "File: File Access"
+            ],
+            "x_mitre_version": "3.2",
+            "modified": "2021-10-15T15:30:00.172Z",
+            "created": "2017-05-31T21:30:28.187Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used such as  [Ping](https://attack.mitre.org/software/S0097) or <code>net view</code> using [Net](https://attack.mitre.org/software/S0039). Adversaries may also use local host files (ex: <code>C:\\Windows\\System32\\Drivers\\etc\\hosts</code> or <code>/etc/hosts</code>) in order to discover the hostname to IP address mappings of remote systems. \n",
+            "x_mitre_contributors": [
+                "Daniel Stepanic, Elastic",
+                "RedHuntLabs, @redhuntlabs"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events related to legitimate remote system discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nMonitor for processes that can be used to discover remote systems, such as <code>ping.exe</code> and <code>tracert.exe</code>, especially when executed in quick succession.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1018",
+                    "external_id": "T1018",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/292.html",
+                    "external_id": "CAPEC-292",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-12-30T14:26:44.730Z",
+            "name": "Scheduled Task",
+            "x_mitre_data_sources": [
+                "Scheduled Job: Scheduled Job Creation",
+                "Command: Command Execution",
+                "File: File Modification",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2019-11-27T14:58:00.429Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+            "description": "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code. There are multiple ways to access the Task Scheduler in Windows. The <code>schtasks</code> can be run directly on the command line, or the Task Scheduler can be opened through the GUI within the Administrator Tools section of the Control Panel. In some cases, adversaries have used a .NET wrapper for the Windows Task Scheduler, and alternatively, adversaries have used the Windows netapi32 library to create a scheduled task.\n\nThe deprecated [at](https://attack.mitre.org/software/S0110) utility could also be abused by adversaries (ex: [At (Windows)](https://attack.mitre.org/techniques/T1053/002)), though <code>at.exe</code> can not access tasks created with <code>schtasks</code> or the Control Panel.\n\nAn adversary may use Windows Task Scheduler to execute programs at system startup or on a scheduled basis for persistence. The Windows Task Scheduler can also be abused to conduct remote Execution as part of Lateral Movement and or to run a process under the context of a specified account (such as SYSTEM).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Monitor process execution from the <code>svchost.exe</code> in Windows 10 and the Windows Task Scheduler <code>taskeng.exe</code> for older versions of Windows. (Citation: Twitter Leoloobeek Scheduled Task) If scheduled tasks are not used for persistence, then the adversary is likely to remove the task when the action is complete. Monitor Windows Task Scheduler stores in %systemroot%\\System32\\Tasks for change entries related to scheduled tasks that do not correlate with known software, patch cycles, etc.\n\nConfigure event logging for scheduled task creation and changes by enabling the \"Microsoft-Windows-TaskScheduler/Operational\" setting within the event logging service. (Citation: TechNet Forum Scheduled Task Operational Setting) Several events will then be logged on scheduled task activity, including: (Citation: TechNet Scheduled Task Events)(Citation: Microsoft Scheduled Task Events Win10)\n\n* Event ID 106 on Windows 7, Server 2008 R2 - Scheduled task registered\n* Event ID 140 on Windows 7, Server 2008 R2 / 4702 on Windows 10, Server 2016 - Scheduled task updated\n* Event ID 141 on Windows 7, Server 2008 R2 / 4699 on Windows 10, Server 2016 - Scheduled task deleted\n* Event ID 4698 on Windows 10, Server 2016 - Scheduled task created\n* Event ID 4700 on Windows 10, Server 2016 - Scheduled task enabled\n* Event ID 4701 on Windows 10, Server 2016 - Scheduled task disabled\n\nTools such as Sysinternals Autoruns may also be used to detect system changes that could be attempts at persistence, including listing current scheduled tasks. (Citation: TechNet Autoruns)\n\nRemote access tools with built-in features may interact directly with the Windows API to perform these functions outside of typical system utilities. Tasks may also be created through Windows system management tools such as Windows Management Instrumentation and PowerShell, so additional logging may need to be configured to gather the appropriate data.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1053/005",
+                    "external_id": "T1053.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Twitter Leoloobeek Scheduled Task",
+                    "description": "Loobeek, L. (2017, December 8). leoloobeek Status. Retrieved December 12, 2017.",
+                    "url": "https://twitter.com/leoloobeek/status/939248813465853953"
+                },
+                {
+                    "source_name": "TechNet Forum Scheduled Task Operational Setting",
+                    "description": "Satyajit321. (2015, November 3). Scheduled Tasks History Retention settings. Retrieved December 12, 2017.",
+                    "url": "https://social.technet.microsoft.com/Forums/en-US/e5bca729-52e7-4fcb-ba12-3225c564674c/scheduled-tasks-history-retention-settings?forum=winserver8gen"
+                },
+                {
+                    "source_name": "TechNet Scheduled Task Events",
+                    "description": "Microsoft. (n.d.). General Task Registration. Retrieved December 12, 2017.",
+                    "url": "https://technet.microsoft.com/library/dd315590.aspx"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-other-object-access-events",
+                    "description": "Microsoft. (2017, May 28). Audit Other Object Access Events. Retrieved June 27, 2019.",
+                    "source_name": "Microsoft Scheduled Task Events Win10"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "System Network Configuration Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Script: Script Execution",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-10-08T00:17:37.881Z",
+            "created": "2017-05-31T21:30:27.342Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+            "description": "Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of systems they access or through information discovery of remote systems. Several operating system administration utilities exist that can be used to gather this information. Examples include [Arp](https://attack.mitre.org/software/S0099), [ipconfig](https://attack.mitre.org/software/S0100)/[ifconfig](https://attack.mitre.org/software/S0101), [nbtstat](https://attack.mitre.org/software/S0102), and [route](https://attack.mitre.org/software/S0103).\n\nAdversaries may use the information from [System Network Configuration Discovery](https://attack.mitre.org/techniques/T1016) during automated discovery to shape follow-on behaviors, including determining certain access within the target network and what actions to do next. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1016",
+                    "external_id": "T1016",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/309.html",
+                    "external_id": "CAPEC-309",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Domain Accounts",
+            "x_mitre_data_sources": [
+                "Logon Session: Logon Session Metadata",
+                "User Account: User Account Authentication",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-19T03:29:47.651Z",
+            "created": "2020-03-13T20:21:54.758Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "id": "attack-pattern--c3d4bdd9-2cfe-4a80-9d0c-07a29ecdce8f",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may obtain and abuse credentials of a domain account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. (Citation: TechNet Credential Theft) Domain accounts are those managed by Active Directory Domain Services where access and permissions are configured across systems and services that are part of that domain. Domain accounts can cover users, administrators, and services.(Citation: Microsoft AD Accounts)\n\nAdversaries may compromise domain accounts, some with a high level of privileges, through various means such as [OS Credential Dumping](https://attack.mitre.org/techniques/T1003) or password reuse, allowing access to privileged resources of the domain.",
+            "x_mitre_contributors": [
+                "Jon Sternstein, Stern Security"
+            ],
+            "x_mitre_detection": "Configure robust, consistent account activity audit policies across the enterprise and with externally accessible services.(Citation: TechNet Audit Policy) Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account. Correlate other security systems with login information (e.g., a user has an active login session but has not entered the building or does not have VPN access).\n\nOn Linux, check logs and other artifacts created by use of domain authentication services, such as the System Security Services Daemon (sssd).(Citation: Ubuntu SSSD Docs) \n\nPerform regular audits of domain accounts to detect accounts that may have been created by an adversary for persistence.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1078/002",
+                    "external_id": "T1078.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/560.html",
+                    "external_id": "CAPEC-560",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Credential Theft",
+                    "description": "Microsoft. (2016, April 15). Attractive Accounts for Credential Theft. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn535501.aspx"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-accounts",
+                    "description": "Microsoft. (2019, August 23). Active Directory Accounts. Retrieved March 13, 2020.",
+                    "source_name": "Microsoft AD Accounts"
+                },
+                {
+                    "source_name": "TechNet Audit Policy",
+                    "description": "Microsoft. (2016, April 15). Audit Policy Recommendations. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn487457.aspx"
+                },
+                {
+                    "url": "https://ubuntu.com/server/docs/service-sssd",
+                    "description": "Ubuntu. (n.d.). SSSD. Retrieved September 23, 2021.",
+                    "source_name": "Ubuntu SSSD Docs"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Windows Management Instrumentation",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T23:58:07.715Z",
+            "created": "2017-05-31T21:30:44.329Z",
+            "x_mitre_remote_support": true,
+            "id": "attack-pattern--01a5a209-b94c-450b-b7f9-946497d91055",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may abuse Windows Management Instrumentation (WMI) to execute malicious commands and payloads. WMI is an administration feature that provides a uniform environment to access Windows system components. The WMI service enables both local and remote access, though the latter is facilitated by [Remote Services](https://attack.mitre.org/techniques/T1021) such as [Distributed Component Object Model](https://attack.mitre.org/techniques/T1021/003) (DCOM) and [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006) (WinRM). (Citation: MSDN WMI) Remote WMI over DCOM operates using port 135, whereas WMI over WinRM operates over port 5985 when using HTTP and 5986 for HTTPS. (Citation: MSDN WMI) (Citation: FireEye WMI 2015)\n\nAn adversary can use WMI to interact with local and remote systems and use it as a means to execute various behaviors, such as gathering information for Discovery as well as remote Execution of files as part of Lateral Movement. (Citation: FireEye WMI SANS 2015) (Citation: FireEye WMI 2015)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_contributors": [
+                "@ionstorm"
+            ],
+            "x_mitre_detection": "Monitor network traffic for WMI connections; the use of WMI in environments that do not typically use WMI may be suspect. Perform process monitoring to capture command-line arguments of \"wmic\" and detect commands that are used to perform remote behavior. (Citation: FireEye WMI 2015)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1047",
+                    "external_id": "T1047",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "MSDN WMI",
+                    "description": "Microsoft. (n.d.). Windows Management Instrumentation. Retrieved April 27, 2016.",
+                    "url": "https://msdn.microsoft.com/en-us/library/aa394582.aspx"
+                },
+                {
+                    "source_name": "FireEye WMI 2015",
+                    "description": "Ballenthin, W., et al. (2015). Windows Management Instrumentation (WMI) Offense, Defense, and Forensics. Retrieved March 30, 2016.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf"
+                },
+                {
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/sans-dfir-2015.pdf",
+                    "description": "Devon Kerr. (2015). There's Something About WMI. Retrieved May 4, 2020.",
+                    "source_name": "FireEye WMI SANS 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Aria-body",
+            "x_mitre_aliases": [
+                "Aria-body"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-08-19T17:58:43.342Z",
+            "created": "2020-05-26T19:36:04.663Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--3161d76a-e2b2-4b97-9906-24909b735386",
+            "description": "[Aria-body](https://attack.mitre.org/software/S0456) is a custom backdoor that has been used by [Naikon](https://attack.mitre.org/groups/G0019) since approximately 2017.(Citation: CheckPoint Naikon May 2020)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0456",
+                    "external_id": "S0456",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://research.checkpoint.com/2020/naikon-apt-cyber-espionage-reloaded/",
+                    "description": "CheckPoint. (2020, May 7). Naikon APT: Cyber Espionage Reloaded. Retrieved May 26, 2020.",
+                    "source_name": "CheckPoint Naikon May 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "FTP",
+            "x_mitre_aliases": [
+                "FTP",
+                "ftp.exe"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T16:25:40.125Z",
+            "created": "2017-05-31T21:33:00.565Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "id": "tool--cf23bf4a-e003-4116-bbae-1ea6c558d565",
+            "description": "[FTP](https://attack.mitre.org/software/S0095) is a utility commonly available with operating systems to transfer information over the File Transfer Protocol (FTP). Adversaries can use it to transfer other tools onto a system or to exfiltrate data. (Citation: Wikipedia FTP)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0095",
+                    "external_id": "S0095",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/File_Transfer_Protocol",
+                    "description": "Wikipedia. (2016, June 15). File Transfer Protocol. Retrieved July 20, 2016.",
+                    "source_name": "Wikipedia FTP"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "HDoor",
+            "x_mitre_aliases": [
+                "HDoor",
+                "Custom HDoor"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2019-04-25T02:33:53.419Z",
+            "created": "2017-05-31T21:32:40.801Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--007b44b6-e4c5-480b-b5b9-56f2081b1b7b",
+            "description": "[HDoor](https://attack.mitre.org/software/S0061) is malware that has been customized and used by the [Naikon](https://attack.mitre.org/groups/G0019) group. (Citation: Baumgartner Naikon 2015)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0061",
+                    "url": "https://attack.mitre.org/software/S0061"
+                },
+                {
+                    "source_name": "Baumgartner Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Nebulae",
+            "x_mitre_aliases": [
+                "Nebulae"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-10-15T22:57:32.775Z",
+            "created": "2021-06-30T14:44:35.055Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--22b17791-45bf-45c0-9322-ff1a0af5cf2b",
+            "description": "[Nebulae](https://attack.mitre.org/software/S0630) Is a backdoor that has been used by [Naikon](https://attack.mitre.org/groups/G0019)  since at least 2020.(Citation: Bitdefender Naikon April 2021)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0630",
+                    "external_id": "S0630",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Net",
+            "x_mitre_aliases": [
+                "Net",
+                "net.exe"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-15T20:33:54.392Z",
+            "created": "2017-05-31T21:32:31.601Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--03342581-f790-4f03-ba41-e82e67392e23",
+            "description": "The [Net](https://attack.mitre.org/software/S0039) utility is a component of the Windows operating system. It is used in command-line operations for control of users, groups, services, and network connections. (Citation: Microsoft Net Utility)\n\n[Net](https://attack.mitre.org/software/S0039) has a great deal of functionality, (Citation: Savill 1999) much of which is useful for an adversary, such as gathering system and network information for Discovery, moving laterally through [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002) using <code>net use</code> commands, and interacting with services. The net1.exe utility is executed for certain functionality when net.exe is run and can be used directly in commands such as <code>net1 user</code>.",
+            "x_mitre_contributors": [
+                "David Ferguson, CyberSponse"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0039",
+                    "external_id": "S0039",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Microsoft Net Utility",
+                    "description": "Microsoft. (2006, October 18). Net.exe Utility. Retrieved September 22, 2015.",
+                    "url": "https://msdn.microsoft.com/en-us/library/aa939914"
+                },
+                {
+                    "url": "http://windowsitpro.com/windows/netexe-reference",
+                    "description": "Savill, J. (1999, March 4). Net.exe reference. Retrieved September 22, 2015.",
+                    "source_name": "Savill 1999"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "netsh",
+            "x_mitre_aliases": [
+                "netsh",
+                "netsh.exe"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-31T12:41:22.189Z",
+            "created": "2017-05-31T21:33:06.083Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--5a63f900-5e7e-4928-a746-dd4558e1df71",
+            "description": "[netsh](https://attack.mitre.org/software/S0108) is a scripting utility used to interact with networking components on local or remote systems. (Citation: TechNet Netsh)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0108",
+                    "external_id": "S0108",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/library/bb490939.aspx",
+                    "description": "Microsoft. (n.d.). Using Netsh. Retrieved February 13, 2017.",
+                    "source_name": "TechNet Netsh"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Ping",
+            "x_mitre_aliases": [
+                "ping.exe",
+                "Ping"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "id": "tool--b77b563c-34bb-4fb8-86a3-3694338f7b47",
+            "description": "[Ping](https://attack.mitre.org/software/S0097) is an operating system utility commonly used to troubleshoot and verify network connections. (Citation: TechNet Ping)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:33:01.483Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0097",
+                    "external_id": "S0097",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb490968.aspx",
+                    "description": "Microsoft. (n.d.). Ping. Retrieved April 8, 2016.",
+                    "source_name": "TechNet Ping"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PsExec",
+            "x_mitre_aliases": [
+                "PsExec"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-24T13:47:24.660Z",
+            "created": "2017-05-31T21:32:21.771Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "description": "[PsExec](https://attack.mitre.org/software/S0029) is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers. (Citation: Russinovich Sysinternals) (Citation: SANS PsExec)",
+            "x_mitre_contributors": [
+                "Janantha Marasinghe"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0029",
+                    "external_id": "S0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Russinovich Sysinternals",
+                    "description": "Russinovich, M. (2014, May 2). Windows Sysinternals PsExec v2.11. Retrieved May 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx"
+                },
+                {
+                    "source_name": "SANS PsExec",
+                    "description": "Pilkington, M.. (2012, December 17). Protecting Privileged Domain Accounts: PsExec Deep-Dive. Retrieved August 17, 2016.",
+                    "url": "https://digital-forensics.sans.org/blog/2012/12/17/protecting-privileged-domain-accounts-psexec-deep-dive"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "RainyDay",
+            "x_mitre_aliases": [
+                "RainyDay"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-08-19T19:14:14.922Z",
+            "created": "2021-06-29T14:46:45.468Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--29231689-5837-4a7a-aafc-1b65b3f50cc7",
+            "description": "[RainyDay](https://attack.mitre.org/software/S0629) is a backdoor tool that has been used by [Naikon](https://attack.mitre.org/groups/G0019) since at least 2020.(Citation: Bitdefender Naikon April 2021)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0629",
+                    "external_id": "S0629",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "source_name": "Bitdefender Naikon April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "RARSTONE",
+            "x_mitre_aliases": [
+                "RARSTONE"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T17:24:58.616Z",
+            "created": "2017-05-31T21:32:38.480Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--8c553311-0baa-4146-997a-f79acef3d831",
+            "description": "[RARSTONE](https://attack.mitre.org/software/S0055) is malware used by the [Naikon](https://attack.mitre.org/groups/G0019) group that has some characteristics similar to [PlugX](https://attack.mitre.org/software/S0013). (Citation: Aquino RARSTONE)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0055",
+                    "external_id": "S0055",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Aquino RARSTONE",
+                    "description": "Aquino, M. (2013, June 13). RARSTONE Found In Targeted Attacks. Retrieved December 17, 2015.",
+                    "url": "http://blog.trendmicro.com/trendlabs-security-intelligence/rarstone-found-in-targeted-attacks/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "SslMM",
+            "x_mitre_aliases": [
+                "SslMM"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-18T15:53:57.549Z",
+            "created": "2017-05-31T21:32:39.606Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--2fb26586-2b53-4b9a-ad4f-2b3bcb9a2421",
+            "description": "[SslMM](https://attack.mitre.org/software/S0058) is a full-featured backdoor used by [Naikon](https://attack.mitre.org/groups/G0019) that has multiple variants. (Citation: Baumgartner Naikon 2015)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0058",
+                    "url": "https://attack.mitre.org/software/S0058"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "source_name": "Baumgartner Naikon 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Sys10",
+            "x_mitre_aliases": [
+                "Sys10"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-18T23:13:31.404Z",
+            "created": "2017-05-31T21:32:40.391Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--7f8730af-f683-423f-9ee1-5f6875a80481",
+            "description": "[Sys10](https://attack.mitre.org/software/S0060) is a backdoor that was used throughout 2013 by [Naikon](https://attack.mitre.org/groups/G0019). (Citation: Baumgartner Naikon 2015)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0060",
+                    "url": "https://attack.mitre.org/software/S0060"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "source_name": "Baumgartner Naikon 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Systeminfo",
+            "x_mitre_aliases": [
+                "systeminfo.exe",
+                "Systeminfo"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--7fcbc4e8-1989-441f-9ac5-e7b6ff5806f1",
+            "description": "[Systeminfo](https://attack.mitre.org/software/S0096) is a Windows utility that can be used to gather detailed information about a computer. (Citation: TechNet Systeminfo)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:33:00.969Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0096",
+                    "external_id": "S0096",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb491007.aspx",
+                    "description": "Microsoft. (n.d.). Systeminfo. Retrieved April 8, 2016.",
+                    "source_name": "TechNet Systeminfo"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Tasklist",
+            "x_mitre_aliases": [
+                "Tasklist"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--2e45723a-31da-4a7e-aaa6-e01998a6788f",
+            "description": "The [Tasklist](https://attack.mitre.org/software/S0057) utility displays a list of applications and services with their Process IDs (PID) for all tasks running on either a local or a remote computer. It is packaged with Windows operating systems and can be executed from the command-line interface. (Citation: Microsoft Tasklist)",
+            "labels": [
+                "tool"
+            ],
+            "created": "2017-05-31T21:32:39.233Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0057",
+                    "external_id": "S0057",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://technet.microsoft.com/en-us/library/bb491010.aspx",
+                    "description": "Microsoft. (n.d.). Tasklist. Retrieved December 23, 2015.",
+                    "source_name": "Microsoft Tasklist"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "WinMM",
+            "x_mitre_aliases": [
+                "WinMM"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T18:27:57.226Z",
+            "created": "2017-05-31T21:32:40.004Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--22addc7b-b39f-483d-979a-1b35147da5de",
+            "description": "[WinMM](https://attack.mitre.org/software/S0059) is a full-featured, simple backdoor used by [Naikon](https://attack.mitre.org/groups/G0019). (Citation: Baumgartner Naikon 2015)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0059",
+                    "url": "https://attack.mitre.org/software/S0059"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/TheNaikonAPT-MsnMM1.pdf",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May). The MsnMM Campaigns: The Earliest Naikon APT Campaigns. Retrieved April 10, 2019.",
+                    "source_name": "Baumgartner Naikon 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6f38eb77-da3f-4a35-b048-32a4fa6c6fbc",
+            "description": "[Naikon](https://attack.mitre.org/groups/G0019) has used the RoyalRoad exploit builder to drop a second stage loader, intel.wll, into the Word Startup folder on the compromised host.(Citation: CheckPoint Naikon May 2020)",
+            "target_ref": "attack-pattern--34f1d81d-fe88-4f97-bd3b-a3164536255d",
+            "modified": "2020-05-26T19:31:59.257Z",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-26T19:31:59.257Z",
+            "external_references": [
+                {
+                    "url": "https://research.checkpoint.com/2020/naikon-apt-cyber-espionage-reloaded/",
+                    "description": "CheckPoint. (2020, May 7). Naikon APT: Cyber Espionage Reloaded. Retrieved May 26, 2020.",
+                    "source_name": "CheckPoint Naikon May 2020"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c616f8d7-eec6-4da3-9316-57ec234b856c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be"
+        },
+        {
+            "created": "2021-03-13T20:09:21.330327Z",
+            "id": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Telecommunications sector as a target",
+            "sectors": [
+                "telecommunications"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c3dc4197-405c-4b33-9599-1806bf97c356",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c8c7f207-94e9-47d1-82af-d298063bc49b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ec2ec47e-2b60-4fd0-9cff-f1961adce14c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Australia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f7e4b2f1-9a98-4988-a491-216e99d2c83d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Cambodia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Indonesia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--3ab5bcd6-96b3-49ed-bf01-b23d8fd59188",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Malaysia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e65f621b-32e0-4249-af5d-32b46804ba2d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Myanmar",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--883b2eb1-43ea-4bf1-882e-510c5ad0db04",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Nepal",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Philippines",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Saudi Arabia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Singapore",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Thailand",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Vietnam",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--97066f5e-8777-4726-a1a8-f97dfacc33eb",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c90df92b-6751-4fa3-9743-ef0ec451196b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--65628c52-1583-4214-ab8a-aa3f9678faad",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--baa04bec-5655-4791-8c5a-c672f2320858",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--599bbb82-bde4-4035-af4f-e1ffa6ae8e25",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--69af49fd-4277-42d5-9dab-749791c48baa",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e50d943c-0ffd-4c30-b7a4-1b42a6988e4d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--883b2eb1-43ea-4bf1-882e-510c5ad0db04"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--5d296821-32b6-42cd-8a00-ec552a9fa7c2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--e65f621b-32e0-4249-af5d-32b46804ba2d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--aaa4605b-82e2-4d34-ab7f-af554ec1132f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--3ab5bcd6-96b3-49ed-bf01-b23d8fd59188"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--15b13fa1-0f01-43ef-998b-e81ad1900d32",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1ca78637-1b60-4e91-bfb7-6a31f9fd618d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--09b05172-65b2-4bfe-be2f-bc69b2fdc497",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--f7e4b2f1-9a98-4988-a491-216e99d2c83d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d5b93ab8-3961-4fcd-a07b-8af9b40cadc0",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1e8ce3c9-2143-4f10-9f3a-c0a165531739",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e0077141-ac8a-4122-bf69-947f512ba178",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fea597a6-90bd-4208-9dc5-ab6fef721ca9",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.306875Z",
+            "id": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Energy sector as a target",
+            "sectors": [
+                "energy"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        }
+    ]
+}

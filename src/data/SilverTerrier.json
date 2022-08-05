@@ -1,0 +1,703 @@
+{
+    "type": "bundle",
+    "id": "bundle--dfc6ed17-ae41-4226-92fa-ec39bb0f3a5c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "x_MISP-uuid": "acbfd9e4-f78c-4ae0-9b52-c35ed679e546",
+            "x_MISP-description": "As these tools rise and fall in popularity (and more importantly, as detection rates by antivirus vendors improve), SilverTerrier actors have consistently adopted new malware families and shifted to the latest packing tools available. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "SilverTerrier",
+            "description": "[SilverTerrier](https://attack.mitre.org/groups/G0083) is a Nigerian threat group that has been seen active since 2014. [SilverTerrier](https://attack.mitre.org/groups/G0083) mainly targets organizations in high technology, higher education, and manufacturing.(Citation: Unit42 SilverTerrier 2018)(Citation: Unit42 SilverTerrier 2016)",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "SilverTerrier"
+            ],
+            "created": "2019-01-29T21:36:59.793Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0083",
+                    "external_id": "G0083",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Unit42 SilverTerrier 2018)(Citation: Unit42 SilverTerrier 2016)",
+                    "source_name": "SilverTerrier"
+                },
+                {
+                    "source_name": "Unit42 SilverTerrier 2018",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise"
+                },
+                {
+                    "source_name": "Unit42 SilverTerrier 2016",
+                    "description": "Renals, P., Conant, S. (2016). SILVERTERRIER: The Next Evolution in Nigerian Cybercrime. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/Unit_42/silverterrier-next-evolution-in-nigerian-cybercrime.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5e7e3226-1583-48de-9376-946fa88b6d15",
+            "description": "[SilverTerrier](https://attack.mitre.org/groups/G0083) uses SMTP for C2 communications.(Citation: Unit42 SilverTerrier 2018)",
+            "target_ref": "attack-pattern--54b4c251-1f0e-4eba-ba6b-dbc7a6f6f06b",
+            "modified": "2020-03-17T02:36:01.222Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-29T21:36:59.980Z",
+            "external_references": [
+                {
+                    "source_name": "Unit42 SilverTerrier 2018",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7a9b075d-4a37-4b89-8643-8b4376b79416",
+            "description": "(Citation: Unit42 SilverTerrier 2018)",
+            "target_ref": "malware--e7a5229f-05eb-440e-b982-9a6d2b2b87c8",
+            "modified": "2019-04-12T16:33:51.221Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-29T21:37:00.034Z",
+            "external_references": [
+                {
+                    "source_name": "Unit42 SilverTerrier 2018",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--87cc66d0-7cab-4584-b86e-f2d56d492271",
+            "description": "[SilverTerrier](https://attack.mitre.org/groups/G0083) uses HTTP for C2 communications.(Citation: Unit42 SilverTerrier 2018)\t",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "modified": "2020-03-17T02:36:01.176Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-17T02:36:01.176Z",
+            "external_references": [
+                {
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "source_name": "Unit42 SilverTerrier 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--69205d34-6967-40df-baed-45b5d23d8e27",
+            "description": "(Citation: Unit42 SilverTerrier 2018)",
+            "target_ref": "malware--b4d80f8b-d2b9-4448-8844-4bef777ed676",
+            "modified": "2019-04-12T16:33:51.199Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-29T21:37:00.022Z",
+            "external_references": [
+                {
+                    "source_name": "Unit42 SilverTerrier 2018",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cff191ef-39ba-4126-b039-12a7fe327665",
+            "description": "[SilverTerrier](https://attack.mitre.org/groups/G0083) uses FTP for C2 communications.(Citation: Unit42 SilverTerrier 2018)\t",
+            "target_ref": "attack-pattern--9a60a291-8960-4387-8a4a-2ab5c18bb50b",
+            "modified": "2020-03-17T02:36:01.188Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-03-17T02:36:01.188Z",
+            "external_references": [
+                {
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "source_name": "Unit42 SilverTerrier 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d88c3036-bcaf-4897-a47e-3cabc0dbc1b2",
+            "description": "(Citation: Unit42 SilverTerrier 2018)",
+            "target_ref": "malware--2a70812b-f1ef-44db-8578-a496a227aef2",
+            "modified": "2019-04-12T16:33:51.188Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-29T21:37:00.007Z",
+            "external_references": [
+                {
+                    "source_name": "Unit42 SilverTerrier 2018",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e50b6d7a-8c22-45f3-9d60-383064cc58d4",
+            "description": "(Citation: Unit42 SilverTerrier 2018)",
+            "target_ref": "malware--53ab35c2-d00e-491a-8753-41d35ae7e547",
+            "modified": "2019-04-12T16:33:51.213Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-01-29T21:37:00.018Z",
+            "external_references": [
+                {
+                    "source_name": "Unit42 SilverTerrier 2018",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e8948840-b0a0-4c10-87f4-022720dc8dd9",
+            "description": "(Citation: Unit42 SilverTerrier 2018)",
+            "target_ref": "malware--cb741463-f0fe-42e0-8d45-bc7e8335f5ae",
+            "modified": "2020-05-19T23:26:11.987Z",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-19T23:26:11.987Z",
+            "external_references": [
+                {
+                    "source_name": "Unit42 SilverTerrier 2018",
+                    "description": "Unit42. (2016). SILVERTERRIER: THE RISE OF NIGERIAN BUSINESS EMAIL COMPROMISE. Retrieved November 13, 2018.",
+                    "url": "https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/whitepapers/unit42-silverterrier-rise-of-nigerian-business-email-compromise"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T20:15:35.821Z",
+            "name": "Web Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:13:46.151Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as HTTP and HTTPS that carry web traffic may be very common in environments. HTTP/S packets have many fields and headers in which data can be concealed. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)\n\nMonitor for web traffic to/from known-bad or suspicious domains. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/001",
+                    "external_id": "T1071.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-08-21T14:41:22.911Z",
+            "name": "File Transfer Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:16:25.763Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--9a60a291-8960-4387-8a4a-2ab5c18bb50b",
+            "description": "Adversaries may communicate using application layer protocols associated with transferring files to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as FTP, FTPS, and TFTP that transfer files may be very common in environments.  Packets produced from these protocols may have many fields and headers in which data can be concealed. Data could also be concealed within the transferred files. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/002",
+                    "external_id": "T1071.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-10-21T16:35:45.633Z",
+            "name": "Mail Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:21:45.131Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--54b4c251-1f0e-4eba-ba6b-dbc7a6f6f06b",
+            "description": "Adversaries may communicate using application layer protocols associated with electronic mail delivery to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as SMTP/S, POP3/S, and IMAP that carry electronic mail may be very common in environments.  Packets produced from these protocols may have many fields and headers in which data can be concealed. Data could also be concealed within the email messages themselves. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/003",
+                    "external_id": "T1071.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Agent Tesla",
+            "x_mitre_aliases": [
+                "Agent Tesla"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-04-21T02:04:30.060Z",
+            "created": "2019-01-29T18:44:04.748Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--e7a5229f-05eb-440e-b982-9a6d2b2b87c8",
+            "description": "[Agent Tesla](https://attack.mitre.org/software/S0331) is a spyware Trojan written for the .NET framework that has been observed since at least 2014.(Citation: Fortinet Agent Tesla April 2018)(Citation: Bitdefender Agent Tesla April 2020)(Citation: Malwarebytes Agent Tesla April 2020)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0331",
+                    "external_id": "S0331",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Fortinet Agent Tesla April 2018)(Citation: Talos Agent Tesla Oct 2018)(Citation: DigiTrust Agent Tesla Jan 2017)",
+                    "source_name": "Agent Tesla"
+                },
+                {
+                    "source_name": "Fortinet Agent Tesla April 2018",
+                    "description": "Zhang, X. (2018, April 05). Analysis of New Agent Tesla Spyware Variant. Retrieved November 5, 2018.",
+                    "url": "https://www.fortinet.com/blog/threat-research/analysis-of-new-agent-tesla-spyware-variant.html"
+                },
+                {
+                    "url": "https://labs.bitdefender.com/2020/04/oil-gas-spearphishing-campaigns-drop-agent-tesla-spyware-in-advance-of-historic-opec-deal/",
+                    "description": "Arsene, L. (2020, April 21). Oil & Gas Spearphishing Campaigns Drop Agent Tesla Spyware in Advance of Historic OPEC+ Deal. Retrieved May 19, 2020.",
+                    "source_name": "Bitdefender Agent Tesla April 2020"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/threat-analysis/2020/04/new-agenttesla-variant-steals-wifi-credentials/",
+                    "description": "Jazi, H. (2020, April 16). New AgentTesla variant steals WiFi credentials. Retrieved May 19, 2020.",
+                    "source_name": "Malwarebytes Agent Tesla April 2020"
+                },
+                {
+                    "source_name": "Talos Agent Tesla Oct 2018",
+                    "description": "Brumaghin, E., et al. (2018, October 15). Old dog, new tricks - Analysing new RTF-based campaign distributing Agent Tesla, Loki with PyREbox. Retrieved November 5, 2018.",
+                    "url": "https://blog.talosintelligence.com/2018/10/old-dog-new-tricks-analysing-new-rtf_15.html"
+                },
+                {
+                    "url": "https://www.digitrustgroup.com/agent-tesla-keylogger/",
+                    "description": "The DigiTrust Group. (2017, January 12). The Rise of Agent Tesla. Retrieved November 5, 2018.",
+                    "source_name": "DigiTrust Agent Tesla Jan 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "DarkComet",
+            "x_mitre_aliases": [
+                "DarkComet",
+                "DarkKomet",
+                "Fynloski",
+                "Krademok",
+                "FYNLOS"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-28T00:53:12.228Z",
+            "created": "2019-01-29T19:18:28.468Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--53ab35c2-d00e-491a-8753-41d35ae7e547",
+            "description": "[DarkComet](https://attack.mitre.org/software/S0334) is a Windows remote administration tool and backdoor.(Citation: TrendMicro DarkComet Sept 2014)(Citation: Malwarebytes DarkComet March 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0334",
+                    "external_id": "S0334",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: TrendMicro DarkComet Sept 2014)",
+                    "source_name": "DarkComet"
+                },
+                {
+                    "description": "(Citation: TrendMicro DarkComet Sept 2014)",
+                    "source_name": "DarkKomet"
+                },
+                {
+                    "description": "(Citation: TrendMicro DarkComet Sept 2014)",
+                    "source_name": "Fynloski"
+                },
+                {
+                    "description": "(Citation: TrendMicro DarkComet Sept 2014)",
+                    "source_name": "Krademok"
+                },
+                {
+                    "description": "(Citation: TrendMicro DarkComet Sept 2014)",
+                    "source_name": "FYNLOS"
+                },
+                {
+                    "url": "https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/DARKCOMET",
+                    "description": "TrendMicro. (2014, September 03). DARKCOMET. Retrieved November 6, 2018.",
+                    "source_name": "TrendMicro DarkComet Sept 2014"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/",
+                    "description": "Kujawa, A. (2018, March 27). You dirty RAT! Part 1: DarkComet. Retrieved November 6, 2018.",
+                    "source_name": "Malwarebytes DarkComet March 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Lokibot",
+            "x_mitre_aliases": [
+                "Lokibot"
+            ],
+            "x_mitre_version": "2.0",
+            "modified": "2021-10-11T17:43:38.029Z",
+            "created": "2020-05-14T17:31:33.707Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--cb741463-f0fe-42e0-8d45-bc7e8335f5ae",
+            "description": "[Lokibot](https://attack.mitre.org/software/S0447) is a widely distributed information stealer that was first reported in 2015. It is designed to steal sensitive information such as usernames, passwords, cryptocurrency wallets, and other credentials. [Lokibot](https://attack.mitre.org/software/S0447) can also create a backdoor into infected systems to allow an attacker to install additional payloads.(Citation: Infoblox Lokibot January 2019)(Citation: Morphisec Lokibot April 2020)(Citation: CISA Lokibot September 2020)",
+            "x_mitre_contributors": [
+                "Daniyal Naeem, BT Security"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0447",
+                    "external_id": "S0447",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Infoblox Lokibot January 2019)(Citation: Morphisec Lokibot April 2020)(Citation: Talos Lokibot Jan 2021)",
+                    "source_name": "Lokibot"
+                },
+                {
+                    "url": "https://insights.infoblox.com/threat-intelligence-reports/threat-intelligence--22",
+                    "description": "Hoang, M. (2019, January 31). Malicious Activity Report: Elements of  Lokibot Infostealer. Retrieved May 15, 2020.",
+                    "source_name": "Infoblox Lokibot January 2019"
+                },
+                {
+                    "url": "https://blog.morphisec.com/lokibot-with-autoit-obfuscator-frenchy-shellcode",
+                    "description": "Cheruku, H. (2020, April 15). LOKIBOT WITH AUTOIT OBFUSCATOR + FRENCHY SHELLCODE. Retrieved May 14, 2020.",
+                    "source_name": "Morphisec Lokibot April 2020"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-266a",
+                    "description": "DHS/CISA. (2020, September 22). Alert (AA20-266A) LokiBot Malware . Retrieved September 15, 2021.",
+                    "source_name": "CISA Lokibot September 2020"
+                },
+                {
+                    "url": "https://blog.talosintelligence.com/2021/01/a-deep-dive-into-lokibot-infection-chain.html",
+                    "description": "Muhammad, I., Unterbrink, H.. (2021, January 6). A Deep Dive into Lokibot Infection Chain. Retrieved August 31, 2021.",
+                    "source_name": "Talos Lokibot Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "NanoCore",
+            "x_mitre_aliases": [
+                "NanoCore"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T17:10:28.673Z",
+            "created": "2019-01-29T20:05:35.952Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--b4d80f8b-d2b9-4448-8844-4bef777ed676",
+            "description": "[NanoCore](https://attack.mitre.org/software/S0336) is a modular remote access tool developed in .NET that can be used to spy on victims and steal information. It has been used by threat actors since 2013.(Citation: DigiTrust NanoCore Jan 2017)(Citation: Cofense NanoCore Mar 2018)(Citation: PaloAlto NanoCore Feb 2016)(Citation: Unit 42 Gorgon Group Aug 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0336",
+                    "external_id": "S0336",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: DigiTrust NanoCore Jan 2017)(Citation: Cofense NanoCore Mar 2018)(Citation: PaloAlto NanoCore Feb 2016)(Citation: Unit 42 Gorgon Group Aug 2018)",
+                    "source_name": "NanoCore"
+                },
+                {
+                    "url": "https://www.digitrustgroup.com/nanocore-not-your-average-rat/",
+                    "description": "The DigiTrust Group. (2017, January 01). NanoCore Is Not Your Average RAT. Retrieved November 9, 2018.",
+                    "source_name": "DigiTrust NanoCore Jan 2017"
+                },
+                {
+                    "url": "https://cofense.com/nanocore-rat-resurfaced-sewers/",
+                    "description": "Patel, K. (2018, March 02). The NanoCore RAT Has Resurfaced From the Sewers. Retrieved November 9, 2018.",
+                    "source_name": "Cofense NanoCore Mar 2018"
+                },
+                {
+                    "url": "https://researchcenter.paloaltonetworks.com/2016/02/nanocorerat-behind-an-increase-in-tax-themed-phishing-e-mails/",
+                    "description": "Kasza, A., Halfpop, T. (2016, February 09). NanoCoreRAT Behind an Increase in Tax-Themed Phishing E-mails. Retrieved November 9, 2018.",
+                    "source_name": "PaloAlto NanoCore Feb 2016"
+                },
+                {
+                    "source_name": "Unit 42 Gorgon Group Aug 2018",
+                    "description": "Falcone, R., et al. (2018, August 02). The Gorgon Group: Slithering Between Nation State and Cybercrime. Retrieved August 7, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2018/08/unit42-gorgon-group-slithering-nation-state-cybercrime/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "NETWIRE",
+            "x_mitre_aliases": [
+                "NETWIRE"
+            ],
+            "x_mitre_version": "1.4",
+            "modified": "2021-10-12T11:21:09.567Z",
+            "created": "2018-04-18T17:59:24.739Z",
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "id": "malware--2a70812b-f1ef-44db-8578-a496a227aef2",
+            "description": "[NETWIRE](https://attack.mitre.org/software/S0198) is a publicly available, multiplatform remote administration tool (RAT) that has been used by criminal and APT groups since at least 2012.(Citation: FireEye APT33 Sept 2017)(Citation: McAfee Netwire Mar 2015)(Citation: FireEye APT33 Webinar Sept 2017)",
+            "x_mitre_contributors": [
+                "Tony Lambert, Red Canary"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0198",
+                    "external_id": "S0198",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye APT33 Sept 2017) (Citation: FireEye APT33 Webinar Sept 2017) (Citation: McAfee Netwire Mar 2015)",
+                    "source_name": "NETWIRE"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html",
+                    "description": "O'Leary, J., et al. (2017, September 20). Insights into Iranian Cyber Espionage: APT33 Targets Aerospace and Energy Sectors and has Ties to Destructive Malware. Retrieved February 15, 2018.",
+                    "source_name": "FireEye APT33 Sept 2017"
+                },
+                {
+                    "url": "https://securingtomorrow.mcafee.com/mcafee-labs/netwire-rat-behind-recent-targeted-attacks/",
+                    "description": "McAfee. (2015, March 2). Netwire RAT Behind Recent Targeted Attacks. Retrieved February 15, 2018.",
+                    "source_name": "McAfee Netwire Mar 2015"
+                },
+                {
+                    "url": "https://www.brighttalk.com/webcast/10703/275683",
+                    "description": "Davis, S. and Carr, N. (2017, September 21). APT33: New Insights into Iranian Cyber Espionage Group. Retrieved February 15, 2018.",
+                    "source_name": "FireEye APT33 Webinar Sept 2017"
+                }
+            ]
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--0e363f90-09d1-4c6f-afa6-da62e5a97651",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Nigeria",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.329303Z",
+            "id": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Technology sector as a target",
+            "sectors": [
+                "technology"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.305825Z",
+            "id": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Education sector as a target",
+            "sectors": [
+                "education"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.323862Z",
+            "id": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Manufacturing sector as a target",
+            "sectors": [
+                "manufacturing"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--93a793d1-ad60-4b1a-80dc-a2a4cd5d41cf",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "target_ref": "location--0e363f90-09d1-4c6f-afa6-da62e5a97651"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9e408526-02d9-4c28-a4af-2655aa34b7d6",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "target_ref": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--00ca1dea-7e10-431b-970c-4422c79f26ac",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "target_ref": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--acda58ae-a49c-443d-90e7-1fc26293f456",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--76565741-3452-4069-ab08-80c0ea95bbeb",
+            "target_ref": "identity--1432be4a-735c-4e9c-a974-b05a1ee2d74c"
+        }
+    ]
+}

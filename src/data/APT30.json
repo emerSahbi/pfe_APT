@@ -1,0 +1,776 @@
+{
+    "type": "bundle",
+    "id": "bundle--84953414-9813-488d-9f54-f5df243c14f4",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "primary_motivation": "organizational-gain",
+            "first_seen":"2005",
+            "dest-x_MISP-uuid": "2a158b0a-7ef8-43cb-9985-bf34d1e12050",
+            "x_MISP-description": "Kaspersky described Naikon in a 2015 report as: 'The Naikon group is mostly active in countries such as the Philippines, Malaysia, Cambodia, Indonesia, Vietnam, Myanmar, Singapore, and Nepal, hitting a variety of targets in a very opportunistic way.'",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "APT30",
+            "description": "[APT30](https://attack.mitre.org/groups/G0013) is a threat group suspected to be associated with the Chinese government. While [Naikon](https://attack.mitre.org/groups/G0019) shares some characteristics with [APT30](https://attack.mitre.org/groups/G0013), the two groups do not appear to be exact matches.(Citation: FireEye APT30)(Citation: Baumgartner Golovkin Naikon 2015)",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T19:34:28.999Z",
+            "aliases": [
+                "PLA Unit 78020",
+                "APT 30",
+                "APT30",
+                "Override Panda",
+                "Camerashy",
+                "APT.Naikon",
+                "Lotus Panda",
+                "Hellsing",
+                "BRONZE GENEVA",
+                "Thrip",
+                "Bronze Sterling",
+                "CTG-5326"
+            ],
+            "created": "2017-05-31T21:31:51.026Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0013",
+                    "external_id": "G0013",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye APT30) (Citation: Baumgartner Golovkin Naikon 2015)",
+                    "source_name": "APT30"
+                },
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                },
+                {
+                    "source_name": "Baumgartner Golovkin Naikon 2015",
+                    "description": "Baumgartner, K., Golovkin, M.. (2015, May 14). The Naikon APT. Retrieved January 14, 2015.",
+                    "url": "https://securelist.com/the-naikon-apt/69953/"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "BACKSPACE",
+            "x_mitre_aliases": [
+                "BACKSPACE",
+                "Lecna"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T14:54:21.256Z",
+            "created": "2017-05-31T21:32:24.428Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--fb261c56-b80e-43a9-8351-c84081e7213d",
+            "description": "[BACKSPACE](https://attack.mitre.org/software/S0031) is a backdoor used by [APT30](https://attack.mitre.org/groups/G0013) that dates back to at least 2005. (Citation: FireEye APT30)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0031",
+                    "external_id": "S0031",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "source_name": "FireEye APT30"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "FLASHFLOOD",
+            "x_mitre_aliases": [
+                "FLASHFLOOD"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T02:54:51.882Z",
+            "created": "2017-05-31T21:32:28.754Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--43213480-78f7-4fb3-976f-d48f5f6a4c2a",
+            "description": "[FLASHFLOOD](https://attack.mitre.org/software/S0036) is malware developed by [APT30](https://attack.mitre.org/groups/G0013) that allows propagation and exfiltration of data over removable devices. [APT30](https://attack.mitre.org/groups/G0013) may use this capability to exfiltrate data across air-gaps. (Citation: FireEye APT30)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0036",
+                    "external_id": "S0036",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "NETEAGLE",
+            "x_mitre_aliases": [
+                "NETEAGLE"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T17:07:46.499Z",
+            "created": "2017-05-31T21:32:27.787Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--53cf6cc4-65aa-445a-bcf8-c3d296f8a7a2",
+            "description": "[NETEAGLE](https://attack.mitre.org/software/S0034) is a backdoor developed by [APT30](https://attack.mitre.org/groups/G0013) with compile dates as early as 2008. It has two main variants known as \u201cScout\u201d and \u201cNorton.\u201d (Citation: FireEye APT30)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0034",
+                    "external_id": "S0034",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "source_name": "FireEye APT30"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "SHIPSHAPE",
+            "x_mitre_aliases": [
+                "SHIPSHAPE"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--b1de6916-7a22-4460-8d26-6b5483ffaa2a",
+            "description": "[SHIPSHAPE](https://attack.mitre.org/software/S0028) is malware developed by [APT30](https://attack.mitre.org/groups/G0013) that allows propagation and exfiltration of data over removable devices. [APT30](https://attack.mitre.org/groups/G0013) may use this capability to exfiltrate data across air-gaps. (Citation: FireEye APT30)",
+            "labels": [
+                "malware"
+            ],
+            "created": "2017-05-31T21:32:21.366Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0028",
+                    "external_id": "S0028",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "source_name": "FireEye APT30"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "SPACESHIP",
+            "x_mitre_aliases": [
+                "SPACESHIP"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T03:05:20.517Z",
+            "created": "2017-05-31T21:32:28.257Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--8b880b41-5139-4807-baa9-309690218719",
+            "description": "[SPACESHIP](https://attack.mitre.org/software/S0035) is malware developed by [APT30](https://attack.mitre.org/groups/G0013) that allows propagation and exfiltration of data over removable devices. [APT30](https://attack.mitre.org/groups/G0013) may use this capability to exfiltrate data across air-gaps. (Citation: FireEye APT30)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0035",
+                    "external_id": "S0035",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--08d91d3c-b7c7-4cbc-a4eb-29edd3be3e3a",
+            "description": "(Citation: FireEye APT30)",
+            "target_ref": "malware--b1de6916-7a22-4460-8d26-6b5483ffaa2a",
+            "modified": "2019-03-22T18:44:28.612Z",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.048Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9820c1e9-a414-4af1-a78c-aaf2cb164361",
+            "description": "(Citation: FireEye APT30)",
+            "target_ref": "malware--fb261c56-b80e-43a9-8351-c84081e7213d",
+            "modified": "2019-03-22T18:44:28.639Z",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.048Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--862470eb-b43a-42d9-ab06-4ca6fbc3671d",
+            "description": "[APT30](https://attack.mitre.org/groups/G0013) has used spearphishing emails with malicious DOC attachments.(Citation: FireEye APT30)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2020-07-21T19:02:06.344Z",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-07-21T19:02:06.344Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a5015a35-a6a2-4289-8d79-79b583c23e63",
+            "description": "(Citation: FireEye APT30)",
+            "target_ref": "malware--53cf6cc4-65aa-445a-bcf8-c3d296f8a7a2",
+            "modified": "2019-03-22T18:44:28.659Z",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.048Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a18071ad-fe4f-4014-ad9a-1b0a66df3eab",
+            "description": "(Citation: FireEye APT30)",
+            "target_ref": "malware--43213480-78f7-4fb3-976f-d48f5f6a4c2a",
+            "modified": "2019-03-22T18:44:28.657Z",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.048Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--bfc4c5dd-a02a-42a0-8838-1e9b45c1dd7e",
+            "description": "[APT30](https://attack.mitre.org/groups/G0013) has relied on users to execute malicious file attachments delivered via spearphishing emails.(Citation: FireEye APT30)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2020-07-21T19:02:06.341Z",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-07-21T19:02:06.341Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fca5a601-68fd-4b20-ad1e-0592cadecb73",
+            "description": "(Citation: FireEye APT30)",
+            "target_ref": "malware--8b880b41-5139-4807-baa9-309690218719",
+            "modified": "2019-03-22T18:44:28.655Z",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.048Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved May 1, 2015.",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e0151339-e997-4136-9a6f-dca597771349",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9ad2c8c1-bf8f-48b9-bb4b-7e96c19ada03",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f1eb56d1-5972-4c04-8cec-b744c386adb9",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--388a18a1-e8a8-4c07-9248-62ef397d3a20",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Saudi Arabia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--598a744a-0ed9-4dec-b35a-cfddf9305ebe",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Singapore",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8e009db7-052e-4be0-992b-7def21931a5b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1f50ac63-9f65-493c-814e-564ee661b62a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ee053ce2-0df7-490d-bb3f-e468768a3e17",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--623c4008-e162-4f90-adc0-2a9db0d7d9ab",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Indonesia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3a51f937-2192-4728-849e-52649bb629fb",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fe042f87-0912-4c7e-a4cf-fe0e6ceb96db",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Philippines",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--883b2eb1-43ea-4bf1-882e-510c5ad0db04",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Nepal",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Thailand",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Vietnam",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--3ab5bcd6-96b3-49ed-bf01-b23d8fd59188",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Malaysia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2223efcc-a85b-4505-ba2f-95f52591372f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--3ab5bcd6-96b3-49ed-bf01-b23d8fd59188"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--67a958db-108b-4496-a64f-13720f3bf74c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0a38f5e8-98a9-4e6b-9858-722fda3ecadc",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--6fa8faf5-1691-4839-a3f9-46995fb48e01",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--883b2eb1-43ea-4bf1-882e-510c5ad0db04"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f7e4b2f1-9a98-4988-a491-216e99d2c83d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Cambodia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--accc2559-4b9a-47ca-82bf-74d6c3e0a14d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--f7e4b2f1-9a98-4988-a491-216e99d2c83d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e65f621b-32e0-4249-af5d-32b46804ba2d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Myanmar",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9588f8cb-b72a-4e94-901c-69d9be523970",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "location--e65f621b-32e0-4249-af5d-32b46804ba2d"
+        }
+    ]
+}

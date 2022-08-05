@@ -9,10 +9,14 @@ import { Router } from '@angular/router';
 export class SearchComponent implements OnInit {
 
   constructor(private route:Router) { }
-  country:any="";
+  country_source:any="";
+  country_victim:any="";
   sector:any="";
   motivation:any="";
   name:any="";
+  tool:any="";
+  Category:any="";
+  tool_name:any="";
 
   ngOnInit(): void {
   }
@@ -27,11 +31,26 @@ export class SearchComponent implements OnInit {
   onsearchClick(){
 
     let filter={
-      country:this.country,
+      country_source:this.country_source,
+      country_victim:this.country_victim,
       sector:this.sector,
-     motivation: this.motivation
+      name:this.name,
+     
+     
     }
     console.log(filter)
     this.route.navigate(["/group/",filter])
+  }
+  onsearchTool(){
+
+    let filters={
+
+      tool:this.tool,
+      Category:this.Category,
+      tool_name:this.tool_name,
+      
+    }
+    console.log(filters)
+    this.route.navigate(["/tool/",filters])
   }
 }

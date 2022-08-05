@@ -1,79 +1,4 @@
-<!-- <div class="searchbox">
-    <form name="tgcsearchactor" action="/cgi-bin/listgroups.cgi" method="GET">
-        <table width="100%" border="0">
-            <tbody>
-                <tr>
-                    <td nowrap="" width="10%"><b>Actor</b></td>
-                    <td nowrap="" width="15%">Source country</td>
-                    <td width="75%"><select name="c">
-                            <option value="">...</option>
 
-                            <option value="Italy">Italy</option>
-                            <option value="Kazakhstan">Kazakhstan</option>
-                            <option value="Lebanon">Lebanon</option>
-                            <option value="Libya">Libya</option>
-                            <option value="Mexico">Mexico</option>
-                            <option value="Nigeria">Nigeria</option>
-
-                        </select></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td nowrap="">Victim country</td>
-                    <td><select name="v">
-                            <option value="">...</option>
-
-                            <option value="Afghanistan">Afghanistan</option>
-
-
-
-
-                        </select></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td nowrap="">Victim sector</td>
-                    <td><select name="s">
-                            <option value="">...</option>
-                            <option value="Aerospace">Aerospace</option>
-                            <option value="Automotive">Automotive</option>
-
-
-                            <option value="Chemical">Chemical</option>
-                            <option value="Construction">Construction</option>
-                            <option value="Critical%20infrastructure">Critical infrastructure</option>
-                            <option value="Defense">Defense</option>
-
-                            <option value="Transportation">Transportation</option>
-                            <option value="Utilities">Utilities</option>
-                        </select></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td nowrap="">Motivation</td>
-                    <td><select name="m">
-                            <option value="">...</option>
-                            <option value="Financial%20crime">Financial crime</option>
-                            <option value="Financial%20gain">Financial gain</option>
-                            <option value="Information%20theft%20and%20espionage">Information theft and espionage
-                            </option>
-                            <option value="Sabotage%20and%20destruction">Sabotage and destruction</option>
-                        </select></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td nowrap="">Free text search</td>
-                    <td><input type="text" name="x" size="50" maxlength="256"> </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><button type="button" class="btn btn-danger" (click)="getSearch()">search</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </form>
-</div> -->
 
 <div class="row">
     <div class="col-md-9 offset-md-12">
@@ -82,17 +7,276 @@
                 <h3 class="center">Actors</h3>
             </div>
             <div class="card-body">source country
-                <input type="text" [(ngModel)]="country" class="form-control">
-                 victim country
-                <input type="text" [(ngModel)]="sector" class="form-control">
-                victim sector
-                <input type="text" [(ngModel)]="motivation" class="form-control">
-                Motivation
-                <input type="text" [(ngModel)]="name" class="form-control">
-                Group Name
-                <input type="text" class="form-control">
+                <select name="country_source" id="source_select" [(ngModel)]="country_source">
+                    <option value="Iran">Iran</option>
+                    <option value="France">France</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech">Czech</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="European Union">European Union</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Gaza">Gaza</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Latin America Caribbean">Latin America Caribbean</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Malaysia"></option>
+                    <option value="Malta"></option>
+                    <option value="Mexico"></option>
+                    <option value="Middle East"></option>
+                    <option value="Mongolia"></option>
+                    <option value="Montenegro"></option>
+                    <option value="Morocco"></option>
+                    <option value="Myanmar"></option>
+                    <option value="NATO"></option>
+                    <option value="Nepal"></option>
+                    <option value="Netherlands"></option>
+                    <option value="Nigeria"></option>
+                    <option value="North Korea"></option>
+                    <option value="Norway"></option>
+                    <option value="Pakistan"></option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tajikstan">Tajikstan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Tibetan">Tibetan</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United Nations">United Nations</option>
+                    <option value="United States">United States</option>
+                    <option value="Uyghur">Uyghur</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Yemen">Yemen</option>
 
-                <div class="">
+
+                </select><br><br>
+                victim country
+                <select name="country_victim" id="victim_select" [(ngModel)]="country_victim">
+                    <option value="Iran">Iran</option>
+                    <option value="France">France</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech">Czech</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="European Union">European Union</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Gaza">Gaza</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Latin America Caribbean">Latin America Caribbean</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Malaysia"></option>
+                    <option value="Malta"></option>
+                    <option value="Mexico"></option>
+                    <option value="Middle East"></option>
+                    <option value="Mongolia"></option>
+                    <option value="Montenegro"></option>
+                    <option value="Morocco"></option>
+                    <option value="Myanmar"></option>
+                    <option value="NATO"></option>
+                    <option value="Nepal"></option>
+                    <option value="Netherlands"></option>
+                    <option value="Nigeria"></option>
+                    <option value="North Korea"></option>
+                    <option value="Norway"></option>
+                    <option value="Pakistan"></option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tajikstan">Tajikstan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Tibetan">Tibetan</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United Nations">United Nations</option>
+                    <option value="United States">United States</option>
+                    <option value="Uyghur">Uyghur</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Yemen">Yemen</option>
+
+
+                </select> <br><br>
+                Group Name
+                <input type="text" [(ngModel)]="name" class="form-control">
+                <br><br>
+
+
+                victim sector
+
+               
+
+                <select name="sector" id="sector" [(ngModel)]="sector">
+                    <option value="Aerospace sector as a target">Aerospace</option>
+                    <option value="Agriculture sector as a target">Agriculture</option>
+                    <option value="Automotive sector as a target">Automotive</option>
+                    <option value="Chemical sector as a target">Chemical</option>
+                    <option value="Commercial sector as a target">Commercial</option>
+                    <option value="Communications sector as a target">Communications</option>
+                    <option value="Construction sector as a target">Construction</option>
+                    <option value="Defense sector as a target">Defense</option>
+                    <option value="Education sector as a target">Education</option>
+                    <option value="Emergency Services sector as a target">Emergency Services</option>
+                    <option value="Energy sector as a target">Energy</option>
+                    <option value="Entertainment sector as a target">Entertainment</option>
+                    <option value="Financial Services sector as a target">Financial Services</option>
+                    <option value="Government sector as a target">Government</option>
+                    <option value="Healthcare sector as a target">Healthcare</option>
+                    <option value="Hospitality Leisure sector as a target">Hospitality Leisure sector as a target
+                    </option>
+                    <option value="Infrastructure sector as a target">Infrastructure</option>
+                    <option value="Insurance sector as a target">Insurance</option>
+                    <option value="Manufacturing sector as a target">Manufacturing</option>
+                    <option value="Military sector as a target">Military</option>
+                    <option value="Mining sector as a target">Mining</option>
+                    <option value="Non Profit sector as a target">Non Profit</option>
+                    <option value="Nuclear sector as a target">Nuclear</option>
+                    <option value="Oil sector as a target">Oil</option>
+                    <option value="Pharmaceuticals sector as a target">Pharmaceuticals</option>
+                    <option value="Private sector as a target">Private</option>
+                    <option value="Retail sector as a target">Retail</option>
+                    <option value="Technology sector as a target">Technology</option>
+                    <option value="Telecommunications sector as a target">Telecommunications</option>
+                    <option value="Information theft and espionage">Information theft and espionage</option>
+                    <option value="Transportation sector as a target">Transportation</option>
+                    <option value="Utilities sector as a target">Utilities</option>
+                    <option value="Video Game sector as a target">Video Game</option>
+
+                </select>
+
+
+                <div class="card-body">
                     <div class="col-md-12 text-center">
                         <button type="button" class="btn btn-danger" (click)="onsearchClick()">search</button>
                     </div>
@@ -110,16 +294,16 @@
             </div>
             <div class="card-body">
                 Category
-                <select name="c">
-                    <option value="">...</option>
-                    <option value="">Malware</option>
-                    <option value="">Tools</option>
+                <select name="Category" id="Category" [(ngModel)]="Category" >
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="malware" selected="selected">Malware</option>
+                    <option value="tool" >Tools</option>
                 </select><br><br>
                 Tool name
-                <input type="text" class="form-control">
+                <input type="text" [(ngModel)]="tool_name" class="form-control">
                 <div class="">
                     <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-danger" (click)="goToTool()">search</button>
+                        <button type="button" class="btn btn-danger" (click)="onsearchTool()">search</button>
                     </div>
                 </div>
             </div>

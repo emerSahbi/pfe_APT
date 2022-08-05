@@ -1,0 +1,717 @@
+{
+    "type": "bundle",
+    "id": "bundle--c249aed8-060b-46f9-9534-4a83f0a4cc50",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2012",
+            "x_MISP-description": "Beginning in late 2012, a carefully orchestrated attack campaign we call Volatile Cedar has been targeting individuals, companies and institutions worldwide. This campaign, led by a persistent attacker group, has successfully penetrated a large number of targets using various attack techniques, and specifically, a custom-made malware implant codenamed Explosive .",
+            "x_MISP-uuid": "cf421ce6-ddfe-419a-bc65-6a9fc953232a",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Volatile Cedar",
+            "description": "[Volatile Cedar](https://attack.mitre.org/groups/G0123) is a Lebanese threat group that has targeted individuals, companies, and institutions worldwide. [Volatile Cedar](https://attack.mitre.org/groups/G0123) has been operating since 2012 and is motivated by political and ideological interests.(Citation: CheckPoint Volatile Cedar March 2015)(Citation: ClearSky Lebanese Cedar Jan 2021)",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Volatile Cedar",
+                "Lebanese Cedar",
+                "Reuse team",
+                "Malware reusers",
+                "Dancing Salome",
+                "Lebanese Cedar"
+            ],
+            "created": "2021-02-08T20:30:30.578Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0123",
+                    "external_id": "G0123",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: CheckPoint Volatile Cedar March 2015)",
+                    "source_name": "Volatile Cedar"
+                },
+                {
+                    "description": "(Citation: ClearSky Lebanese Cedar Jan 2021)",
+                    "source_name": "Lebanese Cedar"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                },
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5b642677-f57c-4eb7-9e9e-33e12de48cd1",
+            "description": "(Citation: ClearSky Lebanese Cedar Jan 2021)(Citation: CheckPoint Volatile Cedar March 2015)",
+            "target_ref": "malware--751b77e6-af1f-483b-93fe-eddf17f92a64",
+            "modified": "2021-02-10T21:01:17.394Z",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-10T19:36:49.355Z",
+            "external_references": [
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--60b2c702-e2f4-47fd-a009-3ba561bceeb8",
+            "description": "[Volatile Cedar](https://attack.mitre.org/groups/G0123) can inject web shell code into a server.(Citation: CheckPoint Volatile Cedar March 2015)(Citation: ClearSky Lebanese Cedar Jan 2021) ",
+            "target_ref": "attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb",
+            "modified": "2021-02-10T18:04:49.130Z",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-08T21:24:53.101Z",
+            "external_references": [
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                },
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--72ff8ebb-a0fe-4ea0-9e4a-0f9aa2d48bc5",
+            "description": "(Citation: CheckPoint Volatile Cedar March 2015)(Citation: ClearSky Lebanese Cedar Jan 2021)",
+            "target_ref": "malware--6a21e3a4-5ffe-4581-af9a-6a54c7536f44",
+            "modified": "2021-02-10T17:55:01.910Z",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-08T21:46:51.456Z",
+            "external_references": [
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                },
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1637c874-852e-4ab9-b6e0-2c855da74ef0",
+            "description": "[Volatile Cedar](https://attack.mitre.org/groups/G0123) has performed vulnerability scans of the target server.(Citation: CheckPoint Volatile Cedar March 2015)(Citation: ClearSky Lebanese Cedar Jan 2021)",
+            "target_ref": "attack-pattern--5502c4e9-24ef-4d5f-8ee9-9e906c2f82c4",
+            "modified": "2021-02-10T18:04:49.116Z",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-08T20:30:30.984Z",
+            "external_references": [
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                },
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--aaac742e-ad51-470d-826c-8196cf3c1d3e",
+            "description": "[Volatile Cedar](https://attack.mitre.org/groups/G0123) can deploy additional tools.(Citation: ClearSky Lebanese Cedar Jan 2021)",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "modified": "2021-02-10T18:04:49.076Z",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-10T18:04:49.076Z",
+            "external_references": [
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c4bc8f71-e4f4-42b8-a39f-b4512987a423",
+            "description": "[Volatile Cedar](https://attack.mitre.org/groups/G0123) has targeted publicly facing web servers, with both automatic and manual vulnerability discovery.(Citation: CheckPoint Volatile Cedar March 2015) (Citation: ClearSky Lebanese Cedar Jan 2021) ",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "modified": "2021-02-10T18:04:49.164Z",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-02-08T21:24:53.117Z",
+            "external_references": [
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                },
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Vulnerability Scanning",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-15T03:20:09.446Z",
+            "created": "2020-10-02T16:55:16.047Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--5502c4e9-24ef-4d5f-8ee9-9e906c2f82c4",
+            "description": "Adversaries may scan victims for vulnerabilities that can be used during targeting. Vulnerability scans typically check if the configuration of a target host/application (ex: software and version) potentially aligns with the target of a specific exploit the adversary may seek to use.\n\nThese scans may also include more broad attempts to [Gather Victim Host Information](https://attack.mitre.org/techniques/T1592) that can be used to identify more commonly known, exploitable vulnerabilities. Vulnerability scans typically harvest running software and version numbers via server banners, listening ports, or other network artifacts.(Citation: OWASP Vuln Scanning) Information from these scans may reveal opportunities for other forms of reconnaissance (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Open Technical Databases](https://attack.mitre.org/techniques/T1596)), establishing operational resources (ex: [Develop Capabilities](https://attack.mitre.org/techniques/T1587) or [Obtain Capabilities](https://attack.mitre.org/techniques/T1588)), and/or initial access (ex: [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190)).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_detection": "Monitor for suspicious network traffic that could be indicative of scanning, such as large quantities originating from a single source (especially if the source is known to be associated with an adversary/botnet). Analyzing web metadata may also reveal artifacts that can be attributed to potentially malicious activity, such as referer or user-agent string HTTP/S fields.\n\nMuch of this activity may have a very high occurrence and associated false positive rate, as well as potentially taking place outside the visibility of the target organization, making detection difficult for defenders.\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1595/002",
+                    "external_id": "T1595.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://wiki.owasp.org/index.php/OAT-014_Vulnerability_Scanning",
+                    "description": "OWASP Wiki. (2018, February 16). OAT-014 Vulnerability Scanning. Retrieved October 20, 2020.",
+                    "source_name": "OWASP Vuln Scanning"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-07-20T21:51:45.776Z",
+            "name": "Exploit Public-Facing Application",
+            "x_mitre_data_sources": [
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "2.3",
+            "created": "2018-04-18T17:59:24.739Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Network",
+                "Linux",
+                "macOS",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "description": "Adversaries may attempt to take advantage of a weakness in an Internet-facing computer or program using software, data, or commands in order to cause unintended or unanticipated behavior. The weakness in the system can be a bug, a glitch, or a design vulnerability. These applications are often websites, but can include databases (like SQL)(Citation: NVD CVE-2016-6662), standard services (like SMB(Citation: CIS Multiple SMB Vulnerabilities) or SSH), network device administration and management protocols (like SNMP and Smart Install(Citation: US-CERT TA18-106A Network Infrastructure Devices 2018)(Citation: Cisco Blog Legacy Device Attacks)), and any other applications with Internet accessible open sockets, such as web servers and related services.(Citation: NVD CVE-2014-7169) Depending on the flaw being exploited this may include [Exploitation for Defense Evasion](https://attack.mitre.org/techniques/T1211). \n\nIf an application is hosted on cloud-based infrastructure and/or is containerized, then exploiting it may lead to compromise of the underlying instance or container. This can allow an adversary a path to access the cloud or container APIs, exploit container host access via [Escape to Host](https://attack.mitre.org/techniques/T1611), or take advantage of weak identity and access management policies.\n\nFor websites and databases, the OWASP top 10 and CWE top 25 highlight the most common web-based vulnerabilities.(Citation: OWASP Top 10)(Citation: CWE top 25)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "Monitor application logs for abnormal behavior that may indicate attempted or successful exploitation. Use deep packet inspection to look for artifacts of common exploit traffic, such as SQL injection. Web Application Firewalls may detect improper inputs attempting exploitation.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1190",
+                    "external_id": "T1190",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "NVD CVE-2016-6662",
+                    "description": "National Vulnerability Database. (2017, February 2). CVE-2016-6662 Detail. Retrieved April 3, 2018.",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-6662"
+                },
+                {
+                    "source_name": "CIS Multiple SMB Vulnerabilities",
+                    "description": "CIS. (2017, May 15). Multiple Vulnerabilities in Microsoft Windows SMB Server Could Allow for Remote Code Execution. Retrieved April 3, 2018.",
+                    "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-microsoft-windows-smb-server-could-allow-for-remote-code-execution/"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/alerts/TA18-106A",
+                    "description": "US-CERT. (2018, April 20). Russian State-Sponsored Cyber Actors Targeting Network Infrastructure Devices. Retrieved October 19, 2020.",
+                    "source_name": "US-CERT TA18-106A Network Infrastructure Devices 2018"
+                },
+                {
+                    "url": "https://community.cisco.com/t5/security-blogs/attackers-continue-to-target-legacy-devices/ba-p/4169954",
+                    "description": "Omar Santos. (2020, October 19). Attackers Continue to Target Legacy Devices. Retrieved October 20, 2020.",
+                    "source_name": "Cisco Blog Legacy Device Attacks"
+                },
+                {
+                    "source_name": "NVD CVE-2014-7169",
+                    "description": "National Vulnerability Database. (2017, September 24). CVE-2014-7169 Detail. Retrieved April 3, 2018.",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-7169"
+                },
+                {
+                    "source_name": "OWASP Top 10",
+                    "description": "OWASP. (2018, February 23). OWASP Top Ten Project. Retrieved April 3, 2018.",
+                    "url": "https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project"
+                },
+                {
+                    "url": "https://cwe.mitre.org/top25/index.html",
+                    "description": "Christey, S., Brown, M., Kirby, D., Martin, B., Paller, A.. (2011, September 13). 2011 CWE/SANS Top 25 Most Dangerous Software Errors. Retrieved April 10, 2019.",
+                    "source_name": "CWE top 25"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-20T15:42:48.595Z",
+            "name": "Ingress Tool Transfer",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2017-05-31T21:31:16.408Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitor for file creation and files transferred into the network. Unusual processes with external network connections creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1105",
+                    "external_id": "T1105",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Web Shell",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1505/003",
+                    "external_id": "T1505.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/650.html",
+                    "external_id": "CAPEC-650",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2013/08/breaking-down-the-china-chopper-web-shell-part-i.html",
+                    "description": "Lee, T., Hanzlik, D., Ahl, I. (2013, August 7). Breaking Down the China Chopper Web Shell - Part I. Retrieved March 27, 2015.",
+                    "source_name": "Lee 2013"
+                },
+                {
+                    "url": "https://github.com/nsacyber/Mitigating-Web-Shells",
+                    "description": " NSA Cybersecurity Directorate. (n.d.). Mitigating Web Shells. Retrieved July 22, 2021.",
+                    "source_name": "NSA Cyber Mitigating Web Shells"
+                },
+                {
+                    "source_name": "US-CERT Alert TA15-314A Web Shells",
+                    "description": "US-CERT. (2015, November 13). Compromised Web Servers and Web Shells - Threat Awareness and Guidance. Retrieved June 8, 2016.",
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA15-314A"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "File: File Modification",
+                "Process: Process Creation",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow",
+                "Application Log: Application Log Content"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-07-26T13:46:47.993Z",
+            "x_mitre_system_requirements": [
+                "Adversary access to Web server with vulnerability or account to upload and serve the Web shell file."
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "id": "attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may backdoor web servers with web shells to establish persistent access to systems. A Web shell is a Web script that is placed on an openly accessible Web server to allow an adversary to use the Web server as a gateway into a network. A Web shell may provide a set of functions to execute or a command-line interface on the system that hosts the Web server.\n\nIn addition to a server-side script, a Web shell may have a client interface program that is used to talk to the Web server (ex: [China Chopper](https://attack.mitre.org/software/S0020) Web shell client).(Citation: Lee 2013) ",
+            "x_mitre_contributors": [
+                "Arnim Rupp, Deutsche Lufthansa AG"
+            ],
+            "x_mitre_detection": "Web shells can be difficult to detect. Unlike other forms of persistent remote access, they do not initiate connections. The portion of the Web shell that is on the server may be small and innocuous looking. The PHP version of the China Chopper Web shell, for example, is the following short payload: (Citation: Lee 2013) \n\n<code>&lt;?php @eval($_POST['password']);&gt;</code>\n\nNevertheless, detection mechanisms exist. Process monitoring may be used to detect Web servers that perform suspicious actions such as spawning cmd.exe or accessing files that are not in the Web directory.(Citation: NSA Cyber Mitigating Web Shells)\n\nFile monitoring may be used to detect changes to files in the Web directory of a Web server that do not match with updates to the Web server's content and may indicate implantation of a Web shell script.(Citation: NSA Cyber Mitigating Web Shells)\n\nLog authentication attempts to the server and any unusual traffic patterns to or from the server and internal network. (Citation: US-CERT Alert TA15-314A Web Shells)",
+            "created": "2019-12-13T16:46:18.927Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Caterpillar WebShell",
+            "x_mitre_aliases": [
+                "Caterpillar WebShell"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-27T01:47:15.413Z",
+            "created": "2021-02-10T18:20:51.309Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--751b77e6-af1f-483b-93fe-eddf17f92a64",
+            "description": "[Caterpillar WebShell](https://attack.mitre.org/software/S0572) is a self-developed Web Shell tool created by the group [Volatile Cedar](https://attack.mitre.org/groups/G0123).(Citation: ClearSky Lebanese Cedar Jan 2021) ",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0572",
+                    "external_id": "S0572",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: ClearSky Lebanese Cedar Jan 2021)(Citation: CheckPoint Volatile Cedar March 2015)",
+                    "source_name": "Caterpillar WebShell"
+                },
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                }
+            ]
+        },
+        {
+            "type": "malware",
+            "modified": "2021-04-27T01:56:35.649Z",
+            "name": "Explosive",
+            "x_mitre_aliases": [
+                "Explosive"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2021-02-08T21:41:25.501Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--6a21e3a4-5ffe-4581-af9a-6a54c7536f44",
+            "description": "[Explosive](https://attack.mitre.org/software/S0569) is a custom-made remote access tool used by the group [Volatile Cedar](https://attack.mitre.org/groups/G0123). It was first identified in the wild in 2015.(Citation: CheckPoint Volatile Cedar March 2015)(Citation: ClearSky Lebanese Cedar Jan 2021)  ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0569",
+                    "external_id": "S0569",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: CheckPoint Volatile Cedar March 2015)(Citation: ClearSky Lebanese Cedar Jan 2021) ",
+                    "source_name": "Explosive"
+                },
+                {
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/03/20082004/volatile-cedar-technical-report.pdf",
+                    "description": "Threat Intelligence and Research. (2015, March 30). VOLATILE CEDAR. Retrieved February 8, 2021.",
+                    "source_name": "CheckPoint Volatile Cedar March 2015"
+                },
+                {
+                    "url": "https://www.clearskysec.com/wp-content/uploads/2021/01/Lebanese-Cedar-APT.pdf",
+                    "description": "ClearSky Cyber Security. (2021, January). \u201cLebanese Cedar\u201d APT Global Lebanese Espionage Campaign Leveraging Web Servers. Retrieved February 10, 2021.",
+                    "source_name": "ClearSky Lebanese Cedar Jan 2021"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2ae31e68-0960-4b08-8f7b-85b068e2474b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--0af20877-77ce-4f6f-b002-960316463df9"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--07fbffff-7469-4247-b6de-05174b09c34f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--653b87f7-2dcd-4c25-991d-5284996c7562",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--45e8faa8-e878-4bac-a9a6-bc92f1ce4344",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--0af20877-77ce-4f6f-b002-960316463df9"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2e1b9907-8c04-4535-b333-1e31d6cbaeac",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4d1fd8c8-8b8d-4e0a-bc18-ebc328a6e4cd",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--c182377c-3b51-40c9-8b83-2f8d5bdb4b37"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3f8d25b0-dde6-4b0b-9ee8-727c3cf3d523",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--54577043-f25d-41ea-b4e7-39dd63324801",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--5f8fb3e5-97b2-4324-a86d-b13067380954",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8abb3a7f-2a09-456d-8da3-1faa422bd4ef",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--88749c69-6b47-4256-83de-1a4196b49e9e",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.305825Z",
+            "id": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Education sector as a target",
+            "sectors": [
+                "education"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Israel",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--0af20877-77ce-4f6f-b002-960316463df9",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Lebanon",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Saudi Arabia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c182377c-3b51-40c9-8b83-2f8d5bdb4b37",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "UAE",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

@@ -1,0 +1,602 @@
+{
+    "type": "bundle",
+    "id": "bundle--021e851b-af93-437e-9642-624760f76de0",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "primary_motivation": "organizational-gain",
+            "first_seen": "2012",
+            "x_MISP-description": "Lotus Blossom is a threat group that has targeted government and military organizations in Southeast Asia.",
+            "x_MISP-uuid": "32fafa69-fe3c-49db-afd4-aac2664bcf0d",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Lotus Blossom",
+            "description": "[Lotus Blossom](https://attack.mitre.org/groups/G0030) is a threat group that has targeted government and military organizations in Southeast Asia. (Citation: Lotus Blossom Jun 2015)",
+            "x_mitre_version": "2.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Lotus Blossom",
+                "Spring Dragon",
+                "ST Group",
+                "Esile",
+                "DRAGONFISH",
+                "BRONZE ELGIN",
+                "Esile",
+                "APT6",
+                "ATK 78",
+                "ATK 1",
+                "Billbug",
+                "Thrip",
+                "CTG-8171"
+            ],
+            "created": "2017-05-31T21:32:01.092Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0030",
+                    "external_id": "G0030",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Lotus Blossom Jun 2015)(Citation: Accenture Dragonfish Jan 2018)",
+                    "source_name": "Lotus Blossom"
+                },
+                {
+                    "description": "(Citation: Accenture Dragonfish Jan 2018)",
+                    "source_name": "DRAGONFISH"
+                },
+                {
+                    "description": "(Citation: Spring Dragon Jun 2015)(Citation: Accenture Dragonfish Jan 2018)",
+                    "source_name": "Spring Dragon"
+                },
+                {
+                    "source_name": "Lotus Blossom Jun 2015",
+                    "description": "Falcone, R., et al.. (2015, June 16). Operation Lotus Blossom. Retrieved February 15, 2016.",
+                    "url": "https://www.paloaltonetworks.com/resources/research/unit42-operation-lotus-blossom.html"
+                },
+                {
+                    "url": "https://www.accenture.com/t20180127T003755Z_w_/us-en/_acnmedia/PDF-46/Accenture-Security-Dragonfish-Threat-Analysis.pdf",
+                    "description": "Accenture Security. (2018, January 27). DRAGONFISH DELIVERS NEW FORM OF ELISE MALWARE TARGETING ASEAN DEFENCE MINISTERS\u2019 MEETING AND ASSOCIATES. Retrieved November 14, 2018.",
+                    "source_name": "Accenture Dragonfish Jan 2018"
+                },
+                {
+                    "source_name": "Spring Dragon Jun 2015",
+                    "description": "Baumgartner, K.. (2015, June 17). The Spring Dragon APT. Retrieved February 15, 2016.",
+                    "url": "https://securelist.com/the-spring-dragon-apt/70726/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--764b5d56-83a1-4c8d-824a-2021c7fe8052",
+            "description": "(Citation: Lotus Blossom Dec 2015)(Citation: Emissary Trojan Feb 2016)",
+            "target_ref": "malware--0f862b01-99da-47cc-9bdb-db4a86a95bb1",
+            "modified": "2021-08-27T14:42:00.582Z",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.064Z",
+            "external_references": [
+                {
+                    "source_name": "Lotus Blossom Dec 2015",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2015, December 18). Attack on French Diplomat Linked to Operation Lotus Blossom. Retrieved February 15, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2015/12/attack-on-french-diplomat-linked-to-operation-lotus-blossom/"
+                },
+                {
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did-operation-lotus-blossom-cause-it-to-evolve/",
+                    "description": "Falcone, R. and Miller-Osborn, J. (2016, February 3). Emissary Trojan Changelog: Did Operation Lotus Blossom Cause It to Evolve?. Retrieved February 15, 2016.",
+                    "source_name": "Emissary Trojan Feb 2016"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8859897c-66f5-4754-8cb8-2c6e6b8b8e2e",
+            "description": "(Citation: Spring Dragon Jun 2015)(Citation: Accenture Dragonfish Jan 2018)",
+            "target_ref": "malware--7551188b-8f91-4d34-8350-0d0c57b2b913",
+            "modified": "2019-03-25T14:17:43.377Z",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.064Z",
+            "external_references": [
+                {
+                    "source_name": "Spring Dragon Jun 2015",
+                    "description": "Baumgartner, K.. (2015, June 17). The Spring Dragon APT. Retrieved February 15, 2016.",
+                    "url": "https://securelist.com/the-spring-dragon-apt/70726/"
+                },
+                {
+                    "url": "https://www.accenture.com/t20180127T003755Z_w_/us-en/_acnmedia/PDF-46/Accenture-Security-Dragonfish-Threat-Analysis.pdf",
+                    "description": "Accenture Security. (2018, January 27). DRAGONFISH DELIVERS NEW FORM OF ELISE MALWARE TARGETING ASEAN DEFENCE MINISTERS\u2019 MEETING AND ASSOCIATES. Retrieved November 14, 2018.",
+                    "source_name": "Accenture Dragonfish Jan 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Elise",
+            "x_mitre_aliases": [
+                "Elise",
+                "BKDR_ESILE",
+                "Page"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2020-03-20T23:20:16.933Z",
+            "created": "2017-05-31T21:32:54.416Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--7551188b-8f91-4d34-8350-0d0c57b2b913",
+            "description": "[Elise](https://attack.mitre.org/software/S0081) is a custom backdoor Trojan that appears to be used exclusively by [Lotus Blossom](https://attack.mitre.org/groups/G0030). It is part of a larger group of\ntools referred to as LStudio, ST Group, and APT0LSTU. (Citation: Lotus Blossom Jun 2015)(Citation: Accenture Dragonfish Jan 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0081",
+                    "external_id": "S0081",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Accenture Dragonfish Jan 2018)",
+                    "source_name": "Elise"
+                },
+                {
+                    "description": "(Citation: Lotus Blossom Jun 2015)",
+                    "source_name": "BKDR_ESILE"
+                },
+                {
+                    "description": "(Citation: Lotus Blossom Jun 2015)",
+                    "source_name": "Page"
+                },
+                {
+                    "url": "https://www.paloaltonetworks.com/resources/research/unit42-operation-lotus-blossom.html",
+                    "description": "Falcone, R., et al.. (2015, June 16). Operation Lotus Blossom. Retrieved February 15, 2016.",
+                    "source_name": "Lotus Blossom Jun 2015"
+                },
+                {
+                    "source_name": "Accenture Dragonfish Jan 2018",
+                    "description": "Accenture Security. (2018, January 27). DRAGONFISH DELIVERS NEW FORM OF ELISE MALWARE TARGETING ASEAN DEFENCE MINISTERS\u2019 MEETING AND ASSOCIATES. Retrieved November 14, 2018.",
+                    "url": "https://www.accenture.com/t20180127T003755Z_w_/us-en/_acnmedia/PDF-46/Accenture-Security-Dragonfish-Threat-Analysis.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Emissary",
+            "x_mitre_aliases": [
+                "Emissary"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-08-09T14:21:48.477Z",
+            "created": "2017-05-31T21:32:54.772Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--0f862b01-99da-47cc-9bdb-db4a86a95bb1",
+            "description": "[Emissary](https://attack.mitre.org/software/S0082) is a Trojan that has been used by [Lotus Blossom](https://attack.mitre.org/groups/G0030). It shares code with [Elise](https://attack.mitre.org/software/S0081), with both Trojans being part of a malware group referred to as LStudio. (Citation: Lotus Blossom Dec 2015)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0082",
+                    "external_id": "S0082",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Lotus Blossom Dec 2015)",
+                    "source_name": "Emissary"
+                },
+                {
+                    "url": "http://researchcenter.paloaltonetworks.com/2015/12/attack-on-french-diplomat-linked-to-operation-lotus-blossom/",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2015, December 18). Attack on French Diplomat Linked to Operation Lotus Blossom. Retrieved February 15, 2016.",
+                    "source_name": "Lotus Blossom Dec 2015"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--749437c9-2bfd-445d-bf75-4128b407badd",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0181b99f-a78e-4633-9b5b-95e15cda7881",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--04ce0e95-f2a0-4859-aa66-29348fa85beb",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Philippines",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b1b7e1e0-cda9-422c-af26-388c2b0406f7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5"
+        },
+        {
+            "country": "HK",
+            "created": "2021-03-13T20:09:21.009864Z",
+            "id": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Hong Kong",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0c81cc58-cd7e-46a0-a3cd-945a45e7306a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Indonesia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--59ba1484-c983-4be2-a184-9908b006249d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--58c74419-78af-40b9-9d53-5c20e44e6423",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Vietnam",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--00273ee5-2251-4b78-97a9-cef1f460b4d4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d7d44fe8-8871-4494-bb11-6ef9e4f9905b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "identity--fc80c642-b075-4c9d-aaa0-7d1b8541c2d1"
+        },
+        {
+            "created": "2021-03-13T20:09:21.302614Z",
+            "id": "identity--fc80c642-b075-4c9d-aaa0-7d1b8541c2d1",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Military sector as a target",
+            "sectors": [
+                "Military industries"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.298321Z",
+            "id": "identity--4f5ed6f0-39b9-4079-918d-ad9294735a22",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Aerospace sector as a target",
+            "sectors": [
+                "aerospace"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.305825Z",
+            "id": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Education sector as a target",
+            "sectors": [
+                "education"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.329303Z",
+            "id": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Technology sector as a target",
+            "sectors": [
+                "technology"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.330327Z",
+            "id": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Telecommunications sector as a target",
+            "sectors": [
+                "telecommunications"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Singapore",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Thailand",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--dcd1652b-a826-4490-b09f-61afdadb1581",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "identity--4f5ed6f0-39b9-4079-918d-ad9294735a22"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3385ea0e-2719-4955-b141-d2cb8f58f754",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bef92c08-97aa-44a5-9f7a-2918c0f05473",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "identity--4f4306a6-c059-4518-a5df-9e71a2ac31d7"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ef1dd872-0655-4ee4-be5c-d763f83dc9fc",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0e78cf38-c800-4576-8771-6519306eb28a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--70d2d06b-1e00-45f2-a753-f84bcda05496",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8eb85aa7-fe2b-4ad2-928c-9aafc5acd12b",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--62af52af-17c0-47c9-9d09-9fba74f86981",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fc87e16e-1174-4091-a5e0-71d49532d183",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0181b99f-a78e-4633-9b5b-95e15cda7881",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--3ab5bcd6-96b3-49ed-bf01-b23d8fd59188"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0181b99f-a78e-4633-9b5b-95e15cda7881",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--f7e4b2f1-9a98-4988-a491-216e99d2c83d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0181b99f-a78e-4633-9b5b-95e15cda7881",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--88b7dbc2-32d3-4e31-af2f-3fc24e1582d7",
+            "target_ref": "location--e65f621b-32e0-4249-af5d-32b46804ba2d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--3ab5bcd6-96b3-49ed-bf01-b23d8fd59188",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Malaysia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e65f621b-32e0-4249-af5d-32b46804ba2d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Myanmar",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f7e4b2f1-9a98-4988-a491-216e99d2c83d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Cambodia",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

@@ -12,6 +12,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { GroupComponent } from './group/group.component';
 import { GrpsInfosComponent } from './grps-infos/grps-infos.component';
+import { STIXComponent } from './stix/stix.component';
+import { ToolInfoComponent } from './tool-info/tool-info.component';
+import { SoftwareComponent } from './software/software.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { GrpsInfosComponent } from './grps-infos/grps-infos.component';
     SearchComponent,
     FooterComponent,
     GroupComponent,
-    GrpsInfosComponent
+    GrpsInfosComponent,
+    STIXComponent,
+    ToolInfoComponent,
+    SoftwareComponent,
   ],
   imports: [
     BrowserModule,

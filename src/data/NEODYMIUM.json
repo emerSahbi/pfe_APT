@@ -1,0 +1,143 @@
+{
+    "type": "bundle",
+    "id": "bundle--c20e7583-2be1-41a6-8648-2a61a2eedb71",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2016",
+            "x_MISP-uuid": "ada08ea8-4517-4eea-aff1-3ad69e5466bb",
+            "x_MISP-description": "NEODYMIUM is an activity group that is known to use a backdoor malware detected by Microsoft as Wingbird. This backdoor’s characteristics closely match FinFisher, a government-grade commercial surveillance package. Data about Wingbird activity indicate that it is typically used to attack individual computers instead of networks.",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "NEODYMIUM",
+            "description": "[NEODYMIUM](https://attack.mitre.org/groups/G0055) is an activity group that conducted a campaign in May 2016 and has heavily targeted Turkish victims. The group has demonstrated similarity to another activity group called [PROMETHIUM](https://attack.mitre.org/groups/G0056) due to overlapping victim and campaign characteristics. (Citation: Microsoft NEODYMIUM Dec 2016) (Citation: Microsoft SIR Vol 21) [NEODYMIUM](https://attack.mitre.org/groups/G0055) is reportedly associated closely with [BlackOasis](https://attack.mitre.org/groups/G0063) operations, but evidence that the group names are aliases has not been identified. (Citation: CyberScoop BlackOasis Oct 2017)",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "NEODYMIUM"
+            ],
+            "created": "2018-01-16T16:13:52.465Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--025bdaa9-897d-4bad-afa6-013ba5734653",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0055",
+                    "external_id": "G0055",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Microsoft NEODYMIUM Dec 2016) (Citation: Microsoft SIR Vol 21)",
+                    "source_name": "NEODYMIUM"
+                },
+                {
+                    "source_name": "Microsoft NEODYMIUM Dec 2016",
+                    "description": "Microsoft. (2016, December 14). Twin zero-day attacks: PROMETHIUM and NEODYMIUM target individuals in Europe. Retrieved November 27, 2017.",
+                    "url": "https://blogs.technet.microsoft.com/mmpc/2016/12/14/twin-zero-day-attacks-promethium-and-neodymium-target-individuals-in-europe/"
+                },
+                {
+                    "url": "http://download.microsoft.com/download/E/B/0/EB0F50CC-989C-4B66-B7F6-68CD3DC90DE3/Microsoft_Security_Intelligence_Report_Volume_21_English.pdf",
+                    "description": "Anthe, C. et al. (2016, December 14). Microsoft Security Intelligence Report Volume 21. Retrieved November 27, 2017.",
+                    "source_name": "Microsoft SIR Vol 21"
+                },
+                {
+                    "source_name": "CyberScoop BlackOasis Oct 2017",
+                    "description": "Bing, C. (2017, October 16). Middle Eastern hacking group is using FinFisher malware to conduct international espionage. Retrieved February 15, 2018.",
+                    "url": "https://www.cyberscoop.com/middle-eastern-hacking-group-using-finfisher-malware-conduct-international-espionage/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--877a67b0-5dea-467c-9da1-8eee3bcc19a6",
+            "description": "(Citation: Microsoft NEODYMIUM Dec 2016)(Citation: Microsoft SIR Vol 21)",
+            "target_ref": "malware--a8d3d497-2da9-4797-8e0b-ed176be08654",
+            "modified": "2019-03-25T14:31:40.994Z",
+            "source_ref": "intrusion-set--025bdaa9-897d-4bad-afa6-013ba5734653",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-01-16T16:13:52.465Z",
+            "external_references": [
+                {
+                    "source_name": "Microsoft NEODYMIUM Dec 2016",
+                    "description": "Microsoft. (2016, December 14). Twin zero-day attacks: PROMETHIUM and NEODYMIUM target individuals in Europe. Retrieved November 27, 2017.",
+                    "url": "https://blogs.technet.microsoft.com/mmpc/2016/12/14/twin-zero-day-attacks-promethium-and-neodymium-target-individuals-in-europe/"
+                },
+                {
+                    "url": "http://download.microsoft.com/download/E/B/0/EB0F50CC-989C-4B66-B7F6-68CD3DC90DE3/Microsoft_Security_Intelligence_Report_Volume_21_English.pdf",
+                    "description": "Anthe, C. et al. (2016, December 14). Microsoft Security Intelligence Report Volume 21. Retrieved November 27, 2017.",
+                    "source_name": "Microsoft SIR Vol 21"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Wingbird",
+            "x_mitre_aliases": [
+                "Wingbird"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T18:29:08.243Z",
+            "created": "2018-01-16T16:13:52.465Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--a8d3d497-2da9-4797-8e0b-ed176be08654",
+            "description": "[Wingbird](https://attack.mitre.org/software/S0176) is a backdoor that appears to be a version of commercial software [FinFisher](https://attack.mitre.org/software/S0182). It is reportedly used to attack individual computers instead of networks. It was used by [NEODYMIUM](https://attack.mitre.org/groups/G0055) in a May 2016 campaign. (Citation: Microsoft SIR Vol 21) (Citation: Microsoft NEODYMIUM Dec 2016)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0176",
+                    "url": "https://attack.mitre.org/software/S0176"
+                },
+                {
+                    "description": "(Citation: Microsoft SIR Vol 21) (Citation: Microsoft NEODYMIUM Dec 2016) (Citation: Microsoft Wingbird Nov 2017)",
+                    "source_name": "Wingbird"
+                },
+                {
+                    "source_name": "Microsoft SIR Vol 21",
+                    "description": "Anthe, C. et al. (2016, December 14). Microsoft Security Intelligence Report Volume 21. Retrieved November 27, 2017.",
+                    "url": "http://download.microsoft.com/download/E/B/0/EB0F50CC-989C-4B66-B7F6-68CD3DC90DE3/Microsoft_Security_Intelligence_Report_Volume_21_English.pdf"
+                },
+                {
+                    "url": "https://blogs.technet.microsoft.com/mmpc/2016/12/14/twin-zero-day-attacks-promethium-and-neodymium-target-individuals-in-europe/",
+                    "description": "Microsoft. (2016, December 14). Twin zero-day attacks: PROMETHIUM and NEODYMIUM target individuals in Europe. Retrieved November 27, 2017.",
+                    "source_name": "Microsoft NEODYMIUM Dec 2016"
+                },
+                {
+                    "url": "https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Backdoor:Win32/Wingbird.A!dha",
+                    "description": "Microsoft. (2017, November 9). Backdoor:Win32/Wingbird.A!dha. Retrieved November 27, 2017.",
+                    "source_name": "Microsoft Wingbird Nov 2017"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--74419b9d-e2e8-435d-a574-760f02148272",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--025bdaa9-897d-4bad-afa6-013ba5734653",
+            "target_ref": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Turkey",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

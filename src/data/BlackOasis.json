@@ -1,0 +1,305 @@
+{
+    "type": "bundle",
+    "id": "bundle--9a84978a-8af3-496b-9457-23d28d3e58ea",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2015",
+            "x_MISP-description": "BlackOasis is a Middle Eastern threat group that is believed to be a customer of Gamma Group. The group has shown interest in prominent figures in the United Nations, as well as opposition bloggers, activists, regional news correspondents, and think tanks. A group known by Microsoft as NEODYMIUM is reportedly associated closely with BlackOasis operations, but evidence that the group names are aliases has not been identified.",
+            "x_MISP-uuid": "8fbd195f-5e03-4e85-8ca5-4f1dff300bec",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "BlackOasis",
+            "description": "[BlackOasis](https://attack.mitre.org/groups/G0063) is a Middle Eastern threat group that is believed to be a customer of Gamma Group. The group has shown interest in prominent figures in the United Nations, as well as opposition bloggers, activists, regional news correspondents, and think tanks. (Citation: Securelist BlackOasis Oct 2017) (Citation: Securelist APT Trends Q2 2017) A group known by Microsoft as [NEODYMIUM](https://attack.mitre.org/groups/G0055) is reportedly associated closely with [BlackOasis](https://attack.mitre.org/groups/G0063) operations, but evidence that the group names are aliases has not been identified. (Citation: CyberScoop BlackOasis Oct 2017)",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "BlackOasis"
+            ],
+            "created": "2018-04-18T17:59:24.739Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0063",
+                    "external_id": "G0063",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Securelist BlackOasis Oct 2017) (Citation: Securelist APT Trends Q2 2017)",
+                    "source_name": "BlackOasis"
+                },
+                {
+                    "url": "https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-day-exploit/82732/",
+                    "description": "Kaspersky Lab's Global Research & Analysis Team. (2017, October 16). BlackOasis APT and new targeted attacks leveraging zero-day exploit. Retrieved February 15, 2018.",
+                    "source_name": "Securelist BlackOasis Oct 2017"
+                },
+                {
+                    "url": "https://securelist.com/apt-trends-report-q2-2017/79332/",
+                    "description": "Kaspersky Lab's Global Research & Analysis Team. (2017, August 8). APT Trends report Q2 2017. Retrieved February 15, 2018.",
+                    "source_name": "Securelist APT Trends Q2 2017"
+                },
+                {
+                    "url": "https://www.cyberscoop.com/middle-eastern-hacking-group-using-finfisher-malware-conduct-international-espionage/",
+                    "description": "Bing, C. (2017, October 16). Middle Eastern hacking group is using FinFisher malware to conduct international espionage. Retrieved February 15, 2018.",
+                    "source_name": "CyberScoop BlackOasis Oct 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4ad9aa86-f489-4f0f-926f-f381221c3705",
+            "description": "[BlackOasis](https://attack.mitre.org/groups/G0063)'s first stage shellcode contains a NOP sled with alternative instructions that was likely designed to bypass antivirus tools.(Citation: Securelist BlackOasis Oct 2017)",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2018-04-18T17:59:24.739Z",
+            "external_references": [
+                {
+                    "url": "https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-day-exploit/82732/",
+                    "description": "Kaspersky Lab's Global Research & Analysis Team. (2017, October 16). BlackOasis APT and new targeted attacks leveraging zero-day exploit. Retrieved February 15, 2018.",
+                    "source_name": "Securelist BlackOasis Oct 2017"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Obfuscated Files or Information",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "File: File Metadata",
+                "File: File Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-20T16:33:13.472Z",
+            "created": "2017-05-31T21:30:32.662Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis",
+                "Signature-based detection",
+                "Host intrusion prevention systems",
+                "Application control",
+                "Log analysis",
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. \n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open and [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) for [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as JavaScript. \n\nPortions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) ",
+            "x_mitre_contributors": [
+                "Red Canary",
+                "Christiaan Beek, @ChristiaanBeek"
+            ],
+            "x_mitre_detection": "Detection of file obfuscation is difficult unless artifacts are left behind by the obfuscation process that are uniquely detectable with a signature. If detection of the obfuscation itself is not possible, it may be possible to detect the malicious activity that caused the obfuscated file (for example, the method that was used to write, read, or modify the file on the file system). \n\nFlag and analyze commands containing indicators of obfuscation and known suspicious syntax such as uninterpreted escape characters like '''^''' and '''\"'''. Windows' Sysmon and Event ID 4688 displays command-line arguments for processes. Deobfuscation tools can be used to detect these indicators in files/payloads. (Citation: GitHub Revoke-Obfuscation) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: GitHub Office-Crackros Aug 2016) \n\nObfuscation used in payloads for Initial Access can be detected at the network. Use network intrusion detection systems and email gateway filtering to identify compressed and encrypted attachments and scripts. Some email attachment detonation systems can open compressed and encrypted attachments. Payloads delivered over an encrypted connection from a website require encrypted network traffic inspection. \n\nThe first detection of a malicious tool may trigger an anti-virus or other security tool alert. Similar events may also occur at the boundary through network IDS, email scanning appliance, etc. The initial detection should be treated as an indication of a potentially more invasive intrusion. The alerting system should be thoroughly investigated beyond that initial alert for activity that was not detected. Adversaries may continue with an operation, assuming that individual events like an anti-virus detect will not be investigated or that an analyst will not be able to conclusively link that event to other activity occurring on the network. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027",
+                    "external_id": "T1027",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/267.html",
+                    "external_id": "CAPEC-267",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Volexity PowerDuke November 2016",
+                    "description": "Adair, S.. (2016, November 9). PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs. Retrieved January 11, 2017.",
+                    "url": "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                },
+                {
+                    "source_name": "Linux/Cdorked.A We Live Security Analysis",
+                    "description": "Pierre-Marc Bureau. (2013, April 26). Linux/Cdorked.A: New Apache backdoor being used in the wild to serve Blackhole. Retrieved September 10, 2017.",
+                    "url": "https://www.welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/"
+                },
+                {
+                    "source_name": "Carbon Black Obfuscation Sept 2016",
+                    "description": "Tedesco, B. (2016, September 23). Security Alert Summary. Retrieved February 12, 2018.",
+                    "url": "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/"
+                },
+                {
+                    "source_name": "FireEye Obfuscation June 2017",
+                    "description": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+                },
+                {
+                    "source_name": "FireEye Revoke-Obfuscation July 2017",
+                    "description": "Bohannon, D. & Holmes, L. (2017, July 27). Revoke-Obfuscation: PowerShell Obfuscation Detection Using Science. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf"
+                },
+                {
+                    "source_name": "PaloAlto EncodedCommand March 2017",
+                    "description": "White, J. (2017, March 10). Pulling Back the Curtains on EncodedCommand PowerShell Attacks. Retrieved February 12, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/"
+                },
+                {
+                    "source_name": "GitHub Revoke-Obfuscation",
+                    "description": "Bohannon, D. (2017, July 27). Revoke-Obfuscation. Retrieved February 12, 2018.",
+                    "url": "https://github.com/danielbohannon/Revoke-Obfuscation"
+                },
+                {
+                    "source_name": "GitHub Office-Crackros Aug 2016",
+                    "description": "Carr, N. (2016, August 14). OfficeCrackros. Retrieved February 12, 2018.",
+                    "url": "https://github.com/itsreallynick/office-crackros"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--beeae3c7-d5af-40e1-a026-2978892f90b2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--d48d972b-5b16-4be9-955e-a64c16b24569"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--d48d972b-5b16-4be9-955e-a64c16b24569",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Middle East",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--abdcce78-41cd-4d1a-9b4d-8ba41592e481",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2ab7aafd-2516-4c81-a50f-6039cb2c41f1",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--e1b026f1-06eb-44d6-9ed2-319cc6e70bc4"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e1b026f1-06eb-44d6-9ed2-319cc6e70bc4",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Afghanistan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9c772907-5a1b-40f8-8616-3ad39141280a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--036a483f-27e7-48f0-9e75-b44f99c3c531"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--036a483f-27e7-48f0-9e75-b44f99c3c531",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Iran",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a06c2838-7b1f-445b-9c35-e3447d68722c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Netherlands",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--53423be4-d182-4086-bfcd-884bc5a3b015",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--cfb1966d-5bc3-47cf-b985-d2983b41d855",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b00d9eeb-8a49-4a56-b431-20de2eace60d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Saudi Arabia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c5472967-afb7-4437-bb09-2d15693834e2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850",
+            "target_ref": "location--a43cb0b8-1041-4976-8e68-e87154f75bba"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a43cb0b8-1041-4976-8e68-e87154f75bba",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Tunisia",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

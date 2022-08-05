@@ -1,0 +1,403 @@
+{
+    "type": "bundle",
+    "id": "bundle--1ce557e1-d314-4331-9927-948283921228",
+    "spec_version": "2.0",
+    "objects": [
+        {"primary_motivation": "organizational-gain",
+            "first_seen":"2015",
+            "x_MISP-descriptio": "Scarlet Mimic is a threat group that has targeted minority rights activists. This group has not been directly linked to a government source, but the group’s motivations appear to overlap with those of the Chinese government. While there is some overlap between IP addresses used by Scarlet Mimic and Putter Panda, APT 2, it has not been concluded that the groups are the same.\nThe attacks began over four years ago and their targeting pattern suggests that this adversary’s primary mission is to gather information about minority rights activists. We do not have evidence directly linking these attacks to a government source, but the information derived from these activities supports an assessment that a group or groups with motivations similar to the stated position of the Chinese government in relation to these targets is involved.\nThe attacks we attribute to Scarlet Mimic have primarily targeted Uyghur and Tibetan activists as well as those who are interested in their causes. Both the Tibetan community and the Uyghurs, a Turkic Muslim minority residing primarily in northwest China, have been targets of multiple sophisticated attacks in the past decade. Both also have history of strained relationships with the government of the People’s Republic of China (PRC), though we do not have evidence that links Scarlet Mimic attacks to the PRC.\nScarlet Mimic attacks have also been identified against government organizations in Russia and India, who are responsible for tracking activist and terrorist activities. While we do not know the precise target of each of the Scarlet Mimic attacks, many of them align to the patterns described above.",
+            "x_MISP-uuid": "0da10682-85c6-4c0b-bace-ba1f7adfb63e",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Scarlet Mimic",
+            "description": "[Scarlet Mimic](https://attack.mitre.org/groups/G0029) is a threat group that has targeted minority rights activists. This group has not been directly linked to a government source, but the group's motivations appear to overlap with those of the Chinese government. While there is some overlap between IP addresses used by [Scarlet Mimic](https://attack.mitre.org/groups/G0029) and [Putter Panda](https://attack.mitre.org/groups/G0024), it has not been concluded that the groups are the same. (Citation: Scarlet Mimic Jan 2016)",
+            "x_mitre_version": "1.2",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Scarlet Mimic"
+            ],
+            "created": "2017-05-31T21:32:00.677Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0029",
+                    "external_id": "G0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Scarlet Mimic Jan 2016)",
+                    "source_name": "Scarlet Mimic"
+                },
+                {
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "source_name": "Scarlet Mimic Jan 2016"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9155d072-d94b-4a63-b089-26781aff5275",
+            "description": "(Citation: Scarlet Mimic Jan 2016)",
+            "target_ref": "malware--463f68f1-5cde-4dc2-a831-68b73488f8f4",
+            "modified": "2019-04-22T15:06:12.716Z",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.064Z",
+            "external_references": [
+                {
+                    "source_name": "Scarlet Mimic Jan 2016",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--79934567-99e6-4184-8b04-717a1b401006",
+            "description": "(Citation: Scarlet Mimic Jan 2016)",
+            "target_ref": "malware--dfb5fa9b-3051-4b97-8035-08f80aef945b",
+            "modified": "2019-04-22T15:06:12.697Z",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.064Z",
+            "external_references": [
+                {
+                    "source_name": "Scarlet Mimic Jan 2016",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a4106a52-b3e7-4aa9-b2ca-125f206dbf91",
+            "description": "(Citation: Scarlet Mimic Jan 2016)",
+            "target_ref": "malware--cb7bcf6f-085f-41db-81ee-4b68481661b5",
+            "modified": "2019-04-22T15:06:12.694Z",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.064Z",
+            "external_references": [
+                {
+                    "source_name": "Scarlet Mimic Jan 2016",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--d617132e-68a7-489a-887f-1c40b147ea62",
+            "description": "[Scarlet Mimic](https://attack.mitre.org/groups/G0029) has used the left-to-right override character in self-extracting RAR archive spearphishing attachment file names.(Citation: Scarlet Mimic Jan 2016)",
+            "target_ref": "attack-pattern--77eae145-55db-4519-8ae5-77b0c7215d69",
+            "modified": "2020-03-18T15:47:59.332Z",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2019-04-22T15:06:12.673Z",
+            "external_references": [
+                {
+                    "source_name": "Scarlet Mimic Jan 2016",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e577372f-c3c9-4e12-9bc6-3f6a1faec0ac",
+            "description": "(Citation: Scarlet Mimic Jan 2016)",
+            "target_ref": "malware--bb3c1098-d654-4620-bf40-694386d28921",
+            "modified": "2019-04-22T15:06:12.729Z",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.064Z",
+            "external_references": [
+                {
+                    "source_name": "Scarlet Mimic Jan 2016",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Right-to-Left Override",
+            "x_mitre_data_sources": [
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-14T21:01:59.733Z",
+            "created": "2020-02-10T19:55:29.385Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--77eae145-55db-4519-8ae5-77b0c7215d69",
+            "description": "Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign. RTLO is a non-printing Unicode character that causes the text that follows it to be displayed in reverse. For example, a Windows screensaver executable named <code>March 25 \\u202Excod.scr</code> will display as <code>March 25 rcs.docx</code>. A JavaScript file named <code>photo_high_re\\u202Egnp.js</code> will be displayed as <code>photo_high_resj.png</code>.(Citation: Infosecinstitute RTLO Technique)\n\nAdversaries may abuse the RTLO character as a means of tricking a user into executing what they think is a benign file type. A common use of this technique is with [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001)/[Malicious File](https://attack.mitre.org/techniques/T1204/002) since it can trick both end users and defenders if they are not aware of how their tools display and render the RTLO character. Use of the RTLO character has been seen in many targeted intrusion attempts and criminal activity.(Citation: Trend Micro PLEAD RTLO)(Citation: Kaspersky RTLO Cyber Crime) RTLO can be used in the Windows Registry as well, where regedit.exe displays the reversed characters but the command line tool reg.exe does not by default.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Detection methods should include looking for common formats of RTLO characters within filenames such as <code>\\u202E</code>, <code>[U+202E]</code>, and <code>%E2%80%AE</code>. Defenders should also check their analysis tools to ensure they do not interpret the RTLO character and instead print the true name of the file containing it.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036/002",
+                    "external_id": "T1036.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://resources.infosecinstitute.com/spoof-using-right-to-left-override-rtlo-technique-2/",
+                    "description": "Security Ninja. (2015, April 16). Spoof Using Right to Left Override (RTLO) Technique. Retrieved April 22, 2019.",
+                    "source_name": "Infosecinstitute RTLO Technique"
+                },
+                {
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/plead-targeted-attacks-against-taiwanese-government-agencies-2/",
+                    "description": "Alintanahin, K.. (2014, May 23). PLEAD Targeted Attacks Against Taiwanese Government Agencies. Retrieved April 22, 2019.",
+                    "source_name": "Trend Micro PLEAD RTLO"
+                },
+                {
+                    "url": "https://securelist.com/zero-day-vulnerability-in-telegram/83800/",
+                    "description": "Firsh, A.. (2018, February 13). Zero-day vulnerability in Telegram - Cybercriminals exploited Telegram flaw to launch multipurpose attacks. Retrieved April 22, 2019.",
+                    "source_name": "Kaspersky RTLO Cyber Crime"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "CallMe",
+            "x_mitre_aliases": [
+                "CallMe"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T15:16:18.880Z",
+            "created": "2017-05-31T21:32:52.875Z",
+            "x_mitre_platforms": [
+                "macOS"
+            ],
+            "id": "malware--cb7bcf6f-085f-41db-81ee-4b68481661b5",
+            "description": "[CallMe](https://attack.mitre.org/software/S0077) is a Trojan designed to run on Apple OSX. It is based on a publicly available tool called Tiny SHell. (Citation: Scarlet Mimic Jan 2016)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0077",
+                    "external_id": "S0077",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Scarlet Mimic Jan 2016",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+                }
+            ]
+        },
+        {
+            "type": "malware",
+            "modified": "2020-03-27T20:41:21.473Z",
+            "name": "FakeM",
+            "x_mitre_aliases": [
+                "FakeM"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2017-05-31T21:32:52.470Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--bb3c1098-d654-4620-bf40-694386d28921",
+            "description": "[FakeM](https://attack.mitre.org/software/S0076) is a shellcode-based Windows backdoor that has been used by [Scarlet Mimic](https://attack.mitre.org/groups/G0029). (Citation: Scarlet Mimic Jan 2016)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0076",
+                    "external_id": "S0076",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Scarlet Mimic Jan 2016",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "MobileOrder",
+            "x_mitre_aliases": [
+                "MobileOrder"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2018-10-17T00:14:20.652Z",
+            "created": "2017-05-31T21:32:53.681Z",
+            "id": "malware--463f68f1-5cde-4dc2-a831-68b73488f8f4",
+            "description": "[MobileOrder](https://attack.mitre.org/software/S0079) is a Trojan intended to compromise Android mobile devices. It has been used by [Scarlet Mimic](https://attack.mitre.org/groups/G0029). (Citation: Scarlet Mimic Jan 2016)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0079",
+                    "external_id": "S0079",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "source_name": "Scarlet Mimic Jan 2016"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Psylo",
+            "x_mitre_aliases": [
+                "Psylo"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T17:23:59.127Z",
+            "created": "2017-05-31T21:32:53.268Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--dfb5fa9b-3051-4b97-8035-08f80aef945b",
+            "description": "[Psylo](https://attack.mitre.org/software/S0078) is a shellcode-based Trojan that has been used by [Scarlet Mimic](https://attack.mitre.org/groups/G0029). It has similar characteristics as [FakeM](https://attack.mitre.org/software/S0076). (Citation: Scarlet Mimic Jan 2016)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0078",
+                    "external_id": "S0078",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/",
+                    "description": "Falcone, R. and Miller-Osborn, J.. (2016, January 24). Scarlet Mimic: Years-Long Espionage Campaign Targets Minority Activists. Retrieved February 10, 2016.",
+                    "source_name": "Scarlet Mimic Jan 2016"
+                }
+            ]
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--263a9a8e-169e-42cc-b829-8fea7feab52c",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Uyghur",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--9d302428-e43b-4f03-8abc-3672791cf2b7",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Tibetan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7f08b319-7878-4be0-9a2a-6dbfa0536981",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--0e922014-54b0-4497-af3c-39bb93e99d36",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "target_ref": "location--263a9a8e-169e-42cc-b829-8fea7feab52c"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--fa93a574-aae5-4443-ab3c-80a8da99699c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "target_ref": "location--9d302428-e43b-4f03-8abc-3672791cf2b7"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8a037910-56de-4f1d-8c66-1fb9bc7194f8",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5574ca0-d5a4-490a-b207-e4658e5fd1d7",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        }
+    ]
+}

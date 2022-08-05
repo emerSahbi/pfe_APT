@@ -1,0 +1,749 @@
+{
+    "type": "bundle",
+    "id": "bundle--7f5a7ecb-0fdc-43a4-a186-fdd103d1716e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "x_MISP-description": "The McAfee Advanced Threat Research team and McAfee Labs Malware Operations Group have discovered a new global campaign targeting nuclear, defense, energy, and financial companies, based on McAfee® Global Threat Intelligence. This campaign, Operation Sharpshooter, leverages an in-memory implant to download and retrieve a second-stage implant—which we call Rising Sun—for further exploitation. According to our analysis, the Rising Sun implant uses source code from the Lazarus Group’s 2015 backdoor Trojan Duuzer in a new framework to infiltrate these key industries.\nOperation Sharpshooter’s numerous technical links to the Lazarus Group seem too obvious to immediately draw the conclusion that they are responsible for the attacks, and instead indicate a potential for false flags. Our research focuses on how this actor operates, the global impact, and how to detect the attack. We shall leave attribution to the broader security community.",
+            "x_MISP-uuid": "b06c3af1-0243-4428-88da-b3451c345e1e",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Sharpshooter",
+            "description": "Operation [Sharpshooter](https://attack.mitre.org/groups/G0104) is the name of a cyber espionage campaign discovered in October 2018 targeting nuclear, defense, energy, and financial companies. Though overlaps between this adversary and [Lazarus Group](https://attack.mitre.org/groups/G0032) have been noted, definitive links have not been established.(Citation: McAfee Sharpshooter December 2018)",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Sharpshooter"
+            ],
+            "created": "2020-05-14T21:40:31.089Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0104",
+                    "external_id": "G0104",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--1a5f6f44-56a3-4219-af5c-1753e17d72d6",
+            "target_ref": "malware--56e6b6c2-e573-4969-8bab-783205cebbbf",
+            "modified": "2020-05-15T17:03:13.020Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-15T16:56:55.451Z"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--24d5ba1b-dbce-4c25-8180-1ee40b8c827f",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104) has sent malicious DOC and PDF files to targets so that they can be opened by a user.(Citation: McAfee Sharpshooter December 2018)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2020-06-30T03:08:45.055Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-14T21:40:31.265Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--164f3527-8811-4f4a-a561-060d010d78dd",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104) downloaded additional payloads after a target was infected with a first-stage downloader.(Citation: McAfee Sharpshooter December 2018)",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "modified": "2020-05-14T21:40:31.207Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-14T21:40:31.207Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9123ca09-3152-404c-92ed-52982cc043d5",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104)'s first-stage downloader resolved various Windows libraries and APIs, including LoadLibraryA(), GetProcAddress(), and CreateProcessA().(Citation: McAfee Sharpshooter December 2018)\t",
+            "target_ref": "attack-pattern--391d824f-0ef1-47a0-b0ee-c59a75e27670",
+            "modified": "2020-05-14T21:40:31.201Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-14T21:40:31.201Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6571753b-b52d-4a30-b674-426f358253b0",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104)'s first-stage downloader was a VBA macro.(Citation: McAfee Sharpshooter December 2018)",
+            "target_ref": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "modified": "2020-05-14T21:40:31.204Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-14T21:40:31.204Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--abb78042-19f1-4ddf-82bb-afc67daeeca1",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104) has sent malicious Word OLE documents to victims.(Citation: McAfee Sharpshooter December 2018)",
+            "target_ref": "attack-pattern--232a7e42-cd6e-4902-8fe9-2960f529dd4d",
+            "modified": "2020-05-15T17:03:12.918Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-15T17:03:12.918Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--aee0bd8a-1900-448b-bd88-5493f9ed8d28",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104) has leveraged embedded shellcode to inject a downloader into the memory of Word.(Citation: McAfee Sharpshooter December 2018)",
+            "target_ref": "attack-pattern--43e7dc91-05b2-474c-b9ac-2ed4fe101f4d",
+            "modified": "2020-06-30T03:05:58.589Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-14T21:40:31.248Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b65dc335-2dc2-41ca-8b68-a673a75761a2",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104) has sent malicious attachments via emails to targets.(Citation: McAfee Sharpshooter December 2018)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2020-05-14T21:40:31.268Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-14T21:40:31.268Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e93e6c30-16aa-4f12-856b-19e96bdfdf28",
+            "description": "[Sharpshooter](https://attack.mitre.org/groups/G0104)'s first-stage downloader installed [Rising Sun](https://attack.mitre.org/software/S0448) to the startup folder <code>%Startup%\\mssync.exe</code>.(Citation: McAfee Sharpshooter December 2018)\t",
+            "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "modified": "2020-05-14T21:53:42.091Z",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-05-14T21:40:31.188Z",
+            "external_references": [
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-01-06T18:36:29.226Z",
+            "name": "Registry Run Keys / Startup Folder",
+            "x_mitre_data_sources": [
+                "Windows Registry: Windows Registry Key Creation",
+                "Windows Registry: Windows Registry Key Modification",
+                "File: File Modification",
+                "Command: Command Execution",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "created": "2020-01-23T22:02:48.566Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "description": "Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. Adding an entry to the \"run keys\" in the Registry or startup folder will cause the program referenced to be executed when a user logs in. (Citation: Microsoft Run Key) These programs will be executed under the context of the user and will have the account's associated permissions level.\n\nPlacing a program within a startup folder will also cause that program to execute when a user logs in. There is a startup folder location for individual user accounts as well as a system-wide startup folder that will be checked regardless of which user account logs in. The startup folder path for the current user is <code>C:\\Users\\\\[Username]\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup</code>. The startup folder path for all users is <code>C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\StartUp</code>.\n\nThe following run keys are created by default on Windows systems:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n\nRun keys may exist under multiple hives.(Citation: Microsoft Wow6432Node 2018)(Citation: Malwarebytes Wow6432Node 2016) The <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx</code> is also available but is not created by default on Windows Vista and newer. Registry run key entries can reference programs directly or list them as a dependency. (Citation: Microsoft RunOnceEx APR 2018) For example, it is possible to load a DLL at logon using a \"Depend\" key with RunOnceEx: <code>reg add HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx\\0001\\Depend /v 1 /d \"C:\\temp\\evil[.]dll\"</code> (Citation: Oddvar Moe RunOnceEx Mar 2018)\n\nThe following Registry keys can be used to set startup folder items for persistence:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n\nThe following Registry keys can control automatic startup of services during boot:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n\nUsing policy settings to specify startup programs creates corresponding values in either of two Registry keys:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n\nThe Winlogon key controls actions that occur when a user logs on to a computer running Windows 7. Most of these actions are under the control of the operating system, but you can also add custom actions here. The <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit</code> and <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell</code> subkeys can automatically launch programs.\n\nPrograms listed in the load value of the registry key <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows</code> run when any user logs on.\n\nBy default, the multistring <code>BootExecute</code> value of the registry key <code>HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager</code> is set to <code>autocheck autochk *</code>. This value causes Windows, at startup, to check the file-system integrity of the hard disks if the system has been shut down abnormally. Adversaries can add other programs or processes to this registry value which will automatically launch at boot.\n\nAdversaries can use these configuration locations to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make the Registry entries look as if they are associated with legitimate programs.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Oddvar Moe, @oddvarmoe"
+            ],
+            "x_mitre_detection": "Monitor Registry for changes to run keys that do not correlate with known software, patch cycles, etc. Monitor the start folder for additions or changes. Tools such as Sysinternals Autoruns may also be used to detect system changes that could be attempts at persistence, including listing the run keys' Registry locations and startup folders. (Citation: TechNet Autoruns) Suspicious program execution as startup programs may show up as outlier processes that have not been seen before when compared against historical data.\n\nChanges to these locations typically happen under normal conditions when legitimate software is installed. To increase confidence of malicious activity, data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1547/001",
+                    "external_id": "T1547.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/270.html",
+                    "external_id": "CAPEC-270",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Microsoft Run Key",
+                    "description": "Microsoft. (n.d.). Run and RunOnce Registry Keys. Retrieved November 12, 2014.",
+                    "url": "http://msdn.microsoft.com/en-us/library/aa376977"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry",
+                    "description": "Microsoft. (2018, May 31). 32-bit and 64-bit Application Data in the Registry. Retrieved August 3, 2020.",
+                    "source_name": "Microsoft Wow6432Node 2018"
+                },
+                {
+                    "url": "https://blog.malwarebytes.com/cybercrime/2013/10/hiding-in-plain-sight/",
+                    "description": "Arntz, P. (2016, March 30). Hiding in Plain Sight. Retrieved August 3, 2020.",
+                    "source_name": "Malwarebytes Wow6432Node 2016"
+                },
+                {
+                    "source_name": "Microsoft RunOnceEx APR 2018",
+                    "description": "Microsoft. (2018, August 20). Description of the RunOnceEx Registry Key. Retrieved June 29, 2018.",
+                    "url": "https://support.microsoft.com/help/310593/description-of-the-runonceex-registry-key"
+                },
+                {
+                    "source_name": "Oddvar Moe RunOnceEx Mar 2018",
+                    "description": "Moe, O. (2018, March 21). Persistence using RunOnceEx - Hidden from Autoruns.exe. Retrieved June 29, 2018.",
+                    "url": "https://oddvar.moe/2018/03/21/persistence-using-runonceex-hidden-from-autoruns-exe/"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-08-16T21:03:21.051Z",
+            "name": "Visual Basic",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "created": "2020-03-09T14:29:51.508Z",
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "description": "Adversaries may abuse Visual Basic (VB) for execution. VB is a programming language created by Microsoft with interoperability with many Windows technologies such as [Component Object Model](https://attack.mitre.org/techniques/T1559/001) and the [Native API](https://attack.mitre.org/techniques/T1106) through the Windows API. Although tagged as legacy with no planned future evolutions, VB is integrated and supported in the .NET Framework and cross-platform .NET Core.(Citation: VB .NET Mar 2020)(Citation: VB Microsoft)\n\nDerivative languages based on VB have also been created, such as Visual Basic for Applications (VBA) and VBScript. VBA is an event-driven programming language built into Microsoft Office, as well as several third-party applications.(Citation: Microsoft VBA)(Citation: Wikipedia VBA) VBA enables documents to contain macros used to automate the execution of tasks and other functionality on the host. VBScript is a default scripting language on Windows hosts and can also be used in place of [JavaScript](https://attack.mitre.org/techniques/T1059/007) on HTML Application (HTA) webpages served to Internet Explorer (though most modern browsers do not come with VBScript support).(Citation: Microsoft VBScript)\n\nAdversaries may use VB payloads to execute malicious commands. Common malicious usage includes automating execution of behaviors with VBScript or embedding VBA content into [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001) payloads.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor for events associated with VB execution, such as Office applications spawning processes, usage of the Windows Script Host (typically cscript.exe or wscript.exe), file activity involving VB payloads or scripts, or loading of modules associated with VB languages (ex: vbscript.dll). VB execution is likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for execution and subsequent behavior. Actions may be related to network and system information [Discovery](https://attack.mitre.org/tactics/TA0007), [Collection](https://attack.mitre.org/tactics/TA0009), or other programable post-compromise behaviors and could be used as indicators of detection leading back to the source.\n\nUnderstanding standard usage patterns is important to avoid a high number of false positives. If VB execution is restricted for normal users, then any attempts to enable related components running on a system would be considered suspicious. If VB execution is not commonly used on a system, but enabled, execution running out of cycle from patching or other administrator functions is suspicious. Payloads and scripts should be captured from the file system when possible to determine their actions and intent.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/005",
+                    "external_id": "T1059.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0/",
+                    "description": ".NET Team. (2020, March 11). Visual Basic support planned for .NET 5.0. Retrieved June 23, 2020.",
+                    "source_name": "VB .NET Mar 2020"
+                },
+                {
+                    "url": "https://docs.microsoft.com/dotnet/visual-basic/",
+                    "description": "Microsoft. (n.d.). Visual Basic documentation. Retrieved June 23, 2020.",
+                    "source_name": "VB Microsoft"
+                },
+                {
+                    "url": "https://docs.microsoft.com/office/vba/api/overview/",
+                    "description": "Microsoft. (2019, June 11). Office VBA Reference. Retrieved June 23, 2020.",
+                    "source_name": "Microsoft VBA"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/Visual_Basic_for_Applications",
+                    "description": "Wikipedia. (n.d.). Visual Basic for Applications. Retrieved August 13, 2020.",
+                    "source_name": "Wikipedia VBA"
+                },
+                {
+                    "url": "https://docs.microsoft.com/previous-versions//1kw29xwf(v=vs.85)",
+                    "description": "Microsoft. (2011, April 19). What Is VBScript?. Retrieved March 28, 2020.",
+                    "source_name": "Microsoft VBScript"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-20T15:42:48.595Z",
+            "name": "Ingress Tool Transfer",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2017-05-31T21:31:16.408Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitor for file creation and files transferred into the network. Unusual processes with external network connections creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1105",
+                    "external_id": "T1105",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Dynamic Data Exchange",
+            "x_mitre_data_sources": [
+                "Module: Module Load",
+                "Process: Process Creation",
+                "Script: Script Execution"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-26T22:52:04.196Z",
+            "created": "2020-02-12T14:10:50.699Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "id": "attack-pattern--232a7e42-cd6e-4902-8fe9-2960f529dd4d",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may use Windows Dynamic Data Exchange (DDE) to execute arbitrary commands. DDE is a client-server protocol for one-time and/or continuous inter-process communication (IPC) between applications. Once a link is established, applications can autonomously exchange transactions consisting of strings, warm data links (notifications when a data item changes), hot data links (duplications of changes to a data item), and requests for command execution.\n\nObject Linking and Embedding (OLE), or the ability to link data between documents, was originally implemented through DDE. Despite being superseded by [Component Object Model](https://attack.mitre.org/techniques/T1559/001), DDE may be enabled in Windows 10 and most of Microsoft Office 2016 via Registry keys. (Citation: BleepingComputer DDE Disabled in Word Dec 2017) (Citation: Microsoft ADV170021 Dec 2017) (Citation: Microsoft DDE Advisory Nov 2017)\n\nMicrosoft Office documents can be poisoned with DDE commands (Citation: SensePost PS DDE May 2016) (Citation: Kettle CSV DDE Aug 2014), directly or through embedded files (Citation: Enigma Reviving DDE Jan 2018), and used to deliver execution via [Phishing](https://attack.mitre.org/techniques/T1566) campaigns or hosted Web content, avoiding the use of Visual Basic for Applications (VBA) macros. (Citation: SensePost MacroLess DDE Oct 2017) DDE could also be leveraged by an adversary operating on a compromised machine who does not have direct access to a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). DDE execution can be invoked remotely via [Remote Services](https://attack.mitre.org/techniques/T1021) such as [Distributed Component Object Model](https://attack.mitre.org/techniques/T1021/003) (DCOM).(Citation: Fireeye Hunting COM June 2019)",
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Monitor processes for abnormal behavior indicative of DDE abuse, such as Microsoft Office applications loading DLLs and other modules not typically associated with the application or these applications spawning unusual processes (such as cmd.exe).\n\nOLE and Office Open XML files can be scanned for \u2018DDEAUTO', \u2018DDE\u2019, and other strings indicative of DDE execution.(Citation: NVisio Labs DDE Detection Oct 2017)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1559/002",
+                    "external_id": "T1559.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "BleepingComputer DDE Disabled in Word Dec 2017",
+                    "description": "Cimpanu, C. (2017, December 15). Microsoft Disables DDE Feature in Word to Prevent Further Malware Attacks. Retrieved December 19, 2017.",
+                    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-disables-dde-feature-in-word-to-prevent-further-malware-attacks/"
+                },
+                {
+                    "source_name": "Microsoft ADV170021 Dec 2017",
+                    "description": "Microsoft. (2017, December 12). ADV170021 - Microsoft Office Defense in Depth Update. Retrieved February 3, 2018.",
+                    "url": "https://portal.msrc.microsoft.com/security-guidance/advisory/ADV170021"
+                },
+                {
+                    "source_name": "Microsoft DDE Advisory Nov 2017",
+                    "description": "Microsoft. (2017, November 8). Microsoft Security Advisory 4053440 - Securely opening Microsoft Office documents that contain Dynamic Data Exchange (DDE) fields. Retrieved November 21, 2017.",
+                    "url": "https://technet.microsoft.com/library/security/4053440"
+                },
+                {
+                    "source_name": "SensePost PS DDE May 2016",
+                    "description": "El-Sherei, S. (2016, May 20). PowerShell, C-Sharp and DDE The Power Within. Retrieved November 22, 2017.",
+                    "url": "https://sensepost.com/blog/2016/powershell-c-sharp-and-dde-the-power-within/"
+                },
+                {
+                    "source_name": "Kettle CSV DDE Aug 2014",
+                    "description": "Kettle, J. (2014, August 29). Comma Separated Vulnerabilities. Retrieved November 22, 2017.",
+                    "url": "https://www.contextis.com/blog/comma-separated-vulnerabilities"
+                },
+                {
+                    "source_name": "Enigma Reviving DDE Jan 2018",
+                    "description": "Nelson, M. (2018, January 29). Reviving DDE: Using OneNote and Excel for Code Execution. Retrieved February 3, 2018.",
+                    "url": "https://posts.specterops.io/reviving-dde-using-onenote-and-excel-for-code-execution-d7226864caee"
+                },
+                {
+                    "source_name": "SensePost MacroLess DDE Oct 2017",
+                    "description": "Stalmans, E., El-Sherei, S. (2017, October 9). Macro-less Code Exec in MSWord. Retrieved November 21, 2017.",
+                    "url": "https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects.html",
+                    "description": "Hamilton, C. (2019, June 4). Hunting COM Objects. Retrieved June 10, 2019.",
+                    "source_name": "Fireeye Hunting COM June 2019"
+                },
+                {
+                    "source_name": "NVisio Labs DDE Detection Oct 2017",
+                    "description": "NVISO Labs. (2017, October 11). Detecting DDE in MS Office documents. Retrieved November 21, 2017.",
+                    "url": "https://blog.nviso.be/2017/10/11/detecting-dde-in-ms-office-documents/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Process Injection",
+            "x_mitre_data_sources": [
+                "Process: Process Modification",
+                "Module: Module Load",
+                "Process: OS API Execution",
+                "Process: Process Access",
+                "File: File Modification",
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-18T12:30:14.852Z",
+            "created": "2017-05-31T21:30:47.843Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--43e7dc91-05b2-474c-b9ac-2ed4fe101f4d",
+            "description": "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process, many of which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. ",
+            "x_mitre_contributors": [
+                "Anastasios Pingios",
+                "Christiaan Beek, @ChristiaanBeek",
+                "Ryan Becwar"
+            ],
+            "x_mitre_detection": "Monitoring Windows API calls indicative of the various types of code injection may generate a significant amount of data and may not be directly useful for defense unless collected under specific circumstances for known bad sequences of calls, since benign use of API functions may be common and difficult to distinguish from malicious behavior. Windows API calls such as <code>CreateRemoteThread</code>, <code>SuspendThread</code>/<code>SetThreadContext</code>/<code>ResumeThread</code>, <code>QueueUserAPC</code>/<code>NtQueueApcThread</code>, and those that can be used to modify memory within another process, such as <code>VirtualAllocEx</code>/<code>WriteProcessMemory</code>, may be used for this technique.(Citation: Elastic Process Injection July 2017) \n\nMonitor DLL/PE file events, specifically creation of these binary files as well as the loading of DLLs into processes. Look for DLLs that are not recognized or not normally loaded into a process. \n\nMonitoring for Linux specific calls such as the ptrace system call should not generate large amounts of data due to their specialized nature, and can be a very effective method to detect some of the common process injection methods.(Citation: ArtOfMemoryForensics)  (Citation: GNU Acct)  (Citation: RHEL auditd)  (Citation: Chokepoint preload rootkits) \n\nMonitor for named pipe creation and connection events (Event IDs 17 and 18) for possible indicators of infected processes with external modules.(Citation: Microsoft Sysmon v6 May 2017) \n\nAnalyze process behavior to determine if a process is performing actions it usually does not, such as opening network connections, reading files, or other suspicious actions that could relate to post-compromise behavior. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1055",
+                    "external_id": "T1055",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/640.html",
+                    "external_id": "CAPEC-640",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Elastic Process Injection July 2017",
+                    "description": "Hosseini, A. (2017, July 18). Ten Process Injection Techniques: A Technical Survey Of Common And Trending Process Injection Techniques. Retrieved December 7, 2017.",
+                    "url": "https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process"
+                },
+                {
+                    "description": "Ligh, M.H. et al.. (2014, July). The Art of Memory Forensics: Detecting Malware and Threats in Windows, Linux, and Mac Memory. Retrieved December 20, 2017.",
+                    "source_name": "ArtOfMemoryForensics"
+                },
+                {
+                    "source_name": "GNU Acct",
+                    "description": "GNU. (2010, February 5). The GNU Accounting Utilities. Retrieved December 20, 2017.",
+                    "url": "https://www.gnu.org/software/acct/"
+                },
+                {
+                    "source_name": "RHEL auditd",
+                    "description": "Jahoda, M. et al.. (2017, March 14). redhat Security Guide - Chapter 7 - System Auditing. Retrieved December 20, 2017.",
+                    "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security_guide/chap-system_auditing"
+                },
+                {
+                    "source_name": "Chokepoint preload rootkits",
+                    "description": "stderr. (2014, February 14). Detecting Userland Preload Rootkits. Retrieved December 20, 2017.",
+                    "url": "http://www.chokepoint.net/2014/02/detecting-userland-preload-rootkits.html"
+                },
+                {
+                    "source_name": "Microsoft Sysmon v6 May 2017",
+                    "description": "Russinovich, M. & Garnier, T. (2017, May 22). Sysmon v6.20. Retrieved December 13, 2017.",
+                    "url": "https://docs.microsoft.com/sysinternals/downloads/sysmon"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Rising Sun",
+            "x_mitre_aliases": [
+                "Rising Sun"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-06-30T03:13:38.515Z",
+            "created": "2020-05-14T22:29:25.653Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--56e6b6c2-e573-4969-8bab-783205cebbbf",
+            "description": "[Rising Sun](https://attack.mitre.org/software/S0448) is a modular backdoor malware used extensively in Operation [Sharpshooter](https://attack.mitre.org/groups/G0104). The malware has been observed targeting nuclear, defense, energy, and financial services companies across the world. [Rising Sun](https://attack.mitre.org/software/S0448) uses source code from [Lazarus Group](https://attack.mitre.org/groups/G0032)'s Trojan Duuzer.(Citation: McAfee Sharpshooter December 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0448",
+                    "external_id": "S0448",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+                    "description": "Sherstobitoff, R., Malhotra, A., et. al.. (2018, December 18). Operation Sharpshooter Campaign Targets Global Defense, Critical Infrastructure. Retrieved May 14, 2020.",
+                    "source_name": "McAfee Sharpshooter December 2018"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2f318b9c-9daa-4588-b6f7-a010f8138ad8",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d930f9cd-15c7-4422-945b-bfa2a13accbf",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "target_ref": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128"
+        },
+        {
+            "created": "2021-03-13T20:09:21.306875Z",
+            "id": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Energy sector as a target",
+            "sectors": [
+                "energy"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b4e52943-b591-45f2-853a-8e455eff4acc",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3b1bac91-802b-4922-8358-e4ca99ef7cc0",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+            "target_ref": "identity--b00c338b-dd21-414e-b52e-a0c2c0b1b34a"
+        },
+        {
+            "created": "2021-03-13T20:09:21.320582Z",
+            "id": "identity--b00c338b-dd21-414e-b52e-a0c2c0b1b34a",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Nuclear sector as a target",
+            "sectors": [
+                "nuclear"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        }
+    ]
+}

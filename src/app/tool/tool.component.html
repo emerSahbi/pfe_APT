@@ -1,1 +1,11 @@
-<h1>ALL Tools ARE HERE PS: just names</h1>
+<!-- <div class="list-group" *ngFor="let tool of filtredData">
+  <a routerLink="/toolinfo/:{{ tool }}" [state]="{ id: tool }">
+    {{ tool }}
+  </a>
+</div> -->
+  <div class="list-group" *ngFor="let tool of filtredData">
+    <a class="list-group-item list-group-item-action"
+      routerLink="/software/:{{ tool }}" [state]="{ name: tool }">
+      {{ tool }}
+    </a>
+  </div>

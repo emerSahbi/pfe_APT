@@ -1,0 +1,688 @@
+{
+    "type": "bundle",
+    "id": "bundle--b1e450be-5c91-419a-b4b6-cdd5b6591b04",
+    "spec_version": "2.0",
+    "objects": [
+        {"primary_motivation": "organizational-gain",
+            "first_seen":"2011",
+            "x_MISP-description": "The Pitty Tiger group has been active since at least 2011. They have been seen using HeartBleed vulnerability in order to directly get valid credentials",
+            "x_MISP-uuid": "4d37813c-b8e9-4e58-a758-03168d8aa189",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "PittyTiger",
+            "description": "[PittyTiger](https://attack.mitre.org/groups/G0011) is a threat group believed to operate out of China that uses multiple different types of malware to maintain command and control.(Citation: Bizeul 2014)(Citation: Villeneuve 2014)",
+            "x_mitre_version": "1.2",
+            "modified": "2022-06-12T23:11:41.368Z",
+            "aliases": [
+                "PittyTiger",
+                "MANGANESE",
+                "Pitty Panda"
+            ],
+            "created": "2017-05-31T21:31:50.198Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "G0011",
+                    "url": "https://attack.mitre.org/groups/G0011"
+                },
+                {
+                    "description": "(Citation: Bizeul 2014) (Citation: Villeneuve 2014)",
+                    "source_name": "PittyTiger"
+                },
+                {
+                    "source_name": "Bizeul 2014",
+                    "description": "Bizeul, D., Fontarensky, I., Mouchoux, R., Perigaud, F., Pernet, C. (2014, July 11). Eye of the Tiger. Retrieved September 29, 2015.",
+                    "url": "https://airbus-cyber-security.com/the-eye-of-the-tiger/"
+                },
+                {
+                    "source_name": "Villeneuve 2014",
+                    "description": "Villeneuve, N., Homan, J. (2014, July 31). Spy of the Tiger. Retrieved September 29, 2015.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/07/spy-of-the-tiger.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--3f780c76-b5d5-43f9-b4f2-048106f00894",
+            "description": "(Citation: Bizeul 2014)(Citation: Villeneuve 2014)",
+            "target_ref": "malware--88c621a7-aef9-4ae0-94e3-1fc87123eb24",
+            "modified": "2020-03-16T18:54:08.836Z",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.047Z",
+            "external_references": [
+                {
+                    "url": "https://airbus-cyber-security.com/the-eye-of-the-tiger/",
+                    "description": "Bizeul, D., Fontarensky, I., Mouchoux, R., Perigaud, F., Pernet, C. (2014, July 11). Eye of the Tiger. Retrieved September 29, 2015.",
+                    "source_name": "Bizeul 2014"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/07/spy-of-the-tiger.html",
+                    "description": "Villeneuve, N., Homan, J. (2014, July 31). Spy of the Tiger. Retrieved September 29, 2015.",
+                    "source_name": "Villeneuve 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7ed93170-2dba-4e59-b0f0-7c716c73bdc0",
+            "description": "(Citation: Bizeul 2014)",
+            "target_ref": "tool--b07c2c47-fefb-4d7c-a69e-6a3296171f54",
+            "modified": "2020-03-16T18:54:08.839Z",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.047Z",
+            "external_references": [
+                {
+                    "url": "https://airbus-cyber-security.com/the-eye-of-the-tiger/",
+                    "description": "Bizeul, D., Fontarensky, I., Mouchoux, R., Perigaud, F., Pernet, C. (2014, July 11). Eye of the Tiger. Retrieved September 29, 2015.",
+                    "source_name": "Bizeul 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--8d65162b-650d-4a38-9c19-cc6c8e85a2e9",
+            "description": "(Citation: Villeneuve 2014)",
+            "target_ref": "malware--b42378e0-f147-496f-992a-26a49705395b",
+            "modified": "2019-03-25T16:51:54.123Z",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.047Z",
+            "external_references": [
+                {
+                    "source_name": "Villeneuve 2014",
+                    "description": "Villeneuve, N., Homan, J. (2014, July 31). Spy of the Tiger. Retrieved September 29, 2015.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/07/spy-of-the-tiger.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--93b12e1a-7f21-4fa0-9b2a-c96c7c270625",
+            "description": "[PittyTiger](https://attack.mitre.org/groups/G0011) attempts to obtain legitimate credentials during operations.(Citation: Bizeul 2014)",
+            "target_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "modified": "2020-03-16T18:54:08.794Z",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.046Z",
+            "external_references": [
+                {
+                    "url": "https://airbus-cyber-security.com/the-eye-of-the-tiger/",
+                    "description": "Bizeul, D., Fontarensky, I., Mouchoux, R., Perigaud, F., Pernet, C. (2014, July 11). Eye of the Tiger. Retrieved September 29, 2015.",
+                    "source_name": "Bizeul 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--71416f0d-b037-48b2-a14d-acb1a5f3a4a4",
+            "description": "(Citation: Villeneuve 2014)",
+            "target_ref": "malware--251fbae2-78f6-4de7-84f6-194c727a64ad",
+            "modified": "2019-03-25T16:51:54.146Z",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.046Z",
+            "external_references": [
+                {
+                    "source_name": "Villeneuve 2014",
+                    "description": "Villeneuve, N., Homan, J. (2014, July 31). Spy of the Tiger. Retrieved September 29, 2015.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/07/spy-of-the-tiger.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--86169d65-b154-402d-918c-4b4602d71cd0",
+            "description": "[PittyTiger](https://attack.mitre.org/groups/G0011) has obtained and used tools such as [Mimikatz](https://attack.mitre.org/software/S0002) and [gsecdump](https://attack.mitre.org/software/S0008).(Citation: Bizeul 2014)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-12T23:11:41.587Z",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-12T20:28:11.342Z",
+            "external_references": [
+                {
+                    "source_name": "Bizeul 2014",
+                    "description": "Bizeul, D., Fontarensky, I., Mouchoux, R., Perigaud, F., Pernet, C. (2014, July 11). Eye of the Tiger. Retrieved September 29, 2015.",
+                    "url": "https://airbus-cyber-security.com/the-eye-of-the-tiger/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--cc831c63-94af-4937-b8e6-668591ec7d04",
+            "description": "(Citation: Bizeul 2014)",
+            "target_ref": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "modified": "2020-03-16T18:54:08.832Z",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.047Z",
+            "external_references": [
+                {
+                    "url": "https://airbus-cyber-security.com/the-eye-of-the-tiger/",
+                    "description": "Bizeul, D., Fontarensky, I., Mouchoux, R., Perigaud, F., Pernet, C. (2014, July 11). Eye of the Tiger. Retrieved September 29, 2015.",
+                    "source_name": "Bizeul 2014"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Valid Accounts",
+            "x_mitre_data_sources": [
+                "Logon Session: Logon Session Metadata",
+                "User Account: User Account Authentication",
+                "Logon Session: Logon Session Creation"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-10-19T03:29:48.018Z",
+            "created": "2017-05-31T21:31:00.645Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "id": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+            "x_mitre_defense_bypassed": [
+                "Firewall",
+                "Host intrusion prevention systems",
+                "Network intrusion detection system",
+                "Application control",
+                "System access controls",
+                "Anti-virus"
+            ],
+            "x_mitre_platforms": [
+                "Windows",
+                "Azure AD",
+                "Office 365",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Google Workspace",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator"
+            ],
+            "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Compromised credentials may be used to bypass access controls placed on various resources on systems within the network and may even be used for persistent access to remote systems and externally available services, such as VPNs, Outlook Web Access and remote desktop. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence.\n\nThe overlap of permissions for local, domain, and cloud accounts across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise. (Citation: TechNet Credential Theft)",
+            "x_mitre_effective_permissions": [
+                "User",
+                "Administrator"
+            ],
+            "x_mitre_contributors": [
+                "Jon Sternstein, Stern Security",
+                "Yossi Weizman, Azure Defender Research Team",
+                "Netskope",
+                "Mark Wee",
+                "Praetorian"
+            ],
+            "x_mitre_detection": "Configure robust, consistent account activity audit policies across the enterprise and with externally accessible services. (Citation: TechNet Audit Policy) Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account. Correlate other security systems with login information (e.g., a user has an active login session but has not entered the building or does not have VPN access).\n\nPerform regular audits of domain and local system accounts to detect accounts that may have been created by an adversary for persistence. Checks on these accounts could also include whether default accounts such as Guest have been activated. These audits should also include checks on any appliances and applications for default credentials or SSH keys, and if any are discovered, they should be updated immediately.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1078",
+                    "external_id": "T1078",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/560.html",
+                    "external_id": "CAPEC-560",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "TechNet Credential Theft",
+                    "description": "Microsoft. (2016, April 15). Attractive Accounts for Credential Theft. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn535501.aspx"
+                },
+                {
+                    "source_name": "TechNet Audit Policy",
+                    "description": "Microsoft. (2016, April 15). Audit Policy Recommendations. Retrieved June 3, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn487457.aspx"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "gh0st RAT",
+            "x_mitre_aliases": [
+                "gh0st RAT"
+            ],
+            "x_mitre_version": "2.3",
+            "modified": "2021-04-23T20:43:13.190Z",
+            "created": "2017-05-31T21:32:24.937Z",
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS"
+            ],
+            "id": "malware--88c621a7-aef9-4ae0-94e3-1fc87123eb24",
+            "description": "[gh0st RAT](https://attack.mitre.org/software/S0032) is a remote access tool (RAT). The source code is public and it has been used by multiple groups. (Citation: FireEye Hacking Team)(Citation: Arbor Musical Chairs Feb 2018)(Citation: Nccgroup Gh0st April 2018)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0032",
+                    "external_id": "S0032",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye Hacking Team)(Citation: Nccgroup Gh0st April 2018)",
+                    "source_name": "gh0st RAT"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html",
+                    "description": "FireEye Threat Intelligence. (2015, July 13). Demonstrating Hustle, Chinese APT Groups Quickly Use Zero-Day Vulnerability (CVE-2015-5119) Following Hacking Team Leak. Retrieved January 25, 2016.",
+                    "source_name": "FireEye Hacking Team"
+                },
+                {
+                    "source_name": "Arbor Musical Chairs Feb 2018",
+                    "description": "Sabo, S. (2018, February 15). Musical Chairs Playing Tetris. Retrieved February 19, 2018.",
+                    "url": "https://www.arbornetworks.com/blog/asert/musical-chairs-playing-tetris/"
+                },
+                {
+                    "source_name": "Nccgroup Gh0st April 2018",
+                    "description": "Pantazopoulos, N. (2018, April 17). Decoding network data from a Gh0st RAT variant. Retrieved November 2, 2018.",
+                    "url": "https://research.nccgroup.com/2018/04/17/decoding-network-data-from-a-gh0st-rat-variant/"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "gsecdump",
+            "x_mitre_aliases": [
+                "gsecdump"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T18:35:48.851Z",
+            "created": "2017-05-31T21:32:13.755Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--b07c2c47-fefb-4d7c-a69e-6a3296171f54",
+            "description": "[gsecdump](https://attack.mitre.org/software/S0008) is a publicly-available credential dumper used to obtain password hashes and LSA secrets from Windows operating systems. (Citation: TrueSec Gsecdump)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0008",
+                    "external_id": "S0008",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.truesec.se/sakerhet/verktyg/saakerhet/gsecdump_v2.0b5",
+                    "description": "TrueSec. (n.d.). gsecdump v2.0b5. Retrieved September 29, 2015.",
+                    "source_name": "TrueSec Gsecdump"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Lurid",
+            "x_mitre_aliases": [
+                "Lurid",
+                "Enfal"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-31T12:39:16.608Z",
+            "created": "2017-05-31T21:32:14.527Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--251fbae2-78f6-4de7-84f6-194c727a64ad",
+            "description": "[Lurid](https://attack.mitre.org/software/S0010) is a malware family that has been used by several groups, including [PittyTiger](https://attack.mitre.org/groups/G0011), in targeted attacks as far back as 2006. (Citation: Villeneuve 2014) (Citation: Villeneuve 2011)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0010",
+                    "external_id": "S0010",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2014/07/spy-of-the-tiger.html",
+                    "description": "Villeneuve, N., Homan, J. (2014, July 31). Spy of the Tiger. Retrieved September 29, 2015.",
+                    "source_name": "Villeneuve 2014"
+                },
+                {
+                    "url": "http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp_dissecting-lurid-apt.pdf",
+                    "description": "Villeneuve, N., Sancho, D. (2011). THE \u201cLURID\u201d DOWNLOADER. Retrieved November 12, 2014.",
+                    "source_name": "Villeneuve 2011"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "modified": "2021-05-20T14:25:59.596Z",
+            "name": "Mimikatz",
+            "x_mitre_aliases": [
+                "Mimikatz"
+            ],
+            "x_mitre_version": "1.4",
+            "created": "2017-05-31T21:32:11.544Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--afc079f3-c0ea-4096-b75d-3f05338b7f60",
+            "description": "[Mimikatz](https://attack.mitre.org/software/S0002) is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks. (Citation: Deply Mimikatz) (Citation: Adsecurity Mimikatz Guide)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Vincent Le Toux"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0002",
+                    "external_id": "S0002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://github.com/gentilkiwi/mimikatz",
+                    "description": "Deply, B. (n.d.). Mimikatz. Retrieved September 29, 2015.",
+                    "source_name": "Deply Mimikatz"
+                },
+                {
+                    "source_name": "Adsecurity Mimikatz Guide",
+                    "description": "Metcalf, S. (2015, November 13). Unofficial Guide to Mimikatz & Command Reference. Retrieved December 23, 2015.",
+                    "url": "https://adsecurity.org/?page_id=1821"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "PoisonIvy",
+            "x_mitre_aliases": [
+                "PoisonIvy",
+                "Poison Ivy",
+                "Darkmoon"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-10-16T01:58:17.100Z",
+            "created": "2017-05-31T21:32:15.263Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--b42378e0-f147-496f-992a-26a49705395b",
+            "description": "[PoisonIvy](https://attack.mitre.org/software/S0012) is a popular remote access tool (RAT) that has been used by many groups. (Citation: FireEye Poison Ivy) (Citation: Symantec Elderwood Sept 2012) (Citation: Symantec Darkmoon Aug 2005)",
+            "x_mitre_contributors": [
+                "Darren Spruell"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0012",
+                    "external_id": "S0012",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye Poison Ivy) (Citation: Symantec Darkmoon Sept 2014)",
+                    "source_name": "PoisonIvy"
+                },
+                {
+                    "description": "(Citation: FireEye Poison Ivy) (Citation: Symantec Darkmoon Sept 2014)",
+                    "source_name": "Poison Ivy"
+                },
+                {
+                    "description": "(Citation: Symantec Darkmoon Sept 2014)",
+                    "source_name": "Darkmoon"
+                },
+                {
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-poison-ivy.pdf",
+                    "description": "FireEye. (2014). POISON IVY: Assessing Damage and Extracting Intelligence. Retrieved November 12, 2014.",
+                    "source_name": "FireEye Poison Ivy"
+                },
+                {
+                    "source_name": "Symantec Elderwood Sept 2012",
+                    "description": "O'Gorman, G., and McDonald, G.. (2012, September 6). The Elderwood Project. Retrieved February 15, 2018.",
+                    "url": "https://web.archive.org/web/20190717233006/http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-elderwood-project.pdf"
+                },
+                {
+                    "source_name": "Symantec Darkmoon Aug 2005",
+                    "description": "Hayashi, K. (2005, August 18). Backdoor.Darkmoon. Retrieved February 23, 2018.",
+                    "url": "https://www.symantec.com/security_response/writeup.jsp?docid=2005-081910-3934-99"
+                },
+                {
+                    "source_name": "Symantec Darkmoon Sept 2014",
+                    "description": "Payet, L. (2014, September 19). Life on Mars: How attackers took advantage of hope for alien existance in new Darkmoon campaign. Retrieved September 13, 2018.",
+                    "url": "https://www.symantec.com/connect/blogs/life-mars-how-attackers-took-advantage-hope-alien-existance-new-darkmoon-campaign"
+                }
+            ]
+        },
+        {
+            "created": "2021-03-13T20:09:21.330327Z",
+            "id": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Telecommunications sector as a target",
+            "sectors": [
+                "telecommunications"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.304762Z",
+            "id": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Defense sector as a target",
+            "sectors": [
+                "defense"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "European Union",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e714600c-f5e4-48e7-a1b8-4bebf97292d7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originates-from",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8b882097-d974-479d-8a90-fc3f74d7fcb1",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--df920570-81c7-4a81-abea-eaebdde12527",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--29f72a19-05b0-47c4-84a4-7c7026fe8fe7",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "target_ref": "identity--ef1f53f1-ec2b-4c2e-bcac-d1f70b1e89be"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--72541d3b-3466-4957-8edc-91b743d3ae55",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "target_ref": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d53173df-5731-4eaa-bd86-0f547e7d82da",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        }
+    ]
+}

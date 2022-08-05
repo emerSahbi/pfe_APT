@@ -1,0 +1,920 @@
+{
+    "type": "bundle",
+    "id": "bundle--ee2cba0f-512b-4ef8-b729-1fb237e5b3ca",
+    "spec_version": "2.0",
+    "objects": [
+        {   "primary_motivation": "personal-gain",
+            "first_seen":"2017",
+            "x-MISP-uuid": "",
+            "x_MISP-description": "",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "intrusion-set",
+            "name": "CostaRicto",
+            "description": "[CostaRicto](https://attack.mitre.org/groups/G0132) is a suspected hacker-for-hire cyber espionage campaign that has targeted multiple industries worldwide since at least 2019. [CostaRicto](https://attack.mitre.org/groups/G0132)'s targets, a large portion of which are financial institutions, are scattered across Europe, the Americas, Asia, Australia, and Africa, with a large concentration in South Asia.(Citation: BlackBerry CostaRicto November 2020)",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "CostaRicto"
+            ],
+            "created": "2021-05-24T13:37:20.240Z",
+            "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0132",
+                    "external_id": "G0132",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--6ef1c558-11ba-48e3-9a99-1be2c209fba2",
+            "description": "[CostaRicto](https://attack.mitre.org/groups/G0132) employed nmap and pscan to scan target environments.(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "attack-pattern--e3a12395-188d-4051-9a16-ea8e14d07b88",
+            "modified": "2021-05-27T14:06:24.891Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-27T14:06:24.891Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--7aae10b2-e10a-46aa-9e16-d7b8581e4fb1",
+            "description": "[CostaRicto](https://attack.mitre.org/groups/G0132) has set up remote SSH tunneling into the victim's environment from a malicious domain.(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "attack-pattern--4fe28b27-b13c-453e-a386-c2ef362a573b",
+            "modified": "2021-05-24T14:43:43.879Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-24T14:43:43.879Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--523d572b-c9ed-469f-b564-243440be25c7",
+            "description": "(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "malware--425771c5-48b4-4ecd-9f95-74ed3fc9da59",
+            "modified": "2021-05-27T14:07:46.433Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-27T14:07:46.433Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--07060e30-4a71-40d1-b724-52c07f06a49d",
+            "description": "(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "tool--13cd9151-83b7-410d-9f98-25d0f0d1d80d",
+            "modified": "2021-10-15T12:32:18.720Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-24T14:43:43.864Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--5720575a-b074-4d52-b5de-be2629d49eef",
+            "description": "[CostaRicto](https://attack.mitre.org/groups/G0132) has obtained open source tools to use in their operations.(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "modified": "2021-10-15T12:53:09.317Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-10-15T12:53:09.317Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--37528901-3205-49e4-a5bc-5d3f7a6d7341",
+            "description": "(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "tool--ed7d0cb1-87a6-43b4-9f46-ef1bc56d6c68",
+            "modified": "2021-10-15T12:32:18.700Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-24T14:43:43.881Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--94410917-f23d-4526-a318-ea1f7a52833a",
+            "description": "[CostaRicto](https://attack.mitre.org/groups/G0132) has used a layer of proxies to manage C2 communications.(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "attack-pattern--a782ebe2-daba-42c7-bc82-e8e9d923162d",
+            "modified": "2021-10-15T20:41:50.627Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-24T14:43:43.862Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--a99d22fc-31e7-4b10-991a-63a3a663ca70",
+            "description": "(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "modified": "2021-10-15T12:32:18.703Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-24T14:45:38.428Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ec4a0040-4eac-4b3b-9581-5f0c809eaeec",
+            "description": "(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "malware--13183cdf-280b-46be-913a-5c6df47831e7",
+            "modified": "2021-10-15T12:32:18.748Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-24T15:21:55.899Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--ef750228-23a1-4234-8373-86e143021e04",
+            "description": "[CostaRicto](https://attack.mitre.org/groups/G0132) has used scheduled tasks to download backdoor tools.(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+            "modified": "2021-05-24T14:43:43.831Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-24T14:43:43.831Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--f0eb72f2-a8a1-42b6-a29b-4764a115c4af",
+            "description": "(Citation: BlackBerry CostaRicto November 2020)",
+            "target_ref": "malware--5d342981-5194-41e7-b33f-8e91998d7d88",
+            "modified": "2021-05-26T13:06:18.119Z",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2021-05-26T13:06:18.119Z",
+            "external_references": [
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Network Service Scanning",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "Cloud Service: Cloud Service Enumeration",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_version": "2.2",
+            "modified": "2021-04-09T14:56:26.562Z",
+            "created": "2017-05-31T21:30:43.915Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "id": "attack-pattern--e3a12395-188d-4051-9a16-ea8e14d07b88",
+            "x_mitre_platforms": [
+                "Windows",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Containers"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "Administrator",
+                "SYSTEM",
+                "User"
+            ],
+            "description": "Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation. Methods to acquire this information include port scans and vulnerability scans using tools that are brought onto a system. \n\nWithin cloud environments, adversaries may attempt to discover services running on other cloud hosts. Additionally, if the cloud environment is connected to a on-premises environment, adversaries may be able to identify services running on non-cloud systems as well.",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events from legitimate remote service scanning may be uncommon, depending on the environment and how they are used. Legitimate open port and vulnerability scanning may be conducted within the environment and will need to be deconflicted with any detection capabilities developed. Network intrusion detection systems can also be used to identify scanning activity. Monitor for process use of the networks and inspect intra-network flows to detect port scans.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1046",
+                    "external_id": "T1046",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/300.html",
+                    "external_id": "CAPEC-300",
+                    "source_name": "capec"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Tool",
+            "x_mitre_data_sources": [
+                "Malware Repository: Malware Metadata"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:17:55.499Z",
+            "created": "2020-10-01T02:08:33.977Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+            "description": "Adversaries may buy, steal, or download software tools that can be used during targeting. Tools can be open or closed source, free or commercial. A tool can be used for malicious purposes by an adversary, but (unlike malware) were not intended to be used for those purposes (ex: [PsExec](https://attack.mitre.org/software/S0029)). Tool acquisition can involve the procurement of commercial software licenses, including for red teaming tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154). Commercial software may be obtained through purchase, stealing licenses (or licensed copies of the software), or cracking trial versions.(Citation: Recorded Future Beacon 2019)\n\nAdversaries may obtain tools to support their operations, including to support execution of post-compromise behaviors. In addition to freely downloading or purchasing software, adversaries may steal software and/or software licenses from third-party entities (including other adversaries).",
+            "x_mitre_contributors": [
+                "SOCCRATES",
+                "Mnemonic AS"
+            ],
+            "x_mitre_detection": "In some cases, malware repositories can also be used to identify features of tool use associated with an adversary, such as watermarks in [Cobalt Strike](https://attack.mitre.org/software/S0154) payloads.(Citation: Analyzing CS Dec 2020)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on post-compromise phases of the adversary lifecycle.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1588/002",
+                    "external_id": "T1588.002",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.recordedfuture.com/identifying-cobalt-strike-servers/",
+                    "description": "Recorded Future. (2019, June 20). Out of the Blue: How Recorded Future Identified Rogue Cobalt Strike Servers. Retrieved October 16, 2020.",
+                    "source_name": "Recorded Future Beacon 2019"
+                },
+                {
+                    "url": "https://www.randhome.io/blog/2020/12/20/analyzing-cobalt-strike-for-fun-and-profit/",
+                    "description": "Maynier, E. (2020, December 20). Analyzing Cobalt Strike for Fun and Profit. Retrieved October 12, 2021.",
+                    "source_name": "Analyzing CS Dec 2020"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-03-27T17:15:35.372Z",
+            "name": "Protocol Tunneling",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2020-03-15T16:03:39.082Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--4fe28b27-b13c-453e-a386-c2ef362a573b",
+            "description": "Adversaries may tunnel network communications to and from a victim system within a separate protocol to avoid detection/network filtering and/or enable access to otherwise unreachable systems. Tunneling involves explicitly encapsulating a protocol within another. This behavior may conceal malicious traffic by blending in with existing traffic and/or provide an outer layer of encryption (similar to a VPN). Tunneling could also enable routing of network packets that would otherwise not reach their intended destination, such as SMB, RDP, or other traffic that would be filtered by network appliances or not routed over the Internet. \n\nThere are various means to encapsulate a protocol within another protocol. For example, adversaries may perform SSH tunneling (also known as SSH port forwarding), which involves forwarding arbitrary data over an encrypted SSH tunnel.(Citation: SSH Tunneling) \n\n[Protocol Tunneling](https://attack.mitre.org/techniques/T1572) may also be abused by adversaries during [Dynamic Resolution](https://attack.mitre.org/techniques/T1568). Known as DNS over HTTPS (DoH), queries to resolve C2 infrastructure may be encapsulated within encrypted HTTPS packets.(Citation: BleepingComp Godlua JUL19) \n\nAdversaries may also leverage [Protocol Tunneling](https://attack.mitre.org/techniques/T1572) in conjunction with [Proxy](https://attack.mitre.org/techniques/T1090) and/or [Protocol Impersonation](https://attack.mitre.org/techniques/T1001/003) to further conceal C2 communications and infrastructure. ",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "Monitoring for systems listening and/or establishing external connections using ports/protocols commonly associated with tunneling, such as SSH (port 22). Also monitor for processes commonly associated with tunneling, such as Plink and the OpenSSH client. \n\nAnalyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect application layer protocols that do not follow the expected protocol standards regarding syntax, structure, or any other variable adversaries could leverage to conceal data.(Citation: University of Birmingham C2)",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1572",
+                    "external_id": "T1572",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.ssh.com/ssh/tunneling",
+                    "description": "SSH.COM. (n.d.). SSH tunnel. Retrieved March 15, 2020.",
+                    "source_name": "SSH Tunneling"
+                },
+                {
+                    "url": "https://www.bleepingcomputer.com/news/security/new-godlua-malware-evades-traffic-monitoring-via-dns-over-https/",
+                    "description": "Gatlan, S. (2019, July 3). New Godlua Malware Evades Traffic Monitoring via DNS over HTTPS. Retrieved March 15, 2020.",
+                    "source_name": "BleepingComp Godlua JUL19"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Multi-hop Proxy",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "x_mitre_version": "2.0",
+            "modified": "2020-10-21T17:54:28.280Z",
+            "created": "2020-03-14T23:23:41.770Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--a782ebe2-daba-42c7-bc82-e8e9d923162d",
+            "description": "To disguise the source of malicious traffic, adversaries may chain together multiple proxies. Typically, a defender will be able to identify the last proxy traffic traversed before it enters their network; the defender may or may not be able to identify any previous proxies before the last-hop proxy. This technique makes identifying the original source of the malicious traffic even more difficult by requiring the defender to trace malicious traffic through several proxies to identify its source. A particular variant of this behavior is to use onion routing networks, such as the publicly available TOR network. (Citation: Onion Routing)\n\nIn the case of network infrastructure, particularly routers, it is possible for an adversary to leverage multiple compromised devices to create a multi-hop proxy chain within the Wide-Area Network (WAN) of the enterprise.  By leveraging [Patch System Image](https://attack.mitre.org/techniques/T1601/001), adversaries can add custom code to the affected network devices that will implement onion routing between those nodes.  This custom onion routing network will transport the encrypted C2 traffic through the compromised population, allowing adversaries to communicate with any device within the onion routing network.  This method is dependent upon the [Network Boundary Bridging](https://attack.mitre.org/techniques/T1599) method in order to allow the adversaries to cross the protected network boundary of the Internet perimeter and into the organization\u2019s WAN. Protocols such as ICMP may be used as a transport.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_detection": "When observing use of Multi-hop proxies, network data from the actual command and control servers could allow correlating incoming and outgoing flows to trace malicious traffic back to its source. Multi-hop proxies can also be detected by alerting on traffic to known anonymity networks (such as [Tor](https://attack.mitre.org/software/S0183)) or known adversary infrastructure that uses this technique.\n\nIn context of network devices, monitor traffic for encrypted communications from the Internet that is addressed to border routers.  Compare this traffic with the configuration to determine whether it matches with any configured site-to-site Virtual Private Network (VPN) connections the device was intended to have. Monitor traffic for encrypted communications originating from potentially breached routers that is addressed to other routers within the organization.  Compare the source and destination with the configuration of the device to determine if these channels are an authorized Virtual Private Network (VPN) connections or other encrypted modes of communication. Monitor ICMP traffic from the Internet that is addressed to border routers and is encrypted.  Few if any legitimate use cases exist for sending encrypted data to a network device via ICMP.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1090/003",
+                    "external_id": "T1090.003",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/Onion_routing",
+                    "description": "Wikipedia. (n.d.). Onion Routing. Retrieved October 20, 2020.",
+                    "source_name": "Onion Routing"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "modified": "2020-12-30T14:26:44.730Z",
+            "name": "Scheduled Task",
+            "x_mitre_data_sources": [
+                "Scheduled Job: Scheduled Job Creation",
+                "Command: Command Execution",
+                "File: File Modification",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2019-11-27T14:58:00.429Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_permissions_required": [
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+            "description": "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code. There are multiple ways to access the Task Scheduler in Windows. The <code>schtasks</code> can be run directly on the command line, or the Task Scheduler can be opened through the GUI within the Administrator Tools section of the Control Panel. In some cases, adversaries have used a .NET wrapper for the Windows Task Scheduler, and alternatively, adversaries have used the Windows netapi32 library to create a scheduled task.\n\nThe deprecated [at](https://attack.mitre.org/software/S0110) utility could also be abused by adversaries (ex: [At (Windows)](https://attack.mitre.org/techniques/T1053/002)), though <code>at.exe</code> can not access tasks created with <code>schtasks</code> or the Control Panel.\n\nAn adversary may use Windows Task Scheduler to execute programs at system startup or on a scheduled basis for persistence. The Windows Task Scheduler can also be abused to conduct remote Execution as part of Lateral Movement and or to run a process under the context of a specified account (such as SYSTEM).",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_detection": "Monitor process execution from the <code>svchost.exe</code> in Windows 10 and the Windows Task Scheduler <code>taskeng.exe</code> for older versions of Windows. (Citation: Twitter Leoloobeek Scheduled Task) If scheduled tasks are not used for persistence, then the adversary is likely to remove the task when the action is complete. Monitor Windows Task Scheduler stores in %systemroot%\\System32\\Tasks for change entries related to scheduled tasks that do not correlate with known software, patch cycles, etc.\n\nConfigure event logging for scheduled task creation and changes by enabling the \"Microsoft-Windows-TaskScheduler/Operational\" setting within the event logging service. (Citation: TechNet Forum Scheduled Task Operational Setting) Several events will then be logged on scheduled task activity, including: (Citation: TechNet Scheduled Task Events)(Citation: Microsoft Scheduled Task Events Win10)\n\n* Event ID 106 on Windows 7, Server 2008 R2 - Scheduled task registered\n* Event ID 140 on Windows 7, Server 2008 R2 / 4702 on Windows 10, Server 2016 - Scheduled task updated\n* Event ID 141 on Windows 7, Server 2008 R2 / 4699 on Windows 10, Server 2016 - Scheduled task deleted\n* Event ID 4698 on Windows 10, Server 2016 - Scheduled task created\n* Event ID 4700 on Windows 10, Server 2016 - Scheduled task enabled\n* Event ID 4701 on Windows 10, Server 2016 - Scheduled task disabled\n\nTools such as Sysinternals Autoruns may also be used to detect system changes that could be attempts at persistence, including listing current scheduled tasks. (Citation: TechNet Autoruns)\n\nRemote access tools with built-in features may interact directly with the Windows API to perform these functions outside of typical system utilities. Tasks may also be created through Windows system management tools such as Windows Management Instrumentation and PowerShell, so additional logging may need to be configured to gather the appropriate data.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1053/005",
+                    "external_id": "T1053.005",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Twitter Leoloobeek Scheduled Task",
+                    "description": "Loobeek, L. (2017, December 8). leoloobeek Status. Retrieved December 12, 2017.",
+                    "url": "https://twitter.com/leoloobeek/status/939248813465853953"
+                },
+                {
+                    "source_name": "TechNet Forum Scheduled Task Operational Setting",
+                    "description": "Satyajit321. (2015, November 3). Scheduled Tasks History Retention settings. Retrieved December 12, 2017.",
+                    "url": "https://social.technet.microsoft.com/Forums/en-US/e5bca729-52e7-4fcb-ba12-3225c564674c/scheduled-tasks-history-retention-settings?forum=winserver8gen"
+                },
+                {
+                    "source_name": "TechNet Scheduled Task Events",
+                    "description": "Microsoft. (n.d.). General Task Registration. Retrieved December 12, 2017.",
+                    "url": "https://technet.microsoft.com/library/dd315590.aspx"
+                },
+                {
+                    "url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-other-object-access-events",
+                    "description": "Microsoft. (2017, May 28). Audit Other Object Access Events. Retrieved June 27, 2019.",
+                    "source_name": "Microsoft Scheduled Task Events Win10"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "CostaBricks",
+            "x_mitre_aliases": [
+                "CostaBricks"
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-10-15T23:10:53.785Z",
+            "created": "2021-05-24T15:56:18.522Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--5d342981-5194-41e7-b33f-8e91998d7d88",
+            "description": "[CostaBricks](https://attack.mitre.org/software/S0614) is a loader that was used to deploy 32-bit backdoors in the [CostaRicto](https://attack.mitre.org/groups/G0132) campaign.(Citation: BlackBerry CostaRicto November 2020)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0614",
+                    "external_id": "S0614",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PowerSploit",
+            "x_mitre_aliases": [
+                "PowerSploit"
+            ],
+            "x_mitre_version": "1.4",
+            "modified": "2021-10-05T01:24:41.497Z",
+            "created": "2018-04-18T17:59:24.739Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--13cd9151-83b7-410d-9f98-25d0f0d1d80d",
+            "description": "[PowerSploit](https://attack.mitre.org/software/S0194) is an open source, offensive security framework comprised of [PowerShell](https://attack.mitre.org/techniques/T1059/001) modules and scripts that perform a wide range of tasks related to penetration testing such as code execution, persistence, bypassing anti-virus, recon, and exfiltration. (Citation: GitHub PowerSploit May 2012) (Citation: PowerShellMagazine PowerSploit July 2014) (Citation: PowerSploit Documentation)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0194",
+                    "external_id": "S0194",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "GitHub PowerSploit May 2012",
+                    "description": "PowerShellMafia. (2012, May 26). PowerSploit - A PowerShell Post-Exploitation Framework. Retrieved February 6, 2018.",
+                    "url": "https://github.com/PowerShellMafia/PowerSploit"
+                },
+                {
+                    "url": "http://www.powershellmagazine.com/2014/07/08/powersploit/",
+                    "description": "Graeber, M. (2014, July 8). PowerSploit. Retrieved February 6, 2018.",
+                    "source_name": "PowerShellMagazine PowerSploit July 2014"
+                },
+                {
+                    "source_name": "PowerSploit Documentation",
+                    "description": "PowerSploit. (n.d.). PowerSploit. Retrieved February 6, 2018.",
+                    "url": "http://powersploit.readthedocs.io"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "PS1",
+            "x_mitre_aliases": [
+                "PS1",
+                "PS1 "
+            ],
+            "x_mitre_version": "1.0",
+            "modified": "2021-10-15T12:58:20.120Z",
+            "created": "2021-05-24T14:55:59.316Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--13183cdf-280b-46be-913a-5c6df47831e7",
+            "description": "[PS1](https://attack.mitre.org/software/S0613) is a loader that was used to deploy 64-bit backdoors in the [CostaRicto](https://attack.mitre.org/groups/G0132) campaign.(Citation: BlackBerry CostaRicto November 2020)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0613",
+                    "external_id": "S0613",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "PsExec",
+            "x_mitre_aliases": [
+                "PsExec"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-06-24T13:47:24.660Z",
+            "created": "2017-05-31T21:32:21.771Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+            "description": "[PsExec](https://attack.mitre.org/software/S0029) is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers. (Citation: Russinovich Sysinternals) (Citation: SANS PsExec)",
+            "x_mitre_contributors": [
+                "Janantha Marasinghe"
+            ],
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0029",
+                    "external_id": "S0029",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Russinovich Sysinternals",
+                    "description": "Russinovich, M. (2014, May 2). Windows Sysinternals PsExec v2.11. Retrieved May 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx"
+                },
+                {
+                    "source_name": "SANS PsExec",
+                    "description": "Pilkington, M.. (2012, December 17). Protecting Privileged Domain Accounts: PsExec Deep-Dive. Retrieved August 17, 2016.",
+                    "url": "https://digital-forensics.sans.org/blog/2012/12/17/protecting-privileged-domain-accounts-psexec-deep-dive"
+                }
+            ]
+        },
+        {
+            "type": "malware",
+            "modified": "2021-10-15T23:39:53.415Z",
+            "name": "SombRAT",
+            "x_mitre_aliases": [
+                "SombRAT"
+            ],
+            "x_mitre_version": "1.0",
+            "created": "2021-05-26T13:13:43.366Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--425771c5-48b4-4ecd-9f95-74ed3fc9da59",
+            "description": "[SombRAT](https://attack.mitre.org/software/S0615) is a modular backdoor written in C++ that has been in use since at least 2019. [SombRAT](https://attack.mitre.org/software/S0615) has been used to download and execute malicious payloads, including [FIVEHANDS](https://attack.mitre.org/software/S0618) ransomware.(Citation: BlackBerry CostaRicto November 2020)(Citation: FireEye FiveHands April 2021)(Citation: CISA AR21-126A FIVEHANDS May 2021)",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0615",
+                    "external_id": "S0615",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "source_name": "BlackBerry CostaRicto November 2020"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html",
+                    "description": "McLellan, T.  and Moore, J. et al. (2021, April 29). UNC2447 SOMBRAT and FIVEHANDS Ransomware: A Sophisticated Financial Threat. Retrieved June 2, 2021.",
+                    "source_name": "FireEye FiveHands April 2021"
+                },
+                {
+                    "url": "https://us-cert.cisa.gov/ncas/analysis-reports/ar21-126a",
+                    "description": "CISA. (2021, May 6). Analysis Report (AR21-126A) FiveHands Ransomware. Retrieved June 7, 2021.",
+                    "source_name": "CISA AR21-126A FIVEHANDS May 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "tool",
+            "name": "Tor",
+            "x_mitre_aliases": [
+                "Tor"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-05-13T22:59:15.727Z",
+            "created": "2018-01-16T16:13:52.465Z",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "id": "tool--ed7d0cb1-87a6-43b4-9f46-ef1bc56d6c68",
+            "description": "[Tor](https://attack.mitre.org/software/S0183) is a software suite and network that provides increased anonymity on the Internet. It creates a multi-hop proxy network and utilizes multilayer encryption to protect both the message and routing information. [Tor](https://attack.mitre.org/software/S0183) utilizes \"Onion Routing,\" in which messages are encrypted with multiple layers of encryption; at each step in the proxy network, the topmost layer is decrypted and the contents forwarded on to the next node until it reaches its destination. (Citation: Dingledine Tor The Second-Generation Onion Router)",
+            "labels": [
+                "tool"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0183",
+                    "external_id": "S0183",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Dingledine Tor The Second-Generation Onion Router)",
+                    "source_name": "Tor"
+                },
+                {
+                    "url": "http://www.dtic.mil/dtic/tr/fulltext/u2/a465464.pdf",
+                    "description": "Roger Dingledine, Nick Mathewson and Paul Syverson. (2004). Tor: The Second-Generation Onion Router. Retrieved December 21, 2017.",
+                    "source_name": "Dingledine Tor The Second-Generation Onion Router"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a86f07a8-78ff-4012-9680-d3cc1c99424c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--acc27fb3-e8d0-4bc7-b699-d18a0ad631f4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--2b60de1e-db9c-44c5-8aac-150752a4be8a",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c62bde18-097d-4ced-b10e-70d85b102614",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "location--e6e4a646-6504-43af-b43f-03b6379d3027"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--18a46c7f-21d5-48c7-bbf9-cd7808330e15",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--5df26b99-0290-45ba-9a0e-b235bcffb284",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--95cd830c-e0b8-4aa8-b4f2-2ba3f4f8dd0d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f260cb10-e521-4c4c-bbd8-37ebdf6d3d4d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--bb82e0b0-6e9c-439f-970a-4c917a74c5f2",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--59c13dbc-0886-4a54-ad89-03f46d47f0e2",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Australia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--e6e4a646-6504-43af-b43f-03b6379d3027",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "France",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--a2ec23af-45a5-47b4-b1c4-ffa0f55ba748",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "India",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--b79d9756-e43e-46ad-b959-94dc0406bd5a",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Netherlands",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--2d94b5ee-b33c-420b-8a52-c4c231d2b9f6",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Singapore",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

@@ -1,0 +1,698 @@
+{
+    "type": "bundle",
+    "id": "bundle--1210e10d-0412-45c1-96e6-e76a511d85bd",
+    "spec_version": "2.0",
+    "objects": [
+        {"primary_motivation": "organizational-gain",
+            "first_seen":"2010",
+            "x_MISP-description": "",
+            "x_MISP-uuid": "9e71024e-817f-45b0-92a0-d886c30bc929",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Dust Storm",
+            "description": "[Dust Storm](https://attack.mitre.org/groups/G0031) is a threat group that has targeted multiple industries in Japan, South Korea, the United States, Europe, and several Southeast Asian countries. (Citation: Cylance Dust Storm)",
+            "x_mitre_version": "1.0",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "Dust Storm"
+            ],
+            "created": "2017-05-31T21:32:03.306Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0031",
+                    "external_id": "G0031",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: Cylance Dust Storm)",
+                    "source_name": "Dust Storm"
+                },
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--0ec4a49c-0adc-41fb-afc2-e99f1e7c5200",
+            "description": "(Citation: Cylance Dust Storm)",
+            "target_ref": "malware--66b1dcde-17a0-4c7b-95fa-b08d430c2131",
+            "modified": "2019-03-22T20:14:29.751Z",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.065Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--4cb1c7b1-6efd-488c-857d-605ff8ca9ab5",
+            "description": "(Citation: Cylance Dust Storm)",
+            "target_ref": "malware--166c0eca-02fd-424a-92c0-6b5106994d31",
+            "modified": "2019-03-22T20:14:29.770Z",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.065Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--72cd5bab-20d9-4895-a6be-7d33f28d4b65",
+            "description": "[Dust Storm](https://attack.mitre.org/groups/G0031) has used Android backdoors capable of exfiltrating specific files directly from the infected devices.(Citation: Cylance Dust Storm)",
+            "target_ref": "attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+            "modified": "2019-03-22T20:14:29.734Z",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.065Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--2092cbf8-4b5e-40e9-93dd-bfd8a71b4e8c",
+            "description": "(Citation: Cylance Dust Storm)",
+            "target_ref": "malware--e1161124-f22e-487f-9d5f-ed8efc8dcd61",
+            "modified": "2019-03-22T20:14:29.775Z",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.065Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--86461465-cb29-4fc9-8fa8-8956c0f94536",
+            "description": "[Dust Storm](https://attack.mitre.org/groups/G0031) has encoded payloads with a single-byte XOR, both skipping the key itself and zeroing in an attempt to avoid exposing the key.(Citation: Cylance Dust Storm)",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "modified": "2019-03-22T20:14:29.709Z",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.065Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--b03aafb3-dc03-4e12-9354-69a579b60aaf",
+            "description": "[Dust Storm](https://attack.mitre.org/groups/G0031) has used Android backdoors capable of enumerating specific files on the infected devices.(Citation: Cylance Dust Storm)",
+            "target_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "modified": "2019-03-22T20:14:29.737Z",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.065Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--c8253944-3a69-42e6-b36a-1c3defbb088e",
+            "description": "(Citation: Cylance Dust Storm)",
+            "target_ref": "malware--0db09158-6e48-4e7c-8ce7-2b10b9c0c039",
+            "modified": "2019-03-22T20:14:29.761Z",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.065Z",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Data from Local System",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1005",
+                    "external_id": "T1005",
+                    "source_name": "mitre-attack"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Script: Script Execution",
+                "File: File Access",
+                "Command: Command Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-10-15T22:16:42.734Z",
+            "x_mitre_system_requirements": [
+                "Privileges to access certain files and directories"
+            ],
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+            "description": "Adversaries may search local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to Exfiltration.\n\nAdversaries may do this using a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059), such as [cmd](https://attack.mitre.org/software/S0106), which has functionality to interact with the file system to gather information. Some adversaries may also use [Automated Collection](https://attack.mitre.org/techniques/T1119) on the local system.\n",
+            "x_mitre_contributors": [
+                "William Cain"
+            ],
+            "x_mitre_detection": "Monitor processes and command-line arguments for actions that could be taken to collect files from a system. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:30:20.537Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "File and Directory Discovery",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1083",
+                    "external_id": "T1083",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/127.html",
+                    "external_id": "CAPEC-127",
+                    "source_name": "capec"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/497.html",
+                    "external_id": "CAPEC-497",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Windows Commands JPCERT",
+                    "description": "Tomonaga, S. (2016, January 26). Windows Commands Abused by Attackers. Retrieved February 2, 2016.",
+                    "url": "https://blogs.jpcert.or.jp/en/2016/01/windows-commands-abused-by-attackers.html"
+                }
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_version": "1.3",
+            "modified": "2021-08-23T20:44:32.048Z",
+            "x_mitre_system_requirements": [
+                "Some folders may require Administrator, SYSTEM or specific user depending on permission levels and access controls"
+            ],
+            "id": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User",
+                "Administrator",
+                "SYSTEM"
+            ],
+            "description": "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nMany command shell utilities can be used to obtain this information. Examples include <code>dir</code>, <code>tree</code>, <code>ls</code>, <code>find</code>, and <code>locate</code>.(Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the [Native API](https://attack.mitre.org/techniques/T1106).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Collection and Exfiltration, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).",
+            "created": "2017-05-31T21:31:04.710Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Obfuscated Files or Information",
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "File: File Metadata",
+                "File: File Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_version": "1.2",
+            "modified": "2021-10-20T16:33:13.472Z",
+            "created": "2017-05-31T21:30:32.662Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis",
+                "Signature-based detection",
+                "Host intrusion prevention systems",
+                "Application control",
+                "Log analysis",
+                "Application control by file name or path"
+            ],
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "id": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. \n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open and [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) for [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as JavaScript. \n\nPortions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059). Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) ",
+            "x_mitre_contributors": [
+                "Red Canary",
+                "Christiaan Beek, @ChristiaanBeek"
+            ],
+            "x_mitre_detection": "Detection of file obfuscation is difficult unless artifacts are left behind by the obfuscation process that are uniquely detectable with a signature. If detection of the obfuscation itself is not possible, it may be possible to detect the malicious activity that caused the obfuscated file (for example, the method that was used to write, read, or modify the file on the file system). \n\nFlag and analyze commands containing indicators of obfuscation and known suspicious syntax such as uninterpreted escape characters like '''^''' and '''\"'''. Windows' Sysmon and Event ID 4688 displays command-line arguments for processes. Deobfuscation tools can be used to detect these indicators in files/payloads. (Citation: GitHub Revoke-Obfuscation) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: GitHub Office-Crackros Aug 2016) \n\nObfuscation used in payloads for Initial Access can be detected at the network. Use network intrusion detection systems and email gateway filtering to identify compressed and encrypted attachments and scripts. Some email attachment detonation systems can open compressed and encrypted attachments. Payloads delivered over an encrypted connection from a website require encrypted network traffic inspection. \n\nThe first detection of a malicious tool may trigger an anti-virus or other security tool alert. Similar events may also occur at the boundary through network IDS, email scanning appliance, etc. The initial detection should be treated as an indication of a potentially more invasive intrusion. The alerting system should be thoroughly investigated beyond that initial alert for activity that was not detected. Adversaries may continue with an operation, assuming that individual events like an anti-virus detect will not be investigated or that an analyst will not be able to conclusively link that event to other activity occurring on the network. ",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1027",
+                    "external_id": "T1027",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://capec.mitre.org/data/definitions/267.html",
+                    "external_id": "CAPEC-267",
+                    "source_name": "capec"
+                },
+                {
+                    "source_name": "Volexity PowerDuke November 2016",
+                    "description": "Adair, S.. (2016, November 9). PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs. Retrieved January 11, 2017.",
+                    "url": "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                },
+                {
+                    "source_name": "Linux/Cdorked.A We Live Security Analysis",
+                    "description": "Pierre-Marc Bureau. (2013, April 26). Linux/Cdorked.A: New Apache backdoor being used in the wild to serve Blackhole. Retrieved September 10, 2017.",
+                    "url": "https://www.welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/"
+                },
+                {
+                    "source_name": "Carbon Black Obfuscation Sept 2016",
+                    "description": "Tedesco, B. (2016, September 23). Security Alert Summary. Retrieved February 12, 2018.",
+                    "url": "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/"
+                },
+                {
+                    "source_name": "FireEye Obfuscation June 2017",
+                    "description": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+                },
+                {
+                    "source_name": "FireEye Revoke-Obfuscation July 2017",
+                    "description": "Bohannon, D. & Holmes, L. (2017, July 27). Revoke-Obfuscation: PowerShell Obfuscation Detection Using Science. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf"
+                },
+                {
+                    "source_name": "PaloAlto EncodedCommand March 2017",
+                    "description": "White, J. (2017, March 10). Pulling Back the Curtains on EncodedCommand PowerShell Attacks. Retrieved February 12, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/"
+                },
+                {
+                    "source_name": "GitHub Revoke-Obfuscation",
+                    "description": "Bohannon, D. (2017, July 27). Revoke-Obfuscation. Retrieved February 12, 2018.",
+                    "url": "https://github.com/danielbohannon/Revoke-Obfuscation"
+                },
+                {
+                    "source_name": "GitHub Office-Crackros Aug 2016",
+                    "description": "Carr, N. (2016, August 14). OfficeCrackros. Retrieved February 12, 2018.",
+                    "url": "https://github.com/itsreallynick/office-crackros"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Mis-Type",
+            "x_mitre_aliases": [
+                "Mis-Type"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-20T18:16:03.001Z",
+            "created": "2017-05-31T21:32:55.565Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--e1161124-f22e-487f-9d5f-ed8efc8dcd61",
+            "description": "[Mis-Type](https://attack.mitre.org/software/S0084) is a backdoor hybrid that was used by [Dust Storm](https://attack.mitre.org/groups/G0031) in 2012. (Citation: Cylance Dust Storm)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0084",
+                    "external_id": "S0084",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "Misdat",
+            "x_mitre_aliases": [
+                "Misdat"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-20T18:16:26.920Z",
+            "created": "2017-05-31T21:32:55.126Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--0db09158-6e48-4e7c-8ce7-2b10b9c0c039",
+            "description": "[Misdat](https://attack.mitre.org/software/S0083) is a backdoor that was used by [Dust Storm](https://attack.mitre.org/groups/G0031) from 2010 to 2011. (Citation: Cylance Dust Storm)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0083",
+                    "external_id": "S0083",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "S-Type",
+            "x_mitre_aliases": [
+                "S-Type"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-20T18:28:45.114Z",
+            "created": "2017-05-31T21:32:55.925Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--66b1dcde-17a0-4c7b-95fa-b08d430c2131",
+            "description": "[S-Type](https://attack.mitre.org/software/S0085) is a backdoor that was used by [Dust Storm](https://attack.mitre.org/groups/G0031) from 2013 to 2014. (Citation: Cylance Dust Storm)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0085",
+                    "external_id": "S0085",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "ZLib",
+            "x_mitre_aliases": [
+                "ZLib"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T02:44:21.378Z",
+            "created": "2017-05-31T21:32:56.394Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--166c0eca-02fd-424a-92c0-6b5106994d31",
+            "description": "[ZLib](https://attack.mitre.org/software/S0086) is a full-featured backdoor that was used as a second-stage implant by [Dust Storm](https://attack.mitre.org/groups/G0031) from 2014 to 2015. It is malware and should not be confused with the compression library from which its name is derived. (Citation: Cylance Dust Storm)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0086",
+                    "external_id": "S0086",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved September 19, 2017.",
+                    "url": "https://www.cylance.com/content/dam/cylance/pdfs/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d3dfa37b-3b7a-420f-94df-697bd02b0980",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "identity--aa25fea8-ef34-47b8-83ab-05ac3dc9326d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e97446ec-cea9-4eed-88e1-1d38784a5e11",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "identity--4f5ed6f0-39b9-4079-918d-ad9294735a22"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--49d5d957-c89b-48ed-9415-36290e17e5f6",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--43f73d3c-5de4-4f30-b8ec-a6b4da415f6c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--78ecc4cb-c3b8-43b4-b4fb-0b0c54e85700",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "identity--dcf3b77d-e949-4afe-b620-613a230aafdf"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--89e93cbc-5ce4-497e-84dd-0ecc76708e45",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "identity--93f86a60-cf1f-4285-882e-6691bcbfddb9"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--368402cc-b441-44b5-9f96-a372e56e4ce4",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "identity--983bf966-a56b-4f3c-8637-6c56b94b3b2f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a1b9f7c5-87eb-4cce-be53-128fd311f88d",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "location--34390956-4eda-418c-bf84-1b2b054778a1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--969952c5-a3a8-46ec-b35e-a446dbe64cd6",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--4ff80a58-7770-4a8f-a353-f12997fc8628",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e0204cab-8b4f-4b44-bc41-954bc5ea5782",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ab4b8519-f9b9-4657-a7b3-20f8df300eb3",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--ae41895a-243f-4a65-b99b-d85022326c31",
+            "target_ref": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851"
+        },
+        {
+            "created": "2021-03-13T20:09:21.306875Z",
+            "id": "identity--9d06c6e7-4bb2-4a40-afce-3a51847ba128",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Energy sector as a target",
+            "sectors": [
+                "energy"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--34390956-4eda-418c-bf84-1b2b054778a1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Asia",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.302614Z",
+            "id": "identity--dcf3b77d-e949-4afe-b620-613a230aafdf",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Oil sector as a target",
+            "sectors": [
+                "Oil industries"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--cac3bc0a-0472-4b21-a8d2-6f153120d6d1",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "South Korea",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8b9cdfae-67fb-4939-85b3-956bb48c3851",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "United States",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--7984b7e4-7cdb-4b96-a11f-9caa43aba67e",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "European Union",
+            "spec_version": "2.1",
+            "type": "location"
+        }
+    ]
+}

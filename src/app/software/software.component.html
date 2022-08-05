@@ -1,0 +1,43 @@
+<div class="container">
+    <form>
+  
+  
+  
+  
+      <table class="table">
+  
+        <tbody  >
+          <tr *ngFor="let tool of tool" class="table-active">
+            <th scope="row">Name</th>
+            <td>{{tool.name}}</td>
+            
+          </tr>
+          <tr *ngFor="let tool of tool">
+            <th  scope="row">Type</th>
+            <td>{{tool.type}}</td>
+  
+          </tr>
+          <tr *ngFor="let tool of tool" class="table-active">
+            <th scope="row">Aliases</th>
+            <td colspan="2">{{tool.x_mitre_aliases}}</td>
+  
+          </tr>
+          <tr *ngFor="let tool of tool">
+            <th scope="row">Platform</th>
+            <td>{{tool.x_mitre_platforms}}</td>
+  
+          </tr>
+          <tr *ngFor="let tool of tool" class="table-active">
+            <th scope="row">Description</th>
+            <td colspan="2">{{tool.description}}</td>
+  
+          </tr>
+      
+      
+          
+        </tbody>
+      </table>
+  
+  
+    </form>
+  </div>

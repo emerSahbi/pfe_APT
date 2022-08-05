@@ -1,0 +1,308 @@
+{
+    "type": "bundle",
+    "id": "bundle--e1f2b66c-b73b-46a0-8a57-0c6039f5edb6",
+    "spec_version": "2.0",
+    "objects": [
+        {"primary_motivation": "organizational-gain",
+            "first_seen":"2015",
+            "x_MISP-uuid": "1f73e14f-b882-4032-a565-26dc653b0daf",
+            "x_MISP-description": "Between November 26, 2015, and December 1, 2015, known and suspected China-based APT groups launched several spear-phishing attacks targeting Japanese and Taiwanese organizations in the high-tech, government services, media and financial services industries. Each campaign delivered a malicious Microsoft Word document exploiting the aforementioned EPS dict copy use-after-free vulnerability, and the local Windows privilege escalation vulnerability CVE-2015-1701. The successful exploitation of both vulnerabilities led to the delivery of either a downloader that we refer to as IRONHALO, or a backdoor that we refer to as ELMER.",
+            "type": "intrusion-set",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "APT16",
+            "description": "[APT16](https://attack.mitre.org/groups/G0023) is a China-based threat group that has launched spearphishing campaigns targeting Japanese and Taiwanese organizations. (Citation: FireEye EPS Awakens Part 2)",
+            "x_mitre_version": "1.1",
+            "modified": "2022-06-11T20:10:32.917Z",
+            "aliases": [
+                "APT16",
+                "SVCMONDR"
+            ],
+            "created": "2017-05-31T21:31:56.270Z",
+           "created_by_ref": "identity--cb4d3609-6db8-40ec-817d-43d0982b9130",
+            "id": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/groups/G0023",
+                    "external_id": "G0023",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "description": "(Citation: FireEye EPS Awakens Part 2)",
+                    "source_name": "APT16"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2015/12/the-eps-awakens-part-two.html",
+                    "description": "Winters, R.. (2015, December 20). The EPS Awakens - Part 2. Retrieved January 22, 2016.",
+                    "source_name": "FireEye EPS Awakens Part 2"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--82bfe762-9468-458e-801a-13387a271521",
+            "description": "[APT16](https://attack.mitre.org/groups/G0023) has compromised otherwise legitimate sites as staging servers for second-stage payloads.(Citation: FireEye EPS Awakens Part 2)",
+            "target_ref": "attack-pattern--e196b5c5-8118-4a1c-ab8a-936586ce3db5",
+            "modified": "2020-10-12T19:54:58.627Z",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2020-10-12T19:54:58.627Z",
+            "external_references": [
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2015/12/the-eps-awakens-part-two.html",
+                    "description": "Winters, R.. (2015, December 20). The EPS Awakens - Part 2. Retrieved January 22, 2016.",
+                    "source_name": "FireEye EPS Awakens Part 2"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "relationship",
+            "id": "relationship--bcd1d261-0228-468f-b02b-52e6784e2491",
+            "description": "(Citation: FireEye EPS Awakens Part 2)",
+            "target_ref": "malware--3cab1b76-2f40-4cd0-8d2c-7ed16eeb909c",
+            "modified": "2019-03-22T14:20:45.716Z",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "relationship_type": "uses",
+            "created": "2017-05-31T21:33:27.058Z",
+            "external_references": [
+                {
+                    "source_name": "FireEye EPS Awakens Part 2",
+                    "description": "Winters, R.. (2015, December 20). The EPS Awakens - Part 2. Retrieved January 22, 2016.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2015/12/the-eps-awakens-part-two.html"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "attack-pattern",
+            "name": "Server",
+            "x_mitre_data_sources": [
+                "Internet Scan: Response Metadata",
+                "Internet Scan: Response Content"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2021-10-17T16:00:16.273Z",
+            "created": "2020-10-01T00:56:25.135Z",
+            "x_mitre_platforms": [
+                "PRE"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "id": "attack-pattern--e196b5c5-8118-4a1c-ab8a-936586ce3db5",
+            "description": "Adversaries may compromise third-party servers that can be used during targeting. Use of servers allows an adversary to stage, launch, and execute an operation. During post-compromise activity, adversaries may utilize servers for various tasks, including for Command and Control. Instead of purchasing a [Server](https://attack.mitre.org/techniques/T1583/004) or [Virtual Private Server](https://attack.mitre.org/techniques/T1583/003), adversaries may compromise third-party servers in support of operations.\n\nAdversaries may also compromise web servers to support watering hole operations, as in [Drive-by Compromise](https://attack.mitre.org/techniques/T1189).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "x_mitre_detection": "Once adversaries have provisioned software on a compromised server (ex: for use as a command and control server), internet scans may reveal servers that adversaries have compromised. Consider looking for identifiable patterns such as services listening, certificates in use, SSL/TLS negotiation features, or other response artifacts associated with adversary C2 software.(Citation: ThreatConnect Infrastructure Dec 2020)(Citation: Mandiant SCANdalous Jul 2020)(Citation: Koczwara Beacon Hunting Sep 2021)\n\nMuch of this activity will take place outside the visibility of the target organization, making detection of this behavior difficult. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Command and Control.",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/techniques/T1584/004",
+                    "external_id": "T1584.004",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://threatconnect.com/blog/infrastructure-research-hunting/",
+                    "description": "ThreatConnect. (2020, December 15). Infrastructure Research and Hunting: Boiling the Domain Ocean. Retrieved October 12, 2021.",
+                    "source_name": "ThreatConnect Infrastructure Dec 2020"
+                },
+                {
+                    "url": "https://www.mandiant.com/resources/scandalous-external-detection-using-network-scan-data-and-automation",
+                    "description": "Stephens, A. (2020, July 13). SCANdalous! (External Detection Using Network Scan Data and Automation). Retrieved October 12, 2021.",
+                    "source_name": "Mandiant SCANdalous Jul 2020"
+                },
+                {
+                    "url": "https://michaelkoczwara.medium.com/cobalt-strike-c2-hunting-with-shodan-c448d501a6e2",
+                    "description": "Koczwara, M. (2021, September 7). Hunting Cobalt Strike C2 with Shodan. Retrieved October 12, 2021.",
+                    "source_name": "Koczwara Beacon Hunting Sep 2021"
+                }
+            ]
+        },
+        {
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "type": "malware",
+            "name": "ELMER",
+            "x_mitre_aliases": [
+                "ELMER"
+            ],
+            "x_mitre_version": "1.1",
+            "modified": "2020-03-30T16:21:32.420Z",
+            "created": "2017-05-31T21:32:43.237Z",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "id": "malware--3cab1b76-2f40-4cd0-8d2c-7ed16eeb909c",
+            "description": "[ELMER](https://attack.mitre.org/software/S0064) is a non-persistent, proxy-aware HTTP backdoor written in Delphi that has been used by [APT16](https://attack.mitre.org/groups/G0023). (Citation: FireEye EPS Awakens Part 2)",
+            "labels": [
+                "malware"
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/software/S0064",
+                    "external_id": "S0064",
+                    "source_name": "mitre-attack"
+                },
+                {
+                    "url": "https://www.fireeye.com/blog/threat-research/2015/12/the-eps-awakens-part-two.html",
+                    "description": "Winters, R.. (2015, December 20). The EPS Awakens - Part 2. Retrieved January 22, 2016.",
+                    "source_name": "FireEye EPS Awakens Part 2"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1dc9e329-346e-450f-92e1-f63757bb2786",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "originatees-from",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8f20489c-9ef6-4378-bf63-1658aa71b119",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a5825a1c-b315-483f-9e36-7e96b571ce3c",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--1de28187-1eae-4655-a402-73986c2d9822",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--9cfb0afe-378c-4593-aca7-6dd5926a6d09",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a87e075d-9027-4c9f-8e9e-5bf05da126ed",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--f6f6863a-41c0-4108-8a46-880e62ba1aca",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "China",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--6e60d8e6-9d8b-4d2a-a6eb-48cbea387d38",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Japan",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--29e882bd-cd1d-427c-a87e-e7268d2c79e5",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Thailand",
+            "spec_version": "2.1",
+            "type": "location"
+        },
+        {
+            "created": "2021-03-13T20:09:21.308954Z",
+            "id": "identity--944ebdb0-97ef-463b-a3a9-52da871fcf64",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Financial Services sector as a target",
+            "sectors": [
+                "financial-services"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.309978Z",
+            "id": "identity--7119e085-8c5a-4153-bb5c-10c9eb919305",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Government sector as a target",
+            "sectors": [
+                "government"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "created": "2021-03-13T20:09:21.329303Z",
+            "id": "identity--71c4726c-f45e-4e22-8616-2081a536c6bc",
+            "identity_class": "class",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Technology sector as a target",
+            "sectors": [
+                "technology"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--818657fa-5312-46f4-b290-c25a1c4ce680",
+            "created": "2022-04-17T22:00:30.408Z",
+            "modified": "2022-06-14T22:00:30.408Z",
+            "relationship_type": "targets",
+            "source_ref": "intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70",
+            "target_ref": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f"
+        },  {
+            "created": "2021-03-13T20:09:21.204979Z",
+            "id": "location--8ce3f13d-02f9-410b-85a9-2d7593d5162f",
+            "modified": "2021-12-01T16:19:51.601791Z",
+            "name": "Taiwan",
+            "spec_version": "2.1",
+            "type": "location"
+        }   
+    ]
+}
